@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VideoStream.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VideoStream.xml。 -->
 
 <div id="_class_videostream"></div>
 
@@ -19,11 +19,15 @@ Base resource type for all video streams. Classes that derive from **VideoStream
 
 ## 属性
 
-| [`String`](class_string.md) | [`file`](#class_videostream_property_file) | ``""`` |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`file`](class_videostream.md#class_videostream_property_file) | ``""`` |
 
 ## 方法
 
-| [`VideoStreamPlayback`](class_videostreamplayback.md) | [`_instantiate_playback`](#class_videostream_private_method__instantiate_playback) ( ) virtual[^virtual] |
+|||
+|:-:|:--|
+| [`VideoStreamPlayback`](class_videostreamplayback.md) | [`_instantiate_playback`](class_videostream.md#class_videostream_private_method__instantiate_playback) ( ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

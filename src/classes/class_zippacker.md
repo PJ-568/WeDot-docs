@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/zip/doc_classes/ZIPPacker.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/zip/doc_classes/ZIPPacker.xml。 -->
 
 <div id="_class_zippacker"></div>
 
@@ -34,11 +34,13 @@ This class implements a writer that allows storing the multiple blobs in a zip a
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`close`](#class_zippacker_method_close) ( )                                                                                     |
-| [Error](#enum_@globalscope_error) | [`close_file`](#class_zippacker_method_close_file) ( )                                                                           |
-| [Error](#enum_@globalscope_error) | [`open`](#class_zippacker_method_open) ( path: [`String`](class_string.md), append: [ZipAppend](#enum_zippacker_zipappend) = 0 ) |
-| [Error](#enum_@globalscope_error) | [`start_file`](#class_zippacker_method_start_file) ( path: [`String`](class_string.md) )                                         |
-| [Error](#enum_@globalscope_error) | [`write_file`](#class_zippacker_method_write_file) ( data: [`PackedByteArray`](class_packedbytearray.md) )                       |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`close`](class_zippacker.md#class_zippacker_method_close) ( )                                                                                     |
+| [Error](#enum_@globalscope_error) | [`close_file`](class_zippacker.md#class_zippacker_method_close_file) ( )                                                                           |
+| [Error](#enum_@globalscope_error) | [`open`](class_zippacker.md#class_zippacker_method_open) ( path: [`String`](class_string.md), append: [ZipAppend](#enum_zippacker_zipappend) = 0 ) |
+| [Error](#enum_@globalscope_error) | [`start_file`](class_zippacker.md#class_zippacker_method_start_file) ( path: [`String`](class_string.md) )                                         |
+| [Error](#enum_@globalscope_error) | [`write_file`](class_zippacker.md#class_zippacker_method_write_file) ( data: [`PackedByteArray`](class_packedbytearray.md) )                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -114,7 +116,7 @@ This must be called before everything else.
 
 Starts writing to a file within the archive. Only one file can be written at the same time.
 
-Must be called after [`open`](#class_zippacker_method_open).
+Must be called after [`open`](class_zippacker.md#class_zippacker_method_open).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,7 +128,7 @@ Must be called after [`open`](#class_zippacker_method_open).
 
 Write the given `data` to the file.
 
-Needs to be called after [`start_file`](#class_zippacker_method_start_file).
+Needs to be called after [`start_file`](class_zippacker.md#class_zippacker_method_start_file).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFMesh.xml。 -->
 
 <div id="_class_gltfmesh"></div>
 
@@ -9,23 +9,27 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-GLTFMesh represents a GLTF mesh.
+GLTFMesh represents a glTF mesh.
 
 ## 描述
 
-GLTFMesh handles 3D mesh data imported from GLTF files. It includes properties for blend channels, blend weights, instance materials, and the mesh itself.
+GLTFMesh handles 3D mesh data imported from glTF files. It includes properties for blend channels, blend weights, instance materials, and the mesh itself.
 
 ## 属性
 
-| [`PackedFloat32Array`](class_packedfloat32array.md)     | [`blend_weights`](#class_gltfmesh_property_blend_weights)           | ``PackedFloat32Array()`` |
-| [Array](class_array.md) [`Material`](class_material.md) | [`instance_materials`](#class_gltfmesh_property_instance_materials) | ``[]``                   |
-| [`ImporterMesh`](class_importermesh.md)                 | [`mesh`](#class_gltfmesh_property_mesh)                             |                          |
-| [`String`](class_string.md)                             | [`original_name`](#class_gltfmesh_property_original_name)           | ``""``                   |
+|||
+|:-:|:--|
+| [`PackedFloat32Array`](class_packedfloat32array.md)     | [`blend_weights`](class_gltfmesh.md#class_gltfmesh_property_blend_weights)           | ``PackedFloat32Array()`` |
+| [Array](class_array.md) [`Material`](class_material.md) | [`instance_materials`](class_gltfmesh.md#class_gltfmesh_property_instance_materials) | ``[]``                   |
+| [`ImporterMesh`](class_importermesh.md)                 | [`mesh`](class_gltfmesh.md#class_gltfmesh_property_mesh)                             |                          |
+| [`String`](class_string.md)                             | [`original_name`](class_gltfmesh.md#class_gltfmesh_property_original_name)           | ``""``                   |
 
 ## 方法
 
-| [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+|||
+|:-:|:--|
+| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfmesh.md#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                        | [`set_additional_data`](class_gltfmesh.md#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -95,7 +99,7 @@ The original name of the mesh.
 
 Gets additional arbitrary data in this **GLTFMesh** instance. This can be used to keep per-node state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the return value can be anything you set. If nothing was set, the return value is null.
+The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is null.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,7 +111,7 @@ The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension
 
 Sets additional arbitrary data in this **GLTFMesh** instance. This can be used to keep per-node state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.
+The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

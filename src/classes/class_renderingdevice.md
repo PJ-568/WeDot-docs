@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderingDevice.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderingDevice.xml。 -->
 
 <div id="_class_renderingdevice"></div>
 
@@ -15,9 +15,9 @@ Abstraction for working with modern low-level graphics APIs.
 
 **RenderingDevice** is an abstraction for working with modern low-level graphics APIs such as Vulkan. Compared to [`RenderingServer`](class_renderingserver.md) (which works with Godot's own rendering subsystems), **RenderingDevice** is much lower-level and allows working more directly with the underlying graphics APIs. **RenderingDevice** is used in Godot to provide support for several modern low-level graphics APIs while reducing the amount of code duplication required. **RenderingDevice** can also be used in your own projects to perform things that are not exposed by [`RenderingServer`](class_renderingserver.md) or high-level nodes, such as using compute shaders.
 
-On startup, Godot creates a global **RenderingDevice** which can be retrieved using [`RenderingServer.get_rendering_device`](#class_renderingserver_method_get_rendering_device). This global **RenderingDevice** performs drawing to the screen.
+On startup, Godot creates a global **RenderingDevice** which can be retrieved using [`RenderingServer.get_rendering_device`](class_renderingserver.md#class_renderingserver_method_get_rendering_device). This global **RenderingDevice** performs drawing to the screen.
 
- **Local RenderingDevices:** Using [`RenderingServer.create_local_rendering_device`](#class_renderingserver_method_create_local_rendering_device), you can create "secondary" rendering devices to perform drawing and GPU compute operations on separate threads.
+ **Local RenderingDevices:** Using [`RenderingServer.create_local_rendering_device`](class_renderingserver.md#class_renderingserver_method_create_local_rendering_device), you can create "secondary" rendering devices to perform drawing and GPU compute operations on separate threads.
 
  **Note:** **RenderingDevice** assumes intermediate knowledge of modern graphics APIs such as Vulkan, Direct3D 12, Metal or WebGPU. These graphics APIs are lower-level than OpenGL or Direct3D 11, requiring you to perform what was previously done by the graphics driver itself. If you have difficulty understanding the concepts used in this class, follow the [*Vulkan Tutorial*](https://vulkan-tutorial.com/) or [*Vulkan Guide*](https://vkguide.dev/). It's recommended to have existing modern OpenGL or Direct3D 11 knowledge before attempting to learn a low-level graphics API.
 
@@ -25,104 +25,119 @@ On startup, Godot creates a global **RenderingDevice** which can be retrieved us
 
 ## 方法
 
-| `void`                                                 | [`barrier`](#class_renderingdevice_method_barrier) ( from: [BarrierMask](#enum_renderingdevice_barriermask) = 32767, to: [BarrierMask](#enum_renderingdevice_barriermask) = 32767 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [Error](#enum_@globalscope_error)                      | [`buffer_clear`](#class_renderingdevice_method_buffer_clear) ( buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md), size_bytes: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [Error](#enum_@globalscope_error)                      | [`buffer_copy`](#class_renderingdevice_method_buffer_copy) ( src_buffer: [`RID`](class_rid.md), dst_buffer: [`RID`](class_rid.md), src_offset: [`int`](class_int.md), dst_offset: [`int`](class_int.md), size: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [`PackedByteArray`](class_packedbytearray.md)          | [`buffer_get_data`](#class_renderingdevice_method_buffer_get_data) ( buffer: [`RID`](class_rid.md), offset_bytes: [`int`](class_int.md) = 0, size_bytes: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [Error](#enum_@globalscope_error)                      | [`buffer_update`](#class_renderingdevice_method_buffer_update) ( buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md), size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| `void`                                                 | [`capture_timestamp`](#class_renderingdevice_method_capture_timestamp) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `void`                                                 | [`compute_list_add_barrier`](#class_renderingdevice_method_compute_list_add_barrier) ( compute_list: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`int`](class_int.md)                                  | [`compute_list_begin`](#class_renderingdevice_method_compute_list_begin) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `void`                                                 | [`compute_list_bind_compute_pipeline`](#class_renderingdevice_method_compute_list_bind_compute_pipeline) ( compute_list: [`int`](class_int.md), compute_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `void`                                                 | [`compute_list_bind_uniform_set`](#class_renderingdevice_method_compute_list_bind_uniform_set) ( compute_list: [`int`](class_int.md), uniform_set: [`RID`](class_rid.md), set_index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `void`                                                 | [`compute_list_dispatch`](#class_renderingdevice_method_compute_list_dispatch) ( compute_list: [`int`](class_int.md), x_groups: [`int`](class_int.md), y_groups: [`int`](class_int.md), z_groups: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `void`                                                 | [`compute_list_dispatch_indirect`](#class_renderingdevice_method_compute_list_dispatch_indirect) ( compute_list: [`int`](class_int.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `void`                                                 | [`compute_list_end`](#class_renderingdevice_method_compute_list_end) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `void`                                                 | [`compute_list_set_push_constant`](#class_renderingdevice_method_compute_list_set_push_constant) ( compute_list: [`int`](class_int.md), buffer: [`PackedByteArray`](class_packedbytearray.md), size_bytes: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`RID`](class_rid.md)                                  | [`compute_pipeline_create`](#class_renderingdevice_method_compute_pipeline_create) ( shader: [`RID`](class_rid.md), specialization_constants: [Array](class_array.md) [`RDPipelineSpecializationConstant`](class_rdpipelinespecializationconstant.md) = [] )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`bool`](class_bool.md)                                | [`compute_pipeline_is_valid`](#class_renderingdevice_method_compute_pipeline_is_valid) ( compute_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`RenderingDevice`](class_renderingdevice.md)          | [`create_local_device`](#class_renderingdevice_method_create_local_device) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `void`                                                 | [`draw_command_begin_label`](#class_renderingdevice_method_draw_command_begin_label) ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `void`                                                 | [`draw_command_end_label`](#class_renderingdevice_method_draw_command_end_label) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `void`                                                 | [`draw_command_insert_label`](#class_renderingdevice_method_draw_command_insert_label) ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [`int`](class_int.md)                                  | [`draw_list_begin`](#class_renderingdevice_method_draw_list_begin) ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )                                                                                                                                                                                                                                                                                |
-| [`int`](class_int.md)                                  | [`draw_list_begin_for_screen`](#class_renderingdevice_method_draw_list_begin_for_screen) ( screen: [`int`](class_int.md) = 0, clear_color: [`Color`](class_color.md) = Color(0, 0, 0, 1) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`PackedInt64Array`](class_packedint64array.md)        | [`draw_list_begin_split`](#class_renderingdevice_method_draw_list_begin_split) ( framebuffer: [`RID`](class_rid.md), splits: [`int`](class_int.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), storage_textures: [Array](class_array.md) [`RID`](class_rid.md) = [] )                                                                                                                                                               |
-| `void`                                                 | [`draw_list_bind_index_array`](#class_renderingdevice_method_draw_list_bind_index_array) ( draw_list: [`int`](class_int.md), index_array: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `void`                                                 | [`draw_list_bind_render_pipeline`](#class_renderingdevice_method_draw_list_bind_render_pipeline) ( draw_list: [`int`](class_int.md), render_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `void`                                                 | [`draw_list_bind_uniform_set`](#class_renderingdevice_method_draw_list_bind_uniform_set) ( draw_list: [`int`](class_int.md), uniform_set: [`RID`](class_rid.md), set_index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `void`                                                 | [`draw_list_bind_vertex_array`](#class_renderingdevice_method_draw_list_bind_vertex_array) ( draw_list: [`int`](class_int.md), vertex_array: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `void`                                                 | [`draw_list_disable_scissor`](#class_renderingdevice_method_draw_list_disable_scissor) ( draw_list: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `void`                                                 | [`draw_list_draw`](#class_renderingdevice_method_draw_list_draw) ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), instances: [`int`](class_int.md), procedural_vertex_count: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `void`                                                 | [`draw_list_enable_scissor`](#class_renderingdevice_method_draw_list_enable_scissor) ( draw_list: [`int`](class_int.md), rect: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `void`                                                 | [`draw_list_end`](#class_renderingdevice_method_draw_list_end) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `void`                                                 | [`draw_list_set_blend_constants`](#class_renderingdevice_method_draw_list_set_blend_constants) ( draw_list: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| `void`                                                 | [`draw_list_set_push_constant`](#class_renderingdevice_method_draw_list_set_push_constant) ( draw_list: [`int`](class_int.md), buffer: [`PackedByteArray`](class_packedbytearray.md), size_bytes: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                                  | [`draw_list_switch_to_next_pass`](#class_renderingdevice_method_draw_list_switch_to_next_pass) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`PackedInt64Array`](class_packedint64array.md)        | [`draw_list_switch_to_next_pass_split`](#class_renderingdevice_method_draw_list_switch_to_next_pass_split) ( splits: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`RID`](class_rid.md)                                  | [`framebuffer_create`](#class_renderingdevice_method_framebuffer_create) ( textures: [Array](class_array.md) [`RID`](class_rid.md), validate_with_format: [`int`](class_int.md) = -1, view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [`RID`](class_rid.md)                                  | [`framebuffer_create_empty`](#class_renderingdevice_method_framebuffer_create_empty) ( size: [`Vector2i`](class_vector2i.md), samples: [TextureSamples](#enum_renderingdevice_texturesamples) = 0, validate_with_format: [`int`](class_int.md) = -1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [`RID`](class_rid.md)                                  | [`framebuffer_create_multipass`](#class_renderingdevice_method_framebuffer_create_multipass) ( textures: [Array](class_array.md) [`RID`](class_rid.md), passes: [Array](class_array.md) [`RDFramebufferPass`](class_rdframebufferpass.md), validate_with_format: [`int`](class_int.md) = -1, view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [`int`](class_int.md)                                  | [`framebuffer_format_create`](#class_renderingdevice_method_framebuffer_format_create) ( attachments: [Array](class_array.md) [`RDAttachmentFormat`](class_rdattachmentformat.md), view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`int`](class_int.md)                                  | [`framebuffer_format_create_empty`](#class_renderingdevice_method_framebuffer_format_create_empty) ( samples: [TextureSamples](#enum_renderingdevice_texturesamples) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`int`](class_int.md)                                  | [`framebuffer_format_create_multipass`](#class_renderingdevice_method_framebuffer_format_create_multipass) ( attachments: [Array](class_array.md) [`RDAttachmentFormat`](class_rdattachmentformat.md), passes: [Array](class_array.md) [`RDFramebufferPass`](class_rdframebufferpass.md), view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [TextureSamples](#enum_renderingdevice_texturesamples) | [`framebuffer_format_get_texture_samples`](#class_renderingdevice_method_framebuffer_format_get_texture_samples) ( format: [`int`](class_int.md), render_pass: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`int`](class_int.md)                                  | [`framebuffer_get_format`](#class_renderingdevice_method_framebuffer_get_format) ( framebuffer: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                                | [`framebuffer_is_valid`](#class_renderingdevice_method_framebuffer_is_valid) ( framebuffer: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `void`                                                 | [`free_rid`](#class_renderingdevice_method_free_rid) ( rid: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `void`                                                 | [`full_barrier`](#class_renderingdevice_method_full_barrier) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`int`](class_int.md)                                  | [`get_captured_timestamp_cpu_time`](#class_renderingdevice_method_get_captured_timestamp_cpu_time) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [`int`](class_int.md)                                  | [`get_captured_timestamp_gpu_time`](#class_renderingdevice_method_get_captured_timestamp_gpu_time) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [`String`](class_string.md)                            | [`get_captured_timestamp_name`](#class_renderingdevice_method_get_captured_timestamp_name) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                                  | [`get_captured_timestamps_count`](#class_renderingdevice_method_get_captured_timestamps_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`int`](class_int.md)                                  | [`get_captured_timestamps_frame`](#class_renderingdevice_method_get_captured_timestamps_frame) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`String`](class_string.md)                            | [`get_device_name`](#class_renderingdevice_method_get_device_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [`String`](class_string.md)                            | [`get_device_pipeline_cache_uuid`](#class_renderingdevice_method_get_device_pipeline_cache_uuid) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`String`](class_string.md)                            | [`get_device_vendor_name`](#class_renderingdevice_method_get_device_vendor_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`int`](class_int.md)                                  | [`get_driver_resource`](#class_renderingdevice_method_get_driver_resource) ( resource: [DriverResource](#enum_renderingdevice_driverresource), rid: [`RID`](class_rid.md), index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                                  | [`get_frame_delay`](#class_renderingdevice_method_get_frame_delay) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [`int`](class_int.md)                                  | [`get_memory_usage`](#class_renderingdevice_method_get_memory_usage) ( type: [MemoryType](#enum_renderingdevice_memorytype) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [`RID`](class_rid.md)                                  | [`index_array_create`](#class_renderingdevice_method_index_array_create) ( index_buffer: [`RID`](class_rid.md), index_offset: [`int`](class_int.md), index_count: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`RID`](class_rid.md)                                  | [`index_buffer_create`](#class_renderingdevice_method_index_buffer_create) ( size_indices: [`int`](class_int.md), format: [IndexBufferFormat](#enum_renderingdevice_indexbufferformat), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), use_restart_indices: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [`int`](class_int.md)                                  | [`limit_get`](#class_renderingdevice_method_limit_get) ( limit: [Limit](#enum_renderingdevice_limit) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [`RID`](class_rid.md)                                  | [`render_pipeline_create`](#class_renderingdevice_method_render_pipeline_create) ( shader: [`RID`](class_rid.md), framebuffer_format: [`int`](class_int.md), vertex_format: [`int`](class_int.md), primitive: [RenderPrimitive](#enum_renderingdevice_renderprimitive), rasterization_state: [`RDPipelineRasterizationState`](class_rdpipelinerasterizationstate.md), multisample_state: [`RDPipelineMultisampleState`](class_rdpipelinemultisamplestate.md), stencil_state: [`RDPipelineDepthStencilState`](class_rdpipelinedepthstencilstate.md), color_blend_state: [`RDPipelineColorBlendState`](class_rdpipelinecolorblendstate.md), dynamic_state_flags: [PipelineDynamicStateFlags](#enum_renderingdevice_pipelinedynamicstateflags) = 0, for_render_pass: [`int`](class_int.md) = 0, specialization_constants: [Array](class_array.md) [`RDPipelineSpecializationConstant`](class_rdpipelinespecializationconstant.md) = [] ) |
-| [`bool`](class_bool.md)                                | [`render_pipeline_is_valid`](#class_renderingdevice_method_render_pipeline_is_valid) ( render_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [`RID`](class_rid.md)                                  | [`sampler_create`](#class_renderingdevice_method_sampler_create) ( state: [`RDSamplerState`](class_rdsamplerstate.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                                | [`sampler_is_format_supported_for_filter`](#class_renderingdevice_method_sampler_is_format_supported_for_filter) ( format: [DataFormat](#enum_renderingdevice_dataformat), sampler_filter: [SamplerFilter](#enum_renderingdevice_samplerfilter) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [`int`](class_int.md)                                  | [`screen_get_framebuffer_format`](#class_renderingdevice_method_screen_get_framebuffer_format) ( screen: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`int`](class_int.md)                                  | [`screen_get_height`](#class_renderingdevice_method_screen_get_height) ( screen: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`int`](class_int.md)                                  | [`screen_get_width`](#class_renderingdevice_method_screen_get_width) ( screen: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `void`                                                 | [`set_resource_name`](#class_renderingdevice_method_set_resource_name) ( id: [`RID`](class_rid.md), name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [`PackedByteArray`](class_packedbytearray.md)          | [`shader_compile_binary_from_spirv`](#class_renderingdevice_method_shader_compile_binary_from_spirv) ( spirv_data: [`RDShaderSPIRV`](class_rdshaderspirv.md), name: [`String`](class_string.md) = "" )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [`RDShaderSPIRV`](class_rdshaderspirv.md)              | [`shader_compile_spirv_from_source`](#class_renderingdevice_method_shader_compile_spirv_from_source) ( shader_source: [`RDShaderSource`](class_rdshadersource.md), allow_cache: [`bool`](class_bool.md) = true )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`RID`](class_rid.md)                                  | [`shader_create_from_bytecode`](#class_renderingdevice_method_shader_create_from_bytecode) ( binary_data: [`PackedByteArray`](class_packedbytearray.md), placeholder_rid: [`RID`](class_rid.md) = RID() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`RID`](class_rid.md)                                  | [`shader_create_from_spirv`](#class_renderingdevice_method_shader_create_from_spirv) ( spirv_data: [`RDShaderSPIRV`](class_rdshaderspirv.md), name: [`String`](class_string.md) = "" )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [`RID`](class_rid.md)                                  | [`shader_create_placeholder`](#class_renderingdevice_method_shader_create_placeholder) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`int`](class_int.md)                                  | [`shader_get_vertex_input_attribute_mask`](#class_renderingdevice_method_shader_get_vertex_input_attribute_mask) ( shader: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`RID`](class_rid.md)                                  | [`storage_buffer_create`](#class_renderingdevice_method_storage_buffer_create) ( size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), usage: [StorageBufferUsage](#enum_renderingdevice_storagebufferusage) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `void`                                                 | [`submit`](#class_renderingdevice_method_submit) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `void`                                                 | [`sync`](#class_renderingdevice_method_sync) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`RID`](class_rid.md)                                  | [`texture_buffer_create`](#class_renderingdevice_method_texture_buffer_create) ( size_bytes: [`int`](class_int.md), format: [DataFormat](#enum_renderingdevice_dataformat), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [Error](#enum_@globalscope_error)                      | [`texture_clear`](#class_renderingdevice_method_texture_clear) ( texture: [`RID`](class_rid.md), color: [`Color`](class_color.md), base_mipmap: [`int`](class_int.md), mipmap_count: [`int`](class_int.md), base_layer: [`int`](class_int.md), layer_count: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [Error](#enum_@globalscope_error)                      | [`texture_copy`](#class_renderingdevice_method_texture_copy) ( from_texture: [`RID`](class_rid.md), to_texture: [`RID`](class_rid.md), from_pos: [`Vector3`](class_vector3.md), to_pos: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md), src_mipmap: [`int`](class_int.md), dst_mipmap: [`int`](class_int.md), src_layer: [`int`](class_int.md), dst_layer: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [`RID`](class_rid.md)                                  | [`texture_create`](#class_renderingdevice_method_texture_create) ( format: [`RDTextureFormat`](class_rdtextureformat.md), view: [`RDTextureView`](class_rdtextureview.md), data: [Array](class_array.md) [`PackedByteArray`](class_packedbytearray.md) = [] )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [`RID`](class_rid.md)                                  | [`texture_create_from_extension`](#class_renderingdevice_method_texture_create_from_extension) ( type: [TextureType](#enum_renderingdevice_texturetype), format: [DataFormat](#enum_renderingdevice_dataformat), samples: [TextureSamples](#enum_renderingdevice_texturesamples), usage_flags: [TextureUsageBits](#enum_renderingdevice_textureusagebits), image: [`int`](class_int.md), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), layers: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [`RID`](class_rid.md)                                  | [`texture_create_shared`](#class_renderingdevice_method_texture_create_shared) ( view: [`RDTextureView`](class_rdtextureview.md), with_texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [`RID`](class_rid.md)                                  | [`texture_create_shared_from_slice`](#class_renderingdevice_method_texture_create_shared_from_slice) ( view: [`RDTextureView`](class_rdtextureview.md), with_texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), mipmap: [`int`](class_int.md), mipmaps: [`int`](class_int.md) = 1, slice_type: [TextureSliceType](#enum_renderingdevice_textureslicetype) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`PackedByteArray`](class_packedbytearray.md)          | [`texture_get_data`](#class_renderingdevice_method_texture_get_data) ( texture: [`RID`](class_rid.md), layer: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [`RDTextureFormat`](class_rdtextureformat.md)          | [`texture_get_format`](#class_renderingdevice_method_texture_get_format) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [`int`](class_int.md)                                  | [`texture_get_native_handle`](#class_renderingdevice_method_texture_get_native_handle) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)                                | [`texture_is_format_supported_for_usage`](#class_renderingdevice_method_texture_is_format_supported_for_usage) ( format: [DataFormat](#enum_renderingdevice_dataformat), usage_flags: [TextureUsageBits](#enum_renderingdevice_textureusagebits) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`bool`](class_bool.md)                                | [`texture_is_shared`](#class_renderingdevice_method_texture_is_shared) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)                                | [`texture_is_valid`](#class_renderingdevice_method_texture_is_valid) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [Error](#enum_@globalscope_error)                      | [`texture_resolve_multisample`](#class_renderingdevice_method_texture_resolve_multisample) ( from_texture: [`RID`](class_rid.md), to_texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [Error](#enum_@globalscope_error)                      | [`texture_update`](#class_renderingdevice_method_texture_update) ( texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [`RID`](class_rid.md)                                  | [`uniform_buffer_create`](#class_renderingdevice_method_uniform_buffer_create) ( size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [`RID`](class_rid.md)                                  | [`uniform_set_create`](#class_renderingdevice_method_uniform_set_create) ( uniforms: [Array](class_array.md) [`RDUniform`](class_rduniform.md), shader: [`RID`](class_rid.md), shader_set: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`bool`](class_bool.md)                                | [`uniform_set_is_valid`](#class_renderingdevice_method_uniform_set_is_valid) ( uniform_set: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [`RID`](class_rid.md)                                  | [`vertex_array_create`](#class_renderingdevice_method_vertex_array_create) ( vertex_count: [`int`](class_int.md), vertex_format: [`int`](class_int.md), src_buffers: [Array](class_array.md) [`RID`](class_rid.md), offsets: [`PackedInt64Array`](class_packedint64array.md) = PackedInt64Array() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [`RID`](class_rid.md)                                  | [`vertex_buffer_create`](#class_renderingdevice_method_vertex_buffer_create) ( size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), use_as_storage: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`int`](class_int.md)                                  | [`vertex_format_create`](#class_renderingdevice_method_vertex_format_create) ( vertex_descriptions: [Array](class_array.md) [`RDVertexAttribute`](class_rdvertexattribute.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|||
+|:-:|:--|
+| `void`                                                 | [`barrier`](class_renderingdevice.md#class_renderingdevice_method_barrier) ( from: [BarrierMask](#enum_renderingdevice_barriermask) = 32767, to: [BarrierMask](#enum_renderingdevice_barriermask) = 32767 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [Error](#enum_@globalscope_error)                      | [`buffer_clear`](class_renderingdevice.md#class_renderingdevice_method_buffer_clear) ( buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md), size_bytes: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [Error](#enum_@globalscope_error)                      | [`buffer_copy`](class_renderingdevice.md#class_renderingdevice_method_buffer_copy) ( src_buffer: [`RID`](class_rid.md), dst_buffer: [`RID`](class_rid.md), src_offset: [`int`](class_int.md), dst_offset: [`int`](class_int.md), size: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`PackedByteArray`](class_packedbytearray.md)          | [`buffer_get_data`](class_renderingdevice.md#class_renderingdevice_method_buffer_get_data) ( buffer: [`RID`](class_rid.md), offset_bytes: [`int`](class_int.md) = 0, size_bytes: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [Error](#enum_@globalscope_error)                      | [`buffer_update`](class_renderingdevice.md#class_renderingdevice_method_buffer_update) ( buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md), size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `void`                                                 | [`capture_timestamp`](class_renderingdevice.md#class_renderingdevice_method_capture_timestamp) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `void`                                                 | [`compute_list_add_barrier`](class_renderingdevice.md#class_renderingdevice_method_compute_list_add_barrier) ( compute_list: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`compute_list_begin`](class_renderingdevice.md#class_renderingdevice_method_compute_list_begin) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `void`                                                 | [`compute_list_bind_compute_pipeline`](class_renderingdevice.md#class_renderingdevice_method_compute_list_bind_compute_pipeline) ( compute_list: [`int`](class_int.md), compute_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `void`                                                 | [`compute_list_bind_uniform_set`](class_renderingdevice.md#class_renderingdevice_method_compute_list_bind_uniform_set) ( compute_list: [`int`](class_int.md), uniform_set: [`RID`](class_rid.md), set_index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `void`                                                 | [`compute_list_dispatch`](class_renderingdevice.md#class_renderingdevice_method_compute_list_dispatch) ( compute_list: [`int`](class_int.md), x_groups: [`int`](class_int.md), y_groups: [`int`](class_int.md), z_groups: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `void`                                                 | [`compute_list_dispatch_indirect`](class_renderingdevice.md#class_renderingdevice_method_compute_list_dispatch_indirect) ( compute_list: [`int`](class_int.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `void`                                                 | [`compute_list_end`](class_renderingdevice.md#class_renderingdevice_method_compute_list_end) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `void`                                                 | [`compute_list_set_push_constant`](class_renderingdevice.md#class_renderingdevice_method_compute_list_set_push_constant) ( compute_list: [`int`](class_int.md), buffer: [`PackedByteArray`](class_packedbytearray.md), size_bytes: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`RID`](class_rid.md)                                  | [`compute_pipeline_create`](class_renderingdevice.md#class_renderingdevice_method_compute_pipeline_create) ( shader: [`RID`](class_rid.md), specialization_constants: [Array](class_array.md) [`RDPipelineSpecializationConstant`](class_rdpipelinespecializationconstant.md) = [] )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`bool`](class_bool.md)                                | [`compute_pipeline_is_valid`](class_renderingdevice.md#class_renderingdevice_method_compute_pipeline_is_valid) ( compute_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`RenderingDevice`](class_renderingdevice.md)          | [`create_local_device`](class_renderingdevice.md#class_renderingdevice_method_create_local_device) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `void`                                                 | [`draw_command_begin_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_begin_label) ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `void`                                                 | [`draw_command_end_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_end_label) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `void`                                                 | [`draw_command_insert_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_insert_label) ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [`int`](class_int.md)                                  | [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin) ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), breadcrumb: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                         |
+| [`int`](class_int.md)                                  | [`draw_list_begin_for_screen`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin_for_screen) ( screen: [`int`](class_int.md) = 0, clear_color: [`Color`](class_color.md) = Color(0, 0, 0, 1) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`PackedInt64Array`](class_packedint64array.md)        | [`draw_list_begin_split`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin_split) ( framebuffer: [`RID`](class_rid.md), splits: [`int`](class_int.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), storage_textures: [Array](class_array.md) [`RID`](class_rid.md) = [] )                                                                                                                                                               |
+| `void`                                                 | [`draw_list_bind_index_array`](class_renderingdevice.md#class_renderingdevice_method_draw_list_bind_index_array) ( draw_list: [`int`](class_int.md), index_array: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `void`                                                 | [`draw_list_bind_render_pipeline`](class_renderingdevice.md#class_renderingdevice_method_draw_list_bind_render_pipeline) ( draw_list: [`int`](class_int.md), render_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `void`                                                 | [`draw_list_bind_uniform_set`](class_renderingdevice.md#class_renderingdevice_method_draw_list_bind_uniform_set) ( draw_list: [`int`](class_int.md), uniform_set: [`RID`](class_rid.md), set_index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `void`                                                 | [`draw_list_bind_vertex_array`](class_renderingdevice.md#class_renderingdevice_method_draw_list_bind_vertex_array) ( draw_list: [`int`](class_int.md), vertex_array: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `void`                                                 | [`draw_list_disable_scissor`](class_renderingdevice.md#class_renderingdevice_method_draw_list_disable_scissor) ( draw_list: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `void`                                                 | [`draw_list_draw`](class_renderingdevice.md#class_renderingdevice_method_draw_list_draw) ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), instances: [`int`](class_int.md), procedural_vertex_count: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `void`                                                 | [`draw_list_draw_indirect`](class_renderingdevice.md#class_renderingdevice_method_draw_list_draw_indirect) ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) = 0, draw_count: [`int`](class_int.md) = 1, stride: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `void`                                                 | [`draw_list_enable_scissor`](class_renderingdevice.md#class_renderingdevice_method_draw_list_enable_scissor) ( draw_list: [`int`](class_int.md), rect: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `void`                                                 | [`draw_list_end`](class_renderingdevice.md#class_renderingdevice_method_draw_list_end) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `void`                                                 | [`draw_list_set_blend_constants`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_blend_constants) ( draw_list: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `void`                                                 | [`draw_list_set_push_constant`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_push_constant) ( draw_list: [`int`](class_int.md), buffer: [`PackedByteArray`](class_packedbytearray.md), size_bytes: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                                  | [`draw_list_switch_to_next_pass`](class_renderingdevice.md#class_renderingdevice_method_draw_list_switch_to_next_pass) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`PackedInt64Array`](class_packedint64array.md)        | [`draw_list_switch_to_next_pass_split`](class_renderingdevice.md#class_renderingdevice_method_draw_list_switch_to_next_pass_split) ( splits: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`RID`](class_rid.md)                                  | [`framebuffer_create`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_create) ( textures: [Array](class_array.md) [`RID`](class_rid.md), validate_with_format: [`int`](class_int.md) = -1, view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [`RID`](class_rid.md)                                  | [`framebuffer_create_empty`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_create_empty) ( size: [`Vector2i`](class_vector2i.md), samples: [TextureSamples](#enum_renderingdevice_texturesamples) = 0, validate_with_format: [`int`](class_int.md) = -1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [`RID`](class_rid.md)                                  | [`framebuffer_create_multipass`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_create_multipass) ( textures: [Array](class_array.md) [`RID`](class_rid.md), passes: [Array](class_array.md) [`RDFramebufferPass`](class_rdframebufferpass.md), validate_with_format: [`int`](class_int.md) = -1, view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`int`](class_int.md)                                  | [`framebuffer_format_create`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_format_create) ( attachments: [Array](class_array.md) [`RDAttachmentFormat`](class_rdattachmentformat.md), view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`int`](class_int.md)                                  | [`framebuffer_format_create_empty`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_format_create_empty) ( samples: [TextureSamples](#enum_renderingdevice_texturesamples) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`int`](class_int.md)                                  | [`framebuffer_format_create_multipass`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_format_create_multipass) ( attachments: [Array](class_array.md) [`RDAttachmentFormat`](class_rdattachmentformat.md), passes: [Array](class_array.md) [`RDFramebufferPass`](class_rdframebufferpass.md), view_count: [`int`](class_int.md) = 1 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [TextureSamples](#enum_renderingdevice_texturesamples) | [`framebuffer_format_get_texture_samples`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_format_get_texture_samples) ( format: [`int`](class_int.md), render_pass: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`int`](class_int.md)                                  | [`framebuffer_get_format`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_get_format) ( framebuffer: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                                | [`framebuffer_is_valid`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_is_valid) ( framebuffer: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `void`                                                 | [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) ( rid: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `void`                                                 | [`full_barrier`](class_renderingdevice.md#class_renderingdevice_method_full_barrier) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`int`](class_int.md)                                  | [`get_captured_timestamp_cpu_time`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_cpu_time) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [`int`](class_int.md)                                  | [`get_captured_timestamp_gpu_time`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_gpu_time) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [`String`](class_string.md)                            | [`get_captured_timestamp_name`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_name) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                                  | [`get_captured_timestamps_count`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamps_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`int`](class_int.md)                                  | [`get_captured_timestamps_frame`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamps_frame) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`int`](class_int.md)                                  | [`get_device_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocation_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`get_device_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocs_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_device_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_memory_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`String`](class_string.md)                            | [`get_device_name`](class_renderingdevice.md#class_renderingdevice_method_get_device_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`String`](class_string.md)                            | [`get_device_pipeline_cache_uuid`](class_renderingdevice.md#class_renderingdevice_method_get_device_pipeline_cache_uuid) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_device_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_device_total_memory) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`String`](class_string.md)                            | [`get_device_vendor_name`](class_renderingdevice.md#class_renderingdevice_method_get_device_vendor_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_driver_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocation_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`get_driver_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocs_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`String`](class_string.md)                            | [`get_driver_and_device_memory_report`](class_renderingdevice.md#class_renderingdevice_method_get_driver_and_device_memory_report) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`get_driver_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_memory_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_driver_resource`](class_renderingdevice.md#class_renderingdevice_method_get_driver_resource) ( resource: [DriverResource](#enum_renderingdevice_driverresource), rid: [`RID`](class_rid.md), index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                                  | [`get_driver_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_driver_total_memory) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`int`](class_int.md)                                  | [`get_frame_delay`](class_renderingdevice.md#class_renderingdevice_method_get_frame_delay) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`int`](class_int.md)                                  | [`get_memory_usage`](class_renderingdevice.md#class_renderingdevice_method_get_memory_usage) ( type: [MemoryType](#enum_renderingdevice_memorytype) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [`String`](class_string.md)                            | [`get_perf_report`](class_renderingdevice.md#class_renderingdevice_method_get_perf_report) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`String`](class_string.md)                            | [`get_tracked_object_name`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_name) ( type_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`int`](class_int.md)                                  | [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`RID`](class_rid.md)                                  | [`index_array_create`](class_renderingdevice.md#class_renderingdevice_method_index_array_create) ( index_buffer: [`RID`](class_rid.md), index_offset: [`int`](class_int.md), index_count: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`RID`](class_rid.md)                                  | [`index_buffer_create`](class_renderingdevice.md#class_renderingdevice_method_index_buffer_create) ( size_indices: [`int`](class_int.md), format: [IndexBufferFormat](#enum_renderingdevice_indexbufferformat), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), use_restart_indices: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [`int`](class_int.md)                                  | [`limit_get`](class_renderingdevice.md#class_renderingdevice_method_limit_get) ( limit: [Limit](#enum_renderingdevice_limit) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`RID`](class_rid.md)                                  | [`render_pipeline_create`](class_renderingdevice.md#class_renderingdevice_method_render_pipeline_create) ( shader: [`RID`](class_rid.md), framebuffer_format: [`int`](class_int.md), vertex_format: [`int`](class_int.md), primitive: [RenderPrimitive](#enum_renderingdevice_renderprimitive), rasterization_state: [`RDPipelineRasterizationState`](class_rdpipelinerasterizationstate.md), multisample_state: [`RDPipelineMultisampleState`](class_rdpipelinemultisamplestate.md), stencil_state: [`RDPipelineDepthStencilState`](class_rdpipelinedepthstencilstate.md), color_blend_state: [`RDPipelineColorBlendState`](class_rdpipelinecolorblendstate.md), dynamic_state_flags: [PipelineDynamicStateFlags](#enum_renderingdevice_pipelinedynamicstateflags) = 0, for_render_pass: [`int`](class_int.md) = 0, specialization_constants: [Array](class_array.md) [`RDPipelineSpecializationConstant`](class_rdpipelinespecializationconstant.md) = [] ) |
+| [`bool`](class_bool.md)                                | [`render_pipeline_is_valid`](class_renderingdevice.md#class_renderingdevice_method_render_pipeline_is_valid) ( render_pipeline: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [`RID`](class_rid.md)                                  | [`sampler_create`](class_renderingdevice.md#class_renderingdevice_method_sampler_create) ( state: [`RDSamplerState`](class_rdsamplerstate.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                                | [`sampler_is_format_supported_for_filter`](class_renderingdevice.md#class_renderingdevice_method_sampler_is_format_supported_for_filter) ( format: [DataFormat](#enum_renderingdevice_dataformat), sampler_filter: [SamplerFilter](#enum_renderingdevice_samplerfilter) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [`int`](class_int.md)                                  | [`screen_get_framebuffer_format`](class_renderingdevice.md#class_renderingdevice_method_screen_get_framebuffer_format) ( screen: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`screen_get_height`](class_renderingdevice.md#class_renderingdevice_method_screen_get_height) ( screen: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`int`](class_int.md)                                  | [`screen_get_width`](class_renderingdevice.md#class_renderingdevice_method_screen_get_width) ( screen: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `void`                                                 | [`set_resource_name`](class_renderingdevice.md#class_renderingdevice_method_set_resource_name) ( id: [`RID`](class_rid.md), name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [`PackedByteArray`](class_packedbytearray.md)          | [`shader_compile_binary_from_spirv`](class_renderingdevice.md#class_renderingdevice_method_shader_compile_binary_from_spirv) ( spirv_data: [`RDShaderSPIRV`](class_rdshaderspirv.md), name: [`String`](class_string.md) = "" )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`RDShaderSPIRV`](class_rdshaderspirv.md)              | [`shader_compile_spirv_from_source`](class_renderingdevice.md#class_renderingdevice_method_shader_compile_spirv_from_source) ( shader_source: [`RDShaderSource`](class_rdshadersource.md), allow_cache: [`bool`](class_bool.md) = true )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`RID`](class_rid.md)                                  | [`shader_create_from_bytecode`](class_renderingdevice.md#class_renderingdevice_method_shader_create_from_bytecode) ( binary_data: [`PackedByteArray`](class_packedbytearray.md), placeholder_rid: [`RID`](class_rid.md) = RID() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`RID`](class_rid.md)                                  | [`shader_create_from_spirv`](class_renderingdevice.md#class_renderingdevice_method_shader_create_from_spirv) ( spirv_data: [`RDShaderSPIRV`](class_rdshaderspirv.md), name: [`String`](class_string.md) = "" )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`RID`](class_rid.md)                                  | [`shader_create_placeholder`](class_renderingdevice.md#class_renderingdevice_method_shader_create_placeholder) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`int`](class_int.md)                                  | [`shader_get_vertex_input_attribute_mask`](class_renderingdevice.md#class_renderingdevice_method_shader_get_vertex_input_attribute_mask) ( shader: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`RID`](class_rid.md)                                  | [`storage_buffer_create`](class_renderingdevice.md#class_renderingdevice_method_storage_buffer_create) ( size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), usage: [StorageBufferUsage](#enum_renderingdevice_storagebufferusage) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `void`                                                 | [`submit`](class_renderingdevice.md#class_renderingdevice_method_submit) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `void`                                                 | [`sync`](class_renderingdevice.md#class_renderingdevice_method_sync) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`RID`](class_rid.md)                                  | [`texture_buffer_create`](class_renderingdevice.md#class_renderingdevice_method_texture_buffer_create) ( size_bytes: [`int`](class_int.md), format: [DataFormat](#enum_renderingdevice_dataformat), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [Error](#enum_@globalscope_error)                      | [`texture_clear`](class_renderingdevice.md#class_renderingdevice_method_texture_clear) ( texture: [`RID`](class_rid.md), color: [`Color`](class_color.md), base_mipmap: [`int`](class_int.md), mipmap_count: [`int`](class_int.md), base_layer: [`int`](class_int.md), layer_count: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [Error](#enum_@globalscope_error)                      | [`texture_copy`](class_renderingdevice.md#class_renderingdevice_method_texture_copy) ( from_texture: [`RID`](class_rid.md), to_texture: [`RID`](class_rid.md), from_pos: [`Vector3`](class_vector3.md), to_pos: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md), src_mipmap: [`int`](class_int.md), dst_mipmap: [`int`](class_int.md), src_layer: [`int`](class_int.md), dst_layer: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`RID`](class_rid.md)                                  | [`texture_create`](class_renderingdevice.md#class_renderingdevice_method_texture_create) ( format: [`RDTextureFormat`](class_rdtextureformat.md), view: [`RDTextureView`](class_rdtextureview.md), data: [Array](class_array.md) [`PackedByteArray`](class_packedbytearray.md) = [] )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [`RID`](class_rid.md)                                  | [`texture_create_from_extension`](class_renderingdevice.md#class_renderingdevice_method_texture_create_from_extension) ( type: [TextureType](#enum_renderingdevice_texturetype), format: [DataFormat](#enum_renderingdevice_dataformat), samples: [TextureSamples](#enum_renderingdevice_texturesamples), usage_flags: [TextureUsageBits](#enum_renderingdevice_textureusagebits), image: [`int`](class_int.md), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), layers: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [`RID`](class_rid.md)                                  | [`texture_create_shared`](class_renderingdevice.md#class_renderingdevice_method_texture_create_shared) ( view: [`RDTextureView`](class_rdtextureview.md), with_texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [`RID`](class_rid.md)                                  | [`texture_create_shared_from_slice`](class_renderingdevice.md#class_renderingdevice_method_texture_create_shared_from_slice) ( view: [`RDTextureView`](class_rdtextureview.md), with_texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), mipmap: [`int`](class_int.md), mipmaps: [`int`](class_int.md) = 1, slice_type: [TextureSliceType](#enum_renderingdevice_textureslicetype) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [`PackedByteArray`](class_packedbytearray.md)          | [`texture_get_data`](class_renderingdevice.md#class_renderingdevice_method_texture_get_data) ( texture: [`RID`](class_rid.md), layer: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [`RDTextureFormat`](class_rdtextureformat.md)          | [`texture_get_format`](class_renderingdevice.md#class_renderingdevice_method_texture_get_format) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [`int`](class_int.md)                                  | [`texture_get_native_handle`](class_renderingdevice.md#class_renderingdevice_method_texture_get_native_handle) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)                                | [`texture_is_format_supported_for_usage`](class_renderingdevice.md#class_renderingdevice_method_texture_is_format_supported_for_usage) ( format: [DataFormat](#enum_renderingdevice_dataformat), usage_flags: [TextureUsageBits](#enum_renderingdevice_textureusagebits) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`bool`](class_bool.md)                                | [`texture_is_shared`](class_renderingdevice.md#class_renderingdevice_method_texture_is_shared) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)                                | [`texture_is_valid`](class_renderingdevice.md#class_renderingdevice_method_texture_is_valid) ( texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [Error](#enum_@globalscope_error)                      | [`texture_resolve_multisample`](class_renderingdevice.md#class_renderingdevice_method_texture_resolve_multisample) ( from_texture: [`RID`](class_rid.md), to_texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [Error](#enum_@globalscope_error)                      | [`texture_update`](class_renderingdevice.md#class_renderingdevice_method_texture_update) ( texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`RID`](class_rid.md)                                  | [`uniform_buffer_create`](class_renderingdevice.md#class_renderingdevice_method_uniform_buffer_create) ( size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [`RID`](class_rid.md)                                  | [`uniform_set_create`](class_renderingdevice.md#class_renderingdevice_method_uniform_set_create) ( uniforms: [Array](class_array.md) [`RDUniform`](class_rduniform.md), shader: [`RID`](class_rid.md), shader_set: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`bool`](class_bool.md)                                | [`uniform_set_is_valid`](class_renderingdevice.md#class_renderingdevice_method_uniform_set_is_valid) ( uniform_set: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [`RID`](class_rid.md)                                  | [`vertex_array_create`](class_renderingdevice.md#class_renderingdevice_method_vertex_array_create) ( vertex_count: [`int`](class_int.md), vertex_format: [`int`](class_int.md), src_buffers: [Array](class_array.md) [`RID`](class_rid.md), offsets: [`PackedInt64Array`](class_packedint64array.md) = PackedInt64Array() )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [`RID`](class_rid.md)                                  | [`vertex_buffer_create`](class_renderingdevice.md#class_renderingdevice_method_vertex_buffer_create) ( size_bytes: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), use_as_storage: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`vertex_format_create`](class_renderingdevice.md#class_renderingdevice_method_vertex_format_create) ( vertex_descriptions: [Array](class_array.md) [`RDVertexAttribute`](class_rdvertexattribute.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -144,25 +159,25 @@ Rendering device type does not match any of the other enum values or is unknown.
 
 [DeviceType](#enum_renderingdevice_devicetype) **DEVICE_TYPE_INTEGRATED_GPU** = ``1``
 
-Rendering device is an integrated GPU, which is typically *(but not always)* slower than dedicated GPUs ([`DEVICE_TYPE_DISCRETE_GPU`](#class_renderingdevice_constant_device_type_discrete_gpu)). On Android and iOS, the rendering device type is always considered to be [`DEVICE_TYPE_INTEGRATED_GPU`](#class_renderingdevice_constant_device_type_integrated_gpu).
+Rendering device is an integrated GPU, which is typically *(but not always)* slower than dedicated GPUs ([`DEVICE_TYPE_DISCRETE_GPU`](class_renderingdevice.md#class_renderingdevice_constant_device_type_discrete_gpu)). On Android and iOS, the rendering device type is always considered to be [`DEVICE_TYPE_INTEGRATED_GPU`](class_renderingdevice.md#class_renderingdevice_constant_device_type_integrated_gpu).
 
 <div id="_class_renderingdevice_constant_device_type_discrete_gpu"></div>
 
 [DeviceType](#enum_renderingdevice_devicetype) **DEVICE_TYPE_DISCRETE_GPU** = ``2``
 
-Rendering device is a dedicated GPU, which is typically *(but not always)* faster than integrated GPUs ([`DEVICE_TYPE_INTEGRATED_GPU`](#class_renderingdevice_constant_device_type_integrated_gpu)).
+Rendering device is a dedicated GPU, which is typically *(but not always)* faster than integrated GPUs ([`DEVICE_TYPE_INTEGRATED_GPU`](class_renderingdevice.md#class_renderingdevice_constant_device_type_integrated_gpu)).
 
 <div id="_class_renderingdevice_constant_device_type_virtual_gpu"></div>
 
 [DeviceType](#enum_renderingdevice_devicetype) **DEVICE_TYPE_VIRTUAL_GPU** = ``3``
 
-Rendering device is an emulated GPU in a virtual environment. This is typically much slower than the host GPU, which means the expected performance level on a dedicated GPU will be roughly equivalent to [`DEVICE_TYPE_INTEGRATED_GPU`](#class_renderingdevice_constant_device_type_integrated_gpu). Virtual machine GPU passthrough (such as VFIO) will not report the device type as [`DEVICE_TYPE_VIRTUAL_GPU`](#class_renderingdevice_constant_device_type_virtual_gpu). Instead, the host GPU's device type will be reported as if the GPU was not emulated.
+Rendering device is an emulated GPU in a virtual environment. This is typically much slower than the host GPU, which means the expected performance level on a dedicated GPU will be roughly equivalent to [`DEVICE_TYPE_INTEGRATED_GPU`](class_renderingdevice.md#class_renderingdevice_constant_device_type_integrated_gpu). Virtual machine GPU passthrough (such as VFIO) will not report the device type as [`DEVICE_TYPE_VIRTUAL_GPU`](class_renderingdevice.md#class_renderingdevice_constant_device_type_virtual_gpu). Instead, the host GPU's device type will be reported as if the GPU was not emulated.
 
 <div id="_class_renderingdevice_constant_device_type_cpu"></div>
 
 [DeviceType](#enum_renderingdevice_devicetype) **DEVICE_TYPE_CPU** = ``4``
 
-Rendering device is provided by software emulation (such as Lavapipe or [*SwiftShader*](https://github.com/google/swiftshader)). This is the slowest kind of rendering device available; it's typically much slower than [`DEVICE_TYPE_INTEGRATED_GPU`](#class_renderingdevice_constant_device_type_integrated_gpu).
+Rendering device is provided by software emulation (such as Lavapipe or [*SwiftShader*](https://github.com/google/swiftshader)). This is the slowest kind of rendering device available; it's typically much slower than [`DEVICE_TYPE_INTEGRATED_GPU`](class_renderingdevice.md#class_renderingdevice_constant_device_type_integrated_gpu).
 
 <div id="_class_renderingdevice_constant_device_type_max"></div>
 
@@ -276,7 +291,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_DEVICE** = ``0``
 
-**已弃用：** Use [`DRIVER_RESOURCE_LOGICAL_DEVICE`](#class_renderingdevice_constant_driver_resource_logical_device) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_LOGICAL_DEVICE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_logical_device) instead.
 
 
 
@@ -284,7 +299,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_PHYSICAL_DEVICE** = ``1``
 
-**已弃用：** Use [`DRIVER_RESOURCE_PHYSICAL_DEVICE`](#class_renderingdevice_constant_driver_resource_physical_device) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_PHYSICAL_DEVICE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_physical_device) instead.
 
 
 
@@ -292,7 +307,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_INSTANCE** = ``2``
 
-**已弃用：** Use [`DRIVER_RESOURCE_TOPMOST_OBJECT`](#class_renderingdevice_constant_driver_resource_topmost_object) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_TOPMOST_OBJECT`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_topmost_object) instead.
 
 
 
@@ -300,7 +315,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_QUEUE** = ``3``
 
-**已弃用：** Use [`DRIVER_RESOURCE_COMMAND_QUEUE`](#class_renderingdevice_constant_driver_resource_command_queue) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_COMMAND_QUEUE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_command_queue) instead.
 
 
 
@@ -308,7 +323,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_QUEUE_FAMILY_INDEX** = ``4``
 
-**已弃用：** Use [`DRIVER_RESOURCE_QUEUE_FAMILY`](#class_renderingdevice_constant_driver_resource_queue_family) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_QUEUE_FAMILY`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_queue_family) instead.
 
 
 
@@ -316,7 +331,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_IMAGE** = ``5``
 
-**已弃用：** Use [`DRIVER_RESOURCE_TEXTURE`](#class_renderingdevice_constant_driver_resource_texture) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_TEXTURE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_texture) instead.
 
 
 
@@ -324,7 +339,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_IMAGE_VIEW** = ``6``
 
-**已弃用：** Use [`DRIVER_RESOURCE_TEXTURE_VIEW`](#class_renderingdevice_constant_driver_resource_texture_view) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_TEXTURE_VIEW`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_texture_view) instead.
 
 
 
@@ -332,7 +347,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_IMAGE_NATIVE_TEXTURE_FORMAT** = ``7``
 
-**已弃用：** Use [`DRIVER_RESOURCE_TEXTURE_DATA_FORMAT`](#class_renderingdevice_constant_driver_resource_texture_data_format) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_TEXTURE_DATA_FORMAT`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_texture_data_format) instead.
 
 
 
@@ -340,7 +355,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_SAMPLER** = ``8``
 
-**已弃用：** Use [`DRIVER_RESOURCE_SAMPLER`](#class_renderingdevice_constant_driver_resource_sampler) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_SAMPLER`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_sampler) instead.
 
 
 
@@ -348,7 +363,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_DESCRIPTOR_SET** = ``9``
 
-**已弃用：** Use [`DRIVER_RESOURCE_UNIFORM_SET`](#class_renderingdevice_constant_driver_resource_uniform_set) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_UNIFORM_SET`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_uniform_set) instead.
 
 
 
@@ -356,7 +371,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_BUFFER** = ``10``
 
-**已弃用：** Use [`DRIVER_RESOURCE_BUFFER`](#class_renderingdevice_constant_driver_resource_buffer) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_BUFFER`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_buffer) instead.
 
 
 
@@ -364,7 +379,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_COMPUTE_PIPELINE** = ``11``
 
-**已弃用：** Use [`DRIVER_RESOURCE_COMPUTE_PIPELINE`](#class_renderingdevice_constant_driver_resource_compute_pipeline) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_COMPUTE_PIPELINE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_compute_pipeline) instead.
 
 
 
@@ -372,7 +387,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 [DriverResource](#enum_renderingdevice_driverresource) **DRIVER_RESOURCE_VULKAN_RENDER_PIPELINE** = ``12``
 
-**已弃用：** Use [`DRIVER_RESOURCE_RENDER_PIPELINE`](#class_renderingdevice_constant_driver_resource_render_pipeline) instead.
+**已弃用：** Use [`DRIVER_RESOURCE_RENDER_PIPELINE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_render_pipeline) instead.
 
 
 
@@ -1904,25 +1919,25 @@ Texture can be used as a [*storage image*](https://registry.khronos.org/vulkan/s
 
 [TextureUsageBits](#enum_renderingdevice_textureusagebits) **TEXTURE_USAGE_CPU_READ_BIT** = ``32``
 
-Texture can be read back on the CPU using [`texture_get_data`](#class_renderingdevice_method_texture_get_data) faster than without this bit, since it is always kept in the system memory.
+Texture can be read back on the CPU using [`texture_get_data`](class_renderingdevice.md#class_renderingdevice_method_texture_get_data) faster than without this bit, since it is always kept in the system memory.
 
 <div id="_class_renderingdevice_constant_texture_usage_can_update_bit"></div>
 
 [TextureUsageBits](#enum_renderingdevice_textureusagebits) **TEXTURE_USAGE_CAN_UPDATE_BIT** = ``64``
 
-Texture can be updated using [`texture_update`](#class_renderingdevice_method_texture_update).
+Texture can be updated using [`texture_update`](class_renderingdevice.md#class_renderingdevice_method_texture_update).
 
 <div id="_class_renderingdevice_constant_texture_usage_can_copy_from_bit"></div>
 
 [TextureUsageBits](#enum_renderingdevice_textureusagebits) **TEXTURE_USAGE_CAN_COPY_FROM_BIT** = ``128``
 
-Texture can be a source for [`texture_copy`](#class_renderingdevice_method_texture_copy).
+Texture can be a source for [`texture_copy`](class_renderingdevice.md#class_renderingdevice_method_texture_copy).
 
 <div id="_class_renderingdevice_constant_texture_usage_can_copy_to_bit"></div>
 
 [TextureUsageBits](#enum_renderingdevice_textureusagebits) **TEXTURE_USAGE_CAN_COPY_TO_BIT** = ``256``
 
-Texture can be a destination for [`texture_copy`](#class_renderingdevice_method_texture_copy).
+Texture can be a destination for [`texture_copy`](class_renderingdevice.md#class_renderingdevice_method_texture_copy).
 
 <div id="_class_renderingdevice_constant_texture_usage_input_attachment_bit"></div>
 
@@ -2062,7 +2077,7 @@ Sample with repeating disabled. When sampling outside the `[0.0, 1.0]` range, re
 
 [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode) **SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER** = ``3``
 
-Sample with repeating disabled. When sampling outside the `[0.0, 1.0]` range, return the specified [`RDSamplerState.border_color`](#class_rdsamplerstate_property_border_color).
+Sample with repeating disabled. When sampling outside the `[0.0, 1.0]` range, return the specified [`RDSamplerState.border_color`](class_rdsamplerstate.md#class_rdsamplerstate_property_border_color).
 
 <div id="_class_renderingdevice_constant_sampler_repeat_mode_mirror_clamp_to_edge"></div>
 
@@ -2088,37 +2103,37 @@ enum **SamplerBorderColor**: <div id="enum_renderingdevice_samplerbordercolor"><
 
 [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **SAMPLER_BORDER_COLOR_FLOAT_TRANSPARENT_BLACK** = ``0``
 
-Return a floating-point transparent black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
+Return a floating-point transparent black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](class_renderingdevice.md#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
 
 <div id="_class_renderingdevice_constant_sampler_border_color_int_transparent_black"></div>
 
 [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **SAMPLER_BORDER_COLOR_INT_TRANSPARENT_BLACK** = ``1``
 
-Return a integer transparent black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
+Return a integer transparent black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](class_renderingdevice.md#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
 
 <div id="_class_renderingdevice_constant_sampler_border_color_float_opaque_black"></div>
 
 [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **SAMPLER_BORDER_COLOR_FLOAT_OPAQUE_BLACK** = ``2``
 
-Return a floating-point opaque black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
+Return a floating-point opaque black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](class_renderingdevice.md#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
 
 <div id="_class_renderingdevice_constant_sampler_border_color_int_opaque_black"></div>
 
 [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **SAMPLER_BORDER_COLOR_INT_OPAQUE_BLACK** = ``3``
 
-Return a integer opaque black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
+Return a integer opaque black color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](class_renderingdevice.md#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
 
 <div id="_class_renderingdevice_constant_sampler_border_color_float_opaque_white"></div>
 
 [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **SAMPLER_BORDER_COLOR_FLOAT_OPAQUE_WHITE** = ``4``
 
-Return a floating-point opaque white color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
+Return a floating-point opaque white color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](class_renderingdevice.md#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
 
 <div id="_class_renderingdevice_constant_sampler_border_color_int_opaque_white"></div>
 
 [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **SAMPLER_BORDER_COLOR_INT_OPAQUE_WHITE** = ``5``
 
-Return a integer opaque white color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
+Return a integer opaque white color when sampling outside the `[0.0, 1.0]` range. Only effective if the sampler repeat mode is [`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER`](class_renderingdevice.md#class_renderingdevice_constant_sampler_repeat_mode_clamp_to_border).
 
 <div id="_class_renderingdevice_constant_sampler_border_color_max"></div>
 
@@ -2466,7 +2481,7 @@ enum **CompareOperator**: <div id="enum_renderingdevice_compareoperator"></div>
 
 [CompareOperator](#enum_renderingdevice_compareoperator) **COMPARE_OP_NEVER** = ``0``
 
-"Never" comparison (opposite of [`COMPARE_OP_ALWAYS`](#class_renderingdevice_constant_compare_op_always)).
+"Never" comparison (opposite of [`COMPARE_OP_ALWAYS`](class_renderingdevice.md#class_renderingdevice_constant_compare_op_always)).
 
 <div id="_class_renderingdevice_constant_compare_op_less"></div>
 
@@ -2508,7 +2523,7 @@ enum **CompareOperator**: <div id="enum_renderingdevice_compareoperator"></div>
 
 [CompareOperator](#enum_renderingdevice_compareoperator) **COMPARE_OP_ALWAYS** = ``7``
 
-"Always" comparison (opposite of [`COMPARE_OP_NEVER`](#class_renderingdevice_constant_compare_op_never)).
+"Always" comparison (opposite of [`COMPARE_OP_NEVER`](class_renderingdevice.md#class_renderingdevice_constant_compare_op_never)).
 
 <div id="_class_renderingdevice_constant_compare_op_max"></div>
 
@@ -2528,7 +2543,7 @@ enum **LogicOperation**: <div id="enum_renderingdevice_logicoperation"></div>
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_CLEAR** = ``0``
 
-Clear logic operation (result is always `0`). See also [`LOGIC_OP_SET`](#class_renderingdevice_constant_logic_op_set).
+Clear logic operation (result is always `0`). See also [`LOGIC_OP_SET`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_set).
 
 <div id="_class_renderingdevice_constant_logic_op_and"></div>
 
@@ -2540,25 +2555,25 @@ AND logic operation.
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_AND_REVERSE** = ``2``
 
-AND logic operation with the *destination* operand being inverted. See also [`LOGIC_OP_AND_INVERTED`](#class_renderingdevice_constant_logic_op_and_inverted).
+AND logic operation with the *destination* operand being inverted. See also [`LOGIC_OP_AND_INVERTED`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_and_inverted).
 
 <div id="_class_renderingdevice_constant_logic_op_copy"></div>
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_COPY** = ``3``
 
-Copy logic operation (keeps the *source* value as-is). See also [`LOGIC_OP_COPY_INVERTED`](#class_renderingdevice_constant_logic_op_copy_inverted) and [`LOGIC_OP_NO_OP`](#class_renderingdevice_constant_logic_op_no_op).
+Copy logic operation (keeps the *source* value as-is). See also [`LOGIC_OP_COPY_INVERTED`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_copy_inverted) and [`LOGIC_OP_NO_OP`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_no_op).
 
 <div id="_class_renderingdevice_constant_logic_op_and_inverted"></div>
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_AND_INVERTED** = ``4``
 
-AND logic operation with the *source* operand being inverted. See also [`LOGIC_OP_AND_REVERSE`](#class_renderingdevice_constant_logic_op_and_reverse).
+AND logic operation with the *source* operand being inverted. See also [`LOGIC_OP_AND_REVERSE`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_and_reverse).
 
 <div id="_class_renderingdevice_constant_logic_op_no_op"></div>
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_NO_OP** = ``5``
 
-No-op logic operation (keeps the *destination* value as-is). See also [`LOGIC_OP_COPY`](#class_renderingdevice_constant_logic_op_copy).
+No-op logic operation (keeps the *destination* value as-is). See also [`LOGIC_OP_COPY`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_copy).
 
 <div id="_class_renderingdevice_constant_logic_op_xor"></div>
 
@@ -2594,19 +2609,19 @@ Invert logic operation.
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_OR_REVERSE** = ``11``
 
-OR logic operation with the *destination* operand being inverted. See also [`LOGIC_OP_OR_REVERSE`](#class_renderingdevice_constant_logic_op_or_reverse).
+OR logic operation with the *destination* operand being inverted. See also [`LOGIC_OP_OR_REVERSE`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_or_reverse).
 
 <div id="_class_renderingdevice_constant_logic_op_copy_inverted"></div>
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_COPY_INVERTED** = ``12``
 
-NOT logic operation (inverts the value). See also [`LOGIC_OP_COPY`](#class_renderingdevice_constant_logic_op_copy).
+NOT logic operation (inverts the value). See also [`LOGIC_OP_COPY`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_copy).
 
 <div id="_class_renderingdevice_constant_logic_op_or_inverted"></div>
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_OR_INVERTED** = ``13``
 
-OR logic operation with the *source* operand being inverted. See also [`LOGIC_OP_OR_REVERSE`](#class_renderingdevice_constant_logic_op_or_reverse).
+OR logic operation with the *source* operand being inverted. See also [`LOGIC_OP_OR_REVERSE`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_or_reverse).
 
 <div id="_class_renderingdevice_constant_logic_op_nand"></div>
 
@@ -2618,7 +2633,7 @@ Not-AND (NAND) logic operation.
 
 [LogicOperation](#enum_renderingdevice_logicoperation) **LOGIC_OP_SET** = ``15``
 
-SET logic operation (result is always `1`). See also [`LOGIC_OP_CLEAR`](#class_renderingdevice_constant_logic_op_clear).
+SET logic operation (result is always `1`). See also [`LOGIC_OP_CLEAR`](class_renderingdevice.md#class_renderingdevice_constant_logic_op_clear).
 
 <div id="_class_renderingdevice_constant_logic_op_max"></div>
 
@@ -2698,25 +2713,25 @@ Color and alpha blend factor is `1.0 - destination alpha`.
 
 [BlendFactor](#enum_renderingdevice_blendfactor) **BLEND_FACTOR_CONSTANT_COLOR** = ``10``
 
-Color blend factor is `blend constant color`. Alpha blend factor is `blend constant alpha` (see [`draw_list_set_blend_constants`](#class_renderingdevice_method_draw_list_set_blend_constants)).
+Color blend factor is `blend constant color`. Alpha blend factor is `blend constant alpha` (see [`draw_list_set_blend_constants`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_blend_constants)).
 
 <div id="_class_renderingdevice_constant_blend_factor_one_minus_constant_color"></div>
 
 [BlendFactor](#enum_renderingdevice_blendfactor) **BLEND_FACTOR_ONE_MINUS_CONSTANT_COLOR** = ``11``
 
-Color blend factor is `1.0 - blend constant color`. Alpha blend factor is `1.0 - blend constant alpha` (see [`draw_list_set_blend_constants`](#class_renderingdevice_method_draw_list_set_blend_constants)).
+Color blend factor is `1.0 - blend constant color`. Alpha blend factor is `1.0 - blend constant alpha` (see [`draw_list_set_blend_constants`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_blend_constants)).
 
 <div id="_class_renderingdevice_constant_blend_factor_constant_alpha"></div>
 
 [BlendFactor](#enum_renderingdevice_blendfactor) **BLEND_FACTOR_CONSTANT_ALPHA** = ``12``
 
-Color and alpha blend factor is `blend constant alpha` (see [`draw_list_set_blend_constants`](#class_renderingdevice_method_draw_list_set_blend_constants)).
+Color and alpha blend factor is `blend constant alpha` (see [`draw_list_set_blend_constants`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_blend_constants)).
 
 <div id="_class_renderingdevice_constant_blend_factor_one_minus_constant_alpha"></div>
 
 [BlendFactor](#enum_renderingdevice_blendfactor) **BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA** = ``13``
 
-Color and alpha blend factor is `1.0 - blend constant alpha` (see [`draw_list_set_blend_constants`](#class_renderingdevice_method_draw_list_set_blend_constants)).
+Color and alpha blend factor is `1.0 - blend constant alpha` (see [`draw_list_set_blend_constants`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_blend_constants)).
 
 <div id="_class_renderingdevice_constant_blend_factor_src_alpha_saturate"></div>
 
@@ -2894,7 +2909,7 @@ Represents the size of the [InitialAction](#enum_renderingdevice_initialaction) 
 
 [InitialAction](#enum_renderingdevice_initialaction) **INITIAL_ACTION_CLEAR_REGION** = ``1``
 
-**已弃用：** Use [`INITIAL_ACTION_CLEAR`](#class_renderingdevice_constant_initial_action_clear) instead.
+**已弃用：** Use [`INITIAL_ACTION_CLEAR`](class_renderingdevice.md#class_renderingdevice_constant_initial_action_clear) instead.
 
 
 
@@ -2902,7 +2917,7 @@ Represents the size of the [InitialAction](#enum_renderingdevice_initialaction) 
 
 [InitialAction](#enum_renderingdevice_initialaction) **INITIAL_ACTION_CLEAR_REGION_CONTINUE** = ``1``
 
-**已弃用：** Use [`INITIAL_ACTION_LOAD`](#class_renderingdevice_constant_initial_action_load) instead.
+**已弃用：** Use [`INITIAL_ACTION_LOAD`](class_renderingdevice.md#class_renderingdevice_constant_initial_action_load) instead.
 
 
 
@@ -2910,7 +2925,7 @@ Represents the size of the [InitialAction](#enum_renderingdevice_initialaction) 
 
 [InitialAction](#enum_renderingdevice_initialaction) **INITIAL_ACTION_KEEP** = ``0``
 
-**已弃用：** Use [`INITIAL_ACTION_LOAD`](#class_renderingdevice_constant_initial_action_load) instead.
+**已弃用：** Use [`INITIAL_ACTION_LOAD`](class_renderingdevice.md#class_renderingdevice_constant_initial_action_load) instead.
 
 
 
@@ -2918,7 +2933,7 @@ Represents the size of the [InitialAction](#enum_renderingdevice_initialaction) 
 
 [InitialAction](#enum_renderingdevice_initialaction) **INITIAL_ACTION_DROP** = ``2``
 
-**已弃用：** Use [`INITIAL_ACTION_DISCARD`](#class_renderingdevice_constant_initial_action_discard) instead.
+**已弃用：** Use [`INITIAL_ACTION_DISCARD`](class_renderingdevice.md#class_renderingdevice_constant_initial_action_discard) instead.
 
 
 
@@ -2926,7 +2941,7 @@ Represents the size of the [InitialAction](#enum_renderingdevice_initialaction) 
 
 [InitialAction](#enum_renderingdevice_initialaction) **INITIAL_ACTION_CONTINUE** = ``0``
 
-**已弃用：** Use [`INITIAL_ACTION_LOAD`](#class_renderingdevice_constant_initial_action_load) instead.
+**已弃用：** Use [`INITIAL_ACTION_LOAD`](class_renderingdevice.md#class_renderingdevice_constant_initial_action_load) instead.
 
 
 
@@ -2960,7 +2975,7 @@ Represents the size of the [FinalAction](#enum_renderingdevice_finalaction) enum
 
 [FinalAction](#enum_renderingdevice_finalaction) **FINAL_ACTION_READ** = ``0``
 
-**已弃用：** Use [`FINAL_ACTION_STORE`](#class_renderingdevice_constant_final_action_store) instead.
+**已弃用：** Use [`FINAL_ACTION_STORE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_store) instead.
 
 
 
@@ -2968,7 +2983,7 @@ Represents the size of the [FinalAction](#enum_renderingdevice_finalaction) enum
 
 [FinalAction](#enum_renderingdevice_finalaction) **FINAL_ACTION_CONTINUE** = ``0``
 
-**已弃用：** Use [`FINAL_ACTION_STORE`](#class_renderingdevice_constant_final_action_store) instead.
+**已弃用：** Use [`FINAL_ACTION_STORE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_store) instead.
 
 
 
@@ -3020,31 +3035,31 @@ Represents the size of the [ShaderStage](#enum_renderingdevice_shaderstage) enum
 
 [ShaderStage](#enum_renderingdevice_shaderstage) **SHADER_STAGE_VERTEX_BIT** = ``1``
 
-Vertex shader stage bit (see also [`SHADER_STAGE_VERTEX`](#class_renderingdevice_constant_shader_stage_vertex)).
+Vertex shader stage bit (see also [`SHADER_STAGE_VERTEX`](class_renderingdevice.md#class_renderingdevice_constant_shader_stage_vertex)).
 
 <div id="_class_renderingdevice_constant_shader_stage_fragment_bit"></div>
 
 [ShaderStage](#enum_renderingdevice_shaderstage) **SHADER_STAGE_FRAGMENT_BIT** = ``2``
 
-Fragment shader stage bit (see also [`SHADER_STAGE_FRAGMENT`](#class_renderingdevice_constant_shader_stage_fragment)).
+Fragment shader stage bit (see also [`SHADER_STAGE_FRAGMENT`](class_renderingdevice.md#class_renderingdevice_constant_shader_stage_fragment)).
 
 <div id="_class_renderingdevice_constant_shader_stage_tesselation_control_bit"></div>
 
 [ShaderStage](#enum_renderingdevice_shaderstage) **SHADER_STAGE_TESSELATION_CONTROL_BIT** = ``4``
 
-Tessellation control shader stage bit (see also [`SHADER_STAGE_TESSELATION_CONTROL`](#class_renderingdevice_constant_shader_stage_tesselation_control)).
+Tessellation control shader stage bit (see also [`SHADER_STAGE_TESSELATION_CONTROL`](class_renderingdevice.md#class_renderingdevice_constant_shader_stage_tesselation_control)).
 
 <div id="_class_renderingdevice_constant_shader_stage_tesselation_evaluation_bit"></div>
 
 [ShaderStage](#enum_renderingdevice_shaderstage) **SHADER_STAGE_TESSELATION_EVALUATION_BIT** = ``8``
 
-Tessellation evaluation shader stage bit (see also [`SHADER_STAGE_TESSELATION_EVALUATION`](#class_renderingdevice_constant_shader_stage_tesselation_evaluation)).
+Tessellation evaluation shader stage bit (see also [`SHADER_STAGE_TESSELATION_EVALUATION`](class_renderingdevice.md#class_renderingdevice_constant_shader_stage_tesselation_evaluation)).
 
 <div id="_class_renderingdevice_constant_shader_stage_compute_bit"></div>
 
 [ShaderStage](#enum_renderingdevice_shaderstage) **SHADER_STAGE_COMPUTE_BIT** = ``16``
 
-Compute shader stage bit (see also [`SHADER_STAGE_COMPUTE`](#class_renderingdevice_constant_shader_stage_compute)).
+Compute shader stage bit (see also [`SHADER_STAGE_COMPUTE`](class_renderingdevice.md#class_renderingdevice_constant_shader_stage_compute)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3346,7 +3361,119 @@ Memory taken by buffers.
 
 [MemoryType](#enum_renderingdevice_memorytype) **MEMORY_TOTAL** = ``2``
 
-Total memory taken. This is greater than the sum of [`MEMORY_TEXTURES`](#class_renderingdevice_constant_memory_textures) and [`MEMORY_BUFFERS`](#class_renderingdevice_constant_memory_buffers), as it also includes miscellaneous memory usage.
+Total memory taken. This is greater than the sum of [`MEMORY_TEXTURES`](class_renderingdevice.md#class_renderingdevice_constant_memory_textures) and [`MEMORY_BUFFERS`](class_renderingdevice.md#class_renderingdevice_constant_memory_buffers), as it also includes miscellaneous memory usage.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enum_renderingdevice_breadcrumbmarker"></div>
+
+enum **BreadcrumbMarker**: <div id="enum_renderingdevice_breadcrumbmarker"></div>
+
+<div id="_class_renderingdevice_constant_none"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **NONE** = ``0``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_reflection_probes"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **REFLECTION_PROBES** = ``65536``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_sky_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **SKY_PASS** = ``131072``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_lightmapper_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **LIGHTMAPPER_PASS** = ``196608``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_shadow_pass_directional"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **SHADOW_PASS_DIRECTIONAL** = ``262144``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_shadow_pass_cube"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **SHADOW_PASS_CUBE** = ``327680``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_opaque_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **OPAQUE_PASS** = ``393216``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_alpha_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **ALPHA_PASS** = ``458752``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_transparent_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **TRANSPARENT_PASS** = ``524288``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_post_processing_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **POST_PROCESSING_PASS** = ``589824``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_blit_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **BLIT_PASS** = ``655360``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_ui_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **UI_PASS** = ``720896``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_debug_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **DEBUG_PASS** = ``786432``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -3396,9 +3523,9 @@ Prints an error if:
 
 - the region specified by `offset` + `size_bytes` exceeds the buffer
 
-- a draw list is currently active (created by [`draw_list_begin`](#class_renderingdevice_method_draw_list_begin))
+- a draw list is currently active (created by [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin))
 
-- a compute list is currently active (created by [`compute_list_begin`](#class_renderingdevice_method_compute_list_begin))
+- a compute list is currently active (created by [`compute_list_begin`](class_renderingdevice.md#class_renderingdevice_method_compute_list_begin))
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3414,9 +3541,9 @@ Prints an error if:
 
 - `size` exceeds the size of either `src_buffer` or `dst_buffer` at their corresponding offsets
 
-- a draw list is currently active (created by [`draw_list_begin`](#class_renderingdevice_method_draw_list_begin))
+- a draw list is currently active (created by [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin))
 
-- a compute list is currently active (created by [`compute_list_begin`](#class_renderingdevice_method_compute_list_begin))
+- a compute list is currently active (created by [`compute_list_begin`](class_renderingdevice.md#class_renderingdevice_method_compute_list_begin))
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3442,9 +3569,9 @@ Prints an error if:
 
 - the region specified by `offset` + `size_bytes` exceeds the buffer
 
-- a draw list is currently active (created by [`draw_list_begin`](#class_renderingdevice_method_draw_list_begin))
+- a draw list is currently active (created by [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin))
 
-- a compute list is currently active (created by [`compute_list_begin`](#class_renderingdevice_method_compute_list_begin))
+- a compute list is currently active (created by [`compute_list_begin`](class_renderingdevice.md#class_renderingdevice_method_compute_list_begin))
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3454,7 +3581,7 @@ Prints an error if:
 
 `void` **capture_timestamp** ( name: [`String`](class_string.md) )<div id="class_renderingdevice_method_capture_timestamp"></div>
 
-Creates a timestamp marker with the specified `name`. This is used for performance reporting with the [`get_captured_timestamp_cpu_time`](#class_renderingdevice_method_get_captured_timestamp_cpu_time), [`get_captured_timestamp_gpu_time`](#class_renderingdevice_method_get_captured_timestamp_gpu_time) and [`get_captured_timestamp_name`](#class_renderingdevice_method_get_captured_timestamp_name) methods.
+Creates a timestamp marker with the specified `name`. This is used for performance reporting with the [`get_captured_timestamp_cpu_time`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_cpu_time), [`get_captured_timestamp_gpu_time`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_gpu_time) and [`get_captured_timestamp_name`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_name) methods.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3476,7 +3603,7 @@ Raises a Vulkan compute barrier in the specified `compute_list`.
 
 Starts a list of compute commands created with the `compute_*` methods. The returned value should be passed to other `compute_list_*` functions.
 
-Multiple compute lists cannot be created at the same time; you must finish the previous compute list first using [`compute_list_end`](#class_renderingdevice_method_compute_list_end).
+Multiple compute lists cannot be created at the same time; you must finish the previous compute list first using [`compute_list_end`](class_renderingdevice.md#class_renderingdevice_method_compute_list_end).
 
 A simple compute operation might look like this (code is not a complete example):
 
@@ -3507,7 +3634,7 @@ A simple compute operation might look like this (code is not a complete example)
 
 `void` **compute_list_bind_compute_pipeline** ( compute_list: [`int`](class_int.md), compute_pipeline: [`RID`](class_rid.md) )<div id="class_renderingdevice_method_compute_list_bind_compute_pipeline"></div>
 
-Tells the GPU what compute pipeline to use when processing the compute list. If the shader has changed since the last time this function was called, Godot will unbind all descriptor sets and will re-bind them inside [`compute_list_dispatch`](#class_renderingdevice_method_compute_list_dispatch).
+Tells the GPU what compute pipeline to use when processing the compute list. If the shader has changed since the last time this function was called, Godot will unbind all descriptor sets and will re-bind them inside [`compute_list_dispatch`](class_renderingdevice.md#class_renderingdevice_method_compute_list_dispatch).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3527,7 +3654,7 @@ Binds the `uniform_set` to this `compute_list`. Godot ensures that all textures 
 
 `void` **compute_list_dispatch** ( compute_list: [`int`](class_int.md), x_groups: [`int`](class_int.md), y_groups: [`int`](class_int.md), z_groups: [`int`](class_int.md) )<div id="class_renderingdevice_method_compute_list_dispatch"></div>
 
-Submits the compute list for processing on the GPU. This is the compute equivalent to [`draw_list_draw`](#class_renderingdevice_method_draw_list_draw).
+Submits the compute list for processing on the GPU. This is the compute equivalent to [`draw_list_draw`](class_renderingdevice.md#class_renderingdevice_method_draw_list_draw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3537,7 +3664,7 @@ Submits the compute list for processing on the GPU. This is the compute equivale
 
 `void` **compute_list_dispatch_indirect** ( compute_list: [`int`](class_int.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) )<div id="class_renderingdevice_method_compute_list_dispatch_indirect"></div>
 
-Submits the compute list for processing on the GPU with the given group counts stored in the `buffer` at `offset`. Buffer must have been created with [`STORAGE_BUFFER_USAGE_DISPATCH_INDIRECT`](#class_renderingdevice_constant_storage_buffer_usage_dispatch_indirect) flag.
+Submits the compute list for processing on the GPU with the given group counts stored in the `buffer` at `offset`. Buffer must have been created with [`STORAGE_BUFFER_USAGE_DISPATCH_INDIRECT`](class_renderingdevice.md#class_renderingdevice_constant_storage_buffer_usage_dispatch_indirect) flag.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3557,7 +3684,7 @@ Finishes a list of compute commands created with the `compute_*` methods.
 
 `void` **compute_list_set_push_constant** ( compute_list: [`int`](class_int.md), buffer: [`PackedByteArray`](class_packedbytearray.md), size_bytes: [`int`](class_int.md) )<div id="class_renderingdevice_method_compute_list_set_push_constant"></div>
 
-Sets the push constant data to `buffer` for the specified `compute_list`. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in `size_bytes` (this can be obtained by calling the [`PackedByteArray.size`](#class_packedbytearray_method_size) method on the passed `buffer`).
+Sets the push constant data to `buffer` for the specified `compute_list`. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in `size_bytes` (this can be obtained by calling the [`PackedByteArray.size`](class_packedbytearray.md#class_packedbytearray_method_size) method on the passed `buffer`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3569,7 +3696,7 @@ Sets the push constant data to `buffer` for the specified `compute_list`. The sh
 
 Creates a new compute pipeline. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3599,9 +3726,9 @@ Create a new local **RenderingDevice**. This is most useful for performing compu
 
 `void` **draw_command_begin_label** ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )<div id="class_renderingdevice_method_draw_command_begin_label"></div>
 
-Create a command buffer debug label region that can be displayed in third-party tools such as [*RenderDoc*](https://renderdoc.org/). All regions must be ended with a [`draw_command_end_label`](#class_renderingdevice_method_draw_command_end_label) call. When viewed from the linear series of submissions to a single queue, calls to [`draw_command_begin_label`](#class_renderingdevice_method_draw_command_begin_label) and [`draw_command_end_label`](#class_renderingdevice_method_draw_command_end_label) must be matched and balanced.
+Create a command buffer debug label region that can be displayed in third-party tools such as [*RenderDoc*](https://renderdoc.org/). All regions must be ended with a [`draw_command_end_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_end_label) call. When viewed from the linear series of submissions to a single queue, calls to [`draw_command_begin_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_begin_label) and [`draw_command_end_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_end_label) must be matched and balanced.
 
-The `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension must be available and enabled for command buffer debug label region to work. See also [`draw_command_end_label`](#class_renderingdevice_method_draw_command_end_label).
+The `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension must be available and enabled for command buffer debug label region to work. See also [`draw_command_end_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_end_label).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3611,7 +3738,7 @@ The `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension must be available and e
 
 `void` **draw_command_end_label** ( )<div id="class_renderingdevice_method_draw_command_end_label"></div>
 
-Ends the command buffer debug label region started by a [`draw_command_begin_label`](#class_renderingdevice_method_draw_command_begin_label) call.
+Ends the command buffer debug label region started by a [`draw_command_begin_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_begin_label) call.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3631,11 +3758,11 @@ This method does nothing.
 
 <div id="_class_renderingdevice_method_draw_list_begin"></div>
 
-[`int`](class_int.md) **draw_list_begin** ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )<div id="class_renderingdevice_method_draw_list_begin"></div>
+[`int`](class_int.md) **draw_list_begin** ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), breadcrumb: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_draw_list_begin"></div>
 
 Starts a list of raster drawing commands created with the `draw_*` methods. The returned value should be passed to other `draw_list_*` functions.
 
-Multiple draw lists cannot be created at the same time; you must finish the previous draw list first using [`draw_list_end`](#class_renderingdevice_method_draw_list_end).
+Multiple draw lists cannot be created at the same time; you must finish the previous draw list first using [`draw_list_end`](class_renderingdevice.md#class_renderingdevice_method_draw_list_end).
 
 A simple drawing operation might look like this (code is not a complete example):
 
@@ -3643,7 +3770,7 @@ A simple drawing operation might look like this (code is not a complete example)
 
     var rd = RenderingDevice.new()
     var clear_colors = PackedColorArray([Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 0)])
-    var draw_list = rd.draw_list_begin(framebuffers[i], RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_READ, RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_DISCARD, clear_colors)
+    var draw_list = rd.draw_list_begin(framebuffers[i], RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_READ, RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_DISCARD, clear_colors, RenderingDevice.OPAQUE_PASS)
     
     # Draw opaque.
     rd.draw_list_bind_render_pipeline(draw_list, raster_pipeline)
@@ -3659,6 +3786,17 @@ A simple drawing operation might look like this (code is not a complete example)
     rd.draw_list_end()
 ```
 
+The `breadcrumb` parameter can be an arbitrary 32-bit integer that is useful to diagnose GPU crashes. If Godot is built in dev or debug mode; when the GPU crashes Godot will dump all shaders that were being executed at the time of the crash and the breadcrumb is useful to diagnose what passes did those shaders belong to.
+
+It does not affect rendering behavior and can be set to 0. It is recommended to use [BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) enumerations for consistency but it's not required. It is also possible to use bitwise operations to add extra data. e.g.
+
+```
+
+    rd.draw_list_begin(fb[i], RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_READ, RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_DISCARD, clear_colors, RenderingDevice.OPAQUE_PASS | 5)
+```
+
+
+
 
 
 <!-- rst-class:: classref-item-separator -->
@@ -3669,9 +3807,9 @@ A simple drawing operation might look like this (code is not a complete example)
 
 [`int`](class_int.md) **draw_list_begin_for_screen** ( screen: [`int`](class_int.md) = 0, clear_color: [`Color`](class_color.md) = Color(0, 0, 0, 1) )<div id="class_renderingdevice_method_draw_list_begin_for_screen"></div>
 
-High-level variant of [`draw_list_begin`](#class_renderingdevice_method_draw_list_begin), with the parameters automatically being adjusted for drawing onto the window specified by the `screen` ID.
+High-level variant of [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin), with the parameters automatically being adjusted for drawing onto the window specified by the `screen` ID.
 
- **Note:** Cannot be used with local RenderingDevices, as these don't have a screen. If called on a local RenderingDevice, [`draw_list_begin_for_screen`](#class_renderingdevice_method_draw_list_begin_for_screen) returns [`INVALID_ID`](#class_renderingdevice_constant_invalid_id).
+ **Note:** Cannot be used with local RenderingDevices, as these don't have a screen. If called on a local RenderingDevice, [`draw_list_begin_for_screen`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin_for_screen) returns [`INVALID_ID`](class_renderingdevice.md#class_renderingdevice_constant_invalid_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3733,7 +3871,7 @@ Binds `vertex_array` to the specified `draw_list`.
 
 `void` **draw_list_disable_scissor** ( draw_list: [`int`](class_int.md) )<div id="class_renderingdevice_method_draw_list_disable_scissor"></div>
 
-Removes and disables the scissor rectangle for the specified `draw_list`. See also [`draw_list_enable_scissor`](#class_renderingdevice_method_draw_list_enable_scissor).
+Removes and disables the scissor rectangle for the specified `draw_list`. See also [`draw_list_enable_scissor`](class_renderingdevice.md#class_renderingdevice_method_draw_list_enable_scissor).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3743,7 +3881,17 @@ Removes and disables the scissor rectangle for the specified `draw_list`. See al
 
 `void` **draw_list_draw** ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), instances: [`int`](class_int.md), procedural_vertex_count: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_draw_list_draw"></div>
 
-Submits `draw_list` for rendering on the GPU. This is the raster equivalent to [`compute_list_dispatch`](#class_renderingdevice_method_compute_list_dispatch).
+Submits `draw_list` for rendering on the GPU. This is the raster equivalent to [`compute_list_dispatch`](class_renderingdevice.md#class_renderingdevice_method_compute_list_dispatch).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_draw_list_draw_indirect"></div>
+
+`void` **draw_list_draw_indirect** ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) = 0, draw_count: [`int`](class_int.md) = 1, stride: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_draw_list_draw_indirect"></div>
+
+Submits `draw_list` for rendering on the GPU with the given parameters stored in the `buffer` at `offset`. Parameters being integers: vertex count, instance count, first vertex, first instance. And when using indices: index count, instance count, first index, vertex offset, first instance. Buffer must have been created with [`STORAGE_BUFFER_USAGE_DISPATCH_INDIRECT`](class_renderingdevice.md#class_renderingdevice_constant_storage_buffer_usage_dispatch_indirect) flag.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3753,7 +3901,7 @@ Submits `draw_list` for rendering on the GPU. This is the raster equivalent to [
 
 `void` **draw_list_enable_scissor** ( draw_list: [`int`](class_int.md), rect: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )<div id="class_renderingdevice_method_draw_list_enable_scissor"></div>
 
-Creates a scissor rectangle and enables it for the specified `draw_list`. Scissor rectangles are used for clipping by discarding fragments that fall outside a specified rectangular portion of the screen. See also [`draw_list_disable_scissor`](#class_renderingdevice_method_draw_list_disable_scissor).
+Creates a scissor rectangle and enables it for the specified `draw_list`. Scissor rectangles are used for clipping by discarding fragments that fall outside a specified rectangular portion of the screen. See also [`draw_list_disable_scissor`](class_renderingdevice.md#class_renderingdevice_method_draw_list_disable_scissor).
 
  **Note:** The specified `rect` is automatically intersected with the screen's dimensions, which means it cannot exceed the screen's dimensions.
 
@@ -3775,7 +3923,7 @@ Finishes a list of raster drawing commands created with the `draw_*` methods.
 
 `void` **draw_list_set_blend_constants** ( draw_list: [`int`](class_int.md), color: [`Color`](class_color.md) )<div id="class_renderingdevice_method_draw_list_set_blend_constants"></div>
 
-Sets blend constants for the specified `draw_list` to `color`. Blend constants are used only if the graphics pipeline is created with [`DYNAMIC_STATE_BLEND_CONSTANTS`](#class_renderingdevice_constant_dynamic_state_blend_constants) flag set.
+Sets blend constants for the specified `draw_list` to `color`. Blend constants are used only if the graphics pipeline is created with [`DYNAMIC_STATE_BLEND_CONSTANTS`](class_renderingdevice.md#class_renderingdevice_constant_dynamic_state_blend_constants) flag set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3785,7 +3933,7 @@ Sets blend constants for the specified `draw_list` to `color`. Blend constants a
 
 `void` **draw_list_set_push_constant** ( draw_list: [`int`](class_int.md), buffer: [`PackedByteArray`](class_packedbytearray.md), size_bytes: [`int`](class_int.md) )<div id="class_renderingdevice_method_draw_list_set_push_constant"></div>
 
-Sets the push constant data to `buffer` for the specified `draw_list`. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in `size_bytes` (this can be obtained by calling the [`PackedByteArray.size`](#class_packedbytearray_method_size) method on the passed `buffer`).
+Sets the push constant data to `buffer` for the specified `draw_list`. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in `size_bytes` (this can be obtained by calling the [`PackedByteArray.size`](class_packedbytearray.md#class_packedbytearray_method_size) method on the passed `buffer`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3819,7 +3967,7 @@ This method does nothing and always returns an empty [`PackedInt64Array`](class_
 
 Creates a new framebuffer. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3831,7 +3979,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 Creates a new empty framebuffer. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3843,7 +3991,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 Creates a new multipass framebuffer. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3885,7 +4033,7 @@ Creates a multipass framebuffer format with the specified `attachments`, `passes
 
 [TextureSamples](#enum_renderingdevice_texturesamples) **framebuffer_format_get_texture_samples** ( format: [`int`](class_int.md), render_pass: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_framebuffer_format_get_texture_samples"></div>
 
-Returns the number of texture samples used for the given framebuffer `format` ID (returned by [`framebuffer_get_format`](#class_renderingdevice_method_framebuffer_get_format)).
+Returns the number of texture samples used for the given framebuffer `format` ID (returned by [`framebuffer_get_format`](class_renderingdevice.md#class_renderingdevice_method_framebuffer_get_format)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3937,7 +4085,7 @@ This method does nothing.
 
 [`int`](class_int.md) **get_captured_timestamp_cpu_time** ( index: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_captured_timestamp_cpu_time"></div>
 
-Returns the timestamp in CPU time for the rendering step specified by `index` (in microseconds since the engine started). See also [`get_captured_timestamp_gpu_time`](#class_renderingdevice_method_get_captured_timestamp_gpu_time) and [`capture_timestamp`](#class_renderingdevice_method_capture_timestamp).
+Returns the timestamp in CPU time for the rendering step specified by `index` (in microseconds since the engine started). See also [`get_captured_timestamp_gpu_time`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_gpu_time) and [`capture_timestamp`](class_renderingdevice.md#class_renderingdevice_method_capture_timestamp).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3947,7 +4095,7 @@ Returns the timestamp in CPU time for the rendering step specified by `index` (i
 
 [`int`](class_int.md) **get_captured_timestamp_gpu_time** ( index: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_captured_timestamp_gpu_time"></div>
 
-Returns the timestamp in GPU time for the rendering step specified by `index` (in microseconds since the engine started). See also [`get_captured_timestamp_cpu_time`](#class_renderingdevice_method_get_captured_timestamp_cpu_time) and [`capture_timestamp`](#class_renderingdevice_method_capture_timestamp).
+Returns the timestamp in GPU time for the rendering step specified by `index` (in microseconds since the engine started). See also [`get_captured_timestamp_cpu_time`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_cpu_time) and [`capture_timestamp`](class_renderingdevice.md#class_renderingdevice_method_capture_timestamp).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3957,7 +4105,7 @@ Returns the timestamp in GPU time for the rendering step specified by `index` (i
 
 [`String`](class_string.md) **get_captured_timestamp_name** ( index: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_captured_timestamp_name"></div>
 
-Returns the timestamp's name for the rendering step specified by `index`. See also [`capture_timestamp`](#class_renderingdevice_method_capture_timestamp).
+Returns the timestamp's name for the rendering step specified by `index`. See also [`capture_timestamp`](class_renderingdevice.md#class_renderingdevice_method_capture_timestamp).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3983,11 +4131,51 @@ Returns the index of the last frame rendered that has rendering timestamps avail
 
 ---
 
+<div id="_class_renderingdevice_method_get_device_allocation_count"></div>
+
+[`int`](class_int.md) **get_device_allocation_count** ( ) const[^const]<div id="class_renderingdevice_method_get_device_allocation_count"></div>
+
+Returns how many allocations the GPU has performed for internal driver structures.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_device_allocs_by_object_type"></div>
+
+[`int`](class_int.md) **get_device_allocs_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_device_allocs_by_object_type"></div>
+
+Same as [`get_device_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocation_count) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_device_memory_by_object_type"></div>
+
+[`int`](class_int.md) **get_device_memory_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_device_memory_by_object_type"></div>
+
+Same as [`get_device_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_device_total_memory) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingdevice_method_get_device_name"></div>
 
 [`String`](class_string.md) **get_device_name** ( ) const[^const]<div id="class_renderingdevice_method_get_device_name"></div>
 
-Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2"). Equivalent to [`RenderingServer.get_video_adapter_name`](#class_renderingserver_method_get_video_adapter_name). See also [`get_device_vendor_name`](#class_renderingdevice_method_get_device_vendor_name).
+Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2"). Equivalent to [`RenderingServer.get_video_adapter_name`](class_renderingserver.md#class_renderingserver_method_get_video_adapter_name). See also [`get_device_vendor_name`](class_renderingdevice.md#class_renderingdevice_method_get_device_vendor_name).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4003,11 +4191,95 @@ Returns the universally unique identifier for the pipeline cache. This is used t
 
 ---
 
+<div id="_class_renderingdevice_method_get_device_total_memory"></div>
+
+[`int`](class_int.md) **get_device_total_memory** ( ) const[^const]<div id="class_renderingdevice_method_get_device_total_memory"></div>
+
+Returns how much bytes the GPU is using.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingdevice_method_get_device_vendor_name"></div>
 
 [`String`](class_string.md) **get_device_vendor_name** ( ) const[^const]<div id="class_renderingdevice_method_get_device_vendor_name"></div>
 
-Returns the vendor of the video adapter (e.g. "NVIDIA Corporation"). Equivalent to [`RenderingServer.get_video_adapter_vendor`](#class_renderingserver_method_get_video_adapter_vendor). See also [`get_device_name`](#class_renderingdevice_method_get_device_name).
+Returns the vendor of the video adapter (e.g. "NVIDIA Corporation"). Equivalent to [`RenderingServer.get_video_adapter_vendor`](class_renderingserver.md#class_renderingserver_method_get_video_adapter_vendor). See also [`get_device_name`](class_renderingdevice.md#class_renderingdevice_method_get_device_name).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_allocation_count"></div>
+
+[`int`](class_int.md) **get_driver_allocation_count** ( ) const[^const]<div id="class_renderingdevice_method_get_driver_allocation_count"></div>
+
+Returns how many allocations the GPU driver has performed for internal driver structures.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_allocs_by_object_type"></div>
+
+[`int`](class_int.md) **get_driver_allocs_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_driver_allocs_by_object_type"></div>
+
+Same as [`get_driver_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocation_count) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_and_device_memory_report"></div>
+
+[`String`](class_string.md) **get_driver_and_device_memory_report** ( ) const[^const]<div id="class_renderingdevice_method_get_driver_and_device_memory_report"></div>
+
+Returns string report in CSV format using the following methods:
+
+- [`get_tracked_object_name`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_name) 
+
+- [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) 
+
+- [`get_driver_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_driver_total_memory) 
+
+- [`get_driver_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocation_count) 
+
+- [`get_driver_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_memory_by_object_type) 
+
+- [`get_driver_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocs_by_object_type) 
+
+- [`get_device_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_device_total_memory) 
+
+- [`get_device_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocation_count) 
+
+- [`get_device_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_memory_by_object_type) 
+
+- [`get_device_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocs_by_object_type) 
+
+This is only used by Vulkan in debug builds. Godot must also be started with the `--extra-gpu-memory-tracking` [*command line argument*](../tutorials/editor/command_line_tutorial).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_memory_by_object_type"></div>
+
+[`int`](class_int.md) **get_driver_memory_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_driver_memory_by_object_type"></div>
+
+Same as [`get_driver_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_driver_total_memory) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4018,6 +4290,18 @@ Returns the vendor of the video adapter (e.g. "NVIDIA Corporation"). Equivalent 
 [`int`](class_int.md) **get_driver_resource** ( resource: [DriverResource](#enum_renderingdevice_driverresource), rid: [`RID`](class_rid.md), index: [`int`](class_int.md) )<div id="class_renderingdevice_method_get_driver_resource"></div>
 
 Returns the unique identifier of the driver `resource` for the specified `rid`. Some driver resource types ignore the specified `rid` (see [DriverResource](#enum_renderingdevice_driverresource) descriptions). `index` is always ignored but must be specified anyway.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_total_memory"></div>
+
+[`int`](class_int.md) **get_driver_total_memory** ( ) const[^const]<div id="class_renderingdevice_method_get_driver_total_memory"></div>
+
+Returns how much bytes the GPU driver is using for internal driver structures.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4043,13 +4327,59 @@ Returns the memory usage in bytes corresponding to the given `type`. When using 
 
 ---
 
+<div id="_class_renderingdevice_method_get_perf_report"></div>
+
+[`String`](class_string.md) **get_perf_report** ( ) const[^const]<div id="class_renderingdevice_method_get_perf_report"></div>
+
+Returns a string with a performance report from the past frame. Updates every frame.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_tracked_object_name"></div>
+
+[`String`](class_string.md) **get_tracked_object_name** ( type_index: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_tracked_object_name"></div>
+
+Returns the name of the type of object for the given `type_index`. This value must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns the same string.
+
+The return value is important because it gives meaning to the types passed to [`get_driver_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_memory_by_object_type), [`get_driver_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocs_by_object_type), [`get_device_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_memory_by_object_type), and [`get_device_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocs_by_object_type). Examples of strings it can return (not exhaustive):
+
+- DEVICE_MEMORY
+
+- PIPELINE_CACHE
+
+- SWAPCHAIN_KHR
+
+- COMMAND_POOL
+
+Thus if e.g. `get_tracked_object_name(5)` returns "COMMAND_POOL", then `get_device_memory_by_object_type(5)` returns the bytes used by the GPU for command pools.
+
+This is only used by Vulkan in debug builds. Godot must also be started with the `--extra-gpu-memory-tracking` [*command line argument*](../tutorials/editor/command_line_tutorial).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_tracked_object_type_count"></div>
+
+[`int`](class_int.md) **get_tracked_object_type_count** ( ) const[^const]<div id="class_renderingdevice_method_get_tracked_object_type_count"></div>
+
+Returns how many types of trackable objects are.
+
+This is only used by Vulkan in debug builds. Godot must also be started with the `--extra-gpu-memory-tracking` [*command line argument*](../tutorials/editor/command_line_tutorial).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingdevice_method_index_array_create"></div>
 
 [`RID`](class_rid.md) **index_array_create** ( index_buffer: [`RID`](class_rid.md), index_offset: [`int`](class_int.md), index_count: [`int`](class_int.md) )<div id="class_renderingdevice_method_index_array_create"></div>
 
 Creates a new index array. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4061,7 +4391,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 Creates a new index buffer. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4085,7 +4415,7 @@ Limits for various graphics hardware can be found in the [*Vulkan Hardware Datab
 
 Creates a new render pipeline. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4107,7 +4437,7 @@ Returns `true` if the render pipeline specified by the `render_pipeline` RID is 
 
 Creates a new sampler. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4129,7 +4459,7 @@ Returns `true` if implementation supports using a texture of `format` with the g
 
 Returns the framebuffer format of the given screen.
 
- **Note:** Only the main **RenderingDevice** returned by [`RenderingServer.get_rendering_device`](#class_renderingserver_method_get_rendering_device) has a format. If called on a local **RenderingDevice**, this method prints an error and returns [`INVALID_ID`](#class_renderingdevice_constant_invalid_id).
+ **Note:** Only the main **RenderingDevice** returned by [`RenderingServer.get_rendering_device`](class_renderingserver.md#class_renderingserver_method_get_rendering_device) has a format. If called on a local **RenderingDevice**, this method prints an error and returns [`INVALID_ID`](class_renderingdevice.md#class_renderingdevice_constant_invalid_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4139,9 +4469,9 @@ Returns the framebuffer format of the given screen.
 
 [`int`](class_int.md) **screen_get_height** ( screen: [`int`](class_int.md) = 0 ) const[^const]<div id="class_renderingdevice_method_screen_get_height"></div>
 
-Returns the window height matching the graphics API context for the given window ID (in pixels). Despite the parameter being named `screen`, this returns the *window* size. See also [`screen_get_width`](#class_renderingdevice_method_screen_get_width).
+Returns the window height matching the graphics API context for the given window ID (in pixels). Despite the parameter being named `screen`, this returns the *window* size. See also [`screen_get_width`](class_renderingdevice.md#class_renderingdevice_method_screen_get_width).
 
- **Note:** Only the main **RenderingDevice** returned by [`RenderingServer.get_rendering_device`](#class_renderingserver_method_get_rendering_device) has a height. If called on a local **RenderingDevice**, this method prints an error and returns [`INVALID_ID`](#class_renderingdevice_constant_invalid_id).
+ **Note:** Only the main **RenderingDevice** returned by [`RenderingServer.get_rendering_device`](class_renderingserver.md#class_renderingserver_method_get_rendering_device) has a height. If called on a local **RenderingDevice**, this method prints an error and returns [`INVALID_ID`](class_renderingdevice.md#class_renderingdevice_constant_invalid_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4151,9 +4481,9 @@ Returns the window height matching the graphics API context for the given window
 
 [`int`](class_int.md) **screen_get_width** ( screen: [`int`](class_int.md) = 0 ) const[^const]<div id="class_renderingdevice_method_screen_get_width"></div>
 
-Returns the window width matching the graphics API context for the given window ID (in pixels). Despite the parameter being named `screen`, this returns the *window* size. See also [`screen_get_height`](#class_renderingdevice_method_screen_get_height).
+Returns the window width matching the graphics API context for the given window ID (in pixels). Despite the parameter being named `screen`, this returns the *window* size. See also [`screen_get_height`](class_renderingdevice.md#class_renderingdevice_method_screen_get_height).
 
- **Note:** Only the main **RenderingDevice** returned by [`RenderingServer.get_rendering_device`](#class_renderingserver_method_get_rendering_device) has a width. If called on a local **RenderingDevice**, this method prints an error and returns [`INVALID_ID`](#class_renderingdevice_constant_invalid_id).
+ **Note:** Only the main **RenderingDevice** returned by [`RenderingServer.get_rendering_device`](class_renderingserver.md#class_renderingserver_method_get_rendering_device) has a width. If called on a local **RenderingDevice**, this method prints an error and returns [`INVALID_ID`](class_renderingdevice.md#class_renderingdevice_constant_invalid_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4167,7 +4497,7 @@ Sets the resource name for `id` to `name`. This is used for debugging with third
 
 The following types of resources can be named: texture, sampler, vertex buffer, index buffer, uniform buffer, texture buffer, storage buffer, uniform set buffer, shader, render pipeline and compute pipeline. Framebuffers cannot be named. Attempting to name an incompatible resource type will print an error.
 
- **Note:** Resource names are only set when the engine runs in verbose mode ([`OS.is_stdout_verbose`](#class_os_method_is_stdout_verbose) = `true`), or when using an engine build compiled with the `dev_mode=yes` SCons option. The graphics driver must also support the `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension for named resources to work.
+ **Note:** Resource names are only set when the engine runs in verbose mode ([`OS.is_stdout_verbose`](class_os.md#class_os_method_is_stdout_verbose) = `true`), or when using an engine build compiled with the `dev_mode=yes` SCons option. The graphics driver must also support the `VK_EXT_DEBUG_UTILS_EXTENSION_NAME` Vulkan extension for named resources to work.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4177,7 +4507,7 @@ The following types of resources can be named: texture, sampler, vertex buffer, 
 
 [`PackedByteArray`](class_packedbytearray.md) **shader_compile_binary_from_spirv** ( spirv_data: [`RDShaderSPIRV`](class_rdshaderspirv.md), name: [`String`](class_string.md) = "" )<div id="class_renderingdevice_method_shader_compile_binary_from_spirv"></div>
 
-Compiles a binary shader from `spirv_data` and returns the compiled binary data as a [`PackedByteArray`](class_packedbytearray.md). This compiled shader is specific to the GPU model and driver version used; it will not work on different GPU models or even different driver versions. See also [`shader_compile_spirv_from_source`](#class_renderingdevice_method_shader_compile_spirv_from_source).
+Compiles a binary shader from `spirv_data` and returns the compiled binary data as a [`PackedByteArray`](class_packedbytearray.md). This compiled shader is specific to the GPU model and driver version used; it will not work on different GPU models or even different driver versions. See also [`shader_compile_spirv_from_source`](class_renderingdevice.md#class_renderingdevice_method_shader_compile_spirv_from_source).
 
  `name` is an optional human-readable name that can be given to the compiled shader for organizational purposes.
 
@@ -4189,7 +4519,7 @@ Compiles a binary shader from `spirv_data` and returns the compiled binary data 
 
 [`RDShaderSPIRV`](class_rdshaderspirv.md) **shader_compile_spirv_from_source** ( shader_source: [`RDShaderSource`](class_rdshadersource.md), allow_cache: [`bool`](class_bool.md) = true )<div id="class_renderingdevice_method_shader_compile_spirv_from_source"></div>
 
-Compiles a SPIR-V from the shader source code in `shader_source` and returns the SPIR-V as a [`RDShaderSPIRV`](class_rdshaderspirv.md). This intermediate language shader is portable across different GPU models and driver versions, but cannot be run directly by GPUs until compiled into a binary shader using [`shader_compile_binary_from_spirv`](#class_renderingdevice_method_shader_compile_binary_from_spirv).
+Compiles a SPIR-V from the shader source code in `shader_source` and returns the SPIR-V as a [`RDShaderSPIRV`](class_rdshaderspirv.md). This intermediate language shader is portable across different GPU models and driver versions, but cannot be run directly by GPUs until compiled into a binary shader using [`shader_compile_binary_from_spirv`](class_renderingdevice.md#class_renderingdevice_method_shader_compile_binary_from_spirv).
 
 If `allow_cache` is `true`, make use of the shader cache generated by Godot. This avoids a potentially lengthy shader compilation step if the shader is already in cache. If `allow_cache` is `false`, Godot's shader cache is ignored and the shader will always be recompiled.
 
@@ -4203,7 +4533,7 @@ If `allow_cache` is `true`, make use of the shader cache generated by Godot. Thi
 
 Creates a new shader instance from a binary compiled shader. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method. See also [`shader_compile_binary_from_spirv`](#class_renderingdevice_method_shader_compile_binary_from_spirv) and [`shader_create_from_spirv`](#class_renderingdevice_method_shader_create_from_spirv).
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method. See also [`shader_compile_binary_from_spirv`](class_renderingdevice.md#class_renderingdevice_method_shader_compile_binary_from_spirv) and [`shader_create_from_spirv`](class_renderingdevice.md#class_renderingdevice_method_shader_create_from_spirv).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4215,7 +4545,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 Creates a new shader instance from SPIR-V intermediate code. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method. See also [`shader_compile_spirv_from_source`](#class_renderingdevice_method_shader_compile_spirv_from_source) and [`shader_create_from_bytecode`](#class_renderingdevice_method_shader_create_from_bytecode).
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method. See also [`shader_compile_spirv_from_source`](class_renderingdevice.md#class_renderingdevice_method_shader_compile_spirv_from_source) and [`shader_create_from_bytecode`](class_renderingdevice.md#class_renderingdevice_method_shader_create_from_bytecode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4225,7 +4555,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 [`RID`](class_rid.md) **shader_create_placeholder** ( )<div id="class_renderingdevice_method_shader_create_placeholder"></div>
 
-Create a placeholder RID by allocating an RID without initializing it for use in [`shader_create_from_bytecode`](#class_renderingdevice_method_shader_create_from_bytecode). This allows you to create an RID for a shader and pass it around, but defer compiling the shader to a later time.
+Create a placeholder RID by allocating an RID without initializing it for use in [`shader_create_from_bytecode`](class_renderingdevice.md#class_renderingdevice_method_shader_create_from_bytecode). This allows you to create an RID for a shader and pass it around, but defer compiling the shader to a later time.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4247,7 +4577,7 @@ Returns the internal vertex input mask. Internally, the vertex input mask is an 
 
 Creates a [*storage buffer*](https://vkguide.dev/docs/chapter-4/storage_buffers/) with the specified `data` and `usage`. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4257,7 +4587,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 `void` **submit** ( )<div id="class_renderingdevice_method_submit"></div>
 
-Pushes the frame setup and draw command buffers then marks the local device as currently processing (which allows calling [`sync`](#class_renderingdevice_method_sync)).
+Pushes the frame setup and draw command buffers then marks the local device as currently processing (which allows calling [`sync`](class_renderingdevice.md#class_renderingdevice_method_sync)).
 
  **Note:** Only available in local RenderingDevices.
 
@@ -4273,7 +4603,7 @@ Forces a synchronization between the CPU and GPU, which may be required in certa
 
  **Note:** Only available in local RenderingDevices.
 
- **Note:** [`sync`](#class_renderingdevice_method_sync) can only be called after a [`submit`](#class_renderingdevice_method_submit).
+ **Note:** [`sync`](class_renderingdevice.md#class_renderingdevice_method_sync) can only be called after a [`submit`](class_renderingdevice.md#class_renderingdevice_method_submit).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4285,7 +4615,7 @@ Forces a synchronization between the CPU and GPU, which may be required in certa
 
 Creates a new texture buffer. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4297,7 +4627,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 Clears the specified `texture` by replacing all of its pixels with the specified `color`. `base_mipmap` and `mipmap_count` determine which mipmaps of the texture are affected by this clear operation, while `base_layer` and `layer_count` determine which layers of a 3D texture (or texture array) are affected by this clear operation. For 2D textures (which only have one layer by design), `base_layer` must be `0` and `layer_count` must be `1`.
 
- **Note:** `texture` can't be cleared while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to clear this texture.
+ **Note:** `texture` can't be cleared while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to clear this texture.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4307,15 +4637,15 @@ Clears the specified `texture` by replacing all of its pixels with the specified
 
 [Error](#enum_@globalscope_error) **texture_copy** ( from_texture: [`RID`](class_rid.md), to_texture: [`RID`](class_rid.md), from_pos: [`Vector3`](class_vector3.md), to_pos: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md), src_mipmap: [`int`](class_int.md), dst_mipmap: [`int`](class_int.md), src_layer: [`int`](class_int.md), dst_layer: [`int`](class_int.md) )<div id="class_renderingdevice_method_texture_copy"></div>
 
-Copies the `from_texture` to `to_texture` with the specified `from_pos`, `to_pos` and `size` coordinates. The Z axis of the `from_pos`, `to_pos` and `size` must be `0` for 2-dimensional textures. Source and destination mipmaps/layers must also be specified, with these parameters being `0` for textures without mipmaps or single-layer textures. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if the texture copy was successful or [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) otherwise.
+Copies the `from_texture` to `to_texture` with the specified `from_pos`, `to_pos` and `size` coordinates. The Z axis of the `from_pos`, `to_pos` and `size` must be `0` for 2-dimensional textures. Source and destination mipmaps/layers must also be specified, with these parameters being `0` for textures without mipmaps or single-layer textures. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the texture copy was successful or [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) otherwise.
 
- **Note:** `from_texture` texture can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to copy this texture.
+ **Note:** `from_texture` texture can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to copy this texture.
 
- **Note:** `from_texture` texture requires the [`TEXTURE_USAGE_CAN_COPY_FROM_BIT`](#class_renderingdevice_constant_texture_usage_can_copy_from_bit) to be retrieved.
+ **Note:** `from_texture` texture requires the [`TEXTURE_USAGE_CAN_COPY_FROM_BIT`](class_renderingdevice.md#class_renderingdevice_constant_texture_usage_can_copy_from_bit) to be retrieved.
 
- **Note:** `to_texture` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to copy this texture.
+ **Note:** `to_texture` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to copy this texture.
 
- **Note:** `to_texture` requires the [`TEXTURE_USAGE_CAN_COPY_TO_BIT`](#class_renderingdevice_constant_texture_usage_can_copy_to_bit) to be retrieved.
+ **Note:** `to_texture` requires the [`TEXTURE_USAGE_CAN_COPY_TO_BIT`](class_renderingdevice.md#class_renderingdevice_constant_texture_usage_can_copy_to_bit) to be retrieved.
 
  **Note:** `from_texture` and `to_texture` must be of the same type (color or depth).
 
@@ -4329,9 +4659,9 @@ Copies the `from_texture` to `to_texture` with the specified `from_pos`, `to_pos
 
 Creates a new texture. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
- **Note:** Not to be confused with [`RenderingServer.texture_2d_create`](#class_renderingserver_method_texture_2d_create), which creates the Godot-specific [`Texture2D`](class_texture2d.md) resource as opposed to the graphics API's own texture type.
+ **Note:** Not to be confused with [`RenderingServer.texture_2d_create`](class_renderingserver.md#class_renderingserver_method_texture_2d_create), which creates the Godot-specific [`Texture2D`](class_texture2d.md) resource as opposed to the graphics API's own texture type.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4361,7 +4691,7 @@ Creates a shared texture using the specified `view` and the texture information 
 
 [`RID`](class_rid.md) **texture_create_shared_from_slice** ( view: [`RDTextureView`](class_rdtextureview.md), with_texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), mipmap: [`int`](class_int.md), mipmaps: [`int`](class_int.md) = 1, slice_type: [TextureSliceType](#enum_renderingdevice_textureslicetype) = 0 )<div id="class_renderingdevice_method_texture_create_shared_from_slice"></div>
 
-Creates a shared texture using the specified `view` and the texture information from `with_texture`'s `layer` and `mipmap`. The number of included mipmaps from the original texture can be controlled using the `mipmaps` parameter. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use [`texture_create_shared`](#class_renderingdevice_method_texture_create_shared) 
+Creates a shared texture using the specified `view` and the texture information from `with_texture`'s `layer` and `mipmap`. The number of included mipmaps from the original texture can be controlled using the `mipmaps` parameter. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use [`texture_create_shared`](class_renderingdevice.md#class_renderingdevice_method_texture_create_shared).
 
 For 2D textures (which only have one layer), `layer` must be `0`.
 
@@ -4377,9 +4707,9 @@ For 2D textures (which only have one layer), `layer` must be `0`.
 
 Returns the `texture` data for the specified `layer` as raw binary data. For 2D textures (which only have one layer), `layer` must be `0`.
 
- **Note:** `texture` can't be retrieved while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to retrieve this texture. Otherwise, an error is printed and a empty [`PackedByteArray`](class_packedbytearray.md) is returned.
+ **Note:** `texture` can't be retrieved while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to retrieve this texture. Otherwise, an error is printed and a empty [`PackedByteArray`](class_packedbytearray.md) is returned.
 
- **Note:** `texture` requires the [`TEXTURE_USAGE_CAN_COPY_FROM_BIT`](#class_renderingdevice_constant_texture_usage_can_copy_from_bit) to be retrieved. Otherwise, an error is printed and a empty [`PackedByteArray`](class_packedbytearray.md) is returned.
+ **Note:** `texture` requires the [`TEXTURE_USAGE_CAN_COPY_FROM_BIT`](class_renderingdevice.md#class_renderingdevice_constant_texture_usage_can_copy_from_bit) to be retrieved. Otherwise, an error is printed and a empty [`PackedByteArray`](class_packedbytearray.md) is returned.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4399,7 +4729,7 @@ Returns the data format used to create this texture.
 
 [`int`](class_int.md) **texture_get_native_handle** ( texture: [`RID`](class_rid.md) )<div id="class_renderingdevice_method_texture_get_native_handle"></div>
 
-**已弃用：** Use [`get_driver_resource`](#class_renderingdevice_method_get_driver_resource) with [`DRIVER_RESOURCE_TEXTURE`](#class_renderingdevice_constant_driver_resource_texture) instead.
+**已弃用：** Use [`get_driver_resource`](class_renderingdevice.md#class_renderingdevice_method_get_driver_resource) with [`DRIVER_RESOURCE_TEXTURE`](class_renderingdevice.md#class_renderingdevice_constant_driver_resource_texture) instead.
 
 Returns the internal graphics handle for this texture object. For use when communicating with third-party APIs mostly with GDExtension.
 
@@ -4443,19 +4773,19 @@ Returns `true` if the `texture` is valid, `false` otherwise.
 
 [Error](#enum_@globalscope_error) **texture_resolve_multisample** ( from_texture: [`RID`](class_rid.md), to_texture: [`RID`](class_rid.md) )<div id="class_renderingdevice_method_texture_resolve_multisample"></div>
 
-Resolves the `from_texture` texture onto `to_texture` with multisample antialiasing enabled. This must be used when rendering a framebuffer for MSAA to work. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if successful, [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) otherwise.
+Resolves the `from_texture` texture onto `to_texture` with multisample antialiasing enabled. This must be used when rendering a framebuffer for MSAA to work. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if successful, [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) otherwise.
 
  **Note:** `from_texture` and `to_texture` textures must have the same dimension, format and type (color or depth).
 
- **Note:** `from_texture` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to resolve this texture.
+ **Note:** `from_texture` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to resolve this texture.
 
- **Note:** `from_texture` requires the [`TEXTURE_USAGE_CAN_COPY_FROM_BIT`](#class_renderingdevice_constant_texture_usage_can_copy_from_bit) to be retrieved.
+ **Note:** `from_texture` requires the [`TEXTURE_USAGE_CAN_COPY_FROM_BIT`](class_renderingdevice.md#class_renderingdevice_constant_texture_usage_can_copy_from_bit) to be retrieved.
 
  **Note:** `from_texture` must be multisampled and must also be 2D (or a slice of a 3D/cubemap texture).
 
- **Note:** `to_texture` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to resolve this texture.
+ **Note:** `to_texture` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to resolve this texture.
 
- **Note:** `to_texture` texture requires the [`TEXTURE_USAGE_CAN_COPY_TO_BIT`](#class_renderingdevice_constant_texture_usage_can_copy_to_bit) to be retrieved.
+ **Note:** `to_texture` texture requires the [`TEXTURE_USAGE_CAN_COPY_TO_BIT`](class_renderingdevice.md#class_renderingdevice_constant_texture_usage_can_copy_to_bit) to be retrieved.
 
  **Note:** `to_texture` texture must **not** be multisampled and must also be 2D (or a slice of a 3D/cubemap texture).
 
@@ -4467,13 +4797,13 @@ Resolves the `from_texture` texture onto `to_texture` with multisample antialias
 
 [Error](#enum_@globalscope_error) **texture_update** ( texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), data: [`PackedByteArray`](class_packedbytearray.md) )<div id="class_renderingdevice_method_texture_update"></div>
 
-Updates texture data with new data, replacing the previous data in place. The updated texture data must have the same dimensions and format. For 2D textures (which only have one layer), `layer` must be `0`. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if the update was successful, [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) otherwise.
+Updates texture data with new data, replacing the previous data in place. The updated texture data must have the same dimensions and format. For 2D textures (which only have one layer), `layer` must be `0`. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the update was successful, [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) otherwise.
 
  **Note:** Updating textures is forbidden during creation of a draw or compute list.
 
- **Note:** The existing `texture` can't be updated while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](#class_renderingdevice_constant_final_action_continue)) to update this texture.
+ **Note:** The existing `texture` can't be updated while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to [`FINAL_ACTION_CONTINUE`](class_renderingdevice.md#class_renderingdevice_constant_final_action_continue)) to update this texture.
 
- **Note:** The existing `texture` requires the [`TEXTURE_USAGE_CAN_UPDATE_BIT`](#class_renderingdevice_constant_texture_usage_can_update_bit) to be updatable.
+ **Note:** The existing `texture` requires the [`TEXTURE_USAGE_CAN_UPDATE_BIT`](class_renderingdevice.md#class_renderingdevice_constant_texture_usage_can_update_bit) to be updatable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4485,7 +4815,7 @@ Updates texture data with new data, replacing the previous data in place. The up
 
 Creates a new uniform buffer. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4497,7 +4827,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 Creates a new uniform set. It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4529,7 +4859,7 @@ Creates a vertex array based on the specified buffers. Optionally, `offsets` (in
 
 It can be accessed with the RID that is returned.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](#class_renderingdevice_method_free_rid) method.
+Once finished with your RID, you will want to free the RID using the RenderingDevice's [`free_rid`](class_renderingdevice.md#class_renderingdevice_method_free_rid) method.
 
 <!-- rst-class:: classref-item-separator -->
 

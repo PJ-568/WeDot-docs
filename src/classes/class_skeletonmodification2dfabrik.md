@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SkeletonModification2DFABRIK.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SkeletonModification2DFABRIK.xml。 -->
 
 <div id="_class_skeletonmodification2dfabrik"></div>
 
@@ -27,19 +27,23 @@ To help control how the FABRIK joints move, a magnet vector can be passed, which
 
 ## 属性
 
-| [`int`](class_int.md)           | [`fabrik_data_chain_length`](#class_skeletonmodification2dfabrik_property_fabrik_data_chain_length) | ``0``            |
-| [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2dfabrik_property_target_nodepath)                   | ``NodePath("")`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md)           | [`fabrik_data_chain_length`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_property_fabrik_data_chain_length) | ``0``            |
+| [`NodePath`](class_nodepath.md) | [`target_nodepath`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_property_target_nodepath)                   | ``NodePath("")`` |
 
 ## 方法
 
-| [`NodePath`](class_nodepath.md) | [`get_fabrik_joint_bone2d_node`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                                 |
-| [`int`](class_int.md)           | [`get_fabrik_joint_bone_index`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                                   |
-| [`Vector2`](class_vector2.md)   | [`get_fabrik_joint_magnet_position`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_magnet_position) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
-| [`bool`](class_bool.md)         | [`get_fabrik_joint_use_target_rotation`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_use_target_rotation) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
-| `void`                          | [`set_fabrik_joint_bone2d_node`](#class_skeletonmodification2dfabrik_method_set_fabrik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md), bone2d_nodepath: [`NodePath`](class_nodepath.md) )             |
-| `void`                          | [`set_fabrik_joint_bone_index`](#class_skeletonmodification2dfabrik_method_set_fabrik_joint_bone_index) ( joint_idx: [`int`](class_int.md), bone_idx: [`int`](class_int.md) )                                |
-| `void`                          | [`set_fabrik_joint_magnet_position`](#class_skeletonmodification2dfabrik_method_set_fabrik_joint_magnet_position) ( joint_idx: [`int`](class_int.md), magnet_position: [`Vector2`](class_vector2.md) )       |
-| `void`                          | [`set_fabrik_joint_use_target_rotation`](#class_skeletonmodification2dfabrik_method_set_fabrik_joint_use_target_rotation) ( joint_idx: [`int`](class_int.md), use_target_rotation: [`bool`](class_bool.md) ) |
+|||
+|:-:|:--|
+| [`NodePath`](class_nodepath.md) | [`get_fabrik_joint_bone2d_node`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_get_fabrik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                                 |
+| [`int`](class_int.md)           | [`get_fabrik_joint_bone_index`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_get_fabrik_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                                   |
+| [`Vector2`](class_vector2.md)   | [`get_fabrik_joint_magnet_position`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_get_fabrik_joint_magnet_position) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
+| [`bool`](class_bool.md)         | [`get_fabrik_joint_use_target_rotation`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_get_fabrik_joint_use_target_rotation) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
+| `void`                          | [`set_fabrik_joint_bone2d_node`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_set_fabrik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md), bone2d_nodepath: [`NodePath`](class_nodepath.md) )             |
+| `void`                          | [`set_fabrik_joint_bone_index`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_set_fabrik_joint_bone_index) ( joint_idx: [`int`](class_int.md), bone_idx: [`int`](class_int.md) )                                |
+| `void`                          | [`set_fabrik_joint_magnet_position`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_set_fabrik_joint_magnet_position) ( joint_idx: [`int`](class_int.md), magnet_position: [`Vector2`](class_vector2.md) )       |
+| `void`                          | [`set_fabrik_joint_use_target_rotation`](class_skeletonmodification2dfabrik.md#class_skeletonmodification2dfabrik_method_set_fabrik_joint_use_target_rotation) ( joint_idx: [`int`](class_int.md), use_target_rotation: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Joint3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Joint3D.xml。 -->
 
 <div id="_class_joint3d"></div>
 
@@ -15,18 +15,22 @@ Abstract base class for all 3D physics joints.
 
 ## 描述
 
-Abstract base class for all joints in 3D physics. 3D joints bind together two physics bodies ([`node_a`](#class_joint3d_property_node_a) and [`node_b`](#class_joint3d_property_node_b)) and apply a constraint. If only one body is defined, it is attached to a fixed [`StaticBody3D`](class_staticbody3d.md) without collision shapes.
+Abstract base class for all joints in 3D physics. 3D joints bind together two physics bodies ([`node_a`](class_joint3d.md#class_joint3d_property_node_a) and [`node_b`](class_joint3d.md#class_joint3d_property_node_b)) and apply a constraint. If only one body is defined, it is attached to a fixed [`StaticBody3D`](class_staticbody3d.md) without collision shapes.
 
 ## 属性
 
-| [`bool`](class_bool.md)         | [`exclude_nodes_from_collision`](#class_joint3d_property_exclude_nodes_from_collision) | ``true``         |
-| [`NodePath`](class_nodepath.md) | [`node_a`](#class_joint3d_property_node_a)                                             | ``NodePath("")`` |
-| [`NodePath`](class_nodepath.md) | [`node_b`](#class_joint3d_property_node_b)                                             | ``NodePath("")`` |
-| [`int`](class_int.md)           | [`solver_priority`](#class_joint3d_property_solver_priority)                           | ``1``            |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)         | [`exclude_nodes_from_collision`](class_joint3d.md#class_joint3d_property_exclude_nodes_from_collision) | ``true``         |
+| [`NodePath`](class_nodepath.md) | [`node_a`](class_joint3d.md#class_joint3d_property_node_a)                                             | ``NodePath("")`` |
+| [`NodePath`](class_nodepath.md) | [`node_b`](class_joint3d.md#class_joint3d_property_node_b)                                             | ``NodePath("")`` |
+| [`int`](class_int.md)           | [`solver_priority`](class_joint3d.md#class_joint3d_property_solver_priority)                           | ``1``            |
 
 ## 方法
 
-| [`RID`](class_rid.md) | [`get_rid`](#class_joint3d_method_get_rid) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`RID`](class_rid.md) | [`get_rid`](class_joint3d.md#class_joint3d_method_get_rid) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +60,7 @@ If `true`, the two bodies bound together do not collide with each other.
 
 Path to the first node (A) attached to the joint. The node must inherit [`PhysicsBody3D`](class_physicsbody3d.md).
 
-If left empty and [`node_b`](#class_joint3d_property_node_b) is set, the body is attached to a fixed [`StaticBody3D`](class_staticbody3d.md) without collision shapes.
+If left empty and [`node_b`](class_joint3d.md#class_joint3d_property_node_b) is set, the body is attached to a fixed [`StaticBody3D`](class_staticbody3d.md) without collision shapes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -71,7 +75,7 @@ If left empty and [`node_b`](#class_joint3d_property_node_b) is set, the body is
 
 Path to the second node (B) attached to the joint. The node must inherit [`PhysicsBody3D`](class_physicsbody3d.md).
 
-If left empty and [`node_a`](#class_joint3d_property_node_a) is set, the body is attached to a fixed [`StaticBody3D`](class_staticbody3d.md) without collision shapes.
+If left empty and [`node_a`](class_joint3d.md#class_joint3d_property_node_a) is set, the body is attached to a fixed [`StaticBody3D`](class_staticbody3d.md) without collision shapes.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeUIntParameter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeUIntParameter.xml。 -->
 
 <div id="_class_visualshadernodeuintparameter"></div>
 
@@ -17,8 +17,10 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type unsi
 
 ## 属性
 
-| [`int`](class_int.md)   | [`default_value`](#class_visualshadernodeuintparameter_property_default_value)                 | ``0``     |
-| [`bool`](class_bool.md) | [`default_value_enabled`](#class_visualshadernodeuintparameter_property_default_value_enabled) | ``false`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md)   | [`default_value`](class_visualshadernodeuintparameter.md#class_visualshadernodeuintparameter_property_default_value)                 | ``0``     |
+| [`bool`](class_bool.md) | [`default_value_enabled`](class_visualshadernodeuintparameter.md#class_visualshadernodeuintparameter_property_default_value_enabled) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -33,7 +35,7 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type unsi
 - `void` **set_default_value** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_default_value** ( )
 
-Default value of this parameter, which will be used if not set externally. [`default_value_enabled`](#class_visualshadernodeuintparameter_property_default_value_enabled) must be enabled; defaults to `0` otherwise.
+Default value of this parameter, which will be used if not set externally. [`default_value_enabled`](class_visualshadernodeuintparameter.md#class_visualshadernodeuintparameter_property_default_value_enabled) must be enabled; defaults to `0` otherwise.
 
 <!-- rst-class:: classref-item-separator -->
 

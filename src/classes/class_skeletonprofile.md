@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SkeletonProfile.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SkeletonProfile.xml。 -->
 
 <div id="_class_skeletonprofile"></div>
 
@@ -21,34 +21,38 @@ This resource is used in [`EditorScenePostImport`](class_editorscenepostimport.m
 
 ## 属性
 
-| [`int`](class_int.md)               | [`bone_size`](#class_skeletonprofile_property_bone_size)             | ``0``   |
-| [`int`](class_int.md)               | [`group_size`](#class_skeletonprofile_property_group_size)           | ``0``   |
-| [`StringName`](class_stringname.md) | [`root_bone`](#class_skeletonprofile_property_root_bone)             | ``&""`` |
-| [`StringName`](class_stringname.md) | [`scale_base_bone`](#class_skeletonprofile_property_scale_base_bone) | ``&""`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md)               | [`bone_size`](class_skeletonprofile.md#class_skeletonprofile_property_bone_size)             | ``0``   |
+| [`int`](class_int.md)               | [`group_size`](class_skeletonprofile.md#class_skeletonprofile_property_group_size)           | ``0``   |
+| [`StringName`](class_stringname.md) | [`root_bone`](class_skeletonprofile.md#class_skeletonprofile_property_root_bone)             | ``&""`` |
+| [`StringName`](class_stringname.md) | [`scale_base_bone`](class_skeletonprofile.md#class_skeletonprofile_property_scale_base_bone) | ``&""`` |
 
 ## 方法
 
-| [`int`](class_int.md)                                | [`find_bone`](#class_skeletonprofile_method_find_bone) ( bone_name: [`StringName`](class_stringname.md) ) const[^const]                                                            |
-| [`StringName`](class_stringname.md)                  | [`get_bone_name`](#class_skeletonprofile_method_get_bone_name) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                   |
-| [`StringName`](class_stringname.md)                  | [`get_bone_parent`](#class_skeletonprofile_method_get_bone_parent) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                               |
-| [`StringName`](class_stringname.md)                  | [`get_bone_tail`](#class_skeletonprofile_method_get_bone_tail) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                   |
-| [`StringName`](class_stringname.md)                  | [`get_group`](#class_skeletonprofile_method_get_group) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                           |
-| [`StringName`](class_stringname.md)                  | [`get_group_name`](#class_skeletonprofile_method_get_group_name) ( group_idx: [`int`](class_int.md) ) const[^const]                                                                |
-| [`Vector2`](class_vector2.md)                        | [`get_handle_offset`](#class_skeletonprofile_method_get_handle_offset) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                           |
-| [`Transform3D`](class_transform3d.md)                | [`get_reference_pose`](#class_skeletonprofile_method_get_reference_pose) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                         |
-| [TailDirection](#enum_skeletonprofile_taildirection) | [`get_tail_direction`](#class_skeletonprofile_method_get_tail_direction) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                         |
-| [`Texture2D`](class_texture2d.md)                    | [`get_texture`](#class_skeletonprofile_method_get_texture) ( group_idx: [`int`](class_int.md) ) const[^const]                                                                      |
-| [`bool`](class_bool.md)                              | [`is_required`](#class_skeletonprofile_method_is_required) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                       |
-| `void`                                               | [`set_bone_name`](#class_skeletonprofile_method_set_bone_name) ( bone_idx: [`int`](class_int.md), bone_name: [`StringName`](class_stringname.md) )                                 |
-| `void`                                               | [`set_bone_parent`](#class_skeletonprofile_method_set_bone_parent) ( bone_idx: [`int`](class_int.md), bone_parent: [`StringName`](class_stringname.md) )                           |
-| `void`                                               | [`set_bone_tail`](#class_skeletonprofile_method_set_bone_tail) ( bone_idx: [`int`](class_int.md), bone_tail: [`StringName`](class_stringname.md) )                                 |
-| `void`                                               | [`set_group`](#class_skeletonprofile_method_set_group) ( bone_idx: [`int`](class_int.md), group: [`StringName`](class_stringname.md) )                                             |
-| `void`                                               | [`set_group_name`](#class_skeletonprofile_method_set_group_name) ( group_idx: [`int`](class_int.md), group_name: [`StringName`](class_stringname.md) )                             |
-| `void`                                               | [`set_handle_offset`](#class_skeletonprofile_method_set_handle_offset) ( bone_idx: [`int`](class_int.md), handle_offset: [`Vector2`](class_vector2.md) )                           |
-| `void`                                               | [`set_reference_pose`](#class_skeletonprofile_method_set_reference_pose) ( bone_idx: [`int`](class_int.md), bone_name: [`Transform3D`](class_transform3d.md) )                     |
-| `void`                                               | [`set_required`](#class_skeletonprofile_method_set_required) ( bone_idx: [`int`](class_int.md), required: [`bool`](class_bool.md) )                                                |
-| `void`                                               | [`set_tail_direction`](#class_skeletonprofile_method_set_tail_direction) ( bone_idx: [`int`](class_int.md), tail_direction: [TailDirection](#enum_skeletonprofile_taildirection) ) |
-| `void`                                               | [`set_texture`](#class_skeletonprofile_method_set_texture) ( group_idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                        |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                                | [`find_bone`](class_skeletonprofile.md#class_skeletonprofile_method_find_bone) ( bone_name: [`StringName`](class_stringname.md) ) const[^const]                                                            |
+| [`StringName`](class_stringname.md)                  | [`get_bone_name`](class_skeletonprofile.md#class_skeletonprofile_method_get_bone_name) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                   |
+| [`StringName`](class_stringname.md)                  | [`get_bone_parent`](class_skeletonprofile.md#class_skeletonprofile_method_get_bone_parent) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                               |
+| [`StringName`](class_stringname.md)                  | [`get_bone_tail`](class_skeletonprofile.md#class_skeletonprofile_method_get_bone_tail) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                   |
+| [`StringName`](class_stringname.md)                  | [`get_group`](class_skeletonprofile.md#class_skeletonprofile_method_get_group) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                           |
+| [`StringName`](class_stringname.md)                  | [`get_group_name`](class_skeletonprofile.md#class_skeletonprofile_method_get_group_name) ( group_idx: [`int`](class_int.md) ) const[^const]                                                                |
+| [`Vector2`](class_vector2.md)                        | [`get_handle_offset`](class_skeletonprofile.md#class_skeletonprofile_method_get_handle_offset) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                           |
+| [`Transform3D`](class_transform3d.md)                | [`get_reference_pose`](class_skeletonprofile.md#class_skeletonprofile_method_get_reference_pose) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                         |
+| [TailDirection](#enum_skeletonprofile_taildirection) | [`get_tail_direction`](class_skeletonprofile.md#class_skeletonprofile_method_get_tail_direction) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                         |
+| [`Texture2D`](class_texture2d.md)                    | [`get_texture`](class_skeletonprofile.md#class_skeletonprofile_method_get_texture) ( group_idx: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`bool`](class_bool.md)                              | [`is_required`](class_skeletonprofile.md#class_skeletonprofile_method_is_required) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                       |
+| `void`                                               | [`set_bone_name`](class_skeletonprofile.md#class_skeletonprofile_method_set_bone_name) ( bone_idx: [`int`](class_int.md), bone_name: [`StringName`](class_stringname.md) )                                 |
+| `void`                                               | [`set_bone_parent`](class_skeletonprofile.md#class_skeletonprofile_method_set_bone_parent) ( bone_idx: [`int`](class_int.md), bone_parent: [`StringName`](class_stringname.md) )                           |
+| `void`                                               | [`set_bone_tail`](class_skeletonprofile.md#class_skeletonprofile_method_set_bone_tail) ( bone_idx: [`int`](class_int.md), bone_tail: [`StringName`](class_stringname.md) )                                 |
+| `void`                                               | [`set_group`](class_skeletonprofile.md#class_skeletonprofile_method_set_group) ( bone_idx: [`int`](class_int.md), group: [`StringName`](class_stringname.md) )                                             |
+| `void`                                               | [`set_group_name`](class_skeletonprofile.md#class_skeletonprofile_method_set_group_name) ( group_idx: [`int`](class_int.md), group_name: [`StringName`](class_stringname.md) )                             |
+| `void`                                               | [`set_handle_offset`](class_skeletonprofile.md#class_skeletonprofile_method_set_handle_offset) ( bone_idx: [`int`](class_int.md), handle_offset: [`Vector2`](class_vector2.md) )                           |
+| `void`                                               | [`set_reference_pose`](class_skeletonprofile.md#class_skeletonprofile_method_set_reference_pose) ( bone_idx: [`int`](class_int.md), bone_name: [`Transform3D`](class_transform3d.md) )                     |
+| `void`                                               | [`set_required`](class_skeletonprofile.md#class_skeletonprofile_method_set_required) ( bone_idx: [`int`](class_int.md), required: [`bool`](class_bool.md) )                                                |
+| `void`                                               | [`set_tail_direction`](class_skeletonprofile.md#class_skeletonprofile_method_set_tail_direction) ( bone_idx: [`int`](class_int.md), tail_direction: [TailDirection](#enum_skeletonprofile_taildirection) ) |
+| `void`                                               | [`set_texture`](class_skeletonprofile.md#class_skeletonprofile_method_set_texture) ( group_idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                        |
 
 <!-- rst-class:: classref-section-separator -->
 

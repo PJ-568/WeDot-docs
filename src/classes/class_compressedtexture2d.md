@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CompressedTexture2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CompressedTexture2D.xml。 -->
 
 <div id="_class_compressedtexture2d"></div>
 
@@ -31,12 +31,16 @@ Using **VRAM Compressed** also improves loading times, as VRAM-compressed textur
 
 ## 属性
 
-| [`String`](class_string.md) | [`load_path`](#class_compressedtexture2d_property_load_path) | ``""``                                                                               |
-| [`bool`](class_bool.md)     | resource_local_to_scene                                      | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`load_path`](class_compressedtexture2d.md#class_compressedtexture2d_property_load_path) | ``""``                                                                                                |
+| [`bool`](class_bool.md)     | resource_local_to_scene                                                                  | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexture2d_method_load) ( path: [`String`](class_string.md) ) |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexture2d.md#class_compressedtexture2d_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

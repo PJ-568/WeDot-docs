@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SegmentShape2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SegmentShape2D.xml。 -->
 
 <div id="_class_segmentshape2d"></div>
 
@@ -17,8 +17,10 @@ A 2D line segment shape, intended for use in physics. Usually used to provide a 
 
 ## 属性
 
-| [`Vector2`](class_vector2.md) | [`a`](#class_segmentshape2d_property_a) | ``Vector2(0, 0)``  |
-| [`Vector2`](class_vector2.md) | [`b`](#class_segmentshape2d_property_b) | ``Vector2(0, 10)`` |
+|||
+|:-:|:--|
+| [`Vector2`](class_vector2.md) | [`a`](class_segmentshape2d.md#class_segmentshape2d_property_a) | ``Vector2(0, 0)``  |
+| [`Vector2`](class_vector2.md) | [`b`](class_segmentshape2d.md#class_segmentshape2d_property_b) | ``Vector2(0, 10)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

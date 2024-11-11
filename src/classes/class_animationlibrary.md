@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationLibrary.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationLibrary.xml。 -->
 
 <div id="_class_animationlibrary"></div>
 
@@ -17,12 +17,14 @@ An animation library stores a set of animations accessible through [`StringName`
 
 ## 方法
 
-| [Error](#enum_@globalscope_error)                           | [`add_animation`](#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
-| [`Animation`](class_animation.md)                           | [`get_animation`](#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                                     | [`has_animation`](#class_animationlibrary_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| `void`                                                      | [`remove_animation`](#class_animationlibrary_method_remove_animation) ( name: [`StringName`](class_stringname.md) )                                               |
-| `void`                                                      | [`rename_animation`](#class_animationlibrary_method_rename_animation) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error)                           | [`add_animation`](class_animationlibrary.md#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
+| [`Animation`](class_animation.md)                           | [`get_animation`](class_animationlibrary.md#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](class_animationlibrary.md#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                                     | [`has_animation`](class_animationlibrary.md#class_animationlibrary_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| `void`                                                      | [`remove_animation`](class_animationlibrary.md#class_animationlibrary_method_remove_animation) ( name: [`StringName`](class_stringname.md) )                                               |
+| `void`                                                      | [`rename_animation`](class_animationlibrary.md#class_animationlibrary_method_rename_animation) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,7 +48,7 @@ Emitted when an [`Animation`](class_animation.md) is added, under the key `name`
 
 Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. `name` is the key of the animation that was changed.
 
-See also [`Resource.changed`](#class_resource_signal_changed), which this acts as a relay for.
+See also [`Resource.changed`](class_resource.md#class_resource_signal_changed), which this acts as a relay for.
 
 <!-- rst-class:: classref-item-separator -->
 

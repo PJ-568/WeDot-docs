@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/QuadOccluder3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/QuadOccluder3D.xml。 -->
 
 <div id="_class_quadoccluder3d"></div>
 
@@ -19,7 +19,9 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
-| [`Vector2`](class_vector2.md) | [`size`](#class_quadoccluder3d_property_size) | ``Vector2(1, 1)`` |
+|||
+|:-:|:--|
+| [`Vector2`](class_vector2.md) | [`size`](class_quadoccluder3d.md#class_quadoccluder3d_property_size) | ``Vector2(1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

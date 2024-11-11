@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFPhysicsBody.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFPhysicsBody.xml。 -->
 
 <div id="_class_gltfphysicsbody"></div>
 
@@ -9,29 +9,33 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Represents a GLTF physics body.
+Represents a glTF physics body.
 
 ## 描述
 
-Represents a physics body as an intermediary between the `OMI_physics_body` GLTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different GLTF physics extensions in the future.
+Represents a physics body as an intermediary between the `OMI_physics_body` glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
 
 ## 属性
 
-| [`Vector3`](class_vector3.md)       | [`angular_velocity`](#class_gltfphysicsbody_property_angular_velocity)       | ``Vector3(0, 0, 0)``                 |
-| [`String`](class_string.md)         | [`body_type`](#class_gltfphysicsbody_property_body_type)                     | ``"rigid"``                          |
-| [`Vector3`](class_vector3.md)       | [`center_of_mass`](#class_gltfphysicsbody_property_center_of_mass)           | ``Vector3(0, 0, 0)``                 |
-| [`Vector3`](class_vector3.md)       | [`inertia_diagonal`](#class_gltfphysicsbody_property_inertia_diagonal)       | ``Vector3(0, 0, 0)``                 |
-| [`Quaternion`](class_quaternion.md) | [`inertia_orientation`](#class_gltfphysicsbody_property_inertia_orientation) | ``Quaternion(0, 0, 0, 1)``           |
-| [`Basis`](class_basis.md)           | [`inertia_tensor`](#class_gltfphysicsbody_property_inertia_tensor)           | ``Basis(0, 0, 0, 0, 0, 0, 0, 0, 0)`` |
-| [`Vector3`](class_vector3.md)       | [`linear_velocity`](#class_gltfphysicsbody_property_linear_velocity)         | ``Vector3(0, 0, 0)``                 |
-| [`float`](class_float.md)           | [`mass`](#class_gltfphysicsbody_property_mass)                               | ``1.0``                              |
+|||
+|:-:|:--|
+| [`Vector3`](class_vector3.md)       | [`angular_velocity`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_angular_velocity)       | ``Vector3(0, 0, 0)``                 |
+| [`String`](class_string.md)         | [`body_type`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_body_type)                     | ``"rigid"``                          |
+| [`Vector3`](class_vector3.md)       | [`center_of_mass`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_center_of_mass)           | ``Vector3(0, 0, 0)``                 |
+| [`Vector3`](class_vector3.md)       | [`inertia_diagonal`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_inertia_diagonal)       | ``Vector3(0, 0, 0)``                 |
+| [`Quaternion`](class_quaternion.md) | [`inertia_orientation`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_inertia_orientation) | ``Quaternion(0, 0, 0, 1)``           |
+| [`Basis`](class_basis.md)           | [`inertia_tensor`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_inertia_tensor)           | ``Basis(0, 0, 0, 0, 0, 0, 0, 0, 0)`` |
+| [`Vector3`](class_vector3.md)       | [`linear_velocity`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_linear_velocity)         | ``Vector3(0, 0, 0)``                 |
+| [`float`](class_float.md)           | [`mass`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_mass)                               | ``1.0``                              |
 
 ## 方法
 
-| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_dictionary`](#class_gltfphysicsbody_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]  |
-| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_node`](#class_gltfphysicsbody_method_from_node) ( body_node: [`CollisionObject3D`](class_collisionobject3d.md) ) static[^static] |
-| [`Dictionary`](class_dictionary.md)               | [`to_dictionary`](#class_gltfphysicsbody_method_to_dictionary) ( ) const[^const]                                                        |
-| [`CollisionObject3D`](class_collisionobject3d.md) | [`to_node`](#class_gltfphysicsbody_method_to_node) ( ) const[^const]                                                                    |
+|||
+|:-:|:--|
+| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_dictionary`](class_gltfphysicsbody.md#class_gltfphysicsbody_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]  |
+| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_node`](class_gltfphysicsbody.md#class_gltfphysicsbody_method_from_node) ( body_node: [`CollisionObject3D`](class_collisionobject3d.md) ) static[^static] |
+| [`Dictionary`](class_dictionary.md)               | [`to_dictionary`](class_gltfphysicsbody.md#class_gltfphysicsbody_method_to_dictionary) ( ) const[^const]                                                        |
+| [`CollisionObject3D`](class_collisionobject3d.md) | [`to_node`](class_gltfphysicsbody.md#class_gltfphysicsbody_method_to_node) ( ) const[^const]                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -100,7 +104,7 @@ When converted to a Godot [`RigidBody3D`](class_rigidbody3d.md) node, if this va
 - `void` **set_inertia_orientation** ( value: [`Quaternion`](class_quaternion.md) )
 - [`Quaternion`](class_quaternion.md) **get_inertia_orientation** ( )
 
-The inertia orientation of the physics body. This defines the rotation of the inertia's principle axes relative to the object's local axes. This is only used when the body type is "rigid" or "vehicle" and [`inertia_diagonal`](#class_gltfphysicsbody_property_inertia_diagonal) is set to a non-zero value.
+The inertia orientation of the physics body. This defines the rotation of the inertia's principle axes relative to the object's local axes. This is only used when the body type is "rigid" or "vehicle" and [`inertia_diagonal`](class_gltfphysicsbody.md#class_gltfphysicsbody_property_inertia_diagonal) is set to a non-zero value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -155,7 +159,7 @@ The mass of the physics body, in kilograms. This is only used when the body type
 
 [`GLTFPhysicsBody`](class_gltfphysicsbody.md) **from_dictionary** ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]<div id="class_gltfphysicsbody_method_from_dictionary"></div>
 
-Creates a new GLTFPhysicsBody instance by parsing the given [`Dictionary`](class_dictionary.md) in the `OMI_physics_body` GLTF extension format.
+Creates a new GLTFPhysicsBody instance by parsing the given [`Dictionary`](class_dictionary.md) in the `OMI_physics_body` glTF extension format.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -175,7 +179,7 @@ Creates a new GLTFPhysicsBody instance from the given Godot [`CollisionObject3D`
 
 [`Dictionary`](class_dictionary.md) **to_dictionary** ( ) const[^const]<div id="class_gltfphysicsbody_method_to_dictionary"></div>
 
-Serializes this GLTFPhysicsBody instance into a [`Dictionary`](class_dictionary.md). It will be in the format expected by the `OMI_physics_body` GLTF extension.
+Serializes this GLTFPhysicsBody instance into a [`Dictionary`](class_dictionary.md). It will be in the format expected by the `OMI_physics_body` glTF extension.
 
 <!-- rst-class:: classref-item-separator -->
 

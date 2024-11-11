@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/WeakRef.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/WeakRef.xml。 -->
 
 <div id="_class_weakref"></div>
 
@@ -13,11 +13,13 @@ Holds an [`Object`](class_object.md). If the object is [`RefCounted`](class_refc
 
 ## 描述
 
-A weakref can hold a [`RefCounted`](class_refcounted.md) without contributing to the reference counter. A weakref can be created from an [`Object`](class_object.md) using [`@GlobalScope.weakref`](#class_@globalscope_method_weakref). If this object is not a reference, weakref still works, however, it does not have any effect on the object. Weakrefs are useful in cases where multiple classes have variables that refer to each other. Without weakrefs, using these classes could lead to memory leaks, since both references keep each other from being released. Making part of the variables a weakref can prevent this cyclic dependency, and allows the references to be released.
+A weakref can hold a [`RefCounted`](class_refcounted.md) without contributing to the reference counter. A weakref can be created from an [`Object`](class_object.md) using [`@GlobalScope.weakref`](class_@globalscope.md#class_@globalscope_method_weakref). If this object is not a reference, weakref still works, however, it does not have any effect on the object. Weakrefs are useful in cases where multiple classes have variables that refer to each other. Without weakrefs, using these classes could lead to memory leaks, since both references keep each other from being released. Making part of the variables a weakref can prevent this cyclic dependency, and allows the references to be released.
 
 ## 方法
 
-| [`Variant`](class_variant.md) | [`get_ref`](#class_weakref_method_get_ref) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`Variant`](class_variant.md) | [`get_ref`](class_weakref.md#class_weakref_method_get_ref) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

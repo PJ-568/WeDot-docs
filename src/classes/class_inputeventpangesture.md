@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/InputEventPanGesture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/InputEventPanGesture.xml。 -->
 
 <div id="_class_inputeventpangesture"></div>
 
@@ -15,11 +15,13 @@ Represents a panning touch gesture.
 
 Stores information about pan gestures. A pan gesture is performed when the user swipes the touch screen with two fingers. It's typically used for panning/scrolling.
 
- **Note:** On Android, this requires the [`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures`](#class_projectsettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures) project setting to be enabled.
+ **Note:** On Android, this requires the [`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures) project setting to be enabled.
 
 ## 属性
 
-| [`Vector2`](class_vector2.md) | [`delta`](#class_inputeventpangesture_property_delta) | ``Vector2(0, 0)`` |
+|||
+|:-:|:--|
+| [`Vector2`](class_vector2.md) | [`delta`](class_inputeventpangesture.md#class_inputeventpangesture_property_delta) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

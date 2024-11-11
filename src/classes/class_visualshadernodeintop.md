@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeIntOp.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeIntOp.xml。 -->
 
 <div id="_class_visualshadernodeintop"></div>
 
@@ -13,11 +13,13 @@ An integer scalar operator to be used within the visual shader graph.
 
 ## 描述
 
-Applies [`operator`](#class_visualshadernodeintop_property_operator) to two integer inputs: `a` and `b`.
+Applies [`operator`](class_visualshadernodeintop.md#class_visualshadernodeintop_property_operator) to two integer inputs: `a` and `b`.
 
 ## 属性
 
-| [Operator](#enum_visualshadernodeintop_operator) | [`operator`](#class_visualshadernodeintop_property_operator) | ``0`` |
+|||
+|:-:|:--|
+| [Operator](#enum_visualshadernodeintop_operator) | [`operator`](class_visualshadernodeintop.md#class_visualshadernodeintop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

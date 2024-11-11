@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFSkeleton.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFSkeleton.xml。 -->
 
 <div id="_class_gltfskeleton"></div>
 
@@ -13,18 +13,22 @@
 
 ## 属性
 
-| [`PackedInt32Array`](class_packedint32array.md) | [`joints`](#class_gltfskeleton_property_joints) | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`roots`](#class_gltfskeleton_property_roots)   | ``PackedInt32Array()`` |
+|||
+|:-:|:--|
+| [`PackedInt32Array`](class_packedint32array.md) | [`joints`](class_gltfskeleton.md#class_gltfskeleton_property_joints) | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`roots`](class_gltfskeleton.md#class_gltfskeleton_property_roots)   | ``PackedInt32Array()`` |
 
 ## 方法
 
-| [`BoneAttachment3D`](class_boneattachment3d.md)     | [`get_bone_attachment`](#class_gltfskeleton_method_get_bone_attachment) ( idx: [`int`](class_int.md) )                                  |
-| [`int`](class_int.md)                               | [`get_bone_attachment_count`](#class_gltfskeleton_method_get_bone_attachment_count) ( )                                                 |
-| [`Dictionary`](class_dictionary.md)                 | [`get_godot_bone_node`](#class_gltfskeleton_method_get_godot_bone_node) ( )                                                             |
-| [`Skeleton3D`](class_skeleton3d.md)                 | [`get_godot_skeleton`](#class_gltfskeleton_method_get_godot_skeleton) ( )                                                               |
-| [Array](class_array.md) [`String`](class_string.md) | [`get_unique_names`](#class_gltfskeleton_method_get_unique_names) ( )                                                                   |
-| `void`                                              | [`set_godot_bone_node`](#class_gltfskeleton_method_set_godot_bone_node) ( godot_bone_node: [`Dictionary`](class_dictionary.md) )        |
-| `void`                                              | [`set_unique_names`](#class_gltfskeleton_method_set_unique_names) ( unique_names: [Array](class_array.md) [`String`](class_string.md) ) |
+|||
+|:-:|:--|
+| [`BoneAttachment3D`](class_boneattachment3d.md)     | [`get_bone_attachment`](class_gltfskeleton.md#class_gltfskeleton_method_get_bone_attachment) ( idx: [`int`](class_int.md) )                                  |
+| [`int`](class_int.md)                               | [`get_bone_attachment_count`](class_gltfskeleton.md#class_gltfskeleton_method_get_bone_attachment_count) ( )                                                 |
+| [`Dictionary`](class_dictionary.md)                 | [`get_godot_bone_node`](class_gltfskeleton.md#class_gltfskeleton_method_get_godot_bone_node) ( )                                                             |
+| [`Skeleton3D`](class_skeleton3d.md)                 | [`get_godot_skeleton`](class_gltfskeleton.md#class_gltfskeleton_method_get_godot_skeleton) ( )                                                               |
+| [Array](class_array.md) [`String`](class_string.md) | [`get_unique_names`](class_gltfskeleton.md#class_gltfskeleton_method_get_unique_names) ( )                                                                   |
+| `void`                                              | [`set_godot_bone_node`](class_gltfskeleton.md#class_gltfskeleton_method_set_godot_bone_node) ( godot_bone_node: [`Dictionary`](class_dictionary.md) )        |
+| `void`                                              | [`set_unique_names`](class_gltfskeleton.md#class_gltfskeleton_method_set_unique_names) ( unique_names: [Array](class_array.md) [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -84,7 +88,7 @@
 
 [`Dictionary`](class_dictionary.md) **get_godot_bone_node** ( )<div id="class_gltfskeleton_method_get_godot_bone_node"></div>
 
-Returns a [`Dictionary`](class_dictionary.md) that maps skeleton bone indices to the indices of GLTF nodes. This property is unused during import, and only set during export. In a GLTF file, a bone is a node, so Godot converts skeleton bones to GLTF nodes.
+Returns a [`Dictionary`](class_dictionary.md) that maps skeleton bone indices to the indices of glTF nodes. This property is unused during import, and only set during export. In a glTF file, a bone is a node, so Godot converts skeleton bones to glTF nodes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -114,7 +118,7 @@ Returns a [`Dictionary`](class_dictionary.md) that maps skeleton bone indices to
 
 `void` **set_godot_bone_node** ( godot_bone_node: [`Dictionary`](class_dictionary.md) )<div id="class_gltfskeleton_method_set_godot_bone_node"></div>
 
-Sets a [`Dictionary`](class_dictionary.md) that maps skeleton bone indices to the indices of GLTF nodes. This property is unused during import, and only set during export. In a GLTF file, a bone is a node, so Godot converts skeleton bones to GLTF nodes.
+Sets a [`Dictionary`](class_dictionary.md) that maps skeleton bone indices to the indices of glTF nodes. This property is unused during import, and only set during export. In a glTF file, a bone is a node, so Godot converts skeleton bones to glTF nodes.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PolygonOccluder3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PolygonOccluder3D.xml。 -->
 
 <div id="_class_polygonoccluder3d"></div>
 
@@ -19,7 +19,9 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
-| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_polygonoccluder3d_property_polygon) | ``PackedVector2Array()`` |
+|||
+|:-:|:--|
+| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](class_polygonoccluder3d.md#class_polygonoccluder3d_property_polygon) | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 

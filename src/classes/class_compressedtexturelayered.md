@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CompressedTextureLayered.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CompressedTextureLayered.xml。 -->
 
 <div id="_class_compressedtexturelayered"></div>
 
@@ -19,11 +19,15 @@ Base class for [`CompressedTexture2DArray`](class_compressedtexture2darray.md) a
 
 ## 属性
 
-| [`String`](class_string.md) | [`load_path`](#class_compressedtexturelayered_property_load_path) | ``""`` |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`load_path`](class_compressedtexturelayered.md#class_compressedtexturelayered_property_load_path) | ``""`` |
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexturelayered_method_load) ( path: [`String`](class_string.md) ) |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexturelayered.md#class_compressedtexturelayered_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

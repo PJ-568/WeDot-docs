@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ConfirmationDialog.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ConfirmationDialog.xml。 -->
 
 <div id="_class_confirmationdialog"></div>
 
@@ -39,14 +39,18 @@ To get cancel action, you can use:
 
 ## 属性
 
-| [`String`](class_string.md)     | [`cancel_button_text`](#class_confirmationdialog_property_cancel_button_text) | ``"Cancel"``                                                                  |
-| [`Vector2i`](class_vector2i.md) | min_size                                                                      | ``Vector2i(200, 70)`` (overrides [`Window`](#class_window_property_min_size)) |
-| [`Vector2i`](class_vector2i.md) | size                                                                          | ``Vector2i(200, 100)`` (overrides [`Window`](#class_window_property_size))    |
-| [`String`](class_string.md)     | title                                                                         | ``"Please Confirm..."`` (overrides [`Window`](#class_window_property_title))  |
+|||
+|:-:|:--|
+| [`String`](class_string.md)     | [`cancel_button_text`](class_confirmationdialog.md#class_confirmationdialog_property_cancel_button_text) | ``"Cancel"``                                                                                 |
+| [`Vector2i`](class_vector2i.md) | min_size                                                                                                 | ``Vector2i(200, 70)`` (overrides [`Window`](class_window.md#class_window_property_min_size)) |
+| [`Vector2i`](class_vector2i.md) | size                                                                                                     | ``Vector2i(200, 100)`` (overrides [`Window`](class_window.md#class_window_property_size))    |
+| [`String`](class_string.md)     | title                                                                                                    | ``"Please Confirm..."`` (overrides [`Window`](class_window.md#class_window_property_title))  |
 
 ## 方法
 
-| [`Button`](class_button.md) | [`get_cancel_button`](#class_confirmationdialog_method_get_cancel_button) ( ) |
+|||
+|:-:|:--|
+| [`Button`](class_button.md) | [`get_cancel_button`](class_confirmationdialog.md#class_confirmationdialog_method_get_cancel_button) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -61,7 +65,7 @@ To get cancel action, you can use:
 - `void` **set_cancel_button_text** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_cancel_button_text** ( )
 
-The text displayed by the cancel button (see [`get_cancel_button`](#class_confirmationdialog_method_get_cancel_button)).
+The text displayed by the cancel button (see [`get_cancel_button`](class_confirmationdialog.md#class_confirmationdialog_method_get_cancel_button)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -75,7 +79,7 @@ The text displayed by the cancel button (see [`get_cancel_button`](#class_confir
 
 Returns the cancel button.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

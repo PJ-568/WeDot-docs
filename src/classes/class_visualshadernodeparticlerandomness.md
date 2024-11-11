@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeParticleRandomness.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeParticleRandomness.xml。 -->
 
 <div id="_class_visualshadernodeparticlerandomness"></div>
 
@@ -17,7 +17,9 @@ Randomness node will output pseudo-random values of the given type based on the 
 
 ## 属性
 
-| [OpType](#enum_visualshadernodeparticlerandomness_optype) | [`op_type`](#class_visualshadernodeparticlerandomness_property_op_type) | ``0`` |
+|||
+|:-:|:--|
+| [OpType](#enum_visualshadernodeparticlerandomness_optype) | [`op_type`](class_visualshadernodeparticlerandomness.md#class_visualshadernodeparticlerandomness_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

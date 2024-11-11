@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PortableCompressedTexture2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PortableCompressedTexture2D.xml。 -->
 
 <div id="_class_portablecompressedtexture2d"></div>
 
@@ -25,18 +25,21 @@ This resource is intended to be created from code.
 
 ## 属性
 
-| [`PackedByteArray`](class_packedbytearray.md) | [`_data`](#class_portablecompressedtexture2d_property__data)                                   | ``PackedByteArray()``                                                                |
-| [`bool`](class_bool.md)                       | [`keep_compressed_buffer`](#class_portablecompressedtexture2d_property_keep_compressed_buffer) | ``false``                                                                            |
-| [`bool`](class_bool.md)                       | resource_local_to_scene                                                                        | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`Vector2`](class_vector2.md)                 | [`size_override`](#class_portablecompressedtexture2d_property_size_override)                   | ``Vector2(0, 0)``                                                                    |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)       | [`keep_compressed_buffer`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_property_keep_compressed_buffer) | ``false``                                                                                             |
+| [`bool`](class_bool.md)       | resource_local_to_scene                                                                                                            | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`Vector2`](class_vector2.md) | [`size_override`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_property_size_override)                   | ``Vector2(0, 0)``                                                                                     |
 
 ## 方法
 
-| `void`                                                               | [`create_from_image`](#class_portablecompressedtexture2d_method_create_from_image) ( image: [`Image`](class_image.md), compression_mode: [CompressionMode](#enum_portablecompressedtexture2d_compressionmode), normal_map: [`bool`](class_bool.md) = false, lossy_quality: [`float`](class_float.md) = 0.8 ) |
-| [CompressionMode](#enum_portablecompressedtexture2d_compressionmode) | [`get_compression_mode`](#class_portablecompressedtexture2d_method_get_compression_mode) ( ) const[^const]                                                                                                                                                                                                   |
-| [Format](#enum_image_format)                                         | [`get_format`](#class_portablecompressedtexture2d_method_get_format) ( ) const[^const]                                                                                                                                                                                                                       |
-| [`bool`](class_bool.md)                                              | [`is_keeping_all_compressed_buffers`](#class_portablecompressedtexture2d_method_is_keeping_all_compressed_buffers) ( ) static[^static]                                                                                                                                                                       |
-| `void`                                                               | [`set_keep_all_compressed_buffers`](#class_portablecompressedtexture2d_method_set_keep_all_compressed_buffers) ( keep: [`bool`](class_bool.md) ) static[^static]                                                                                                                                             |
+|||
+|:-:|:--|
+| `void`                                                               | [`create_from_image`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_method_create_from_image) ( image: [`Image`](class_image.md), compression_mode: [CompressionMode](#enum_portablecompressedtexture2d_compressionmode), normal_map: [`bool`](class_bool.md) = false, lossy_quality: [`float`](class_float.md) = 0.8 ) |
+| [CompressionMode](#enum_portablecompressedtexture2d_compressionmode) | [`get_compression_mode`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_method_get_compression_mode) ( ) const[^const]                                                                                                                                                                                                   |
+| [Format](#enum_image_format)                                         | [`get_format`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_method_get_format) ( ) const[^const]                                                                                                                                                                                                                       |
+| [`bool`](class_bool.md)                                              | [`is_keeping_all_compressed_buffers`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_method_is_keeping_all_compressed_buffers) ( ) static[^static]                                                                                                                                                                       |
+| `void`                                                               | [`set_keep_all_compressed_buffers`](class_portablecompressedtexture2d.md#class_portablecompressedtexture2d_method_set_keep_all_compressed_buffers) ( keep: [`bool`](class_bool.md) ) static[^static]                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -101,16 +104,6 @@ enum **CompressionMode**: <div id="enum_portablecompressedtexture2d_compressionm
 ---
 
 ## 属性说明
-
-<div id="_class_portablecompressedtexture2d_property__data"></div>
-
-[`PackedByteArray`](class_packedbytearray.md) **_data** = ``PackedByteArray()`` <div id="class_portablecompressedtexture2d_property__data"></div>
-
-该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-<!-- rst-class:: classref-item-separator -->
-
----
 
 <div id="_class_portablecompressedtexture2d_property_keep_compressed_buffer"></div>
 

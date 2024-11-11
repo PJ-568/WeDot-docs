@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeComment.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeComment.xml。 -->
 
 <div id="_class_visualshadernodecomment"></div>
 
@@ -19,7 +19,9 @@ This node was replaced by [`VisualShaderNodeFrame`](class_visualshadernodeframe.
 
 ## 属性
 
-| [`String`](class_string.md) | [`description`](#class_visualshadernodecomment_property_description) | ``""`` |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`description`](class_visualshadernodecomment.md#class_visualshadernodecomment_property_description) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->
 

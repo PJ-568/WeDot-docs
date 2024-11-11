@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceImporterLayeredTexture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceImporterLayeredTexture.xml。 -->
 
 <div id="_class_resourceimporterlayeredtexture"></div>
 
@@ -17,14 +17,16 @@ This imports a 3-dimensional texture, which can then be used in custom shaders, 
 
 ## 属性
 
-| [`int`](class_int.md)     | [`compress/channel_pack`](#class_resourceimporterlayeredtexture_property_compress/channel_pack)       | ``0``     |
-| [`int`](class_int.md)     | [`compress/hdr_compression`](#class_resourceimporterlayeredtexture_property_compress/hdr_compression) | ``1``     |
-| [`bool`](class_bool.md)   | [`compress/high_quality`](#class_resourceimporterlayeredtexture_property_compress/high_quality)       | ``false`` |
-| [`float`](class_float.md) | [`compress/lossy_quality`](#class_resourceimporterlayeredtexture_property_compress/lossy_quality)     | ``0.7``   |
-| [`int`](class_int.md)     | [`compress/mode`](#class_resourceimporterlayeredtexture_property_compress/mode)                       | ``1``     |
-| [`bool`](class_bool.md)   | [`mipmaps/generate`](#class_resourceimporterlayeredtexture_property_mipmaps/generate)                 | ``true``  |
-| [`int`](class_int.md)     | [`mipmaps/limit`](#class_resourceimporterlayeredtexture_property_mipmaps/limit)                       | ``-1``    |
-| [`int`](class_int.md)     | [`slices/arrangement`](#class_resourceimporterlayeredtexture_property_slices/arrangement)             | ``1``     |
+|||
+|:-:|:--|
+| [`int`](class_int.md)     | [`compress/channel_pack`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_compress/channel_pack)       | ``0``     |
+| [`int`](class_int.md)     | [`compress/hdr_compression`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_compress/hdr_compression) | ``1``     |
+| [`bool`](class_bool.md)   | [`compress/high_quality`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_compress/high_quality)       | ``false`` |
+| [`float`](class_float.md) | [`compress/lossy_quality`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_compress/lossy_quality)     | ``0.7``   |
+| [`int`](class_int.md)     | [`compress/mode`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_compress/mode)                       | ``1``     |
+| [`bool`](class_bool.md)   | [`mipmaps/generate`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_mipmaps/generate)                 | ``true``  |
+| [`int`](class_int.md)     | [`mipmaps/limit`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_mipmaps/limit)                       | ``-1``    |
+| [`int`](class_int.md)     | [`slices/arrangement`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_slices/arrangement)             | ``1``     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -74,7 +76,7 @@ If `true`, uses BPTC compression on desktop platforms and ASTC compression on mo
 
 If `false`, uses the faster but lower-quality S3TC compression on desktop platforms and ETC2 on mobile/web platforms. When using S3TC, DXT1 (BC1) is used for opaque textures and DXT5 (BC3) is used for transparent or normal map (RGTC) textures.
 
-BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do not (see [`compress/hdr_compression`](#class_resourceimporterlayeredtexture_property_compress/hdr_compression)).
+BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do not (see [`compress/hdr_compression`](class_resourceimporterlayeredtexture.md#class_resourceimporterlayeredtexture_property_compress/hdr_compression)).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimatedSprite3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimatedSprite3D.xml。 -->
 
 <div id="_class_animatedsprite3d"></div>
 
@@ -13,26 +13,30 @@
 
 ## 描述
 
-**AnimatedSprite3D** is similar to the [`Sprite3D`](class_sprite3d.md) node, except it carries multiple textures as animation [`sprite_frames`](#class_animatedsprite3d_property_sprite_frames). Animations are created using a [`SpriteFrames`](class_spriteframes.md) resource, which allows you to import image files (or a folder containing said files) to provide the animation frames for the sprite. The [`SpriteFrames`](class_spriteframes.md) resource can be configured in the editor via the SpriteFrames bottom panel.
+**AnimatedSprite3D** is similar to the [`Sprite3D`](class_sprite3d.md) node, except it carries multiple textures as animation [`sprite_frames`](class_animatedsprite3d.md#class_animatedsprite3d_property_sprite_frames). Animations are created using a [`SpriteFrames`](class_spriteframes.md) resource, which allows you to import image files (or a folder containing said files) to provide the animation frames for the sprite. The [`SpriteFrames`](class_spriteframes.md) resource can be configured in the editor via the SpriteFrames bottom panel.
 
 ## 属性
 
-| [`StringName`](class_stringname.md)     | [`animation`](#class_animatedsprite3d_property_animation)           | ``&"default"`` |
-| [`String`](class_string.md)             | [`autoplay`](#class_animatedsprite3d_property_autoplay)             | ``""``         |
-| [`int`](class_int.md)                   | [`frame`](#class_animatedsprite3d_property_frame)                   | ``0``          |
-| [`float`](class_float.md)               | [`frame_progress`](#class_animatedsprite3d_property_frame_progress) | ``0.0``        |
-| [`float`](class_float.md)               | [`speed_scale`](#class_animatedsprite3d_property_speed_scale)       | ``1.0``        |
-| [`SpriteFrames`](class_spriteframes.md) | [`sprite_frames`](#class_animatedsprite3d_property_sprite_frames)   |                |
+|||
+|:-:|:--|
+| [`StringName`](class_stringname.md)     | [`animation`](class_animatedsprite3d.md#class_animatedsprite3d_property_animation)           | ``&"default"`` |
+| [`String`](class_string.md)             | [`autoplay`](class_animatedsprite3d.md#class_animatedsprite3d_property_autoplay)             | ``""``         |
+| [`int`](class_int.md)                   | [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame)                   | ``0``          |
+| [`float`](class_float.md)               | [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress) | ``0.0``        |
+| [`float`](class_float.md)               | [`speed_scale`](class_animatedsprite3d.md#class_animatedsprite3d_property_speed_scale)       | ``1.0``        |
+| [`SpriteFrames`](class_spriteframes.md) | [`sprite_frames`](class_animatedsprite3d.md#class_animatedsprite3d_property_sprite_frames)   |                |
 
 ## 方法
 
-| [`float`](class_float.md) | [`get_playing_speed`](#class_animatedsprite3d_method_get_playing_speed) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)   | [`is_playing`](#class_animatedsprite3d_method_is_playing) ( ) const[^const]                                                                                                                 |
-| `void`                    | [`pause`](#class_animatedsprite3d_method_pause) ( )                                                                                                                                         |
-| `void`                    | [`play`](#class_animatedsprite3d_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false ) |
-| `void`                    | [`play_backwards`](#class_animatedsprite3d_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"" )                                                                       |
-| `void`                    | [`set_frame_and_progress`](#class_animatedsprite3d_method_set_frame_and_progress) ( frame: [`int`](class_int.md), progress: [`float`](class_float.md) )                                     |
-| `void`                    | [`stop`](#class_animatedsprite3d_method_stop) ( )                                                                                                                                           |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`get_playing_speed`](class_animatedsprite3d.md#class_animatedsprite3d_method_get_playing_speed) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)   | [`is_playing`](class_animatedsprite3d.md#class_animatedsprite3d_method_is_playing) ( ) const[^const]                                                                                                                 |
+| `void`                    | [`pause`](class_animatedsprite3d.md#class_animatedsprite3d_method_pause) ( )                                                                                                                                         |
+| `void`                    | [`play`](class_animatedsprite3d.md#class_animatedsprite3d_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false ) |
+| `void`                    | [`play_backwards`](class_animatedsprite3d.md#class_animatedsprite3d_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"" )                                                                       |
+| `void`                    | [`set_frame_and_progress`](class_animatedsprite3d.md#class_animatedsprite3d_method_set_frame_and_progress) ( frame: [`int`](class_int.md), progress: [`float`](class_float.md) )                                     |
+| `void`                    | [`stop`](class_animatedsprite3d.md#class_animatedsprite3d_method_stop) ( )                                                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -44,7 +48,7 @@
 
 **animation_changed** ( ) <div id="class_animatedsprite3d_signal_animation_changed"></div>
 
-Emitted when [`animation`](#class_animatedsprite3d_property_animation) changes.
+Emitted when [`animation`](class_animatedsprite3d.md#class_animatedsprite3d_property_animation) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -76,7 +80,7 @@ Emitted when the animation loops.
 
 **frame_changed** ( ) <div id="class_animatedsprite3d_signal_frame_changed"></div>
 
-Emitted when [`frame`](#class_animatedsprite3d_property_frame) changes.
+Emitted when [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -86,7 +90,7 @@ Emitted when [`frame`](#class_animatedsprite3d_property_frame) changes.
 
 **sprite_frames_changed** ( ) <div id="class_animatedsprite3d_signal_sprite_frames_changed"></div>
 
-Emitted when [`sprite_frames`](#class_animatedsprite3d_property_sprite_frames) changes.
+Emitted when [`sprite_frames`](class_animatedsprite3d.md#class_animatedsprite3d_property_sprite_frames) changes.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -101,7 +105,7 @@ Emitted when [`sprite_frames`](#class_animatedsprite3d_property_sprite_frames) c
 - `void` **set_animation** ( value: [`StringName`](class_stringname.md) )
 - [`StringName`](class_stringname.md) **get_animation** ( )
 
-The current animation from the [`sprite_frames`](#class_animatedsprite3d_property_sprite_frames) resource. If this value is changed, the [`frame`](#class_animatedsprite3d_property_frame) counter and the [`frame_progress`](#class_animatedsprite3d_property_frame_progress) are reset.
+The current animation from the [`sprite_frames`](class_animatedsprite3d.md#class_animatedsprite3d_property_sprite_frames) resource. If this value is changed, the [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame) counter and the [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress) are reset.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,7 +131,7 @@ The key of the animation to play when the scene loads.
 - `void` **set_frame** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_frame** ( )
 
-The displayed animation frame's index. Setting this property also resets [`frame_progress`](#class_animatedsprite3d_property_frame_progress). If this is not desired, use [`set_frame_and_progress`](#class_animatedsprite3d_method_set_frame_and_progress).
+The displayed animation frame's index. Setting this property also resets [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress). If this is not desired, use [`set_frame_and_progress`](class_animatedsprite3d.md#class_animatedsprite3d_method_set_frame_and_progress).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,7 +184,7 @@ The [`SpriteFrames`](class_spriteframes.md) resource containing the animation(s)
 
 [`float`](class_float.md) **get_playing_speed** ( ) const[^const]<div id="class_animatedsprite3d_method_get_playing_speed"></div>
 
-Returns the actual playing speed of current animation or `0` if not playing. This speed is the [`speed_scale`](#class_animatedsprite3d_property_speed_scale) property multiplied by `custom_speed` argument specified when calling the [`play`](#class_animatedsprite3d_method_play) method.
+Returns the actual playing speed of current animation or `0` if not playing. This speed is the [`speed_scale`](class_animatedsprite3d.md#class_animatedsprite3d_property_speed_scale) property multiplied by `custom_speed` argument specified when calling the [`play`](class_animatedsprite3d.md#class_animatedsprite3d_method_play) method.
 
 Returns a negative value if the current animation is playing backwards.
 
@@ -192,7 +196,7 @@ Returns a negative value if the current animation is playing backwards.
 
 [`bool`](class_bool.md) **is_playing** ( ) const[^const]<div id="class_animatedsprite3d_method_is_playing"></div>
 
-Returns `true` if an animation is currently playing (even if [`speed_scale`](#class_animatedsprite3d_property_speed_scale) and/or `custom_speed` are `0`).
+Returns `true` if an animation is currently playing (even if [`speed_scale`](class_animatedsprite3d.md#class_animatedsprite3d_property_speed_scale) and/or `custom_speed` are `0`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -202,9 +206,9 @@ Returns `true` if an animation is currently playing (even if [`speed_scale`](#cl
 
 `void` **pause** ( )<div id="class_animatedsprite3d_method_pause"></div>
 
-Pauses the currently playing animation. The [`frame`](#class_animatedsprite3d_property_frame) and [`frame_progress`](#class_animatedsprite3d_property_frame_progress) will be kept and calling [`play`](#class_animatedsprite3d_method_play) or [`play_backwards`](#class_animatedsprite3d_method_play_backwards) without arguments will resume the animation from the current playback position.
+Pauses the currently playing animation. The [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame) and [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress) will be kept and calling [`play`](class_animatedsprite3d.md#class_animatedsprite3d_method_play) or [`play_backwards`](class_animatedsprite3d.md#class_animatedsprite3d_method_play_backwards) without arguments will resume the animation from the current playback position.
 
-See also [`stop`](#class_animatedsprite3d_method_stop).
+See also [`stop`](class_animatedsprite3d.md#class_animatedsprite3d_method_stop).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -214,7 +218,7 @@ See also [`stop`](#class_animatedsprite3d_method_stop).
 
 `void` **play** ( name: [`StringName`](class_stringname.md) = &"", custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )<div id="class_animatedsprite3d_method_play"></div>
 
-Plays the animation with key `name`. If `custom_speed` is negative and `from_end` is `true`, the animation will play backwards (which is equivalent to calling [`play_backwards`](#class_animatedsprite3d_method_play_backwards)).
+Plays the animation with key `name`. If `custom_speed` is negative and `from_end` is `true`, the animation will play backwards (which is equivalent to calling [`play_backwards`](class_animatedsprite3d.md#class_animatedsprite3d_method_play_backwards)).
 
 If this method is called with that same animation `name`, or with no `name` parameter, the assigned animation will resume playing if it was paused.
 
@@ -228,7 +232,7 @@ If this method is called with that same animation `name`, or with no `name` para
 
 Plays the animation with key `name` in reverse.
 
-This method is a shorthand for [`play`](#class_animatedsprite3d_method_play) with `custom_speed = -1.0` and `from_end = true`, so see its description for more information.
+This method is a shorthand for [`play`](class_animatedsprite3d.md#class_animatedsprite3d_method_play) with `custom_speed = -1.0` and `from_end = true`, so see its description for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -238,17 +242,14 @@ This method is a shorthand for [`play`](#class_animatedsprite3d_method_play) wit
 
 `void` **set_frame_and_progress** ( frame: [`int`](class_int.md), progress: [`float`](class_float.md) )<div id="class_animatedsprite3d_method_set_frame_and_progress"></div>
 
-The setter of [`frame`](#class_animatedsprite3d_property_frame) resets the [`frame_progress`](#class_animatedsprite3d_property_frame_progress) to `0.0` implicitly, but this method avoids that.
+Sets [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame) the [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress) to the given values. Unlike setting [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame), this method does not reset the [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress) to `0.0` implicitly.
 
-This is useful when you want to carry over the current [`frame_progress`](#class_animatedsprite3d_property_frame_progress) to another [`frame`](#class_animatedsprite3d_property_frame).
-
- **Example:** 
+ **Example:** Change the animation while keeping the same [`frame`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame) and [`frame_progress`](class_animatedsprite3d.md#class_animatedsprite3d_property_frame_progress).
 
 
 
 ```gdscript
 
-    # Change the animation with keeping the frame index and progress.
     var current_frame = animated_sprite.get_frame()
     var current_progress = animated_sprite.get_frame_progress()
     animated_sprite.play("walk_another_skin")
@@ -267,7 +268,7 @@ This is useful when you want to carry over the current [`frame_progress`](#class
 
 `void` **stop** ( )<div id="class_animatedsprite3d_method_stop"></div>
 
-Stops the currently playing animation. The animation position is reset to `0` and the `custom_speed` is reset to `1.0`. See also [`pause`](#class_animatedsprite3d_method_pause).
+Stops the currently playing animation. The animation position is reset to `0` and the `custom_speed` is reset to `1.0`. See also [`pause`](class_animatedsprite3d.md#class_animatedsprite3d_method_pause).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

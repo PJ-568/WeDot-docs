@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectDistortion.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectDistortion.xml。 -->
 
 <div id="_class_audioeffectdistortion"></div>
 
@@ -21,11 +21,13 @@ By distorting the waveform the frequency content changes, which will often make 
 
 ## 属性
 
-| [`float`](class_float.md)                | [`drive`](#class_audioeffectdistortion_property_drive)           | ``0.0``     |
-| [`float`](class_float.md)                | [`keep_hf_hz`](#class_audioeffectdistortion_property_keep_hf_hz) | ``16000.0`` |
-| [Mode](#enum_audioeffectdistortion_mode) | [`mode`](#class_audioeffectdistortion_property_mode)             | ``0``       |
-| [`float`](class_float.md)                | [`post_gain`](#class_audioeffectdistortion_property_post_gain)   | ``0.0``     |
-| [`float`](class_float.md)                | [`pre_gain`](#class_audioeffectdistortion_property_pre_gain)     | ``0.0``     |
+|||
+|:-:|:--|
+| [`float`](class_float.md)                | [`drive`](class_audioeffectdistortion.md#class_audioeffectdistortion_property_drive)           | ``0.0``     |
+| [`float`](class_float.md)                | [`keep_hf_hz`](class_audioeffectdistortion.md#class_audioeffectdistortion_property_keep_hf_hz) | ``16000.0`` |
+| [Mode](#enum_audioeffectdistortion_mode) | [`mode`](class_audioeffectdistortion.md#class_audioeffectdistortion_property_mode)             | ``0``       |
+| [`float`](class_float.md)                | [`post_gain`](class_audioeffectdistortion.md#class_audioeffectdistortion_property_post_gain)   | ``0.0``     |
+| [`float`](class_float.md)                | [`pre_gain`](class_audioeffectdistortion.md#class_audioeffectdistortion_property_pre_gain)     | ``0.0``     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -61,7 +63,7 @@ Low-resolution digital distortion effect (bit depth reduction). You can use it t
 
 [Mode](#enum_audioeffectdistortion_mode) **MODE_OVERDRIVE** = ``3``
 
-Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. The [`drive`](#class_audioeffectdistortion_property_drive) property has no effect in this mode.
+Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. The [`drive`](class_audioeffectdistortion.md#class_audioeffectdistortion_property_drive) property has no effect in this mode.
 
 <div id="_class_audioeffectdistortion_constant_mode_waveshape"></div>
 

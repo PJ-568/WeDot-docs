@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MeshConvexDecompositionSettings.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MeshConvexDecompositionSettings.xml。 -->
 
 <div id="_class_meshconvexdecompositionsettings"></div>
 
@@ -17,19 +17,21 @@ Parameters to be used with a [`Mesh`](class_mesh.md) convex decomposition operat
 
 ## 属性
 
-| [`bool`](class_bool.md)                            | [`convex_hull_approximation`](#class_meshconvexdecompositionsettings_property_convex_hull_approximation)               | ``true``   |
-| [`int`](class_int.md)                              | [`convex_hull_downsampling`](#class_meshconvexdecompositionsettings_property_convex_hull_downsampling)                 | ``4``      |
-| [`float`](class_float.md)                          | [`max_concavity`](#class_meshconvexdecompositionsettings_property_max_concavity)                                       | ``1.0``    |
-| [`int`](class_int.md)                              | [`max_convex_hulls`](#class_meshconvexdecompositionsettings_property_max_convex_hulls)                                 | ``1``      |
-| [`int`](class_int.md)                              | [`max_num_vertices_per_convex_hull`](#class_meshconvexdecompositionsettings_property_max_num_vertices_per_convex_hull) | ``32``     |
-| [`float`](class_float.md)                          | [`min_volume_per_convex_hull`](#class_meshconvexdecompositionsettings_property_min_volume_per_convex_hull)             | ``0.0001`` |
-| [Mode](#enum_meshconvexdecompositionsettings_mode) | [`mode`](#class_meshconvexdecompositionsettings_property_mode)                                                         | ``0``      |
-| [`bool`](class_bool.md)                            | [`normalize_mesh`](#class_meshconvexdecompositionsettings_property_normalize_mesh)                                     | ``false``  |
-| [`int`](class_int.md)                              | [`plane_downsampling`](#class_meshconvexdecompositionsettings_property_plane_downsampling)                             | ``4``      |
-| [`bool`](class_bool.md)                            | [`project_hull_vertices`](#class_meshconvexdecompositionsettings_property_project_hull_vertices)                       | ``true``   |
-| [`int`](class_int.md)                              | [`resolution`](#class_meshconvexdecompositionsettings_property_resolution)                                             | ``10000``  |
-| [`float`](class_float.md)                          | [`revolution_axes_clipping_bias`](#class_meshconvexdecompositionsettings_property_revolution_axes_clipping_bias)       | ``0.05``   |
-| [`float`](class_float.md)                          | [`symmetry_planes_clipping_bias`](#class_meshconvexdecompositionsettings_property_symmetry_planes_clipping_bias)       | ``0.05``   |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)                            | [`convex_hull_approximation`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_convex_hull_approximation)               | ``true``   |
+| [`int`](class_int.md)                              | [`convex_hull_downsampling`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_convex_hull_downsampling)                 | ``4``      |
+| [`float`](class_float.md)                          | [`max_concavity`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_max_concavity)                                       | ``1.0``    |
+| [`int`](class_int.md)                              | [`max_convex_hulls`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_max_convex_hulls)                                 | ``1``      |
+| [`int`](class_int.md)                              | [`max_num_vertices_per_convex_hull`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_max_num_vertices_per_convex_hull) | ``32``     |
+| [`float`](class_float.md)                          | [`min_volume_per_convex_hull`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_min_volume_per_convex_hull)             | ``0.0001`` |
+| [Mode](#enum_meshconvexdecompositionsettings_mode) | [`mode`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_mode)                                                         | ``0``      |
+| [`bool`](class_bool.md)                            | [`normalize_mesh`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_normalize_mesh)                                     | ``false``  |
+| [`int`](class_int.md)                              | [`plane_downsampling`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_plane_downsampling)                             | ``4``      |
+| [`bool`](class_bool.md)                            | [`project_hull_vertices`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_project_hull_vertices)                       | ``true``   |
+| [`int`](class_int.md)                              | [`resolution`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_resolution)                                             | ``10000``  |
+| [`float`](class_float.md)                          | [`revolution_axes_clipping_bias`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_revolution_axes_clipping_bias)       | ``0.05``   |
+| [`float`](class_float.md)                          | [`symmetry_planes_clipping_bias`](class_meshconvexdecompositionsettings.md#class_meshconvexdecompositionsettings_property_symmetry_planes_clipping_bias)       | ``0.05``   |
 
 <!-- rst-class:: classref-section-separator -->
 

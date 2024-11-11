@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeIntFunc.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeIntFunc.xml。 -->
 
 <div id="_class_visualshadernodeintfunc"></div>
 
@@ -13,11 +13,13 @@ A scalar integer function to be used within the visual shader graph.
 
 ## 描述
 
-Accept an integer scalar (`x`) to the input port and transform it according to [`function`](#class_visualshadernodeintfunc_property_function).
+Accept an integer scalar (`x`) to the input port and transform it according to [`function`](class_visualshadernodeintfunc.md#class_visualshadernodeintfunc_property_function).
 
 ## 属性
 
-| [Function](#enum_visualshadernodeintfunc_function) | [`function`](#class_visualshadernodeintfunc_property_function) | ``2`` |
+|||
+|:-:|:--|
+| [Function](#enum_visualshadernodeintfunc_function) | [`function`](class_visualshadernodeintfunc.md#class_visualshadernodeintfunc_property_function) | ``2`` |
 
 <!-- rst-class:: classref-section-separator -->
 

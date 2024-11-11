@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/World2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/World2D.xml。 -->
 
 <div id="_class_world2d"></div>
 
@@ -17,10 +17,12 @@ Class that has everything pertaining to a 2D world: A physics space, a canvas, a
 
 ## 属性
 
-| [`RID`](class_rid.md)                                             | [`canvas`](#class_world2d_property_canvas)                         |
-| [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`direct_space_state`](#class_world2d_property_direct_space_state) |
-| [`RID`](class_rid.md)                                             | [`navigation_map`](#class_world2d_property_navigation_map)         |
-| [`RID`](class_rid.md)                                             | [`space`](#class_world2d_property_space)                           |
+|||
+|:-:|:--|
+| [`RID`](class_rid.md)                                             | [`canvas`](class_world2d.md#class_world2d_property_canvas)                         |
+| [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`direct_space_state`](class_world2d.md#class_world2d_property_direct_space_state) |
+| [`RID`](class_rid.md)                                             | [`navigation_map`](class_world2d.md#class_world2d_property_navigation_map)         |
+| [`RID`](class_rid.md)                                             | [`space`](class_world2d.md#class_world2d_property_space)                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,7 +48,7 @@ The [`RID`](class_rid.md) of this world's canvas resource. Used by the [`Renderi
 
 - [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) **get_direct_space_state** ( )
 
-Direct access to the world's physics 2D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to [`Node._physics_process`](#class_node_private_method__physics_process) in the main thread.
+Direct access to the world's physics 2D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) in the main thread.
 
 <!-- rst-class:: classref-item-separator -->
 

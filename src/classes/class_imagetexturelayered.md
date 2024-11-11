@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ImageTextureLayered.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ImageTextureLayered.xml。 -->
 
 <div id="_class_imagetexturelayered"></div>
 
@@ -19,8 +19,10 @@ Base class for [`Texture2DArray`](class_texture2darray.md), [`Cubemap`](class_cu
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`create_from_images`](#class_imagetexturelayered_method_create_from_images) ( images: [Array](class_array.md) [`Image`](class_image.md) ) |
-| `void`                            | [`update_layer`](#class_imagetexturelayered_method_update_layer) ( image: [`Image`](class_image.md), layer: [`int`](class_int.md) )        |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`create_from_images`](class_imagetexturelayered.md#class_imagetexturelayered_method_create_from_images) ( images: [Array](class_array.md) [`Image`](class_image.md) ) |
+| `void`                            | [`update_layer`](class_imagetexturelayered.md#class_imagetexturelayered_method_update_layer) ( image: [`Image`](class_image.md), layer: [`int`](class_int.md) )        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -32,7 +34,7 @@ Base class for [`Texture2DArray`](class_texture2darray.md), [`Cubemap`](class_cu
 
 [Error](#enum_@globalscope_error) **create_from_images** ( images: [Array](class_array.md) [`Image`](class_image.md) )<div id="class_imagetexturelayered_method_create_from_images"></div>
 
-Creates an **ImageTextureLayered** from an array of [`Image`](class_image.md) s. See [`Image.create`](#class_image_method_create) for the expected data format. The first image decides the width, height, image format and mipmapping setting. The other images *must* have the same width, height, image format and mipmapping setting.
+Creates an **ImageTextureLayered** from an array of [`Image`](class_image.md) s. See [`Image.create`](class_image.md#class_image_method_create) for the expected data format. The first image decides the width, height, image format and mipmapping setting. The other images *must* have the same width, height, image format and mipmapping setting.
 
 Each [`Image`](class_image.md) represents one `layer`.
 

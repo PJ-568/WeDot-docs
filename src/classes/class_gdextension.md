@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/GDExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/GDExtension.xml。 -->
 
 <div id="_class_gdextension"></div>
 
@@ -19,8 +19,10 @@ The **GDExtension** resource type represents a [*shared library*](https://en.wik
 
 ## 方法
 
-| [InitializationLevel](#enum_gdextension_initializationlevel) | [`get_minimum_library_initialization_level`](#class_gdextension_method_get_minimum_library_initialization_level) ( ) const[^const] |
-| [`bool`](class_bool.md)                                      | [`is_library_open`](#class_gdextension_method_is_library_open) ( ) const[^const]                                                   |
+|||
+|:-:|:--|
+| [InitializationLevel](#enum_gdextension_initializationlevel) | [`get_minimum_library_initialization_level`](class_gdextension.md#class_gdextension_method_get_minimum_library_initialization_level) ( ) const[^const] |
+| [`bool`](class_bool.md)                                      | [`is_library_open`](class_gdextension.md#class_gdextension_method_is_library_open) ( ) const[^const]                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 

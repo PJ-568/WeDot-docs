@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeCubemap.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeCubemap.xml。 -->
 
 <div id="_class_visualshadernodecubemap"></div>
 
@@ -17,9 +17,11 @@ Translated to `texture(cubemap, vec3)` in the shader language. Returns a color v
 
 ## 属性
 
-| [`Cubemap`](class_cubemap.md)                            | [`cube_map`](#class_visualshadernodecubemap_property_cube_map)         |       |
-| [Source](#enum_visualshadernodecubemap_source)           | [`source`](#class_visualshadernodecubemap_property_source)             | ``0`` |
-| [TextureType](#enum_visualshadernodecubemap_texturetype) | [`texture_type`](#class_visualshadernodecubemap_property_texture_type) | ``0`` |
+|||
+|:-:|:--|
+| [`TextureLayered`](class_texturelayered.md)              | [`cube_map`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_cube_map)         |       |
+| [Source](#enum_visualshadernodecubemap_source)           | [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source)             | ``0`` |
+| [TextureType](#enum_visualshadernodecubemap_texturetype) | [`texture_type`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_texture_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,13 +37,13 @@ enum **Source**: <div id="enum_visualshadernodecubemap_source"></div>
 
 [Source](#enum_visualshadernodecubemap_source) **SOURCE_TEXTURE** = ``0``
 
-Use the [`Cubemap`](class_cubemap.md) set via [`cube_map`](#class_visualshadernodecubemap_property_cube_map). If this is set to [`source`](#class_visualshadernodecubemap_property_source), the `samplerCube` port is ignored.
+Use the [`Cubemap`](class_cubemap.md) set via [`cube_map`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_cube_map). If this is set to [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source), the `samplerCube` port is ignored.
 
 <div id="_class_visualshadernodecubemap_constant_source_port"></div>
 
 [Source](#enum_visualshadernodecubemap_source) **SOURCE_PORT** = ``1``
 
-Use the [`Cubemap`](class_cubemap.md) sampler reference passed via the `samplerCube` port. If this is set to [`source`](#class_visualshadernodecubemap_property_source), the [`cube_map`](#class_visualshadernodecubemap_property_cube_map) texture is ignored.
+Use the [`Cubemap`](class_cubemap.md) sampler reference passed via the `samplerCube` port. If this is set to [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source), the [`cube_map`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_cube_map) texture is ignored.
 
 <div id="_class_visualshadernodecubemap_constant_source_max"></div>
 
@@ -89,12 +91,12 @@ Represents the size of the [TextureType](#enum_visualshadernodecubemap_texturety
 
 <div id="_class_visualshadernodecubemap_property_cube_map"></div>
 
-[`Cubemap`](class_cubemap.md) **cube_map** <div id="class_visualshadernodecubemap_property_cube_map"></div>
+[`TextureLayered`](class_texturelayered.md) **cube_map** <div id="class_visualshadernodecubemap_property_cube_map"></div>
 
-- `void` **set_cube_map** ( value: [`Cubemap`](class_cubemap.md) )
-- [`Cubemap`](class_cubemap.md) **get_cube_map** ( )
+- `void` **set_cube_map** ( value: [`TextureLayered`](class_texturelayered.md) )
+- [`TextureLayered`](class_texturelayered.md) **get_cube_map** ( )
 
-The [`Cubemap`](class_cubemap.md) texture to sample when using [`SOURCE_TEXTURE`](#class_visualshadernodecubemap_constant_source_texture) as [`source`](#class_visualshadernodecubemap_property_source).
+The [`Cubemap`](class_cubemap.md) texture to sample when using [`SOURCE_TEXTURE`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_constant_source_texture) as [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source).
 
 <!-- rst-class:: classref-item-separator -->
 

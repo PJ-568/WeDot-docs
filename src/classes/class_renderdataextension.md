@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderDataExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderDataExtension.xml。 -->
 
 <div id="_class_renderdataextension"></div>
 
@@ -17,10 +17,12 @@ This class allows for a RenderData implementation to be made in GDExtension.
 
 ## 方法
 
-| [`RID`](class_rid.md)                               | [`_get_camera_attributes`](#class_renderdataextension_private_method__get_camera_attributes) ( ) virtual[^virtual] const[^const]       |
-| [`RID`](class_rid.md)                               | [`_get_environment`](#class_renderdataextension_private_method__get_environment) ( ) virtual[^virtual] const[^const]                   |
-| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`_get_render_scene_buffers`](#class_renderdataextension_private_method__get_render_scene_buffers) ( ) virtual[^virtual] const[^const] |
-| [`RenderSceneData`](class_renderscenedata.md)       | [`_get_render_scene_data`](#class_renderdataextension_private_method__get_render_scene_data) ( ) virtual[^virtual] const[^const]       |
+|||
+|:-:|:--|
+| [`RID`](class_rid.md)                               | [`_get_camera_attributes`](class_renderdataextension.md#class_renderdataextension_private_method__get_camera_attributes) ( ) virtual[^virtual] const[^const]       |
+| [`RID`](class_rid.md)                               | [`_get_environment`](class_renderdataextension.md#class_renderdataextension_private_method__get_environment) ( ) virtual[^virtual] const[^const]                   |
+| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`_get_render_scene_buffers`](class_renderdataextension.md#class_renderdataextension_private_method__get_render_scene_buffers) ( ) virtual[^virtual] const[^const] |
+| [`RenderSceneData`](class_renderscenedata.md)       | [`_get_render_scene_data`](class_renderdataextension.md#class_renderdataextension_private_method__get_render_scene_data) ( ) virtual[^virtual] const[^const]       |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SkeletonProfileHumanoid.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SkeletonProfileHumanoid.xml。 -->
 
 <div id="_class_skeletonprofilehumanoid"></div>
 
@@ -79,10 +79,12 @@ A humanoid skeleton profile contains 54 bones divided in 4 groups: `"Body"`, `"F
 
 ## 属性
 
-| [`int`](class_int.md)               | bone_size       | ``56`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_bone_size))            |
-| [`int`](class_int.md)               | group_size      | ``4`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_group_size))            |
-| [`StringName`](class_stringname.md) | root_bone       | ``&"Root"`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_root_bone))       |
-| [`StringName`](class_stringname.md) | scale_base_bone | ``&"Hips"`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_scale_base_bone)) |
+|||
+|:-:|:--|
+| [`int`](class_int.md)               | bone_size       | ``56`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_bone_size))            |
+| [`int`](class_int.md)               | group_size      | ``4`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_group_size))            |
+| [`StringName`](class_stringname.md) | root_bone       | ``&"Root"`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_root_bone))       |
+| [`StringName`](class_stringname.md) | scale_base_bone | ``&"Hips"`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_scale_base_bone)) |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PacketPeerExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PacketPeerExtension.xml。 -->
 
 <div id="_class_packetpeerextension"></div>
 
@@ -13,10 +13,12 @@
 
 ## 方法
 
-| [`int`](class_int.md)             | [`_get_available_packet_count`](#class_packetpeerextension_private_method__get_available_packet_count) ( ) virtual[^virtual] const[^const]                    |
-| [`int`](class_int.md)             | [`_get_max_packet_size`](#class_packetpeerextension_private_method__get_max_packet_size) ( ) virtual[^virtual] const[^const]                                  |
-| [Error](#enum_@globalscope_error) | [`_get_packet`](#class_packetpeerextension_private_method__get_packet) ( r_buffer: `const uint8_t **`, r_buffer_size: `int32_t*` ) virtual[^virtual]          |
-| [Error](#enum_@globalscope_error) | [`_put_packet`](#class_packetpeerextension_private_method__put_packet) ( p_buffer: `const uint8_t*`, p_buffer_size: [`int`](class_int.md) ) virtual[^virtual] |
+|||
+|:-:|:--|
+| [`int`](class_int.md)             | [`_get_available_packet_count`](class_packetpeerextension.md#class_packetpeerextension_private_method__get_available_packet_count) ( ) virtual[^virtual] const[^const]                    |
+| [`int`](class_int.md)             | [`_get_max_packet_size`](class_packetpeerextension.md#class_packetpeerextension_private_method__get_max_packet_size) ( ) virtual[^virtual] const[^const]                                  |
+| [Error](#enum_@globalscope_error) | [`_get_packet`](class_packetpeerextension.md#class_packetpeerextension_private_method__get_packet) ( r_buffer: `const uint8_t **`, r_buffer_size: `int32_t*` ) virtual[^virtual]          |
+| [Error](#enum_@globalscope_error) | [`_put_packet`](class_packetpeerextension.md#class_packetpeerextension_private_method__put_packet) ( p_buffer: `const uint8_t*`, p_buffer_size: [`int`](class_int.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

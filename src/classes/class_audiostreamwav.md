@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamWAV.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamWAV.xml。 -->
 
 <div id="_class_audiostreamwav"></div>
 
@@ -19,17 +19,21 @@ This class can also be used to store dynamically-generated PCM audio data. See a
 
 ## 属性
 
-| [`PackedByteArray`](class_packedbytearray.md) | [`data`](#class_audiostreamwav_property_data)             | ``PackedByteArray()`` |
-| [Format](#enum_audiostreamwav_format)         | [`format`](#class_audiostreamwav_property_format)         | ``0``                 |
-| [`int`](class_int.md)                         | [`loop_begin`](#class_audiostreamwav_property_loop_begin) | ``0``                 |
-| [`int`](class_int.md)                         | [`loop_end`](#class_audiostreamwav_property_loop_end)     | ``0``                 |
-| [LoopMode](#enum_audiostreamwav_loopmode)     | [`loop_mode`](#class_audiostreamwav_property_loop_mode)   | ``0``                 |
-| [`int`](class_int.md)                         | [`mix_rate`](#class_audiostreamwav_property_mix_rate)     | ``44100``             |
-| [`bool`](class_bool.md)                       | [`stereo`](#class_audiostreamwav_property_stereo)         | ``false``             |
+|||
+|:-:|:--|
+| [`PackedByteArray`](class_packedbytearray.md) | [`data`](class_audiostreamwav.md#class_audiostreamwav_property_data)             | ``PackedByteArray()`` |
+| [Format](#enum_audiostreamwav_format)         | [`format`](class_audiostreamwav.md#class_audiostreamwav_property_format)         | ``0``                 |
+| [`int`](class_int.md)                         | [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) | ``0``                 |
+| [`int`](class_int.md)                         | [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end)     | ``0``                 |
+| [LoopMode](#enum_audiostreamwav_loopmode)     | [`loop_mode`](class_audiostreamwav.md#class_audiostreamwav_property_loop_mode)   | ``0``                 |
+| [`int`](class_int.md)                         | [`mix_rate`](class_audiostreamwav.md#class_audiostreamwav_property_mix_rate)     | ``44100``             |
+| [`bool`](class_bool.md)                       | [`stereo`](class_audiostreamwav.md#class_audiostreamwav_property_stereo)         | ``false``             |
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`save_to_wav`](#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`save_to_wav`](class_audiostreamwav.md#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -45,25 +49,25 @@ enum **Format**: <div id="enum_audiostreamwav_format"></div>
 
 [Format](#enum_audiostreamwav_format) **FORMAT_8_BITS** = ``0``
 
-8-bit audio codec.
+8-bit PCM audio codec.
 
 <div id="_class_audiostreamwav_constant_format_16_bits"></div>
 
 [Format](#enum_audiostreamwav_format) **FORMAT_16_BITS** = ``1``
 
-16-bit audio codec.
+16-bit PCM audio codec.
 
 <div id="_class_audiostreamwav_constant_format_ima_adpcm"></div>
 
 [Format](#enum_audiostreamwav_format) **FORMAT_IMA_ADPCM** = ``2``
 
-Audio is compressed using IMA ADPCM.
+Audio is lossily compressed as IMA ADPCM.
 
 <div id="_class_audiostreamwav_constant_format_qoa"></div>
 
 [Format](#enum_audiostreamwav_format) **FORMAT_QOA** = ``3``
 
-Audio is compressed as QOA ([*Quite OK Audio*](https://qoaformat.org/)).
+Audio is lossily compressed as [*Quite OK Audio*](https://qoaformat.org/).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -83,19 +87,19 @@ Audio does not loop.
 
 [LoopMode](#enum_audiostreamwav_loopmode) **LOOP_FORWARD** = ``1``
 
-Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_begin) and [`loop_end`](#class_audiostreamwav_property_loop_end), playing forward only.
+Audio loops the data between [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) and [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end), playing forward only.
 
 <div id="_class_audiostreamwav_constant_loop_pingpong"></div>
 
 [LoopMode](#enum_audiostreamwav_loopmode) **LOOP_PINGPONG** = ``2``
 
-Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_begin) and [`loop_end`](#class_audiostreamwav_property_loop_end), playing back and forth.
+Audio loops the data between [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) and [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end), playing back and forth.
 
 <div id="_class_audiostreamwav_constant_loop_backward"></div>
 
 [LoopMode](#enum_audiostreamwav_loopmode) **LOOP_BACKWARD** = ``3``
 
-Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_begin) and [`loop_end`](#class_audiostreamwav_property_loop_end), playing backward only.
+Audio loops the data between [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) and [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end), playing backward only.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -112,7 +116,9 @@ Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_
 
 Contains the audio data in bytes.
 
- **Note:** This property expects signed PCM8 data. To convert unsigned PCM8 to signed PCM8, subtract 128 from each byte.
+ **Note:** If [`format`](class_audiostreamwav.md#class_audiostreamwav_property_format) is set to [`FORMAT_8_BITS`](class_audiostreamwav.md#class_audiostreamwav_constant_format_8_bits), this property expects signed 8-bit PCM data. To convert from unsigned 8-bit PCM, subtract 128 from each byte.
+
+ **Note:** If [`format`](class_audiostreamwav.md#class_audiostreamwav_property_format) is set to [`FORMAT_QOA`](class_audiostreamwav.md#class_audiostreamwav_constant_format_qoa), this property expects data from a full QOA file.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedByteArray`](class_packedbytearray.md) for more details.
 
@@ -140,7 +146,7 @@ Audio format. See [Format](#enum_audiostreamwav_format) constants for values.
 - `void` **set_loop_begin** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_loop_begin** ( )
 
-The loop start point (in number of samples, relative to the beginning of the stream). This information will be imported automatically from the WAV file if present.
+The loop start point (in number of samples, relative to the beginning of the stream).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -153,7 +159,7 @@ The loop start point (in number of samples, relative to the beginning of the str
 - `void` **set_loop_end** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_loop_end** ( )
 
-The loop end point (in number of samples, relative to the beginning of the stream). This information will be imported automatically from the WAV file if present.
+The loop end point (in number of samples, relative to the beginning of the stream).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -166,7 +172,7 @@ The loop end point (in number of samples, relative to the beginning of the strea
 - `void` **set_loop_mode** ( value: [LoopMode](#enum_audiostreamwav_loopmode) )
 - [LoopMode](#enum_audiostreamwav_loopmode) **get_loop_mode** ( )
 
-The loop mode. This information will be imported automatically from the WAV file if present. See [LoopMode](#enum_audiostreamwav_loopmode) constants for values.
+The loop mode. See [LoopMode](#enum_audiostreamwav_loopmode) constants for values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -208,7 +214,7 @@ If `true`, audio is stereo.
 
 [Error](#enum_@globalscope_error) **save_to_wav** ( path: [`String`](class_string.md) )<div id="class_audiostreamwav_method_save_to_wav"></div>
 
-Saves the AudioStreamWAV as a WAV file to `path`. Samples with IMA ADPCM or QOA formats can't be saved.
+Saves the AudioStreamWAV as a WAV file to `path`. Samples with IMA ADPCM or Quite OK Audio formats can't be saved.
 
  **Note:** A `.wav` extension is automatically appended to `path` if it is missing.
 

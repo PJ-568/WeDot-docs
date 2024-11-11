@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EngineProfiler.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EngineProfiler.xml。 -->
 
 <div id="_class_engineprofiler"></div>
 
@@ -19,9 +19,11 @@ See [`EngineDebugger`](class_enginedebugger.md) and [`EditorDebuggerPlugin`](cla
 
 ## 方法
 
-| `void` | [`_add_frame`](#class_engineprofiler_private_method__add_frame) ( data: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                                              |
-| `void` | [`_tick`](#class_engineprofiler_private_method__tick) ( frame_time: [`float`](class_float.md), process_time: [`float`](class_float.md), physics_time: [`float`](class_float.md), physics_frame_time: [`float`](class_float.md) ) virtual[^virtual] |
-| `void` | [`_toggle`](#class_engineprofiler_private_method__toggle) ( enable: [`bool`](class_bool.md), options: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                |
+|||
+|:-:|:--|
+| `void` | [`_add_frame`](class_engineprofiler.md#class_engineprofiler_private_method__add_frame) ( data: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                                              |
+| `void` | [`_tick`](class_engineprofiler.md#class_engineprofiler_private_method__tick) ( frame_time: [`float`](class_float.md), process_time: [`float`](class_float.md), physics_time: [`float`](class_float.md), physics_frame_time: [`float`](class_float.md) ) virtual[^virtual] |
+| `void` | [`_toggle`](class_engineprofiler.md#class_engineprofiler_private_method__toggle) ( enable: [`bool`](class_bool.md), options: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -33,7 +35,7 @@ See [`EngineDebugger`](class_enginedebugger.md) and [`EditorDebuggerPlugin`](cla
 
 `void` **_add_frame** ( data: [`Array`](class_array.md) ) virtual[^virtual]<div id="class_engineprofiler_private_method__add_frame"></div>
 
-Called when data is added to profiler using [`EngineDebugger.profiler_add_frame_data`](#class_enginedebugger_method_profiler_add_frame_data).
+Called when data is added to profiler using [`EngineDebugger.profiler_add_frame_data`](class_enginedebugger.md#class_enginedebugger_method_profiler_add_frame_data).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeVaryingGetter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeVaryingGetter.xml。 -->
 
 <div id="_class_visualshadernodevaryinggetter"></div>
 
@@ -13,7 +13,7 @@ A visual shader node that gets a value of a varying.
 
 ## 描述
 
-Outputs a value of a varying defined in the shader. You need to first create a varying that can be used in the given function, e.g. varying getter in Fragment shader requires a varying with mode set to [`VisualShader.VARYING_MODE_VERTEX_TO_FRAG_LIGHT`](#class_visualshader_constant_varying_mode_vertex_to_frag_light).
+Outputs a value of a varying defined in the shader. You need to first create a varying that can be used in the given function, e.g. varying getter in Fragment shader requires a varying with mode set to [`VisualShader.VARYING_MODE_VERTEX_TO_FRAG_LIGHT`](class_visualshader.md#class_visualshader_constant_varying_mode_vertex_to_frag_light).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

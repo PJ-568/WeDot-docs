@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/GPUParticlesCollisionSphere3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/GPUParticlesCollisionSphere3D.xml。 -->
 
 <div id="_class_gpuparticlescollisionsphere3d"></div>
 
@@ -17,13 +17,15 @@ A sphere-shaped 3D particle collision shape affecting [`GPUParticles3D`](class_g
 
 Particle collision shapes work in real-time and can be moved, rotated and scaled during gameplay. Unlike attractors, non-uniform scaling of collision shapes is *not* supported.
 
- **Note:** [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
+ **Note:** [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
 
  **Note:** Particle collision only affects [`GPUParticles3D`](class_gpuparticles3d.md), not [`CPUParticles3D`](class_cpuparticles3d.md).
 
 ## 属性
 
-| [`float`](class_float.md) | [`radius`](#class_gpuparticlescollisionsphere3d_property_radius) | ``1.0`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`radius`](class_gpuparticlescollisionsphere3d.md#class_gpuparticlescollisionsphere3d_property_radius) | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

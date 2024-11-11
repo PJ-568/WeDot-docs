@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ProgressBar.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ProgressBar.xml。 -->
 
 <div id="_class_progressbar"></div>
 
@@ -17,20 +17,24 @@ A control used for visual representation of a percentage. Shows fill percentage 
 
 ## 属性
 
-| [`bool`](class_bool.md) | [`editor_preview_indeterminate`](#class_progressbar_property_editor_preview_indeterminate) |           |
-| [`int`](class_int.md)   | [`fill_mode`](#class_progressbar_property_fill_mode)                                       | ``0``     |
-| [`bool`](class_bool.md) | [`indeterminate`](#class_progressbar_property_indeterminate)                               | ``false`` |
-| [`bool`](class_bool.md) | [`show_percentage`](#class_progressbar_property_show_percentage)                           | ``true``  |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`editor_preview_indeterminate`](class_progressbar.md#class_progressbar_property_editor_preview_indeterminate) |           |
+| [`int`](class_int.md)   | [`fill_mode`](class_progressbar.md#class_progressbar_property_fill_mode)                                       | ``0``     |
+| [`bool`](class_bool.md) | [`indeterminate`](class_progressbar.md#class_progressbar_property_indeterminate)                               | ``false`` |
+| [`bool`](class_bool.md) | [`show_percentage`](class_progressbar.md#class_progressbar_property_show_percentage)                           | ``true``  |
 
 ## 主题属性
 
-| [`Color`](class_color.md)       | [`font_color`](#class_progressbar_theme_color_font_color)                 | ``Color(0.95, 0.95, 0.95, 1)`` |
-| [`Color`](class_color.md)       | [`font_outline_color`](#class_progressbar_theme_color_font_outline_color) | ``Color(0, 0, 0, 1)``          |
-| [`int`](class_int.md)           | [`outline_size`](#class_progressbar_theme_constant_outline_size)          | ``0``                          |
-| [`Font`](class_font.md)         | [`font`](#class_progressbar_theme_font_font)                              |                                |
-| [`int`](class_int.md)           | [`font_size`](#class_progressbar_theme_font_size_font_size)               |                                |
-| [`StyleBox`](class_stylebox.md) | [`background`](#class_progressbar_theme_style_background)                 |                                |
-| [`StyleBox`](class_stylebox.md) | [`fill`](#class_progressbar_theme_style_fill)                             |                                |
+|||
+|:-:|:--|
+| [`Color`](class_color.md)       | [`font_color`](class_progressbar.md#class_progressbar_theme_color_font_color)                 | ``Color(0.95, 0.95, 0.95, 1)`` |
+| [`Color`](class_color.md)       | [`font_outline_color`](class_progressbar.md#class_progressbar_theme_color_font_outline_color) | ``Color(0, 0, 0, 1)``          |
+| [`int`](class_int.md)           | [`outline_size`](class_progressbar.md#class_progressbar_theme_constant_outline_size)          | ``0``                          |
+| [`Font`](class_font.md)         | [`font`](class_progressbar.md#class_progressbar_theme_font_font)                              |                                |
+| [`int`](class_int.md)           | [`font_size`](class_progressbar.md#class_progressbar_theme_font_size_font_size)               |                                |
+| [`StyleBox`](class_stylebox.md) | [`background`](class_progressbar.md#class_progressbar_theme_style_background)                 |                                |
+| [`StyleBox`](class_stylebox.md) | [`fill`](class_progressbar.md#class_progressbar_theme_style_fill)                             |                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,13 +50,13 @@ enum **FillMode**: <div id="enum_progressbar_fillmode"></div>
 
 [FillMode](#enum_progressbar_fillmode) **FILL_BEGIN_TO_END** = ``0``
 
-The progress bar fills from begin to end horizontally, according to the language direction. If [`Control.is_layout_rtl`](#class_control_method_is_layout_rtl) returns `false`, it fills from left to right, and if it returns `true`, it fills from right to left.
+The progress bar fills from begin to end horizontally, according to the language direction. If [`Control.is_layout_rtl`](class_control.md#class_control_method_is_layout_rtl) returns `false`, it fills from left to right, and if it returns `true`, it fills from right to left.
 
 <div id="_class_progressbar_constant_fill_end_to_begin"></div>
 
 [FillMode](#enum_progressbar_fillmode) **FILL_END_TO_BEGIN** = ``1``
 
-The progress bar fills from end to begin horizontally, according to the language direction. If [`Control.is_layout_rtl`](#class_control_method_is_layout_rtl) returns `false`, it fills from right to left, and if it returns `true`, it fills from left to right.
+The progress bar fills from end to begin horizontally, according to the language direction. If [`Control.is_layout_rtl`](class_control.md#class_control_method_is_layout_rtl) returns `false`, it fills from right to left, and if it returns `true`, it fills from left to right.
 
 <div id="_class_progressbar_constant_fill_top_to_bottom"></div>
 
@@ -79,7 +83,7 @@ The progress fills from bottom to top.
 - `void` **set_editor_preview_indeterminate** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_editor_preview_indeterminate_enabled** ( )
 
-If `false`, the [`indeterminate`](#class_progressbar_property_indeterminate) animation will be paused in the editor.
+If `false`, the [`indeterminate`](class_progressbar.md#class_progressbar_property_indeterminate) animation will be paused in the editor.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +156,7 @@ The tint of text outline of the **ProgressBar**.
 
 The size of the text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_progressbar_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_progressbar.md#class_progressbar_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -162,7 +166,7 @@ The size of the text outline.
 
 [`Font`](class_font.md) **font** <div id="class_progressbar_theme_font_font"></div>
 
-Font used to draw the fill percentage if [`show_percentage`](#class_progressbar_property_show_percentage) is `true`.
+Font used to draw the fill percentage if [`show_percentage`](class_progressbar.md#class_progressbar_property_show_percentage) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -172,7 +176,7 @@ Font used to draw the fill percentage if [`show_percentage`](#class_progressbar_
 
 [`int`](class_int.md) **font_size** <div id="class_progressbar_theme_font_size_font_size"></div>
 
-Font size used to draw the fill percentage if [`show_percentage`](#class_progressbar_property_show_percentage) is `true`.
+Font size used to draw the fill percentage if [`show_percentage`](class_progressbar.md#class_progressbar_property_show_percentage) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 

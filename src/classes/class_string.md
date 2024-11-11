@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/String.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/String.xml。 -->
 
 <div id="_class_string"></div>
 
@@ -13,131 +13,141 @@ A built-in type for strings.
 
 This is the built-in string Variant type (and the one used by GDScript). Strings may contain any number of Unicode characters, and expose methods useful for manipulating and generating strings. Strings are reference-counted and use a copy-on-write approach (every modification to a string returns a new **String**), so passing them around is cheap in resources.
 
-Some string methods have corresponding variations. Variations suffixed with `n` ([`countn`](#class_string_method_countn), [`findn`](#class_string_method_findn), [`replacen`](#class_string_method_replacen), etc.) are **case-insensitive** (they make no distinction between uppercase and lowercase letters). Method variations prefixed with `r` ([`rfind`](#class_string_method_rfind), [`rsplit`](#class_string_method_rsplit), etc.) are reversed, and start from the end of the string, instead of the beginning.
+Some string methods have corresponding variations. Variations suffixed with `n` ([`countn`](class_string.md#class_string_method_countn), [`findn`](class_string.md#class_string_method_findn), [`replacen`](class_string.md#class_string_method_replacen), etc.) are **case-insensitive** (they make no distinction between uppercase and lowercase letters). Method variations prefixed with `r` ([`rfind`](class_string.md#class_string_method_rfind), [`rsplit`](class_string.md#class_string_method_rsplit), etc.) are reversed, and start from the end of the string, instead of the beginning.
 
- **Note:** In a boolean context, a string will evaluate to `false` if it is empty (`""`). Otherwise, a string will always evaluate to `true`. The `not` operator cannot be used. Instead, [`is_empty`](#class_string_method_is_empty) should be used to check for empty strings.
+To convert any Variant to or from a string, see [`@GlobalScope.str`](class_@globalscope.md#class_@globalscope_method_str), [`@GlobalScope.str_to_var`](class_@globalscope.md#class_@globalscope_method_str_to_var), and [`@GlobalScope.var_to_str`](class_@globalscope.md#class_@globalscope_method_var_to_str).
+
+ **Note:** In a boolean context, a string will evaluate to `false` if it is empty (`""`). Otherwise, a string will always evaluate to `true`.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
 ## 构造函数
 
-| [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( )                                           |
-| [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( from: [`String`](class_string.md) )         |
-| [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( from: [`NodePath`](class_nodepath.md) )     |
-| [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( from: [`StringName`](class_stringname.md) ) |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`String`](class_string.md#class_string_constructor_string) ( )                                           |
+| [`String`](class_string.md) | [`String`](class_string.md#class_string_constructor_string) ( from: [`String`](class_string.md) )         |
+| [`String`](class_string.md) | [`String`](class_string.md#class_string_constructor_string) ( from: [`NodePath`](class_nodepath.md) )     |
+| [`String`](class_string.md) | [`String`](class_string.md#class_string_constructor_string) ( from: [`StringName`](class_stringname.md) ) |
 
 ## 方法
 
-| [`bool`](class_bool.md)                             | [`begins_with`](#class_string_method_begins_with) ( text: [`String`](class_string.md) ) const[^const]                                                                                   |
-| [`PackedStringArray`](class_packedstringarray.md)   | [`bigrams`](#class_string_method_bigrams) ( ) const[^const]                                                                                                                             |
-| [`int`](class_int.md)                               | [`bin_to_int`](#class_string_method_bin_to_int) ( ) const[^const]                                                                                                                       |
-| [`String`](class_string.md)                         | [`c_escape`](#class_string_method_c_escape) ( ) const[^const]                                                                                                                           |
-| [`String`](class_string.md)                         | [`c_unescape`](#class_string_method_c_unescape) ( ) const[^const]                                                                                                                       |
-| [`String`](class_string.md)                         | [`capitalize`](#class_string_method_capitalize) ( ) const[^const]                                                                                                                       |
-| [`int`](class_int.md)                               | [`casecmp_to`](#class_string_method_casecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                                       |
-| [`String`](class_string.md)                         | [`chr`](#class_string_method_chr) ( char: [`int`](class_int.md) ) static[^static]                                                                                                       |
-| [`bool`](class_bool.md)                             | [`contains`](#class_string_method_contains) ( what: [`String`](class_string.md) ) const[^const]                                                                                         |
-| [`bool`](class_bool.md)                             | [`containsn`](#class_string_method_containsn) ( what: [`String`](class_string.md) ) const[^const]                                                                                       |
-| [`int`](class_int.md)                               | [`count`](#class_string_method_count) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = 0 ) const[^const]                               |
-| [`int`](class_int.md)                               | [`countn`](#class_string_method_countn) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = 0 ) const[^const]                             |
-| [`String`](class_string.md)                         | [`dedent`](#class_string_method_dedent) ( ) const[^const]                                                                                                                               |
-| [`bool`](class_bool.md)                             | [`ends_with`](#class_string_method_ends_with) ( text: [`String`](class_string.md) ) const[^const]                                                                                       |
-| [`String`](class_string.md)                         | [`erase`](#class_string_method_erase) ( position: [`int`](class_int.md), chars: [`int`](class_int.md) = 1 ) const[^const]                                                               |
-| [`int`](class_int.md)                               | [`filecasecmp_to`](#class_string_method_filecasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                               |
-| [`int`](class_int.md)                               | [`filenocasecmp_to`](#class_string_method_filenocasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                           |
-| [`int`](class_int.md)                               | [`find`](#class_string_method_find) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                                |
-| [`int`](class_int.md)                               | [`findn`](#class_string_method_findn) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                              |
-| [`String`](class_string.md)                         | [`format`](#class_string_method_format) ( values: [`Variant`](class_variant.md), placeholder: [`String`](class_string.md) = "{_}" ) const[^const]                                       |
-| [`String`](class_string.md)                         | [`get_base_dir`](#class_string_method_get_base_dir) ( ) const[^const]                                                                                                                   |
-| [`String`](class_string.md)                         | [`get_basename`](#class_string_method_get_basename) ( ) const[^const]                                                                                                                   |
-| [`String`](class_string.md)                         | [`get_extension`](#class_string_method_get_extension) ( ) const[^const]                                                                                                                 |
-| [`String`](class_string.md)                         | [`get_file`](#class_string_method_get_file) ( ) const[^const]                                                                                                                           |
-| [`String`](class_string.md)                         | [`get_slice`](#class_string_method_get_slice) ( delimiter: [`String`](class_string.md), slice: [`int`](class_int.md) ) const[^const]                                                    |
-| [`int`](class_int.md)                               | [`get_slice_count`](#class_string_method_get_slice_count) ( delimiter: [`String`](class_string.md) ) const[^const]                                                                      |
-| [`String`](class_string.md)                         | [`get_slicec`](#class_string_method_get_slicec) ( delimiter: [`int`](class_int.md), slice: [`int`](class_int.md) ) const[^const]                                                        |
-| [`int`](class_int.md)                               | [`hash`](#class_string_method_hash) ( ) const[^const]                                                                                                                                   |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`hex_decode`](#class_string_method_hex_decode) ( ) const[^const]                                                                                                                       |
-| [`int`](class_int.md)                               | [`hex_to_int`](#class_string_method_hex_to_int) ( ) const[^const]                                                                                                                       |
-| [`String`](class_string.md)                         | [`humanize_size`](#class_string_method_humanize_size) ( size: [`int`](class_int.md) ) static[^static]                                                                                   |
-| [`String`](class_string.md)                         | [`indent`](#class_string_method_indent) ( prefix: [`String`](class_string.md) ) const[^const]                                                                                           |
-| [`String`](class_string.md)                         | [`insert`](#class_string_method_insert) ( position: [`int`](class_int.md), what: [`String`](class_string.md) ) const[^const]                                                            |
-| [`bool`](class_bool.md)                             | [`is_absolute_path`](#class_string_method_is_absolute_path) ( ) const[^const]                                                                                                           |
-| [`bool`](class_bool.md)                             | [`is_empty`](#class_string_method_is_empty) ( ) const[^const]                                                                                                                           |
-| [`bool`](class_bool.md)                             | [`is_relative_path`](#class_string_method_is_relative_path) ( ) const[^const]                                                                                                           |
-| [`bool`](class_bool.md)                             | [`is_subsequence_of`](#class_string_method_is_subsequence_of) ( text: [`String`](class_string.md) ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                             | [`is_subsequence_ofn`](#class_string_method_is_subsequence_ofn) ( text: [`String`](class_string.md) ) const[^const]                                                                     |
-| [`bool`](class_bool.md)                             | [`is_valid_filename`](#class_string_method_is_valid_filename) ( ) const[^const]                                                                                                         |
-| [`bool`](class_bool.md)                             | [`is_valid_float`](#class_string_method_is_valid_float) ( ) const[^const]                                                                                                               |
-| [`bool`](class_bool.md)                             | [`is_valid_hex_number`](#class_string_method_is_valid_hex_number) ( with_prefix: [`bool`](class_bool.md) = false ) const[^const]                                                        |
-| [`bool`](class_bool.md)                             | [`is_valid_html_color`](#class_string_method_is_valid_html_color) ( ) const[^const]                                                                                                     |
-| [`bool`](class_bool.md)                             | [`is_valid_identifier`](#class_string_method_is_valid_identifier) ( ) const[^const]                                                                                                     |
-| [`bool`](class_bool.md)                             | [`is_valid_int`](#class_string_method_is_valid_int) ( ) const[^const]                                                                                                                   |
-| [`bool`](class_bool.md)                             | [`is_valid_ip_address`](#class_string_method_is_valid_ip_address) ( ) const[^const]                                                                                                     |
-| [`String`](class_string.md)                         | [`join`](#class_string_method_join) ( parts: [`PackedStringArray`](class_packedstringarray.md) ) const[^const]                                                                          |
-| [`String`](class_string.md)                         | [`json_escape`](#class_string_method_json_escape) ( ) const[^const]                                                                                                                     |
-| [`String`](class_string.md)                         | [`left`](#class_string_method_left) ( length: [`int`](class_int.md) ) const[^const]                                                                                                     |
-| [`int`](class_int.md)                               | [`length`](#class_string_method_length) ( ) const[^const]                                                                                                                               |
-| [`String`](class_string.md)                         | [`lpad`](#class_string_method_lpad) ( min_length: [`int`](class_int.md), character: [`String`](class_string.md) = " " ) const[^const]                                                   |
-| [`String`](class_string.md)                         | [`lstrip`](#class_string_method_lstrip) ( chars: [`String`](class_string.md) ) const[^const]                                                                                            |
-| [`bool`](class_bool.md)                             | [`match`](#class_string_method_match) ( expr: [`String`](class_string.md) ) const[^const]                                                                                               |
-| [`bool`](class_bool.md)                             | [`matchn`](#class_string_method_matchn) ( expr: [`String`](class_string.md) ) const[^const]                                                                                             |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`md5_buffer`](#class_string_method_md5_buffer) ( ) const[^const]                                                                                                                       |
-| [`String`](class_string.md)                         | [`md5_text`](#class_string_method_md5_text) ( ) const[^const]                                                                                                                           |
-| [`int`](class_int.md)                               | [`naturalcasecmp_to`](#class_string_method_naturalcasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)                               | [`naturalnocasecmp_to`](#class_string_method_naturalnocasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                     |
-| [`int`](class_int.md)                               | [`nocasecmp_to`](#class_string_method_nocasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                                   |
-| [`String`](class_string.md)                         | [`num`](#class_string_method_num) ( number: [`float`](class_float.md), decimals: [`int`](class_int.md) = -1 ) static[^static]                                                           |
-| [`String`](class_string.md)                         | [`num_int64`](#class_string_method_num_int64) ( number: [`int`](class_int.md), base: [`int`](class_int.md) = 10, capitalize_hex: [`bool`](class_bool.md) = false ) static[^static]      |
-| [`String`](class_string.md)                         | [`num_scientific`](#class_string_method_num_scientific) ( number: [`float`](class_float.md) ) static[^static]                                                                           |
-| [`String`](class_string.md)                         | [`num_uint64`](#class_string_method_num_uint64) ( number: [`int`](class_int.md), base: [`int`](class_int.md) = 10, capitalize_hex: [`bool`](class_bool.md) = false ) static[^static]    |
-| [`String`](class_string.md)                         | [`pad_decimals`](#class_string_method_pad_decimals) ( digits: [`int`](class_int.md) ) const[^const]                                                                                     |
-| [`String`](class_string.md)                         | [`pad_zeros`](#class_string_method_pad_zeros) ( digits: [`int`](class_int.md) ) const[^const]                                                                                           |
-| [`String`](class_string.md)                         | [`path_join`](#class_string_method_path_join) ( file: [`String`](class_string.md) ) const[^const]                                                                                       |
-| [`String`](class_string.md)                         | [`repeat`](#class_string_method_repeat) ( count: [`int`](class_int.md) ) const[^const]                                                                                                  |
-| [`String`](class_string.md)                         | [`replace`](#class_string_method_replace) ( what: [`String`](class_string.md), forwhat: [`String`](class_string.md) ) const[^const]                                                     |
-| [`String`](class_string.md)                         | [`replacen`](#class_string_method_replacen) ( what: [`String`](class_string.md), forwhat: [`String`](class_string.md) ) const[^const]                                                   |
-| [`String`](class_string.md)                         | [`reverse`](#class_string_method_reverse) ( ) const[^const]                                                                                                                             |
-| [`int`](class_int.md)                               | [`rfind`](#class_string_method_rfind) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                             |
-| [`int`](class_int.md)                               | [`rfindn`](#class_string_method_rfindn) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                           |
-| [`String`](class_string.md)                         | [`right`](#class_string_method_right) ( length: [`int`](class_int.md) ) const[^const]                                                                                                   |
-| [`String`](class_string.md)                         | [`rpad`](#class_string_method_rpad) ( min_length: [`int`](class_int.md), character: [`String`](class_string.md) = " " ) const[^const]                                                   |
-| [`PackedStringArray`](class_packedstringarray.md)   | [`rsplit`](#class_string_method_rsplit) ( delimiter: [`String`](class_string.md) = "", allow_empty: [`bool`](class_bool.md) = true, maxsplit: [`int`](class_int.md) = 0 ) const[^const] |
-| [`String`](class_string.md)                         | [`rstrip`](#class_string_method_rstrip) ( chars: [`String`](class_string.md) ) const[^const]                                                                                            |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`sha1_buffer`](#class_string_method_sha1_buffer) ( ) const[^const]                                                                                                                     |
-| [`String`](class_string.md)                         | [`sha1_text`](#class_string_method_sha1_text) ( ) const[^const]                                                                                                                         |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`sha256_buffer`](#class_string_method_sha256_buffer) ( ) const[^const]                                                                                                                 |
-| [`String`](class_string.md)                         | [`sha256_text`](#class_string_method_sha256_text) ( ) const[^const]                                                                                                                     |
-| [`float`](class_float.md)                           | [`similarity`](#class_string_method_similarity) ( text: [`String`](class_string.md) ) const[^const]                                                                                     |
-| [`String`](class_string.md)                         | [`simplify_path`](#class_string_method_simplify_path) ( ) const[^const]                                                                                                                 |
-| [`PackedStringArray`](class_packedstringarray.md)   | [`split`](#class_string_method_split) ( delimiter: [`String`](class_string.md) = "", allow_empty: [`bool`](class_bool.md) = true, maxsplit: [`int`](class_int.md) = 0 ) const[^const]   |
-| [`PackedFloat64Array`](class_packedfloat64array.md) | [`split_floats`](#class_string_method_split_floats) ( delimiter: [`String`](class_string.md), allow_empty: [`bool`](class_bool.md) = true ) const[^const]                               |
-| [`String`](class_string.md)                         | [`strip_edges`](#class_string_method_strip_edges) ( left: [`bool`](class_bool.md) = true, right: [`bool`](class_bool.md) = true ) const[^const]                                         |
-| [`String`](class_string.md)                         | [`strip_escapes`](#class_string_method_strip_escapes) ( ) const[^const]                                                                                                                 |
-| [`String`](class_string.md)                         | [`substr`](#class_string_method_substr) ( from: [`int`](class_int.md), len: [`int`](class_int.md) = -1 ) const[^const]                                                                  |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_ascii_buffer`](#class_string_method_to_ascii_buffer) ( ) const[^const]                                                                                                             |
-| [`String`](class_string.md)                         | [`to_camel_case`](#class_string_method_to_camel_case) ( ) const[^const]                                                                                                                 |
-| [`float`](class_float.md)                           | [`to_float`](#class_string_method_to_float) ( ) const[^const]                                                                                                                           |
-| [`int`](class_int.md)                               | [`to_int`](#class_string_method_to_int) ( ) const[^const]                                                                                                                               |
-| [`String`](class_string.md)                         | [`to_lower`](#class_string_method_to_lower) ( ) const[^const]                                                                                                                           |
-| [`String`](class_string.md)                         | [`to_pascal_case`](#class_string_method_to_pascal_case) ( ) const[^const]                                                                                                               |
-| [`String`](class_string.md)                         | [`to_snake_case`](#class_string_method_to_snake_case) ( ) const[^const]                                                                                                                 |
-| [`String`](class_string.md)                         | [`to_upper`](#class_string_method_to_upper) ( ) const[^const]                                                                                                                           |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_utf8_buffer`](#class_string_method_to_utf8_buffer) ( ) const[^const]                                                                                                               |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_utf16_buffer`](#class_string_method_to_utf16_buffer) ( ) const[^const]                                                                                                             |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_utf32_buffer`](#class_string_method_to_utf32_buffer) ( ) const[^const]                                                                                                             |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_wchar_buffer`](#class_string_method_to_wchar_buffer) ( ) const[^const]                                                                                                             |
-| [`String`](class_string.md)                         | [`trim_prefix`](#class_string_method_trim_prefix) ( prefix: [`String`](class_string.md) ) const[^const]                                                                                 |
-| [`String`](class_string.md)                         | [`trim_suffix`](#class_string_method_trim_suffix) ( suffix: [`String`](class_string.md) ) const[^const]                                                                                 |
-| [`int`](class_int.md)                               | [`unicode_at`](#class_string_method_unicode_at) ( at: [`int`](class_int.md) ) const[^const]                                                                                             |
-| [`String`](class_string.md)                         | [`uri_decode`](#class_string_method_uri_decode) ( ) const[^const]                                                                                                                       |
-| [`String`](class_string.md)                         | [`uri_encode`](#class_string_method_uri_encode) ( ) const[^const]                                                                                                                       |
-| [`String`](class_string.md)                         | [`validate_filename`](#class_string_method_validate_filename) ( ) const[^const]                                                                                                         |
-| [`String`](class_string.md)                         | [`validate_node_name`](#class_string_method_validate_node_name) ( ) const[^const]                                                                                                       |
-| [`String`](class_string.md)                         | [`xml_escape`](#class_string_method_xml_escape) ( escape_quotes: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
-| [`String`](class_string.md)                         | [`xml_unescape`](#class_string_method_xml_unescape) ( ) const[^const]                                                                                                                   |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)                             | [`begins_with`](class_string.md#class_string_method_begins_with) ( text: [`String`](class_string.md) ) const[^const]                                                                                   |
+| [`PackedStringArray`](class_packedstringarray.md)   | [`bigrams`](class_string.md#class_string_method_bigrams) ( ) const[^const]                                                                                                                             |
+| [`int`](class_int.md)                               | [`bin_to_int`](class_string.md#class_string_method_bin_to_int) ( ) const[^const]                                                                                                                       |
+| [`String`](class_string.md)                         | [`c_escape`](class_string.md#class_string_method_c_escape) ( ) const[^const]                                                                                                                           |
+| [`String`](class_string.md)                         | [`c_unescape`](class_string.md#class_string_method_c_unescape) ( ) const[^const]                                                                                                                       |
+| [`String`](class_string.md)                         | [`capitalize`](class_string.md#class_string_method_capitalize) ( ) const[^const]                                                                                                                       |
+| [`int`](class_int.md)                               | [`casecmp_to`](class_string.md#class_string_method_casecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                                       |
+| [`String`](class_string.md)                         | [`chr`](class_string.md#class_string_method_chr) ( char: [`int`](class_int.md) ) static[^static]                                                                                                       |
+| [`bool`](class_bool.md)                             | [`contains`](class_string.md#class_string_method_contains) ( what: [`String`](class_string.md) ) const[^const]                                                                                         |
+| [`bool`](class_bool.md)                             | [`containsn`](class_string.md#class_string_method_containsn) ( what: [`String`](class_string.md) ) const[^const]                                                                                       |
+| [`int`](class_int.md)                               | [`count`](class_string.md#class_string_method_count) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = 0 ) const[^const]                               |
+| [`int`](class_int.md)                               | [`countn`](class_string.md#class_string_method_countn) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = 0 ) const[^const]                             |
+| [`String`](class_string.md)                         | [`dedent`](class_string.md#class_string_method_dedent) ( ) const[^const]                                                                                                                               |
+| [`bool`](class_bool.md)                             | [`ends_with`](class_string.md#class_string_method_ends_with) ( text: [`String`](class_string.md) ) const[^const]                                                                                       |
+| [`String`](class_string.md)                         | [`erase`](class_string.md#class_string_method_erase) ( position: [`int`](class_int.md), chars: [`int`](class_int.md) = 1 ) const[^const]                                                               |
+| [`int`](class_int.md)                               | [`filecasecmp_to`](class_string.md#class_string_method_filecasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                               |
+| [`int`](class_int.md)                               | [`filenocasecmp_to`](class_string.md#class_string_method_filenocasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                           |
+| [`int`](class_int.md)                               | [`find`](class_string.md#class_string_method_find) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                                |
+| [`int`](class_int.md)                               | [`findn`](class_string.md#class_string_method_findn) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                              |
+| [`String`](class_string.md)                         | [`format`](class_string.md#class_string_method_format) ( values: [`Variant`](class_variant.md), placeholder: [`String`](class_string.md) = "{_}" ) const[^const]                                       |
+| [`String`](class_string.md)                         | [`get_base_dir`](class_string.md#class_string_method_get_base_dir) ( ) const[^const]                                                                                                                   |
+| [`String`](class_string.md)                         | [`get_basename`](class_string.md#class_string_method_get_basename) ( ) const[^const]                                                                                                                   |
+| [`String`](class_string.md)                         | [`get_extension`](class_string.md#class_string_method_get_extension) ( ) const[^const]                                                                                                                 |
+| [`String`](class_string.md)                         | [`get_file`](class_string.md#class_string_method_get_file) ( ) const[^const]                                                                                                                           |
+| [`String`](class_string.md)                         | [`get_slice`](class_string.md#class_string_method_get_slice) ( delimiter: [`String`](class_string.md), slice: [`int`](class_int.md) ) const[^const]                                                    |
+| [`int`](class_int.md)                               | [`get_slice_count`](class_string.md#class_string_method_get_slice_count) ( delimiter: [`String`](class_string.md) ) const[^const]                                                                      |
+| [`String`](class_string.md)                         | [`get_slicec`](class_string.md#class_string_method_get_slicec) ( delimiter: [`int`](class_int.md), slice: [`int`](class_int.md) ) const[^const]                                                        |
+| [`int`](class_int.md)                               | [`hash`](class_string.md#class_string_method_hash) ( ) const[^const]                                                                                                                                   |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`hex_decode`](class_string.md#class_string_method_hex_decode) ( ) const[^const]                                                                                                                       |
+| [`int`](class_int.md)                               | [`hex_to_int`](class_string.md#class_string_method_hex_to_int) ( ) const[^const]                                                                                                                       |
+| [`String`](class_string.md)                         | [`humanize_size`](class_string.md#class_string_method_humanize_size) ( size: [`int`](class_int.md) ) static[^static]                                                                                   |
+| [`String`](class_string.md)                         | [`indent`](class_string.md#class_string_method_indent) ( prefix: [`String`](class_string.md) ) const[^const]                                                                                           |
+| [`String`](class_string.md)                         | [`insert`](class_string.md#class_string_method_insert) ( position: [`int`](class_int.md), what: [`String`](class_string.md) ) const[^const]                                                            |
+| [`bool`](class_bool.md)                             | [`is_absolute_path`](class_string.md#class_string_method_is_absolute_path) ( ) const[^const]                                                                                                           |
+| [`bool`](class_bool.md)                             | [`is_empty`](class_string.md#class_string_method_is_empty) ( ) const[^const]                                                                                                                           |
+| [`bool`](class_bool.md)                             | [`is_relative_path`](class_string.md#class_string_method_is_relative_path) ( ) const[^const]                                                                                                           |
+| [`bool`](class_bool.md)                             | [`is_subsequence_of`](class_string.md#class_string_method_is_subsequence_of) ( text: [`String`](class_string.md) ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                             | [`is_subsequence_ofn`](class_string.md#class_string_method_is_subsequence_ofn) ( text: [`String`](class_string.md) ) const[^const]                                                                     |
+| [`bool`](class_bool.md)                             | [`is_valid_ascii_identifier`](class_string.md#class_string_method_is_valid_ascii_identifier) ( ) const[^const]                                                                                         |
+| [`bool`](class_bool.md)                             | [`is_valid_filename`](class_string.md#class_string_method_is_valid_filename) ( ) const[^const]                                                                                                         |
+| [`bool`](class_bool.md)                             | [`is_valid_float`](class_string.md#class_string_method_is_valid_float) ( ) const[^const]                                                                                                               |
+| [`bool`](class_bool.md)                             | [`is_valid_hex_number`](class_string.md#class_string_method_is_valid_hex_number) ( with_prefix: [`bool`](class_bool.md) = false ) const[^const]                                                        |
+| [`bool`](class_bool.md)                             | [`is_valid_html_color`](class_string.md#class_string_method_is_valid_html_color) ( ) const[^const]                                                                                                     |
+| [`bool`](class_bool.md)                             | [`is_valid_identifier`](class_string.md#class_string_method_is_valid_identifier) ( ) const[^const]                                                                                                     |
+| [`bool`](class_bool.md)                             | [`is_valid_int`](class_string.md#class_string_method_is_valid_int) ( ) const[^const]                                                                                                                   |
+| [`bool`](class_bool.md)                             | [`is_valid_ip_address`](class_string.md#class_string_method_is_valid_ip_address) ( ) const[^const]                                                                                                     |
+| [`bool`](class_bool.md)                             | [`is_valid_unicode_identifier`](class_string.md#class_string_method_is_valid_unicode_identifier) ( ) const[^const]                                                                                     |
+| [`String`](class_string.md)                         | [`join`](class_string.md#class_string_method_join) ( parts: [`PackedStringArray`](class_packedstringarray.md) ) const[^const]                                                                          |
+| [`String`](class_string.md)                         | [`json_escape`](class_string.md#class_string_method_json_escape) ( ) const[^const]                                                                                                                     |
+| [`String`](class_string.md)                         | [`left`](class_string.md#class_string_method_left) ( length: [`int`](class_int.md) ) const[^const]                                                                                                     |
+| [`int`](class_int.md)                               | [`length`](class_string.md#class_string_method_length) ( ) const[^const]                                                                                                                               |
+| [`String`](class_string.md)                         | [`lpad`](class_string.md#class_string_method_lpad) ( min_length: [`int`](class_int.md), character: [`String`](class_string.md) = " " ) const[^const]                                                   |
+| [`String`](class_string.md)                         | [`lstrip`](class_string.md#class_string_method_lstrip) ( chars: [`String`](class_string.md) ) const[^const]                                                                                            |
+| [`bool`](class_bool.md)                             | [`match`](class_string.md#class_string_method_match) ( expr: [`String`](class_string.md) ) const[^const]                                                                                               |
+| [`bool`](class_bool.md)                             | [`matchn`](class_string.md#class_string_method_matchn) ( expr: [`String`](class_string.md) ) const[^const]                                                                                             |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`md5_buffer`](class_string.md#class_string_method_md5_buffer) ( ) const[^const]                                                                                                                       |
+| [`String`](class_string.md)                         | [`md5_text`](class_string.md#class_string_method_md5_text) ( ) const[^const]                                                                                                                           |
+| [`int`](class_int.md)                               | [`naturalcasecmp_to`](class_string.md#class_string_method_naturalcasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)                               | [`naturalnocasecmp_to`](class_string.md#class_string_method_naturalnocasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                     |
+| [`int`](class_int.md)                               | [`nocasecmp_to`](class_string.md#class_string_method_nocasecmp_to) ( to: [`String`](class_string.md) ) const[^const]                                                                                   |
+| [`String`](class_string.md)                         | [`num`](class_string.md#class_string_method_num) ( number: [`float`](class_float.md), decimals: [`int`](class_int.md) = -1 ) static[^static]                                                           |
+| [`String`](class_string.md)                         | [`num_int64`](class_string.md#class_string_method_num_int64) ( number: [`int`](class_int.md), base: [`int`](class_int.md) = 10, capitalize_hex: [`bool`](class_bool.md) = false ) static[^static]      |
+| [`String`](class_string.md)                         | [`num_scientific`](class_string.md#class_string_method_num_scientific) ( number: [`float`](class_float.md) ) static[^static]                                                                           |
+| [`String`](class_string.md)                         | [`num_uint64`](class_string.md#class_string_method_num_uint64) ( number: [`int`](class_int.md), base: [`int`](class_int.md) = 10, capitalize_hex: [`bool`](class_bool.md) = false ) static[^static]    |
+| [`String`](class_string.md)                         | [`pad_decimals`](class_string.md#class_string_method_pad_decimals) ( digits: [`int`](class_int.md) ) const[^const]                                                                                     |
+| [`String`](class_string.md)                         | [`pad_zeros`](class_string.md#class_string_method_pad_zeros) ( digits: [`int`](class_int.md) ) const[^const]                                                                                           |
+| [`String`](class_string.md)                         | [`path_join`](class_string.md#class_string_method_path_join) ( file: [`String`](class_string.md) ) const[^const]                                                                                       |
+| [`String`](class_string.md)                         | [`repeat`](class_string.md#class_string_method_repeat) ( count: [`int`](class_int.md) ) const[^const]                                                                                                  |
+| [`String`](class_string.md)                         | [`replace`](class_string.md#class_string_method_replace) ( what: [`String`](class_string.md), forwhat: [`String`](class_string.md) ) const[^const]                                                     |
+| [`String`](class_string.md)                         | [`replacen`](class_string.md#class_string_method_replacen) ( what: [`String`](class_string.md), forwhat: [`String`](class_string.md) ) const[^const]                                                   |
+| [`String`](class_string.md)                         | [`reverse`](class_string.md#class_string_method_reverse) ( ) const[^const]                                                                                                                             |
+| [`int`](class_int.md)                               | [`rfind`](class_string.md#class_string_method_rfind) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                             |
+| [`int`](class_int.md)                               | [`rfindn`](class_string.md#class_string_method_rfindn) ( what: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                           |
+| [`String`](class_string.md)                         | [`right`](class_string.md#class_string_method_right) ( length: [`int`](class_int.md) ) const[^const]                                                                                                   |
+| [`String`](class_string.md)                         | [`rpad`](class_string.md#class_string_method_rpad) ( min_length: [`int`](class_int.md), character: [`String`](class_string.md) = " " ) const[^const]                                                   |
+| [`PackedStringArray`](class_packedstringarray.md)   | [`rsplit`](class_string.md#class_string_method_rsplit) ( delimiter: [`String`](class_string.md) = "", allow_empty: [`bool`](class_bool.md) = true, maxsplit: [`int`](class_int.md) = 0 ) const[^const] |
+| [`String`](class_string.md)                         | [`rstrip`](class_string.md#class_string_method_rstrip) ( chars: [`String`](class_string.md) ) const[^const]                                                                                            |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`sha1_buffer`](class_string.md#class_string_method_sha1_buffer) ( ) const[^const]                                                                                                                     |
+| [`String`](class_string.md)                         | [`sha1_text`](class_string.md#class_string_method_sha1_text) ( ) const[^const]                                                                                                                         |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`sha256_buffer`](class_string.md#class_string_method_sha256_buffer) ( ) const[^const]                                                                                                                 |
+| [`String`](class_string.md)                         | [`sha256_text`](class_string.md#class_string_method_sha256_text) ( ) const[^const]                                                                                                                     |
+| [`float`](class_float.md)                           | [`similarity`](class_string.md#class_string_method_similarity) ( text: [`String`](class_string.md) ) const[^const]                                                                                     |
+| [`String`](class_string.md)                         | [`simplify_path`](class_string.md#class_string_method_simplify_path) ( ) const[^const]                                                                                                                 |
+| [`PackedStringArray`](class_packedstringarray.md)   | [`split`](class_string.md#class_string_method_split) ( delimiter: [`String`](class_string.md) = "", allow_empty: [`bool`](class_bool.md) = true, maxsplit: [`int`](class_int.md) = 0 ) const[^const]   |
+| [`PackedFloat64Array`](class_packedfloat64array.md) | [`split_floats`](class_string.md#class_string_method_split_floats) ( delimiter: [`String`](class_string.md), allow_empty: [`bool`](class_bool.md) = true ) const[^const]                               |
+| [`String`](class_string.md)                         | [`strip_edges`](class_string.md#class_string_method_strip_edges) ( left: [`bool`](class_bool.md) = true, right: [`bool`](class_bool.md) = true ) const[^const]                                         |
+| [`String`](class_string.md)                         | [`strip_escapes`](class_string.md#class_string_method_strip_escapes) ( ) const[^const]                                                                                                                 |
+| [`String`](class_string.md)                         | [`substr`](class_string.md#class_string_method_substr) ( from: [`int`](class_int.md), len: [`int`](class_int.md) = -1 ) const[^const]                                                                  |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_ascii_buffer`](class_string.md#class_string_method_to_ascii_buffer) ( ) const[^const]                                                                                                             |
+| [`String`](class_string.md)                         | [`to_camel_case`](class_string.md#class_string_method_to_camel_case) ( ) const[^const]                                                                                                                 |
+| [`float`](class_float.md)                           | [`to_float`](class_string.md#class_string_method_to_float) ( ) const[^const]                                                                                                                           |
+| [`int`](class_int.md)                               | [`to_int`](class_string.md#class_string_method_to_int) ( ) const[^const]                                                                                                                               |
+| [`String`](class_string.md)                         | [`to_lower`](class_string.md#class_string_method_to_lower) ( ) const[^const]                                                                                                                           |
+| [`String`](class_string.md)                         | [`to_pascal_case`](class_string.md#class_string_method_to_pascal_case) ( ) const[^const]                                                                                                               |
+| [`String`](class_string.md)                         | [`to_snake_case`](class_string.md#class_string_method_to_snake_case) ( ) const[^const]                                                                                                                 |
+| [`String`](class_string.md)                         | [`to_upper`](class_string.md#class_string_method_to_upper) ( ) const[^const]                                                                                                                           |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_utf8_buffer`](class_string.md#class_string_method_to_utf8_buffer) ( ) const[^const]                                                                                                               |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_utf16_buffer`](class_string.md#class_string_method_to_utf16_buffer) ( ) const[^const]                                                                                                             |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_utf32_buffer`](class_string.md#class_string_method_to_utf32_buffer) ( ) const[^const]                                                                                                             |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_wchar_buffer`](class_string.md#class_string_method_to_wchar_buffer) ( ) const[^const]                                                                                                             |
+| [`String`](class_string.md)                         | [`trim_prefix`](class_string.md#class_string_method_trim_prefix) ( prefix: [`String`](class_string.md) ) const[^const]                                                                                 |
+| [`String`](class_string.md)                         | [`trim_suffix`](class_string.md#class_string_method_trim_suffix) ( suffix: [`String`](class_string.md) ) const[^const]                                                                                 |
+| [`int`](class_int.md)                               | [`unicode_at`](class_string.md#class_string_method_unicode_at) ( at: [`int`](class_int.md) ) const[^const]                                                                                             |
+| [`String`](class_string.md)                         | [`uri_decode`](class_string.md#class_string_method_uri_decode) ( ) const[^const]                                                                                                                       |
+| [`String`](class_string.md)                         | [`uri_encode`](class_string.md#class_string_method_uri_encode) ( ) const[^const]                                                                                                                       |
+| [`String`](class_string.md)                         | [`validate_filename`](class_string.md#class_string_method_validate_filename) ( ) const[^const]                                                                                                         |
+| [`String`](class_string.md)                         | [`validate_node_name`](class_string.md#class_string_method_validate_node_name) ( ) const[^const]                                                                                                       |
+| [`String`](class_string.md)                         | [`xml_escape`](class_string.md#class_string_method_xml_escape) ( escape_quotes: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
+| [`String`](class_string.md)                         | [`xml_unescape`](class_string.md#class_string_method_xml_unescape) ( ) const[^const]                                                                                                                   |
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`operator !=`](class_String.md#operator_neq_String) ( right: [`String`](class_string.md) )             |
 | [`bool`](class_bool.md)     | [`operator !=`](class_String.md#operator_neq_StringName) ( right: [`StringName`](class_stringname.md) ) |
 | [`String`](class_string.md) | [`operator %`](class_String.md#operator_mod_Variant) ( right: [`Variant`](class_variant.md) )           |
@@ -197,7 +207,7 @@ Constructs a new **String** from the given [`StringName`](class_stringname.md).
 
 [`bool`](class_bool.md) **begins_with** ( text: [`String`](class_string.md) ) const[^const]<div id="class_string_method_begins_with"></div>
 
-Returns `true` if the string begins with the given `text`. See also [`ends_with`](#class_string_method_ends_with).
+Returns `true` if the string begins with the given `text`. See also [`ends_with`](class_string.md#class_string_method_ends_with).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -314,7 +324,7 @@ Performs a case-sensitive comparison to another string. Returns `-1` if less tha
 
 With different string lengths, returns `1` if this string is longer than the `to` string, or `-1` if shorter. Note that the length of empty strings is *always* `0`.
 
-To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`nocasecmp_to`](#class_string_method_nocasecmp_to), [`filecasecmp_to`](#class_string_method_filecasecmp_to), and [`naturalcasecmp_to`](#class_string_method_naturalcasecmp_to).
+To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`nocasecmp_to`](class_string.md#class_string_method_nocasecmp_to), [`filecasecmp_to`](class_string.md#class_string_method_filecasecmp_to), and [`naturalcasecmp_to`](class_string.md#class_string_method_naturalcasecmp_to).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -361,7 +371,7 @@ Returns `true` if the string contains `what`. In GDScript, this corresponds to t
 
 
 
-If you need to know where `what` is within the string, use [`find`](#class_string_method_find). See also [`containsn`](#class_string_method_containsn).
+If you need to know where `what` is within the string, use [`find`](class_string.md#class_string_method_find). See also [`containsn`](class_string.md#class_string_method_containsn).
 
 
 
@@ -377,7 +387,7 @@ If you need to know where `what` is within the string, use [`find`](#class_strin
 
 Returns `true` if the string contains `what`, **ignoring case**.
 
-If you need to know where `what` is within the string, use [`findn`](#class_string_method_findn). See also [`contains`](#class_string_method_contains).
+If you need to know where `what` is within the string, use [`findn`](class_string.md#class_string_method_findn). See also [`contains`](class_string.md#class_string_method_contains).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -407,7 +417,7 @@ Returns the number of occurrences of the substring `what` between `from` and `to
 
 [`String`](class_string.md) **dedent** ( ) const[^const]<div id="class_string_method_dedent"></div>
 
-Returns a copy of the string with indentation (leading tabs and spaces) removed. See also [`indent`](#class_string_method_indent) to add indentation.
+Returns a copy of the string with indentation (leading tabs and spaces) removed. See also [`indent`](class_string.md#class_string_method_indent) to add indentation.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -417,7 +427,7 @@ Returns a copy of the string with indentation (leading tabs and spaces) removed.
 
 [`bool`](class_bool.md) **ends_with** ( text: [`String`](class_string.md) ) const[^const]<div id="class_string_method_ends_with"></div>
 
-Returns `true` if the string ends with the given `text`. See also [`begins_with`](#class_string_method_begins_with).
+Returns `true` if the string ends with the given `text`. See also [`begins_with`](class_string.md#class_string_method_begins_with).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -437,9 +447,9 @@ Returns a string with `chars` characters erased starting from `position`. If `ch
 
 [`int`](class_int.md) **filecasecmp_to** ( to: [`String`](class_string.md) ) const[^const]<div id="class_string_method_filecasecmp_to"></div>
 
-Like [`naturalcasecmp_to`](#class_string_method_naturalcasecmp_to) but prioritizes strings that begin with periods (`.`) and underscores (`_`) before any other character. Useful when sorting folders or file names.
+Like [`naturalcasecmp_to`](class_string.md#class_string_method_naturalcasecmp_to) but prioritizes strings that begin with periods (`.`) and underscores (`_`) before any other character. Useful when sorting folders or file names.
 
-To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`filenocasecmp_to`](#class_string_method_filenocasecmp_to), [`naturalcasecmp_to`](#class_string_method_naturalcasecmp_to), and [`casecmp_to`](#class_string_method_casecmp_to).
+To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`filenocasecmp_to`](class_string.md#class_string_method_filenocasecmp_to), [`naturalcasecmp_to`](class_string.md#class_string_method_naturalcasecmp_to), and [`casecmp_to`](class_string.md#class_string_method_casecmp_to).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -449,9 +459,9 @@ To get a [`bool`](class_bool.md) result from a string comparison, use the `==` o
 
 [`int`](class_int.md) **filenocasecmp_to** ( to: [`String`](class_string.md) ) const[^const]<div id="class_string_method_filenocasecmp_to"></div>
 
-Like [`naturalnocasecmp_to`](#class_string_method_naturalnocasecmp_to) but prioritizes strings that begin with periods (`.`) and underscores (`_`) before any other character. Useful when sorting folders or file names.
+Like [`naturalnocasecmp_to`](class_string.md#class_string_method_naturalnocasecmp_to) but prioritizes strings that begin with periods (`.`) and underscores (`_`) before any other character. Useful when sorting folders or file names.
 
-To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`filecasecmp_to`](#class_string_method_filecasecmp_to), [`naturalnocasecmp_to`](#class_string_method_naturalnocasecmp_to), and [`nocasecmp_to`](#class_string_method_nocasecmp_to).
+To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`filecasecmp_to`](class_string.md#class_string_method_filecasecmp_to), [`naturalnocasecmp_to`](class_string.md#class_string_method_naturalnocasecmp_to), and [`nocasecmp_to`](class_string.md#class_string_method_nocasecmp_to).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -485,7 +495,7 @@ Returns the index of the **first** occurrence of `what` in this string, or `-1` 
 
 
 
- **Note:** If you just want to know whether the string contains `what`, use [`contains`](#class_string_method_contains). In GDScript, you may also use the `in` operator.
+ **Note:** If you just want to know whether the string contains `what`, use [`contains`](class_string.md#class_string_method_contains). In GDScript, you may also use the `in` operator.
 
 
 
@@ -511,7 +521,7 @@ Returns the index of the **first** **case-insensitive** occurrence of `what` in 
 
 Formats the string by replacing all occurrences of `placeholder` with the elements of `values`.
 
- `values` can be a [`Dictionary`](class_dictionary.md) or an [`Array`](class_array.md). Any underscores in `placeholder` will be replaced with the corresponding keys in advance. Array elements use their index as keys.
+ `values` can be a [`Dictionary`](class_dictionary.md), an [`Array`](class_array.md) or an [`Object`](class_object.md). Any underscores in `placeholder` will be replaced with the corresponding keys in advance. Array elements use their index as keys.
 
 ```
 
@@ -532,6 +542,15 @@ Some additional handling is performed when `values` is an [`Array`](class_array.
     print("User {id} is {name}.".format([["id", 42], ["name", "Godot"]]))
 ```
 
+When passing an [`Object`](class_object.md), the property names from [`Object.get_property_list`](class_object.md#class_object_method_get_property_list) are used as keys.
+
+```
+
+    # Prints: Visible true, position (0, 0).
+    var node = Node2D.new()
+    print("Visible {visible}, position {position}".format(node))
+```
+
 See also the [*GDScript format string*](../tutorials/scripting/gdscript/gdscript_format_string) tutorial.
 
  **Note:** The replacement of placeholders is not done all at once, instead each placeholder is replaced in the order they are passed, this means that if one of the replacement strings contains a key it will also be replaced. This can be very powerful, but can also cause unexpected results if you are not careful. If you do not need to perform replacement in the replacement strings, make sure your replacements do not contain placeholders to ensure reliable results.
@@ -545,6 +564,8 @@ See also the [*GDScript format string*](../tutorials/scripting/gdscript/gdscript
 ```
 
  **Note:** In C#, it's recommended to [*interpolate strings with "$"*](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated), instead.
+
+
 
 
 
@@ -638,9 +659,7 @@ If the string is a valid file path, returns the file name, including the extensi
 
 Splits the string using a `delimiter` and returns the substring at index `slice`. Returns the original string if `delimiter` does not occur in the string. Returns an empty string if the `slice` does not exist.
 
-This is faster than [`split`](#class_string_method_split), if you only need one substring.
-
- **Example:** 
+This is faster than [`split`](class_string.md#class_string_method_split), if you only need one substring.
 
 ```
 
@@ -657,7 +676,7 @@ This is faster than [`split`](#class_string_method_split), if you only need one 
 
 [`int`](class_int.md) **get_slice_count** ( delimiter: [`String`](class_string.md) ) const[^const]<div id="class_string_method_get_slice_count"></div>
 
-Returns the total number of slices when the string is split with the given `delimiter` (see [`split`](#class_string_method_split)).
+Returns the total number of slices when the string is split with the given `delimiter` (see [`split`](class_string.md#class_string_method_split)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -669,7 +688,7 @@ Returns the total number of slices when the string is split with the given `deli
 
 Splits the string using a Unicode character with code `delimiter` and returns the substring at index `slice`. Returns an empty string if the `slice` does not exist.
 
-This is faster than [`split`](#class_string_method_split), if you only need one substring.
+This is faster than [`split`](class_string.md#class_string_method_split), if you only need one substring.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -765,7 +784,7 @@ The result is in [*IEC prefix format*](https://en.wikipedia.org/wiki/Binary_pref
 
 [`String`](class_string.md) **indent** ( prefix: [`String`](class_string.md) ) const[^const]<div id="class_string_method_indent"></div>
 
-Indents every line of the string with the given `prefix`. Empty lines are not indented. See also [`dedent`](#class_string_method_dedent) to remove indentation.
+Indents every line of the string with the given `prefix`. Empty lines are not indented. See also [`dedent`](class_string.md#class_string_method_dedent) to remove indentation.
 
 For example, the string can be indented with two tabulations using `"\t\t"`, or four spaces using `"    "`.
 
@@ -787,7 +806,7 @@ Inserts `what` at the given `position` in the string.
 
 [`bool`](class_bool.md) **is_absolute_path** ( ) const[^const]<div id="class_string_method_is_absolute_path"></div>
 
-Returns `true` if the string is a path to a file or directory, and its starting point is explicitly defined. This method is the opposite of [`is_relative_path`](#class_string_method_is_relative_path).
+Returns `true` if the string is a path to a file or directory, and its starting point is explicitly defined. This method is the opposite of [`is_relative_path`](class_string.md#class_string_method_is_relative_path).
 
 This includes all paths starting with `"res://"`, `"user://"`, `"C:\"`, `"/"`, etc.
 
@@ -799,7 +818,7 @@ This includes all paths starting with `"res://"`, `"user://"`, `"C:\"`, `"/"`, e
 
 [`bool`](class_bool.md) **is_empty** ( ) const[^const]<div id="class_string_method_is_empty"></div>
 
-Returns `true` if the string's length is `0` (`""`). See also [`length`](#class_string_method_length).
+Returns `true` if the string's length is `0` (`""`). See also [`length`](class_string.md#class_string_method_length).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -809,7 +828,7 @@ Returns `true` if the string's length is `0` (`""`). See also [`length`](#class_
 
 [`bool`](class_bool.md) **is_relative_path** ( ) const[^const]<div id="class_string_method_is_relative_path"></div>
 
-Returns `true` if the string is a path, and its starting point is dependent on context. The path could begin from the current directory, or the current [`Node`](class_node.md) (if the string is derived from a [`NodePath`](class_nodepath.md)), and may sometimes be prefixed with `"./"`. This method is the opposite of [`is_absolute_path`](#class_string_method_is_absolute_path).
+Returns `true` if the string is a path, and its starting point is dependent on context. The path could begin from the current directory, or the current [`Node`](class_node.md) (if the string is derived from a [`NodePath`](class_nodepath.md)), and may sometimes be prefixed with `"./"`. This method is the opposite of [`is_absolute_path`](class_string.md#class_string_method_is_absolute_path).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -847,6 +866,28 @@ Returns `true` if all characters of this string can be found in `text` in their 
 
 ---
 
+<div id="_class_string_method_is_valid_ascii_identifier"></div>
+
+[`bool`](class_bool.md) **is_valid_ascii_identifier** ( ) const[^const]<div id="class_string_method_is_valid_ascii_identifier"></div>
+
+Returns `true` if this string is a valid ASCII identifier. A valid ASCII identifier may contain only letters, digits, and underscores (`_`), and the first character may not be a digit.
+
+```
+
+    print("node_2d".is_valid_ascii_identifier())    # Prints true
+    print("TYPE_FLOAT".is_valid_ascii_identifier()) # Prints true
+    print("1st_method".is_valid_ascii_identifier()) # Prints false
+    print("MyMethod#2".is_valid_ascii_identifier()) # Prints false
+```
+
+See also [`is_valid_unicode_identifier`](class_string.md#class_string_method_is_valid_unicode_identifier).
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_string_method_is_valid_filename"></div>
 
 [`bool`](class_bool.md) **is_valid_filename** ( ) const[^const]<div id="class_string_method_is_valid_filename"></div>
@@ -861,7 +902,7 @@ Returns `true` if this string does not contain characters that are not allowed i
 
 [`bool`](class_bool.md) **is_valid_float** ( ) const[^const]<div id="class_string_method_is_valid_float"></div>
 
-Returns `true` if this string represents a valid floating-point number. A valid float may contain only digits, one decimal point (`.`), and the exponent letter (`e`). It may also be prefixed with a positive (`+`) or negative (`-`) sign. Any valid integer is also a valid float (see [`is_valid_int`](#class_string_method_is_valid_int)). See also [`to_float`](#class_string_method_to_float).
+Returns `true` if this string represents a valid floating-point number. A valid float may contain only digits, one decimal point (`.`), and the exponent letter (`e`). It may also be prefixed with a positive (`+`) or negative (`-`) sign. Any valid integer is also a valid float (see [`is_valid_int`](class_string.md#class_string_method_is_valid_int)). See also [`to_float`](class_string.md#class_string_method_to_float).
 
 ```
 
@@ -904,7 +945,7 @@ If `with_prefix` is `true`, the hexadecimal number needs to prefixed by `"0x"` t
 
 [`bool`](class_bool.md) **is_valid_html_color** ( ) const[^const]<div id="class_string_method_is_valid_html_color"></div>
 
-Returns `true` if this string is a valid color in hexadecimal HTML notation. The string must be a hexadecimal value (see [`is_valid_hex_number`](#class_string_method_is_valid_hex_number)) of either 3, 4, 6 or 8 digits, and may be prefixed by a hash sign (`#`). Other HTML notations for colors, such as names or `hsl()`, are not considered valid. See also [`Color.html`](#class_color_method_html).
+Returns `true` if this string is a valid color in hexadecimal HTML notation. The string must be a hexadecimal value (see [`is_valid_hex_number`](class_string.md#class_string_method_is_valid_hex_number)) of either 3, 4, 6 or 8 digits, and may be prefixed by a hash sign (`#`). Other HTML notations for colors, such as names or `hsl()`, are not considered valid. See also [`Color.html`](class_color.md#class_color_method_html).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -913,6 +954,8 @@ Returns `true` if this string is a valid color in hexadecimal HTML notation. The
 <div id="_class_string_method_is_valid_identifier"></div>
 
 [`bool`](class_bool.md) **is_valid_identifier** ( ) const[^const]<div id="class_string_method_is_valid_identifier"></div>
+
+**已弃用：** Use [`is_valid_ascii_identifier`](class_string.md#class_string_method_is_valid_ascii_identifier) instead.
 
 Returns `true` if this string is a valid identifier. A valid identifier may contain only letters, digits and underscores (`_`), and the first character may not be a digit.
 
@@ -934,7 +977,7 @@ Returns `true` if this string is a valid identifier. A valid identifier may cont
 
 [`bool`](class_bool.md) **is_valid_int** ( ) const[^const]<div id="class_string_method_is_valid_int"></div>
 
-Returns `true` if this string represents a valid integer. A valid integer only contains digits, and may be prefixed with a positive (`+`) or negative (`-`) sign. See also [`to_int`](#class_string_method_to_int).
+Returns `true` if this string represents a valid integer. A valid integer only contains digits, and may be prefixed with a positive (`+`) or negative (`-`) sign. See also [`to_int`](class_string.md#class_string_method_to_int).
 
 ```
 
@@ -961,13 +1004,39 @@ Returns `true` if this string represents a well-formatted IPv4 or IPv6 address. 
 
 ---
 
+<div id="_class_string_method_is_valid_unicode_identifier"></div>
+
+[`bool`](class_bool.md) **is_valid_unicode_identifier** ( ) const[^const]<div id="class_string_method_is_valid_unicode_identifier"></div>
+
+Returns `true` if this string is a valid Unicode identifier.
+
+A valid Unicode identifier must begin with a Unicode character of class `XID_Start` or `"_"`, and may contain Unicode characters of class `XID_Continue` in the other positions.
+
+```
+
+    print("node_2d".is_valid_unicode_identifier())      # Prints true
+    print("1st_method".is_valid_unicode_identifier())   # Prints false
+    print("MyMethod#2".is_valid_unicode_identifier())   # Prints false
+    print("állóképesség".is_valid_unicode_identifier()) # Prints true
+    print("выносливость".is_valid_unicode_identifier()) # Prints true
+    print("体力".is_valid_unicode_identifier())         # Prints true
+```
+
+See also [`is_valid_ascii_identifier`](class_string.md#class_string_method_is_valid_ascii_identifier).
+
+ **Note:** This method checks identifiers the same way as GDScript. See [`TextServer.is_valid_identifier`](class_textserver.md#class_textserver_method_is_valid_identifier) for more advanced checks.
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_string_method_join"></div>
 
 [`String`](class_string.md) **join** ( parts: [`PackedStringArray`](class_packedstringarray.md) ) const[^const]<div id="class_string_method_join"></div>
 
-Returns the concatenation of `parts`' elements, with each element separated by the string calling this method. This method is the opposite of [`split`](#class_string_method_split).
-
- **Example:** 
+Returns the concatenation of `parts`' elements, with each element separated by the string calling this method. This method is the opposite of [`split`](class_string.md#class_string_method_split).
 
 
 
@@ -1002,7 +1071,7 @@ Returns the concatenation of `parts`' elements, with each element separated by t
 
 [`String`](class_string.md) **json_escape** ( ) const[^const]<div id="class_string_method_json_escape"></div>
 
-Returns a copy of the string with special characters escaped using the JSON standard. Because it closely matches the C standard, it is possible to use [`c_unescape`](#class_string_method_c_unescape) to unescape the string, if necessary.
+Returns a copy of the string with special characters escaped using the JSON standard. Because it closely matches the C standard, it is possible to use [`c_unescape`](class_string.md#class_string_method_c_unescape) to unescape the string, if necessary.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1030,7 +1099,7 @@ Returns the first `length` characters from the beginning of the string. If `leng
 
 [`int`](class_int.md) **length** ( ) const[^const]<div id="class_string_method_length"></div>
 
-Returns the number of characters in the string. Empty strings (`""`) always return `0`. See also [`is_empty`](#class_string_method_is_empty).
+Returns the number of characters in the string. Empty strings (`""`) always return `0`. See also [`is_empty`](class_string.md#class_string_method_is_empty).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1040,7 +1109,7 @@ Returns the number of characters in the string. Empty strings (`""`) always retu
 
 [`String`](class_string.md) **lpad** ( min_length: [`int`](class_int.md), character: [`String`](class_string.md) = " " ) const[^const]<div id="class_string_method_lpad"></div>
 
-Formats the string to be at least `min_length` long by adding `character` s to the left of the string, if necessary. See also [`rpad`](#class_string_method_rpad).
+Formats the string to be at least `min_length` long by adding `character` s to the left of the string, if necessary. See also [`rpad`](class_string.md#class_string_method_rpad).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1050,9 +1119,9 @@ Formats the string to be at least `min_length` long by adding `character` s to t
 
 [`String`](class_string.md) **lstrip** ( chars: [`String`](class_string.md) ) const[^const]<div id="class_string_method_lstrip"></div>
 
-Removes a set of characters defined in `chars` from the string's beginning. See also [`rstrip`](#class_string_method_rstrip).
+Removes a set of characters defined in `chars` from the string's beginning. See also [`rstrip`](class_string.md#class_string_method_rstrip).
 
- **Note:** `chars` is not a prefix. Use [`trim_prefix`](#class_string_method_trim_prefix) to remove a single prefix, rather than a set of characters.
+ **Note:** `chars` is not a prefix. Use [`trim_prefix`](class_string.md#class_string_method_trim_prefix) to remove a single prefix, rather than a set of characters.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1108,7 +1177,7 @@ When used for sorting, natural order comparison orders sequences of numbers by t
 
 With different string lengths, returns `1` if this string is longer than the `to` string, or `-1` if shorter. Note that the length of empty strings is *always* `0`.
 
-To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`naturalnocasecmp_to`](#class_string_method_naturalnocasecmp_to), [`filecasecmp_to`](#class_string_method_filecasecmp_to), and [`nocasecmp_to`](#class_string_method_nocasecmp_to).
+To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`naturalnocasecmp_to`](class_string.md#class_string_method_naturalnocasecmp_to), [`filecasecmp_to`](class_string.md#class_string_method_filecasecmp_to), and [`nocasecmp_to`](class_string.md#class_string_method_nocasecmp_to).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1124,7 +1193,7 @@ When used for sorting, natural order comparison orders sequences of numbers by t
 
 With different string lengths, returns `1` if this string is longer than the `to` string, or `-1` if shorter. Note that the length of empty strings is *always* `0`.
 
-To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`naturalcasecmp_to`](#class_string_method_naturalcasecmp_to), [`filenocasecmp_to`](#class_string_method_filenocasecmp_to), and [`casecmp_to`](#class_string_method_casecmp_to).
+To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`naturalcasecmp_to`](class_string.md#class_string_method_naturalcasecmp_to), [`filenocasecmp_to`](class_string.md#class_string_method_filenocasecmp_to), and [`casecmp_to`](class_string.md#class_string_method_casecmp_to).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1138,7 +1207,7 @@ Performs a **case-insensitive** comparison to another string. Returns `-1` if le
 
 With different string lengths, returns `1` if this string is longer than the `to` string, or `-1` if shorter. Note that the length of empty strings is *always* `0`.
 
-To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`casecmp_to`](#class_string_method_casecmp_to), [`filenocasecmp_to`](#class_string_method_filenocasecmp_to), and [`naturalnocasecmp_to`](#class_string_method_naturalnocasecmp_to).
+To get a [`bool`](class_bool.md) result from a string comparison, use the `==` operator instead. See also [`casecmp_to`](class_string.md#class_string_method_casecmp_to), [`filenocasecmp_to`](class_string.md#class_string_method_filenocasecmp_to), and [`naturalnocasecmp_to`](class_string.md#class_string_method_naturalnocasecmp_to).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1153,8 +1222,6 @@ Converts a [`float`](class_float.md) to a string representation of a decimal num
 If `decimals` is `-1` as by default, the string representation may only have up to 14 significant digits, with digits before the decimal point having priority over digits after.
 
 Trailing zeros are not included in the string. The last digit is rounded, not truncated.
-
- **Example:** 
 
 ```
 
@@ -1317,7 +1384,7 @@ Returns the copy of this string in reverse order. This operation works on unicod
 
 [`int`](class_int.md) **rfind** ( what: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]<div id="class_string_method_rfind"></div>
 
-Returns the index of the **last** occurrence of `what` in this string, or `-1` if there are none. The search's start can be specified with `from`, continuing to the beginning of the string. This method is the reverse of [`find`](#class_string_method_find).
+Returns the index of the **last** occurrence of `what` in this string, or `-1` if there are none. The search's start can be specified with `from`, continuing to the beginning of the string. This method is the reverse of [`find`](class_string.md#class_string_method_find).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1327,7 +1394,7 @@ Returns the index of the **last** occurrence of `what` in this string, or `-1` i
 
 [`int`](class_int.md) **rfindn** ( what: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]<div id="class_string_method_rfindn"></div>
 
-Returns the index of the **last** **case-insensitive** occurrence of `what` in this string, or `-1` if there are none. The starting search index can be specified with `from`, continuing to the beginning of the string. This method is the reverse of [`findn`](#class_string_method_findn).
+Returns the index of the **last** **case-insensitive** occurrence of `what` in this string, or `-1` if there are none. The starting search index can be specified with `from`, continuing to the beginning of the string. This method is the reverse of [`findn`](class_string.md#class_string_method_findn).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1355,7 +1422,7 @@ Returns the last `length` characters from the end of the string. If `length` is 
 
 [`String`](class_string.md) **rpad** ( min_length: [`int`](class_int.md), character: [`String`](class_string.md) = " " ) const[^const]<div id="class_string_method_rpad"></div>
 
-Formats the string to be at least `min_length` long, by adding `character` s to the right of the string, if necessary. See also [`lpad`](#class_string_method_lpad).
+Formats the string to be at least `min_length` long, by adding `character` s to the right of the string, if necessary. See also [`lpad`](class_string.md#class_string_method_lpad).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1369,9 +1436,7 @@ Splits the string using a `delimiter` and returns an array of the substrings, st
 
 If `allow_empty` is `false`, empty strings between adjacent delimiters are excluded from the array.
 
-If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit`. By default, the entire string is split, which is mostly identical to [`split`](#class_string_method_split).
-
- **Example:** 
+If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit`. By default, the entire string is split, which is mostly identical to [`split`](class_string.md#class_string_method_split).
 
 
 
@@ -1404,9 +1469,9 @@ If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit
 
 [`String`](class_string.md) **rstrip** ( chars: [`String`](class_string.md) ) const[^const]<div id="class_string_method_rstrip"></div>
 
-Removes a set of characters defined in `chars` from the string's end. See also [`lstrip`](#class_string_method_lstrip).
+Removes a set of characters defined in `chars` from the string's end. See also [`lstrip`](class_string.md#class_string_method_lstrip).
 
- **Note:** `chars` is not a suffix. Use [`trim_suffix`](#class_string_method_trim_suffix) to remove a single suffix, rather than a set of characters.
+ **Note:** `chars` is not a suffix. Use [`trim_suffix`](class_string.md#class_string_method_trim_suffix) to remove a single suffix, rather than a set of characters.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1494,13 +1559,11 @@ If the string is a valid file path, converts the string into a canonical path. T
 
 [`PackedStringArray`](class_packedstringarray.md) **split** ( delimiter: [`String`](class_string.md) = "", allow_empty: [`bool`](class_bool.md) = true, maxsplit: [`int`](class_int.md) = 0 ) const[^const]<div id="class_string_method_split"></div>
 
-Splits the string using a `delimiter` and returns an array of the substrings. If `delimiter` is an empty string, each substring will be a single character. This method is the opposite of [`join`](#class_string_method_join).
+Splits the string using a `delimiter` and returns an array of the substrings. If `delimiter` is an empty string, each substring will be a single character. This method is the opposite of [`join`](class_string.md#class_string_method_join).
 
 If `allow_empty` is `false`, empty strings between adjacent delimiters are excluded from the array.
 
 If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit`. By default, the entire string is split.
-
- **Example:** 
 
 
 
@@ -1526,7 +1589,7 @@ If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit
 
 
 
- **Note:** If you only need one substring from the array, consider using [`get_slice`](#class_string_method_get_slice) which is faster. If you need to split strings with more complex rules, use the [`RegEx`](class_regex.md) class instead.
+ **Note:** If you only need one substring from the array, consider using [`get_slice`](class_string.md#class_string_method_get_slice) which is faster. If you need to split strings with more complex rules, use the [`RegEx`](class_regex.md) class instead.
 
 
 
@@ -1593,7 +1656,7 @@ Returns part of the string from the position `from` with length `len`. If `len` 
 
 [`PackedByteArray`](class_packedbytearray.md) **to_ascii_buffer** ( ) const[^const]<div id="class_string_method_to_ascii_buffer"></div>
 
-Converts the string to an [*ASCII*](https://en.wikipedia.org/wiki/ASCII)/Latin-1 encoded [`PackedByteArray`](class_packedbytearray.md). This method is slightly faster than [`to_utf8_buffer`](#class_string_method_to_utf8_buffer), but replaces all unsupported characters with spaces. This is the inverse of [`PackedByteArray.get_string_from_ascii`](#class_packedbytearray_method_get_string_from_ascii).
+Converts the string to an [*ASCII*](https://en.wikipedia.org/wiki/ASCII)/Latin-1 encoded [`PackedByteArray`](class_packedbytearray.md). This method is slightly faster than [`to_utf8_buffer`](class_string.md#class_string_method_to_utf8_buffer), but replaces all unsupported characters with spaces. This is the inverse of [`PackedByteArray.get_string_from_ascii`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_ascii).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1613,7 +1676,7 @@ Returns the string converted to `camelCase`.
 
 [`float`](class_float.md) **to_float** ( ) const[^const]<div id="class_string_method_to_float"></div>
 
-Converts the string representing a decimal number into a [`float`](class_float.md). This method stops on the first non-number character, except the first decimal point (`.`) and the exponent letter (`e`). See also [`is_valid_float`](#class_string_method_is_valid_float).
+Converts the string representing a decimal number into a [`float`](class_float.md). This method stops on the first non-number character, except the first decimal point (`.`) and the exponent letter (`e`). See also [`is_valid_float`](class_string.md#class_string_method_is_valid_float).
 
 ```
 
@@ -1634,7 +1697,7 @@ Converts the string representing a decimal number into a [`float`](class_float.m
 
 [`int`](class_int.md) **to_int** ( ) const[^const]<div id="class_string_method_to_int"></div>
 
-Converts the string representing an integer number into an [`int`](class_int.md). This method removes any non-number character and stops at the first decimal point (`.`). See also [`is_valid_int`](#class_string_method_is_valid_int).
+Converts the string representing an integer number into an [`int`](class_int.md). This method removes any non-number character and stops at the first decimal point (`.`). See also [`is_valid_int`](class_string.md#class_string_method_is_valid_int).
 
 ```
 
@@ -1718,7 +1781,7 @@ Returns the string converted to `UPPERCASE`.
 
 [`PackedByteArray`](class_packedbytearray.md) **to_utf8_buffer** ( ) const[^const]<div id="class_string_method_to_utf8_buffer"></div>
 
-Converts the string to a [*UTF-8*](https://en.wikipedia.org/wiki/UTF-8) encoded [`PackedByteArray`](class_packedbytearray.md). This method is slightly slower than [`to_ascii_buffer`](#class_string_method_to_ascii_buffer), but supports all UTF-8 characters. For most cases, prefer using this method. This is the inverse of [`PackedByteArray.get_string_from_utf8`](#class_packedbytearray_method_get_string_from_utf8).
+Converts the string to a [*UTF-8*](https://en.wikipedia.org/wiki/UTF-8) encoded [`PackedByteArray`](class_packedbytearray.md). This method is slightly slower than [`to_ascii_buffer`](class_string.md#class_string_method_to_ascii_buffer), but supports all UTF-8 characters. For most cases, prefer using this method. This is the inverse of [`PackedByteArray.get_string_from_utf8`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf8).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1728,7 +1791,7 @@ Converts the string to a [*UTF-8*](https://en.wikipedia.org/wiki/UTF-8) encoded 
 
 [`PackedByteArray`](class_packedbytearray.md) **to_utf16_buffer** ( ) const[^const]<div id="class_string_method_to_utf16_buffer"></div>
 
-Converts the string to a [*UTF-16*](https://en.wikipedia.org/wiki/UTF-16) encoded [`PackedByteArray`](class_packedbytearray.md). This is the inverse of [`PackedByteArray.get_string_from_utf16`](#class_packedbytearray_method_get_string_from_utf16).
+Converts the string to a [*UTF-16*](https://en.wikipedia.org/wiki/UTF-16) encoded [`PackedByteArray`](class_packedbytearray.md). This is the inverse of [`PackedByteArray.get_string_from_utf16`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf16).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1738,7 +1801,7 @@ Converts the string to a [*UTF-16*](https://en.wikipedia.org/wiki/UTF-16) encode
 
 [`PackedByteArray`](class_packedbytearray.md) **to_utf32_buffer** ( ) const[^const]<div id="class_string_method_to_utf32_buffer"></div>
 
-Converts the string to a [*UTF-32*](https://en.wikipedia.org/wiki/UTF-32) encoded [`PackedByteArray`](class_packedbytearray.md). This is the inverse of [`PackedByteArray.get_string_from_utf32`](#class_packedbytearray_method_get_string_from_utf32).
+Converts the string to a [*UTF-32*](https://en.wikipedia.org/wiki/UTF-32) encoded [`PackedByteArray`](class_packedbytearray.md). This is the inverse of [`PackedByteArray.get_string_from_utf32`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf32).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1748,7 +1811,7 @@ Converts the string to a [*UTF-32*](https://en.wikipedia.org/wiki/UTF-32) encode
 
 [`PackedByteArray`](class_packedbytearray.md) **to_wchar_buffer** ( ) const[^const]<div id="class_string_method_to_wchar_buffer"></div>
 
-Converts the string to a [*wide character*](https://en.wikipedia.org/wiki/Wide_character) (`wchar_t`, UTF-16 on Windows, UTF-32 on other platforms) encoded [`PackedByteArray`](class_packedbytearray.md). This is the inverse of [`PackedByteArray.get_string_from_wchar`](#class_packedbytearray_method_get_string_from_wchar).
+Converts the string to a [*wide character*](https://en.wikipedia.org/wiki/Wide_character) (`wchar_t`, UTF-16 on Windows, UTF-32 on other platforms) encoded [`PackedByteArray`](class_packedbytearray.md). This is the inverse of [`PackedByteArray.get_string_from_wchar`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_wchar).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1788,7 +1851,7 @@ Returns the character code at position `at`.
 
 [`String`](class_string.md) **uri_decode** ( ) const[^const]<div id="class_string_method_uri_decode"></div>
 
-Decodes the string from its URL-encoded format. This method is meant to properly decode the parameters in a URL when receiving an HTTP request. See also [`uri_encode`](#class_string_method_uri_encode).
+Decodes the string from its URL-encoded format. This method is meant to properly decode the parameters in a URL when receiving an HTTP request. See also [`uri_encode`](class_string.md#class_string_method_uri_encode).
 
 
 
@@ -1818,7 +1881,7 @@ Decodes the string from its URL-encoded format. This method is meant to properly
 
 [`String`](class_string.md) **uri_encode** ( ) const[^const]<div id="class_string_method_uri_encode"></div>
 
-Encodes the string to URL-friendly format. This method is meant to properly encode the parameters in a URL when sending an HTTP request. See also [`uri_decode`](#class_string_method_uri_decode).
+Encodes the string to URL-friendly format. This method is meant to properly encode the parameters in a URL when sending an HTTP request. See also [`uri_decode`](class_string.md#class_string_method_uri_decode).
 
 
 
@@ -1852,7 +1915,7 @@ Encodes the string to URL-friendly format. This method is meant to properly enco
 
 [`String`](class_string.md) **validate_filename** ( ) const[^const]<div id="class_string_method_validate_filename"></div>
 
-Returns a copy of the string with all characters that are not allowed in [`is_valid_filename`](#class_string_method_is_valid_filename) replaced with underscores.
+Returns a copy of the string with all characters that are not allowed in [`is_valid_filename`](class_string.md#class_string_method_is_valid_filename) replaced with underscores.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1862,7 +1925,7 @@ Returns a copy of the string with all characters that are not allowed in [`is_va
 
 [`String`](class_string.md) **validate_node_name** ( ) const[^const]<div id="class_string_method_validate_node_name"></div>
 
-Returns a copy of the string with all characters that are not allowed in [`Node.name`](#class_node_property_name) (`.` `:` `@` `/` `"` `%`) replaced with underscores.
+Returns a copy of the string with all characters that are not allowed in [`Node.name`](class_node.md#class_node_property_name) (`.` `:` `@` `/` `"` `%`) replaced with underscores.
 
 <!-- rst-class:: classref-item-separator -->
 

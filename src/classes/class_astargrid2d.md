@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AStarGrid2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AStarGrid2D.xml。 -->
 
 <div id="_class_astargrid2d"></div>
 
@@ -15,7 +15,7 @@ An implementation of A\* for finding the shortest path between two points on a p
 
 **AStarGrid2D** is a variant of [`AStar2D`](class_astar2d.md) that is specialized for partial 2D grids. It is simpler to use because it doesn't require you to manually create points and connect them together. This class also supports multiple types of heuristics, modes for diagonal movement, and a jumping mode to speed up calculations.
 
-To use **AStarGrid2D**, you only need to set the [`region`](#class_astargrid2d_property_region) of the grid, optionally set the [`cell_size`](#class_astargrid2d_property_cell_size), and then call the [`update`](#class_astargrid2d_method_update) method:
+To use **AStarGrid2D**, you only need to set the [`region`](class_astargrid2d.md#class_astargrid2d_property_region) of the grid, optionally set the [`cell_size`](class_astargrid2d.md#class_astargrid2d_property_cell_size), and then call the [`update`](class_astargrid2d.md#class_astargrid2d_method_update) method:
 
 
 
@@ -41,7 +41,7 @@ To use **AStarGrid2D**, you only need to set the [`region`](#class_astargrid2d_p
 
 
 
-To remove a point from the pathfinding grid, it must be set as "solid" with [`set_point_solid`](#class_astargrid2d_method_set_point_solid).
+To remove a point from the pathfinding grid, it must be set as "solid" with [`set_point_solid`](class_astargrid2d.md#class_astargrid2d_method_set_point_solid).
 
 
 
@@ -49,34 +49,39 @@ To remove a point from the pathfinding grid, it must be set as "solid" with [`se
 
 ## 属性
 
-| [CellShape](#enum_astargrid2d_cellshape)       | [`cell_shape`](#class_astargrid2d_property_cell_shape)                                 | ``0``                  |
-| [`Vector2`](class_vector2.md)                  | [`cell_size`](#class_astargrid2d_property_cell_size)                                   | ``Vector2(1, 1)``      |
-| [Heuristic](#enum_astargrid2d_heuristic)       | [`default_compute_heuristic`](#class_astargrid2d_property_default_compute_heuristic)   | ``0``                  |
-| [Heuristic](#enum_astargrid2d_heuristic)       | [`default_estimate_heuristic`](#class_astargrid2d_property_default_estimate_heuristic) | ``0``                  |
-| [DiagonalMode](#enum_astargrid2d_diagonalmode) | [`diagonal_mode`](#class_astargrid2d_property_diagonal_mode)                           | ``0``                  |
-| [`bool`](class_bool.md)                        | [`jumping_enabled`](#class_astargrid2d_property_jumping_enabled)                       | ``false``              |
-| [`Vector2`](class_vector2.md)                  | [`offset`](#class_astargrid2d_property_offset)                                         | ``Vector2(0, 0)``      |
-| [`Rect2i`](class_rect2i.md)                    | [`region`](#class_astargrid2d_property_region)                                         | ``Rect2i(0, 0, 0, 0)`` |
-| [`Vector2i`](class_vector2i.md)                | [`size`](#class_astargrid2d_property_size)                                             | ``Vector2i(0, 0)``     |
+|||
+|:-:|:--|
+| [CellShape](#enum_astargrid2d_cellshape)       | [`cell_shape`](class_astargrid2d.md#class_astargrid2d_property_cell_shape)                                 | ``0``                  |
+| [`Vector2`](class_vector2.md)                  | [`cell_size`](class_astargrid2d.md#class_astargrid2d_property_cell_size)                                   | ``Vector2(1, 1)``      |
+| [Heuristic](#enum_astargrid2d_heuristic)       | [`default_compute_heuristic`](class_astargrid2d.md#class_astargrid2d_property_default_compute_heuristic)   | ``0``                  |
+| [Heuristic](#enum_astargrid2d_heuristic)       | [`default_estimate_heuristic`](class_astargrid2d.md#class_astargrid2d_property_default_estimate_heuristic) | ``0``                  |
+| [DiagonalMode](#enum_astargrid2d_diagonalmode) | [`diagonal_mode`](class_astargrid2d.md#class_astargrid2d_property_diagonal_mode)                           | ``0``                  |
+| [`bool`](class_bool.md)                        | [`jumping_enabled`](class_astargrid2d.md#class_astargrid2d_property_jumping_enabled)                       | ``false``              |
+| [`Vector2`](class_vector2.md)                  | [`offset`](class_astargrid2d.md#class_astargrid2d_property_offset)                                         | ``Vector2(0, 0)``      |
+| [`Rect2i`](class_rect2i.md)                    | [`region`](class_astargrid2d.md#class_astargrid2d_property_region)                                         | ``Rect2i(0, 0, 0, 0)`` |
+| [`Vector2i`](class_vector2i.md)                | [`size`](class_astargrid2d.md#class_astargrid2d_property_size)                                             | ``Vector2i(0, 0)``     |
 
 ## 方法
 
-| [`float`](class_float.md)                               | [`_compute_cost`](#class_astargrid2d_private_method__compute_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]                |
-| [`float`](class_float.md)                               | [`_estimate_cost`](#class_astargrid2d_private_method__estimate_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]              |
-| `void`                                                  | [`clear`](#class_astargrid2d_method_clear) ( )                                                                                                                                                         |
-| `void`                                                  | [`fill_solid_region`](#class_astargrid2d_method_fill_solid_region) ( region: [`Rect2i`](class_rect2i.md), solid: [`bool`](class_bool.md) = true )                                                      |
-| `void`                                                  | [`fill_weight_scale_region`](#class_astargrid2d_method_fill_weight_scale_region) ( region: [`Rect2i`](class_rect2i.md), weight_scale: [`float`](class_float.md) )                                      |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_id_path`](#class_astargrid2d_method_get_id_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false )       |
-| [`PackedVector2Array`](class_packedvector2array.md)     | [`get_point_path`](#class_astargrid2d_method_get_point_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false ) |
-| [`Vector2`](class_vector2.md)                           | [`get_point_position`](#class_astargrid2d_method_get_point_position) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                             |
-| [`float`](class_float.md)                               | [`get_point_weight_scale`](#class_astargrid2d_method_get_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                     |
-| [`bool`](class_bool.md)                                 | [`is_dirty`](#class_astargrid2d_method_is_dirty) ( ) const[^const]                                                                                                                                     |
-| [`bool`](class_bool.md)                                 | [`is_in_bounds`](#class_astargrid2d_method_is_in_bounds) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                                          |
-| [`bool`](class_bool.md)                                 | [`is_in_boundsv`](#class_astargrid2d_method_is_in_boundsv) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                       |
-| [`bool`](class_bool.md)                                 | [`is_point_solid`](#class_astargrid2d_method_is_point_solid) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                     |
-| `void`                                                  | [`set_point_solid`](#class_astargrid2d_method_set_point_solid) ( id: [`Vector2i`](class_vector2i.md), solid: [`bool`](class_bool.md) = true )                                                          |
-| `void`                                                  | [`set_point_weight_scale`](#class_astargrid2d_method_set_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md), weight_scale: [`float`](class_float.md) )                                          |
-| `void`                                                  | [`update`](#class_astargrid2d_method_update) ( )                                                                                                                                                       |
+|||
+|:-:|:--|
+| [`float`](class_float.md)                                   | [`_compute_cost`](class_astargrid2d.md#class_astargrid2d_private_method__compute_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]                |
+| [`float`](class_float.md)                                   | [`_estimate_cost`](class_astargrid2d.md#class_astargrid2d_private_method__estimate_cost) ( from_id: [`Vector2i`](class_vector2i.md), end_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]             |
+| `void`                                                      | [`clear`](class_astargrid2d.md#class_astargrid2d_method_clear) ( )                                                                                                                                                         |
+| `void`                                                      | [`fill_solid_region`](class_astargrid2d.md#class_astargrid2d_method_fill_solid_region) ( region: [`Rect2i`](class_rect2i.md), solid: [`bool`](class_bool.md) = true )                                                      |
+| `void`                                                      | [`fill_weight_scale_region`](class_astargrid2d.md#class_astargrid2d_method_fill_weight_scale_region) ( region: [`Rect2i`](class_rect2i.md), weight_scale: [`float`](class_float.md) )                                      |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md)     | [`get_id_path`](class_astargrid2d.md#class_astargrid2d_method_get_id_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false )       |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_point_data_in_region`](class_astargrid2d.md#class_astargrid2d_method_get_point_data_in_region) ( region: [`Rect2i`](class_rect2i.md) ) const[^const]                                                                 |
+| [`PackedVector2Array`](class_packedvector2array.md)         | [`get_point_path`](class_astargrid2d.md#class_astargrid2d_method_get_point_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false ) |
+| [`Vector2`](class_vector2.md)                               | [`get_point_position`](class_astargrid2d.md#class_astargrid2d_method_get_point_position) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                             |
+| [`float`](class_float.md)                                   | [`get_point_weight_scale`](class_astargrid2d.md#class_astargrid2d_method_get_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                     |
+| [`bool`](class_bool.md)                                     | [`is_dirty`](class_astargrid2d.md#class_astargrid2d_method_is_dirty) ( ) const[^const]                                                                                                                                     |
+| [`bool`](class_bool.md)                                     | [`is_in_bounds`](class_astargrid2d.md#class_astargrid2d_method_is_in_bounds) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                                          |
+| [`bool`](class_bool.md)                                     | [`is_in_boundsv`](class_astargrid2d.md#class_astargrid2d_method_is_in_boundsv) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                       |
+| [`bool`](class_bool.md)                                     | [`is_point_solid`](class_astargrid2d.md#class_astargrid2d_method_is_point_solid) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                     |
+| `void`                                                      | [`set_point_solid`](class_astargrid2d.md#class_astargrid2d_method_set_point_solid) ( id: [`Vector2i`](class_vector2i.md), solid: [`bool`](class_bool.md) = true )                                                          |
+| `void`                                                      | [`set_point_weight_scale`](class_astargrid2d.md#class_astargrid2d_method_set_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md), weight_scale: [`float`](class_float.md) )                                          |
+| `void`                                                      | [`update`](class_astargrid2d.md#class_astargrid2d_method_update) ( )                                                                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -118,7 +123,7 @@ The [*Manhattan heuristic*](https://en.wikipedia.org/wiki/Taxicab_geometry) to b
     result = dx + dy
 ```
 
- **Note:** This heuristic is intended to be used with 4-side orthogonal movements, provided by setting the [`diagonal_mode`](#class_astargrid2d_property_diagonal_mode) to [`DIAGONAL_MODE_NEVER`](#class_astargrid2d_constant_diagonal_mode_never).
+ **Note:** This heuristic is intended to be used with 4-side orthogonal movements, provided by setting the [`diagonal_mode`](class_astargrid2d.md#class_astargrid2d_property_diagonal_mode) to [`DIAGONAL_MODE_NEVER`](class_astargrid2d.md#class_astargrid2d_constant_diagonal_mode_never).
 
 
 
@@ -242,7 +247,7 @@ Represents the size of the [CellShape](#enum_astargrid2d_cellshape) enum.
 - `void` **set_cell_shape** ( value: [CellShape](#enum_astargrid2d_cellshape) )
 - [CellShape](#enum_astargrid2d_cellshape) **get_cell_shape** ( )
 
-The cell shape. Affects how the positions are placed in the grid. If changed, [`update`](#class_astargrid2d_method_update) needs to be called before finding the next path.
+The cell shape. Affects how the positions are placed in the grid. If changed, [`update`](class_astargrid2d.md#class_astargrid2d_method_update) needs to be called before finding the next path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -255,7 +260,7 @@ The cell shape. Affects how the positions are placed in the grid. If changed, [`
 - `void` **set_cell_size** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_cell_size** ( )
 
-The size of the point cell which will be applied to calculate the resulting point position returned by [`get_point_path`](#class_astargrid2d_method_get_point_path). If changed, [`update`](#class_astargrid2d_method_update) needs to be called before finding the next path.
+The size of the point cell which will be applied to calculate the resulting point position returned by [`get_point_path`](class_astargrid2d.md#class_astargrid2d_method_get_point_path). If changed, [`update`](class_astargrid2d.md#class_astargrid2d_method_update) needs to be called before finding the next path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -268,7 +273,7 @@ The size of the point cell which will be applied to calculate the resulting poin
 - `void` **set_default_compute_heuristic** ( value: [Heuristic](#enum_astargrid2d_heuristic) )
 - [Heuristic](#enum_astargrid2d_heuristic) **get_default_compute_heuristic** ( )
 
-The default [Heuristic](#enum_astargrid2d_heuristic) which will be used to calculate the cost between two points if [`_compute_cost`](#class_astargrid2d_private_method__compute_cost) was not overridden.
+The default [Heuristic](#enum_astargrid2d_heuristic) which will be used to calculate the cost between two points if [`_compute_cost`](class_astargrid2d.md#class_astargrid2d_private_method__compute_cost) was not overridden.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -281,7 +286,7 @@ The default [Heuristic](#enum_astargrid2d_heuristic) which will be used to calcu
 - `void` **set_default_estimate_heuristic** ( value: [Heuristic](#enum_astargrid2d_heuristic) )
 - [Heuristic](#enum_astargrid2d_heuristic) **get_default_estimate_heuristic** ( )
 
-The default [Heuristic](#enum_astargrid2d_heuristic) which will be used to calculate the cost between the point and the end point if [`_estimate_cost`](#class_astargrid2d_private_method__estimate_cost) was not overridden.
+The default [Heuristic](#enum_astargrid2d_heuristic) which will be used to calculate the cost between the point and the end point if [`_estimate_cost`](class_astargrid2d.md#class_astargrid2d_private_method__estimate_cost) was not overridden.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -322,7 +327,7 @@ Enables or disables jumping to skip up the intermediate points and speeds up the
 - `void` **set_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_offset** ( )
 
-The offset of the grid which will be applied to calculate the resulting point position returned by [`get_point_path`](#class_astargrid2d_method_get_point_path). If changed, [`update`](#class_astargrid2d_method_update) needs to be called before finding the next path.
+The offset of the grid which will be applied to calculate the resulting point position returned by [`get_point_path`](class_astargrid2d.md#class_astargrid2d_method_get_point_path). If changed, [`update`](class_astargrid2d.md#class_astargrid2d_method_update) needs to be called before finding the next path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -335,7 +340,7 @@ The offset of the grid which will be applied to calculate the resulting point po
 - `void` **set_region** ( value: [`Rect2i`](class_rect2i.md) )
 - [`Rect2i`](class_rect2i.md) **get_region** ( )
 
-The region of grid cells available for pathfinding. If changed, [`update`](#class_astargrid2d_method_update) needs to be called before finding the next path.
+The region of grid cells available for pathfinding. If changed, [`update`](class_astargrid2d.md#class_astargrid2d_method_update) needs to be called before finding the next path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -348,9 +353,9 @@ The region of grid cells available for pathfinding. If changed, [`update`](#clas
 - `void` **set_size** ( value: [`Vector2i`](class_vector2i.md) )
 - [`Vector2i`](class_vector2i.md) **get_size** ( )
 
-**已弃用：** Use [`region`](#class_astargrid2d_property_region) instead.
+**已弃用：** Use [`region`](class_astargrid2d.md#class_astargrid2d_property_region) instead.
 
-The size of the grid (number of cells of size [`cell_size`](#class_astargrid2d_property_cell_size) on each axis). If changed, [`update`](#class_astargrid2d_method_update) needs to be called before finding the next path.
+The size of the grid (number of cells of size [`cell_size`](class_astargrid2d.md#class_astargrid2d_property_cell_size) on each axis). If changed, [`update`](class_astargrid2d.md#class_astargrid2d_method_update) needs to be called before finding the next path.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -372,7 +377,7 @@ Note that this function is hidden in the default **AStarGrid2D** class.
 
 <div id="_class_astargrid2d_private_method__estimate_cost"></div>
 
-[`float`](class_float.md) **_estimate_cost** ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]<div id="class_astargrid2d_private_method__estimate_cost"></div>
+[`float`](class_float.md) **_estimate_cost** ( from_id: [`Vector2i`](class_vector2i.md), end_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]<div id="class_astargrid2d_private_method__estimate_cost"></div>
 
 Called when estimating the cost between a point and the path's ending point.
 
@@ -386,7 +391,7 @@ Note that this function is hidden in the default **AStarGrid2D** class.
 
 `void` **clear** ( )<div id="class_astargrid2d_method_clear"></div>
 
-Clears the grid and sets the [`region`](#class_astargrid2d_property_region) to `Rect2i(0, 0, 0, 0)`.
+Clears the grid and sets the [`region`](class_astargrid2d.md#class_astargrid2d_property_region) to `Rect2i(0, 0, 0, 0)`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -398,7 +403,7 @@ Clears the grid and sets the [`region`](#class_astargrid2d_property_region) to `
 
 Fills the given `region` on the grid with the specified value for the solid flag.
 
- **Note:** Calling [`update`](#class_astargrid2d_method_update) is not needed after the call of this function.
+ **Note:** Calling [`update`](class_astargrid2d.md#class_astargrid2d_method_update) is not needed after the call of this function.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -410,7 +415,7 @@ Fills the given `region` on the grid with the specified value for the solid flag
 
 Fills the given `region` on the grid with the specified value for the weight scale.
 
- **Note:** Calling [`update`](#class_astargrid2d_method_update) is not needed after the call of this function.
+ **Note:** Calling [`update`](class_astargrid2d.md#class_astargrid2d_method_update) is not needed after the call of this function.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -423,6 +428,18 @@ Fills the given `region` on the grid with the specified value for the weight sca
 Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
 If there is no valid path to the target, and `allow_partial_path` is `true`, returns a path to the point closest to the target that can be reached.
+
+ **Note:** When `allow_partial_path` is `true` and `to_id` is solid the search may take an unusually long time to finish.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_astargrid2d_method_get_point_data_in_region"></div>
+
+[Array](class_array.md) [`Dictionary`](class_dictionary.md) **get_point_data_in_region** ( region: [`Rect2i`](class_rect2i.md) ) const[^const]<div id="class_astargrid2d_method_get_point_data_in_region"></div>
+
+Returns an array of dictionaries with point data (`id`: [`Vector2i`](class_vector2i.md), `position`: [`Vector2`](class_vector2.md), `solid`: [`bool`](class_bool.md), `weight_scale`: [`float`](class_float.md)) within a `region`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -437,6 +454,8 @@ Returns an array with the points that are in the path found by **AStarGrid2D** b
 If there is no valid path to the target, and `allow_partial_path` is `true`, returns a path to the point closest to the target that can be reached.
 
  **Note:** This method is not thread-safe. If called from a [`Thread`](class_thread.md), it will return an empty array and will print an error message.
+
+Additionally, when `allow_partial_path` is `true` and `to_id` is solid the search may take an unusually long time to finish.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -466,7 +485,7 @@ Returns the weight scale of the point associated with the given `id`.
 
 [`bool`](class_bool.md) **is_dirty** ( ) const[^const]<div id="class_astargrid2d_method_is_dirty"></div>
 
-Indicates that the grid parameters were changed and [`update`](#class_astargrid2d_method_update) needs to be called.
+Indicates that the grid parameters were changed and [`update`](class_astargrid2d.md#class_astargrid2d_method_update) needs to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -476,7 +495,7 @@ Indicates that the grid parameters were changed and [`update`](#class_astargrid2
 
 [`bool`](class_bool.md) **is_in_bounds** ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]<div id="class_astargrid2d_method_is_in_bounds"></div>
 
-Returns `true` if the `x` and `y` is a valid grid coordinate (id), i.e. if it is inside [`region`](#class_astargrid2d_property_region). Equivalent to `region.has_point(Vector2i(x, y))`.
+Returns `true` if the `x` and `y` is a valid grid coordinate (id), i.e. if it is inside [`region`](class_astargrid2d.md#class_astargrid2d_property_region). Equivalent to `region.has_point(Vector2i(x, y))`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -486,7 +505,7 @@ Returns `true` if the `x` and `y` is a valid grid coordinate (id), i.e. if it is
 
 [`bool`](class_bool.md) **is_in_boundsv** ( id: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_astargrid2d_method_is_in_boundsv"></div>
 
-Returns `true` if the `id` vector is a valid grid coordinate, i.e. if it is inside [`region`](#class_astargrid2d_property_region). Equivalent to `region.has_point(id)`.
+Returns `true` if the `id` vector is a valid grid coordinate, i.e. if it is inside [`region`](class_astargrid2d.md#class_astargrid2d_property_region). Equivalent to `region.has_point(id)`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -508,7 +527,7 @@ Returns `true` if a point is disabled for pathfinding. By default, all points ar
 
 Disables or enables the specified point for pathfinding. Useful for making an obstacle. By default, all points are enabled.
 
- **Note:** Calling [`update`](#class_astargrid2d_method_update) is not needed after the call of this function.
+ **Note:** Calling [`update`](class_astargrid2d.md#class_astargrid2d_method_update) is not needed after the call of this function.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -518,9 +537,9 @@ Disables or enables the specified point for pathfinding. Useful for making an ob
 
 `void` **set_point_weight_scale** ( id: [`Vector2i`](class_vector2i.md), weight_scale: [`float`](class_float.md) )<div id="class_astargrid2d_method_set_point_weight_scale"></div>
 
-Sets the `weight_scale` for the point with the given `id`. The `weight_scale` is multiplied by the result of [`_compute_cost`](#class_astargrid2d_private_method__compute_cost) when determining the overall cost of traveling across a segment from a neighboring point to this point.
+Sets the `weight_scale` for the point with the given `id`. The `weight_scale` is multiplied by the result of [`_compute_cost`](class_astargrid2d.md#class_astargrid2d_private_method__compute_cost) when determining the overall cost of traveling across a segment from a neighboring point to this point.
 
- **Note:** Calling [`update`](#class_astargrid2d_method_update) is not needed after the call of this function.
+ **Note:** Calling [`update`](class_astargrid2d.md#class_astargrid2d_method_update) is not needed after the call of this function.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -530,7 +549,7 @@ Sets the `weight_scale` for the point with the given `id`. The `weight_scale` is
 
 `void` **update** ( )<div id="class_astargrid2d_method_update"></div>
 
-Updates the internal state of the grid according to the parameters to prepare it to search the path. Needs to be called if parameters like [`region`](#class_astargrid2d_property_region), [`cell_size`](#class_astargrid2d_property_cell_size) or [`offset`](#class_astargrid2d_property_offset) are changed. [`is_dirty`](#class_astargrid2d_method_is_dirty) will return `true` if this is the case and this needs to be called.
+Updates the internal state of the grid according to the parameters to prepare it to search the path. Needs to be called if parameters like [`region`](class_astargrid2d.md#class_astargrid2d_property_region), [`cell_size`](class_astargrid2d.md#class_astargrid2d_property_cell_size) or [`offset`](class_astargrid2d.md#class_astargrid2d_property_offset) are changed. [`is_dirty`](class_astargrid2d.md#class_astargrid2d_method_is_dirty) will return `true` if this is the case and this needs to be called.
 
  **Note:** All point data (solidity and weight scale) will be cleared.
 

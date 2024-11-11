@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderSceneData.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderSceneData.xml。 -->
 
 <div id="_class_renderscenedata"></div>
 
@@ -21,12 +21,14 @@ Abstract scene data object, exists for the duration of rendering a single viewpo
 
 ## 方法
 
-| [`Projection`](class_projection.md)   | [`get_cam_projection`](#class_renderscenedata_method_get_cam_projection) ( ) const[^const]                               |
-| [`Transform3D`](class_transform3d.md) | [`get_cam_transform`](#class_renderscenedata_method_get_cam_transform) ( ) const[^const]                                 |
-| [`RID`](class_rid.md)                 | [`get_uniform_buffer`](#class_renderscenedata_method_get_uniform_buffer) ( ) const[^const]                               |
-| [`int`](class_int.md)                 | [`get_view_count`](#class_renderscenedata_method_get_view_count) ( ) const[^const]                                       |
-| [`Vector3`](class_vector3.md)         | [`get_view_eye_offset`](#class_renderscenedata_method_get_view_eye_offset) ( view: [`int`](class_int.md) ) const[^const] |
-| [`Projection`](class_projection.md)   | [`get_view_projection`](#class_renderscenedata_method_get_view_projection) ( view: [`int`](class_int.md) ) const[^const] |
+|||
+|:-:|:--|
+| [`Projection`](class_projection.md)   | [`get_cam_projection`](class_renderscenedata.md#class_renderscenedata_method_get_cam_projection) ( ) const[^const]                               |
+| [`Transform3D`](class_transform3d.md) | [`get_cam_transform`](class_renderscenedata.md#class_renderscenedata_method_get_cam_transform) ( ) const[^const]                                 |
+| [`RID`](class_rid.md)                 | [`get_uniform_buffer`](class_renderscenedata.md#class_renderscenedata_method_get_uniform_buffer) ( ) const[^const]                               |
+| [`int`](class_int.md)                 | [`get_view_count`](class_renderscenedata.md#class_renderscenedata_method_get_view_count) ( ) const[^const]                                       |
+| [`Vector3`](class_vector3.md)         | [`get_view_eye_offset`](class_renderscenedata.md#class_renderscenedata_method_get_view_eye_offset) ( view: [`int`](class_int.md) ) const[^const] |
+| [`Projection`](class_projection.md)   | [`get_view_projection`](class_renderscenedata.md#class_renderscenedata_method_get_view_projection) ( view: [`int`](class_int.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RDFramebufferPass.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RDFramebufferPass.xml。 -->
 
 <div id="_class_rdframebufferpass"></div>
 
@@ -21,11 +21,13 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
-| [`PackedInt32Array`](class_packedint32array.md) | [`color_attachments`](#class_rdframebufferpass_property_color_attachments)       | ``PackedInt32Array()`` |
-| [`int`](class_int.md)                           | [`depth_attachment`](#class_rdframebufferpass_property_depth_attachment)         | ``-1``                 |
-| [`PackedInt32Array`](class_packedint32array.md) | [`input_attachments`](#class_rdframebufferpass_property_input_attachments)       | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`preserve_attachments`](#class_rdframebufferpass_property_preserve_attachments) | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`resolve_attachments`](#class_rdframebufferpass_property_resolve_attachments)   | ``PackedInt32Array()`` |
+|||
+|:-:|:--|
+| [`PackedInt32Array`](class_packedint32array.md) | [`color_attachments`](class_rdframebufferpass.md#class_rdframebufferpass_property_color_attachments)       | ``PackedInt32Array()`` |
+| [`int`](class_int.md)                           | [`depth_attachment`](class_rdframebufferpass.md#class_rdframebufferpass_property_depth_attachment)         | ``-1``                 |
+| [`PackedInt32Array`](class_packedint32array.md) | [`input_attachments`](class_rdframebufferpass.md#class_rdframebufferpass_property_input_attachments)       | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`preserve_attachments`](class_rdframebufferpass.md#class_rdframebufferpass_property_preserve_attachments) | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`resolve_attachments`](class_rdframebufferpass.md#class_rdframebufferpass_property_resolve_attachments)   | ``PackedInt32Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 

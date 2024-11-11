@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationTree.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationTree.xml。 -->
 
 <div id="_class_animationtree"></div>
 
@@ -19,16 +19,20 @@ A node used for advanced animation transitions in an [`AnimationPlayer`](class_a
 
 ## 属性
 
-| [`NodePath`](class_nodepath.md)                                                     | [`advance_expression_base_node`](#class_animationtree_property_advance_expression_base_node) | ``NodePath(".")``                                                                           |
-| [`NodePath`](class_nodepath.md)                                                     | [`anim_player`](#class_animationtree_property_anim_player)                                   | ``NodePath("")``                                                                            |
-| [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) | callback_mode_discrete                                                                       | ``2`` (overrides [`AnimationMixer`](#class_animationmixer_property_callback_mode_discrete)) |
-| [`bool`](class_bool.md)                                                             | deterministic                                                                                | ``true`` (overrides [`AnimationMixer`](#class_animationmixer_property_deterministic))       |
-| [`AnimationRootNode`](class_animationrootnode.md)                                   | [`tree_root`](#class_animationtree_property_tree_root)                                       |                                                                                             |
+|||
+|:-:|:--|
+| [`NodePath`](class_nodepath.md)                                                     | [`advance_expression_base_node`](class_animationtree.md#class_animationtree_property_advance_expression_base_node) | ``NodePath(".")``                                                                                                  |
+| [`NodePath`](class_nodepath.md)                                                     | [`anim_player`](class_animationtree.md#class_animationtree_property_anim_player)                                   | ``NodePath("")``                                                                                                   |
+| [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) | callback_mode_discrete                                                                                             | ``2`` (overrides [`AnimationMixer`](class_animationmixer.md#class_animationmixer_property_callback_mode_discrete)) |
+| [`bool`](class_bool.md)                                                             | deterministic                                                                                                      | ``true`` (overrides [`AnimationMixer`](class_animationmixer.md#class_animationmixer_property_deterministic))       |
+| [`AnimationRootNode`](class_animationrootnode.md)                                   | [`tree_root`](class_animationtree.md#class_animationtree_property_tree_root)                                       |                                                                                                                    |
 
 ## 方法
 
-| [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) | [`get_process_callback`](#class_animationtree_method_get_process_callback) ( ) const[^const]                                                                  |
-| `void`                                                                   | [`set_process_callback`](#class_animationtree_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) ) |
+|||
+|:-:|:--|
+| [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) | [`get_process_callback`](class_animationtree.md#class_animationtree_method_get_process_callback) ( ) const[^const]                                                                  |
+| `void`                                                                   | [`set_process_callback`](class_animationtree.md#class_animationtree_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -40,7 +44,7 @@ A node used for advanced animation transitions in an [`AnimationPlayer`](class_a
 
 **animation_player_changed** ( ) <div id="class_animationtree_signal_animation_player_changed"></div>
 
-Emitted when the [`anim_player`](#class_animationtree_property_anim_player) is changed.
+Emitted when the [`anim_player`](class_animationtree.md#class_animationtree_property_anim_player) is changed.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +60,7 @@ enum **AnimationProcessCallback**: <div id="enum_animationtree_animationprocessc
 
 [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) **ANIMATION_PROCESS_PHYSICS** = ``0``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](#class_animationmixer_constant_animation_callback_mode_process_physics).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_physics).
 
 
 
@@ -64,7 +68,7 @@ enum **AnimationProcessCallback**: <div id="enum_animationtree_animationprocessc
 
 [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) **ANIMATION_PROCESS_IDLE** = ``1``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE`](#class_animationmixer_constant_animation_callback_mode_process_idle).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_idle).
 
 
 
@@ -72,7 +76,7 @@ enum **AnimationProcessCallback**: <div id="enum_animationtree_animationprocessc
 
 [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) **ANIMATION_PROCESS_MANUAL** = ``2``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL`](#class_animationmixer_constant_animation_callback_mode_process_manual).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_manual).
 
 
 
@@ -127,7 +131,7 @@ The root animation node of this **AnimationTree**. See [`AnimationRootNode`](cla
 
 [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) **get_process_callback** ( ) const[^const]<div id="class_animationtree_method_get_process_callback"></div>
 
-**已弃用：** Use [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) instead.
+**已弃用：** Use [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) instead.
 
 Returns the process notification in which to update animations.
 
@@ -139,7 +143,7 @@ Returns the process notification in which to update animations.
 
 `void` **set_process_callback** ( mode: [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) )<div id="class_animationtree_method_set_process_callback"></div>
 
-**已弃用：** Use [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) instead.
+**已弃用：** Use [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) instead.
 
 Sets the process notification in which to update animations.
 

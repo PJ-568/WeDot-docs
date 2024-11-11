@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TLSOptions.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TLSOptions.xml。 -->
 
 <div id="_class_tlsoptions"></div>
 
@@ -15,7 +15,7 @@ TLS configuration for clients and servers.
 
 TLSOptions abstracts the configuration options for the [`StreamPeerTLS`](class_streampeertls.md) and [`PacketPeerDTLS`](class_packetpeerdtls.md) classes.
 
-Objects of this class cannot be instantiated directly, and one of the static methods [`client`](#class_tlsoptions_method_client), [`client_unsafe`](#class_tlsoptions_method_client_unsafe), or [`server`](#class_tlsoptions_method_server) should be used instead.
+Objects of this class cannot be instantiated directly, and one of the static methods [`client`](class_tlsoptions.md#class_tlsoptions_method_client), [`client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe), or [`server`](class_tlsoptions.md#class_tlsoptions_method_server) should be used instead.
 
 
 
@@ -37,15 +37,17 @@ Objects of this class cannot be instantiated directly, and one of the static met
 
 ## 方法
 
-| [`TLSOptions`](class_tlsoptions.md)           | [`client`](#class_tlsoptions_method_client) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null, common_name_override: [`String`](class_string.md) = "" ) static[^static] |
-| [`TLSOptions`](class_tlsoptions.md)           | [`client_unsafe`](#class_tlsoptions_method_client_unsafe) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null ) static[^static]                                           |
-| [`String`](class_string.md)                   | [`get_common_name_override`](#class_tlsoptions_method_get_common_name_override) ( ) const[^const]                                                                                           |
-| [`X509Certificate`](class_x509certificate.md) | [`get_own_certificate`](#class_tlsoptions_method_get_own_certificate) ( ) const[^const]                                                                                                     |
-| [`CryptoKey`](class_cryptokey.md)             | [`get_private_key`](#class_tlsoptions_method_get_private_key) ( ) const[^const]                                                                                                             |
-| [`X509Certificate`](class_x509certificate.md) | [`get_trusted_ca_chain`](#class_tlsoptions_method_get_trusted_ca_chain) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)                       | [`is_server`](#class_tlsoptions_method_is_server) ( ) const[^const]                                                                                                                         |
-| [`bool`](class_bool.md)                       | [`is_unsafe_client`](#class_tlsoptions_method_is_unsafe_client) ( ) const[^const]                                                                                                           |
-| [`TLSOptions`](class_tlsoptions.md)           | [`server`](#class_tlsoptions_method_server) ( key: [`CryptoKey`](class_cryptokey.md), certificate: [`X509Certificate`](class_x509certificate.md) ) static[^static]                          |
+|||
+|:-:|:--|
+| [`TLSOptions`](class_tlsoptions.md)           | [`client`](class_tlsoptions.md#class_tlsoptions_method_client) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null, common_name_override: [`String`](class_string.md) = "" ) static[^static] |
+| [`TLSOptions`](class_tlsoptions.md)           | [`client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null ) static[^static]                                           |
+| [`String`](class_string.md)                   | [`get_common_name_override`](class_tlsoptions.md#class_tlsoptions_method_get_common_name_override) ( ) const[^const]                                                                                           |
+| [`X509Certificate`](class_x509certificate.md) | [`get_own_certificate`](class_tlsoptions.md#class_tlsoptions_method_get_own_certificate) ( ) const[^const]                                                                                                     |
+| [`CryptoKey`](class_cryptokey.md)             | [`get_private_key`](class_tlsoptions.md#class_tlsoptions_method_get_private_key) ( ) const[^const]                                                                                                             |
+| [`X509Certificate`](class_x509certificate.md) | [`get_trusted_ca_chain`](class_tlsoptions.md#class_tlsoptions_method_get_trusted_ca_chain) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)                       | [`is_server`](class_tlsoptions.md#class_tlsoptions_method_is_server) ( ) const[^const]                                                                                                                         |
+| [`bool`](class_bool.md)                       | [`is_unsafe_client`](class_tlsoptions.md#class_tlsoptions_method_is_unsafe_client) ( ) const[^const]                                                                                                           |
+| [`TLSOptions`](class_tlsoptions.md)           | [`server`](class_tlsoptions.md#class_tlsoptions_method_server) ( key: [`CryptoKey`](class_cryptokey.md), certificate: [`X509Certificate`](class_x509certificate.md) ) static[^static]                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,7 +85,7 @@ Creates an **unsafe** TLS client configuration where certificate validation is o
 
 [`String`](class_string.md) **get_common_name_override** ( ) const[^const]<div id="class_tlsoptions_method_get_common_name_override"></div>
 
-Returns the common name (domain name) override specified when creating with [`client`](#class_tlsoptions_method_client).
+Returns the common name (domain name) override specified when creating with [`client`](class_tlsoptions.md#class_tlsoptions_method_client).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -93,7 +95,7 @@ Returns the common name (domain name) override specified when creating with [`cl
 
 [`X509Certificate`](class_x509certificate.md) **get_own_certificate** ( ) const[^const]<div id="class_tlsoptions_method_get_own_certificate"></div>
 
-Returns the [`X509Certificate`](class_x509certificate.md) specified when creating with [`server`](#class_tlsoptions_method_server).
+Returns the [`X509Certificate`](class_x509certificate.md) specified when creating with [`server`](class_tlsoptions.md#class_tlsoptions_method_server).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -103,7 +105,7 @@ Returns the [`X509Certificate`](class_x509certificate.md) specified when creatin
 
 [`CryptoKey`](class_cryptokey.md) **get_private_key** ( ) const[^const]<div id="class_tlsoptions_method_get_private_key"></div>
 
-Returns the [`CryptoKey`](class_cryptokey.md) specified when creating with [`server`](#class_tlsoptions_method_server).
+Returns the [`CryptoKey`](class_cryptokey.md) specified when creating with [`server`](class_tlsoptions.md#class_tlsoptions_method_server).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -113,7 +115,7 @@ Returns the [`CryptoKey`](class_cryptokey.md) specified when creating with [`ser
 
 [`X509Certificate`](class_x509certificate.md) **get_trusted_ca_chain** ( ) const[^const]<div id="class_tlsoptions_method_get_trusted_ca_chain"></div>
 
-Returns the CA [`X509Certificate`](class_x509certificate.md) chain specified when creating with [`client`](#class_tlsoptions_method_client) or [`client_unsafe`](#class_tlsoptions_method_client_unsafe).
+Returns the CA [`X509Certificate`](class_x509certificate.md) chain specified when creating with [`client`](class_tlsoptions.md#class_tlsoptions_method_client) or [`client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -123,7 +125,7 @@ Returns the CA [`X509Certificate`](class_x509certificate.md) chain specified whe
 
 [`bool`](class_bool.md) **is_server** ( ) const[^const]<div id="class_tlsoptions_method_is_server"></div>
 
-Returns `true` if created with [`server`](#class_tlsoptions_method_server), `false` otherwise.
+Returns `true` if created with [`server`](class_tlsoptions.md#class_tlsoptions_method_server), `false` otherwise.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -133,7 +135,7 @@ Returns `true` if created with [`server`](#class_tlsoptions_method_server), `fal
 
 [`bool`](class_bool.md) **is_unsafe_client** ( ) const[^const]<div id="class_tlsoptions_method_is_unsafe_client"></div>
 
-Returns `true` if created with [`client_unsafe`](#class_tlsoptions_method_client_unsafe), `false` otherwise.
+Returns `true` if created with [`client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe), `false` otherwise.
 
 <!-- rst-class:: classref-item-separator -->
 

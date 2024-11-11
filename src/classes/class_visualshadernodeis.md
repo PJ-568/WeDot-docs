@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeIs.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeIs.xml。 -->
 
 <div id="_class_visualshadernodeis"></div>
 
@@ -17,7 +17,9 @@ Returns the boolean result of the comparison between `INF` or `NaN` and a scalar
 
 ## 属性
 
-| [Function](#enum_visualshadernodeis_function) | [`function`](#class_visualshadernodeis_property_function) | ``0`` |
+|||
+|:-:|:--|
+| [Function](#enum_visualshadernodeis_function) | [`function`](class_visualshadernodeis.md#class_visualshadernodeis_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

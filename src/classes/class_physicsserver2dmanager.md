@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PhysicsServer2DManager.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PhysicsServer2DManager.xml。 -->
 
 <div id="_class_physicsserver2dmanager"></div>
 
@@ -19,8 +19,10 @@ A singleton for managing [`PhysicsServer2D`](class_physicsserver2d.md) implement
 
 ## 方法
 
-| `void` | [`register_server`](#class_physicsserver2dmanager_method_register_server) ( name: [`String`](class_string.md), create_callback: [`Callable`](class_callable.md) ) |
-| `void` | [`set_default_server`](#class_physicsserver2dmanager_method_set_default_server) ( name: [`String`](class_string.md), priority: [`int`](class_int.md) )            |
+|||
+|:-:|:--|
+| `void` | [`register_server`](class_physicsserver2dmanager.md#class_physicsserver2dmanager_method_register_server) ( name: [`String`](class_string.md), create_callback: [`Callable`](class_callable.md) ) |
+| `void` | [`set_default_server`](class_physicsserver2dmanager.md#class_physicsserver2dmanager_method_set_default_server) ( name: [`String`](class_string.md), priority: [`int`](class_int.md) )            |
 
 <!-- rst-class:: classref-section-separator -->
 

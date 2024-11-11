@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceImporterBitMap.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceImporterBitMap.xml。 -->
 
 <div id="_class_resourceimporterbitmap"></div>
 
@@ -17,8 +17,10 @@ Imports a [`BitMap`](class_bitmap.md) resource (2D array of boolean values).
 
 ## 属性
 
-| [`int`](class_int.md)     | [`create_from`](#class_resourceimporterbitmap_property_create_from) | ``0``   |
-| [`float`](class_float.md) | [`threshold`](#class_resourceimporterbitmap_property_threshold)     | ``0.5`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md)     | [`create_from`](class_resourceimporterbitmap.md#class_resourceimporterbitmap_property_create_from) | ``0``   |
+| [`float`](class_float.md) | [`threshold`](class_resourceimporterbitmap.md#class_resourceimporterbitmap_property_threshold)     | ``0.5`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -32,9 +34,9 @@ Imports a [`BitMap`](class_bitmap.md) resource (2D array of boolean values).
 
 The data source to use for generating the bitmap.
 
- **Black & White:** Pixels whose HSV value is greater than the [`threshold`](#class_resourceimporterbitmap_property_threshold) will be considered as "enabled" (bit is `true`). If the pixel is lower than or equal to the threshold, it will be considered as "disabled" (bit is `false`).
+ **Black & White:** Pixels whose HSV value is greater than the [`threshold`](class_resourceimporterbitmap.md#class_resourceimporterbitmap_property_threshold) will be considered as "enabled" (bit is `true`). If the pixel is lower than or equal to the threshold, it will be considered as "disabled" (bit is `false`).
 
- **Alpha:** Pixels whose alpha value is greater than the [`threshold`](#class_resourceimporterbitmap_property_threshold) will be considered as "enabled" (bit is `true`). If the pixel is lower than or equal to the threshold, it will be considered as "disabled" (bit is `false`).
+ **Alpha:** Pixels whose alpha value is greater than the [`threshold`](class_resourceimporterbitmap.md#class_resourceimporterbitmap_property_threshold) will be considered as "enabled" (bit is `true`). If the pixel is lower than or equal to the threshold, it will be considered as "disabled" (bit is `false`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -44,7 +46,7 @@ The data source to use for generating the bitmap.
 
 [`float`](class_float.md) **threshold** = ``0.5`` <div id="class_resourceimporterbitmap_property_threshold"></div>
 
-The threshold to use to determine which bits should be considered enabled or disabled. See also [`create_from`](#class_resourceimporterbitmap_property_create_from).
+The threshold to use to determine which bits should be considered enabled or disabled. See also [`create_from`](class_resourceimporterbitmap.md#class_resourceimporterbitmap_property_create_from).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

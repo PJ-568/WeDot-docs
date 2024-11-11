@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Texture2DRD.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Texture2DRD.xml。 -->
 
 <div id="_class_texture2drd"></div>
 
@@ -17,8 +17,10 @@ This texture class allows you to use a 2D texture created directly on the [`Rend
 
 ## 属性
 
-| [`bool`](class_bool.md) | resource_local_to_scene                                        | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`RID`](class_rid.md)   | [`texture_rd_rid`](#class_texture2drd_property_texture_rd_rid) |                                                                                      |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | resource_local_to_scene                                                            | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`RID`](class_rid.md)   | [`texture_rd_rid`](class_texture2drd.md#class_texture2drd_property_texture_rd_rid) |                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

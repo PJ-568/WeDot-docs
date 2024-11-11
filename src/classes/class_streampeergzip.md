@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StreamPeerGZIP.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StreamPeerGZIP.xml。 -->
 
 <div id="_class_streampeergzip"></div>
 
@@ -17,14 +17,16 @@ A stream peer that handles GZIP and deflate compression/decompression.
 
 This class allows to compress or decompress data using GZIP/deflate in a streaming fashion. This is particularly useful when compressing or decompressing files that have to be sent through the network without needing to allocate them all in memory.
 
-After starting the stream via [`start_compression`](#class_streampeergzip_method_start_compression) (or [`start_decompression`](#class_streampeergzip_method_start_decompression)), calling [`StreamPeer.put_partial_data`](#class_streampeer_method_put_partial_data) on this stream will compress (or decompress) the data, writing it to the internal buffer. Calling [`StreamPeer.get_available_bytes`](#class_streampeer_method_get_available_bytes) will return the pending bytes in the internal buffer, and [`StreamPeer.get_partial_data`](#class_streampeer_method_get_partial_data) will retrieve the compressed (or decompressed) bytes from it. When the stream is over, you must call [`finish`](#class_streampeergzip_method_finish) to ensure the internal buffer is properly flushed (make sure to call [`StreamPeer.get_available_bytes`](#class_streampeer_method_get_available_bytes) on last time to check if more data needs to be read after that).
+After starting the stream via [`start_compression`](class_streampeergzip.md#class_streampeergzip_method_start_compression) (or [`start_decompression`](class_streampeergzip.md#class_streampeergzip_method_start_decompression)), calling [`StreamPeer.put_partial_data`](class_streampeer.md#class_streampeer_method_put_partial_data) on this stream will compress (or decompress) the data, writing it to the internal buffer. Calling [`StreamPeer.get_available_bytes`](class_streampeer.md#class_streampeer_method_get_available_bytes) will return the pending bytes in the internal buffer, and [`StreamPeer.get_partial_data`](class_streampeer.md#class_streampeer_method_get_partial_data) will retrieve the compressed (or decompressed) bytes from it. When the stream is over, you must call [`finish`](class_streampeergzip.md#class_streampeergzip_method_finish) to ensure the internal buffer is properly flushed (make sure to call [`StreamPeer.get_available_bytes`](class_streampeer.md#class_streampeer_method_get_available_bytes) on last time to check if more data needs to be read after that).
 
 ## 方法
 
-| `void`                            | [`clear`](#class_streampeergzip_method_clear) ( )                                                                                                                      |
-| [Error](#enum_@globalscope_error) | [`finish`](#class_streampeergzip_method_finish) ( )                                                                                                                    |
-| [Error](#enum_@globalscope_error) | [`start_compression`](#class_streampeergzip_method_start_compression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 )     |
-| [Error](#enum_@globalscope_error) | [`start_decompression`](#class_streampeergzip_method_start_decompression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 ) |
+|||
+|:-:|:--|
+| `void`                            | [`clear`](class_streampeergzip.md#class_streampeergzip_method_clear) ( )                                                                                                                      |
+| [Error](#enum_@globalscope_error) | [`finish`](class_streampeergzip.md#class_streampeergzip_method_finish) ( )                                                                                                                    |
+| [Error](#enum_@globalscope_error) | [`start_compression`](class_streampeergzip.md#class_streampeergzip_method_start_compression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 )     |
+| [Error](#enum_@globalscope_error) | [`start_decompression`](class_streampeergzip.md#class_streampeergzip_method_start_decompression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 ) |
 
 <!-- rst-class:: classref-section-separator -->
 

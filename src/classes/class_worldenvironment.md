@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/WorldEnvironment.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/WorldEnvironment.xml。 -->
 
 <div id="_class_worldenvironment"></div>
 
@@ -21,9 +21,11 @@ The **WorldEnvironment** allows the user to specify default lighting parameters 
 
 ## 属性
 
-| [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](#class_worldenvironment_property_camera_attributes) |
-| [`Compositor`](class_compositor.md)             | [`compositor`](#class_worldenvironment_property_compositor)               |
-| [`Environment`](class_environment.md)           | [`environment`](#class_worldenvironment_property_environment)             |
+|||
+|:-:|:--|
+| [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](class_worldenvironment.md#class_worldenvironment_property_camera_attributes) |
+| [`Compositor`](class_compositor.md)             | [`compositor`](class_worldenvironment.md#class_worldenvironment_property_compositor)               |
+| [`Environment`](class_environment.md)           | [`environment`](class_worldenvironment.md#class_worldenvironment_property_environment)             |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/BoxMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/BoxMesh.xml。 -->
 
 <div id="_class_boxmesh"></div>
 
@@ -17,14 +17,16 @@ Generate an axis-aligned box [`PrimitiveMesh`](class_primitivemesh.md).
 
 The box's UV layout is arranged in a 3×2 layout that allows texturing each face individually. To apply the same texture on all faces, change the material's UV property to `Vector3(3, 2, 1)`. This is equivalent to adding `UV *= vec2(3.0, 2.0)` in a vertex shader.
 
- **Note:** When using a large textured **BoxMesh** (e.g. as a floor), you may stumble upon UV jittering issues depending on the camera angle. To solve this, increase [`subdivide_depth`](#class_boxmesh_property_subdivide_depth), [`subdivide_height`](#class_boxmesh_property_subdivide_height) and [`subdivide_width`](#class_boxmesh_property_subdivide_width) until you no longer notice UV jittering.
+ **Note:** When using a large textured **BoxMesh** (e.g. as a floor), you may stumble upon UV jittering issues depending on the camera angle. To solve this, increase [`subdivide_depth`](class_boxmesh.md#class_boxmesh_property_subdivide_depth), [`subdivide_height`](class_boxmesh.md#class_boxmesh_property_subdivide_height) and [`subdivide_width`](class_boxmesh.md#class_boxmesh_property_subdivide_width) until you no longer notice UV jittering.
 
 ## 属性
 
-| [`Vector3`](class_vector3.md) | [`size`](#class_boxmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
-| [`int`](class_int.md)         | [`subdivide_depth`](#class_boxmesh_property_subdivide_depth)   | ``0``                |
-| [`int`](class_int.md)         | [`subdivide_height`](#class_boxmesh_property_subdivide_height) | ``0``                |
-| [`int`](class_int.md)         | [`subdivide_width`](#class_boxmesh_property_subdivide_width)   | ``0``                |
+|||
+|:-:|:--|
+| [`Vector3`](class_vector3.md) | [`size`](class_boxmesh.md#class_boxmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
+| [`int`](class_int.md)         | [`subdivide_depth`](class_boxmesh.md#class_boxmesh_property_subdivide_depth)   | ``0``                |
+| [`int`](class_int.md)         | [`subdivide_height`](class_boxmesh.md#class_boxmesh_property_subdivide_height) | ``0``                |
+| [`int`](class_int.md)         | [`subdivide_width`](class_boxmesh.md#class_boxmesh_property_subdivide_width)   | ``0``                |
 
 <!-- rst-class:: classref-section-separator -->
 

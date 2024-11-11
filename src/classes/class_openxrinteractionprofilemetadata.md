@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/openxr/doc_classes/OpenXRInteractionProfileMetadata.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/openxr/doc_classes/OpenXRInteractionProfileMetadata.xml。 -->
 
 <div id="_class_openxrinteractionprofilemetadata"></div>
 
@@ -17,10 +17,12 @@ This class allows OpenXR core and extensions to register metadata relating to su
 
 ## 方法
 
-| `void` | [`register_interaction_profile`](#class_openxrinteractionprofilemetadata_method_register_interaction_profile) ( display_name: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md) )                                                                                                                                 |
-| `void` | [`register_io_path`](#class_openxrinteractionprofilemetadata_method_register_io_path) ( interaction_profile: [`String`](class_string.md), display_name: [`String`](class_string.md), toplevel_path: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md), action_type: [ActionType](#enum_openxraction_actiontype) ) |
-| `void` | [`register_profile_rename`](#class_openxrinteractionprofilemetadata_method_register_profile_rename) ( old_name: [`String`](class_string.md), new_name: [`String`](class_string.md) )                                                                                                                                                                                                      |
-| `void` | [`register_top_level_path`](#class_openxrinteractionprofilemetadata_method_register_top_level_path) ( display_name: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md) )                                                                                                                                           |
+|||
+|:-:|:--|
+| `void` | [`register_interaction_profile`](class_openxrinteractionprofilemetadata.md#class_openxrinteractionprofilemetadata_method_register_interaction_profile) ( display_name: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md) )                                                                                                                                 |
+| `void` | [`register_io_path`](class_openxrinteractionprofilemetadata.md#class_openxrinteractionprofilemetadata_method_register_io_path) ( interaction_profile: [`String`](class_string.md), display_name: [`String`](class_string.md), toplevel_path: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md), action_type: [ActionType](#enum_openxraction_actiontype) ) |
+| `void` | [`register_profile_rename`](class_openxrinteractionprofilemetadata.md#class_openxrinteractionprofilemetadata_method_register_profile_rename) ( old_name: [`String`](class_string.md), new_name: [`String`](class_string.md) )                                                                                                                                                                                                      |
+| `void` | [`register_top_level_path`](class_openxrinteractionprofilemetadata.md#class_openxrinteractionprofilemetadata_method_register_top_level_path) ( display_name: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md) )                                                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -44,7 +46,7 @@ Registers an interaction profile using its OpenXR designation (e.g. `/interactio
 
 `void` **register_io_path** ( interaction_profile: [`String`](class_string.md), display_name: [`String`](class_string.md), toplevel_path: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md), action_type: [ActionType](#enum_openxraction_actiontype) )<div id="class_openxrinteractionprofilemetadata_method_register_io_path"></div>
 
-Registers an input/output path for the given `interaction_profile`. The profile should previously have been registered using [`register_interaction_profile`](#class_openxrinteractionprofilemetadata_method_register_interaction_profile). `display_name` is the description shown to the user. `toplevel_path` specifies the bind path this input/output can be bound to (e.g. `/user/hand/left` or `/user/hand/right`). `openxr_path` is the action input/output being registered (e.g. `/user/hand/left/input/aim/pose`). `openxr_extension_name` restricts this input/output to an enabled/available extension, this doesn't need to repeat the extension on the profile but relates to overlapping extension (e.g. `XR_EXT_palm_pose` that introduces `…/input/palm_ext/pose` input paths). `action_type` defines the type of input or output provided by OpenXR.
+Registers an input/output path for the given `interaction_profile`. The profile should previously have been registered using [`register_interaction_profile`](class_openxrinteractionprofilemetadata.md#class_openxrinteractionprofilemetadata_method_register_interaction_profile). `display_name` is the description shown to the user. `toplevel_path` specifies the bind path this input/output can be bound to (e.g. `/user/hand/left` or `/user/hand/right`). `openxr_path` is the action input/output being registered (e.g. `/user/hand/left/input/aim/pose`). `openxr_extension_name` restricts this input/output to an enabled/available extension, this doesn't need to repeat the extension on the profile but relates to overlapping extension (e.g. `XR_EXT_palm_pose` that introduces `…/input/palm_ext/pose` input paths). `action_type` defines the type of input or output provided by OpenXR.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderData.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderData.xml。 -->
 
 <div id="_class_renderdata"></div>
 
@@ -21,10 +21,12 @@ Abstract render data object, exists for the duration of rendering a single viewp
 
 ## 方法
 
-| [`RID`](class_rid.md)                               | [`get_camera_attributes`](#class_renderdata_method_get_camera_attributes) ( ) const[^const]       |
-| [`RID`](class_rid.md)                               | [`get_environment`](#class_renderdata_method_get_environment) ( ) const[^const]                   |
-| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`get_render_scene_buffers`](#class_renderdata_method_get_render_scene_buffers) ( ) const[^const] |
-| [`RenderSceneData`](class_renderscenedata.md)       | [`get_render_scene_data`](#class_renderdata_method_get_render_scene_data) ( ) const[^const]       |
+|||
+|:-:|:--|
+| [`RID`](class_rid.md)                               | [`get_camera_attributes`](class_renderdata.md#class_renderdata_method_get_camera_attributes) ( ) const[^const]       |
+| [`RID`](class_rid.md)                               | [`get_environment`](class_renderdata.md#class_renderdata_method_get_environment) ( ) const[^const]                   |
+| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`get_render_scene_buffers`](class_renderdata.md#class_renderdata_method_get_render_scene_buffers) ( ) const[^const] |
+| [`RenderSceneData`](class_renderscenedata.md)       | [`get_render_scene_data`](class_renderdata.md#class_renderdata_method_get_render_scene_data) ( ) const[^const]       |
 
 <!-- rst-class:: classref-section-separator -->
 

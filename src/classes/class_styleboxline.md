@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StyleBoxLine.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StyleBoxLine.xml。 -->
 
 <div id="_class_styleboxline"></div>
 
@@ -17,11 +17,13 @@ A [`StyleBox`](class_stylebox.md) that displays a single line of a given color a
 
 ## 属性
 
-| [`Color`](class_color.md) | [`color`](#class_styleboxline_property_color)           | ``Color(0, 0, 0, 1)`` |
-| [`float`](class_float.md) | [`grow_begin`](#class_styleboxline_property_grow_begin) | ``1.0``               |
-| [`float`](class_float.md) | [`grow_end`](#class_styleboxline_property_grow_end)     | ``1.0``               |
-| [`int`](class_int.md)     | [`thickness`](#class_styleboxline_property_thickness)   | ``1``                 |
-| [`bool`](class_bool.md)   | [`vertical`](#class_styleboxline_property_vertical)     | ``false``             |
+|||
+|:-:|:--|
+| [`Color`](class_color.md) | [`color`](class_styleboxline.md#class_styleboxline_property_color)           | ``Color(0, 0, 0, 1)`` |
+| [`float`](class_float.md) | [`grow_begin`](class_styleboxline.md#class_styleboxline_property_grow_begin) | ``1.0``               |
+| [`float`](class_float.md) | [`grow_end`](class_styleboxline.md#class_styleboxline_property_grow_end)     | ``1.0``               |
+| [`int`](class_int.md)     | [`thickness`](class_styleboxline.md#class_styleboxline_property_thickness)   | ``1``                 |
+| [`bool`](class_bool.md)   | [`vertical`](class_styleboxline.md#class_styleboxline_property_vertical)     | ``false``             |
 
 <!-- rst-class:: classref-section-separator -->
 

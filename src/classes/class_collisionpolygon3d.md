@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CollisionPolygon3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CollisionPolygon3D.xml。 -->
 
 <div id="_class_collisionpolygon3d"></div>
 
@@ -19,10 +19,12 @@ A node that provides a thickened polygon shape (a prism) to a [`CollisionObject3
 
 ## 属性
 
-| [`float`](class_float.md)                           | [`depth`](#class_collisionpolygon3d_property_depth)       | ``1.0``                  |
-| [`bool`](class_bool.md)                             | [`disabled`](#class_collisionpolygon3d_property_disabled) | ``false``                |
-| [`float`](class_float.md)                           | [`margin`](#class_collisionpolygon3d_property_margin)     | ``0.04``                 |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_collisionpolygon3d_property_polygon)   | ``PackedVector2Array()`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md)                           | [`depth`](class_collisionpolygon3d.md#class_collisionpolygon3d_property_depth)       | ``1.0``                  |
+| [`bool`](class_bool.md)                             | [`disabled`](class_collisionpolygon3d.md#class_collisionpolygon3d_property_disabled) | ``false``                |
+| [`float`](class_float.md)                           | [`margin`](class_collisionpolygon3d.md#class_collisionpolygon3d_property_margin)     | ``0.04``                 |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](class_collisionpolygon3d.md#class_collisionpolygon3d_property_polygon)   | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -63,7 +65,7 @@ If `true`, no collision will be produced.
 - `void` **set_margin** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_margin** ( )
 
-The collision margin for the generated [`Shape3D`](class_shape3d.md). See [`Shape3D.margin`](#class_shape3d_property_margin) for more details.
+The collision margin for the generated [`Shape3D`](class_shape3d.md). See [`Shape3D.margin`](class_shape3d.md#class_shape3d_property_margin) for more details.
 
 <!-- rst-class:: classref-item-separator -->
 

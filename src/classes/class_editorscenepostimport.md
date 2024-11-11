@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorScenePostImport.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorScenePostImport.xml。 -->
 
 <div id="_class_editorscenepostimport"></div>
 
@@ -15,7 +15,7 @@ Post-processes scenes after import.
 
 Imported scenes can be automatically modified right after import by setting their **Custom Script** Import property to a `tool` script that inherits from this class.
 
-The [`_post_import`](#class_editorscenepostimport_private_method__post_import) callback receives the imported scene's root node and returns the modified version of the scene. Usage example:
+The [`_post_import`](class_editorscenepostimport.md#class_editorscenepostimport_private_method__post_import) callback receives the imported scene's root node and returns the modified version of the scene. Usage example:
 
 
 
@@ -76,8 +76,10 @@ The [`_post_import`](#class_editorscenepostimport_private_method__post_import) c
 
 ## 方法
 
-| [`Object`](class_object.md) | [`_post_import`](#class_editorscenepostimport_private_method__post_import) ( scene: [`Node`](class_node.md) ) virtual[^virtual] |
-| [`String`](class_string.md) | [`get_source_file`](#class_editorscenepostimport_method_get_source_file) ( ) const[^const]                                      |
+|||
+|:-:|:--|
+| [`Object`](class_object.md) | [`_post_import`](class_editorscenepostimport.md#class_editorscenepostimport_private_method__post_import) ( scene: [`Node`](class_node.md) ) virtual[^virtual] |
+| [`String`](class_string.md) | [`get_source_file`](class_editorscenepostimport.md#class_editorscenepostimport_method_get_source_file) ( ) const[^const]                                      |
 
 <!-- rst-class:: classref-section-separator -->
 

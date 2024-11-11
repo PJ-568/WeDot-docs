@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Compositor.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Compositor.xml。 -->
 
 <div id="_class_compositor"></div>
 
@@ -19,7 +19,9 @@ The compositor resource stores attributes used to customize how a [`Viewport`](c
 
 ## 属性
 
-| [Array](class_array.md) [`CompositorEffect`](class_compositoreffect.md) | [`compositor_effects`](#class_compositor_property_compositor_effects) | ``[]`` |
+|||
+|:-:|:--|
+| [Array](class_array.md) [`CompositorEffect`](class_compositoreffect.md) | [`compositor_effects`](class_compositor.md#class_compositor_property_compositor_effects) | ``[]`` |
 
 <!-- rst-class:: classref-section-separator -->
 

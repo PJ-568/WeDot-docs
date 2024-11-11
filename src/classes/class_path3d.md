@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Path3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Path3D.xml。 -->
 
 <div id="_class_path3d"></div>
 
@@ -19,7 +19,9 @@ Note that the path is considered as relative to the moved nodes (children of [`P
 
 ## 属性
 
-| [`Curve3D`](class_curve3d.md) | [`curve`](#class_path3d_property_curve) |
+|||
+|:-:|:--|
+| [`Curve3D`](class_curve3d.md) | [`curve`](class_path3d.md#class_path3d_property_curve) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -31,7 +33,7 @@ Note that the path is considered as relative to the moved nodes (children of [`P
 
 **curve_changed** ( ) <div id="class_path3d_signal_curve_changed"></div>
 
-Emitted when the [`curve`](#class_path3d_property_curve) changes.
+Emitted when the [`curve`](class_path3d.md#class_path3d_property_curve) changes.
 
 <!-- rst-class:: classref-section-separator -->
 

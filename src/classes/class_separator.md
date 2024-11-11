@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Separator.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Separator.xml。 -->
 
 <div id="_class_separator"></div>
 
@@ -19,8 +19,10 @@ Abstract base class for separators, used for separating other controls. **Separa
 
 ## 主题属性
 
-| [`int`](class_int.md)           | [`separation`](#class_separator_theme_constant_separation) | ``0`` |
-| [`StyleBox`](class_stylebox.md) | [`separator`](#class_separator_theme_style_separator)      |       |
+|||
+|:-:|:--|
+| [`int`](class_int.md)           | [`separation`](class_separator.md#class_separator_theme_constant_separation) | ``0`` |
+| [`StyleBox`](class_stylebox.md) | [`separator`](class_separator.md#class_separator_theme_style_separator)      |       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -42,7 +44,7 @@ The size of the area covered by the separator. Effectively works like a minimum 
 
 [`StyleBox`](class_stylebox.md) **separator** <div id="class_separator_theme_style_separator"></div>
 
-The style for the separator line. Works best with [`StyleBoxLine`](class_styleboxline.md) (remember to enable [`StyleBoxLine.vertical`](#class_styleboxline_property_vertical) for [`VSeparator`](class_vseparator.md)).
+The style for the separator line. Works best with [`StyleBoxLine`](class_styleboxline.md) (remember to enable [`StyleBoxLine.vertical`](class_styleboxline.md#class_styleboxline_property_vertical) for [`VSeparator`](class_vseparator.md)).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

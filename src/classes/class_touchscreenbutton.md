@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TouchScreenButton.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TouchScreenButton.xml。 -->
 
 <div id="_class_touchscreenbutton"></div>
 
@@ -21,19 +21,23 @@ You can configure TouchScreenButton to be visible only on touch devices, helping
 
 ## 属性
 
-| [`String`](class_string.md)                              | [`action`](#class_touchscreenbutton_property_action)                   | ``""``    |
-| [`BitMap`](class_bitmap.md)                              | [`bitmask`](#class_touchscreenbutton_property_bitmask)                 |           |
-| [`bool`](class_bool.md)                                  | [`passby_press`](#class_touchscreenbutton_property_passby_press)       | ``false`` |
-| [`Shape2D`](class_shape2d.md)                            | [`shape`](#class_touchscreenbutton_property_shape)                     |           |
-| [`bool`](class_bool.md)                                  | [`shape_centered`](#class_touchscreenbutton_property_shape_centered)   | ``true``  |
-| [`bool`](class_bool.md)                                  | [`shape_visible`](#class_touchscreenbutton_property_shape_visible)     | ``true``  |
-| [`Texture2D`](class_texture2d.md)                        | [`texture_normal`](#class_touchscreenbutton_property_texture_normal)   |           |
-| [`Texture2D`](class_texture2d.md)                        | [`texture_pressed`](#class_touchscreenbutton_property_texture_pressed) |           |
-| [VisibilityMode](#enum_touchscreenbutton_visibilitymode) | [`visibility_mode`](#class_touchscreenbutton_property_visibility_mode) | ``0``     |
+|||
+|:-:|:--|
+| [`String`](class_string.md)                              | [`action`](class_touchscreenbutton.md#class_touchscreenbutton_property_action)                   | ``""``    |
+| [`BitMap`](class_bitmap.md)                              | [`bitmask`](class_touchscreenbutton.md#class_touchscreenbutton_property_bitmask)                 |           |
+| [`bool`](class_bool.md)                                  | [`passby_press`](class_touchscreenbutton.md#class_touchscreenbutton_property_passby_press)       | ``false`` |
+| [`Shape2D`](class_shape2d.md)                            | [`shape`](class_touchscreenbutton.md#class_touchscreenbutton_property_shape)                     |           |
+| [`bool`](class_bool.md)                                  | [`shape_centered`](class_touchscreenbutton.md#class_touchscreenbutton_property_shape_centered)   | ``true``  |
+| [`bool`](class_bool.md)                                  | [`shape_visible`](class_touchscreenbutton.md#class_touchscreenbutton_property_shape_visible)     | ``true``  |
+| [`Texture2D`](class_texture2d.md)                        | [`texture_normal`](class_touchscreenbutton.md#class_touchscreenbutton_property_texture_normal)   |           |
+| [`Texture2D`](class_texture2d.md)                        | [`texture_pressed`](class_touchscreenbutton.md#class_touchscreenbutton_property_texture_pressed) |           |
+| [VisibilityMode](#enum_touchscreenbutton_visibilitymode) | [`visibility_mode`](class_touchscreenbutton.md#class_touchscreenbutton_property_visibility_mode) | ``0``     |
 
 ## 方法
 
-| [`bool`](class_bool.md) | [`is_pressed`](#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`is_pressed`](class_touchscreenbutton.md#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -118,7 +122,7 @@ The button's bitmask.
 - `void` **set_passby_press** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_passby_press_enabled** ( )
 
-If `true`, the [`pressed`](#class_touchscreenbutton_signal_pressed) and [`released`](#class_touchscreenbutton_signal_released) signals are emitted whenever a pressed finger goes in and out of the button, even if the pressure started outside the active area of the button.
+If `true`, the [`pressed`](class_touchscreenbutton.md#class_touchscreenbutton_signal_pressed) and [`released`](class_touchscreenbutton.md#class_touchscreenbutton_signal_released) signals are emitted whenever a pressed finger goes in and out of the button, even if the pressure started outside the active area of the button.
 
  **Note:** This is a "pass-by" (not "bypass") press mode.
 

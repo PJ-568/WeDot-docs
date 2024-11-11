@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Panel.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Panel.xml。 -->
 
 <div id="_class_panel"></div>
 
@@ -17,7 +17,9 @@ A GUI control that displays a [`StyleBox`](class_stylebox.md).
 
 ## 主题属性
 
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_panel_theme_style_panel) |
+|||
+|:-:|:--|
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_panel.md#class_panel_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->
 

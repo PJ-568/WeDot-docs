@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeVec2Parameter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeVec2Parameter.xml。 -->
 
 <div id="_class_visualshadernodevec2parameter"></div>
 
@@ -17,8 +17,10 @@ Translated to `uniform vec2` in the shader language.
 
 ## 属性
 
-| [`Vector2`](class_vector2.md) | [`default_value`](#class_visualshadernodevec2parameter_property_default_value)                 | ``Vector2(0, 0)`` |
-| [`bool`](class_bool.md)       | [`default_value_enabled`](#class_visualshadernodevec2parameter_property_default_value_enabled) | ``false``         |
+|||
+|:-:|:--|
+| [`Vector2`](class_vector2.md) | [`default_value`](class_visualshadernodevec2parameter.md#class_visualshadernodevec2parameter_property_default_value)                 | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)       | [`default_value_enabled`](class_visualshadernodevec2parameter.md#class_visualshadernodevec2parameter_property_default_value_enabled) | ``false``         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,7 +48,7 @@ A default value to be assigned within the shader.
 - `void` **set_default_value_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_default_value_enabled** ( )
 
-Enables usage of the [`default_value`](#class_visualshadernodevec2parameter_property_default_value).
+Enables usage of the [`default_value`](class_visualshadernodevec2parameter.md#class_visualshadernodevec2parameter_property_default_value).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

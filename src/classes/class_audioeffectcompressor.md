@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectCompressor.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectCompressor.xml。 -->
 
 <div id="_class_audioeffectcompressor"></div>
 
@@ -29,13 +29,15 @@ Compressor has many uses in the mix:
 
 ## 属性
 
-| [`float`](class_float.md)           | [`attack_us`](#class_audioeffectcompressor_property_attack_us)   | ``20.0``  |
-| [`float`](class_float.md)           | [`gain`](#class_audioeffectcompressor_property_gain)             | ``0.0``   |
-| [`float`](class_float.md)           | [`mix`](#class_audioeffectcompressor_property_mix)               | ``1.0``   |
-| [`float`](class_float.md)           | [`ratio`](#class_audioeffectcompressor_property_ratio)           | ``4.0``   |
-| [`float`](class_float.md)           | [`release_ms`](#class_audioeffectcompressor_property_release_ms) | ``250.0`` |
-| [`StringName`](class_stringname.md) | [`sidechain`](#class_audioeffectcompressor_property_sidechain)   | ``&""``   |
-| [`float`](class_float.md)           | [`threshold`](#class_audioeffectcompressor_property_threshold)   | ``0.0``   |
+|||
+|:-:|:--|
+| [`float`](class_float.md)           | [`attack_us`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_attack_us)   | ``20.0``  |
+| [`float`](class_float.md)           | [`gain`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_gain)             | ``0.0``   |
+| [`float`](class_float.md)           | [`mix`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_mix)               | ``1.0``   |
+| [`float`](class_float.md)           | [`ratio`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_ratio)           | ``4.0``   |
+| [`float`](class_float.md)           | [`release_ms`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_release_ms) | ``250.0`` |
+| [`StringName`](class_stringname.md) | [`sidechain`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_sidechain)   | ``&""``   |
+| [`float`](class_float.md)           | [`threshold`](class_audioeffectcompressor.md#class_audioeffectcompressor_property_threshold)   | ``0.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 

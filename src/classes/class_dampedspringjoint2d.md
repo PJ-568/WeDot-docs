@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/DampedSpringJoint2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/DampedSpringJoint2D.xml。 -->
 
 <div id="_class_dampedspringjoint2d"></div>
 
@@ -17,10 +17,12 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 
 ## 属性
 
-| [`float`](class_float.md) | [`damping`](#class_dampedspringjoint2d_property_damping)         | ``1.0``  |
-| [`float`](class_float.md) | [`length`](#class_dampedspringjoint2d_property_length)           | ``50.0`` |
-| [`float`](class_float.md) | [`rest_length`](#class_dampedspringjoint2d_property_rest_length) | ``0.0``  |
-| [`float`](class_float.md) | [`stiffness`](#class_dampedspringjoint2d_property_stiffness)     | ``20.0`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`damping`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_damping)         | ``1.0``  |
+| [`float`](class_float.md) | [`length`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_length)           | ``50.0`` |
+| [`float`](class_float.md) | [`rest_length`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_rest_length) | ``0.0``  |
+| [`float`](class_float.md) | [`stiffness`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_stiffness)     | ``20.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,7 +37,7 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 - `void` **set_damping** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_damping** ( )
 
-The spring joint's damping ratio. A value between `0` and `1`. When the two bodies move into different directions the system tries to align them to the spring axis again. A high [`damping`](#class_dampedspringjoint2d_property_damping) value forces the attached bodies to align faster.
+The spring joint's damping ratio. A value between `0` and `1`. When the two bodies move into different directions the system tries to align them to the spring axis again. A high [`damping`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_damping) value forces the attached bodies to align faster.
 
 <!-- rst-class:: classref-item-separator -->
 

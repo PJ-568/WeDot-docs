@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ConcavePolygonShape3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ConcavePolygonShape3D.xml。 -->
 
 <div id="_class_concavepolygonshape3d"></div>
 
@@ -25,12 +25,16 @@ Being just a collection of interconnected triangles, **ConcavePolygonShape3D** i
 
 ## 属性
 
-| [`bool`](class_bool.md) | [`backface_collision`](#class_concavepolygonshape3d_property_backface_collision) | ``false`` |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`backface_collision`](class_concavepolygonshape3d.md#class_concavepolygonshape3d_property_backface_collision) | ``false`` |
 
 ## 方法
 
-| [`PackedVector3Array`](class_packedvector3array.md) | [`get_faces`](#class_concavepolygonshape3d_method_get_faces) ( ) const[^const]                                              |
-| `void`                                              | [`set_faces`](#class_concavepolygonshape3d_method_set_faces) ( faces: [`PackedVector3Array`](class_packedvector3array.md) ) |
+|||
+|:-:|:--|
+| [`PackedVector3Array`](class_packedvector3array.md) | [`get_faces`](class_concavepolygonshape3d.md#class_concavepolygonshape3d_method_get_faces) ( ) const[^const]                                              |
+| `void`                                              | [`set_faces`](class_concavepolygonshape3d.md#class_concavepolygonshape3d_method_set_faces) ( faces: [`PackedVector3Array`](class_packedvector3array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

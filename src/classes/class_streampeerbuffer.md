@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StreamPeerBuffer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StreamPeerBuffer.xml。 -->
 
 <div id="_class_streampeerbuffer"></div>
 
@@ -19,16 +19,20 @@ A **StreamPeerBuffer** object keeps an internal cursor which is the offset in by
 
 ## 属性
 
-| [`PackedByteArray`](class_packedbytearray.md) | [`data_array`](#class_streampeerbuffer_property_data_array) | ``PackedByteArray()`` |
+|||
+|:-:|:--|
+| [`PackedByteArray`](class_packedbytearray.md) | [`data_array`](class_streampeerbuffer.md#class_streampeerbuffer_property_data_array) | ``PackedByteArray()`` |
 
 ## 方法
 
-| `void`                                          | [`clear`](#class_streampeerbuffer_method_clear) ( )                               |
-| [`StreamPeerBuffer`](class_streampeerbuffer.md) | [`duplicate`](#class_streampeerbuffer_method_duplicate) ( ) const[^const]         |
-| [`int`](class_int.md)                           | [`get_position`](#class_streampeerbuffer_method_get_position) ( ) const[^const]   |
-| [`int`](class_int.md)                           | [`get_size`](#class_streampeerbuffer_method_get_size) ( ) const[^const]           |
-| `void`                                          | [`resize`](#class_streampeerbuffer_method_resize) ( size: [`int`](class_int.md) ) |
-| `void`                                          | [`seek`](#class_streampeerbuffer_method_seek) ( position: [`int`](class_int.md) ) |
+|||
+|:-:|:--|
+| `void`                                          | [`clear`](class_streampeerbuffer.md#class_streampeerbuffer_method_clear) ( )                               |
+| [`StreamPeerBuffer`](class_streampeerbuffer.md) | [`duplicate`](class_streampeerbuffer.md#class_streampeerbuffer_method_duplicate) ( ) const[^const]         |
+| [`int`](class_int.md)                           | [`get_position`](class_streampeerbuffer.md#class_streampeerbuffer_method_get_position) ( ) const[^const]   |
+| [`int`](class_int.md)                           | [`get_size`](class_streampeerbuffer.md#class_streampeerbuffer_method_get_size) ( ) const[^const]           |
+| `void`                                          | [`resize`](class_streampeerbuffer.md#class_streampeerbuffer_method_resize) ( size: [`int`](class_int.md) ) |
+| `void`                                          | [`seek`](class_streampeerbuffer.md#class_streampeerbuffer_method_seek) ( position: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +61,7 @@ The underlying data buffer. Setting this value resets the cursor.
 
 `void` **clear** ( )<div id="class_streampeerbuffer_method_clear"></div>
 
-Clears the [`data_array`](#class_streampeerbuffer_property_data_array) and resets the cursor.
+Clears the [`data_array`](class_streampeerbuffer.md#class_streampeerbuffer_property_data_array) and resets the cursor.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -67,7 +71,7 @@ Clears the [`data_array`](#class_streampeerbuffer_property_data_array) and reset
 
 [`StreamPeerBuffer`](class_streampeerbuffer.md) **duplicate** ( ) const[^const]<div id="class_streampeerbuffer_method_duplicate"></div>
 
-Returns a new **StreamPeerBuffer** with the same [`data_array`](#class_streampeerbuffer_property_data_array) content.
+Returns a new **StreamPeerBuffer** with the same [`data_array`](class_streampeerbuffer.md#class_streampeerbuffer_property_data_array) content.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -87,7 +91,7 @@ Returns the current cursor position.
 
 [`int`](class_int.md) **get_size** ( ) const[^const]<div id="class_streampeerbuffer_method_get_size"></div>
 
-Returns the size of [`data_array`](#class_streampeerbuffer_property_data_array).
+Returns the size of [`data_array`](class_streampeerbuffer.md#class_streampeerbuffer_property_data_array).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -97,7 +101,7 @@ Returns the size of [`data_array`](#class_streampeerbuffer_property_data_array).
 
 `void` **resize** ( size: [`int`](class_int.md) )<div id="class_streampeerbuffer_method_resize"></div>
 
-Resizes the [`data_array`](#class_streampeerbuffer_property_data_array). This *doesn't* update the cursor.
+Resizes the [`data_array`](class_streampeerbuffer.md#class_streampeerbuffer_property_data_array). This *doesn't* update the cursor.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,7 +111,7 @@ Resizes the [`data_array`](#class_streampeerbuffer_property_data_array). This *d
 
 `void` **seek** ( position: [`int`](class_int.md) )<div id="class_streampeerbuffer_method_seek"></div>
 
-Moves the cursor to the specified position. `position` must be a valid index of [`data_array`](#class_streampeerbuffer_property_data_array).
+Moves the cursor to the specified position. `position` must be a valid index of [`data_array`](class_streampeerbuffer.md#class_streampeerbuffer_property_data_array).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

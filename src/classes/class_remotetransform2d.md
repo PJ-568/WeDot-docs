@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RemoteTransform2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RemoteTransform2D.xml。 -->
 
 <div id="_class_remotetransform2d"></div>
 
@@ -19,15 +19,19 @@ It can be set to update another node's position, rotation and/or scale. It can u
 
 ## 属性
 
-| [`NodePath`](class_nodepath.md) | [`remote_path`](#class_remotetransform2d_property_remote_path)                       | ``NodePath("")`` |
-| [`bool`](class_bool.md)         | [`update_position`](#class_remotetransform2d_property_update_position)               | ``true``         |
-| [`bool`](class_bool.md)         | [`update_rotation`](#class_remotetransform2d_property_update_rotation)               | ``true``         |
-| [`bool`](class_bool.md)         | [`update_scale`](#class_remotetransform2d_property_update_scale)                     | ``true``         |
-| [`bool`](class_bool.md)         | [`use_global_coordinates`](#class_remotetransform2d_property_use_global_coordinates) | ``true``         |
+|||
+|:-:|:--|
+| [`NodePath`](class_nodepath.md) | [`remote_path`](class_remotetransform2d.md#class_remotetransform2d_property_remote_path)                       | ``NodePath("")`` |
+| [`bool`](class_bool.md)         | [`update_position`](class_remotetransform2d.md#class_remotetransform2d_property_update_position)               | ``true``         |
+| [`bool`](class_bool.md)         | [`update_rotation`](class_remotetransform2d.md#class_remotetransform2d_property_update_rotation)               | ``true``         |
+| [`bool`](class_bool.md)         | [`update_scale`](class_remotetransform2d.md#class_remotetransform2d_property_update_scale)                     | ``true``         |
+| [`bool`](class_bool.md)         | [`use_global_coordinates`](class_remotetransform2d.md#class_remotetransform2d_property_use_global_coordinates) | ``true``         |
 
 ## 方法
 
-| `void` | [`force_update_cache`](#class_remotetransform2d_method_force_update_cache) ( ) |
+|||
+|:-:|:--|
+| `void` | [`force_update_cache`](class_remotetransform2d.md#class_remotetransform2d_method_force_update_cache) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -106,7 +110,7 @@ If `true`, global coordinates are used. If `false`, local coordinates are used.
 
 `void` **force_update_cache** ( )<div id="class_remotetransform2d_method_force_update_cache"></div>
 
-**RemoteTransform2D** caches the remote node. It may not notice if the remote node disappears; [`force_update_cache`](#class_remotetransform2d_method_force_update_cache) forces it to update the cache again.
+**RemoteTransform2D** caches the remote node. It may not notice if the remote node disappears; [`force_update_cache`](class_remotetransform2d.md#class_remotetransform2d_method_force_update_cache) forces it to update the cache again.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

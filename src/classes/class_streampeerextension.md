@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StreamPeerExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StreamPeerExtension.xml。 -->
 
 <div id="_class_streampeerextension"></div>
 
@@ -13,11 +13,13 @@
 
 ## 方法
 
-| [`int`](class_int.md)             | [`_get_available_bytes`](#class_streampeerextension_private_method__get_available_bytes) ( ) virtual[^virtual] const[^const]                                                          |
-| [Error](#enum_@globalscope_error) | [`_get_data`](#class_streampeerextension_private_method__get_data) ( r_buffer: `uint8_t*`, r_bytes: [`int`](class_int.md), r_received: `int32_t*` ) virtual[^virtual]                 |
-| [Error](#enum_@globalscope_error) | [`_get_partial_data`](#class_streampeerextension_private_method__get_partial_data) ( r_buffer: `uint8_t*`, r_bytes: [`int`](class_int.md), r_received: `int32_t*` ) virtual[^virtual] |
-| [Error](#enum_@globalscope_error) | [`_put_data`](#class_streampeerextension_private_method__put_data) ( p_data: `const uint8_t*`, p_bytes: [`int`](class_int.md), r_sent: `int32_t*` ) virtual[^virtual]                 |
-| [Error](#enum_@globalscope_error) | [`_put_partial_data`](#class_streampeerextension_private_method__put_partial_data) ( p_data: `const uint8_t*`, p_bytes: [`int`](class_int.md), r_sent: `int32_t*` ) virtual[^virtual] |
+|||
+|:-:|:--|
+| [`int`](class_int.md)             | [`_get_available_bytes`](class_streampeerextension.md#class_streampeerextension_private_method__get_available_bytes) ( ) virtual[^virtual] const[^const]                                                          |
+| [Error](#enum_@globalscope_error) | [`_get_data`](class_streampeerextension.md#class_streampeerextension_private_method__get_data) ( r_buffer: `uint8_t*`, r_bytes: [`int`](class_int.md), r_received: `int32_t*` ) virtual[^virtual]                 |
+| [Error](#enum_@globalscope_error) | [`_get_partial_data`](class_streampeerextension.md#class_streampeerextension_private_method__get_partial_data) ( r_buffer: `uint8_t*`, r_bytes: [`int`](class_int.md), r_received: `int32_t*` ) virtual[^virtual] |
+| [Error](#enum_@globalscope_error) | [`_put_data`](class_streampeerextension.md#class_streampeerextension_private_method__put_data) ( p_data: `const uint8_t*`, p_bytes: [`int`](class_int.md), r_sent: `int32_t*` ) virtual[^virtual]                 |
+| [Error](#enum_@globalscope_error) | [`_put_partial_data`](class_streampeerextension.md#class_streampeerextension_private_method__put_partial_data) ( p_data: `const uint8_t*`, p_bytes: [`int`](class_int.md), r_sent: `int32_t*` ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

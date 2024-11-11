@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/platform/linuxbsd/doc_classes/EditorExportPlatformLinuxBSD.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/platform/linuxbsd/doc_classes/EditorExportPlatformLinuxBSD.xml。 -->
 
 <div id="_class_editorexportplatformlinuxbsd"></div>
 
@@ -13,20 +13,22 @@ Exporter for Linux/BSD.
 
 ## 属性
 
-| [`String`](class_string.md) | [`binary_format/architecture`](#class_editorexportplatformlinuxbsd_property_binary_format/architecture)             |
-| [`bool`](class_bool.md)     | [`binary_format/embed_pck`](#class_editorexportplatformlinuxbsd_property_binary_format/embed_pck)                   |
-| [`String`](class_string.md) | [`custom_template/debug`](#class_editorexportplatformlinuxbsd_property_custom_template/debug)                       |
-| [`String`](class_string.md) | [`custom_template/release`](#class_editorexportplatformlinuxbsd_property_custom_template/release)                   |
-| [`int`](class_int.md)       | [`debug/export_console_wrapper`](#class_editorexportplatformlinuxbsd_property_debug/export_console_wrapper)         |
-| [`String`](class_string.md) | [`ssh_remote_deploy/cleanup_script`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/cleanup_script) |
-| [`bool`](class_bool.md)     | [`ssh_remote_deploy/enabled`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/enabled)               |
-| [`String`](class_string.md) | [`ssh_remote_deploy/extra_args_scp`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/extra_args_scp) |
-| [`String`](class_string.md) | [`ssh_remote_deploy/extra_args_ssh`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/extra_args_ssh) |
-| [`String`](class_string.md) | [`ssh_remote_deploy/host`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/host)                     |
-| [`String`](class_string.md) | [`ssh_remote_deploy/port`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/port)                     |
-| [`String`](class_string.md) | [`ssh_remote_deploy/run_script`](#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/run_script)         |
-| [`bool`](class_bool.md)     | [`texture_format/etc2_astc`](#class_editorexportplatformlinuxbsd_property_texture_format/etc2_astc)                 |
-| [`bool`](class_bool.md)     | [`texture_format/s3tc_bptc`](#class_editorexportplatformlinuxbsd_property_texture_format/s3tc_bptc)                 |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`binary_format/architecture`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_binary_format/architecture)             |
+| [`bool`](class_bool.md)     | [`binary_format/embed_pck`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_binary_format/embed_pck)                   |
+| [`String`](class_string.md) | [`custom_template/debug`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_custom_template/debug)                       |
+| [`String`](class_string.md) | [`custom_template/release`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_custom_template/release)                   |
+| [`int`](class_int.md)       | [`debug/export_console_wrapper`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_debug/export_console_wrapper)         |
+| [`String`](class_string.md) | [`ssh_remote_deploy/cleanup_script`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/cleanup_script) |
+| [`bool`](class_bool.md)     | [`ssh_remote_deploy/enabled`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/enabled)               |
+| [`String`](class_string.md) | [`ssh_remote_deploy/extra_args_scp`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/extra_args_scp) |
+| [`String`](class_string.md) | [`ssh_remote_deploy/extra_args_ssh`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/extra_args_ssh) |
+| [`String`](class_string.md) | [`ssh_remote_deploy/host`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/host)                     |
+| [`String`](class_string.md) | [`ssh_remote_deploy/port`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/port)                     |
+| [`String`](class_string.md) | [`ssh_remote_deploy/run_script`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_ssh_remote_deploy/run_script)         |
+| [`bool`](class_bool.md)     | [`texture_format/etc2_astc`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_texture_format/etc2_astc)                 |
+| [`bool`](class_bool.md)     | [`texture_format/s3tc_bptc`](class_editorexportplatformlinuxbsd.md#class_editorexportplatformlinuxbsd_property_texture_format/s3tc_bptc)                 |
 
 <!-- rst-class:: classref-section-separator -->
 

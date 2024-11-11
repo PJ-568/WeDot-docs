@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Popup.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Popup.xml。 -->
 
 <div id="_class_popup"></div>
 
@@ -15,16 +15,18 @@ Base class for contextual windows and panels with fixed position.
 
 ## 描述
 
-**Popup** is a base class for contextual windows and panels with fixed position. It's a modal by default (see [`Window.popup_window`](#class_window_property_popup_window)) and provides methods for implementing custom popup behavior.
+**Popup** is a base class for contextual windows and panels with fixed position. It's a modal by default (see [`Window.popup_window`](class_window.md#class_window_property_popup_window)) and provides methods for implementing custom popup behavior.
 
 ## 属性
 
-| [`bool`](class_bool.md) | borderless    | ``true`` (overrides [`Window`](#class_window_property_borderless))    |
-| [`bool`](class_bool.md) | popup_window  | ``true`` (overrides [`Window`](#class_window_property_popup_window))  |
-| [`bool`](class_bool.md) | transient     | ``true`` (overrides [`Window`](#class_window_property_transient))     |
-| [`bool`](class_bool.md) | unresizable   | ``true`` (overrides [`Window`](#class_window_property_unresizable))   |
-| [`bool`](class_bool.md) | visible       | ``false`` (overrides [`Window`](#class_window_property_visible))      |
-| [`bool`](class_bool.md) | wrap_controls | ``true`` (overrides [`Window`](#class_window_property_wrap_controls)) |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | borderless    | ``true`` (overrides [`Window`](class_window.md#class_window_property_borderless))    |
+| [`bool`](class_bool.md) | popup_window  | ``true`` (overrides [`Window`](class_window.md#class_window_property_popup_window))  |
+| [`bool`](class_bool.md) | transient     | ``true`` (overrides [`Window`](class_window.md#class_window_property_transient))     |
+| [`bool`](class_bool.md) | unresizable   | ``true`` (overrides [`Window`](class_window.md#class_window_property_unresizable))   |
+| [`bool`](class_bool.md) | visible       | ``false`` (overrides [`Window`](class_window.md#class_window_property_visible))      |
+| [`bool`](class_bool.md) | wrap_controls | ``true`` (overrides [`Window`](class_window.md#class_window_property_wrap_controls)) |
 
 <!-- rst-class:: classref-section-separator -->
 

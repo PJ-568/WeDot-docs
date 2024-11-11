@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedDataContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedDataContainer.xml。 -->
 
 <div id="_class_packeddatacontainer"></div>
 
@@ -45,8 +45,10 @@ Nested containers will be packed recursively. While iterating, they will be retu
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`pack`](#class_packeddatacontainer_method_pack) ( value: [`Variant`](class_variant.md) ) |
-| [`int`](class_int.md)             | [`size`](#class_packeddatacontainer_method_size) ( ) const[^const]                        |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`pack`](class_packeddatacontainer.md#class_packeddatacontainer_method_pack) ( value: [`Variant`](class_variant.md) ) |
+| [`int`](class_int.md)             | [`size`](class_packeddatacontainer.md#class_packeddatacontainer_method_size) ( ) const[^const]                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -70,7 +72,7 @@ Packs the given container into a binary representation. The `value` must be eith
 
 [`int`](class_int.md) **size** ( ) const[^const]<div id="class_packeddatacontainer_method_size"></div>
 
-Returns the size of the packed container (see [`Array.size`](#class_array_method_size) and [`Dictionary.size`](#class_dictionary_method_size)).
+Returns the size of the packed container (see [`Array.size`](class_array.md#class_array_method_size) and [`Dictionary.size`](class_dictionary.md#class_dictionary_method_size)).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

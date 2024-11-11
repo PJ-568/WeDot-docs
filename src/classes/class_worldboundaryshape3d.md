@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/WorldBoundaryShape3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/WorldBoundaryShape3D.xml。 -->
 
 <div id="_class_worldboundaryshape3d"></div>
 
@@ -13,11 +13,13 @@ A 3D world boundary (half-space) shape used for physics collision.
 
 ## 描述
 
-A 3D world boundary shape, intended for use in physics. **WorldBoundaryShape3D** works like an infinite plane that forces all physics bodies to stay above it. The [`plane`](#class_worldboundaryshape3d_property_plane)'s normal determines which direction is considered as "above" and in the editor, the line over the plane represents this direction. It can for example be used for endless flat floors.
+A 3D world boundary shape, intended for use in physics. **WorldBoundaryShape3D** works like an infinite plane that forces all physics bodies to stay above it. The [`plane`](class_worldboundaryshape3d.md#class_worldboundaryshape3d_property_plane)'s normal determines which direction is considered as "above" and in the editor, the line over the plane represents this direction. It can for example be used for endless flat floors.
 
 ## 属性
 
-| [`Plane`](class_plane.md) | [`plane`](#class_worldboundaryshape3d_property_plane) | ``Plane(0, 1, 0, 0)`` |
+|||
+|:-:|:--|
+| [`Plane`](class_plane.md) | [`plane`](class_worldboundaryshape3d.md#class_worldboundaryshape3d_property_plane) | ``Plane(0, 1, 0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

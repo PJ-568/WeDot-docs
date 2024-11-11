@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Gradient.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Gradient.xml。 -->
 
 <div id="_class_gradient"></div>
 
@@ -19,22 +19,26 @@ See also [`Curve`](class_curve.md) which supports more complex easing methods, b
 
 ## 属性
 
-| [`PackedColorArray`](class_packedcolorarray.md)       | [`colors`](#class_gradient_property_colors)                                       | ``PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1)`` |
-| [ColorSpace](#enum_gradient_colorspace)               | [`interpolation_color_space`](#class_gradient_property_interpolation_color_space) | ``0``                                        |
-| [InterpolationMode](#enum_gradient_interpolationmode) | [`interpolation_mode`](#class_gradient_property_interpolation_mode)               | ``0``                                        |
-| [`PackedFloat32Array`](class_packedfloat32array.md)   | [`offsets`](#class_gradient_property_offsets)                                     | ``PackedFloat32Array(0, 1)``                 |
+|||
+|:-:|:--|
+| [`PackedColorArray`](class_packedcolorarray.md)       | [`colors`](class_gradient.md#class_gradient_property_colors)                                       | ``PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1)`` |
+| [ColorSpace](#enum_gradient_colorspace)               | [`interpolation_color_space`](class_gradient.md#class_gradient_property_interpolation_color_space) | ``0``                                        |
+| [InterpolationMode](#enum_gradient_interpolationmode) | [`interpolation_mode`](class_gradient.md#class_gradient_property_interpolation_mode)               | ``0``                                        |
+| [`PackedFloat32Array`](class_packedfloat32array.md)   | [`offsets`](class_gradient.md#class_gradient_property_offsets)                                     | ``PackedFloat32Array(0, 1)``                 |
 
 ## 方法
 
-| `void`                    | [`add_point`](#class_gradient_method_add_point) ( offset: [`float`](class_float.md), color: [`Color`](class_color.md) ) |
-| [`Color`](class_color.md) | [`get_color`](#class_gradient_method_get_color) ( point: [`int`](class_int.md) )                                        |
-| [`float`](class_float.md) | [`get_offset`](#class_gradient_method_get_offset) ( point: [`int`](class_int.md) )                                      |
-| [`int`](class_int.md)     | [`get_point_count`](#class_gradient_method_get_point_count) ( ) const[^const]                                           |
-| `void`                    | [`remove_point`](#class_gradient_method_remove_point) ( point: [`int`](class_int.md) )                                  |
-| `void`                    | [`reverse`](#class_gradient_method_reverse) ( )                                                                         |
-| [`Color`](class_color.md) | [`sample`](#class_gradient_method_sample) ( offset: [`float`](class_float.md) )                                         |
-| `void`                    | [`set_color`](#class_gradient_method_set_color) ( point: [`int`](class_int.md), color: [`Color`](class_color.md) )      |
-| `void`                    | [`set_offset`](#class_gradient_method_set_offset) ( point: [`int`](class_int.md), offset: [`float`](class_float.md) )   |
+|||
+|:-:|:--|
+| `void`                    | [`add_point`](class_gradient.md#class_gradient_method_add_point) ( offset: [`float`](class_float.md), color: [`Color`](class_color.md) ) |
+| [`Color`](class_color.md) | [`get_color`](class_gradient.md#class_gradient_method_get_color) ( point: [`int`](class_int.md) )                                        |
+| [`float`](class_float.md) | [`get_offset`](class_gradient.md#class_gradient_method_get_offset) ( point: [`int`](class_int.md) )                                      |
+| [`int`](class_int.md)     | [`get_point_count`](class_gradient.md#class_gradient_method_get_point_count) ( ) const[^const]                                           |
+| `void`                    | [`remove_point`](class_gradient.md#class_gradient_method_remove_point) ( point: [`int`](class_int.md) )                                  |
+| `void`                    | [`reverse`](class_gradient.md#class_gradient_method_reverse) ( )                                                                         |
+| [`Color`](class_color.md) | [`sample`](class_gradient.md#class_gradient_method_sample) ( offset: [`float`](class_float.md) )                                         |
+| `void`                    | [`set_color`](class_gradient.md#class_gradient_method_set_color) ( point: [`int`](class_int.md), color: [`Color`](class_color.md) )      |
+| `void`                    | [`set_offset`](class_gradient.md#class_gradient_method_set_offset) ( point: [`int`](class_int.md), offset: [`float`](class_float.md) )   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -105,7 +109,7 @@ Linear sRGB color space.
 
 Gradient's colors as a [`PackedColorArray`](class_packedcolorarray.md).
 
- **Note:** Setting this property updates all colors at once. To update any color individually use [`set_color`](#class_gradient_method_set_color).
+ **Note:** Setting this property updates all colors at once. To update any color individually use [`set_color`](class_gradient.md#class_gradient_method_set_color).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedColorArray`](class_packedcolorarray.md) for more details.
 
@@ -122,7 +126,7 @@ Gradient's colors as a [`PackedColorArray`](class_packedcolorarray.md).
 
 The color space used to interpolate between points of the gradient. It does not affect the returned colors, which will always be in sRGB space. See [ColorSpace](#enum_gradient_colorspace) for available modes.
 
- **Note:** This setting has no effect when [`interpolation_mode`](#class_gradient_property_interpolation_mode) is set to [`GRADIENT_INTERPOLATE_CONSTANT`](#class_gradient_constant_gradient_interpolate_constant).
+ **Note:** This setting has no effect when [`interpolation_mode`](class_gradient.md#class_gradient_property_interpolation_mode) is set to [`GRADIENT_INTERPOLATE_CONSTANT`](class_gradient.md#class_gradient_constant_gradient_interpolate_constant).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -150,7 +154,7 @@ The algorithm used to interpolate between points of the gradient. See [Interpola
 
 Gradient's offsets as a [`PackedFloat32Array`](class_packedfloat32array.md).
 
- **Note:** Setting this property updates all offsets at once. To update any offset individually use [`set_offset`](#class_gradient_method_set_offset).
+ **Note:** Setting this property updates all offsets at once. To update any offset individually use [`set_offset`](class_gradient.md#class_gradient_method_set_offset).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedFloat32Array`](class_packedfloat32array.md) for more details.
 
@@ -216,7 +220,7 @@ Removes the color at index `point`.
 
 Reverses/mirrors the gradient.
 
- **Note:** This method mirrors all points around the middle of the gradient, which may produce unexpected results when [`interpolation_mode`](#class_gradient_property_interpolation_mode) is set to [`GRADIENT_INTERPOLATE_CONSTANT`](#class_gradient_constant_gradient_interpolate_constant).
+ **Note:** This method mirrors all points around the middle of the gradient, which may produce unexpected results when [`interpolation_mode`](class_gradient.md#class_gradient_property_interpolation_mode) is set to [`GRADIENT_INTERPOLATE_CONSTANT`](class_gradient.md#class_gradient_constant_gradient_interpolate_constant).
 
 <!-- rst-class:: classref-item-separator -->
 

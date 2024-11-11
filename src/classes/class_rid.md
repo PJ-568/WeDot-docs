@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RID.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RID.xml。 -->
 
 <div id="_class_rid"></div>
 
@@ -21,16 +21,22 @@ A low-level resource may correspond to a high-level [`Resource`](class_resource.
 
 ## 构造函数
 
-| [`RID`](class_rid.md) | [`RID`](#class_rid_constructor_rid) ( )                             |
-| [`RID`](class_rid.md) | [`RID`](#class_rid_constructor_rid) ( from: [`RID`](class_rid.md) ) |
+|||
+|:-:|:--|
+| [`RID`](class_rid.md) | [`RID`](class_rid.md#class_rid_constructor_rid) ( )                             |
+| [`RID`](class_rid.md) | [`RID`](class_rid.md#class_rid_constructor_rid) ( from: [`RID`](class_rid.md) ) |
 
 ## 方法
 
-| [`int`](class_int.md)   | [`get_id`](#class_rid_method_get_id) ( ) const[^const]     |
-| [`bool`](class_bool.md) | [`is_valid`](#class_rid_method_is_valid) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`int`](class_int.md)   | [`get_id`](class_rid.md#class_rid_method_get_id) ( ) const[^const]     |
+| [`bool`](class_bool.md) | [`is_valid`](class_rid.md#class_rid_method_is_valid) ( ) const[^const] |
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_RID.md#operator_neq_RID) ( right: [`RID`](class_rid.md) ) |
 | [`bool`](class_bool.md) | [`operator <`](class_RID.md#operator_lt_RID) ( right: [`RID`](class_rid.md) )   |
 | [`bool`](class_bool.md) | [`operator <=`](class_RID.md#operator_lte_RID) ( right: [`RID`](class_rid.md) ) |

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EngineDebugger.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EngineDebugger.xml。 -->
 
 <div id="_class_enginedebugger"></div>
 
@@ -17,29 +17,31 @@ Exposes the internal debugger.
 
 ## 方法
 
-| `void`                  | [`clear_breakpoints`](#class_enginedebugger_method_clear_breakpoints) ( )                                                                                                                                                 |
-| `void`                  | [`debug`](#class_enginedebugger_method_debug) ( can_continue: [`bool`](class_bool.md) = true, is_error_breakpoint: [`bool`](class_bool.md) = false )                                                                      |
-| [`int`](class_int.md)   | [`get_depth`](#class_enginedebugger_method_get_depth) ( ) const[^const]                                                                                                                                                   |
-| [`int`](class_int.md)   | [`get_lines_left`](#class_enginedebugger_method_get_lines_left) ( ) const[^const]                                                                                                                                         |
-| [`bool`](class_bool.md) | [`has_capture`](#class_enginedebugger_method_has_capture) ( name: [`StringName`](class_stringname.md) )                                                                                                                   |
-| [`bool`](class_bool.md) | [`has_profiler`](#class_enginedebugger_method_has_profiler) ( name: [`StringName`](class_stringname.md) )                                                                                                                 |
-| `void`                  | [`insert_breakpoint`](#class_enginedebugger_method_insert_breakpoint) ( line: [`int`](class_int.md), source: [`StringName`](class_stringname.md) )                                                                        |
-| [`bool`](class_bool.md) | [`is_active`](#class_enginedebugger_method_is_active) ( )                                                                                                                                                                 |
-| [`bool`](class_bool.md) | [`is_breakpoint`](#class_enginedebugger_method_is_breakpoint) ( line: [`int`](class_int.md), source: [`StringName`](class_stringname.md) ) const[^const]                                                                  |
-| [`bool`](class_bool.md) | [`is_profiling`](#class_enginedebugger_method_is_profiling) ( name: [`StringName`](class_stringname.md) )                                                                                                                 |
-| [`bool`](class_bool.md) | [`is_skipping_breakpoints`](#class_enginedebugger_method_is_skipping_breakpoints) ( ) const[^const]                                                                                                                       |
-| `void`                  | [`line_poll`](#class_enginedebugger_method_line_poll) ( )                                                                                                                                                                 |
-| `void`                  | [`profiler_add_frame_data`](#class_enginedebugger_method_profiler_add_frame_data) ( name: [`StringName`](class_stringname.md), data: [`Array`](class_array.md) )                                                          |
-| `void`                  | [`profiler_enable`](#class_enginedebugger_method_profiler_enable) ( name: [`StringName`](class_stringname.md), enable: [`bool`](class_bool.md), arguments: [`Array`](class_array.md) = [] )                               |
-| `void`                  | [`register_message_capture`](#class_enginedebugger_method_register_message_capture) ( name: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md) )                                              |
-| `void`                  | [`register_profiler`](#class_enginedebugger_method_register_profiler) ( name: [`StringName`](class_stringname.md), profiler: [`EngineProfiler`](class_engineprofiler.md) )                                                |
-| `void`                  | [`remove_breakpoint`](#class_enginedebugger_method_remove_breakpoint) ( line: [`int`](class_int.md), source: [`StringName`](class_stringname.md) )                                                                        |
-| `void`                  | [`script_debug`](#class_enginedebugger_method_script_debug) ( language: [`ScriptLanguage`](class_scriptlanguage.md), can_continue: [`bool`](class_bool.md) = true, is_error_breakpoint: [`bool`](class_bool.md) = false ) |
-| `void`                  | [`send_message`](#class_enginedebugger_method_send_message) ( message: [`String`](class_string.md), data: [`Array`](class_array.md) )                                                                                     |
-| `void`                  | [`set_depth`](#class_enginedebugger_method_set_depth) ( depth: [`int`](class_int.md) )                                                                                                                                    |
-| `void`                  | [`set_lines_left`](#class_enginedebugger_method_set_lines_left) ( lines: [`int`](class_int.md) )                                                                                                                          |
-| `void`                  | [`unregister_message_capture`](#class_enginedebugger_method_unregister_message_capture) ( name: [`StringName`](class_stringname.md) )                                                                                     |
-| `void`                  | [`unregister_profiler`](#class_enginedebugger_method_unregister_profiler) ( name: [`StringName`](class_stringname.md) )                                                                                                   |
+|||
+|:-:|:--|
+| `void`                  | [`clear_breakpoints`](class_enginedebugger.md#class_enginedebugger_method_clear_breakpoints) ( )                                                                                                                                                 |
+| `void`                  | [`debug`](class_enginedebugger.md#class_enginedebugger_method_debug) ( can_continue: [`bool`](class_bool.md) = true, is_error_breakpoint: [`bool`](class_bool.md) = false )                                                                      |
+| [`int`](class_int.md)   | [`get_depth`](class_enginedebugger.md#class_enginedebugger_method_get_depth) ( ) const[^const]                                                                                                                                                   |
+| [`int`](class_int.md)   | [`get_lines_left`](class_enginedebugger.md#class_enginedebugger_method_get_lines_left) ( ) const[^const]                                                                                                                                         |
+| [`bool`](class_bool.md) | [`has_capture`](class_enginedebugger.md#class_enginedebugger_method_has_capture) ( name: [`StringName`](class_stringname.md) )                                                                                                                   |
+| [`bool`](class_bool.md) | [`has_profiler`](class_enginedebugger.md#class_enginedebugger_method_has_profiler) ( name: [`StringName`](class_stringname.md) )                                                                                                                 |
+| `void`                  | [`insert_breakpoint`](class_enginedebugger.md#class_enginedebugger_method_insert_breakpoint) ( line: [`int`](class_int.md), source: [`StringName`](class_stringname.md) )                                                                        |
+| [`bool`](class_bool.md) | [`is_active`](class_enginedebugger.md#class_enginedebugger_method_is_active) ( )                                                                                                                                                                 |
+| [`bool`](class_bool.md) | [`is_breakpoint`](class_enginedebugger.md#class_enginedebugger_method_is_breakpoint) ( line: [`int`](class_int.md), source: [`StringName`](class_stringname.md) ) const[^const]                                                                  |
+| [`bool`](class_bool.md) | [`is_profiling`](class_enginedebugger.md#class_enginedebugger_method_is_profiling) ( name: [`StringName`](class_stringname.md) )                                                                                                                 |
+| [`bool`](class_bool.md) | [`is_skipping_breakpoints`](class_enginedebugger.md#class_enginedebugger_method_is_skipping_breakpoints) ( ) const[^const]                                                                                                                       |
+| `void`                  | [`line_poll`](class_enginedebugger.md#class_enginedebugger_method_line_poll) ( )                                                                                                                                                                 |
+| `void`                  | [`profiler_add_frame_data`](class_enginedebugger.md#class_enginedebugger_method_profiler_add_frame_data) ( name: [`StringName`](class_stringname.md), data: [`Array`](class_array.md) )                                                          |
+| `void`                  | [`profiler_enable`](class_enginedebugger.md#class_enginedebugger_method_profiler_enable) ( name: [`StringName`](class_stringname.md), enable: [`bool`](class_bool.md), arguments: [`Array`](class_array.md) = [] )                               |
+| `void`                  | [`register_message_capture`](class_enginedebugger.md#class_enginedebugger_method_register_message_capture) ( name: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md) )                                              |
+| `void`                  | [`register_profiler`](class_enginedebugger.md#class_enginedebugger_method_register_profiler) ( name: [`StringName`](class_stringname.md), profiler: [`EngineProfiler`](class_engineprofiler.md) )                                                |
+| `void`                  | [`remove_breakpoint`](class_enginedebugger.md#class_enginedebugger_method_remove_breakpoint) ( line: [`int`](class_int.md), source: [`StringName`](class_stringname.md) )                                                                        |
+| `void`                  | [`script_debug`](class_enginedebugger.md#class_enginedebugger_method_script_debug) ( language: [`ScriptLanguage`](class_scriptlanguage.md), can_continue: [`bool`](class_bool.md) = true, is_error_breakpoint: [`bool`](class_bool.md) = false ) |
+| `void`                  | [`send_message`](class_enginedebugger.md#class_enginedebugger_method_send_message) ( message: [`String`](class_string.md), data: [`Array`](class_array.md) )                                                                                     |
+| `void`                  | [`set_depth`](class_enginedebugger.md#class_enginedebugger_method_set_depth) ( depth: [`int`](class_int.md) )                                                                                                                                    |
+| `void`                  | [`set_lines_left`](class_enginedebugger.md#class_enginedebugger_method_set_lines_left) ( lines: [`int`](class_int.md) )                                                                                                                          |
+| `void`                  | [`unregister_message_capture`](class_enginedebugger.md#class_enginedebugger_method_unregister_message_capture) ( name: [`StringName`](class_stringname.md) )                                                                                     |
+| `void`                  | [`unregister_profiler`](class_enginedebugger.md#class_enginedebugger_method_unregister_profiler) ( name: [`StringName`](class_stringname.md) )                                                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -165,7 +167,7 @@ Returns `true` if the debugger is skipping breakpoints otherwise `false`.
 
 `void` **line_poll** ( )<div id="class_enginedebugger_method_line_poll"></div>
 
-Forces a processing loop of debugger events. The purpose of this method is just processing events every now and then when the script might get too busy, so that bugs like infinite loops can be caught
+Forces a processing loop of debugger events. The purpose of this method is just processing events every now and then when the script might get too busy, so that bugs like infinite loops can be caught.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -197,7 +199,9 @@ Calls the `toggle` callable of the profiler with given `name` and `arguments`. E
 
 Registers a message capture with given `name`. If `name` is "my_message" then messages starting with "my_message:" will be called with the given callable.
 
-Callable must accept a message string and a data array as argument. If the message and data are valid then callable must return `true` otherwise `false`.
+The callable must accept a message string and a data array as argument. The callable should return `true` if the message is recognized.
+
+ **Note:** The callable will receive the message with the prefix stripped, unlike [`EditorDebuggerPlugin._capture`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__capture). See the [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) description for an example.
 
 <!-- rst-class:: classref-item-separator -->
 

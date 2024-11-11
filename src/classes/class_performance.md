@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Performance.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Performance.xml。 -->
 
 <div id="_class_performance"></div>
 
@@ -13,9 +13,9 @@ Exposes performance-related data.
 
 ## 描述
 
-This class provides access to a number of different monitors related to performance, such as memory usage, draw calls, and FPS. These are the same as the values displayed in the **Monitor** tab in the editor's **Debugger** panel. By using the [`get_monitor`](#class_performance_method_get_monitor) method of this class, you can access this data from your code.
+This class provides access to a number of different monitors related to performance, such as memory usage, draw calls, and FPS. These are the same as the values displayed in the **Monitor** tab in the editor's **Debugger** panel. By using the [`get_monitor`](class_performance.md#class_performance_method_get_monitor) method of this class, you can access this data from your code.
 
-You can add custom monitors using the [`add_custom_monitor`](#class_performance_method_add_custom_monitor) method. Custom monitors are available in **Monitor** tab in the editor's **Debugger** panel together with built-in monitors.
+You can add custom monitors using the [`add_custom_monitor`](class_performance.md#class_performance_method_add_custom_monitor) method. Custom monitors are available in **Monitor** tab in the editor's **Debugger** panel together with built-in monitors.
 
  **Note:** Some of the built-in monitors are only available in debug mode and will always return `0` when used in a project exported in release mode.
 
@@ -25,13 +25,15 @@ You can add custom monitors using the [`add_custom_monitor`](#class_performance_
 
 ## 方法
 
-| `void`                                                      | [`add_custom_monitor`](#class_performance_method_add_custom_monitor) ( id: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md), arguments: [`Array`](class_array.md) = [] ) |
-| [`Variant`](class_variant.md)                               | [`get_custom_monitor`](#class_performance_method_get_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_custom_monitor_names`](#class_performance_method_get_custom_monitor_names) ( )                                                                                                                   |
-| [`float`](class_float.md)                                   | [`get_monitor`](#class_performance_method_get_monitor) ( monitor: [Monitor](#enum_performance_monitor) ) const[^const]                                                                                 |
-| [`int`](class_int.md)                                       | [`get_monitor_modification_time`](#class_performance_method_get_monitor_modification_time) ( )                                                                                                         |
-| [`bool`](class_bool.md)                                     | [`has_custom_monitor`](#class_performance_method_has_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
-| `void`                                                      | [`remove_custom_monitor`](#class_performance_method_remove_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                 |
+|||
+|:-:|:--|
+| `void`                                                      | [`add_custom_monitor`](class_performance.md#class_performance_method_add_custom_monitor) ( id: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md), arguments: [`Array`](class_array.md) = [] ) |
+| [`Variant`](class_variant.md)                               | [`get_custom_monitor`](class_performance.md#class_performance_method_get_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_custom_monitor_names`](class_performance.md#class_performance_method_get_custom_monitor_names) ( )                                                                                                                   |
+| [`float`](class_float.md)                                   | [`get_monitor`](class_performance.md#class_performance_method_get_monitor) ( monitor: [Monitor](#enum_performance_monitor) ) const[^const]                                                                                 |
+| [`int`](class_int.md)                                       | [`get_monitor_modification_time`](class_performance.md#class_performance_method_get_monitor_modification_time) ( )                                                                                                         |
+| [`bool`](class_bool.md)                                     | [`has_custom_monitor`](class_performance.md#class_performance_method_has_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
+| `void`                                                      | [`remove_custom_monitor`](class_performance.md#class_performance_method_remove_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -131,7 +133,7 @@ The total number of draw calls performed in the last rendered frame. This metric
 
 [Monitor](#enum_performance_monitor) **RENDER_VIDEO_MEM_USED** = ``14``
 
-The amount of video memory used (texture and vertex memory combined, in bytes). Since this metric also includes miscellaneous allocations, this value is always greater than the sum of [`RENDER_TEXTURE_MEM_USED`](#class_performance_constant_render_texture_mem_used) and [`RENDER_BUFFER_MEM_USED`](#class_performance_constant_render_buffer_mem_used). *Lower is better.*
+The amount of video memory used (texture and vertex memory combined, in bytes). Since this metric also includes miscellaneous allocations, this value is always greater than the sum of [`RENDER_TEXTURE_MEM_USED`](class_performance.md#class_performance_constant_render_texture_mem_used) and [`RENDER_BUFFER_MEM_USED`](class_performance.md#class_performance_constant_render_buffer_mem_used). *Lower is better.*
 
 <div id="_class_performance_constant_render_texture_mem_used"></div>
 
@@ -185,7 +187,7 @@ Number of islands in the 3D physics engine. *Lower is better.*
 
 [Monitor](#enum_performance_monitor) **AUDIO_OUTPUT_LATENCY** = ``23``
 
-Output latency of the [`AudioServer`](class_audioserver.md). Equivalent to calling [`AudioServer.get_output_latency`](#class_audioserver_method_get_output_latency), it is not recommended to call this every frame.
+Output latency of the [`AudioServer`](class_audioserver.md). Equivalent to calling [`AudioServer.get_output_latency`](class_audioserver.md#class_audioserver_method_get_output_latency), it is not recommended to call this every frame.
 
 <div id="_class_performance_constant_navigation_active_maps"></div>
 
@@ -241,9 +243,45 @@ Number of polygon edges that are considered connected by edge proximity [`Naviga
 
 Number of navigation mesh polygon edges that could not be merged in the [`NavigationServer3D`](class_navigationserver3d.md). The edges still may be connected by edge proximity or with links.
 
+<div id="_class_performance_constant_navigation_obstacle_count"></div>
+
+[Monitor](#enum_performance_monitor) **NAVIGATION_OBSTACLE_COUNT** = ``33``
+
+Number of active navigation obstacles in the [`NavigationServer3D`](class_navigationserver3d.md).
+
+<div id="_class_performance_constant_pipeline_compilations_canvas"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_CANVAS** = ``34``
+
+Number of pipeline compilations that were triggered by the 2D canvas renderer.
+
+<div id="_class_performance_constant_pipeline_compilations_mesh"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_MESH** = ``35``
+
+Number of pipeline compilations that were triggered by loading meshes. These compilations will show up as longer loading times the first time a user runs the game and the pipeline is required.
+
+<div id="_class_performance_constant_pipeline_compilations_surface"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_SURFACE** = ``36``
+
+Number of pipeline compilations that were triggered by building the surface cache before rendering the scene. These compilations will show up as a stutter when loading an scene the first time a user runs the game and the pipeline is required.
+
+<div id="_class_performance_constant_pipeline_compilations_draw"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_DRAW** = ``37``
+
+Number of pipeline compilations that were triggered while drawing the scene. These compilations will show up as stutters during gameplay the first time a user runs the game and the pipeline is required.
+
+<div id="_class_performance_constant_pipeline_compilations_specialization"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_SPECIALIZATION** = ``38``
+
+Number of pipeline compilations that were triggered to optimize the current scene. These compilations are done in the background and should not cause any stutters whatsoever.
+
 <div id="_class_performance_constant_monitor_max"></div>
 
-[Monitor](#enum_performance_monitor) **MONITOR_MAX** = ``33``
+[Monitor](#enum_performance_monitor) **MONITOR_MAX** = ``39``
 
 Represents the size of the [Monitor](#enum_performance_monitor) enum.
 
@@ -328,7 +366,7 @@ Callables are called with arguments supplied in argument array.
 
 [`Variant`](class_variant.md) **get_custom_monitor** ( id: [`StringName`](class_stringname.md) )<div id="class_performance_method_get_custom_monitor"></div>
 
-Returns the value of custom monitor with given `id`. The callable is called to get the value of custom monitor. See also [`has_custom_monitor`](#class_performance_method_has_custom_monitor). Prints an error if the given `id` is absent.
+Returns the value of custom monitor with given `id`. The callable is called to get the value of custom monitor. See also [`has_custom_monitor`](class_performance.md#class_performance_method_has_custom_monitor). Prints an error if the given `id` is absent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -364,7 +402,7 @@ Returns the value of one of the available built-in monitors. You should provide 
 
 
 
-See [`get_custom_monitor`](#class_performance_method_get_custom_monitor) to query custom performance monitors' values.
+See [`get_custom_monitor`](class_performance.md#class_performance_method_get_custom_monitor) to query custom performance monitors' values.
 
 
 
@@ -378,7 +416,7 @@ See [`get_custom_monitor`](#class_performance_method_get_custom_monitor) to quer
 
 [`int`](class_int.md) **get_monitor_modification_time** ( )<div id="class_performance_method_get_monitor_modification_time"></div>
 
-Returns the last tick in which custom monitor was added/removed (in microseconds since the engine started). This is set to [`Time.get_ticks_usec`](#class_time_method_get_ticks_usec) when the monitor is updated.
+Returns the last tick in which custom monitor was added/removed (in microseconds since the engine started). This is set to [`Time.get_ticks_usec`](class_time.md#class_time_method_get_ticks_usec) when the monitor is updated.
 
 <!-- rst-class:: classref-item-separator -->
 

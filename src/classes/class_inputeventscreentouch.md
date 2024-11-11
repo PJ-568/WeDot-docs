@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/InputEventScreenTouch.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/InputEventScreenTouch.xml。 -->
 
 <div id="_class_inputeventscreentouch"></div>
 
@@ -13,15 +13,17 @@ Represents a screen touch event.
 
 ## 描述
 
-Stores information about multi-touch press/release input events. Supports touch press, touch release and [`index`](#class_inputeventscreentouch_property_index) for multi-touch count and order.
+Stores information about multi-touch press/release input events. Supports touch press, touch release and [`index`](class_inputeventscreentouch.md#class_inputeventscreentouch_property_index) for multi-touch count and order.
 
 ## 属性
 
-| [`bool`](class_bool.md)       | [`canceled`](#class_inputeventscreentouch_property_canceled)     | ``false``         |
-| [`bool`](class_bool.md)       | [`double_tap`](#class_inputeventscreentouch_property_double_tap) | ``false``         |
-| [`int`](class_int.md)         | [`index`](#class_inputeventscreentouch_property_index)           | ``0``             |
-| [`Vector2`](class_vector2.md) | [`position`](#class_inputeventscreentouch_property_position)     | ``Vector2(0, 0)`` |
-| [`bool`](class_bool.md)       | [`pressed`](#class_inputeventscreentouch_property_pressed)       | ``false``         |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)       | [`canceled`](class_inputeventscreentouch.md#class_inputeventscreentouch_property_canceled)     | ``false``         |
+| [`bool`](class_bool.md)       | [`double_tap`](class_inputeventscreentouch.md#class_inputeventscreentouch_property_double_tap) | ``false``         |
+| [`int`](class_int.md)         | [`index`](class_inputeventscreentouch.md#class_inputeventscreentouch_property_index)           | ``0``             |
+| [`Vector2`](class_vector2.md) | [`position`](class_inputeventscreentouch.md#class_inputeventscreentouch_property_position)     | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)       | [`pressed`](class_inputeventscreentouch.md#class_inputeventscreentouch_property_pressed)       | ``false``         |
 
 <!-- rst-class:: classref-section-separator -->
 

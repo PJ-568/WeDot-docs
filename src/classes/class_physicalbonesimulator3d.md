@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PhysicalBoneSimulator3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PhysicalBoneSimulator3D.xml。 -->
 
 <div id="_class_physicalbonesimulator3d"></div>
 
@@ -17,11 +17,13 @@ Node that can be the parent of [`PhysicalBone3D`](class_physicalbone3d.md) and c
 
 ## 方法
 
-| [`bool`](class_bool.md) | [`is_simulating_physics`](#class_physicalbonesimulator3d_method_is_simulating_physics) ( ) const[^const]                                                                               |
-| `void`                  | [`physical_bones_add_collision_exception`](#class_physicalbonesimulator3d_method_physical_bones_add_collision_exception) ( exception: [`RID`](class_rid.md) )                          |
-| `void`                  | [`physical_bones_remove_collision_exception`](#class_physicalbonesimulator3d_method_physical_bones_remove_collision_exception) ( exception: [`RID`](class_rid.md) )                    |
-| `void`                  | [`physical_bones_start_simulation`](#class_physicalbonesimulator3d_method_physical_bones_start_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] ) |
-| `void`                  | [`physical_bones_stop_simulation`](#class_physicalbonesimulator3d_method_physical_bones_stop_simulation) ( )                                                                           |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`is_simulating_physics`](class_physicalbonesimulator3d.md#class_physicalbonesimulator3d_method_is_simulating_physics) ( ) const[^const]                                                                               |
+| `void`                  | [`physical_bones_add_collision_exception`](class_physicalbonesimulator3d.md#class_physicalbonesimulator3d_method_physical_bones_add_collision_exception) ( exception: [`RID`](class_rid.md) )                          |
+| `void`                  | [`physical_bones_remove_collision_exception`](class_physicalbonesimulator3d.md#class_physicalbonesimulator3d_method_physical_bones_remove_collision_exception) ( exception: [`RID`](class_rid.md) )                    |
+| `void`                  | [`physical_bones_start_simulation`](class_physicalbonesimulator3d.md#class_physicalbonesimulator3d_method_physical_bones_start_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] ) |
+| `void`                  | [`physical_bones_stop_simulation`](class_physicalbonesimulator3d.md#class_physicalbonesimulator3d_method_physical_bones_stop_simulation) ( )                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 

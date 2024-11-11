@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeTransformVecMult.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeTransformVecMult.xml。 -->
 
 <div id="_class_visualshadernodetransformvecmult"></div>
 
@@ -17,7 +17,9 @@ A multiplication operation on a transform (4×4 matrix) and a vector, with suppo
 
 ## 属性
 
-| [Operator](#enum_visualshadernodetransformvecmult_operator) | [`operator`](#class_visualshadernodetransformvecmult_property_operator) | ``0`` |
+|||
+|:-:|:--|
+| [Operator](#enum_visualshadernodetransformvecmult_operator) | [`operator`](class_visualshadernodetransformvecmult.md#class_visualshadernodetransformvecmult_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

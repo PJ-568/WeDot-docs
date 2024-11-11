@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PhysicsServer3DRenderingServerHandler.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PhysicsServer3DRenderingServerHandler.xml。 -->
 
 <div id="_class_physicsserver3drenderingserverhandler"></div>
 
@@ -9,16 +9,18 @@
 
 **继承：** [`Object`](class_object.md)
 
-A class used to provide [`PhysicsServer3DExtension._soft_body_update_rendering_server`](#class_physicsserver3dextension_private_method__soft_body_update_rendering_server) with a rendering handler for soft bodies.
+A class used to provide [`PhysicsServer3DExtension._soft_body_update_rendering_server`](class_physicsserver3dextension.md#class_physicsserver3dextension_private_method__soft_body_update_rendering_server) with a rendering handler for soft bodies.
 
 ## 方法
 
-| `void` | [`_set_aabb`](#class_physicsserver3drenderingserverhandler_private_method__set_aabb) ( aabb: [`AABB`](class_aabb.md) ) virtual[^virtual]                                               |
-| `void` | [`_set_normal`](#class_physicsserver3drenderingserverhandler_private_method__set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
-| `void` | [`_set_vertex`](#class_physicsserver3drenderingserverhandler_private_method__set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
-| `void` | [`set_aabb`](#class_physicsserver3drenderingserverhandler_method_set_aabb) ( aabb: [`AABB`](class_aabb.md) )                                                                           |
-| `void` | [`set_normal`](#class_physicsserver3drenderingserverhandler_method_set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) )                             |
-| `void` | [`set_vertex`](#class_physicsserver3drenderingserverhandler_method_set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) )                             |
+|||
+|:-:|:--|
+| `void` | [`_set_aabb`](class_physicsserver3drenderingserverhandler.md#class_physicsserver3drenderingserverhandler_private_method__set_aabb) ( aabb: [`AABB`](class_aabb.md) ) virtual[^virtual]                                               |
+| `void` | [`_set_normal`](class_physicsserver3drenderingserverhandler.md#class_physicsserver3drenderingserverhandler_private_method__set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
+| `void` | [`_set_vertex`](class_physicsserver3drenderingserverhandler.md#class_physicsserver3drenderingserverhandler_private_method__set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
+| `void` | [`set_aabb`](class_physicsserver3drenderingserverhandler.md#class_physicsserver3drenderingserverhandler_method_set_aabb) ( aabb: [`AABB`](class_aabb.md) )                                                                           |
+| `void` | [`set_normal`](class_physicsserver3drenderingserverhandler.md#class_physicsserver3drenderingserverhandler_method_set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) )                             |
+| `void` | [`set_vertex`](class_physicsserver3drenderingserverhandler.md#class_physicsserver3drenderingserverhandler_method_set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) )                             |
 
 <!-- rst-class:: classref-section-separator -->
 

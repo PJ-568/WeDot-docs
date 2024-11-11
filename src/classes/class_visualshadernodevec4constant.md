@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeVec4Constant.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeVec4Constant.xml。 -->
 
 <div id="_class_visualshadernodevec4constant"></div>
 
@@ -17,7 +17,9 @@ A constant 4D vector, which can be used as an input node.
 
 ## 属性
 
-| [`Quaternion`](class_quaternion.md) | [`constant`](#class_visualshadernodevec4constant_property_constant) | ``Quaternion(0, 0, 0, 1)`` |
+|||
+|:-:|:--|
+| [`Quaternion`](class_quaternion.md) | [`constant`](class_visualshadernodevec4constant.md#class_visualshadernodevec4constant_property_constant) | ``Quaternion(0, 0, 0, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

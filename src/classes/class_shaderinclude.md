@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ShaderInclude.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ShaderInclude.xml。 -->
 
 <div id="_class_shaderinclude"></div>
 
@@ -17,7 +17,9 @@ A shader include file, saved with the `.gdshaderinc` extension. This class allow
 
 ## 属性
 
-| [`String`](class_string.md) | [`code`](#class_shaderinclude_property_code) | ``""`` |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`code`](class_shaderinclude.md#class_shaderinclude_property_code) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->
 

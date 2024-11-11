@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderSceneBuffersExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderSceneBuffersExtension.xml。 -->
 
 <div id="_class_renderscenebuffersextension"></div>
 
@@ -17,10 +17,12 @@ This class allows for a RenderSceneBuffer implementation to be made in GDExtensi
 
 ## 方法
 
-| `void` | [`_configure`](#class_renderscenebuffersextension_private_method__configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) virtual[^virtual] |
-| `void` | [`_set_fsr_sharpness`](#class_renderscenebuffersextension_private_method__set_fsr_sharpness) ( fsr_sharpness: [`float`](class_float.md) ) virtual[^virtual]                              |
-| `void` | [`_set_texture_mipmap_bias`](#class_renderscenebuffersextension_private_method__set_texture_mipmap_bias) ( texture_mipmap_bias: [`float`](class_float.md) ) virtual[^virtual]            |
-| `void` | [`_set_use_debanding`](#class_renderscenebuffersextension_private_method__set_use_debanding) ( use_debanding: [`bool`](class_bool.md) ) virtual[^virtual]                                |
+|||
+|:-:|:--|
+| `void` | [`_configure`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) virtual[^virtual] |
+| `void` | [`_set_fsr_sharpness`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__set_fsr_sharpness) ( fsr_sharpness: [`float`](class_float.md) ) virtual[^virtual]                              |
+| `void` | [`_set_texture_mipmap_bias`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__set_texture_mipmap_bias) ( texture_mipmap_bias: [`float`](class_float.md) ) virtual[^virtual]            |
+| `void` | [`_set_use_debanding`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__set_use_debanding) ( use_debanding: [`bool`](class_bool.md) ) virtual[^virtual]                                |
 
 <!-- rst-class:: classref-section-separator -->
 

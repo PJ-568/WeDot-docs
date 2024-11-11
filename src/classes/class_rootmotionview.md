@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RootMotionView.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RootMotionView.xml。 -->
 
 <div id="_class_rootmotionview"></div>
 
@@ -19,11 +19,13 @@ Editor-only helper for setting up root motion in [`AnimationMixer`](class_animat
 
 ## 属性
 
-| [`NodePath`](class_nodepath.md) | [`animation_path`](#class_rootmotionview_property_animation_path) | ``NodePath("")``          |
-| [`float`](class_float.md)       | [`cell_size`](#class_rootmotionview_property_cell_size)           | ``1.0``                   |
-| [`Color`](class_color.md)       | [`color`](#class_rootmotionview_property_color)                   | ``Color(0.5, 0.5, 1, 1)`` |
-| [`float`](class_float.md)       | [`radius`](#class_rootmotionview_property_radius)                 | ``10.0``                  |
-| [`bool`](class_bool.md)         | [`zero_y`](#class_rootmotionview_property_zero_y)                 | ``true``                  |
+|||
+|:-:|:--|
+| [`NodePath`](class_nodepath.md) | [`animation_path`](class_rootmotionview.md#class_rootmotionview_property_animation_path) | ``NodePath("")``          |
+| [`float`](class_float.md)       | [`cell_size`](class_rootmotionview.md#class_rootmotionview_property_cell_size)           | ``1.0``                   |
+| [`Color`](class_color.md)       | [`color`](class_rootmotionview.md#class_rootmotionview_property_color)                   | ``Color(0.5, 0.5, 1, 1)`` |
+| [`float`](class_float.md)       | [`radius`](class_rootmotionview.md#class_rootmotionview_property_radius)                 | ``10.0``                  |
+| [`bool`](class_bool.md)         | [`zero_y`](class_rootmotionview.md#class_rootmotionview_property_zero_y)                 | ``true``                  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,7 +79,7 @@ The grid's color.
 - `void` **set_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_radius** ( )
 
-The grid's radius in 3D units. The grid's opacity will fade gradually as the distance from the origin increases until this [`radius`](#class_rootmotionview_property_radius) is reached.
+The grid's radius in 3D units. The grid's opacity will fade gradually as the distance from the origin increases until this [`radius`](class_rootmotionview.md#class_rootmotionview_property_radius) is reached.
 
 <!-- rst-class:: classref-item-separator -->
 

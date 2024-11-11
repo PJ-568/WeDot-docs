@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PlaceholderTexture3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PlaceholderTexture3D.xml。 -->
 
 <div id="_class_placeholdertexture3d"></div>
 
@@ -23,7 +23,9 @@ This class is used when loading a project that uses a [`Texture3D`](class_textur
 
 ## 属性
 
-| [`Vector3i`](class_vector3i.md) | [`size`](#class_placeholdertexture3d_property_size) | ``Vector3i(1, 1, 1)`` |
+|||
+|:-:|:--|
+| [`Vector3i`](class_vector3i.md) | [`size`](class_placeholdertexture3d.md#class_placeholdertexture3d_property_size) | ``Vector3i(1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

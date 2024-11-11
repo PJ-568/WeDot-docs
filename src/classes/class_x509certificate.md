@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/X509Certificate.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/X509Certificate.xml。 -->
 
 <div id="_class_x509certificate"></div>
 
@@ -15,14 +15,16 @@ An X509 certificate (e.g. for TLS).
 
 The X509Certificate class represents an X509 certificate. Certificates can be loaded and saved like any other [`Resource`](class_resource.md).
 
-They can be used as the server certificate in [`StreamPeerTLS.accept_stream`](#class_streampeertls_method_accept_stream) (along with the proper [`CryptoKey`](class_cryptokey.md)), and to specify the only certificate that should be accepted when connecting to a TLS server via [`StreamPeerTLS.connect_to_stream`](#class_streampeertls_method_connect_to_stream).
+They can be used as the server certificate in [`StreamPeerTLS.accept_stream`](class_streampeertls.md#class_streampeertls_method_accept_stream) (along with the proper [`CryptoKey`](class_cryptokey.md)), and to specify the only certificate that should be accepted when connecting to a TLS server via [`StreamPeerTLS.connect_to_stream`](class_streampeertls.md#class_streampeertls_method_connect_to_stream).
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`load`](#class_x509certificate_method_load) ( path: [`String`](class_string.md) )                           |
-| [Error](#enum_@globalscope_error) | [`load_from_string`](#class_x509certificate_method_load_from_string) ( string: [`String`](class_string.md) ) |
-| [Error](#enum_@globalscope_error) | [`save`](#class_x509certificate_method_save) ( path: [`String`](class_string.md) )                           |
-| [`String`](class_string.md)       | [`save_to_string`](#class_x509certificate_method_save_to_string) ( )                                         |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`load`](class_x509certificate.md#class_x509certificate_method_load) ( path: [`String`](class_string.md) )                           |
+| [Error](#enum_@globalscope_error) | [`load_from_string`](class_x509certificate.md#class_x509certificate_method_load_from_string) ( string: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`save`](class_x509certificate.md#class_x509certificate_method_save) ( path: [`String`](class_string.md) )                           |
+| [`String`](class_string.md)       | [`save_to_string`](class_x509certificate.md#class_x509certificate_method_save_to_string) ( )                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

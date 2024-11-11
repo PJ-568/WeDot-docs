@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Shape3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Shape3D.xml。 -->
 
 <div id="_class_shape3d"></div>
 
@@ -21,12 +21,16 @@ Abstract base class for all 3D shapes, intended for use in physics.
 
 ## 属性
 
-| [`float`](class_float.md) | [`custom_solver_bias`](#class_shape3d_property_custom_solver_bias) | ``0.0``  |
-| [`float`](class_float.md) | [`margin`](#class_shape3d_property_margin)                         | ``0.04`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`custom_solver_bias`](class_shape3d.md#class_shape3d_property_custom_solver_bias) | ``0.0``  |
+| [`float`](class_float.md) | [`margin`](class_shape3d.md#class_shape3d_property_margin)                         | ``0.04`` |
 
 ## 方法
 
-| [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](#class_shape3d_method_get_debug_mesh) ( ) |
+|||
+|:-:|:--|
+| [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](class_shape3d.md#class_shape3d_method_get_debug_mesh) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -43,7 +47,7 @@ Abstract base class for all 3D shapes, intended for use in physics.
 
 The shape's custom solver bias. Defines how much bodies react to enforce contact separation when this shape is involved.
 
-When set to `0`, the default value from [`ProjectSettings.physics/3d/solver/default_contact_bias`](#class_projectsettings_property_physics/3d/solver/default_contact_bias) is used.
+When set to `0`, the default value from [`ProjectSettings.physics/3d/solver/default_contact_bias`](class_projectsettings.md#class_projectsettings_property_physics/3d/solver/default_contact_bias) is used.
 
 <!-- rst-class:: classref-item-separator -->
 

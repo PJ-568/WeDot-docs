@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/interactive_music/doc_classes/AudioStreamSynchronized.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/interactive_music/doc_classes/AudioStreamSynchronized.xml。 -->
 
 <div id="_class_audiostreamsynchronized"></div>
 
@@ -17,14 +17,18 @@ This is a stream that can be fitted with sub-streams, which will be played in-sy
 
 ## 属性
 
-| [`int`](class_int.md) | [`stream_count`](#class_audiostreamsynchronized_property_stream_count) | ``0`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`stream_count`](class_audiostreamsynchronized.md#class_audiostreamsynchronized_property_stream_count) | ``0`` |
 
 ## 方法
 
-| [`AudioStream`](class_audiostream.md) | [`get_sync_stream`](#class_audiostreamsynchronized_method_get_sync_stream) ( stream_index: [`int`](class_int.md) ) const[^const]                                        |
-| [`float`](class_float.md)             | [`get_sync_stream_volume`](#class_audiostreamsynchronized_method_get_sync_stream_volume) ( stream_index: [`int`](class_int.md) ) const[^const]                          |
-| `void`                                | [`set_sync_stream`](#class_audiostreamsynchronized_method_set_sync_stream) ( stream_index: [`int`](class_int.md), audio_stream: [`AudioStream`](class_audiostream.md) ) |
-| `void`                                | [`set_sync_stream_volume`](#class_audiostreamsynchronized_method_set_sync_stream_volume) ( stream_index: [`int`](class_int.md), volume_db: [`float`](class_float.md) )  |
+|||
+|:-:|:--|
+| [`AudioStream`](class_audiostream.md) | [`get_sync_stream`](class_audiostreamsynchronized.md#class_audiostreamsynchronized_method_get_sync_stream) ( stream_index: [`int`](class_int.md) ) const[^const]                                        |
+| [`float`](class_float.md)             | [`get_sync_stream_volume`](class_audiostreamsynchronized.md#class_audiostreamsynchronized_method_get_sync_stream_volume) ( stream_index: [`int`](class_int.md) ) const[^const]                          |
+| `void`                                | [`set_sync_stream`](class_audiostreamsynchronized.md#class_audiostreamsynchronized_method_set_sync_stream) ( stream_index: [`int`](class_int.md), audio_stream: [`AudioStream`](class_audiostream.md) ) |
+| `void`                                | [`set_sync_stream_volume`](class_audiostreamsynchronized.md#class_audiostreamsynchronized_method_set_sync_stream_volume) ( stream_index: [`int`](class_int.md), volume_db: [`float`](class_float.md) )  |
 
 <!-- rst-class:: classref-section-separator -->
 

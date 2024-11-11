@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TextLine.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TextLine.xml。 -->
 
 <div id="_class_textline"></div>
 
@@ -17,36 +17,40 @@ Abstraction over [`TextServer`](class_textserver.md) for handling a single line 
 
 ## 属性
 
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_textline_property_alignment)                         | ``0``     |
-| [Direction](#enum_textserver_direction)                       | [`direction`](#class_textline_property_direction)                         | ``0``     |
-| [`String`](class_string.md)                                   | [`ellipsis_char`](#class_textline_property_ellipsis_char)                 | ``"…"``   |
-| [JustificationFlag](#enum_textserver_justificationflag)       | [`flags`](#class_textline_property_flags)                                 | ``3``     |
-| [Orientation](#enum_textserver_orientation)                   | [`orientation`](#class_textline_property_orientation)                     | ``0``     |
-| [`bool`](class_bool.md)                                       | [`preserve_control`](#class_textline_property_preserve_control)           | ``false`` |
-| [`bool`](class_bool.md)                                       | [`preserve_invalid`](#class_textline_property_preserve_invalid)           | ``true``  |
-| [OverrunBehavior](#enum_textserver_overrunbehavior)           | [`text_overrun_behavior`](#class_textline_property_text_overrun_behavior) | ``3``     |
-| [`float`](class_float.md)                                     | [`width`](#class_textline_property_width)                                 | ``-1.0``  |
+|||
+|:-:|:--|
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](class_textline.md#class_textline_property_alignment)                         | ``0``     |
+| [Direction](#enum_textserver_direction)                       | [`direction`](class_textline.md#class_textline_property_direction)                         | ``0``     |
+| [`String`](class_string.md)                                   | [`ellipsis_char`](class_textline.md#class_textline_property_ellipsis_char)                 | ``"…"``   |
+| [JustificationFlag](#enum_textserver_justificationflag)       | [`flags`](class_textline.md#class_textline_property_flags)                                 | ``3``     |
+| [Orientation](#enum_textserver_orientation)                   | [`orientation`](class_textline.md#class_textline_property_orientation)                     | ``0``     |
+| [`bool`](class_bool.md)                                       | [`preserve_control`](class_textline.md#class_textline_property_preserve_control)           | ``false`` |
+| [`bool`](class_bool.md)                                       | [`preserve_invalid`](class_textline.md#class_textline_property_preserve_invalid)           | ``true``  |
+| [OverrunBehavior](#enum_textserver_overrunbehavior)           | [`text_overrun_behavior`](class_textline.md#class_textline_property_text_overrun_behavior) | ``3``     |
+| [`float`](class_float.md)                                     | [`width`](class_textline.md#class_textline_property_width)                                 | ``-1.0``  |
 
 ## 方法
 
-| [`bool`](class_bool.md)       | [`add_object`](#class_textline_method_add_object) ( key: [`Variant`](class_variant.md), size: [`Vector2`](class_vector2.md), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, length: [`int`](class_int.md) = 1, baseline: [`float`](class_float.md) = 0.0 ) |
-| [`bool`](class_bool.md)       | [`add_string`](#class_textline_method_add_string) ( text: [`String`](class_string.md), font: [`Font`](class_font.md), font_size: [`int`](class_int.md), language: [`String`](class_string.md) = "", meta: [`Variant`](class_variant.md) = null )                                     |
-| `void`                        | [`clear`](#class_textline_method_clear) ( )                                                                                                                                                                                                                                          |
-| `void`                        | [`draw`](#class_textline_method_draw) ( canvas: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), color: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                                                                                      |
-| `void`                        | [`draw_outline`](#class_textline_method_draw_outline) ( canvas: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), outline_size: [`int`](class_int.md) = 1, color: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                             |
-| [`float`](class_float.md)     | [`get_line_ascent`](#class_textline_method_get_line_ascent) ( ) const[^const]                                                                                                                                                                                                        |
-| [`float`](class_float.md)     | [`get_line_descent`](#class_textline_method_get_line_descent) ( ) const[^const]                                                                                                                                                                                                      |
-| [`float`](class_float.md)     | [`get_line_underline_position`](#class_textline_method_get_line_underline_position) ( ) const[^const]                                                                                                                                                                                |
-| [`float`](class_float.md)     | [`get_line_underline_thickness`](#class_textline_method_get_line_underline_thickness) ( ) const[^const]                                                                                                                                                                              |
-| [`float`](class_float.md)     | [`get_line_width`](#class_textline_method_get_line_width) ( ) const[^const]                                                                                                                                                                                                          |
-| [`Rect2`](class_rect2.md)     | [`get_object_rect`](#class_textline_method_get_object_rect) ( key: [`Variant`](class_variant.md) ) const[^const]                                                                                                                                                                     |
-| [`Array`](class_array.md)     | [`get_objects`](#class_textline_method_get_objects) ( ) const[^const]                                                                                                                                                                                                                |
-| [`RID`](class_rid.md)         | [`get_rid`](#class_textline_method_get_rid) ( ) const[^const]                                                                                                                                                                                                                        |
-| [`Vector2`](class_vector2.md) | [`get_size`](#class_textline_method_get_size) ( ) const[^const]                                                                                                                                                                                                                      |
-| [`int`](class_int.md)         | [`hit_test`](#class_textline_method_hit_test) ( coords: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                    |
-| [`bool`](class_bool.md)       | [`resize_object`](#class_textline_method_resize_object) ( key: [`Variant`](class_variant.md), size: [`Vector2`](class_vector2.md), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, baseline: [`float`](class_float.md) = 0.0 )                              |
-| `void`                        | [`set_bidi_override`](#class_textline_method_set_bidi_override) ( override: [`Array`](class_array.md) )                                                                                                                                                                              |
-| `void`                        | [`tab_align`](#class_textline_method_tab_align) ( tab_stops: [`PackedFloat32Array`](class_packedfloat32array.md) )                                                                                                                                                                   |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)       | [`add_object`](class_textline.md#class_textline_method_add_object) ( key: [`Variant`](class_variant.md), size: [`Vector2`](class_vector2.md), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, length: [`int`](class_int.md) = 1, baseline: [`float`](class_float.md) = 0.0 ) |
+| [`bool`](class_bool.md)       | [`add_string`](class_textline.md#class_textline_method_add_string) ( text: [`String`](class_string.md), font: [`Font`](class_font.md), font_size: [`int`](class_int.md), language: [`String`](class_string.md) = "", meta: [`Variant`](class_variant.md) = null )                                     |
+| `void`                        | [`clear`](class_textline.md#class_textline_method_clear) ( )                                                                                                                                                                                                                                          |
+| `void`                        | [`draw`](class_textline.md#class_textline_method_draw) ( canvas: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), color: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                                                                                      |
+| `void`                        | [`draw_outline`](class_textline.md#class_textline_method_draw_outline) ( canvas: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), outline_size: [`int`](class_int.md) = 1, color: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                             |
+| [`float`](class_float.md)     | [`get_line_ascent`](class_textline.md#class_textline_method_get_line_ascent) ( ) const[^const]                                                                                                                                                                                                        |
+| [`float`](class_float.md)     | [`get_line_descent`](class_textline.md#class_textline_method_get_line_descent) ( ) const[^const]                                                                                                                                                                                                      |
+| [`float`](class_float.md)     | [`get_line_underline_position`](class_textline.md#class_textline_method_get_line_underline_position) ( ) const[^const]                                                                                                                                                                                |
+| [`float`](class_float.md)     | [`get_line_underline_thickness`](class_textline.md#class_textline_method_get_line_underline_thickness) ( ) const[^const]                                                                                                                                                                              |
+| [`float`](class_float.md)     | [`get_line_width`](class_textline.md#class_textline_method_get_line_width) ( ) const[^const]                                                                                                                                                                                                          |
+| [`Rect2`](class_rect2.md)     | [`get_object_rect`](class_textline.md#class_textline_method_get_object_rect) ( key: [`Variant`](class_variant.md) ) const[^const]                                                                                                                                                                     |
+| [`Array`](class_array.md)     | [`get_objects`](class_textline.md#class_textline_method_get_objects) ( ) const[^const]                                                                                                                                                                                                                |
+| [`RID`](class_rid.md)         | [`get_rid`](class_textline.md#class_textline_method_get_rid) ( ) const[^const]                                                                                                                                                                                                                        |
+| [`Vector2`](class_vector2.md) | [`get_size`](class_textline.md#class_textline_method_get_size) ( ) const[^const]                                                                                                                                                                                                                      |
+| [`int`](class_int.md)         | [`hit_test`](class_textline.md#class_textline_method_hit_test) ( coords: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                    |
+| [`bool`](class_bool.md)       | [`resize_object`](class_textline.md#class_textline_method_resize_object) ( key: [`Variant`](class_variant.md), size: [`Vector2`](class_vector2.md), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, baseline: [`float`](class_float.md) = 0.0 )                              |
+| `void`                        | [`set_bidi_override`](class_textline.md#class_textline_method_set_bidi_override) ( override: [`Array`](class_array.md) )                                                                                                                                                                              |
+| `void`                        | [`tab_align`](class_textline.md#class_textline_method_tab_align) ( tab_stops: [`PackedFloat32Array`](class_packedfloat32array.md) )                                                                                                                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 

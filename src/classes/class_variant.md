@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Variant.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Variant.xml。 -->
 
 <div id="_class_variant"></div>
 
@@ -46,7 +46,7 @@ Godot tracks all scripting API variables within Variants. Without even realizing
 
 - C# is statically typed, but uses its own implementation of the Variant type in place of Godot's **Variant** class when it needs to represent a dynamic value. C# Variant can be assigned any compatible type implicitly but converting requires an explicit cast.
 
-The global [`@GlobalScope.typeof`](#class_@globalscope_method_typeof) function returns the enumerated value of the Variant type stored in the current variable (see [Variant.Type](#enum_@globalscope_variant.type)).
+The global [`@GlobalScope.typeof`](class_@globalscope.md#class_@globalscope_method_typeof) function returns the enumerated value of the Variant type stored in the current variable (see [Variant.Type](#enum_@globalscope_variant.type)).
 
 
 

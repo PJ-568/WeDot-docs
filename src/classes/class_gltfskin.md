@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFSkin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFSkin.xml。 -->
 
 <div id="_class_gltfskin"></div>
 
@@ -13,22 +13,26 @@
 
 ## 属性
 
-| [`Skin`](class_skin.md)                         | [`godot_skin`](#class_gltfskin_property_godot_skin)           |                        |
-| [`PackedInt32Array`](class_packedint32array.md) | [`joints`](#class_gltfskin_property_joints)                   | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`joints_original`](#class_gltfskin_property_joints_original) | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`non_joints`](#class_gltfskin_property_non_joints)           | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`roots`](#class_gltfskin_property_roots)                     | ``PackedInt32Array()`` |
-| [`int`](class_int.md)                           | [`skeleton`](#class_gltfskin_property_skeleton)               | ``-1``                 |
-| [`int`](class_int.md)                           | [`skin_root`](#class_gltfskin_property_skin_root)             | ``-1``                 |
+|||
+|:-:|:--|
+| [`Skin`](class_skin.md)                         | [`godot_skin`](class_gltfskin.md#class_gltfskin_property_godot_skin)           |                        |
+| [`PackedInt32Array`](class_packedint32array.md) | [`joints`](class_gltfskin.md#class_gltfskin_property_joints)                   | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`joints_original`](class_gltfskin.md#class_gltfskin_property_joints_original) | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`non_joints`](class_gltfskin.md#class_gltfskin_property_non_joints)           | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`roots`](class_gltfskin.md#class_gltfskin_property_roots)                     | ``PackedInt32Array()`` |
+| [`int`](class_int.md)                           | [`skeleton`](class_gltfskin.md#class_gltfskin_property_skeleton)               | ``-1``                 |
+| [`int`](class_int.md)                           | [`skin_root`](class_gltfskin.md#class_gltfskin_property_skin_root)             | ``-1``                 |
 
 ## 方法
 
-| [Array](class_array.md) [`Transform3D`](class_transform3d.md) | [`get_inverse_binds`](#class_gltfskin_method_get_inverse_binds) ( )                                                                              |
-| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_bone_i`](#class_gltfskin_method_get_joint_i_to_bone_i) ( )                                                                      |
-| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_name`](#class_gltfskin_method_get_joint_i_to_name) ( )                                                                          |
-| `void`                                                        | [`set_inverse_binds`](#class_gltfskin_method_set_inverse_binds) ( inverse_binds: [Array](class_array.md) [`Transform3D`](class_transform3d.md) ) |
-| `void`                                                        | [`set_joint_i_to_bone_i`](#class_gltfskin_method_set_joint_i_to_bone_i) ( joint_i_to_bone_i: [`Dictionary`](class_dictionary.md) )               |
-| `void`                                                        | [`set_joint_i_to_name`](#class_gltfskin_method_set_joint_i_to_name) ( joint_i_to_name: [`Dictionary`](class_dictionary.md) )                     |
+|||
+|:-:|:--|
+| [Array](class_array.md) [`Transform3D`](class_transform3d.md) | [`get_inverse_binds`](class_gltfskin.md#class_gltfskin_method_get_inverse_binds) ( )                                                                              |
+| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_bone_i`](class_gltfskin.md#class_gltfskin_method_get_joint_i_to_bone_i) ( )                                                                      |
+| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_name`](class_gltfskin.md#class_gltfskin_method_get_joint_i_to_name) ( )                                                                          |
+| `void`                                                        | [`set_inverse_binds`](class_gltfskin.md#class_gltfskin_method_set_inverse_binds) ( inverse_binds: [Array](class_array.md) [`Transform3D`](class_transform3d.md) ) |
+| `void`                                                        | [`set_joint_i_to_bone_i`](class_gltfskin.md#class_gltfskin_method_set_joint_i_to_bone_i) ( joint_i_to_bone_i: [`Dictionary`](class_dictionary.md) )               |
+| `void`                                                        | [`set_joint_i_to_name`](class_gltfskin.md#class_gltfskin_method_set_joint_i_to_name) ( joint_i_to_name: [`Dictionary`](class_dictionary.md) )                     |
 
 <!-- rst-class:: classref-section-separator -->
 

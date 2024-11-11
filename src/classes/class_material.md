@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Material.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Material.xml。 -->
 
 <div id="_class_material"></div>
 
@@ -21,17 +21,21 @@ Importantly, you can inherit from **Material** to create your own custom materia
 
 ## 属性
 
-| [`Material`](class_material.md) | [`next_pass`](#class_material_property_next_pass)             |
-| [`int`](class_int.md)           | [`render_priority`](#class_material_property_render_priority) |
+|||
+|:-:|:--|
+| [`Material`](class_material.md) | [`next_pass`](class_material.md#class_material_property_next_pass)             |
+| [`int`](class_int.md)           | [`render_priority`](class_material.md#class_material_property_render_priority) |
 
 ## 方法
 
-| [`bool`](class_bool.md)         | [`_can_do_next_pass`](#class_material_private_method__can_do_next_pass) ( ) virtual[^virtual] const[^const]               |
-| [`bool`](class_bool.md)         | [`_can_use_render_priority`](#class_material_private_method__can_use_render_priority) ( ) virtual[^virtual] const[^const] |
-| [Mode](#enum_shader_mode)       | [`_get_shader_mode`](#class_material_private_method__get_shader_mode) ( ) virtual[^virtual] const[^const]                 |
-| [`RID`](class_rid.md)           | [`_get_shader_rid`](#class_material_private_method__get_shader_rid) ( ) virtual[^virtual] const[^const]                   |
-| [`Resource`](class_resource.md) | [`create_placeholder`](#class_material_method_create_placeholder) ( ) const[^const]                                       |
-| `void`                          | [`inspect_native_shader_code`](#class_material_method_inspect_native_shader_code) ( )                                     |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)         | [`_can_do_next_pass`](class_material.md#class_material_private_method__can_do_next_pass) ( ) virtual[^virtual] const[^const]               |
+| [`bool`](class_bool.md)         | [`_can_use_render_priority`](class_material.md#class_material_private_method__can_use_render_priority) ( ) virtual[^virtual] const[^const] |
+| [Mode](#enum_shader_mode)       | [`_get_shader_mode`](class_material.md#class_material_private_method__get_shader_mode) ( ) virtual[^virtual] const[^const]                 |
+| [`RID`](class_rid.md)           | [`_get_shader_rid`](class_material.md#class_material_private_method__get_shader_rid) ( ) virtual[^virtual] const[^const]                   |
+| [`Resource`](class_resource.md) | [`create_placeholder`](class_material.md#class_material_method_create_placeholder) ( ) const[^const]                                       |
+| `void`                          | [`inspect_native_shader_code`](class_material.md#class_material_method_inspect_native_shader_code) ( )                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -43,13 +47,13 @@ Importantly, you can inherit from **Material** to create your own custom materia
 
 **RENDER_PRIORITY_MAX** = ``127`` <div id="class_material_constant_render_priority_max"></div>
 
-Maximum value for the [`render_priority`](#class_material_property_render_priority) parameter.
+Maximum value for the [`render_priority`](class_material.md#class_material_property_render_priority) parameter.
 
 <div id="_class_material_constant_render_priority_min"></div>
 
 **RENDER_PRIORITY_MIN** = ``-128`` <div id="class_material_constant_render_priority_min"></div>
 
-Minimum value for the [`render_priority`](#class_material_property_render_priority) parameter.
+Minimum value for the [`render_priority`](class_material.md#class_material_property_render_priority) parameter.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -66,7 +70,7 @@ Minimum value for the [`render_priority`](#class_material_property_render_priori
 
 Sets the **Material** to be used for the next pass. This renders the object again using a different material.
 
- **Note:** [`next_pass`](#class_material_property_next_pass) materials are not necessarily drawn immediately after the source **Material**. Draw order is determined by material properties, [`render_priority`](#class_material_property_render_priority), and distance to camera.
+ **Note:** [`next_pass`](class_material.md#class_material_property_next_pass) materials are not necessarily drawn immediately after the source **Material**. Draw order is determined by material properties, [`render_priority`](class_material.md#class_material_property_render_priority), and distance to camera.
 
  **Note:** This only applies to [`StandardMaterial3D`](class_standardmaterial3d.md) s and [`ShaderMaterial`](class_shadermaterial.md) s with type "Spatial".
 
@@ -81,7 +85,7 @@ Sets the **Material** to be used for the next pass. This renders the object agai
 - `void` **set_render_priority** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_render_priority** ( )
 
-Sets the render priority for objects in 3D scenes. Higher priority objects will be sorted in front of lower priority objects. In other words, all objects with [`render_priority`](#class_material_property_render_priority) `1` will render before all objects with [`render_priority`](#class_material_property_render_priority) `0`.
+Sets the render priority for objects in 3D scenes. Higher priority objects will be sorted in front of lower priority objects. In other words, all objects with [`render_priority`](class_material.md#class_material_property_render_priority) `1` will render before all objects with [`render_priority`](class_material.md#class_material_property_render_priority) `0`.
 
  **Note:** This only applies to [`StandardMaterial3D`](class_standardmaterial3d.md) s and [`ShaderMaterial`](class_shadermaterial.md) s with type "Spatial".
 
@@ -97,7 +101,7 @@ Sets the render priority for objects in 3D scenes. Higher priority objects will 
 
 [`bool`](class_bool.md) **_can_do_next_pass** ( ) virtual[^virtual] const[^const]<div id="class_material_private_method__can_do_next_pass"></div>
 
-Only exposed for the purpose of overriding. You cannot call this function directly. Used internally to determine if [`next_pass`](#class_material_property_next_pass) should be shown in the editor or not.
+Only exposed for the purpose of overriding. You cannot call this function directly. Used internally to determine if [`next_pass`](class_material.md#class_material_property_next_pass) should be shown in the editor or not.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,7 +111,7 @@ Only exposed for the purpose of overriding. You cannot call this function direct
 
 [`bool`](class_bool.md) **_can_use_render_priority** ( ) virtual[^virtual] const[^const]<div id="class_material_private_method__can_use_render_priority"></div>
 
-Only exposed for the purpose of overriding. You cannot call this function directly. Used internally to determine if [`render_priority`](#class_material_property_render_priority) should be shown in the editor or not.
+Only exposed for the purpose of overriding. You cannot call this function directly. Used internally to determine if [`render_priority`](class_material.md#class_material_property_render_priority) should be shown in the editor or not.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -147,7 +151,7 @@ Creates a placeholder version of this resource ([`PlaceholderMaterial`](class_pl
 
 `void` **inspect_native_shader_code** ( )<div id="class_material_method_inspect_native_shader_code"></div>
 
-Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code.
+Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code. See also [`Shader.inspect_native_shader_code`](class_shader.md#class_shader_method_inspect_native_shader_code).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

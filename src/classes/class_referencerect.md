@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ReferenceRect.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ReferenceRect.xml。 -->
 
 <div id="_class_referencerect"></div>
 
@@ -17,9 +17,11 @@ A rectangle box that displays only a colored border around its rectangle. It is 
 
 ## 属性
 
-| [`Color`](class_color.md) | [`border_color`](#class_referencerect_property_border_color) | ``Color(1, 0, 0, 1)`` |
-| [`float`](class_float.md) | [`border_width`](#class_referencerect_property_border_width) | ``1.0``               |
-| [`bool`](class_bool.md)   | [`editor_only`](#class_referencerect_property_editor_only)   | ``true``              |
+|||
+|:-:|:--|
+| [`Color`](class_color.md) | [`border_color`](class_referencerect.md#class_referencerect_property_border_color) | ``Color(1, 0, 0, 1)`` |
+| [`float`](class_float.md) | [`border_width`](class_referencerect.md#class_referencerect_property_border_width) | ``1.0``               |
+| [`bool`](class_bool.md)   | [`editor_only`](class_referencerect.md#class_referencerect_property_editor_only)   | ``true``              |
 
 <!-- rst-class:: classref-section-separator -->
 

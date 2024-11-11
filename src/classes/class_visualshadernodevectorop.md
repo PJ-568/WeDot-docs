@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeVectorOp.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeVectorOp.xml。 -->
 
 <div id="_class_visualshadernodevectorop"></div>
 
@@ -17,7 +17,9 @@ A visual shader node for use of vector operators. Operates on vector `a` and vec
 
 ## 属性
 
-| [Operator](#enum_visualshadernodevectorop_operator) | [`operator`](#class_visualshadernodevectorop_property_operator) | ``0`` |
+|||
+|:-:|:--|
+| [Operator](#enum_visualshadernodevectorop_operator) | [`operator`](class_visualshadernodevectorop.md#class_visualshadernodevectorop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

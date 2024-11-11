@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorFeatureProfile.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorFeatureProfile.xml。 -->
 
 <div id="_class_editorfeatureprofile"></div>
 
@@ -19,17 +19,19 @@ To manage editor feature profiles visually, use **Editor > Manage Feature Profil
 
 ## 方法
 
-| [`String`](class_string.md)       | [`get_feature_name`](#class_editorfeatureprofile_method_get_feature_name) ( feature: [Feature](#enum_editorfeatureprofile_feature) )                                                                                               |
-| [`bool`](class_bool.md)           | [`is_class_disabled`](#class_editorfeatureprofile_method_is_class_disabled) ( class_name: [`StringName`](class_stringname.md) ) const[^const]                                                                                      |
-| [`bool`](class_bool.md)           | [`is_class_editor_disabled`](#class_editorfeatureprofile_method_is_class_editor_disabled) ( class_name: [`StringName`](class_stringname.md) ) const[^const]                                                                        |
-| [`bool`](class_bool.md)           | [`is_class_property_disabled`](#class_editorfeatureprofile_method_is_class_property_disabled) ( class_name: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) ) const[^const]                     |
-| [`bool`](class_bool.md)           | [`is_feature_disabled`](#class_editorfeatureprofile_method_is_feature_disabled) ( feature: [Feature](#enum_editorfeatureprofile_feature) ) const[^const]                                                                           |
-| [Error](#enum_@globalscope_error) | [`load_from_file`](#class_editorfeatureprofile_method_load_from_file) ( path: [`String`](class_string.md) )                                                                                                                        |
-| [Error](#enum_@globalscope_error) | [`save_to_file`](#class_editorfeatureprofile_method_save_to_file) ( path: [`String`](class_string.md) )                                                                                                                            |
-| `void`                            | [`set_disable_class`](#class_editorfeatureprofile_method_set_disable_class) ( class_name: [`StringName`](class_stringname.md), disable: [`bool`](class_bool.md) )                                                                  |
-| `void`                            | [`set_disable_class_editor`](#class_editorfeatureprofile_method_set_disable_class_editor) ( class_name: [`StringName`](class_stringname.md), disable: [`bool`](class_bool.md) )                                                    |
-| `void`                            | [`set_disable_class_property`](#class_editorfeatureprofile_method_set_disable_class_property) ( class_name: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md), disable: [`bool`](class_bool.md) ) |
-| `void`                            | [`set_disable_feature`](#class_editorfeatureprofile_method_set_disable_feature) ( feature: [Feature](#enum_editorfeatureprofile_feature), disable: [`bool`](class_bool.md) )                                                       |
+|||
+|:-:|:--|
+| [`String`](class_string.md)       | [`get_feature_name`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_get_feature_name) ( feature: [Feature](#enum_editorfeatureprofile_feature) )                                                                                               |
+| [`bool`](class_bool.md)           | [`is_class_disabled`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_is_class_disabled) ( class_name: [`StringName`](class_stringname.md) ) const[^const]                                                                                      |
+| [`bool`](class_bool.md)           | [`is_class_editor_disabled`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_is_class_editor_disabled) ( class_name: [`StringName`](class_stringname.md) ) const[^const]                                                                        |
+| [`bool`](class_bool.md)           | [`is_class_property_disabled`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_is_class_property_disabled) ( class_name: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) ) const[^const]                     |
+| [`bool`](class_bool.md)           | [`is_feature_disabled`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_is_feature_disabled) ( feature: [Feature](#enum_editorfeatureprofile_feature) ) const[^const]                                                                           |
+| [Error](#enum_@globalscope_error) | [`load_from_file`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_load_from_file) ( path: [`String`](class_string.md) )                                                                                                                        |
+| [Error](#enum_@globalscope_error) | [`save_to_file`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_save_to_file) ( path: [`String`](class_string.md) )                                                                                                                            |
+| `void`                            | [`set_disable_class`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_set_disable_class) ( class_name: [`StringName`](class_stringname.md), disable: [`bool`](class_bool.md) )                                                                  |
+| `void`                            | [`set_disable_class_editor`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_set_disable_class_editor) ( class_name: [`StringName`](class_stringname.md), disable: [`bool`](class_bool.md) )                                                    |
+| `void`                            | [`set_disable_class_property`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_set_disable_class_property) ( class_name: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md), disable: [`bool`](class_bool.md) ) |
+| `void`                            | [`set_disable_feature`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_set_disable_feature) ( feature: [Feature](#enum_editorfeatureprofile_feature), disable: [`bool`](class_bool.md) )                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -89,9 +91,15 @@ The Import dock. If this feature is disabled, the Import dock won't be visible.
 
 The History dock. If this feature is disabled, the History dock won't be visible.
 
+<div id="_class_editorfeatureprofile_constant_feature_game"></div>
+
+[Feature](#enum_editorfeatureprofile_feature) **FEATURE_GAME** = ``8``
+
+The Game tab, which allows embedding the game window and selecting nodes by clicking inside of it. If this feature is disabled, the Game tab won't display.
+
 <div id="_class_editorfeatureprofile_constant_feature_max"></div>
 
-[Feature](#enum_editorfeatureprofile_feature) **FEATURE_MAX** = ``8``
+[Feature](#enum_editorfeatureprofile_feature) **FEATURE_MAX** = ``9``
 
 Represents the size of the [Feature](#enum_editorfeatureprofile_feature) enum.
 
@@ -155,9 +163,9 @@ Returns `true` if the `feature` is disabled. When a feature is disabled, it will
 
 [Error](#enum_@globalscope_error) **load_from_file** ( path: [`String`](class_string.md) )<div id="class_editorfeatureprofile_method_load_from_file"></div>
 
-Loads an editor feature profile from a file. The file must follow the JSON format obtained by using the feature profile manager's **Export** button or the [`save_to_file`](#class_editorfeatureprofile_method_save_to_file) method.
+Loads an editor feature profile from a file. The file must follow the JSON format obtained by using the feature profile manager's **Export** button or the [`save_to_file`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_save_to_file) method.
 
- **Note:** Feature profiles created via the user interface are loaded from the `feature_profiles` directory, as a file with the `.profile` extension. The editor configuration folder can be found by using [`EditorPaths.get_config_dir`](#class_editorpaths_method_get_config_dir).
+ **Note:** Feature profiles created via the user interface are loaded from the `feature_profiles` directory, as a file with the `.profile` extension. The editor configuration folder can be found by using [`EditorPaths.get_config_dir`](class_editorpaths.md#class_editorpaths_method_get_config_dir).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -167,9 +175,9 @@ Loads an editor feature profile from a file. The file must follow the JSON forma
 
 [Error](#enum_@globalscope_error) **save_to_file** ( path: [`String`](class_string.md) )<div id="class_editorfeatureprofile_method_save_to_file"></div>
 
-Saves the editor feature profile to a file in JSON format. It can then be imported using the feature profile manager's **Import** button or the [`load_from_file`](#class_editorfeatureprofile_method_load_from_file) method.
+Saves the editor feature profile to a file in JSON format. It can then be imported using the feature profile manager's **Import** button or the [`load_from_file`](class_editorfeatureprofile.md#class_editorfeatureprofile_method_load_from_file) method.
 
- **Note:** Feature profiles created via the user interface are saved in the `feature_profiles` directory, as a file with the `.profile` extension. The editor configuration folder can be found by using [`EditorPaths.get_config_dir`](#class_editorpaths_method_get_config_dir).
+ **Note:** Feature profiles created via the user interface are saved in the `feature_profiles` directory, as a file with the `.profile` extension. The editor configuration folder can be found by using [`EditorPaths.get_config_dir`](class_editorpaths.md#class_editorpaths_method_get_config_dir).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceSaver.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceSaver.xml。 -->
 
 <div id="_class_resourcesaver"></div>
 
@@ -19,10 +19,13 @@ It uses the many [`ResourceFormatSaver`](class_resourceformatsaver.md) classes r
 
 ## 方法
 
-| `void`                                            | [`add_resource_format_saver`](#class_resourcesaver_method_add_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false ) |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_recognized_extensions`](#class_resourcesaver_method_get_recognized_extensions) ( type: [`Resource`](class_resource.md) )                                                                          |
-| `void`                                            | [`remove_resource_format_saver`](#class_resourcesaver_method_remove_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md) )                                      |
-| [Error](#enum_@globalscope_error)                 | [`save`](#class_resourcesaver_method_save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) = "", flags: [SaverFlags](#enum_resourcesaver_saverflags) = 0 )               |
+|||
+|:-:|:--|
+| `void`                                            | [`add_resource_format_saver`](class_resourcesaver.md#class_resourcesaver_method_add_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false ) |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_recognized_extensions`](class_resourcesaver.md#class_resourcesaver_method_get_recognized_extensions) ( type: [`Resource`](class_resource.md) )                                                                          |
+| [`int`](class_int.md)                             | [`get_resource_id_for_path`](class_resourcesaver.md#class_resourcesaver_method_get_resource_id_for_path) ( path: [`String`](class_string.md), generate: [`bool`](class_bool.md) = false )                                     |
+| `void`                                            | [`remove_resource_format_saver`](class_resourcesaver.md#class_resourcesaver_method_remove_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md) )                                      |
+| [Error](#enum_@globalscope_error)                 | [`save`](class_resourcesaver.md#class_resourcesaver_method_save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) = "", flags: [SaverFlags](#enum_resourcesaver_saverflags) = 0 )               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +59,7 @@ Bundles external resources.
 
 [SaverFlags](#enum_resourcesaver_saverflags) **FLAG_CHANGE_PATH** = ``4``
 
-Changes the [`Resource.resource_path`](#class_resource_property_resource_path) of the saved resource to match its new location.
+Changes the [`Resource.resource_path`](class_resource.md#class_resource_property_resource_path) of the saved resource to match its new location.
 
 <div id="_class_resourcesaver_constant_flag_omit_editor_properties"></div>
 
@@ -68,19 +71,19 @@ Do not save editor-specific metadata (identified by their `__editor` prefix).
 
 [SaverFlags](#enum_resourcesaver_saverflags) **FLAG_SAVE_BIG_ENDIAN** = ``16``
 
-Save as big endian (see [`FileAccess.big_endian`](#class_fileaccess_property_big_endian)).
+Save as big endian (see [`FileAccess.big_endian`](class_fileaccess.md#class_fileaccess_property_big_endian)).
 
 <div id="_class_resourcesaver_constant_flag_compress"></div>
 
 [SaverFlags](#enum_resourcesaver_saverflags) **FLAG_COMPRESS** = ``32``
 
-Compress the resource on save using [`FileAccess.COMPRESSION_ZSTD`](#class_fileaccess_constant_compression_zstd). Only available for binary resource types.
+Compress the resource on save using [`FileAccess.COMPRESSION_ZSTD`](class_fileaccess.md#class_fileaccess_constant_compression_zstd). Only available for binary resource types.
 
 <div id="_class_resourcesaver_constant_flag_replace_subresource_paths"></div>
 
 [SaverFlags](#enum_resourcesaver_saverflags) **FLAG_REPLACE_SUBRESOURCE_PATHS** = ``64``
 
-Take over the paths of the saved subresources (see [`Resource.take_over_path`](#class_resource_method_take_over_path)).
+Take over the paths of the saved subresources (see [`Resource.take_over_path`](class_resource.md#class_resource_method_take_over_path)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -92,7 +95,7 @@ Take over the paths of the saved subresources (see [`Resource.take_over_path`](#
 
 `void` **add_resource_format_saver** ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false )<div id="class_resourcesaver_method_add_resource_format_saver"></div>
 
-Registers a new [`ResourceFormatSaver`](class_resourceformatsaver.md). The ResourceSaver will use the ResourceFormatSaver as described in [`save`](#class_resourcesaver_method_save).
+Registers a new [`ResourceFormatSaver`](class_resourceformatsaver.md). The ResourceSaver will use the ResourceFormatSaver as described in [`save`](class_resourcesaver.md#class_resourcesaver_method_save).
 
 This method is performed implicitly for ResourceFormatSavers written in GDScript (see [`ResourceFormatSaver`](class_resourceformatsaver.md) for more information).
 
@@ -105,6 +108,16 @@ This method is performed implicitly for ResourceFormatSavers written in GDScript
 [`PackedStringArray`](class_packedstringarray.md) **get_recognized_extensions** ( type: [`Resource`](class_resource.md) )<div id="class_resourcesaver_method_get_recognized_extensions"></div>
 
 Returns the list of extensions available for saving a resource of a given type.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resourcesaver_method_get_resource_id_for_path"></div>
+
+[`int`](class_int.md) **get_resource_id_for_path** ( path: [`String`](class_string.md), generate: [`bool`](class_bool.md) = false )<div id="class_resourcesaver_method_get_resource_id_for_path"></div>
+
+Returns the resource ID for the given path. If `generate` is `true`, a new resource ID will be generated if one for the path is not found. If `generate` is `false` and the path is not found, [`ResourceUID.INVALID_ID`](class_resourceuid.md#class_resourceuid_constant_invalid_id) is returned.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,11 +137,11 @@ Unregisters the given [`ResourceFormatSaver`](class_resourceformatsaver.md).
 
 [Error](#enum_@globalscope_error) **save** ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) = "", flags: [SaverFlags](#enum_resourcesaver_saverflags) = 0 )<div id="class_resourcesaver_method_save"></div>
 
-Saves a resource to disk to the given path, using a [`ResourceFormatSaver`](class_resourceformatsaver.md) that recognizes the resource object. If `path` is empty, **ResourceSaver** will try to use [`Resource.resource_path`](#class_resource_property_resource_path).
+Saves a resource to disk to the given path, using a [`ResourceFormatSaver`](class_resourceformatsaver.md) that recognizes the resource object. If `path` is empty, **ResourceSaver** will try to use [`Resource.resource_path`](class_resource.md#class_resource_property_resource_path).
 
 The `flags` bitmask can be specified to customize the save behavior using [SaverFlags](#enum_resourcesaver_saverflags) flags.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success.
 
  **Note:** When the project is running, any generated UID associated with the resource will not be saved as the required code is only executed in editor mode.
 

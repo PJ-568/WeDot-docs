@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Skin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Skin.xml。 -->
 
 <div id="_class_skin"></div>
 
@@ -13,17 +13,19 @@
 
 ## 方法
 
-| `void`                                | [`add_bind`](#class_skin_method_add_bind) ( bone: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                   |
-| `void`                                | [`add_named_bind`](#class_skin_method_add_named_bind) ( name: [`String`](class_string.md), pose: [`Transform3D`](class_transform3d.md) ) |
-| `void`                                | [`clear_binds`](#class_skin_method_clear_binds) ( )                                                                                      |
-| [`int`](class_int.md)                 | [`get_bind_bone`](#class_skin_method_get_bind_bone) ( bind_index: [`int`](class_int.md) ) const[^const]                                  |
-| [`int`](class_int.md)                 | [`get_bind_count`](#class_skin_method_get_bind_count) ( ) const[^const]                                                                  |
-| [`StringName`](class_stringname.md)   | [`get_bind_name`](#class_skin_method_get_bind_name) ( bind_index: [`int`](class_int.md) ) const[^const]                                  |
-| [`Transform3D`](class_transform3d.md) | [`get_bind_pose`](#class_skin_method_get_bind_pose) ( bind_index: [`int`](class_int.md) ) const[^const]                                  |
-| `void`                                | [`set_bind_bone`](#class_skin_method_set_bind_bone) ( bind_index: [`int`](class_int.md), bone: [`int`](class_int.md) )                   |
-| `void`                                | [`set_bind_count`](#class_skin_method_set_bind_count) ( bind_count: [`int`](class_int.md) )                                              |
-| `void`                                | [`set_bind_name`](#class_skin_method_set_bind_name) ( bind_index: [`int`](class_int.md), name: [`StringName`](class_stringname.md) )     |
-| `void`                                | [`set_bind_pose`](#class_skin_method_set_bind_pose) ( bind_index: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )   |
+|||
+|:-:|:--|
+| `void`                                | [`add_bind`](class_skin.md#class_skin_method_add_bind) ( bone: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                   |
+| `void`                                | [`add_named_bind`](class_skin.md#class_skin_method_add_named_bind) ( name: [`String`](class_string.md), pose: [`Transform3D`](class_transform3d.md) ) |
+| `void`                                | [`clear_binds`](class_skin.md#class_skin_method_clear_binds) ( )                                                                                      |
+| [`int`](class_int.md)                 | [`get_bind_bone`](class_skin.md#class_skin_method_get_bind_bone) ( bind_index: [`int`](class_int.md) ) const[^const]                                  |
+| [`int`](class_int.md)                 | [`get_bind_count`](class_skin.md#class_skin_method_get_bind_count) ( ) const[^const]                                                                  |
+| [`StringName`](class_stringname.md)   | [`get_bind_name`](class_skin.md#class_skin_method_get_bind_name) ( bind_index: [`int`](class_int.md) ) const[^const]                                  |
+| [`Transform3D`](class_transform3d.md) | [`get_bind_pose`](class_skin.md#class_skin_method_get_bind_pose) ( bind_index: [`int`](class_int.md) ) const[^const]                                  |
+| `void`                                | [`set_bind_bone`](class_skin.md#class_skin_method_set_bind_bone) ( bind_index: [`int`](class_int.md), bone: [`int`](class_int.md) )                   |
+| `void`                                | [`set_bind_count`](class_skin.md#class_skin_method_set_bind_count) ( bind_count: [`int`](class_int.md) )                                              |
+| `void`                                | [`set_bind_name`](class_skin.md#class_skin_method_set_bind_name) ( bind_index: [`int`](class_int.md), name: [`StringName`](class_stringname.md) )     |
+| `void`                                | [`set_bind_pose`](class_skin.md#class_skin_method_set_bind_pose) ( bind_index: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )   |
 
 <!-- rst-class:: classref-section-separator -->
 

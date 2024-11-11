@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorSceneFormatImporter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorSceneFormatImporter.xml。 -->
 
 <div id="_class_editorsceneformatimporter"></div>
 
@@ -17,15 +17,17 @@ Imports scenes from third-parties' 3D files.
 
 **EditorSceneFormatImporter** allows to define an importer script for a third-party 3D format.
 
-To use **EditorSceneFormatImporter**, register it using the [`EditorPlugin.add_scene_format_importer_plugin`](#class_editorplugin_method_add_scene_format_importer_plugin) method first.
+To use **EditorSceneFormatImporter**, register it using the [`EditorPlugin.add_scene_format_importer_plugin`](class_editorplugin.md#class_editorplugin_method_add_scene_format_importer_plugin) method first.
 
 ## 方法
 
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_extensions`](#class_editorsceneformatimporter_private_method__get_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
-| [`int`](class_int.md)                             | [`_get_import_flags`](#class_editorsceneformatimporter_private_method__get_import_flags) ( ) virtual[^virtual] const[^const]                                                                                                                          |
-| `void`                                            | [`_get_import_options`](#class_editorsceneformatimporter_private_method__get_import_options) ( path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                  |
-| [`Variant`](class_variant.md)                     | [`_get_option_visibility`](#class_editorsceneformatimporter_private_method__get_option_visibility) ( path: [`String`](class_string.md), for_animation: [`bool`](class_bool.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
-| [`Object`](class_object.md)                       | [`_import_scene`](#class_editorsceneformatimporter_private_method__import_scene) ( path: [`String`](class_string.md), flags: [`int`](class_int.md), options: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                  |
+|||
+|:-:|:--|
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_extensions`](class_editorsceneformatimporter.md#class_editorsceneformatimporter_private_method__get_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
+| [`int`](class_int.md)                             | [`_get_import_flags`](class_editorsceneformatimporter.md#class_editorsceneformatimporter_private_method__get_import_flags) ( ) virtual[^virtual] const[^const]                                                                                                                          |
+| `void`                                            | [`_get_import_options`](class_editorsceneformatimporter.md#class_editorsceneformatimporter_private_method__get_import_options) ( path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                  |
+| [`Variant`](class_variant.md)                     | [`_get_option_visibility`](class_editorsceneformatimporter.md#class_editorsceneformatimporter_private_method__get_option_visibility) ( path: [`String`](class_string.md), for_animation: [`bool`](class_bool.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
+| [`Object`](class_object.md)                       | [`_import_scene`](class_editorsceneformatimporter.md#class_editorsceneformatimporter_private_method__import_scene) ( path: [`String`](class_string.md), flags: [`int`](class_int.md), options: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                  |
 
 <!-- rst-class:: classref-section-separator -->
 

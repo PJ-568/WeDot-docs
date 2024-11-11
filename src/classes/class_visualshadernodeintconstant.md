@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeIntConstant.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeIntConstant.xml。 -->
 
 <div id="_class_visualshadernodeintconstant"></div>
 
@@ -17,7 +17,9 @@ Translated to `int` in the shader language.
 
 ## 属性
 
-| [`int`](class_int.md) | [`constant`](#class_visualshadernodeintconstant_property_constant) | ``0`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`constant`](class_visualshadernodeintconstant.md#class_visualshadernodeintconstant_property_constant) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

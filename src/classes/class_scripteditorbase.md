@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ScriptEditorBase.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ScriptEditorBase.xml。 -->
 
 <div id="_class_scripteditorbase"></div>
 
@@ -17,8 +17,10 @@ Base editor for editing scripts in the [`ScriptEditor`](class_scripteditor.md). 
 
 ## 方法
 
-| `void`                        | [`add_syntax_highlighter`](#class_scripteditorbase_method_add_syntax_highlighter) ( highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) ) |
-| [`Control`](class_control.md) | [`get_base_editor`](#class_scripteditorbase_method_get_base_editor) ( ) const[^const]                                                                            |
+|||
+|:-:|:--|
+| `void`                        | [`add_syntax_highlighter`](class_scripteditorbase.md#class_scripteditorbase_method_add_syntax_highlighter) ( highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) ) |
+| [`Control`](class_control.md) | [`get_base_editor`](class_scripteditorbase.md#class_scripteditorbase_method_get_base_editor) ( ) const[^const]                                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -50,7 +52,7 @@ Emitted when the user requests a specific documentation page.
 
 **go_to_method** ( script: [`Object`](class_object.md), method: [`String`](class_string.md) ) <div id="class_scripteditorbase_signal_go_to_method"></div>
 
-Emitted when the user requests to view a specific method of a script, similar to [`request_open_script_at_line`](#class_scripteditorbase_signal_request_open_script_at_line).
+Emitted when the user requests to view a specific method of a script, similar to [`request_open_script_at_line`](class_scripteditorbase.md#class_scripteditorbase_signal_request_open_script_at_line).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -90,7 +92,7 @@ Emitted when the user requests contextual help.
 
 **request_open_script_at_line** ( script: [`Object`](class_object.md), line: [`int`](class_int.md) ) <div id="class_scripteditorbase_signal_request_open_script_at_line"></div>
 
-Emitted when the user requests to view a specific line of a script, similar to [`go_to_method`](#class_scripteditorbase_signal_go_to_method).
+Emitted when the user requests to view a specific line of a script, similar to [`go_to_method`](class_scripteditorbase.md#class_scripteditorbase_signal_go_to_method).
 
 <!-- rst-class:: classref-item-separator -->
 

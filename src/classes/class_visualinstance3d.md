@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualInstance3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualInstance3D.xml。 -->
 
 <div id="_class_visualinstance3d"></div>
 
@@ -9,7 +9,7 @@
 
 **继承：** [`Node3D`](class_node3d.md) **<** [`Node`](class_node.md) **<** [`Object`](class_object.md)
 
-**派生：** [`Decal`](class_decal.md), [`FogVolume`](class_fogvolume.md), [`GeometryInstance3D`](class_geometryinstance3d.md), [`GPUParticlesAttractor3D`](class_gpuparticlesattractor3d.md), [`GPUParticlesCollision3D`](class_gpuparticlescollision3d.md), [`Light3D`](class_light3d.md), [`LightmapGI`](class_lightmapgi.md), [`OccluderInstance3D`](class_occluderinstance3d.md), [`ReflectionProbe`](class_reflectionprobe.md), [`RootMotionView`](class_rootmotionview.md), [`VisibleOnScreenNotifier3D`](class_visibleonscreennotifier3d.md), [`VoxelGI`](class_voxelgi.md)
+**派生：** [`Decal`](class_decal.md), [`FogVolume`](class_fogvolume.md), [`GeometryInstance3D`](class_geometryinstance3d.md), [`GPUParticlesAttractor3D`](class_gpuparticlesattractor3d.md), [`GPUParticlesCollision3D`](class_gpuparticlescollision3d.md), [`Light3D`](class_light3d.md), [`LightmapGI`](class_lightmapgi.md), [`OccluderInstance3D`](class_occluderinstance3d.md), [`OpenXRVisibilityMask`](class_openxrvisibilitymask.md), [`ReflectionProbe`](class_reflectionprobe.md), [`RootMotionView`](class_rootmotionview.md), [`VisibleOnScreenNotifier3D`](class_visibleonscreennotifier3d.md), [`VoxelGI`](class_voxelgi.md)
 
 Parent of all visual 3D nodes.
 
@@ -19,19 +19,23 @@ The **VisualInstance3D** is used to connect a resource to a visual representatio
 
 ## 属性
 
-| [`int`](class_int.md)     | [`layers`](#class_visualinstance3d_property_layers)                                   | ``1``   |
-| [`float`](class_float.md) | [`sorting_offset`](#class_visualinstance3d_property_sorting_offset)                   | ``0.0`` |
-| [`bool`](class_bool.md)   | [`sorting_use_aabb_center`](#class_visualinstance3d_property_sorting_use_aabb_center) |         |
+|||
+|:-:|:--|
+| [`int`](class_int.md)     | [`layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers)                                   | ``1``   |
+| [`float`](class_float.md) | [`sorting_offset`](class_visualinstance3d.md#class_visualinstance3d_property_sorting_offset)                   | ``0.0`` |
+| [`bool`](class_bool.md)   | [`sorting_use_aabb_center`](class_visualinstance3d.md#class_visualinstance3d_property_sorting_use_aabb_center) |         |
 
 ## 方法
 
-| [`AABB`](class_aabb.md) | [`_get_aabb`](#class_visualinstance3d_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                   |
-| [`AABB`](class_aabb.md) | [`get_aabb`](#class_visualinstance3d_method_get_aabb) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)   | [`get_base`](#class_visualinstance3d_method_get_base) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)   | [`get_instance`](#class_visualinstance3d_method_get_instance) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md) | [`get_layer_mask_value`](#class_visualinstance3d_method_get_layer_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| `void`                  | [`set_base`](#class_visualinstance3d_method_set_base) ( base: [`RID`](class_rid.md) )                                                                 |
-| `void`                  | [`set_layer_mask_value`](#class_visualinstance3d_method_set_layer_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+|||
+|:-:|:--|
+| [`AABB`](class_aabb.md) | [`_get_aabb`](class_visualinstance3d.md#class_visualinstance3d_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                   |
+| [`AABB`](class_aabb.md) | [`get_aabb`](class_visualinstance3d.md#class_visualinstance3d_method_get_aabb) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)   | [`get_base`](class_visualinstance3d.md#class_visualinstance3d_method_get_base) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)   | [`get_instance`](class_visualinstance3d.md#class_visualinstance3d_method_get_instance) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md) | [`get_layer_mask_value`](class_visualinstance3d.md#class_visualinstance3d_method_get_layer_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| `void`                  | [`set_base`](class_visualinstance3d.md#class_visualinstance3d_method_set_base) ( base: [`RID`](class_rid.md) )                                                                 |
+| `void`                  | [`set_layer_mask_value`](class_visualinstance3d.md#class_visualinstance3d_method_set_layer_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,9 +56,9 @@ This object will only be visible for [`Camera3D`](class_camera3d.md) s whose cul
 
 For [`Light3D`](class_light3d.md) s, this can be used to control which **VisualInstance3D** s are affected by a specific light. For [`GPUParticles3D`](class_gpuparticles3d.md), this can be used to control which particles are effected by a specific attractor. For [`Decal`](class_decal.md) s, this can be used to control which **VisualInstance3D** s are affected by a specific decal.
 
-To adjust [`layers`](#class_visualinstance3d_property_layers) more easily using a script, use [`get_layer_mask_value`](#class_visualinstance3d_method_get_layer_mask_value) and [`set_layer_mask_value`](#class_visualinstance3d_method_set_layer_mask_value).
+To adjust [`layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers) more easily using a script, use [`get_layer_mask_value`](class_visualinstance3d.md#class_visualinstance3d_method_get_layer_mask_value) and [`set_layer_mask_value`](class_visualinstance3d.md#class_visualinstance3d_method_set_layer_mask_value).
 
- **Note:** [`VoxelGI`](class_voxelgi.md), SDFGI and [`LightmapGI`](class_lightmapgi.md) will always take all layers into account to determine what contributes to global illumination. If this is an issue, set [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode) to [`GeometryInstance3D.GI_MODE_DISABLED`](#class_geometryinstance3d_constant_gi_mode_disabled) for meshes and [`Light3D.light_bake_mode`](#class_light3d_property_light_bake_mode) to [`Light3D.BAKE_DISABLED`](#class_light3d_constant_bake_disabled) for lights to exclude them from global illumination.
+ **Note:** [`VoxelGI`](class_voxelgi.md), SDFGI and [`LightmapGI`](class_lightmapgi.md) will always take all layers into account to determine what contributes to global illumination. If this is an issue, set [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode) to [`GeometryInstance3D.GI_MODE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_disabled) for meshes and [`Light3D.light_bake_mode`](class_light3d.md#class_light3d_property_light_bake_mode) to [`Light3D.BAKE_DISABLED`](class_light3d.md#class_light3d_constant_bake_disabled) for lights to exclude them from global illumination.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +128,7 @@ Returns the RID of the resource associated with this **VisualInstance3D**. For e
 
 [`RID`](class_rid.md) **get_instance** ( ) const[^const]<div id="class_visualinstance3d_method_get_instance"></div>
 
-Returns the RID of this instance. This RID is the same as the RID returned by [`RenderingServer.instance_create`](#class_renderingserver_method_instance_create). This RID is needed if you want to call [`RenderingServer`](class_renderingserver.md) functions directly on this **VisualInstance3D**.
+Returns the RID of this instance. This RID is the same as the RID returned by [`RenderingServer.instance_create`](class_renderingserver.md#class_renderingserver_method_instance_create). This RID is needed if you want to call [`RenderingServer`](class_renderingserver.md) functions directly on this **VisualInstance3D**.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -134,7 +138,7 @@ Returns the RID of this instance. This RID is the same as the RID returned by [`
 
 [`bool`](class_bool.md) **get_layer_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_visualinstance3d_method_get_layer_mask_value"></div>
 
-Returns whether or not the specified layer of the [`layers`](#class_visualinstance3d_property_layers) is enabled, given a `layer_number` between 1 and 20.
+Returns whether or not the specified layer of the [`layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers) is enabled, given a `layer_number` between 1 and 20.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -144,7 +148,7 @@ Returns whether or not the specified layer of the [`layers`](#class_visualinstan
 
 `void` **set_base** ( base: [`RID`](class_rid.md) )<div id="class_visualinstance3d_method_set_base"></div>
 
-Sets the resource that is instantiated by this **VisualInstance3D**, which changes how the engine handles the **VisualInstance3D** under the hood. Equivalent to [`RenderingServer.instance_set_base`](#class_renderingserver_method_instance_set_base).
+Sets the resource that is instantiated by this **VisualInstance3D**, which changes how the engine handles the **VisualInstance3D** under the hood. Equivalent to [`RenderingServer.instance_set_base`](class_renderingserver.md#class_renderingserver_method_instance_set_base).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -154,7 +158,7 @@ Sets the resource that is instantiated by this **VisualInstance3D**, which chang
 
 `void` **set_layer_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_visualinstance3d_method_set_layer_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`layers`](#class_visualinstance3d_property_layers), given a `layer_number` between 1 and 20.
+Based on `value`, enables or disables the specified layer in the [`layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers), given a `layer_number` between 1 and 20.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

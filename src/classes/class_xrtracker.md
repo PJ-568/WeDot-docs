@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/XRTracker.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/XRTracker.xml。 -->
 
 <div id="_class_xrtracker"></div>
 
@@ -19,9 +19,11 @@ This object is the base of all XR trackers.
 
 ## 属性
 
-| [`String`](class_string.md)               | [`description`](#class_xrtracker_property_description) | ``""``         |
-| [`StringName`](class_stringname.md)       | [`name`](#class_xrtracker_property_name)               | ``&"Unknown"`` |
-| [TrackerType](#enum_xrserver_trackertype) | [`type`](#class_xrtracker_property_type)               | ``128``        |
+|||
+|:-:|:--|
+| [`String`](class_string.md)               | [`description`](class_xrtracker.md#class_xrtracker_property_description) | ``""``         |
+| [`StringName`](class_stringname.md)       | [`name`](class_xrtracker.md#class_xrtracker_property_name)               | ``&"Unknown"`` |
+| [TrackerType](#enum_xrserver_trackertype) | [`type`](class_xrtracker.md#class_xrtracker_property_type)               | ``128``        |
 
 <!-- rst-class:: classref-section-separator -->
 

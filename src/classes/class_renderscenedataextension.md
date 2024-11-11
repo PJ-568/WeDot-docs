@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderSceneDataExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderSceneDataExtension.xml。 -->
 
 <div id="_class_renderscenedataextension"></div>
 
@@ -17,12 +17,14 @@ This class allows for a RenderSceneData implementation to be made in GDExtension
 
 ## 方法
 
-| [`Projection`](class_projection.md)   | [`_get_cam_projection`](#class_renderscenedataextension_private_method__get_cam_projection) ( ) virtual[^virtual] const[^const]                               |
-| [`Transform3D`](class_transform3d.md) | [`_get_cam_transform`](#class_renderscenedataextension_private_method__get_cam_transform) ( ) virtual[^virtual] const[^const]                                 |
-| [`RID`](class_rid.md)                 | [`_get_uniform_buffer`](#class_renderscenedataextension_private_method__get_uniform_buffer) ( ) virtual[^virtual] const[^const]                               |
-| [`int`](class_int.md)                 | [`_get_view_count`](#class_renderscenedataextension_private_method__get_view_count) ( ) virtual[^virtual] const[^const]                                       |
-| [`Vector3`](class_vector3.md)         | [`_get_view_eye_offset`](#class_renderscenedataextension_private_method__get_view_eye_offset) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| [`Projection`](class_projection.md)   | [`_get_view_projection`](#class_renderscenedataextension_private_method__get_view_projection) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+|||
+|:-:|:--|
+| [`Projection`](class_projection.md)   | [`_get_cam_projection`](class_renderscenedataextension.md#class_renderscenedataextension_private_method__get_cam_projection) ( ) virtual[^virtual] const[^const]                               |
+| [`Transform3D`](class_transform3d.md) | [`_get_cam_transform`](class_renderscenedataextension.md#class_renderscenedataextension_private_method__get_cam_transform) ( ) virtual[^virtual] const[^const]                                 |
+| [`RID`](class_rid.md)                 | [`_get_uniform_buffer`](class_renderscenedataextension.md#class_renderscenedataextension_private_method__get_uniform_buffer) ( ) virtual[^virtual] const[^const]                               |
+| [`int`](class_int.md)                 | [`_get_view_count`](class_renderscenedataextension.md#class_renderscenedataextension_private_method__get_view_count) ( ) virtual[^virtual] const[^const]                                       |
+| [`Vector3`](class_vector3.md)         | [`_get_view_eye_offset`](class_renderscenedataextension.md#class_renderscenedataextension_private_method__get_view_eye_offset) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| [`Projection`](class_projection.md)   | [`_get_view_projection`](class_renderscenedataextension.md#class_renderscenedataextension_private_method__get_view_projection) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

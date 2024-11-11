@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PlaceholderTexture2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PlaceholderTexture2D.xml。 -->
 
 <div id="_class_placeholdertexture2d"></div>
 
@@ -23,8 +23,10 @@ This class is used when loading a project that uses a [`Texture2D`](class_textur
 
 ## 属性
 
-| [`bool`](class_bool.md)       | resource_local_to_scene                             | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`Vector2`](class_vector2.md) | [`size`](#class_placeholdertexture2d_property_size) | ``Vector2(1, 1)``                                                                    |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)       | resource_local_to_scene                                                          | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`Vector2`](class_vector2.md) | [`size`](class_placeholdertexture2d.md#class_placeholdertexture2d_property_size) | ``Vector2(1, 1)``                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceImporterBMFont.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceImporterBMFont.xml。 -->
 
 <div id="_class_resourceimporterbmfont"></div>
 
@@ -21,9 +21,11 @@ See also [`ResourceImporterDynamicFont`](class_resourceimporterdynamicfont.md).
 
 ## 属性
 
-| [`bool`](class_bool.md)   | [`compress`](#class_resourceimporterbmfont_property_compress)         | ``true`` |
-| [`Array`](class_array.md) | [`fallbacks`](#class_resourceimporterbmfont_property_fallbacks)       | ``[]``   |
-| [`int`](class_int.md)     | [`scaling_mode`](#class_resourceimporterbmfont_property_scaling_mode) | ``2``    |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)   | [`compress`](class_resourceimporterbmfont.md#class_resourceimporterbmfont_property_compress)         | ``true`` |
+| [`Array`](class_array.md) | [`fallbacks`](class_resourceimporterbmfont.md#class_resourceimporterbmfont_property_fallbacks)       | ``[]``   |
+| [`int`](class_int.md)     | [`scaling_mode`](class_resourceimporterbmfont.md#class_resourceimporterbmfont_property_scaling_mode) | ``2``    |
 
 <!-- rst-class:: classref-section-separator -->
 

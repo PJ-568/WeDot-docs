@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeBooleanConstant.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeBooleanConstant.xml。 -->
 
 <div id="_class_visualshadernodebooleanconstant"></div>
 
@@ -19,7 +19,9 @@ Translated to `bool` in the shader language.
 
 ## 属性
 
-| [`bool`](class_bool.md) | [`constant`](#class_visualshadernodebooleanconstant_property_constant) | ``false`` |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`constant`](class_visualshadernodebooleanconstant.md#class_visualshadernodebooleanconstant_property_constant) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

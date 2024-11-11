@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TextServerManager.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TextServerManager.xml。 -->
 
 <div id="_class_textservermanager"></div>
 
@@ -19,14 +19,16 @@ A singleton for managing [`TextServer`](class_textserver.md) implementations.
 
 ## 方法
 
-| `void`                                                      | [`add_interface`](#class_textservermanager_method_add_interface) ( interface: [`TextServer`](class_textserver.md) )             |
-| [`TextServer`](class_textserver.md)                         | [`find_interface`](#class_textservermanager_method_find_interface) ( name: [`String`](class_string.md) ) const[^const]          |
-| [`TextServer`](class_textserver.md)                         | [`get_interface`](#class_textservermanager_method_get_interface) ( idx: [`int`](class_int.md) ) const[^const]                   |
-| [`int`](class_int.md)                                       | [`get_interface_count`](#class_textservermanager_method_get_interface_count) ( ) const[^const]                                  |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_interfaces`](#class_textservermanager_method_get_interfaces) ( ) const[^const]                                            |
-| [`TextServer`](class_textserver.md)                         | [`get_primary_interface`](#class_textservermanager_method_get_primary_interface) ( ) const[^const]                              |
-| `void`                                                      | [`remove_interface`](#class_textservermanager_method_remove_interface) ( interface: [`TextServer`](class_textserver.md) )       |
-| `void`                                                      | [`set_primary_interface`](#class_textservermanager_method_set_primary_interface) ( index: [`TextServer`](class_textserver.md) ) |
+|||
+|:-:|:--|
+| `void`                                                      | [`add_interface`](class_textservermanager.md#class_textservermanager_method_add_interface) ( interface: [`TextServer`](class_textserver.md) )             |
+| [`TextServer`](class_textserver.md)                         | [`find_interface`](class_textservermanager.md#class_textservermanager_method_find_interface) ( name: [`String`](class_string.md) ) const[^const]          |
+| [`TextServer`](class_textserver.md)                         | [`get_interface`](class_textservermanager.md#class_textservermanager_method_get_interface) ( idx: [`int`](class_int.md) ) const[^const]                   |
+| [`int`](class_int.md)                                       | [`get_interface_count`](class_textservermanager.md#class_textservermanager_method_get_interface_count) ( ) const[^const]                                  |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_interfaces`](class_textservermanager.md#class_textservermanager_method_get_interfaces) ( ) const[^const]                                            |
+| [`TextServer`](class_textserver.md)                         | [`get_primary_interface`](class_textservermanager.md#class_textservermanager_method_get_primary_interface) ( ) const[^const]                              |
+| `void`                                                      | [`remove_interface`](class_textservermanager.md#class_textservermanager_method_remove_interface) ( interface: [`TextServer`](class_textserver.md) )       |
+| `void`                                                      | [`set_primary_interface`](class_textservermanager.md#class_textservermanager_method_set_primary_interface) ( index: [`TextServer`](class_textserver.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

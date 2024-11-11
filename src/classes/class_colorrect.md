@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ColorRect.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ColorRect.xml。 -->
 
 <div id="_class_colorrect"></div>
 
@@ -13,11 +13,13 @@ A control that displays a solid color rectangle.
 
 ## 描述
 
-Displays a rectangle filled with a solid [`color`](#class_colorrect_property_color). If you need to display the border alone, consider using a [`Panel`](class_panel.md) instead.
+Displays a rectangle filled with a solid [`color`](class_colorrect.md#class_colorrect_property_color). If you need to display the border alone, consider using a [`Panel`](class_panel.md) instead.
 
 ## 属性
 
-| [`Color`](class_color.md) | [`color`](#class_colorrect_property_color) | ``Color(1, 1, 1, 1)`` |
+|||
+|:-:|:--|
+| [`Color`](class_color.md) | [`color`](class_colorrect.md#class_colorrect_property_color) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RichTextEffect.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RichTextEffect.xml。 -->
 
 <div id="_class_richtexteffect"></div>
 
@@ -13,7 +13,7 @@ A custom effect for a [`RichTextLabel`](class_richtextlabel.md).
 
 ## 描述
 
-A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be loaded in the [`RichTextLabel`](class_richtextlabel.md) inspector or using [`RichTextLabel.install_effect`](#class_richtextlabel_method_install_effect).
+A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be loaded in the [`RichTextLabel`](class_richtextlabel.md) inspector or using [`RichTextLabel.install_effect`](class_richtextlabel.md#class_richtextlabel_method_install_effect).
 
  **Note:** For a **RichTextEffect** to be usable, a BBCode tag must be defined as a member variable called `bbcode` in the script.
 
@@ -41,7 +41,9 @@ A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be lo
 
 ## 方法
 
-| [`bool`](class_bool.md) | [`_process_custom_fx`](#class_richtexteffect_private_method__process_custom_fx) ( char_fx: [`CharFXTransform`](class_charfxtransform.md) ) virtual[^virtual] const[^const] |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`_process_custom_fx`](class_richtexteffect.md#class_richtexteffect_private_method__process_custom_fx) ( char_fx: [`CharFXTransform`](class_charfxtransform.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/csg/doc_classes/CSGPrimitive3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/csg/doc_classes/CSGPrimitive3D.xml。 -->
 
 <div id="_class_csgprimitive3d"></div>
 
@@ -21,7 +21,9 @@ Parent class for various CSG primitives. It contains code and functionality that
 
 ## 属性
 
-| [`bool`](class_bool.md) | [`flip_faces`](#class_csgprimitive3d_property_flip_faces) | ``false`` |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`flip_faces`](class_csgprimitive3d.md#class_csgprimitive3d_property_flip_faces) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

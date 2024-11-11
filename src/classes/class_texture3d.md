@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Texture3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Texture3D.xml。 -->
 
 <div id="_class_texture3d"></div>
 
@@ -23,19 +23,21 @@ To create such a texture file yourself, reimport your image files using the Godo
 
 ## 方法
 
-| [Array](class_array.md) [`Image`](class_image.md) | [`_get_data`](#class_texture3d_private_method__get_data) ( ) virtual[^virtual] const[^const]       |
-| [`int`](class_int.md)                             | [`_get_depth`](#class_texture3d_private_method__get_depth) ( ) virtual[^virtual] const[^const]     |
-| [Format](#enum_image_format)                      | [`_get_format`](#class_texture3d_private_method__get_format) ( ) virtual[^virtual] const[^const]   |
-| [`int`](class_int.md)                             | [`_get_height`](#class_texture3d_private_method__get_height) ( ) virtual[^virtual] const[^const]   |
-| [`int`](class_int.md)                             | [`_get_width`](#class_texture3d_private_method__get_width) ( ) virtual[^virtual] const[^const]     |
-| [`bool`](class_bool.md)                           | [`_has_mipmaps`](#class_texture3d_private_method__has_mipmaps) ( ) virtual[^virtual] const[^const] |
-| [`Resource`](class_resource.md)                   | [`create_placeholder`](#class_texture3d_method_create_placeholder) ( ) const[^const]               |
-| [Array](class_array.md) [`Image`](class_image.md) | [`get_data`](#class_texture3d_method_get_data) ( ) const[^const]                                   |
-| [`int`](class_int.md)                             | [`get_depth`](#class_texture3d_method_get_depth) ( ) const[^const]                                 |
-| [Format](#enum_image_format)                      | [`get_format`](#class_texture3d_method_get_format) ( ) const[^const]                               |
-| [`int`](class_int.md)                             | [`get_height`](#class_texture3d_method_get_height) ( ) const[^const]                               |
-| [`int`](class_int.md)                             | [`get_width`](#class_texture3d_method_get_width) ( ) const[^const]                                 |
-| [`bool`](class_bool.md)                           | [`has_mipmaps`](#class_texture3d_method_has_mipmaps) ( ) const[^const]                             |
+|||
+|:-:|:--|
+| [Array](class_array.md) [`Image`](class_image.md) | [`_get_data`](class_texture3d.md#class_texture3d_private_method__get_data) ( ) virtual[^virtual] const[^const]       |
+| [`int`](class_int.md)                             | [`_get_depth`](class_texture3d.md#class_texture3d_private_method__get_depth) ( ) virtual[^virtual] const[^const]     |
+| [Format](#enum_image_format)                      | [`_get_format`](class_texture3d.md#class_texture3d_private_method__get_format) ( ) virtual[^virtual] const[^const]   |
+| [`int`](class_int.md)                             | [`_get_height`](class_texture3d.md#class_texture3d_private_method__get_height) ( ) virtual[^virtual] const[^const]   |
+| [`int`](class_int.md)                             | [`_get_width`](class_texture3d.md#class_texture3d_private_method__get_width) ( ) virtual[^virtual] const[^const]     |
+| [`bool`](class_bool.md)                           | [`_has_mipmaps`](class_texture3d.md#class_texture3d_private_method__has_mipmaps) ( ) virtual[^virtual] const[^const] |
+| [`Resource`](class_resource.md)                   | [`create_placeholder`](class_texture3d.md#class_texture3d_method_create_placeholder) ( ) const[^const]               |
+| [Array](class_array.md) [`Image`](class_image.md) | [`get_data`](class_texture3d.md#class_texture3d_method_get_data) ( ) const[^const]                                   |
+| [`int`](class_int.md)                             | [`get_depth`](class_texture3d.md#class_texture3d_method_get_depth) ( ) const[^const]                                 |
+| [Format](#enum_image_format)                      | [`get_format`](class_texture3d.md#class_texture3d_method_get_format) ( ) const[^const]                               |
+| [`int`](class_int.md)                             | [`get_height`](class_texture3d.md#class_texture3d_method_get_height) ( ) const[^const]                               |
+| [`int`](class_int.md)                             | [`get_width`](class_texture3d.md#class_texture3d_method_get_width) ( ) const[^const]                                 |
+| [`bool`](class_bool.md)                           | [`has_mipmaps`](class_texture3d.md#class_texture3d_method_has_mipmaps) ( ) const[^const]                             |
 
 <!-- rst-class:: classref-section-separator -->
 

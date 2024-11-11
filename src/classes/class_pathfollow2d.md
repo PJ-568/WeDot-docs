@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PathFollow2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PathFollow2D.xml。 -->
 
 <div id="_class_pathfollow2d"></div>
 
@@ -15,17 +15,19 @@ Point sampler for a [`Path2D`](class_path2d.md).
 
 This node takes its parent [`Path2D`](class_path2d.md), and returns the coordinates of a point within it, given a distance from the first vertex.
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the [`progress`](#class_pathfollow2d_property_progress) in this node.
+It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the [`progress`](class_pathfollow2d.md#class_pathfollow2d_property_progress) in this node.
 
 ## 属性
 
-| [`bool`](class_bool.md)   | [`cubic_interp`](#class_pathfollow2d_property_cubic_interp)     | ``true`` |
-| [`float`](class_float.md) | [`h_offset`](#class_pathfollow2d_property_h_offset)             | ``0.0``  |
-| [`bool`](class_bool.md)   | [`loop`](#class_pathfollow2d_property_loop)                     | ``true`` |
-| [`float`](class_float.md) | [`progress`](#class_pathfollow2d_property_progress)             | ``0.0``  |
-| [`float`](class_float.md) | [`progress_ratio`](#class_pathfollow2d_property_progress_ratio) | ``0.0``  |
-| [`bool`](class_bool.md)   | [`rotates`](#class_pathfollow2d_property_rotates)               | ``true`` |
-| [`float`](class_float.md) | [`v_offset`](#class_pathfollow2d_property_v_offset)             | ``0.0``  |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)   | [`cubic_interp`](class_pathfollow2d.md#class_pathfollow2d_property_cubic_interp)     | ``true`` |
+| [`float`](class_float.md) | [`h_offset`](class_pathfollow2d.md#class_pathfollow2d_property_h_offset)             | ``0.0``  |
+| [`bool`](class_bool.md)   | [`loop`](class_pathfollow2d.md#class_pathfollow2d_property_loop)                     | ``true`` |
+| [`float`](class_float.md) | [`progress`](class_pathfollow2d.md#class_pathfollow2d_property_progress)             | ``0.0``  |
+| [`float`](class_float.md) | [`progress_ratio`](class_pathfollow2d.md#class_pathfollow2d_property_progress_ratio) | ``0.0``  |
+| [`bool`](class_bool.md)   | [`rotates`](class_pathfollow2d.md#class_pathfollow2d_property_rotates)               | ``true`` |
+| [`float`](class_float.md) | [`v_offset`](class_pathfollow2d.md#class_pathfollow2d_property_v_offset)             | ``0.0``  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -97,6 +99,8 @@ The distance along the path, in pixels. Changing this value sets this node's pos
 - [`float`](class_float.md) **get_progress_ratio** ( )
 
 The distance along the path as a number in the range 0.0 (for the first vertex) to 1.0 (for the last). This is just another way of expressing the progress within the path, as the offset supplied is multiplied internally by the path's length.
+
+It can be set or get only if the **PathFollow2D** is the child of a [`Path2D`](class_path2d.md) which is part of the scene tree, and that this [`Path2D`](class_path2d.md) has a [`Curve2D`](class_curve2d.md) with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 

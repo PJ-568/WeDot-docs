@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorUndoRedoManager.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorUndoRedoManager.xml。 -->
 
 <div id="_class_editorundoredomanager"></div>
 
@@ -25,24 +25,27 @@ The usage is mostly the same as [`UndoRedo`](class_undoredo.md). You create and 
 
 This guessing can sometimes yield false results, so you can provide a custom context object when creating an action.
 
- **EditorUndoRedoManager** is intended to be used by Godot editor plugins. You can obtain it using [`EditorPlugin.get_undo_redo`](#class_editorplugin_method_get_undo_redo). For non-editor uses or plugins that don't need to integrate with the editor's undo history, use [`UndoRedo`](class_undoredo.md) instead.
+ **EditorUndoRedoManager** is intended to be used by Godot editor plugins. You can obtain it using [`EditorPlugin.get_undo_redo`](class_editorplugin.md#class_editorplugin_method_get_undo_redo). For non-editor uses or plugins that don't need to integrate with the editor's undo history, use [`UndoRedo`](class_undoredo.md) instead.
 
 The manager's API is mostly the same as in [`UndoRedo`](class_undoredo.md), so you can refer to its documentation for more examples. The main difference is that **EditorUndoRedoManager** uses object + method name for actions, instead of [`Callable`](class_callable.md).
 
 ## 方法
 
-| `void`                          | [`add_do_method`](#class_editorundoredomanager_method_add_do_method) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                            |
-| `void`                          | [`add_do_property`](#class_editorundoredomanager_method_add_do_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                     |
-| `void`                          | [`add_do_reference`](#class_editorundoredomanager_method_add_do_reference) ( object: [`Object`](class_object.md) )                                                                                                                                                        |
-| `void`                          | [`add_undo_method`](#class_editorundoredomanager_method_add_undo_method) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                        |
-| `void`                          | [`add_undo_property`](#class_editorundoredomanager_method_add_undo_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                 |
-| `void`                          | [`add_undo_reference`](#class_editorundoredomanager_method_add_undo_reference) ( object: [`Object`](class_object.md) )                                                                                                                                                    |
-| `void`                          | [`commit_action`](#class_editorundoredomanager_method_commit_action) ( execute: [`bool`](class_bool.md) = true )                                                                                                                                                          |
-| `void`                          | [`create_action`](#class_editorundoredomanager_method_create_action) ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, custom_context: [`Object`](class_object.md) = null, backward_undo_ops: [`bool`](class_bool.md) = false ) |
-| `void`                          | [`force_fixed_history`](#class_editorundoredomanager_method_force_fixed_history) ( )                                                                                                                                                                                      |
-| [`UndoRedo`](class_undoredo.md) | [`get_history_undo_redo`](#class_editorundoredomanager_method_get_history_undo_redo) ( id: [`int`](class_int.md) ) const[^const]                                                                                                                                          |
-| [`int`](class_int.md)           | [`get_object_history_id`](#class_editorundoredomanager_method_get_object_history_id) ( object: [`Object`](class_object.md) ) const[^const]                                                                                                                                |
-| [`bool`](class_bool.md)         | [`is_committing_action`](#class_editorundoredomanager_method_is_committing_action) ( ) const[^const]                                                                                                                                                                      |
+|||
+|:-:|:--|
+| `void`                          | [`add_do_method`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_do_method) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                            |
+| `void`                          | [`add_do_property`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_do_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                     |
+| `void`                          | [`add_do_reference`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_do_reference) ( object: [`Object`](class_object.md) )                                                                                                                                                        |
+| `void`                          | [`add_undo_method`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_method) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                        |
+| `void`                          | [`add_undo_property`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                 |
+| `void`                          | [`add_undo_reference`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_reference) ( object: [`Object`](class_object.md) )                                                                                                                                                    |
+| `void`                          | [`clear_history`](class_editorundoredomanager.md#class_editorundoredomanager_method_clear_history) ( id: [`int`](class_int.md) = -99, increase_version: [`bool`](class_bool.md) = true )                                                                                                                |
+| `void`                          | [`commit_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_commit_action) ( execute: [`bool`](class_bool.md) = true )                                                                                                                                                          |
+| `void`                          | [`create_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_create_action) ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, custom_context: [`Object`](class_object.md) = null, backward_undo_ops: [`bool`](class_bool.md) = false ) |
+| `void`                          | [`force_fixed_history`](class_editorundoredomanager.md#class_editorundoredomanager_method_force_fixed_history) ( )                                                                                                                                                                                      |
+| [`UndoRedo`](class_undoredo.md) | [`get_history_undo_redo`](class_editorundoredomanager.md#class_editorundoredomanager_method_get_history_undo_redo) ( id: [`int`](class_int.md) ) const[^const]                                                                                                                                          |
+| [`int`](class_int.md)           | [`get_object_history_id`](class_editorundoredomanager.md#class_editorundoredomanager_method_get_object_history_id) ( object: [`Object`](class_object.md) ) const[^const]                                                                                                                                |
+| [`bool`](class_bool.md)         | [`is_committing_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_is_committing_action) ( ) const[^const]                                                                                                                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -168,6 +171,29 @@ Register a reference for "undo" that will be erased if the "undo" history is los
 
 ---
 
+<div id="_class_editorundoredomanager_method_clear_history"></div>
+
+`void` **clear_history** ( id: [`int`](class_int.md) = -99, increase_version: [`bool`](class_bool.md) = true )<div id="class_editorundoredomanager_method_clear_history"></div>
+
+Clears the given undo history. You can clear history for a specific scene, global history, or for all scenes at once if `id` is [`INVALID_HISTORY`](class_editorundoredomanager.md#class_editorundoredomanager_constant_invalid_history).
+
+If `increase_version` is `true`, the undo history version will be increased, marking it as unsaved. Useful for operations that modify the scene, but don't support undo.
+
+```
+
+    var scene_root = EditorInterface.get_edited_scene_root()
+    var undo_redo = EditorInterface.get_editor_undo_redo()
+    undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
+```
+
+ **Note:** If you want to mark an edited scene as unsaved without clearing its history, use [`EditorInterface.mark_scene_as_unsaved`](class_editorinterface.md#class_editorinterface_method_mark_scene_as_unsaved) instead.
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorundoredomanager_method_commit_action"></div>
 
 `void` **commit_action** ( execute: [`bool`](class_bool.md) = true )<div id="class_editorundoredomanager_method_commit_action"></div>
@@ -182,7 +208,7 @@ Commit the action. If `execute` is true (default), all "do" methods/properties a
 
 `void` **create_action** ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, custom_context: [`Object`](class_object.md) = null, backward_undo_ops: [`bool`](class_bool.md) = false )<div id="class_editorundoredomanager_method_create_action"></div>
 
-Create a new action. After this is called, do all your calls to [`add_do_method`](#class_editorundoredomanager_method_add_do_method), [`add_undo_method`](#class_editorundoredomanager_method_add_undo_method), [`add_do_property`](#class_editorundoredomanager_method_add_do_property), and [`add_undo_property`](#class_editorundoredomanager_method_add_undo_property), then commit the action with [`commit_action`](#class_editorundoredomanager_method_commit_action).
+Create a new action. After this is called, do all your calls to [`add_do_method`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_do_method), [`add_undo_method`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_method), [`add_do_property`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_do_property), and [`add_undo_property`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_property), then commit the action with [`commit_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_commit_action).
 
 The way actions are merged is dictated by the `merge_mode` argument. See [MergeMode](#enum_undoredo_mergemode) for details.
 
@@ -198,9 +224,9 @@ The way undo operation are ordered in actions is dictated by `backward_undo_ops`
 
 `void` **force_fixed_history** ( )<div id="class_editorundoredomanager_method_force_fixed_history"></div>
 
-Forces the next operation (e.g. [`add_do_method`](#class_editorundoredomanager_method_add_do_method)) to use the action's history rather than guessing it from the object. This is sometimes needed when a history can't be correctly determined, like for a nested resource that doesn't have a path yet.
+Forces the next operation (e.g. [`add_do_method`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_do_method)) to use the action's history rather than guessing it from the object. This is sometimes needed when a history can't be correctly determined, like for a nested resource that doesn't have a path yet.
 
-This method should only be used when absolutely necessary, otherwise it might cause invalid history state. For most of complex cases, the `custom_context` parameter of [`create_action`](#class_editorundoredomanager_method_create_action) is sufficient.
+This method should only be used when absolutely necessary, otherwise it might cause invalid history state. For most of complex cases, the `custom_context` parameter of [`create_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_create_action) is sufficient.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -214,7 +240,7 @@ Returns the [`UndoRedo`](class_undoredo.md) object associated with the given his
 
  `id` above `0` are mapped to the opened scene tabs (but it doesn't match their order). `id` of `0` or lower have special meaning (see [SpecialHistory](#enum_editorundoredomanager_specialhistory)).
 
-Best used with [`get_object_history_id`](#class_editorundoredomanager_method_get_object_history_id). This method is only provided in case you need some more advanced methods of [`UndoRedo`](class_undoredo.md) (but keep in mind that directly operating on the [`UndoRedo`](class_undoredo.md) object might affect editor's stability).
+Best used with [`get_object_history_id`](class_editorundoredomanager.md#class_editorundoredomanager_method_get_object_history_id). This method is only provided in case you need some more advanced methods of [`UndoRedo`](class_undoredo.md) (but keep in mind that directly operating on the [`UndoRedo`](class_undoredo.md) object might affect editor's stability).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -224,7 +250,7 @@ Best used with [`get_object_history_id`](#class_editorundoredomanager_method_get
 
 [`int`](class_int.md) **get_object_history_id** ( object: [`Object`](class_object.md) ) const[^const]<div id="class_editorundoredomanager_method_get_object_history_id"></div>
 
-Returns the history ID deduced from the given `object`. It can be used with [`get_history_undo_redo`](#class_editorundoredomanager_method_get_history_undo_redo).
+Returns the history ID deduced from the given `object`. It can be used with [`get_history_undo_redo`](class_editorundoredomanager.md#class_editorundoredomanager_method_get_history_undo_redo).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -234,7 +260,7 @@ Returns the history ID deduced from the given `object`. It can be used with [`ge
 
 [`bool`](class_bool.md) **is_committing_action** ( ) const[^const]<div id="class_editorundoredomanager_method_is_committing_action"></div>
 
-Returns `true` if the **EditorUndoRedoManager** is currently committing the action, i.e. running its "do" method or property change (see [`commit_action`](#class_editorundoredomanager_method_commit_action)).
+Returns `true` if the **EditorUndoRedoManager** is currently committing the action, i.e. running its "do" method or property change (see [`commit_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_commit_action)).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

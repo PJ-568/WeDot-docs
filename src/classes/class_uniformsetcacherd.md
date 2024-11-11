@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/UniformSetCacheRD.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/UniformSetCacheRD.xml。 -->
 
 <div id="_class_uniformsetcacherd"></div>
 
@@ -17,7 +17,9 @@ Uniform set cache manager for Rendering Device based renderers. Provides a way t
 
 ## 方法
 
-| [`RID`](class_rid.md) | [`get_cache`](#class_uniformsetcacherd_method_get_cache) ( shader: [`RID`](class_rid.md), set: [`int`](class_int.md), uniforms: [Array](class_array.md) [`RDUniform`](class_rduniform.md) ) static[^static] |
+|||
+|:-:|:--|
+| [`RID`](class_rid.md) | [`get_cache`](class_uniformsetcacherd.md#class_uniformsetcacherd_method_get_cache) ( shader: [`RID`](class_rid.md), set: [`int`](class_int.md), uniforms: [Array](class_array.md) [`RDUniform`](class_rduniform.md) ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 

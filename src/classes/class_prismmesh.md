@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PrismMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PrismMesh.xml。 -->
 
 <div id="_class_prismmesh"></div>
 
@@ -17,11 +17,13 @@ Class representing a prism-shaped [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 属性
 
-| [`float`](class_float.md)     | [`left_to_right`](#class_prismmesh_property_left_to_right)       | ``0.5``              |
-| [`Vector3`](class_vector3.md) | [`size`](#class_prismmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
-| [`int`](class_int.md)         | [`subdivide_depth`](#class_prismmesh_property_subdivide_depth)   | ``0``                |
-| [`int`](class_int.md)         | [`subdivide_height`](#class_prismmesh_property_subdivide_height) | ``0``                |
-| [`int`](class_int.md)         | [`subdivide_width`](#class_prismmesh_property_subdivide_width)   | ``0``                |
+|||
+|:-:|:--|
+| [`float`](class_float.md)     | [`left_to_right`](class_prismmesh.md#class_prismmesh_property_left_to_right)       | ``0.5``              |
+| [`Vector3`](class_vector3.md) | [`size`](class_prismmesh.md#class_prismmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
+| [`int`](class_int.md)         | [`subdivide_depth`](class_prismmesh.md#class_prismmesh_property_subdivide_depth)   | ``0``                |
+| [`int`](class_int.md)         | [`subdivide_height`](class_prismmesh.md#class_prismmesh_property_subdivide_height) | ``0``                |
+| [`int`](class_int.md)         | [`subdivide_width`](class_prismmesh.md#class_prismmesh_property_subdivide_width)   | ``0``                |
 
 <!-- rst-class:: classref-section-separator -->
 

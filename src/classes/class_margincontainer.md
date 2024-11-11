@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MarginContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MarginContainer.xml。 -->
 
 <div id="_class_margincontainer"></div>
 
@@ -47,10 +47,12 @@ A container that keeps a margin around its child controls.
 
 ## 主题属性
 
-| [`int`](class_int.md) | [`margin_bottom`](#class_margincontainer_theme_constant_margin_bottom) | ``0`` |
-| [`int`](class_int.md) | [`margin_left`](#class_margincontainer_theme_constant_margin_left)     | ``0`` |
-| [`int`](class_int.md) | [`margin_right`](#class_margincontainer_theme_constant_margin_right)   | ``0`` |
-| [`int`](class_int.md) | [`margin_top`](#class_margincontainer_theme_constant_margin_top)       | ``0`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`margin_bottom`](class_margincontainer.md#class_margincontainer_theme_constant_margin_bottom) | ``0`` |
+| [`int`](class_int.md) | [`margin_left`](class_margincontainer.md#class_margincontainer_theme_constant_margin_left)     | ``0`` |
+| [`int`](class_int.md) | [`margin_right`](class_margincontainer.md#class_margincontainer_theme_constant_margin_right)   | ``0`` |
+| [`int`](class_int.md) | [`margin_top`](class_margincontainer.md#class_margincontainer_theme_constant_margin_top)       | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeExpression.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeExpression.xml。 -->
 
 <div id="_class_visualshadernodeexpression"></div>
 
@@ -21,7 +21,9 @@ The provided code is directly injected into the graph's matching shader function
 
 ## 属性
 
-| [`String`](class_string.md) | [`expression`](#class_visualshadernodeexpression_property_expression) | ``""`` |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`expression`](class_visualshadernodeexpression.md#class_visualshadernodeexpression_property_expression) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->
 

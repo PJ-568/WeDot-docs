@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamPlayback.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamPlayback.xml。 -->
 
 <div id="_class_audiostreamplayback"></div>
 
@@ -19,18 +19,27 @@ Can play, loop, pause a scroll through audio. See [`AudioStream`](class_audiostr
 
 ## 方法
 
-| [`int`](class_int.md)                                 | [`_get_loop_count`](#class_audiostreamplayback_private_method__get_loop_count) ( ) virtual[^virtual] const[^const]                                                                 |
-| [`Variant`](class_variant.md)                         | [`_get_parameter`](#class_audiostreamplayback_private_method__get_parameter) ( name: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                         |
-| [`float`](class_float.md)                             | [`_get_playback_position`](#class_audiostreamplayback_private_method__get_playback_position) ( ) virtual[^virtual] const[^const]                                                   |
-| [`bool`](class_bool.md)                               | [`_is_playing`](#class_audiostreamplayback_private_method__is_playing) ( ) virtual[^virtual] const[^const]                                                                         |
-| [`int`](class_int.md)                                 | [`_mix`](#class_audiostreamplayback_private_method__mix) ( buffer: `AudioFrame*`, rate_scale: [`float`](class_float.md), frames: [`int`](class_int.md) ) virtual[^virtual]         |
-| `void`                                                | [`_seek`](#class_audiostreamplayback_private_method__seek) ( position: [`float`](class_float.md) ) virtual[^virtual]                                                               |
-| `void`                                                | [`_set_parameter`](#class_audiostreamplayback_private_method__set_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) virtual[^virtual] |
-| `void`                                                | [`_start`](#class_audiostreamplayback_private_method__start) ( from_pos: [`float`](class_float.md) ) virtual[^virtual]                                                             |
-| `void`                                                | [`_stop`](#class_audiostreamplayback_private_method__stop) ( ) virtual[^virtual]                                                                                                   |
-| `void`                                                | [`_tag_used_streams`](#class_audiostreamplayback_private_method__tag_used_streams) ( ) virtual[^virtual]                                                                           |
-| [`AudioSamplePlayback`](class_audiosampleplayback.md) | [`get_sample_playback`](#class_audiostreamplayback_method_get_sample_playback) ( ) const[^const]                                                                                   |
-| `void`                                                | [`set_sample_playback`](#class_audiostreamplayback_method_set_sample_playback) ( playback_sample: [`AudioSamplePlayback`](class_audiosampleplayback.md) )                          |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                                 | [`_get_loop_count`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__get_loop_count) ( ) virtual[^virtual] const[^const]                                                                 |
+| [`Variant`](class_variant.md)                         | [`_get_parameter`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__get_parameter) ( name: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                         |
+| [`float`](class_float.md)                             | [`_get_playback_position`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__get_playback_position) ( ) virtual[^virtual] const[^const]                                                   |
+| [`bool`](class_bool.md)                               | [`_is_playing`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__is_playing) ( ) virtual[^virtual] const[^const]                                                                         |
+| [`int`](class_int.md)                                 | [`_mix`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__mix) ( buffer: `AudioFrame*`, rate_scale: [`float`](class_float.md), frames: [`int`](class_int.md) ) virtual[^virtual]         |
+| `void`                                                | [`_seek`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__seek) ( position: [`float`](class_float.md) ) virtual[^virtual]                                                               |
+| `void`                                                | [`_set_parameter`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__set_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) virtual[^virtual] |
+| `void`                                                | [`_start`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__start) ( from_pos: [`float`](class_float.md) ) virtual[^virtual]                                                             |
+| `void`                                                | [`_stop`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__stop) ( ) virtual[^virtual]                                                                                                   |
+| `void`                                                | [`_tag_used_streams`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__tag_used_streams) ( ) virtual[^virtual]                                                                           |
+| [`int`](class_int.md)                                 | [`get_loop_count`](class_audiostreamplayback.md#class_audiostreamplayback_method_get_loop_count) ( ) const[^const]                                                                                             |
+| [`float`](class_float.md)                             | [`get_playback_position`](class_audiostreamplayback.md#class_audiostreamplayback_method_get_playback_position) ( ) const[^const]                                                                               |
+| [`AudioSamplePlayback`](class_audiosampleplayback.md) | [`get_sample_playback`](class_audiostreamplayback.md#class_audiostreamplayback_method_get_sample_playback) ( ) const[^const]                                                                                   |
+| [`bool`](class_bool.md)                               | [`is_playing`](class_audiostreamplayback.md#class_audiostreamplayback_method_is_playing) ( ) const[^const]                                                                                                     |
+| [`PackedVector2Array`](class_packedvector2array.md)   | [`mix_audio`](class_audiostreamplayback.md#class_audiostreamplayback_method_mix_audio) ( rate_scale: [`float`](class_float.md), frames: [`int`](class_int.md) )                                                |
+| `void`                                                | [`seek`](class_audiostreamplayback.md#class_audiostreamplayback_method_seek) ( time: [`float`](class_float.md) = 0.0 )                                                                                         |
+| `void`                                                | [`set_sample_playback`](class_audiostreamplayback.md#class_audiostreamplayback_method_set_sample_playback) ( playback_sample: [`AudioSamplePlayback`](class_audiosampleplayback.md) )                          |
+| `void`                                                | [`start`](class_audiostreamplayback.md#class_audiostreamplayback_method_start) ( from_pos: [`float`](class_float.md) = 0.0 )                                                                                   |
+| `void`                                                | [`stop`](class_audiostreamplayback.md#class_audiostreamplayback_method_stop) ( )                                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,7 +61,7 @@ Overridable method. Should return how many times this audio stream has looped. M
 
 [`Variant`](class_variant.md) **_get_parameter** ( name: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]<div id="class_audiostreamplayback_private_method__get_parameter"></div>
 
-Return the current value of a playback parameter by name (see [`AudioStream._get_parameter_list`](#class_audiostream_private_method__get_parameter_list)).
+Return the current value of a playback parameter by name (see [`AudioStream._get_parameter_list`](class_audiostream.md#class_audiostream_private_method__get_parameter_list)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -94,7 +103,7 @@ Override this method to customize how the audio stream is mixed. This method is 
 
 `void` **_seek** ( position: [`float`](class_float.md) ) virtual[^virtual]<div id="class_audiostreamplayback_private_method__seek"></div>
 
-Override this method to customize what happens when seeking this audio stream at the given `position`, such as by calling [`AudioStreamPlayer.seek`](#class_audiostreamplayer_method_seek).
+Override this method to customize what happens when seeking this audio stream at the given `position`, such as by calling [`AudioStreamPlayer.seek`](class_audiostreamplayer.md#class_audiostreamplayer_method_seek).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -104,7 +113,7 @@ Override this method to customize what happens when seeking this audio stream at
 
 `void` **_set_parameter** ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) virtual[^virtual]<div id="class_audiostreamplayback_private_method__set_parameter"></div>
 
-Set the current value of a playback parameter by name (see [`AudioStream._get_parameter_list`](#class_audiostream_private_method__get_parameter_list)).
+Set the current value of a playback parameter by name (see [`AudioStream._get_parameter_list`](class_audiostream.md#class_audiostream_private_method__get_parameter_list)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -114,7 +123,7 @@ Set the current value of a playback parameter by name (see [`AudioStream._get_pa
 
 `void` **_start** ( from_pos: [`float`](class_float.md) ) virtual[^virtual]<div id="class_audiostreamplayback_private_method__start"></div>
 
-Override this method to customize what happens when the playback starts at the given position, such as by calling [`AudioStreamPlayer.play`](#class_audiostreamplayer_method_play).
+Override this method to customize what happens when the playback starts at the given position, such as by calling [`AudioStreamPlayer.play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +133,7 @@ Override this method to customize what happens when the playback starts at the g
 
 `void` **_stop** ( ) virtual[^virtual]<div id="class_audiostreamplayback_private_method__stop"></div>
 
-Override this method to customize what happens when the playback is stopped, such as by calling [`AudioStreamPlayer.stop`](#class_audiostreamplayer_method_stop).
+Override this method to customize what happens when the playback is stopped, such as by calling [`AudioStreamPlayer.stop`](class_audiostreamplayer.md#class_audiostreamplayer_method_stop).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -134,7 +143,27 @@ Override this method to customize what happens when the playback is stopped, suc
 
 `void` **_tag_used_streams** ( ) virtual[^virtual]<div id="class_audiostreamplayback_private_method__tag_used_streams"></div>
 
-Overridable method. Called whenever the audio stream is mixed if the playback is active and [`AudioServer.set_enable_tagging_used_audio_streams`](#class_audioserver_method_set_enable_tagging_used_audio_streams) has been set to `true`. Editor plugins may use this method to "tag" the current position along the audio stream and display it in a preview.
+Overridable method. Called whenever the audio stream is mixed if the playback is active and [`AudioServer.set_enable_tagging_used_audio_streams`](class_audioserver.md#class_audioserver_method_set_enable_tagging_used_audio_streams) has been set to `true`. Editor plugins may use this method to "tag" the current position along the audio stream and display it in a preview.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_get_loop_count"></div>
+
+[`int`](class_int.md) **get_loop_count** ( ) const[^const]<div id="class_audiostreamplayback_method_get_loop_count"></div>
+
+Returns the number of times the stream has looped.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_get_playback_position"></div>
+
+[`float`](class_float.md) **get_playback_position** ( ) const[^const]<div id="class_audiostreamplayback_method_get_playback_position"></div>
+
+Returns the current position in the stream, in seconds.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,6 +181,40 @@ Returns the [`AudioSamplePlayback`](class_audiosampleplayback.md) associated wit
 
 ---
 
+<div id="_class_audiostreamplayback_method_is_playing"></div>
+
+[`bool`](class_bool.md) **is_playing** ( ) const[^const]<div id="class_audiostreamplayback_method_is_playing"></div>
+
+Returns `true` if the stream is playing.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_mix_audio"></div>
+
+[`PackedVector2Array`](class_packedvector2array.md) **mix_audio** ( rate_scale: [`float`](class_float.md), frames: [`int`](class_int.md) )<div id="class_audiostreamplayback_method_mix_audio"></div>
+
+Mixes up to `frames` of audio from the stream from the current position, at a rate of `rate_scale`, advancing the stream.
+
+Returns a [`PackedVector2Array`](class_packedvector2array.md) where each element holds the left and right channel volume levels of each frame.
+
+ **Note:** Can return fewer frames than requested, make sure to use the size of the return value.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_seek"></div>
+
+`void` **seek** ( time: [`float`](class_float.md) = 0.0 )<div id="class_audiostreamplayback_method_seek"></div>
+
+Seeks the stream at the given `time`, in seconds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_audiostreamplayback_method_set_sample_playback"></div>
 
 `void` **set_sample_playback** ( playback_sample: [`AudioSamplePlayback`](class_audiosampleplayback.md) )<div id="class_audiostreamplayback_method_set_sample_playback"></div>
@@ -159,6 +222,26 @@ Returns the [`AudioSamplePlayback`](class_audiosampleplayback.md) associated wit
 **实验性：** 未来版本中可能会修改或移除该方法。
 
 Associates [`AudioSamplePlayback`](class_audiosampleplayback.md) to this **AudioStreamPlayback** for playing back the audio sample of this stream.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_start"></div>
+
+`void` **start** ( from_pos: [`float`](class_float.md) = 0.0 )<div id="class_audiostreamplayback_method_start"></div>
+
+Starts the stream from the given `from_pos`, in seconds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_stop"></div>
+
+`void` **stop** ( )<div id="class_audiostreamplayback_method_stop"></div>
+
+Stops the stream.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

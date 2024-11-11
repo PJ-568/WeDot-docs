@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ImporterMeshInstance3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ImporterMeshInstance3D.xml。 -->
 
 <div id="_class_importermeshinstance3d"></div>
 
@@ -13,16 +13,18 @@
 
 ## 属性
 
-| [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting)       | [`cast_shadow`](#class_importermeshinstance3d_property_cast_shadow)                                     | ``1``            |
-| [`int`](class_int.md)                                                       | [`layer_mask`](#class_importermeshinstance3d_property_layer_mask)                                       | ``1``            |
-| [`ImporterMesh`](class_importermesh.md)                                     | [`mesh`](#class_importermeshinstance3d_property_mesh)                                                   |                  |
-| [`NodePath`](class_nodepath.md)                                             | [`skeleton_path`](#class_importermeshinstance3d_property_skeleton_path)                                 | ``NodePath("")`` |
-| [`Skin`](class_skin.md)                                                     | [`skin`](#class_importermeshinstance3d_property_skin)                                                   |                  |
-| [`float`](class_float.md)                                                   | [`visibility_range_begin`](#class_importermeshinstance3d_property_visibility_range_begin)               | ``0.0``          |
-| [`float`](class_float.md)                                                   | [`visibility_range_begin_margin`](#class_importermeshinstance3d_property_visibility_range_begin_margin) | ``0.0``          |
-| [`float`](class_float.md)                                                   | [`visibility_range_end`](#class_importermeshinstance3d_property_visibility_range_end)                   | ``0.0``          |
-| [`float`](class_float.md)                                                   | [`visibility_range_end_margin`](#class_importermeshinstance3d_property_visibility_range_end_margin)     | ``0.0``          |
-| [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) | [`visibility_range_fade_mode`](#class_importermeshinstance3d_property_visibility_range_fade_mode)       | ``0``            |
+|||
+|:-:|:--|
+| [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting)       | [`cast_shadow`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_cast_shadow)                                     | ``1``            |
+| [`int`](class_int.md)                                                       | [`layer_mask`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_layer_mask)                                       | ``1``            |
+| [`ImporterMesh`](class_importermesh.md)                                     | [`mesh`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_mesh)                                                   |                  |
+| [`NodePath`](class_nodepath.md)                                             | [`skeleton_path`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_skeleton_path)                                 | ``NodePath("")`` |
+| [`Skin`](class_skin.md)                                                     | [`skin`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_skin)                                                   |                  |
+| [`float`](class_float.md)                                                   | [`visibility_range_begin`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_visibility_range_begin)               | ``0.0``          |
+| [`float`](class_float.md)                                                   | [`visibility_range_begin_margin`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_visibility_range_begin_margin) | ``0.0``          |
+| [`float`](class_float.md)                                                   | [`visibility_range_end`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_visibility_range_end)                   | ``0.0``          |
+| [`float`](class_float.md)                                                   | [`visibility_range_end_margin`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_visibility_range_end_margin)     | ``0.0``          |
+| [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) | [`visibility_range_fade_mode`](class_importermeshinstance3d.md#class_importermeshinstance3d_property_visibility_range_fade_mode)       | ``0``            |
 
 <!-- rst-class:: classref-section-separator -->
 

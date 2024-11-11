@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeBillboard.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeBillboard.xml。 -->
 
 <div id="_class_visualshadernodebillboard"></div>
 
@@ -17,8 +17,10 @@ The output port of this node needs to be connected to `Model View Matrix` port o
 
 ## 属性
 
-| [BillboardType](#enum_visualshadernodebillboard_billboardtype) | [`billboard_type`](#class_visualshadernodebillboard_property_billboard_type) | ``1``     |
-| [`bool`](class_bool.md)                                        | [`keep_scale`](#class_visualshadernodebillboard_property_keep_scale)         | ``false`` |
+|||
+|:-:|:--|
+| [BillboardType](#enum_visualshadernodebillboard_billboardtype) | [`billboard_type`](class_visualshadernodebillboard.md#class_visualshadernodebillboard_property_billboard_type) | ``1``     |
+| [`bool`](class_bool.md)                                        | [`keep_scale`](class_visualshadernodebillboard.md#class_visualshadernodebillboard_property_keep_scale)         | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorScriptPicker.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorScriptPicker.xml。 -->
 
 <div id="_class_editorscriptpicker"></div>
 
@@ -15,11 +15,13 @@ Godot editor's control for selecting the `script` property of a [`Node`](class_n
 
 Similar to [`EditorResourcePicker`](class_editorresourcepicker.md) this [`Control`](class_control.md) node is used in the editor's Inspector dock, but only to edit the `script` property of a [`Node`](class_node.md). Default options for creating new resources of all possible subtypes are replaced with dedicated buttons that open the "Attach Node Script" dialog. Can be used with [`EditorInspectorPlugin`](class_editorinspectorplugin.md) to recreate the same behavior.
 
- **Note:** You must set the [`script_owner`](#class_editorscriptpicker_property_script_owner) for the custom context menu items to work.
+ **Note:** You must set the [`script_owner`](class_editorscriptpicker.md#class_editorscriptpicker_property_script_owner) for the custom context menu items to work.
 
 ## 属性
 
-| [`Node`](class_node.md) | [`script_owner`](#class_editorscriptpicker_property_script_owner) |
+|||
+|:-:|:--|
+| [`Node`](class_node.md) | [`script_owner`](class_editorscriptpicker.md#class_editorscriptpicker_property_script_owner) |
 
 <!-- rst-class:: classref-section-separator -->
 

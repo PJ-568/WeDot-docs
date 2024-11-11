@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorTranslationParserPlugin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorTranslationParserPlugin.xml。 -->
 
 <div id="_class_editortranslationparserplugin"></div>
 
@@ -13,7 +13,7 @@ Plugin for adding custom parsers to extract strings that are to be translated fr
 
 ## 描述
 
-**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the [`_parse_file`](#class_editortranslationparserplugin_private_method__parse_file) method in script.
+**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the [`_parse_file`](class_editortranslationparserplugin.md#class_editortranslationparserplugin_private_method__parse_file) method in script.
 
 Add the extracted strings to argument `msgids` or `msgids_context_plural` if context or plural is used.
 
@@ -96,7 +96,7 @@ To add a translatable string associated with context or plural, add it to `msgid
 
 
 
- **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the `path` argument using [`ResourceLoader.load`](#class_resourceloader_method_load). This is because built-in scripts are loaded as [`Resource`](class_resource.md) type, not [`FileAccess`](class_fileaccess.md) type.
+ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the `path` argument using [`ResourceLoader.load`](class_resourceloader.md#class_resourceloader_method_load). This is because built-in scripts are loaded as [`Resource`](class_resource.md) type, not [`FileAccess`](class_fileaccess.md) type.
 
 For example:
 
@@ -130,7 +130,7 @@ For example:
 
 
 
-To use **EditorTranslationParserPlugin**, register it using the [`EditorPlugin.add_translation_parser_plugin`](#class_editorplugin_method_add_translation_parser_plugin) method first.
+To use **EditorTranslationParserPlugin**, register it using the [`EditorPlugin.add_translation_parser_plugin`](class_editorplugin.md#class_editorplugin_method_add_translation_parser_plugin) method first.
 
 
 
@@ -146,8 +146,10 @@ To use **EditorTranslationParserPlugin**, register it using the [`EditorPlugin.a
 
 ## 方法
 
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_editortranslationparserplugin_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
-| `void`                                            | [`_parse_file`](#class_editortranslationparserplugin_private_method__parse_file) ( path: [`String`](class_string.md), msgids: [Array](class_array.md) [`String`](class_string.md), msgids_context_plural: [Array](class_array.md) [`Array`](class_array.md) ) virtual[^virtual] |
+|||
+|:-:|:--|
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_editortranslationparserplugin.md#class_editortranslationparserplugin_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
+| `void`                                            | [`_parse_file`](class_editortranslationparserplugin.md#class_editortranslationparserplugin_private_method__parse_file) ( path: [`String`](class_string.md), msgids: [Array](class_array.md) [`String`](class_string.md), msgids_context_plural: [Array](class_array.md) [`Array`](class_array.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

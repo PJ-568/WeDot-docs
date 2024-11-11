@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TileMapPattern.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TileMapPattern.xml。 -->
 
 <div id="_class_tilemappattern"></div>
 
@@ -19,16 +19,18 @@ A pattern always start at the `(0,0)` coordinates and cannot have cells with neg
 
 ## 方法
 
-| [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](#class_tilemappattern_method_get_cell_alternative_tile) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                        |
-| [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](#class_tilemappattern_method_get_cell_atlas_coords) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                |
-| [`int`](class_int.md)                                   | [`get_cell_source_id`](#class_tilemappattern_method_get_cell_source_id) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                      |
-| [`Vector2i`](class_vector2i.md)                         | [`get_size`](#class_tilemappattern_method_get_size) ( ) const[^const]                                                                                                                                                                                  |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](#class_tilemappattern_method_get_used_cells) ( ) const[^const]                                                                                                                                                                      |
-| [`bool`](class_bool.md)                                 | [`has_cell`](#class_tilemappattern_method_has_cell) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                          |
-| [`bool`](class_bool.md)                                 | [`is_empty`](#class_tilemappattern_method_is_empty) ( ) const[^const]                                                                                                                                                                                  |
-| `void`                                                  | [`remove_cell`](#class_tilemappattern_method_remove_cell) ( coords: [`Vector2i`](class_vector2i.md), update_size: [`bool`](class_bool.md) )                                                                                                            |
-| `void`                                                  | [`set_cell`](#class_tilemappattern_method_set_cell) ( coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) |
-| `void`                                                  | [`set_size`](#class_tilemappattern_method_set_size) ( size: [`Vector2i`](class_vector2i.md) )                                                                                                                                                          |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](class_tilemappattern.md#class_tilemappattern_method_get_cell_alternative_tile) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                        |
+| [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](class_tilemappattern.md#class_tilemappattern_method_get_cell_atlas_coords) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                |
+| [`int`](class_int.md)                                   | [`get_cell_source_id`](class_tilemappattern.md#class_tilemappattern_method_get_cell_source_id) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                      |
+| [`Vector2i`](class_vector2i.md)                         | [`get_size`](class_tilemappattern.md#class_tilemappattern_method_get_size) ( ) const[^const]                                                                                                                                                                                  |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](class_tilemappattern.md#class_tilemappattern_method_get_used_cells) ( ) const[^const]                                                                                                                                                                      |
+| [`bool`](class_bool.md)                                 | [`has_cell`](class_tilemappattern.md#class_tilemappattern_method_has_cell) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                          |
+| [`bool`](class_bool.md)                                 | [`is_empty`](class_tilemappattern.md#class_tilemappattern_method_is_empty) ( ) const[^const]                                                                                                                                                                                  |
+| `void`                                                  | [`remove_cell`](class_tilemappattern.md#class_tilemappattern_method_remove_cell) ( coords: [`Vector2i`](class_vector2i.md), update_size: [`bool`](class_bool.md) )                                                                                                            |
+| `void`                                                  | [`set_cell`](class_tilemappattern.md#class_tilemappattern_method_set_cell) ( coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) |
+| `void`                                                  | [`set_size`](class_tilemappattern.md#class_tilemappattern_method_set_size) ( size: [`Vector2i`](class_vector2i.md) )                                                                                                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -120,7 +122,7 @@ Remove the cell at the given coordinates.
 
 `void` **set_cell** ( coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 )<div id="class_tilemappattern_method_set_cell"></div>
 
-Sets the tile identifiers for the cell at coordinates `coords`. See [`TileMap.set_cell`](#class_tilemap_method_set_cell).
+Sets the tile identifiers for the cell at coordinates `coords`. See [`TileMap.set_cell`](class_tilemap.md#class_tilemap_method_set_cell).
 
 <!-- rst-class:: classref-item-separator -->
 

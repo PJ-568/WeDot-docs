@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectLowPassFilter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectLowPassFilter.xml。 -->
 
 <div id="_class_audioeffectlowpassfilter"></div>
 
@@ -13,7 +13,7 @@ Adds a low-pass filter to the audio bus.
 
 ## 描述
 
-Cuts frequencies higher than the [`AudioEffectFilter.cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) and allows lower frequencies to pass.
+Cuts frequencies higher than the [`AudioEffectFilter.cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) and allows lower frequencies to pass.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/EditorSceneFormatImporterBlend.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/EditorSceneFormatImporterBlend.xml。 -->
 
 <div id="_class_editorsceneformatimporterblend"></div>
 
@@ -17,7 +17,7 @@ Imports Blender scenes in the `.blend` file format through the glTF 2.0 3D impor
 
 The location of the Blender binary is set via the `filesystem/import/blender/blender_path` editor setting.
 
-This importer is only used if [`ProjectSettings.filesystem/import/blender/enabled`](#class_projectsettings_property_filesystem/import/blender/enabled) is enabled, otherwise `.blend` files present in the project folder are not imported.
+This importer is only used if [`ProjectSettings.filesystem/import/blender/enabled`](class_projectsettings.md#class_projectsettings_property_filesystem/import/blender/enabled) is enabled, otherwise `.blend` files present in the project folder are not imported.
 
 Blend import requires Blender 3.0.
 

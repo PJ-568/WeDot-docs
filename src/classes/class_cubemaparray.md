@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CubemapArray.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CubemapArray.xml。 -->
 
 <div id="_class_cubemaparray"></div>
 
@@ -17,13 +17,15 @@ An array of [`Cubemap`](class_cubemap.md) s, stored together and with a single r
 
 The primary benefit of **CubemapArray** s is that they can be accessed in shader code using a single texture reference. In other words, you can pass multiple [`Cubemap`](class_cubemap.md) s into a shader using a single **CubemapArray**. [`Cubemap`](class_cubemap.md) s are allocated in adjacent cache regions on the GPU, which makes **CubemapArray** s the most efficient way to store multiple [`Cubemap`](class_cubemap.md) s.
 
- **Note:** Godot uses **CubemapArray** s internally for many effects, including the [`Sky`](class_sky.md) if you set [`ProjectSettings.rendering/reflections/sky_reflections/texture_array_reflections`](#class_projectsettings_property_rendering/reflections/sky_reflections/texture_array_reflections) to `true`. To create such a texture file yourself, reimport your image files using the import presets of the File System dock.
+ **Note:** Godot uses **CubemapArray** s internally for many effects, including the [`Sky`](class_sky.md) if you set [`ProjectSettings.rendering/reflections/sky_reflections/texture_array_reflections`](class_projectsettings.md#class_projectsettings_property_rendering/reflections/sky_reflections/texture_array_reflections) to `true`. To create such a texture file yourself, reimport your image files using the import presets of the File System dock.
 
  **Note:** **CubemapArray** is not supported in the OpenGL 3 rendering backend.
 
 ## 方法
 
-| [`Resource`](class_resource.md) | [`create_placeholder`](#class_cubemaparray_method_create_placeholder) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`Resource`](class_resource.md) | [`create_placeholder`](class_cubemaparray.md#class_cubemaparray_method_create_placeholder) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

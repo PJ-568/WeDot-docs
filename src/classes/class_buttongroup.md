@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ButtonGroup.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ButtonGroup.xml。 -->
 
 <div id="_class_buttongroup"></div>
 
@@ -15,17 +15,21 @@ A group of buttons that doesn't allow more than one button to be pressed at a ti
 
 A group of [`BaseButton`](class_basebutton.md)-derived buttons. The buttons in a **ButtonGroup** are treated like radio buttons: No more than one button can be pressed at a time. Some types of buttons (such as [`CheckBox`](class_checkbox.md)) may have a special appearance in this state.
 
-Every member of a **ButtonGroup** should have [`BaseButton.toggle_mode`](#class_basebutton_property_toggle_mode) set to `true`.
+Every member of a **ButtonGroup** should have [`BaseButton.toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) set to `true`.
 
 ## 属性
 
-| [`bool`](class_bool.md) | [`allow_unpress`](#class_buttongroup_property_allow_unpress) | ``false``                                                                           |
-| [`bool`](class_bool.md) | resource_local_to_scene                                      | ``true`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`allow_unpress`](class_buttongroup.md#class_buttongroup_property_allow_unpress) | ``false``                                                                                            |
+| [`bool`](class_bool.md) | resource_local_to_scene                                                          | ``true`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
-| [Array](class_array.md) [`BaseButton`](class_basebutton.md) | [`get_buttons`](#class_buttongroup_method_get_buttons) ( )               |
-| [`BaseButton`](class_basebutton.md)                         | [`get_pressed_button`](#class_buttongroup_method_get_pressed_button) ( ) |
+|||
+|:-:|:--|
+| [Array](class_array.md) [`BaseButton`](class_basebutton.md) | [`get_buttons`](class_buttongroup.md#class_buttongroup_method_get_buttons) ( )               |
+| [`BaseButton`](class_basebutton.md)                         | [`get_pressed_button`](class_buttongroup.md#class_buttongroup_method_get_pressed_button) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -64,7 +68,7 @@ If `true`, it is possible to unpress all buttons in this **ButtonGroup**.
 
 [Array](class_array.md) [`BaseButton`](class_basebutton.md) **get_buttons** ( )<div id="class_buttongroup_method_get_buttons"></div>
 
-Returns an [`Array`](class_array.md) of [`Button`](class_button.md) s who have this as their **ButtonGroup** (see [`BaseButton.button_group`](#class_basebutton_property_button_group)).
+Returns an [`Array`](class_array.md) of [`Button`](class_button.md) s who have this as their **ButtonGroup** (see [`BaseButton.button_group`](class_basebutton.md#class_basebutton_property_button_group)).
 
 <!-- rst-class:: classref-item-separator -->
 

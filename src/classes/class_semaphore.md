@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Semaphore.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Semaphore.xml。 -->
 
 <div id="_class_semaphore"></div>
 
@@ -25,9 +25,11 @@ A synchronization semaphore that can be used to synchronize multiple [`Thread`](
 
 ## 方法
 
-| `void`                  | [`post`](#class_semaphore_method_post) ( )         |
-| [`bool`](class_bool.md) | [`try_wait`](#class_semaphore_method_try_wait) ( ) |
-| `void`                  | [`wait`](#class_semaphore_method_wait) ( )         |
+|||
+|:-:|:--|
+| `void`                  | [`post`](class_semaphore.md#class_semaphore_method_post) ( count: [`int`](class_int.md) = 1 ) |
+| [`bool`](class_bool.md) | [`try_wait`](class_semaphore.md#class_semaphore_method_try_wait) ( )                          |
+| `void`                  | [`wait`](class_semaphore.md#class_semaphore_method_wait) ( )                                  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,9 +39,9 @@ A synchronization semaphore that can be used to synchronize multiple [`Thread`](
 
 <div id="_class_semaphore_method_post"></div>
 
-`void` **post** ( )<div id="class_semaphore_method_post"></div>
+`void` **post** ( count: [`int`](class_int.md) = 1 )<div id="class_semaphore_method_post"></div>
 
-Lowers the **Semaphore**, allowing one more thread in.
+Lowers the **Semaphore**, allowing one thread in, or more if `count` is specified.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -49,7 +51,7 @@ Lowers the **Semaphore**, allowing one more thread in.
 
 [`bool`](class_bool.md) **try_wait** ( )<div id="class_semaphore_method_try_wait"></div>
 
-Like [`wait`](#class_semaphore_method_wait), but won't block, so if the value is zero, fails immediately and returns `false`. If non-zero, it returns `true` to report success.
+Like [`wait`](class_semaphore.md#class_semaphore_method_wait), but won't block, so if the value is zero, fails immediately and returns `false`. If non-zero, it returns `true` to report success.
 
 <!-- rst-class:: classref-item-separator -->
 

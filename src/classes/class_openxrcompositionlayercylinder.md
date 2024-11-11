@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/openxr/doc_classes/OpenXRCompositionLayerCylinder.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/openxr/doc_classes/OpenXRCompositionLayerCylinder.xml。 -->
 
 <div id="_class_openxrcompositionlayercylinder"></div>
 
@@ -19,10 +19,12 @@ An OpenXR composition layer that allows rendering a [`SubViewport`](class_subvie
 
 ## 属性
 
-| [`float`](class_float.md) | [`aspect_ratio`](#class_openxrcompositionlayercylinder_property_aspect_ratio)           | ``1.0``    |
-| [`float`](class_float.md) | [`central_angle`](#class_openxrcompositionlayercylinder_property_central_angle)         | ``1.5708`` |
-| [`int`](class_int.md)     | [`fallback_segments`](#class_openxrcompositionlayercylinder_property_fallback_segments) | ``10``     |
-| [`float`](class_float.md) | [`radius`](#class_openxrcompositionlayercylinder_property_radius)                       | ``1.0``    |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`aspect_ratio`](class_openxrcompositionlayercylinder.md#class_openxrcompositionlayercylinder_property_aspect_ratio)           | ``1.0``    |
+| [`float`](class_float.md) | [`central_angle`](class_openxrcompositionlayercylinder.md#class_openxrcompositionlayercylinder_property_central_angle)         | ``1.5708`` |
+| [`int`](class_int.md)     | [`fallback_segments`](class_openxrcompositionlayercylinder.md#class_openxrcompositionlayercylinder_property_fallback_segments) | ``10``     |
+| [`float`](class_float.md) | [`radius`](class_openxrcompositionlayercylinder.md#class_openxrcompositionlayercylinder_property_radius)                       | ``1.0``    |
 
 <!-- rst-class:: classref-section-separator -->
 

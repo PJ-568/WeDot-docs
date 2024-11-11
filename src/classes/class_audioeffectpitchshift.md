@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectPitchShift.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectPitchShift.xml。 -->
 
 <div id="_class_audioeffectpitchshift"></div>
 
@@ -19,9 +19,11 @@ Allows modulation of pitch independently of tempo. All frequencies can be increa
 
 ## 属性
 
-| [FFTSize](#enum_audioeffectpitchshift_fftsize) | [`fft_size`](#class_audioeffectpitchshift_property_fft_size)         | ``3``   |
-| [`int`](class_int.md)                          | [`oversampling`](#class_audioeffectpitchshift_property_oversampling) | ``4``   |
-| [`float`](class_float.md)                      | [`pitch_scale`](#class_audioeffectpitchshift_property_pitch_scale)   | ``1.0`` |
+|||
+|:-:|:--|
+| [FFTSize](#enum_audioeffectpitchshift_fftsize) | [`fft_size`](class_audioeffectpitchshift.md#class_audioeffectpitchshift_property_fft_size)         | ``3``   |
+| [`int`](class_int.md)                          | [`oversampling`](class_audioeffectpitchshift.md#class_audioeffectpitchshift_property_oversampling) | ``4``   |
+| [`float`](class_float.md)                      | [`pitch_scale`](class_audioeffectpitchshift.md#class_audioeffectpitchshift_property_pitch_scale)   | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -108,7 +110,7 @@ The oversampling factor to use. Higher values result in better quality, but are 
 - `void` **set_pitch_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_pitch_scale** ( )
 
-The pitch scale to use. `1.0` is the default pitch and plays sounds unaffected. [`pitch_scale`](#class_audioeffectpitchshift_property_pitch_scale) can range from `0.0` (infinitely low pitch, inaudible) to `16` (16 times higher than the initial pitch).
+The pitch scale to use. `1.0` is the default pitch and plays sounds unaffected. [`pitch_scale`](class_audioeffectpitchshift.md#class_audioeffectpitchshift_property_pitch_scale) can range from `0.0` (infinitely low pitch, inaudible) to `16` (16 times higher than the initial pitch).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

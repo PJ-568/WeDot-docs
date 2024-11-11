@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/interactive_music/doc_classes/AudioStreamPlaybackInteractive.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/interactive_music/doc_classes/AudioStreamPlaybackInteractive.xml。 -->
 
 <div id="_class_audiostreamplaybackinteractive"></div>
 
@@ -17,8 +17,10 @@ Playback component of [`AudioStreamInteractive`](class_audiostreaminteractive.md
 
 ## 方法
 
-| `void` | [`switch_to_clip`](#class_audiostreamplaybackinteractive_method_switch_to_clip) ( clip_index: [`int`](class_int.md) )                              |
-| `void` | [`switch_to_clip_by_name`](#class_audiostreamplaybackinteractive_method_switch_to_clip_by_name) ( clip_name: [`StringName`](class_stringname.md) ) |
+|||
+|:-:|:--|
+| `void` | [`switch_to_clip`](class_audiostreamplaybackinteractive.md#class_audiostreamplaybackinteractive_method_switch_to_clip) ( clip_index: [`int`](class_int.md) )                              |
+| `void` | [`switch_to_clip_by_name`](class_audiostreamplaybackinteractive.md#class_audiostreamplaybackinteractive_method_switch_to_clip_by_name) ( clip_name: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

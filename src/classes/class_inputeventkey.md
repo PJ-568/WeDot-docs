@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/InputEventKey.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/InputEventKey.xml。 -->
 
 <div id="_class_inputeventkey"></div>
 
@@ -13,31 +13,35 @@ Represents a key on a keyboard being pressed or released.
 
 ## 描述
 
-An input event for keys on a keyboard. Supports key presses, key releases and [`echo`](#class_inputeventkey_property_echo) events. It can also be received in [`Node._unhandled_key_input`](#class_node_private_method__unhandled_key_input).
+An input event for keys on a keyboard. Supports key presses, key releases and [`echo`](class_inputeventkey.md#class_inputeventkey_property_echo) events. It can also be received in [`Node._unhandled_key_input`](class_node.md#class_node_private_method__unhandled_key_input).
 
- **Note:** Events received from the keyboard usually have all properties set. Event mappings should have only one of the [`keycode`](#class_inputeventkey_property_keycode), [`physical_keycode`](#class_inputeventkey_property_physical_keycode) or [`unicode`](#class_inputeventkey_property_unicode) set.
+ **Note:** Events received from the keyboard usually have all properties set. Event mappings should have only one of the [`keycode`](class_inputeventkey.md#class_inputeventkey_property_keycode), [`physical_keycode`](class_inputeventkey.md#class_inputeventkey_property_physical_keycode) or [`unicode`](class_inputeventkey.md#class_inputeventkey_property_unicode) set.
 
-When events are compared, properties are checked in the following priority - [`keycode`](#class_inputeventkey_property_keycode), [`physical_keycode`](#class_inputeventkey_property_physical_keycode) and [`unicode`](#class_inputeventkey_property_unicode). Events with the first matching value will be considered equal.
+When events are compared, properties are checked in the following priority - [`keycode`](class_inputeventkey.md#class_inputeventkey_property_keycode), [`physical_keycode`](class_inputeventkey.md#class_inputeventkey_property_physical_keycode) and [`unicode`](class_inputeventkey.md#class_inputeventkey_property_unicode). Events with the first matching value will be considered equal.
 
 ## 属性
 
-| [`bool`](class_bool.md)                       | [`echo`](#class_inputeventkey_property_echo)                         | ``false`` |
-| [Key](#enum_@globalscope_key)                 | [`key_label`](#class_inputeventkey_property_key_label)               | ``0``     |
-| [Key](#enum_@globalscope_key)                 | [`keycode`](#class_inputeventkey_property_keycode)                   | ``0``     |
-| [KeyLocation](#enum_@globalscope_keylocation) | [`location`](#class_inputeventkey_property_location)                 | ``0``     |
-| [Key](#enum_@globalscope_key)                 | [`physical_keycode`](#class_inputeventkey_property_physical_keycode) | ``0``     |
-| [`bool`](class_bool.md)                       | [`pressed`](#class_inputeventkey_property_pressed)                   | ``false`` |
-| [`int`](class_int.md)                         | [`unicode`](#class_inputeventkey_property_unicode)                   | ``0``     |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)                       | [`echo`](class_inputeventkey.md#class_inputeventkey_property_echo)                         | ``false`` |
+| [Key](#enum_@globalscope_key)                 | [`key_label`](class_inputeventkey.md#class_inputeventkey_property_key_label)               | ``0``     |
+| [Key](#enum_@globalscope_key)                 | [`keycode`](class_inputeventkey.md#class_inputeventkey_property_keycode)                   | ``0``     |
+| [KeyLocation](#enum_@globalscope_keylocation) | [`location`](class_inputeventkey.md#class_inputeventkey_property_location)                 | ``0``     |
+| [Key](#enum_@globalscope_key)                 | [`physical_keycode`](class_inputeventkey.md#class_inputeventkey_property_physical_keycode) | ``0``     |
+| [`bool`](class_bool.md)                       | [`pressed`](class_inputeventkey.md#class_inputeventkey_property_pressed)                   | ``false`` |
+| [`int`](class_int.md)                         | [`unicode`](class_inputeventkey.md#class_inputeventkey_property_unicode)                   | ``0``     |
 
 ## 方法
 
-| [`String`](class_string.md)   | [`as_text_key_label`](#class_inputeventkey_method_as_text_key_label) ( ) const[^const]                                     |
-| [`String`](class_string.md)   | [`as_text_keycode`](#class_inputeventkey_method_as_text_keycode) ( ) const[^const]                                         |
-| [`String`](class_string.md)   | [`as_text_location`](#class_inputeventkey_method_as_text_location) ( ) const[^const]                                       |
-| [`String`](class_string.md)   | [`as_text_physical_keycode`](#class_inputeventkey_method_as_text_physical_keycode) ( ) const[^const]                       |
-| [Key](#enum_@globalscope_key) | [`get_key_label_with_modifiers`](#class_inputeventkey_method_get_key_label_with_modifiers) ( ) const[^const]               |
-| [Key](#enum_@globalscope_key) | [`get_keycode_with_modifiers`](#class_inputeventkey_method_get_keycode_with_modifiers) ( ) const[^const]                   |
-| [Key](#enum_@globalscope_key) | [`get_physical_keycode_with_modifiers`](#class_inputeventkey_method_get_physical_keycode_with_modifiers) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`String`](class_string.md)   | [`as_text_key_label`](class_inputeventkey.md#class_inputeventkey_method_as_text_key_label) ( ) const[^const]                                     |
+| [`String`](class_string.md)   | [`as_text_keycode`](class_inputeventkey.md#class_inputeventkey_method_as_text_keycode) ( ) const[^const]                                         |
+| [`String`](class_string.md)   | [`as_text_location`](class_inputeventkey.md#class_inputeventkey_method_as_text_location) ( ) const[^const]                                       |
+| [`String`](class_string.md)   | [`as_text_physical_keycode`](class_inputeventkey.md#class_inputeventkey_method_as_text_physical_keycode) ( ) const[^const]                       |
+| [Key](#enum_@globalscope_key) | [`get_key_label_with_modifiers`](class_inputeventkey.md#class_inputeventkey_method_get_key_label_with_modifiers) ( ) const[^const]               |
+| [Key](#enum_@globalscope_key) | [`get_keycode_with_modifiers`](class_inputeventkey.md#class_inputeventkey_method_get_keycode_with_modifiers) ( ) const[^const]                   |
+| [Key](#enum_@globalscope_key) | [`get_physical_keycode_with_modifiers`](class_inputeventkey.md#class_inputeventkey_method_get_physical_keycode_with_modifiers) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -69,7 +73,7 @@ If `true`, the key was already pressed before this event. An echo event is a rep
 
 Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the [Key](#enum_@globalscope_key) constants or any valid Unicode character.
 
-For keyboard layouts with a single label on the key, it is equivalent to [`keycode`](#class_inputeventkey_property_keycode).
+For keyboard layouts with a single label on the key, it is equivalent to [`keycode`](class_inputeventkey.md#class_inputeventkey_property_keycode).
 
 To get a human-readable representation of the **InputEventKey**, use `OS.get_keycode_string(event.key_label)` where `event` is the **InputEventKey**.
 
@@ -134,7 +138,7 @@ Represents the location of a key which has both left and right versions, such as
 
 Represents the physical location of a key on the 101/102-key US QWERTY keyboard, which corresponds to one of the [Key](#enum_@globalscope_key) constants.
 
-To get a human-readable representation of the **InputEventKey**, use [`OS.get_keycode_string`](#class_os_method_get_keycode_string) in combination with [`DisplayServer.keyboard_get_keycode_from_physical`](#class_displayserver_method_keyboard_get_keycode_from_physical):
+To get a human-readable representation of the **InputEventKey**, use [`OS.get_keycode_string`](class_os.md#class_os_method_get_keycode_string) in combination with [`DisplayServer.keyboard_get_keycode_from_physical`](class_displayserver.md#class_displayserver_method_keyboard_get_keycode_from_physical):
 
 
 
@@ -188,7 +192,7 @@ If `true`, the key's state is pressed. If `false`, the key's state is released.
 - `void` **set_unicode** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_unicode** ( )
 
-The key Unicode character code (when relevant), shifted by modifier keys. Unicode character codes for composite characters and complex scripts may not be available unless IME input mode is active. See [`Window.set_ime_active`](#class_window_method_set_ime_active) for more information.
+The key Unicode character code (when relevant), shifted by modifier keys. Unicode character codes for composite characters and complex scripts may not be available unless IME input mode is active. See [`Window.set_ime_active`](class_window.md#class_window_method_set_ime_active) for more information.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -200,7 +204,7 @@ The key Unicode character code (when relevant), shifted by modifier keys. Unicod
 
 [`String`](class_string.md) **as_text_key_label** ( ) const[^const]<div id="class_inputeventkey_method_as_text_key_label"></div>
 
-Returns a [`String`](class_string.md) representation of the event's [`key_label`](#class_inputeventkey_property_key_label) and modifiers.
+Returns a [`String`](class_string.md) representation of the event's [`key_label`](class_inputeventkey.md#class_inputeventkey_property_key_label) and modifiers.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -210,7 +214,7 @@ Returns a [`String`](class_string.md) representation of the event's [`key_label`
 
 [`String`](class_string.md) **as_text_keycode** ( ) const[^const]<div id="class_inputeventkey_method_as_text_keycode"></div>
 
-Returns a [`String`](class_string.md) representation of the event's [`keycode`](#class_inputeventkey_property_keycode) and modifiers.
+Returns a [`String`](class_string.md) representation of the event's [`keycode`](class_inputeventkey.md#class_inputeventkey_property_keycode) and modifiers.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -220,7 +224,7 @@ Returns a [`String`](class_string.md) representation of the event's [`keycode`](
 
 [`String`](class_string.md) **as_text_location** ( ) const[^const]<div id="class_inputeventkey_method_as_text_location"></div>
 
-Returns a [`String`](class_string.md) representation of the event's [`location`](#class_inputeventkey_property_location). This will be a blank string if the event is not specific to a location.
+Returns a [`String`](class_string.md) representation of the event's [`location`](class_inputeventkey.md#class_inputeventkey_property_location). This will be a blank string if the event is not specific to a location.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -230,7 +234,7 @@ Returns a [`String`](class_string.md) representation of the event's [`location`]
 
 [`String`](class_string.md) **as_text_physical_keycode** ( ) const[^const]<div id="class_inputeventkey_method_as_text_physical_keycode"></div>
 
-Returns a [`String`](class_string.md) representation of the event's [`physical_keycode`](#class_inputeventkey_property_physical_keycode) and modifiers.
+Returns a [`String`](class_string.md) representation of the event's [`physical_keycode`](class_inputeventkey.md#class_inputeventkey_property_physical_keycode) and modifiers.
 
 <!-- rst-class:: classref-item-separator -->
 

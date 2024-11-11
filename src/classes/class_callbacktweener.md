@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CallbackTweener.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CallbackTweener.xml。 -->
 
 <div id="_class_callbacktweener"></div>
 
@@ -13,15 +13,17 @@ Calls the specified method after optional delay.
 
 ## 描述
 
-**CallbackTweener** is used to call a method in a tweening sequence. See [`Tween.tween_callback`](#class_tween_method_tween_callback) for more usage information.
+**CallbackTweener** is used to call a method in a tweening sequence. See [`Tween.tween_callback`](class_tween.md#class_tween_method_tween_callback) for more usage information.
 
 The tweener will finish automatically if the callback's target object is freed.
 
- **Note:** [`Tween.tween_callback`](#class_tween_method_tween_callback) is the only correct way to create **CallbackTweener**. Any **CallbackTweener** created manually will not function correctly.
+ **Note:** [`Tween.tween_callback`](class_tween.md#class_tween_method_tween_callback) is the only correct way to create **CallbackTweener**. Any **CallbackTweener** created manually will not function correctly.
 
 ## 方法
 
-| [`CallbackTweener`](class_callbacktweener.md) | [`set_delay`](#class_callbacktweener_method_set_delay) ( delay: [`float`](class_float.md) ) |
+|||
+|:-:|:--|
+| [`CallbackTweener`](class_callbacktweener.md) | [`set_delay`](class_callbacktweener.md#class_callbacktweener_method_set_delay) ( delay: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,12 +37,12 @@ The tweener will finish automatically if the callback's target object is freed.
 
 Makes the callback call delayed by given time in seconds.
 
- **Example:** 
+ **Example:** Call [`Node.queue_free`](class_node.md#class_node_method_queue_free) after 2 seconds.
 
 ```
 
     var tween = get_tree().create_tween()
-    tween.tween_callback(queue_free).set_delay(2) #this will call queue_free() after 2 seconds
+    tween.tween_callback(queue_free).set_delay(2)
 ```
 
 

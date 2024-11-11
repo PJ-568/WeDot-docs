@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectDelay.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectDelay.xml。 -->
 
 <div id="_class_audioeffectdelay"></div>
 
@@ -19,19 +19,21 @@ Plays input signal back after a period of time. The delayed signal may be played
 
 ## 属性
 
-| [`float`](class_float.md) | [`dry`](#class_audioeffectdelay_property_dry)                             | ``1.0``     |
-| [`bool`](class_bool.md)   | [`feedback_active`](#class_audioeffectdelay_property_feedback_active)     | ``false``   |
-| [`float`](class_float.md) | [`feedback_delay_ms`](#class_audioeffectdelay_property_feedback_delay_ms) | ``340.0``   |
-| [`float`](class_float.md) | [`feedback_level_db`](#class_audioeffectdelay_property_feedback_level_db) | ``-6.0``    |
-| [`float`](class_float.md) | [`feedback_lowpass`](#class_audioeffectdelay_property_feedback_lowpass)   | ``16000.0`` |
-| [`bool`](class_bool.md)   | [`tap1_active`](#class_audioeffectdelay_property_tap1_active)             | ``true``    |
-| [`float`](class_float.md) | [`tap1_delay_ms`](#class_audioeffectdelay_property_tap1_delay_ms)         | ``250.0``   |
-| [`float`](class_float.md) | [`tap1_level_db`](#class_audioeffectdelay_property_tap1_level_db)         | ``-6.0``    |
-| [`float`](class_float.md) | [`tap1_pan`](#class_audioeffectdelay_property_tap1_pan)                   | ``0.2``     |
-| [`bool`](class_bool.md)   | [`tap2_active`](#class_audioeffectdelay_property_tap2_active)             | ``true``    |
-| [`float`](class_float.md) | [`tap2_delay_ms`](#class_audioeffectdelay_property_tap2_delay_ms)         | ``500.0``   |
-| [`float`](class_float.md) | [`tap2_level_db`](#class_audioeffectdelay_property_tap2_level_db)         | ``-12.0``   |
-| [`float`](class_float.md) | [`tap2_pan`](#class_audioeffectdelay_property_tap2_pan)                   | ``-0.4``    |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`dry`](class_audioeffectdelay.md#class_audioeffectdelay_property_dry)                             | ``1.0``     |
+| [`bool`](class_bool.md)   | [`feedback_active`](class_audioeffectdelay.md#class_audioeffectdelay_property_feedback_active)     | ``false``   |
+| [`float`](class_float.md) | [`feedback_delay_ms`](class_audioeffectdelay.md#class_audioeffectdelay_property_feedback_delay_ms) | ``340.0``   |
+| [`float`](class_float.md) | [`feedback_level_db`](class_audioeffectdelay.md#class_audioeffectdelay_property_feedback_level_db) | ``-6.0``    |
+| [`float`](class_float.md) | [`feedback_lowpass`](class_audioeffectdelay.md#class_audioeffectdelay_property_feedback_lowpass)   | ``16000.0`` |
+| [`bool`](class_bool.md)   | [`tap1_active`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap1_active)             | ``true``    |
+| [`float`](class_float.md) | [`tap1_delay_ms`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap1_delay_ms)         | ``250.0``   |
+| [`float`](class_float.md) | [`tap1_level_db`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap1_level_db)         | ``-6.0``    |
+| [`float`](class_float.md) | [`tap1_pan`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap1_pan)                   | ``0.2``     |
+| [`bool`](class_bool.md)   | [`tap2_active`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap2_active)             | ``true``    |
+| [`float`](class_float.md) | [`tap2_delay_ms`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap2_delay_ms)         | ``500.0``   |
+| [`float`](class_float.md) | [`tap2_level_db`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap2_level_db)         | ``-12.0``   |
+| [`float`](class_float.md) | [`tap2_pan`](class_audioeffectdelay.md#class_audioeffectdelay_property_tap2_pan)                   | ``-0.4``    |
 
 <!-- rst-class:: classref-section-separator -->
 

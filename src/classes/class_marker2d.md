@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Marker2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Marker2D.xml。 -->
 
 <div id="_class_marker2d"></div>
 
@@ -17,7 +17,9 @@ Generic 2D position hint for editing. It's just like a plain [`Node2D`](class_no
 
 ## 属性
 
-| [`float`](class_float.md) | [`gizmo_extents`](#class_marker2d_property_gizmo_extents) | ``10.0`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`gizmo_extents`](class_marker2d.md#class_marker2d_property_gizmo_extents) | ``10.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

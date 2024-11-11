@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Signal.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Signal.xml。 -->
 
 <div id="_class_signal"></div>
 
@@ -11,7 +11,7 @@ A built-in type representing a signal of an [`Object`](class_object.md).
 
 ## 描述
 
-**Signal** is a built-in [`Variant`](class_variant.md) type that represents a signal of an [`Object`](class_object.md) instance. Like all [`Variant`](class_variant.md) types, it can be stored in variables and passed to functions. Signals allow all connected [`Callable`](class_callable.md) s (and by extension their respective objects) to listen and react to events, without directly referencing one another. This keeps the code flexible and easier to manage.
+**Signal** is a built-in [`Variant`](class_variant.md) type that represents a signal of an [`Object`](class_object.md) instance. Like all [`Variant`](class_variant.md) types, it can be stored in variables and passed to functions. Signals allow all connected [`Callable`](class_callable.md) s (and by extension their respective objects) to listen and react to events, without directly referencing one another. This keeps the code flexible and easier to manage. You can check whether an [`Object`](class_object.md) has a given signal name using [`Object.has_signal`](class_object.md#class_object_method_has_signal).
 
 In GDScript, signals can be declared with the `signal` keyword. In C#, you may use the `[Signal]` attribute on a delegate.
 
@@ -47,24 +47,31 @@ In GDScript, signals can be declared with the `signal` keyword. In C#, you may u
 
 ## 构造函数
 
-| [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( )                                                                                  |
-| [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( from: [`Signal`](class_signal.md) )                                                |
-| [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( object: [`Object`](class_object.md), signal: [`StringName`](class_stringname.md) ) |
+|||
+|:-:|:--|
+| [`Signal`](class_signal.md) | [`Signal`](class_signal.md#class_signal_constructor_signal) ( )                                                                                  |
+| [`Signal`](class_signal.md) | [`Signal`](class_signal.md#class_signal_constructor_signal) ( from: [`Signal`](class_signal.md) )                                                |
+| [`Signal`](class_signal.md) | [`Signal`](class_signal.md#class_signal_constructor_signal) ( object: [`Object`](class_object.md), signal: [`StringName`](class_stringname.md) ) |
 
 ## 方法
 
-| [`int`](class_int.md)               | [`connect`](#class_signal_method_connect) ( callable: [`Callable`](class_callable.md), flags: [`int`](class_int.md) = 0 ) |
-| `void`                              | [`disconnect`](#class_signal_method_disconnect) ( callable: [`Callable`](class_callable.md) )                             |
-| `void`                              | [`emit`](#class_signal_method_emit) ( ... ) vararg[^vararg] const[^const]                                                 |
-| [`Array`](class_array.md)           | [`get_connections`](#class_signal_method_get_connections) ( ) const[^const]                                               |
-| [`StringName`](class_stringname.md) | [`get_name`](#class_signal_method_get_name) ( ) const[^const]                                                             |
-| [`Object`](class_object.md)         | [`get_object`](#class_signal_method_get_object) ( ) const[^const]                                                         |
-| [`int`](class_int.md)               | [`get_object_id`](#class_signal_method_get_object_id) ( ) const[^const]                                                   |
-| [`bool`](class_bool.md)             | [`is_connected`](#class_signal_method_is_connected) ( callable: [`Callable`](class_callable.md) ) const[^const]           |
-| [`bool`](class_bool.md)             | [`is_null`](#class_signal_method_is_null) ( ) const[^const]                                                               |
+|||
+|:-:|:--|
+| [`int`](class_int.md)               | [`connect`](class_signal.md#class_signal_method_connect) ( callable: [`Callable`](class_callable.md), flags: [`int`](class_int.md) = 0 ) |
+| `void`                              | [`disconnect`](class_signal.md#class_signal_method_disconnect) ( callable: [`Callable`](class_callable.md) )                             |
+| `void`                              | [`emit`](class_signal.md#class_signal_method_emit) ( ... ) vararg[^vararg] const[^const]                                                 |
+| [`Array`](class_array.md)           | [`get_connections`](class_signal.md#class_signal_method_get_connections) ( ) const[^const]                                               |
+| [`StringName`](class_stringname.md) | [`get_name`](class_signal.md#class_signal_method_get_name) ( ) const[^const]                                                             |
+| [`Object`](class_object.md)         | [`get_object`](class_signal.md#class_signal_method_get_object) ( ) const[^const]                                                         |
+| [`int`](class_int.md)               | [`get_object_id`](class_signal.md#class_signal_method_get_object_id) ( ) const[^const]                                                   |
+| [`bool`](class_bool.md)             | [`has_connections`](class_signal.md#class_signal_method_has_connections) ( ) const[^const]                                               |
+| [`bool`](class_bool.md)             | [`is_connected`](class_signal.md#class_signal_method_is_connected) ( callable: [`Callable`](class_callable.md) ) const[^const]           |
+| [`bool`](class_bool.md)             | [`is_null`](class_signal.md#class_signal_method_is_null) ( ) const[^const]                                                               |
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_Signal.md#operator_neq_Signal) ( right: [`Signal`](class_signal.md) ) |
 | [`bool`](class_bool.md) | [`operator ==`](class_Signal.md#operator_eq_Signal) ( right: [`Signal`](class_signal.md) )  |
 
@@ -94,7 +101,7 @@ Constructs a **Signal** as a copy of the given **Signal**.
 
 [`Signal`](class_signal.md) **Signal** ( object: [`Object`](class_object.md), signal: [`StringName`](class_stringname.md) )
 
-Creates a new **Signal** named `signal` in the specified `object`.
+Creates a **Signal** object referencing a signal named `signal` in the specified `object`.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -106,9 +113,9 @@ Creates a new **Signal** named `signal` in the specified `object`.
 
 [`int`](class_int.md) **connect** ( callable: [`Callable`](class_callable.md), flags: [`int`](class_int.md) = 0 )<div id="class_signal_method_connect"></div>
 
-Connects this signal to the specified `callable`. Optional `flags` can be also added to configure the connection's behavior (see [ConnectFlags](#enum_object_connectflags) constants). You can provide additional arguments to the connected `callable` by using [`Callable.bind`](#class_callable_method_bind).
+Connects this signal to the specified `callable`. Optional `flags` can be also added to configure the connection's behavior (see [ConnectFlags](#enum_object_connectflags) constants). You can provide additional arguments to the connected `callable` by using [`Callable.bind`](class_callable.md#class_callable_method_bind).
 
-A signal can only be connected once to the same [`Callable`](class_callable.md). If the signal is already connected, returns [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) and pushes an error message, unless the signal is connected with [`Object.CONNECT_REFERENCE_COUNTED`](#class_object_constant_connect_reference_counted). To prevent this, use [`is_connected`](#class_signal_method_is_connected) first to check for existing connections.
+A signal can only be connected once to the same [`Callable`](class_callable.md). If the signal is already connected, returns [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) and pushes an error message, unless the signal is connected with [`Object.CONNECT_REFERENCE_COUNTED`](class_object.md#class_object_constant_connect_reference_counted). To prevent this, use [`is_connected`](class_signal.md#class_signal_method_is_connected) first to check for existing connections.
 
 ```
 
@@ -129,7 +136,7 @@ A signal can only be connected once to the same [`Callable`](class_callable.md).
 
 `void` **disconnect** ( callable: [`Callable`](class_callable.md) )<div id="class_signal_method_disconnect"></div>
 
-Disconnects this signal from the specified [`Callable`](class_callable.md). If the connection does not exist, generates an error. Use [`is_connected`](#class_signal_method_is_connected) to make sure that the connection exists.
+Disconnects this signal from the specified [`Callable`](class_callable.md). If the connection does not exist, generates an error. Use [`is_connected`](class_signal.md#class_signal_method_is_connected) to make sure that the connection exists.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -185,7 +192,17 @@ Returns the object emitting this signal.
 
 [`int`](class_int.md) **get_object_id** ( ) const[^const]<div id="class_signal_method_get_object_id"></div>
 
-Returns the ID of the object emitting this signal (see [`Object.get_instance_id`](#class_object_method_get_instance_id)).
+Returns the ID of the object emitting this signal (see [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id)).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_signal_method_has_connections"></div>
+
+[`bool`](class_bool.md) **has_connections** ( ) const[^const]<div id="class_signal_method_has_connections"></div>
+
+Returns `true` if any [`Callable`](class_callable.md) is connected to this signal.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -205,7 +222,7 @@ Returns `true` if the specified [`Callable`](class_callable.md) is connected to 
 
 [`bool`](class_bool.md) **is_null** ( ) const[^const]<div id="class_signal_method_is_null"></div>
 
-Returns `true` if the signal's name does not exist in its object, or the object is not valid.
+Returns `true` if this **Signal** has no object and the signal name is empty. Equivalent to `signal == Signal()`.
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderSceneBuffers.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderSceneBuffers.xml。 -->
 
 <div id="_class_renderscenebuffers"></div>
 
@@ -21,7 +21,9 @@ Abstract scene buffers object, created for each viewport for which 3D rendering 
 
 ## 方法
 
-| `void` | [`configure`](#class_renderscenebuffers_method_configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) |
+|||
+|:-:|:--|
+| `void` | [`configure`](class_renderscenebuffers.md#class_renderscenebuffers_method_configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

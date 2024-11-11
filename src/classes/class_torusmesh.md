@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TorusMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TorusMesh.xml。 -->
 
 <div id="_class_torusmesh"></div>
 
@@ -17,10 +17,12 @@ Class representing a torus [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 属性
 
-| [`float`](class_float.md) | [`inner_radius`](#class_torusmesh_property_inner_radius)   | ``0.5`` |
-| [`float`](class_float.md) | [`outer_radius`](#class_torusmesh_property_outer_radius)   | ``1.0`` |
-| [`int`](class_int.md)     | [`ring_segments`](#class_torusmesh_property_ring_segments) | ``32``  |
-| [`int`](class_int.md)     | [`rings`](#class_torusmesh_property_rings)                 | ``64``  |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`inner_radius`](class_torusmesh.md#class_torusmesh_property_inner_radius)   | ``0.5`` |
+| [`float`](class_float.md) | [`outer_radius`](class_torusmesh.md#class_torusmesh_property_outer_radius)   | ``1.0`` |
+| [`int`](class_int.md)     | [`ring_segments`](class_torusmesh.md#class_torusmesh_property_ring_segments) | ``32``  |
+| [`int`](class_int.md)     | [`rings`](class_torusmesh.md#class_torusmesh_property_rings)                 | ``64``  |
 
 <!-- rst-class:: classref-section-separator -->
 

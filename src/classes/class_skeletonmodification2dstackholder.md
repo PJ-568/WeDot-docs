@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SkeletonModification2DStackHolder.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SkeletonModification2DStackHolder.xml。 -->
 
 <div id="_class_skeletonmodification2dstackholder"></div>
 
@@ -21,8 +21,10 @@ This [`SkeletonModification2D`](class_skeletonmodification2d.md) holds a referen
 
 ## 方法
 
-| [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) | [`get_held_modification_stack`](#class_skeletonmodification2dstackholder_method_get_held_modification_stack) ( ) const[^const]                                                                                  |
-| `void`                                                                | [`set_held_modification_stack`](#class_skeletonmodification2dstackholder_method_set_held_modification_stack) ( held_modification_stack: [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) ) |
+|||
+|:-:|:--|
+| [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) | [`get_held_modification_stack`](class_skeletonmodification2dstackholder.md#class_skeletonmodification2dstackholder_method_get_held_modification_stack) ( ) const[^const]                                                                                  |
+| `void`                                                                | [`set_held_modification_stack`](class_skeletonmodification2dstackholder.md#class_skeletonmodification2dstackholder_method_set_held_modification_stack) ( held_modification_stack: [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

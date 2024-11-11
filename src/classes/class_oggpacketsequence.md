@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/ogg/doc_classes/OggPacketSequence.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/ogg/doc_classes/OggPacketSequence.xml。 -->
 
 <div id="_class_oggpacketsequence"></div>
 
@@ -17,13 +17,17 @@ A sequence of Ogg packets.
 
 ## 属性
 
-| [`PackedInt64Array`](class_packedint64array.md)   | [`granule_positions`](#class_oggpacketsequence_property_granule_positions) | ``PackedInt64Array()`` |
-| [Array](class_array.md) [`Array`](class_array.md) | [`packet_data`](#class_oggpacketsequence_property_packet_data)             | ``[]``                 |
-| [`float`](class_float.md)                         | [`sampling_rate`](#class_oggpacketsequence_property_sampling_rate)         | ``0.0``                |
+|||
+|:-:|:--|
+| [`PackedInt64Array`](class_packedint64array.md)   | [`granule_positions`](class_oggpacketsequence.md#class_oggpacketsequence_property_granule_positions) | ``PackedInt64Array()`` |
+| [Array](class_array.md) [`Array`](class_array.md) | [`packet_data`](class_oggpacketsequence.md#class_oggpacketsequence_property_packet_data)             | ``[]``                 |
+| [`float`](class_float.md)                         | [`sampling_rate`](class_oggpacketsequence.md#class_oggpacketsequence_property_sampling_rate)         | ``0.0``                |
 
 ## 方法
 
-| [`float`](class_float.md) | [`get_length`](#class_oggpacketsequence_method_get_length) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`get_length`](class_oggpacketsequence.md#class_oggpacketsequence_method_get_length) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

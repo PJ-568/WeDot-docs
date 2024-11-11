@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectNotchFilter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectNotchFilter.xml。 -->
 
 <div id="_class_audioeffectnotchfilter"></div>
 
@@ -13,7 +13,7 @@ Adds a notch filter to the Audio bus.
 
 ## 描述
 
-Attenuates frequencies in a narrow band around the [`AudioEffectFilter.cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) and cuts frequencies outside of this range.
+Attenuates frequencies in a narrow band around the [`AudioEffectFilter.cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) and cuts frequencies outside of this range.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

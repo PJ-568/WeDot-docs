@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFTexture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFTexture.xml。 -->
 
 <div id="_class_gltftexture"></div>
 
@@ -9,12 +9,14 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-GLTFTexture represents a texture in a GLTF file.
+GLTFTexture represents a texture in a glTF file.
 
 ## 属性
 
-| [`int`](class_int.md) | [`sampler`](#class_gltftexture_property_sampler)     | ``-1`` |
-| [`int`](class_int.md) | [`src_image`](#class_gltftexture_property_src_image) | ``-1`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`sampler`](class_gltftexture.md#class_gltftexture_property_sampler)     | ``-1`` |
+| [`int`](class_int.md) | [`src_image`](class_gltftexture.md#class_gltftexture_property_src_image) | ``-1`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -42,7 +44,7 @@ ID of the texture sampler to use when sampling the image. If -1, then the defaul
 - `void` **set_src_image** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_src_image** ( )
 
-The index of the image associated with this texture, see [`GLTFState.get_images`](#class_gltfstate_method_get_images). If -1, then this texture does not have an image assigned.
+The index of the image associated with this texture, see [`GLTFState.get_images`](class_gltfstate.md#class_gltfstate_method_get_images). If -1, then this texture does not have an image assigned.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

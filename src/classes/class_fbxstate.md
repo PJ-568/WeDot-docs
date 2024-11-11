@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/fbx/doc_classes/FBXState.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/fbx/doc_classes/FBXState.xml。 -->
 
 <div id="_class_fbxstate"></div>
 
@@ -17,7 +17,9 @@ The FBXState handles the state data imported from FBX files.
 
 ## 属性
 
-| [`bool`](class_bool.md) | [`allow_geometry_helper_nodes`](#class_fbxstate_property_allow_geometry_helper_nodes) | ``false`` |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`allow_geometry_helper_nodes`](class_fbxstate.md#class_fbxstate_property_allow_geometry_helper_nodes) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

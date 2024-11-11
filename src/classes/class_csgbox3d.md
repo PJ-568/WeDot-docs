@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/csg/doc_classes/CSGBox3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/csg/doc_classes/CSGBox3D.xml。 -->
 
 <div id="_class_csgbox3d"></div>
 
@@ -19,8 +19,10 @@ This node allows you to create a box for use with the CSG system.
 
 ## 属性
 
-| [`Material`](class_material.md) | [`material`](#class_csgbox3d_property_material) |                      |
-| [`Vector3`](class_vector3.md)   | [`size`](#class_csgbox3d_property_size)         | ``Vector3(1, 1, 1)`` |
+|||
+|:-:|:--|
+| [`Material`](class_material.md) | [`material`](class_csgbox3d.md#class_csgbox3d_property_material) |                      |
+| [`Vector3`](class_vector3.md)   | [`size`](class_csgbox3d.md#class_csgbox3d_property_size)         | ``Vector3(1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

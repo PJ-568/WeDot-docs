@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/int.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/int.xml。 -->
 
 <div id="_class_int"></div>
 
@@ -74,14 +74,18 @@ You can use the `0b` literal for binary representation, the `0x` literal for hex
 
 ## 构造函数
 
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( )                                   |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`bool`](class_bool.md) )     |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`float`](class_float.md) )   |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( )                                   |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`bool`](class_bool.md) )     |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`float`](class_float.md) )   |
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`operator !=`](class_int.md#operator_neq_float) ( right: [`float`](class_float.md) )               |
 | [`bool`](class_bool.md)             | [`operator !=`](class_int.md#operator_neq_int) ( right: [`int`](class_int.md) )                     |
 | [`int`](class_int.md)               | [`operator %`](class_int.md#operator_mod_int) ( right: [`int`](class_int.md) )                      |
@@ -148,7 +152,7 @@ Constructs an **int** as a copy of the given **int**.
 
 [`int`](class_int.md) **int** ( from: [`String`](class_string.md) )
 
-Constructs a new **int** from a [`String`](class_string.md), following the same rules as [`String.to_int`](#class_string_method_to_int).
+Constructs a new **int** from a [`String`](class_string.md), following the same rules as [`String.to_int`](class_string.md#class_string_method_to_int).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -196,7 +200,7 @@ Returns `true` if the **int** s are not equal.
 
 [`int`](class_int.md) **operator %** ( right: [`int`](class_int.md) ) <div id="class_int_operator_mod_int"></div>
 
-Returns the remainder after dividing two **int** s. Uses truncated division, which returns a negative number if the dividend is negative. If this is not desired, consider using [`@GlobalScope.posmod`](#class_@globalscope_method_posmod).
+Returns the remainder after dividing two **int** s. Uses truncated division, which returns a negative number if the dividend is negative. If this is not desired, consider using [`@GlobalScope.posmod`](class_@globalscope.md#class_@globalscope_method_posmod).
 
 ```
 

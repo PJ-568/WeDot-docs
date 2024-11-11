@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ImageTexture3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ImageTexture3D.xml。 -->
 
 <div id="_class_imagetexture3d"></div>
 
@@ -19,8 +19,10 @@ Texture with 3 dimensions.
 
 ## 方法
 
-| [Error](#enum_@globalscope_error) | [`create`](#class_imagetexture3d_method_create) ( format: [Format](#enum_image_format), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), data: [Array](class_array.md) [`Image`](class_image.md) ) |
-| `void`                            | [`update`](#class_imagetexture3d_method_update) ( data: [Array](class_array.md) [`Image`](class_image.md) )                                                                                                                                                                        |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error) | [`create`](class_imagetexture3d.md#class_imagetexture3d_method_create) ( format: [Format](#enum_image_format), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), data: [Array](class_array.md) [`Image`](class_image.md) ) |
+| `void`                            | [`update`](class_imagetexture3d.md#class_imagetexture3d_method_update) ( data: [Array](class_array.md) [`Image`](class_image.md) )                                                                                                                                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -42,7 +44,7 @@ Creates the **ImageTexture3D** with specified `width`, `height`, and `depth`. Se
 
 `void` **update** ( data: [Array](class_array.md) [`Image`](class_image.md) )<div id="class_imagetexture3d_method_update"></div>
 
-Replaces the texture's existing data with the layers specified in `data`. The size of `data` must match the parameters that were used for [`create`](#class_imagetexture3d_method_create). In other words, the texture cannot be resized or have its format changed by calling [`update`](#class_imagetexture3d_method_update).
+Replaces the texture's existing data with the layers specified in `data`. The size of `data` must match the parameters that were used for [`create`](class_imagetexture3d.md#class_imagetexture3d_method_create). In other words, the texture cannot be resized or have its format changed by calling [`update`](class_imagetexture3d.md#class_imagetexture3d_method_update).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

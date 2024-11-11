@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SubViewportContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SubViewportContainer.xml。 -->
 
 <div id="_class_subviewportcontainer"></div>
 
@@ -13,21 +13,25 @@ A container used for displaying the contents of a [`SubViewport`](class_subviewp
 
 ## 描述
 
-A container that displays the contents of underlying [`SubViewport`](class_subviewport.md) child nodes. It uses the combined size of the [`SubViewport`](class_subviewport.md) s as minimum size, unless [`stretch`](#class_subviewportcontainer_property_stretch) is enabled.
+A container that displays the contents of underlying [`SubViewport`](class_subviewport.md) child nodes. It uses the combined size of the [`SubViewport`](class_subviewport.md) s as minimum size, unless [`stretch`](class_subviewportcontainer.md#class_subviewportcontainer_property_stretch) is enabled.
 
- **Note:** Changing a **SubViewportContainer**'s [`Control.scale`](#class_control_property_scale) will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's margins instead (if it's not already in a container).
+ **Note:** Changing a **SubViewportContainer**'s [`Control.scale`](class_control.md#class_control_property_scale) will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's margins instead (if it's not already in a container).
 
  **Note:** The **SubViewportContainer** forwards mouse-enter and mouse-exit notifications to its sub-viewports.
 
 ## 属性
 
-| [FocusMode](#enum_control_focusmode) | focus_mode                                                              | ``1`` (overrides [`Control`](#class_control_property_focus_mode)) |
-| [`bool`](class_bool.md)              | [`stretch`](#class_subviewportcontainer_property_stretch)               | ``false``                                                         |
-| [`int`](class_int.md)                | [`stretch_shrink`](#class_subviewportcontainer_property_stretch_shrink) | ``1``                                                             |
+|||
+|:-:|:--|
+| [FocusMode](#enum_control_focusmode) | focus_mode                                                                                           | ``1`` (overrides [`Control`](class_control.md#class_control_property_focus_mode)) |
+| [`bool`](class_bool.md)              | [`stretch`](class_subviewportcontainer.md#class_subviewportcontainer_property_stretch)               | ``false``                                                                         |
+| [`int`](class_int.md)                | [`stretch_shrink`](class_subviewportcontainer.md#class_subviewportcontainer_property_stretch_shrink) | ``1``                                                                             |
 
 ## 方法
 
-| [`bool`](class_bool.md) | [`_propagate_input_event`](#class_subviewportcontainer_private_method__propagate_input_event) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual] const[^const] |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`_propagate_input_event`](class_subviewportcontainer.md#class_subviewportcontainer_private_method__propagate_input_event) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -44,7 +48,7 @@ A container that displays the contents of underlying [`SubViewport`](class_subvi
 
 If `true`, the sub-viewport will be automatically resized to the control's size.
 
- **Note:** If `true`, this will prohibit changing [`SubViewport.size`](#class_subviewport_property_size) of its children manually.
+ **Note:** If `true`, this will prohibit changing [`SubViewport.size`](class_subviewport.md#class_subviewport_property_size) of its children manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -59,9 +63,9 @@ If `true`, the sub-viewport will be automatically resized to the control's size.
 
 Divides the sub-viewport's effective resolution by this value while preserving its scale. This can be used to speed up rendering.
 
-For example, a 1280×720 sub-viewport with [`stretch_shrink`](#class_subviewportcontainer_property_stretch_shrink) set to `2` will be rendered at 640×360 while occupying the same size in the container.
+For example, a 1280×720 sub-viewport with [`stretch_shrink`](class_subviewportcontainer.md#class_subviewportcontainer_property_stretch_shrink) set to `2` will be rendered at 640×360 while occupying the same size in the container.
 
- **Note:** [`stretch`](#class_subviewportcontainer_property_stretch) must be `true` for this property to work.
+ **Note:** [`stretch`](class_subviewportcontainer.md#class_subviewportcontainer_property_stretch) must be `true` for this property to work.
 
 <!-- rst-class:: classref-section-separator -->
 

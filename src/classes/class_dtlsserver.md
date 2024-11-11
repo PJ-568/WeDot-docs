@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/DTLSServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/DTLSServer.xml。 -->
 
 <div id="_class_dtlsserver"></div>
 
@@ -13,7 +13,7 @@ Helper class to implement a DTLS server.
 
 ## 描述
 
-This class is used to store the state of a DTLS server. Upon [`setup`](#class_dtlsserver_method_setup) it converts connected [`PacketPeerUDP`](class_packetpeerudp.md) to [`PacketPeerDTLS`](class_packetpeerdtls.md) accepting them via [`take_connection`](#class_dtlsserver_method_take_connection) as DTLS clients. Under the hood, this class is used to store the DTLS state and cookies of the server. The reason of why the state and cookies are needed is outside of the scope of this documentation.
+This class is used to store the state of a DTLS server. Upon [`setup`](class_dtlsserver.md#class_dtlsserver_method_setup) it converts connected [`PacketPeerUDP`](class_packetpeerudp.md) to [`PacketPeerDTLS`](class_packetpeerdtls.md) accepting them via [`take_connection`](class_dtlsserver.md#class_dtlsserver_method_take_connection) as DTLS clients. Under the hood, this class is used to store the DTLS state and cookies of the server. The reason of why the state and cookies are needed is outside of the scope of this documentation.
 
 Below a small example of how to use it:
 
@@ -178,8 +178,10 @@ Below a small example of how to use it:
 
 ## 方法
 
-| [Error](#enum_@globalscope_error)           | [`setup`](#class_dtlsserver_method_setup) ( server_options: [`TLSOptions`](class_tlsoptions.md) )                     |
-| [`PacketPeerDTLS`](class_packetpeerdtls.md) | [`take_connection`](#class_dtlsserver_method_take_connection) ( udp_peer: [`PacketPeerUDP`](class_packetpeerudp.md) ) |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error)           | [`setup`](class_dtlsserver.md#class_dtlsserver_method_setup) ( server_options: [`TLSOptions`](class_tlsoptions.md) )                     |
+| [`PacketPeerDTLS`](class_packetpeerdtls.md) | [`take_connection`](class_dtlsserver.md#class_dtlsserver_method_take_connection) ( udp_peer: [`PacketPeerUDP`](class_packetpeerudp.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -191,7 +193,7 @@ Below a small example of how to use it:
 
 [Error](#enum_@globalscope_error) **setup** ( server_options: [`TLSOptions`](class_tlsoptions.md) )<div id="class_dtlsserver_method_setup"></div>
 
-Setup the DTLS server to use the given `server_options`. See [`TLSOptions.server`](#class_tlsoptions_method_server).
+Setup the DTLS server to use the given `server_options`. See [`TLSOptions.server`](class_tlsoptions.md#class_tlsoptions_method_server).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -201,9 +203,9 @@ Setup the DTLS server to use the given `server_options`. See [`TLSOptions.server
 
 [`PacketPeerDTLS`](class_packetpeerdtls.md) **take_connection** ( udp_peer: [`PacketPeerUDP`](class_packetpeerudp.md) )<div id="class_dtlsserver_method_take_connection"></div>
 
-Try to initiate the DTLS handshake with the given `udp_peer` which must be already connected (see [`PacketPeerUDP.connect_to_host`](#class_packetpeerudp_method_connect_to_host)).
+Try to initiate the DTLS handshake with the given `udp_peer` which must be already connected (see [`PacketPeerUDP.connect_to_host`](class_packetpeerudp.md#class_packetpeerudp_method_connect_to_host)).
 
- **Note:** You must check that the state of the return PacketPeerUDP is [`PacketPeerDTLS.STATUS_HANDSHAKING`](#class_packetpeerdtls_constant_status_handshaking), as it is normal that 50% of the new connections will be invalid due to cookie exchange.
+ **Note:** You must check that the state of the return PacketPeerUDP is [`PacketPeerDTLS.STATUS_HANDSHAKING`](class_packetpeerdtls.md#class_packetpeerdtls_constant_status_handshaking), as it is normal that 50% of the new connections will be invalid due to cookie exchange.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

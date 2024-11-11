@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/HashingContext.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/HashingContext.xml。 -->
 
 <div id="_class_hashingcontext"></div>
 
@@ -79,9 +79,11 @@ The [HashType](#enum_hashingcontext_hashtype) enum shows the supported hashing a
 
 ## 方法
 
-| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](#class_hashingcontext_method_finish) ( )                                                      |
-| [Error](#enum_@globalscope_error)             | [`start`](#class_hashingcontext_method_start) ( type: [HashType](#enum_hashingcontext_hashtype) )        |
-| [Error](#enum_@globalscope_error)             | [`update`](#class_hashingcontext_method_update) ( chunk: [`PackedByteArray`](class_packedbytearray.md) ) |
+|||
+|:-:|:--|
+| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](class_hashingcontext.md#class_hashingcontext_method_finish) ( )                                                      |
+| [Error](#enum_@globalscope_error)             | [`start`](class_hashingcontext.md#class_hashingcontext_method_start) ( type: [HashType](#enum_hashingcontext_hashtype) )        |
+| [Error](#enum_@globalscope_error)             | [`update`](class_hashingcontext.md#class_hashingcontext_method_update) ( chunk: [`PackedByteArray`](class_packedbytearray.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -131,7 +133,7 @@ Closes the current context, and return the computed hash.
 
 [Error](#enum_@globalscope_error) **start** ( type: [HashType](#enum_hashingcontext_hashtype) )<div id="class_hashingcontext_method_start"></div>
 
-Starts a new hash computation of the given `type` (e.g. [`HASH_SHA256`](#class_hashingcontext_constant_hash_sha256) to start computation of an SHA-256).
+Starts a new hash computation of the given `type` (e.g. [`HASH_SHA256`](class_hashingcontext.md#class_hashingcontext_constant_hash_sha256) to start computation of an SHA-256).
 
 <!-- rst-class:: classref-item-separator -->
 

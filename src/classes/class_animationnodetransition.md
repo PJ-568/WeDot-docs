@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationNodeTransition.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationNodeTransition.xml。 -->
 
 <div id="_class_animationnodetransition"></div>
 
@@ -59,19 +59,23 @@ After setting the request and changing the animation playback, the transition no
 
 ## 属性
 
-| [`bool`](class_bool.md)   | [`allow_transition_to_self`](#class_animationnodetransition_property_allow_transition_to_self) | ``false`` |
-| [`int`](class_int.md)     | [`input_count`](#class_animationnodetransition_property_input_count)                           | ``0``     |
-| [`Curve`](class_curve.md) | [`xfade_curve`](#class_animationnodetransition_property_xfade_curve)                           |           |
-| [`float`](class_float.md) | [`xfade_time`](#class_animationnodetransition_property_xfade_time)                             | ``0.0``   |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)   | [`allow_transition_to_self`](class_animationnodetransition.md#class_animationnodetransition_property_allow_transition_to_self) | ``false`` |
+| [`int`](class_int.md)     | [`input_count`](class_animationnodetransition.md#class_animationnodetransition_property_input_count)                           | ``0``     |
+| [`Curve`](class_curve.md) | [`xfade_curve`](class_animationnodetransition.md#class_animationnodetransition_property_xfade_curve)                           |           |
+| [`float`](class_float.md) | [`xfade_time`](class_animationnodetransition.md#class_animationnodetransition_property_xfade_time)                             | ``0.0``   |
 
 ## 方法
 
-| [`bool`](class_bool.md) | [`is_input_loop_broken_at_end`](#class_animationnodetransition_method_is_input_loop_broken_at_end) ( input: [`int`](class_int.md) ) const[^const]                    |
-| [`bool`](class_bool.md) | [`is_input_reset`](#class_animationnodetransition_method_is_input_reset) ( input: [`int`](class_int.md) ) const[^const]                                              |
-| [`bool`](class_bool.md) | [`is_input_set_as_auto_advance`](#class_animationnodetransition_method_is_input_set_as_auto_advance) ( input: [`int`](class_int.md) ) const[^const]                  |
-| `void`                  | [`set_input_as_auto_advance`](#class_animationnodetransition_method_set_input_as_auto_advance) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )     |
-| `void`                  | [`set_input_break_loop_at_end`](#class_animationnodetransition_method_set_input_break_loop_at_end) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) ) |
-| `void`                  | [`set_input_reset`](#class_animationnodetransition_method_set_input_reset) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                         |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | [`is_input_loop_broken_at_end`](class_animationnodetransition.md#class_animationnodetransition_method_is_input_loop_broken_at_end) ( input: [`int`](class_int.md) ) const[^const]                    |
+| [`bool`](class_bool.md) | [`is_input_reset`](class_animationnodetransition.md#class_animationnodetransition_method_is_input_reset) ( input: [`int`](class_int.md) ) const[^const]                                              |
+| [`bool`](class_bool.md) | [`is_input_set_as_auto_advance`](class_animationnodetransition.md#class_animationnodetransition_method_is_input_set_as_auto_advance) ( input: [`int`](class_int.md) ) const[^const]                  |
+| `void`                  | [`set_input_as_auto_advance`](class_animationnodetransition.md#class_animationnodetransition_method_set_input_as_auto_advance) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )     |
+| `void`                  | [`set_input_break_loop_at_end`](class_animationnodetransition.md#class_animationnodetransition_method_set_input_break_loop_at_end) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) ) |
+| `void`                  | [`set_input_reset`](class_animationnodetransition.md#class_animationnodetransition_method_set_input_reset) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -127,7 +131,7 @@ Determines how cross-fading between animations is eased. If empty, the transitio
 
 Cross-fading time (in seconds) between each animation connected to the inputs.
 
- **Note:** **AnimationNodeTransition** transitions the current state immediately after the start of the fading. The precise remaining time can only be inferred from the main animation. When [`AnimationNodeOutput`](class_animationnodeoutput.md) is considered as the most upstream, so the [`xfade_time`](#class_animationnodetransition_property_xfade_time) is not scaled depending on the downstream delta. See also [`AnimationNodeOneShot.fadeout_time`](#class_animationnodeoneshot_property_fadeout_time).
+ **Note:** **AnimationNodeTransition** transitions the current state immediately after the start of the fading. The precise remaining time can only be inferred from the main animation. When [`AnimationNodeOutput`](class_animationnodeoutput.md) is considered as the most upstream, so the [`xfade_time`](class_animationnodetransition.md#class_animationnodetransition_property_xfade_time) is not scaled depending on the downstream delta. See also [`AnimationNodeOneShot.fadeout_time`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadeout_time).
 
 <!-- rst-class:: classref-section-separator -->
 

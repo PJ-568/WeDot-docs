@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/openxr/doc_classes/OpenXRInteractionProfile.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/openxr/doc_classes/OpenXRInteractionProfile.xml。 -->
 
 <div id="_class_openxrinteractionprofile"></div>
 
@@ -19,13 +19,17 @@ For more information see the [*interaction profiles info in the OpenXR specifica
 
 ## 属性
 
-| [`Array`](class_array.md)   | [`bindings`](#class_openxrinteractionprofile_property_bindings)                                 | ``[]`` |
-| [`String`](class_string.md) | [`interaction_profile_path`](#class_openxrinteractionprofile_property_interaction_profile_path) | ``""`` |
+|||
+|:-:|:--|
+| [`Array`](class_array.md)   | [`bindings`](class_openxrinteractionprofile.md#class_openxrinteractionprofile_property_bindings)                                 | ``[]`` |
+| [`String`](class_string.md) | [`interaction_profile_path`](class_openxrinteractionprofile.md#class_openxrinteractionprofile_property_interaction_profile_path) | ``""`` |
 
 ## 方法
 
-| [`OpenXRIPBinding`](class_openxripbinding.md) | [`get_binding`](#class_openxrinteractionprofile_method_get_binding) ( index: [`int`](class_int.md) ) const[^const] |
-| [`int`](class_int.md)                         | [`get_binding_count`](#class_openxrinteractionprofile_method_get_binding_count) ( ) const[^const]                  |
+|||
+|:-:|:--|
+| [`OpenXRIPBinding`](class_openxripbinding.md) | [`get_binding`](class_openxrinteractionprofile.md#class_openxrinteractionprofile_method_get_binding) ( index: [`int`](class_int.md) ) const[^const] |
+| [`int`](class_int.md)                         | [`get_binding_count`](class_openxrinteractionprofile.md#class_openxrinteractionprofile_method_get_binding_count) ( ) const[^const]                  |
 
 <!-- rst-class:: classref-section-separator -->
 

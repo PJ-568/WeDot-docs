@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/regex/doc_classes/RegEx.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/regex/doc_classes/RegEx.xml。 -->
 
 <div id="_class_regex"></div>
 
@@ -15,7 +15,7 @@ Class for searching text for patterns using regular expressions.
 
 A regular expression (or regex) is a compact language that can be used to recognize strings that follow a specific pattern, such as URLs, email addresses, complete sentences, etc. For example, a regex of `ab[0-9]` would find any string that is `ab` followed by any number from `0` to `9`. For a more in-depth look, you can easily find various tutorials and detailed explanations on the Internet.
 
-To begin, the RegEx object needs to be compiled with the search pattern using [`compile`](#class_regex_method_compile) before it can be used.
+To begin, the RegEx object needs to be compiled with the search pattern using [`compile`](class_regex.md#class_regex_method_compile) before it can be used.
 
 ```
 
@@ -25,7 +25,7 @@ To begin, the RegEx object needs to be compiled with the search pattern using [`
 
 The search pattern must be escaped first for GDScript before it is escaped for the expression. For example, `compile("\\d+")` would be read by RegEx as `\d+`. Similarly, `compile("\"(?:\\\\.|[^\"])*\"")` would be read as `"(?:\\.|[^"])*"`. In GDScript, you can also use raw string literals (r-strings). For example, `compile(r'"(?:\\.|[^"])*"')` would be read the same.
 
-Using [`search`](#class_regex_method_search), you can find the pattern within the given text. If a pattern is found, [`RegExMatch`](class_regexmatch.md) is returned and you can retrieve details of the results using methods such as [`RegExMatch.get_string`](#class_regexmatch_method_get_string) and [`RegExMatch.get_start`](#class_regexmatch_method_get_start).
+Using [`search`](class_regex.md#class_regex_method_search), you can find the pattern within the given text. If a pattern is found, [`RegExMatch`](class_regexmatch.md) is returned and you can retrieve details of the results using methods such as [`RegExMatch.get_string`](class_regexmatch.md#class_regexmatch_method_get_string) and [`RegExMatch.get_start`](class_regexmatch.md#class_regexmatch_method_get_start).
 
 ```
 
@@ -49,7 +49,7 @@ This version of RegEx also supports named capturing groups, and the names can be
         print(result.get_string("digit")) # Would print 2f
 ```
 
-If you need to process multiple results, [`search_all`](#class_regex_method_search_all) generates a list of all non-overlapping results. This can be combined with a `for` loop for convenience.
+If you need to process multiple results, [`search_all`](class_regex.md#class_regex_method_search_all) generates a list of all non-overlapping results. This can be combined with a `for` loop for convenience.
 
 ```
 
@@ -86,16 +86,18 @@ If you need to process multiple results, [`search_all`](#class_regex_method_sear
 
 ## 方法
 
-| `void`                                                      | [`clear`](#class_regex_method_clear) ( )                                                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                           | [`compile`](#class_regex_method_compile) ( pattern: [`String`](class_string.md) )                                                                                                                                                           |
-| [`RegEx`](class_regex.md)                                   | [`create_from_string`](#class_regex_method_create_from_string) ( pattern: [`String`](class_string.md) ) static[^static]                                                                                                                     |
-| [`int`](class_int.md)                                       | [`get_group_count`](#class_regex_method_get_group_count) ( ) const[^const]                                                                                                                                                                  |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`get_names`](#class_regex_method_get_names) ( ) const[^const]                                                                                                                                                                              |
-| [`String`](class_string.md)                                 | [`get_pattern`](#class_regex_method_get_pattern) ( ) const[^const]                                                                                                                                                                          |
-| [`bool`](class_bool.md)                                     | [`is_valid`](#class_regex_method_is_valid) ( ) const[^const]                                                                                                                                                                                |
-| [`RegExMatch`](class_regexmatch.md)                         | [`search`](#class_regex_method_search) ( subject: [`String`](class_string.md), offset: [`int`](class_int.md) = 0, end: [`int`](class_int.md) = -1 ) const[^const]                                                                           |
-| [Array](class_array.md) [`RegExMatch`](class_regexmatch.md) | [`search_all`](#class_regex_method_search_all) ( subject: [`String`](class_string.md), offset: [`int`](class_int.md) = 0, end: [`int`](class_int.md) = -1 ) const[^const]                                                                   |
-| [`String`](class_string.md)                                 | [`sub`](#class_regex_method_sub) ( subject: [`String`](class_string.md), replacement: [`String`](class_string.md), all: [`bool`](class_bool.md) = false, offset: [`int`](class_int.md) = 0, end: [`int`](class_int.md) = -1 ) const[^const] |
+|||
+|:-:|:--|
+| `void`                                                      | [`clear`](class_regex.md#class_regex_method_clear) ( )                                                                                                                                                                                                    |
+| [Error](#enum_@globalscope_error)                           | [`compile`](class_regex.md#class_regex_method_compile) ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true )                                                                                                               |
+| [`RegEx`](class_regex.md)                                   | [`create_from_string`](class_regex.md#class_regex_method_create_from_string) ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true ) static[^static]                                                                         |
+| [`int`](class_int.md)                                       | [`get_group_count`](class_regex.md#class_regex_method_get_group_count) ( ) const[^const]                                                                                                                                                                  |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`get_names`](class_regex.md#class_regex_method_get_names) ( ) const[^const]                                                                                                                                                                              |
+| [`String`](class_string.md)                                 | [`get_pattern`](class_regex.md#class_regex_method_get_pattern) ( ) const[^const]                                                                                                                                                                          |
+| [`bool`](class_bool.md)                                     | [`is_valid`](class_regex.md#class_regex_method_is_valid) ( ) const[^const]                                                                                                                                                                                |
+| [`RegExMatch`](class_regexmatch.md)                         | [`search`](class_regex.md#class_regex_method_search) ( subject: [`String`](class_string.md), offset: [`int`](class_int.md) = 0, end: [`int`](class_int.md) = -1 ) const[^const]                                                                           |
+| [Array](class_array.md) [`RegExMatch`](class_regexmatch.md) | [`search_all`](class_regex.md#class_regex_method_search_all) ( subject: [`String`](class_string.md), offset: [`int`](class_int.md) = 0, end: [`int`](class_int.md) = -1 ) const[^const]                                                                   |
+| [`String`](class_string.md)                                 | [`sub`](class_regex.md#class_regex_method_sub) ( subject: [`String`](class_string.md), replacement: [`String`](class_string.md), all: [`bool`](class_bool.md) = false, offset: [`int`](class_int.md) = 0, end: [`int`](class_int.md) = -1 ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -115,9 +117,9 @@ This method resets the state of the object, as if it was freshly created. Namely
 
 <div id="_class_regex_method_compile"></div>
 
-[Error](#enum_@globalscope_error) **compile** ( pattern: [`String`](class_string.md) )<div id="class_regex_method_compile"></div>
+[Error](#enum_@globalscope_error) **compile** ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true )<div id="class_regex_method_compile"></div>
 
-Compiles and assign the search pattern to use. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if the compilation is successful. If an error is encountered, details are printed to standard output and an error is returned.
+Compiles and assign the search pattern to use. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the compilation is successful. If compilation fails, returns [`@GlobalScope.FAILED`](class_@globalscope.md#class_@globalscope_constant_failed) and when `show_error` is `true`, details are printed to standard output.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -125,9 +127,9 @@ Compiles and assign the search pattern to use. Returns [`@GlobalScope.OK`](#clas
 
 <div id="_class_regex_method_create_from_string"></div>
 
-[`RegEx`](class_regex.md) **create_from_string** ( pattern: [`String`](class_string.md) ) static[^static]<div id="class_regex_method_create_from_string"></div>
+[`RegEx`](class_regex.md) **create_from_string** ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true ) static[^static]<div id="class_regex_method_create_from_string"></div>
 
-Creates and compiles a new **RegEx** object.
+Creates and compiles a new **RegEx** object. See also [`compile`](class_regex.md#class_regex_method_compile).
 
 <!-- rst-class:: classref-item-separator -->
 

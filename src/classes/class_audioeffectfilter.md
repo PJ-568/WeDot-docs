@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectFilter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectFilter.xml。 -->
 
 <div id="_class_audioeffectfilter"></div>
 
@@ -15,14 +15,16 @@ Adds a filter to the audio bus.
 
 ## 描述
 
-Allows frequencies other than the [`cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) to pass.
+Allows frequencies other than the [`cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) to pass.
 
 ## 属性
 
-| [`float`](class_float.md)                    | [`cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) | ``2000.0`` |
-| [FilterDB](#enum_audioeffectfilter_filterdb) | [`db`](#class_audioeffectfilter_property_db)               | ``0``      |
-| [`float`](class_float.md)                    | [`gain`](#class_audioeffectfilter_property_gain)           | ``1.0``    |
-| [`float`](class_float.md)                    | [`resonance`](#class_audioeffectfilter_property_resonance) | ``0.5``    |
+|||
+|:-:|:--|
+| [`float`](class_float.md)                    | [`cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) | ``2000.0`` |
+| [FilterDB](#enum_audioeffectfilter_filterdb) | [`db`](class_audioeffectfilter.md#class_audioeffectfilter_property_db)               | ``0``      |
+| [`float`](class_float.md)                    | [`gain`](class_audioeffectfilter.md#class_audioeffectfilter_property_gain)           | ``1.0``    |
+| [`float`](class_float.md)                    | [`resonance`](class_audioeffectfilter.md#class_audioeffectfilter_property_resonance) | ``0.5``    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -38,33 +40,25 @@ enum **FilterDB**: <div id="enum_audioeffectfilter_filterdb"></div>
 
 [FilterDB](#enum_audioeffectfilter_filterdb) **FILTER_6DB** = ``0``
 
-该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-
+Cutting off at 6dB per octave.
 
 <div id="_class_audioeffectfilter_constant_filter_12db"></div>
 
 [FilterDB](#enum_audioeffectfilter_filterdb) **FILTER_12DB** = ``1``
 
-该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-
+Cutting off at 12dB per octave.
 
 <div id="_class_audioeffectfilter_constant_filter_18db"></div>
 
 [FilterDB](#enum_audioeffectfilter_filterdb) **FILTER_18DB** = ``2``
 
-该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-
+Cutting off at 18dB per octave.
 
 <div id="_class_audioeffectfilter_constant_filter_24db"></div>
 
 [FilterDB](#enum_audioeffectfilter_filterdb) **FILTER_24DB** = ``3``
 
-该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-
+Cutting off at 24dB per octave.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -92,7 +86,7 @@ Threshold frequency for the filter, in Hz.
 - `void` **set_db** ( value: [FilterDB](#enum_audioeffectfilter_filterdb) )
 - [FilterDB](#enum_audioeffectfilter_filterdb) **get_db** ( )
 
-该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+Steepness of the cutoff curve in dB per octave, also known as the order of the filter. Higher orders have a more aggressive cutoff.
 
 <!-- rst-class:: classref-item-separator -->
 

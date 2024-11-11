@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PanoramaSkyMaterial.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PanoramaSkyMaterial.xml。 -->
 
 <div id="_class_panoramaskymaterial"></div>
 
@@ -21,9 +21,11 @@ You can use [*this tool*](https://danilw.github.io/GLSL-howto/cubemap_to_panoram
 
 ## 属性
 
-| [`float`](class_float.md)         | [`energy_multiplier`](#class_panoramaskymaterial_property_energy_multiplier) | ``1.0``  |
-| [`bool`](class_bool.md)           | [`filter`](#class_panoramaskymaterial_property_filter)                       | ``true`` |
-| [`Texture2D`](class_texture2d.md) | [`panorama`](#class_panoramaskymaterial_property_panorama)                   |          |
+|||
+|:-:|:--|
+| [`float`](class_float.md)         | [`energy_multiplier`](class_panoramaskymaterial.md#class_panoramaskymaterial_property_energy_multiplier) | ``1.0``  |
+| [`bool`](class_bool.md)           | [`filter`](class_panoramaskymaterial.md#class_panoramaskymaterial_property_filter)                       | ``true`` |
+| [`Texture2D`](class_texture2d.md) | [`panorama`](class_panoramaskymaterial.md#class_panoramaskymaterial_property_panorama)                   |          |
 
 <!-- rst-class:: classref-section-separator -->
 

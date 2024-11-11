@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeColorConstant.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeColorConstant.xml。 -->
 
 <div id="_class_visualshadernodecolorconstant"></div>
 
@@ -19,7 +19,9 @@ Translated to `vec3 rgb` and `float alpha` in the shader language.
 
 ## 属性
 
-| [`Color`](class_color.md) | [`constant`](#class_visualshadernodecolorconstant_property_constant) | ``Color(1, 1, 1, 1)`` |
+|||
+|:-:|:--|
+| [`Color`](class_color.md) | [`constant`](class_visualshadernodecolorconstant.md#class_visualshadernodecolorconstant_property_constant) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

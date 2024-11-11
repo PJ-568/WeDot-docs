@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeTransformFunc.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeTransformFunc.xml。 -->
 
 <div id="_class_visualshadernodetransformfunc"></div>
 
@@ -17,7 +17,9 @@ Computes an inverse or transpose function on the provided [`Transform3D`](class_
 
 ## 属性
 
-| [Function](#enum_visualshadernodetransformfunc_function) | [`function`](#class_visualshadernodetransformfunc_property_function) | ``0`` |
+|||
+|:-:|:--|
+| [Function](#enum_visualshadernodetransformfunc_function) | [`function`](class_visualshadernodetransformfunc.md#class_visualshadernodetransformfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CollisionPolygon2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CollisionPolygon2D.xml。 -->
 
 <div id="_class_collisionpolygon2d"></div>
 
@@ -19,11 +19,13 @@ A node that provides a polygon shape to a [`CollisionObject2D`](class_collisiono
 
 ## 属性
 
-| [BuildMode](#enum_collisionpolygon2d_buildmode)     | [`build_mode`](#class_collisionpolygon2d_property_build_mode)                             | ``0``                    |
-| [`bool`](class_bool.md)                             | [`disabled`](#class_collisionpolygon2d_property_disabled)                                 | ``false``                |
-| [`bool`](class_bool.md)                             | [`one_way_collision`](#class_collisionpolygon2d_property_one_way_collision)               | ``false``                |
-| [`float`](class_float.md)                           | [`one_way_collision_margin`](#class_collisionpolygon2d_property_one_way_collision_margin) | ``1.0``                  |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_collisionpolygon2d_property_polygon)                                   | ``PackedVector2Array()`` |
+|||
+|:-:|:--|
+| [BuildMode](#enum_collisionpolygon2d_buildmode)     | [`build_mode`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_build_mode)                             | ``0``                    |
+| [`bool`](class_bool.md)                             | [`disabled`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_disabled)                                 | ``false``                |
+| [`bool`](class_bool.md)                             | [`one_way_collision`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_one_way_collision)               | ``false``                |
+| [`float`](class_float.md)                           | [`one_way_collision_margin`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_one_way_collision_margin) | ``1.0``                  |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_polygon)                                   | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 

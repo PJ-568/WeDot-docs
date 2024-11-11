@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Node2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Node2D.xml。 -->
 
 <div id="_class_node2d"></div>
 
@@ -19,32 +19,36 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 
 ## 属性
 
-| [`Vector2`](class_vector2.md)         | [`global_position`](#class_node2d_property_global_position)                 |                   |
-| [`float`](class_float.md)             | [`global_rotation`](#class_node2d_property_global_rotation)                 |                   |
-| [`float`](class_float.md)             | [`global_rotation_degrees`](#class_node2d_property_global_rotation_degrees) |                   |
-| [`Vector2`](class_vector2.md)         | [`global_scale`](#class_node2d_property_global_scale)                       |                   |
-| [`float`](class_float.md)             | [`global_skew`](#class_node2d_property_global_skew)                         |                   |
-| [`Transform2D`](class_transform2d.md) | [`global_transform`](#class_node2d_property_global_transform)               |                   |
-| [`Vector2`](class_vector2.md)         | [`position`](#class_node2d_property_position)                               | ``Vector2(0, 0)`` |
-| [`float`](class_float.md)             | [`rotation`](#class_node2d_property_rotation)                               | ``0.0``           |
-| [`float`](class_float.md)             | [`rotation_degrees`](#class_node2d_property_rotation_degrees)               |                   |
-| [`Vector2`](class_vector2.md)         | [`scale`](#class_node2d_property_scale)                                     | ``Vector2(1, 1)`` |
-| [`float`](class_float.md)             | [`skew`](#class_node2d_property_skew)                                       | ``0.0``           |
-| [`Transform2D`](class_transform2d.md) | [`transform`](#class_node2d_property_transform)                             |                   |
+|||
+|:-:|:--|
+| [`Vector2`](class_vector2.md)         | [`global_position`](class_node2d.md#class_node2d_property_global_position)                 |                   |
+| [`float`](class_float.md)             | [`global_rotation`](class_node2d.md#class_node2d_property_global_rotation)                 |                   |
+| [`float`](class_float.md)             | [`global_rotation_degrees`](class_node2d.md#class_node2d_property_global_rotation_degrees) |                   |
+| [`Vector2`](class_vector2.md)         | [`global_scale`](class_node2d.md#class_node2d_property_global_scale)                       |                   |
+| [`float`](class_float.md)             | [`global_skew`](class_node2d.md#class_node2d_property_global_skew)                         |                   |
+| [`Transform2D`](class_transform2d.md) | [`global_transform`](class_node2d.md#class_node2d_property_global_transform)               |                   |
+| [`Vector2`](class_vector2.md)         | [`position`](class_node2d.md#class_node2d_property_position)                               | ``Vector2(0, 0)`` |
+| [`float`](class_float.md)             | [`rotation`](class_node2d.md#class_node2d_property_rotation)                               | ``0.0``           |
+| [`float`](class_float.md)             | [`rotation_degrees`](class_node2d.md#class_node2d_property_rotation_degrees)               |                   |
+| [`Vector2`](class_vector2.md)         | [`scale`](class_node2d.md#class_node2d_property_scale)                                     | ``Vector2(1, 1)`` |
+| [`float`](class_float.md)             | [`skew`](class_node2d.md#class_node2d_property_skew)                                       | ``0.0``           |
+| [`Transform2D`](class_transform2d.md) | [`transform`](class_node2d.md#class_node2d_property_transform)                             |                   |
 
 ## 方法
 
-| `void`                                | [`apply_scale`](#class_node2d_method_apply_scale) ( ratio: [`Vector2`](class_vector2.md) )                                                    |
-| [`float`](class_float.md)             | [`get_angle_to`](#class_node2d_method_get_angle_to) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
-| [`Transform2D`](class_transform2d.md) | [`get_relative_transform_to_parent`](#class_node2d_method_get_relative_transform_to_parent) ( parent: [`Node`](class_node.md) ) const[^const] |
-| `void`                                | [`global_translate`](#class_node2d_method_global_translate) ( offset: [`Vector2`](class_vector2.md) )                                         |
-| `void`                                | [`look_at`](#class_node2d_method_look_at) ( point: [`Vector2`](class_vector2.md) )                                                            |
-| `void`                                | [`move_local_x`](#class_node2d_method_move_local_x) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
-| `void`                                | [`move_local_y`](#class_node2d_method_move_local_y) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
-| `void`                                | [`rotate`](#class_node2d_method_rotate) ( radians: [`float`](class_float.md) )                                                                |
-| [`Vector2`](class_vector2.md)         | [`to_global`](#class_node2d_method_to_global) ( local_point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
-| [`Vector2`](class_vector2.md)         | [`to_local`](#class_node2d_method_to_local) ( global_point: [`Vector2`](class_vector2.md) ) const[^const]                                     |
-| `void`                                | [`translate`](#class_node2d_method_translate) ( offset: [`Vector2`](class_vector2.md) )                                                       |
+|||
+|:-:|:--|
+| `void`                                | [`apply_scale`](class_node2d.md#class_node2d_method_apply_scale) ( ratio: [`Vector2`](class_vector2.md) )                                                    |
+| [`float`](class_float.md)             | [`get_angle_to`](class_node2d.md#class_node2d_method_get_angle_to) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
+| [`Transform2D`](class_transform2d.md) | [`get_relative_transform_to_parent`](class_node2d.md#class_node2d_method_get_relative_transform_to_parent) ( parent: [`Node`](class_node.md) ) const[^const] |
+| `void`                                | [`global_translate`](class_node2d.md#class_node2d_method_global_translate) ( offset: [`Vector2`](class_vector2.md) )                                         |
+| `void`                                | [`look_at`](class_node2d.md#class_node2d_method_look_at) ( point: [`Vector2`](class_vector2.md) )                                                            |
+| `void`                                | [`move_local_x`](class_node2d.md#class_node2d_method_move_local_x) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
+| `void`                                | [`move_local_y`](class_node2d.md#class_node2d_method_move_local_y) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
+| `void`                                | [`rotate`](class_node2d.md#class_node2d_method_rotate) ( radians: [`float`](class_float.md) )                                                                |
+| [`Vector2`](class_vector2.md)         | [`to_global`](class_node2d.md#class_node2d_method_to_global) ( local_point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
+| [`Vector2`](class_vector2.md)         | [`to_local`](class_node2d.md#class_node2d_method_to_local) ( global_point: [`Vector2`](class_vector2.md) ) const[^const]                                     |
+| `void`                                | [`translate`](class_node2d.md#class_node2d_method_translate) ( offset: [`Vector2`](class_vector2.md) )                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,7 +63,7 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 - `void` **set_global_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_global_position** ( )
 
-Global position.
+Global position. See also [`position`](class_node2d.md#class_node2d_property_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -72,7 +76,7 @@ Global position.
 - `void` **set_global_rotation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_global_rotation** ( )
 
-Global rotation in radians.
+Global rotation in radians. See also [`rotation`](class_node2d.md#class_node2d_property_rotation).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -85,7 +89,7 @@ Global rotation in radians.
 - `void` **set_global_rotation_degrees** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_global_rotation_degrees** ( )
 
-Helper property to access [`global_rotation`](#class_node2d_property_global_rotation) in degrees instead of radians.
+Helper property to access [`global_rotation`](class_node2d.md#class_node2d_property_global_rotation) in degrees instead of radians. See also [`rotation_degrees`](class_node2d.md#class_node2d_property_rotation_degrees).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -98,7 +102,7 @@ Helper property to access [`global_rotation`](#class_node2d_property_global_rota
 - `void` **set_global_scale** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_global_scale** ( )
 
-Global scale.
+Global scale. See also [`scale`](class_node2d.md#class_node2d_property_scale).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -111,7 +115,7 @@ Global scale.
 - `void` **set_global_skew** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_global_skew** ( )
 
-Global skew in radians.
+Global skew in radians. See also [`skew`](class_node2d.md#class_node2d_property_skew).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +128,7 @@ Global skew in radians.
 - `void` **set_global_transform** ( value: [`Transform2D`](class_transform2d.md) )
 - [`Transform2D`](class_transform2d.md) **get_global_transform** ( )
 
-Global [`Transform2D`](class_transform2d.md).
+Global [`Transform2D`](class_transform2d.md). See also [`transform`](class_node2d.md#class_node2d_property_transform).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -137,7 +141,7 @@ Global [`Transform2D`](class_transform2d.md).
 - `void` **set_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_position** ( )
 
-Position, relative to the node's parent.
+Position, relative to the node's parent. See also [`global_position`](class_node2d.md#class_node2d_property_global_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -150,9 +154,9 @@ Position, relative to the node's parent.
 - `void` **set_rotation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_rotation** ( )
 
-Rotation in radians, relative to the node's parent.
+Rotation in radians, relative to the node's parent. See also [`global_rotation`](class_node2d.md#class_node2d_property_global_rotation).
 
- **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use [`rotation_degrees`](#class_node2d_property_rotation_degrees).
+ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use [`rotation_degrees`](class_node2d.md#class_node2d_property_rotation_degrees).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +169,7 @@ Rotation in radians, relative to the node's parent.
 - `void` **set_rotation_degrees** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_rotation_degrees** ( )
 
-Helper property to access [`rotation`](#class_node2d_property_rotation) in degrees instead of radians.
+Helper property to access [`rotation`](class_node2d.md#class_node2d_property_rotation) in degrees instead of radians. See also [`global_rotation_degrees`](class_node2d.md#class_node2d_property_global_rotation_degrees).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -178,7 +182,7 @@ Helper property to access [`rotation`](#class_node2d_property_rotation) in degre
 - `void` **set_scale** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_scale** ( )
 
-The node's scale. Unscaled value: `(1, 1)`.
+The node's scale, relative to the node's parent. Unscaled value: `(1, 1)`. See also [`global_scale`](class_node2d.md#class_node2d_property_global_scale).
 
  **Note:** Negative X scales in 2D are not decomposable from the transformation matrix. Due to the way scale is represented with transformation matrices in Godot, negative scales on the X axis will be changed to negative scales on the Y axis and a rotation of 180 degrees when decomposed.
 
@@ -193,9 +197,11 @@ The node's scale. Unscaled value: `(1, 1)`.
 - `void` **set_skew** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_skew** ( )
 
-Slants the node.
+If set to a non-zero value, slants the node in one direction or another. This can be used for pseudo-3D effects. See also [`global_skew`](class_node2d.md#class_node2d_property_global_skew).
 
- **Note:** Skew is X axis only.
+ **Note:** Skew is performed on the X axis only, and *between* rotation and scaling.
+
+ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use `skew = deg_to_rad(value_in_degrees)`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -208,7 +214,7 @@ Slants the node.
 - `void` **set_transform** ( value: [`Transform2D`](class_transform2d.md) )
 - [`Transform2D`](class_transform2d.md) **get_transform** ( )
 
-Local [`Transform2D`](class_transform2d.md).
+The node's [`Transform2D`](class_transform2d.md), relative to the node's parent. See also [`global_transform`](class_node2d.md#class_node2d_property_global_transform).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -274,7 +280,7 @@ Rotates the node so that its local +X axis points towards the `point`, which is 
 
 `void` **move_local_x** ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )<div id="class_node2d_method_move_local_x"></div>
 
-Applies a local translation on the node's X axis based on the [`Node._process`](#class_node_private_method__process)'s `delta`. If `scaled` is `false`, normalizes the movement.
+Applies a local translation on the node's X axis based on the [`Node._process`](class_node.md#class_node_private_method__process)'s `delta`. If `scaled` is `false`, normalizes the movement.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -284,7 +290,7 @@ Applies a local translation on the node's X axis based on the [`Node._process`](
 
 `void` **move_local_y** ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )<div id="class_node2d_method_move_local_y"></div>
 
-Applies a local translation on the node's Y axis based on the [`Node._process`](#class_node_private_method__process)'s `delta`. If `scaled` is `false`, normalizes the movement.
+Applies a local translation on the node's Y axis based on the [`Node._process`](class_node.md#class_node_private_method__process)'s `delta`. If `scaled` is `false`, normalizes the movement.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamRandomizer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamRandomizer.xml。 -->
 
 <div id="_class_audiostreamrandomizer"></div>
 
@@ -17,20 +17,24 @@ Picks a random AudioStream from the pool, depending on the playback mode, and ap
 
 ## 属性
 
-| [PlaybackMode](#enum_audiostreamrandomizer_playbackmode) | [`playback_mode`](#class_audiostreamrandomizer_property_playback_mode)                     | ``0``   |
-| [`float`](class_float.md)                                | [`random_pitch`](#class_audiostreamrandomizer_property_random_pitch)                       | ``1.0`` |
-| [`float`](class_float.md)                                | [`random_volume_offset_db`](#class_audiostreamrandomizer_property_random_volume_offset_db) | ``0.0`` |
-| [`int`](class_int.md)                                    | [`streams_count`](#class_audiostreamrandomizer_property_streams_count)                     | ``0``   |
+|||
+|:-:|:--|
+| [PlaybackMode](#enum_audiostreamrandomizer_playbackmode) | [`playback_mode`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_property_playback_mode)                     | ``0``   |
+| [`float`](class_float.md)                                | [`random_pitch`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_property_random_pitch)                       | ``1.0`` |
+| [`float`](class_float.md)                                | [`random_volume_offset_db`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_property_random_volume_offset_db) | ``0.0`` |
+| [`int`](class_int.md)                                    | [`streams_count`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_property_streams_count)                     | ``0``   |
 
 ## 方法
 
-| `void`                                | [`add_stream`](#class_audiostreamrandomizer_method_add_stream) ( index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md), weight: [`float`](class_float.md) = 1.0 ) |
-| [`AudioStream`](class_audiostream.md) | [`get_stream`](#class_audiostreamrandomizer_method_get_stream) ( index: [`int`](class_int.md) ) const[^const]                                                                           |
-| [`float`](class_float.md)             | [`get_stream_probability_weight`](#class_audiostreamrandomizer_method_get_stream_probability_weight) ( index: [`int`](class_int.md) ) const[^const]                                     |
-| `void`                                | [`move_stream`](#class_audiostreamrandomizer_method_move_stream) ( index_from: [`int`](class_int.md), index_to: [`int`](class_int.md) )                                                 |
-| `void`                                | [`remove_stream`](#class_audiostreamrandomizer_method_remove_stream) ( index: [`int`](class_int.md) )                                                                                   |
-| `void`                                | [`set_stream`](#class_audiostreamrandomizer_method_set_stream) ( index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md) )                                          |
-| `void`                                | [`set_stream_probability_weight`](#class_audiostreamrandomizer_method_set_stream_probability_weight) ( index: [`int`](class_int.md), weight: [`float`](class_float.md) )                |
+|||
+|:-:|:--|
+| `void`                                | [`add_stream`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_add_stream) ( index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md), weight: [`float`](class_float.md) = 1.0 ) |
+| [`AudioStream`](class_audiostream.md) | [`get_stream`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_get_stream) ( index: [`int`](class_int.md) ) const[^const]                                                                           |
+| [`float`](class_float.md)             | [`get_stream_probability_weight`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_get_stream_probability_weight) ( index: [`int`](class_int.md) ) const[^const]                                     |
+| `void`                                | [`move_stream`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_move_stream) ( index_from: [`int`](class_int.md), index_to: [`int`](class_int.md) )                                                 |
+| `void`                                | [`remove_stream`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_remove_stream) ( index: [`int`](class_int.md) )                                                                                   |
+| `void`                                | [`set_stream`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_set_stream) ( index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md) )                                          |
+| `void`                                | [`set_stream_probability_weight`](class_audiostreamrandomizer.md#class_audiostreamrandomizer_method_set_stream_probability_weight) ( index: [`int`](class_int.md), weight: [`float`](class_float.md) )                |
 
 <!-- rst-class:: classref-section-separator -->
 

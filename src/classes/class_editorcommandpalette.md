@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorCommandPalette.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorCommandPalette.xml。 -->
 
 <div id="_class_editorcommandpalette"></div>
 
@@ -37,7 +37,7 @@ Command key names use slash delimiters to distinguish sections, for example: `"e
 
 
 
- **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_command_palette`](#class_editorinterface_method_get_command_palette).
+ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_command_palette`](class_editorinterface.md#class_editorinterface_method_get_command_palette).
 
 
 
@@ -45,12 +45,16 @@ Command key names use slash delimiters to distinguish sections, for example: `"e
 
 ## 属性
 
-| [`bool`](class_bool.md) | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md) | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_dialog_hide_on_ok)) |
 
 ## 方法
 
-| `void` | [`add_command`](#class_editorcommandpalette_method_add_command) ( command_name: [`String`](class_string.md), key_name: [`String`](class_string.md), binded_callable: [`Callable`](class_callable.md), shortcut_text: [`String`](class_string.md) = "None" ) |
-| `void` | [`remove_command`](#class_editorcommandpalette_method_remove_command) ( key_name: [`String`](class_string.md) )                                                                                                                                             |
+|||
+|:-:|:--|
+| `void` | [`add_command`](class_editorcommandpalette.md#class_editorcommandpalette_method_add_command) ( command_name: [`String`](class_string.md), key_name: [`String`](class_string.md), binded_callable: [`Callable`](class_callable.md), shortcut_text: [`String`](class_string.md) = "None" ) |
+| `void` | [`remove_command`](class_editorcommandpalette.md#class_editorcommandpalette_method_remove_command) ( key_name: [`String`](class_string.md) )                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

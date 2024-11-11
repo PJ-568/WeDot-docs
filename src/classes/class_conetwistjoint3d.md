@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ConeTwistJoint3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ConeTwistJoint3D.xml。 -->
 
 <div id="_class_conetwistjoint3d"></div>
 
@@ -17,16 +17,20 @@ A physics joint that connects two 3D physics bodies in a way that simulates a ba
 
 ## 属性
 
-| [`float`](class_float.md) | [`bias`](#class_conetwistjoint3d_property_bias)             | ``0.3``      |
-| [`float`](class_float.md) | [`relaxation`](#class_conetwistjoint3d_property_relaxation) | ``1.0``      |
-| [`float`](class_float.md) | [`softness`](#class_conetwistjoint3d_property_softness)     | ``0.8``      |
-| [`float`](class_float.md) | [`swing_span`](#class_conetwistjoint3d_property_swing_span) | ``0.785398`` |
-| [`float`](class_float.md) | [`twist_span`](#class_conetwistjoint3d_property_twist_span) | ``3.14159``  |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`bias`](class_conetwistjoint3d.md#class_conetwistjoint3d_property_bias)             | ``0.3``      |
+| [`float`](class_float.md) | [`relaxation`](class_conetwistjoint3d.md#class_conetwistjoint3d_property_relaxation) | ``1.0``      |
+| [`float`](class_float.md) | [`softness`](class_conetwistjoint3d.md#class_conetwistjoint3d_property_softness)     | ``0.8``      |
+| [`float`](class_float.md) | [`swing_span`](class_conetwistjoint3d.md#class_conetwistjoint3d_property_swing_span) | ``0.785398`` |
+| [`float`](class_float.md) | [`twist_span`](class_conetwistjoint3d.md#class_conetwistjoint3d_property_twist_span) | ``3.14159``  |
 
 ## 方法
 
-| [`float`](class_float.md) | [`get_param`](#class_conetwistjoint3d_method_get_param) ( param: [Param](#enum_conetwistjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_param`](#class_conetwistjoint3d_method_set_param) ( param: [Param](#enum_conetwistjoint3d_param), value: [`float`](class_float.md) ) |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`get_param`](class_conetwistjoint3d.md#class_conetwistjoint3d_method_get_param) ( param: [Param](#enum_conetwistjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_param`](class_conetwistjoint3d.md#class_conetwistjoint3d_method_set_param) ( param: [Param](#enum_conetwistjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

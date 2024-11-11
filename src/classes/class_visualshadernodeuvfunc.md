@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeUVFunc.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeUVFunc.xml。 -->
 
 <div id="_class_visualshadernodeuvfunc"></div>
 
@@ -17,7 +17,9 @@ UV functions are similar to [`Vector2`](class_vector2.md) functions, but the inp
 
 ## 属性
 
-| [Function](#enum_visualshadernodeuvfunc_function) | [`function`](#class_visualshadernodeuvfunc_property_function) | ``0`` |
+|||
+|:-:|:--|
+| [Function](#enum_visualshadernodeuvfunc_function) | [`function`](class_visualshadernodeuvfunc.md#class_visualshadernodeuvfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

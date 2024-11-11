@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RDShaderFile.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RDShaderFile.xml。 -->
 
 <div id="_class_rdshaderfile"></div>
 
@@ -19,13 +19,17 @@ See also [`RDShaderSource`](class_rdshadersource.md). **RDShaderFile** is only m
 
 ## 属性
 
-| [`String`](class_string.md) | [`base_error`](#class_rdshaderfile_property_base_error) | ``""`` |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`base_error`](class_rdshaderfile.md#class_rdshaderfile_property_base_error) | ``""`` |
 
 ## 方法
 
-| [`RDShaderSPIRV`](class_rdshaderspirv.md)                   | [`get_spirv`](#class_rdshaderfile_method_get_spirv) ( version: [`StringName`](class_stringname.md) = &"" ) const[^const]                                              |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_version_list`](#class_rdshaderfile_method_get_version_list) ( ) const[^const]                                                                                   |
-| `void`                                                      | [`set_bytecode`](#class_rdshaderfile_method_set_bytecode) ( bytecode: [`RDShaderSPIRV`](class_rdshaderspirv.md), version: [`StringName`](class_stringname.md) = &"" ) |
+|||
+|:-:|:--|
+| [`RDShaderSPIRV`](class_rdshaderspirv.md)                   | [`get_spirv`](class_rdshaderfile.md#class_rdshaderfile_method_get_spirv) ( version: [`StringName`](class_stringname.md) = &"" ) const[^const]                                              |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_version_list`](class_rdshaderfile.md#class_rdshaderfile_method_get_version_list) ( ) const[^const]                                                                                   |
+| `void`                                                      | [`set_bytecode`](class_rdshaderfile.md#class_rdshaderfile_method_set_bytecode) ( bytecode: [`RDShaderSPIRV`](class_rdshaderspirv.md), version: [`StringName`](class_stringname.md) = &"" ) |
 
 <!-- rst-class:: classref-section-separator -->
 

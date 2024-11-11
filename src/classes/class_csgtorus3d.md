@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/csg/doc_classes/CSGTorus3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/csg/doc_classes/CSGTorus3D.xml。 -->
 
 <div id="_class_csgtorus3d"></div>
 
@@ -19,12 +19,14 @@ This node allows you to create a torus for use with the CSG system.
 
 ## 属性
 
-| [`float`](class_float.md)       | [`inner_radius`](#class_csgtorus3d_property_inner_radius) | ``0.5``  |
-| [`Material`](class_material.md) | [`material`](#class_csgtorus3d_property_material)         |          |
-| [`float`](class_float.md)       | [`outer_radius`](#class_csgtorus3d_property_outer_radius) | ``1.0``  |
-| [`int`](class_int.md)           | [`ring_sides`](#class_csgtorus3d_property_ring_sides)     | ``6``    |
-| [`int`](class_int.md)           | [`sides`](#class_csgtorus3d_property_sides)               | ``8``    |
-| [`bool`](class_bool.md)         | [`smooth_faces`](#class_csgtorus3d_property_smooth_faces) | ``true`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md)       | [`inner_radius`](class_csgtorus3d.md#class_csgtorus3d_property_inner_radius) | ``0.5``  |
+| [`Material`](class_material.md) | [`material`](class_csgtorus3d.md#class_csgtorus3d_property_material)         |          |
+| [`float`](class_float.md)       | [`outer_radius`](class_csgtorus3d.md#class_csgtorus3d_property_outer_radius) | ``1.0``  |
+| [`int`](class_int.md)           | [`ring_sides`](class_csgtorus3d.md#class_csgtorus3d_property_ring_sides)     | ``6``    |
+| [`int`](class_int.md)           | [`sides`](class_csgtorus3d.md#class_csgtorus3d_property_sides)               | ``8``    |
+| [`bool`](class_bool.md)         | [`smooth_faces`](class_csgtorus3d.md#class_csgtorus3d_property_smooth_faces) | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 

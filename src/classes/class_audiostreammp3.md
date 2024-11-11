@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/minimp3/doc_classes/AudioStreamMP3.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/minimp3/doc_classes/AudioStreamMP3.xml。 -->
 
 <div id="_class_audiostreammp3"></div>
 
@@ -13,16 +13,18 @@ MP3 audio stream driver.
 
 ## 描述
 
-MP3 audio stream driver. See [`data`](#class_audiostreammp3_property_data) if you want to load an MP3 file at run-time.
+MP3 audio stream driver. See [`data`](class_audiostreammp3.md#class_audiostreammp3_property_data) if you want to load an MP3 file at run-time.
 
 ## 属性
 
-| [`int`](class_int.md)                         | [`bar_beats`](#class_audiostreammp3_property_bar_beats)     | ``4``                 |
-| [`int`](class_int.md)                         | [`beat_count`](#class_audiostreammp3_property_beat_count)   | ``0``                 |
-| [`float`](class_float.md)                     | [`bpm`](#class_audiostreammp3_property_bpm)                 | ``0.0``               |
-| [`PackedByteArray`](class_packedbytearray.md) | [`data`](#class_audiostreammp3_property_data)               | ``PackedByteArray()`` |
-| [`bool`](class_bool.md)                       | [`loop`](#class_audiostreammp3_property_loop)               | ``false``             |
-| [`float`](class_float.md)                     | [`loop_offset`](#class_audiostreammp3_property_loop_offset) | ``0.0``               |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                         | [`bar_beats`](class_audiostreammp3.md#class_audiostreammp3_property_bar_beats)     | ``4``                 |
+| [`int`](class_int.md)                         | [`beat_count`](class_audiostreammp3.md#class_audiostreammp3_property_beat_count)   | ``0``                 |
+| [`float`](class_float.md)                     | [`bpm`](class_audiostreammp3.md#class_audiostreammp3_property_bpm)                 | ``0.0``               |
+| [`PackedByteArray`](class_packedbytearray.md) | [`data`](class_audiostreammp3.md#class_audiostreammp3_property_data)               | ``PackedByteArray()`` |
+| [`bool`](class_bool.md)                       | [`loop`](class_audiostreammp3.md#class_audiostreammp3_property_loop)               | ``false``             |
+| [`float`](class_float.md)                     | [`loop_offset`](class_audiostreammp3.md#class_audiostreammp3_property_loop_offset) | ``0.0``               |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationNodeBlendTree.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationNodeBlendTree.xml。 -->
 
 <div id="_class_animationnodeblendtree"></div>
 
@@ -19,19 +19,23 @@ An [`AnimationNodeOutput`](class_animationnodeoutput.md) node named `output` is 
 
 ## 属性
 
-| [`Vector2`](class_vector2.md) | [`graph_offset`](#class_animationnodeblendtree_property_graph_offset) | ``Vector2(0, 0)`` |
+|||
+|:-:|:--|
+| [`Vector2`](class_vector2.md) | [`graph_offset`](class_animationnodeblendtree.md#class_animationnodeblendtree_property_graph_offset) | ``Vector2(0, 0)`` |
 
 ## 方法
 
-| `void`                                    | [`add_node`](#class_animationnodeblendtree_method_add_node) ( name: [`StringName`](class_stringname.md), node: [`AnimationNode`](class_animationnode.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) |
-| `void`                                    | [`connect_node`](#class_animationnodeblendtree_method_connect_node) ( input_node: [`StringName`](class_stringname.md), input_index: [`int`](class_int.md), output_node: [`StringName`](class_stringname.md) )       |
-| `void`                                    | [`disconnect_node`](#class_animationnodeblendtree_method_disconnect_node) ( input_node: [`StringName`](class_stringname.md), input_index: [`int`](class_int.md) )                                                   |
-| [`AnimationNode`](class_animationnode.md) | [`get_node`](#class_animationnodeblendtree_method_get_node) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                             |
-| [`Vector2`](class_vector2.md)             | [`get_node_position`](#class_animationnodeblendtree_method_get_node_position) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                           |
-| [`bool`](class_bool.md)                   | [`has_node`](#class_animationnodeblendtree_method_has_node) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                             |
-| `void`                                    | [`remove_node`](#class_animationnodeblendtree_method_remove_node) ( name: [`StringName`](class_stringname.md) )                                                                                                     |
-| `void`                                    | [`rename_node`](#class_animationnodeblendtree_method_rename_node) ( name: [`StringName`](class_stringname.md), new_name: [`StringName`](class_stringname.md) )                                                      |
-| `void`                                    | [`set_node_position`](#class_animationnodeblendtree_method_set_node_position) ( name: [`StringName`](class_stringname.md), position: [`Vector2`](class_vector2.md) )                                                |
+|||
+|:-:|:--|
+| `void`                                    | [`add_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_add_node) ( name: [`StringName`](class_stringname.md), node: [`AnimationNode`](class_animationnode.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) |
+| `void`                                    | [`connect_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_connect_node) ( input_node: [`StringName`](class_stringname.md), input_index: [`int`](class_int.md), output_node: [`StringName`](class_stringname.md) )       |
+| `void`                                    | [`disconnect_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_disconnect_node) ( input_node: [`StringName`](class_stringname.md), input_index: [`int`](class_int.md) )                                                   |
+| [`AnimationNode`](class_animationnode.md) | [`get_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_get_node) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                             |
+| [`Vector2`](class_vector2.md)             | [`get_node_position`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_get_node_position) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                           |
+| [`bool`](class_bool.md)                   | [`has_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_has_node) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                             |
+| `void`                                    | [`remove_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_remove_node) ( name: [`StringName`](class_stringname.md) )                                                                                                     |
+| `void`                                    | [`rename_node`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_rename_node) ( name: [`StringName`](class_stringname.md), new_name: [`StringName`](class_stringname.md) )                                                      |
+| `void`                                    | [`set_node_position`](class_animationnodeblendtree.md#class_animationnodeblendtree_method_set_node_position) ( name: [`StringName`](class_stringname.md), position: [`Vector2`](class_vector2.md) )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 

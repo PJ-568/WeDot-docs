@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AspectRatioContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AspectRatioContainer.xml。 -->
 
 <div id="_class_aspectratiocontainer"></div>
 
@@ -17,10 +17,12 @@ A container type that arranges its child controls in a way that preserves their 
 
 ## 属性
 
-| [AlignmentMode](#enum_aspectratiocontainer_alignmentmode) | [`alignment_horizontal`](#class_aspectratiocontainer_property_alignment_horizontal) | ``1``   |
-| [AlignmentMode](#enum_aspectratiocontainer_alignmentmode) | [`alignment_vertical`](#class_aspectratiocontainer_property_alignment_vertical)     | ``1``   |
-| [`float`](class_float.md)                                 | [`ratio`](#class_aspectratiocontainer_property_ratio)                               | ``1.0`` |
-| [StretchMode](#enum_aspectratiocontainer_stretchmode)     | [`stretch_mode`](#class_aspectratiocontainer_property_stretch_mode)                 | ``2``   |
+|||
+|:-:|:--|
+| [AlignmentMode](#enum_aspectratiocontainer_alignmentmode) | [`alignment_horizontal`](class_aspectratiocontainer.md#class_aspectratiocontainer_property_alignment_horizontal) | ``1``   |
+| [AlignmentMode](#enum_aspectratiocontainer_alignmentmode) | [`alignment_vertical`](class_aspectratiocontainer.md#class_aspectratiocontainer_property_alignment_vertical)     | ``1``   |
+| [`float`](class_float.md)                                 | [`ratio`](class_aspectratiocontainer.md#class_aspectratiocontainer_property_ratio)                               | ``1.0`` |
+| [StretchMode](#enum_aspectratiocontainer_stretchmode)     | [`stretch_mode`](class_aspectratiocontainer.md#class_aspectratiocontainer_property_stretch_mode)                 | ``2``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +58,7 @@ The bounding rectangle of child controls is automatically adjusted to fit inside
 
 The width and height of child controls is automatically adjusted to make their bounding rectangle cover the entire area of the container while keeping the aspect ratio.
 
-When the bounding rectangle of child controls exceed the container's size and [`Control.clip_contents`](#class_control_property_clip_contents) is enabled, this allows to show only the container's area restricted by its own bounding rectangle.
+When the bounding rectangle of child controls exceed the container's size and [`Control.clip_contents`](class_control.md#class_control_property_clip_contents) is enabled, this allows to show only the container's area restricted by its own bounding rectangle.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -123,7 +125,7 @@ Specifies the vertical relative position of child controls.
 - `void` **set_ratio** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_ratio** ( )
 
-The aspect ratio to enforce on child controls. This is the width divided by the height. The ratio depends on the [`stretch_mode`](#class_aspectratiocontainer_property_stretch_mode).
+The aspect ratio to enforce on child controls. This is the width divided by the height. The ratio depends on the [`stretch_mode`](class_aspectratiocontainer.md#class_aspectratiocontainer_property_stretch_mode).
 
 <!-- rst-class:: classref-item-separator -->
 

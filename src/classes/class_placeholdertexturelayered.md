@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PlaceholderTextureLayered.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PlaceholderTextureLayered.xml。 -->
 
 <div id="_class_placeholdertexturelayered"></div>
 
@@ -25,8 +25,10 @@ This class is used when loading a project that uses a [`TextureLayered`](class_t
 
 ## 属性
 
-| [`int`](class_int.md)           | [`layers`](#class_placeholdertexturelayered_property_layers) | ``1``              |
-| [`Vector2i`](class_vector2i.md) | [`size`](#class_placeholdertexturelayered_property_size)     | ``Vector2i(1, 1)`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md)           | [`layers`](class_placeholdertexturelayered.md#class_placeholdertexturelayered_property_layers) | ``1``              |
+| [`Vector2i`](class_vector2i.md) | [`size`](class_placeholdertexturelayered.md#class_placeholdertexturelayered_property_size)     | ``Vector2i(1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

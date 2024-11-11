@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ScriptCreateDialog.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ScriptCreateDialog.xml。 -->
 
 <div id="_class_scriptcreatedialog"></div>
 
@@ -13,7 +13,7 @@ Godot editor's popup dialog for creating new [`Script`](class_script.md) files.
 
 ## 描述
 
-The **ScriptCreateDialog** creates script files according to a given template for a given scripting language. The standard use is to configure its fields prior to calling one of the [`Window.popup`](#class_window_method_popup) methods.
+The **ScriptCreateDialog** creates script files according to a given template for a given scripting language. The standard use is to configure its fields prior to calling one of the [`Window.popup`](class_window.md#class_window_method_popup) methods.
 
 
 
@@ -45,13 +45,17 @@ The **ScriptCreateDialog** creates script files according to a given template fo
 
 ## 属性
 
-| [`bool`](class_bool.md)     | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
-| [`String`](class_string.md) | ok_button_text    | ``"Create"`` (overrides [`AcceptDialog`](#class_acceptdialog_property_ok_button_text)) |
-| [`String`](class_string.md) | title             | ``"Attach Node Script"`` (overrides [`Window`](#class_window_property_title))          |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)     | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_dialog_hide_on_ok)) |
+| [`String`](class_string.md) | ok_button_text    | ``"Create"`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_ok_button_text)) |
+| [`String`](class_string.md) | title             | ``"Attach Node Script"`` (overrides [`Window`](class_window.md#class_window_property_title))                |
 
 ## 方法
 
-| `void` | [`config`](#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
+|||
+|:-:|:--|
+| `void` | [`config`](class_scriptcreatedialog.md#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
 
 <!-- rst-class:: classref-section-separator -->
 

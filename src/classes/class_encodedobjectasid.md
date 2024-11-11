@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EncodedObjectAsID.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EncodedObjectAsID.xml。 -->
 
 <div id="_class_encodedobjectasid"></div>
 
@@ -13,13 +13,15 @@ Holds a reference to an [`Object`](class_object.md)'s instance ID.
 
 ## 描述
 
-Utility class which holds a reference to the internal identifier of an [`Object`](class_object.md) instance, as given by [`Object.get_instance_id`](#class_object_method_get_instance_id). This ID can then be used to retrieve the object instance with [`@GlobalScope.instance_from_id`](#class_@globalscope_method_instance_from_id).
+Utility class which holds a reference to the internal identifier of an [`Object`](class_object.md) instance, as given by [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id). This ID can then be used to retrieve the object instance with [`@GlobalScope.instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id).
 
 This class is used internally by the editor inspector and script debugger, but can also be used in plugins to pass and display objects as their IDs.
 
 ## 属性
 
-| [`int`](class_int.md) | [`object_id`](#class_encodedobjectasid_property_object_id) | ``0`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`object_id`](class_encodedobjectasid.md#class_encodedobjectasid_property_object_id) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -34,7 +36,7 @@ This class is used internally by the editor inspector and script debugger, but c
 - `void` **set_object_id** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_object_id** ( )
 
-The [`Object`](class_object.md) identifier stored in this **EncodedObjectAsID** instance. The object instance can be retrieved with [`@GlobalScope.instance_from_id`](#class_@globalscope_method_instance_from_id).
+The [`Object`](class_object.md) identifier stored in this **EncodedObjectAsID** instance. The object instance can be retrieved with [`@GlobalScope.instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectEQ.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectEQ.xml。 -->
 
 <div id="_class_audioeffecteq"></div>
 
@@ -21,9 +21,11 @@ AudioEffectEQ gives you control over frequencies. Use it to compensate for exist
 
 ## 方法
 
-| [`int`](class_int.md)     | [`get_band_count`](#class_audioeffecteq_method_get_band_count) ( ) const[^const]                                                             |
-| [`float`](class_float.md) | [`get_band_gain_db`](#class_audioeffecteq_method_get_band_gain_db) ( band_idx: [`int`](class_int.md) ) const[^const]                         |
-| `void`                    | [`set_band_gain_db`](#class_audioeffecteq_method_set_band_gain_db) ( band_idx: [`int`](class_int.md), volume_db: [`float`](class_float.md) ) |
+|||
+|:-:|:--|
+| [`int`](class_int.md)     | [`get_band_count`](class_audioeffecteq.md#class_audioeffecteq_method_get_band_count) ( ) const[^const]                                                             |
+| [`float`](class_float.md) | [`get_band_gain_db`](class_audioeffecteq.md#class_audioeffecteq_method_get_band_gain_db) ( band_idx: [`int`](class_int.md) ) const[^const]                         |
+| `void`                    | [`set_band_gain_db`](class_audioeffecteq.md#class_audioeffecteq_method_set_band_gain_db) ( band_idx: [`int`](class_int.md), volume_db: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

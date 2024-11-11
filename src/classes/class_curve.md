@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Curve.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Curve.xml。 -->
 
 <div id="_class_curve"></div>
 
@@ -19,31 +19,35 @@ See also [`Gradient`](class_gradient.md) which is designed for color interpolati
 
 ## 属性
 
-| [`int`](class_int.md)     | [`bake_resolution`](#class_curve_property_bake_resolution) | ``100`` |
-| [`float`](class_float.md) | [`max_value`](#class_curve_property_max_value)             | ``1.0`` |
-| [`float`](class_float.md) | [`min_value`](#class_curve_property_min_value)             | ``0.0`` |
-| [`int`](class_int.md)     | [`point_count`](#class_curve_property_point_count)         | ``0``   |
+|||
+|:-:|:--|
+| [`int`](class_int.md)     | [`bake_resolution`](class_curve.md#class_curve_property_bake_resolution) | ``100`` |
+| [`float`](class_float.md) | [`max_value`](class_curve.md#class_curve_property_max_value)             | ``1.0`` |
+| [`float`](class_float.md) | [`min_value`](class_curve.md#class_curve_property_min_value)             | ``0.0`` |
+| [`int`](class_int.md)     | [`point_count`](class_curve.md#class_curve_property_point_count)         | ``0``   |
 
 ## 方法
 
-| [`int`](class_int.md)                  | [`add_point`](#class_curve_method_add_point) ( position: [`Vector2`](class_vector2.md), left_tangent: [`float`](class_float.md) = 0, right_tangent: [`float`](class_float.md) = 0, left_mode: [TangentMode](#enum_curve_tangentmode) = 0, right_mode: [TangentMode](#enum_curve_tangentmode) = 0 ) |
-| `void`                                 | [`bake`](#class_curve_method_bake) ( )                                                                                                                                                                                                                                                             |
-| `void`                                 | [`clean_dupes`](#class_curve_method_clean_dupes) ( )                                                                                                                                                                                                                                               |
-| `void`                                 | [`clear_points`](#class_curve_method_clear_points) ( )                                                                                                                                                                                                                                             |
-| [TangentMode](#enum_curve_tangentmode) | [`get_point_left_mode`](#class_curve_method_get_point_left_mode) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                    |
-| [`float`](class_float.md)              | [`get_point_left_tangent`](#class_curve_method_get_point_left_tangent) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
-| [`Vector2`](class_vector2.md)          | [`get_point_position`](#class_curve_method_get_point_position) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                      |
-| [TangentMode](#enum_curve_tangentmode) | [`get_point_right_mode`](#class_curve_method_get_point_right_mode) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
-| [`float`](class_float.md)              | [`get_point_right_tangent`](#class_curve_method_get_point_right_tangent) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                            |
-| `void`                                 | [`remove_point`](#class_curve_method_remove_point) ( index: [`int`](class_int.md) )                                                                                                                                                                                                                |
-| [`float`](class_float.md)              | [`sample`](#class_curve_method_sample) ( offset: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                         |
-| [`float`](class_float.md)              | [`sample_baked`](#class_curve_method_sample_baked) ( offset: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                             |
-| `void`                                 | [`set_point_left_mode`](#class_curve_method_set_point_left_mode) ( index: [`int`](class_int.md), mode: [TangentMode](#enum_curve_tangentmode) )                                                                                                                                                    |
-| `void`                                 | [`set_point_left_tangent`](#class_curve_method_set_point_left_tangent) ( index: [`int`](class_int.md), tangent: [`float`](class_float.md) )                                                                                                                                                        |
-| [`int`](class_int.md)                  | [`set_point_offset`](#class_curve_method_set_point_offset) ( index: [`int`](class_int.md), offset: [`float`](class_float.md) )                                                                                                                                                                     |
-| `void`                                 | [`set_point_right_mode`](#class_curve_method_set_point_right_mode) ( index: [`int`](class_int.md), mode: [TangentMode](#enum_curve_tangentmode) )                                                                                                                                                  |
-| `void`                                 | [`set_point_right_tangent`](#class_curve_method_set_point_right_tangent) ( index: [`int`](class_int.md), tangent: [`float`](class_float.md) )                                                                                                                                                      |
-| `void`                                 | [`set_point_value`](#class_curve_method_set_point_value) ( index: [`int`](class_int.md), y: [`float`](class_float.md) )                                                                                                                                                                            |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                  | [`add_point`](class_curve.md#class_curve_method_add_point) ( position: [`Vector2`](class_vector2.md), left_tangent: [`float`](class_float.md) = 0, right_tangent: [`float`](class_float.md) = 0, left_mode: [TangentMode](#enum_curve_tangentmode) = 0, right_mode: [TangentMode](#enum_curve_tangentmode) = 0 ) |
+| `void`                                 | [`bake`](class_curve.md#class_curve_method_bake) ( )                                                                                                                                                                                                                                                             |
+| `void`                                 | [`clean_dupes`](class_curve.md#class_curve_method_clean_dupes) ( )                                                                                                                                                                                                                                               |
+| `void`                                 | [`clear_points`](class_curve.md#class_curve_method_clear_points) ( )                                                                                                                                                                                                                                             |
+| [TangentMode](#enum_curve_tangentmode) | [`get_point_left_mode`](class_curve.md#class_curve_method_get_point_left_mode) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                    |
+| [`float`](class_float.md)              | [`get_point_left_tangent`](class_curve.md#class_curve_method_get_point_left_tangent) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
+| [`Vector2`](class_vector2.md)          | [`get_point_position`](class_curve.md#class_curve_method_get_point_position) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                      |
+| [TangentMode](#enum_curve_tangentmode) | [`get_point_right_mode`](class_curve.md#class_curve_method_get_point_right_mode) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
+| [`float`](class_float.md)              | [`get_point_right_tangent`](class_curve.md#class_curve_method_get_point_right_tangent) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                            |
+| `void`                                 | [`remove_point`](class_curve.md#class_curve_method_remove_point) ( index: [`int`](class_int.md) )                                                                                                                                                                                                                |
+| [`float`](class_float.md)              | [`sample`](class_curve.md#class_curve_method_sample) ( offset: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                         |
+| [`float`](class_float.md)              | [`sample_baked`](class_curve.md#class_curve_method_sample_baked) ( offset: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                             |
+| `void`                                 | [`set_point_left_mode`](class_curve.md#class_curve_method_set_point_left_mode) ( index: [`int`](class_int.md), mode: [TangentMode](#enum_curve_tangentmode) )                                                                                                                                                    |
+| `void`                                 | [`set_point_left_tangent`](class_curve.md#class_curve_method_set_point_left_tangent) ( index: [`int`](class_int.md), tangent: [`float`](class_float.md) )                                                                                                                                                        |
+| [`int`](class_int.md)                  | [`set_point_offset`](class_curve.md#class_curve_method_set_point_offset) ( index: [`int`](class_int.md), offset: [`float`](class_float.md) )                                                                                                                                                                     |
+| `void`                                 | [`set_point_right_mode`](class_curve.md#class_curve_method_set_point_right_mode) ( index: [`int`](class_int.md), mode: [TangentMode](#enum_curve_tangentmode) )                                                                                                                                                  |
+| `void`                                 | [`set_point_right_tangent`](class_curve.md#class_curve_method_set_point_right_tangent) ( index: [`int`](class_int.md), tangent: [`float`](class_float.md) )                                                                                                                                                      |
+| `void`                                 | [`set_point_value`](class_curve.md#class_curve_method_set_point_value) ( index: [`int`](class_int.md), y: [`float`](class_float.md) )                                                                                                                                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,7 +59,7 @@ See also [`Gradient`](class_gradient.md) which is designed for color interpolati
 
 **range_changed** ( ) <div id="class_curve_signal_range_changed"></div>
 
-Emitted when [`max_value`](#class_curve_property_max_value) or [`min_value`](#class_curve_property_min_value) is changed.
+Emitted when [`max_value`](class_curve.md#class_curve_property_max_value) or [`min_value`](class_curve.md#class_curve_property_min_value) is changed.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -149,7 +153,7 @@ The number of points describing the curve.
 
 [`int`](class_int.md) **add_point** ( position: [`Vector2`](class_vector2.md), left_tangent: [`float`](class_float.md) = 0, right_tangent: [`float`](class_float.md) = 0, left_mode: [TangentMode](#enum_curve_tangentmode) = 0, right_mode: [TangentMode](#enum_curve_tangentmode) = 0 )<div id="class_curve_method_add_point"></div>
 
-Adds a point to the curve. For each side, if the `*_mode` is [`TANGENT_LINEAR`](#class_curve_constant_tangent_linear), the `*_tangent` angle (in degrees) uses the slope of the curve halfway to the adjacent point. Allows custom assignments to the `*_tangent` angle if `*_mode` is set to [`TANGENT_FREE`](#class_curve_constant_tangent_free).
+Adds a point to the curve. For each side, if the `*_mode` is [`TANGENT_LINEAR`](class_curve.md#class_curve_constant_tangent_linear), the `*_tangent` angle (in degrees) uses the slope of the curve halfway to the adjacent point. Allows custom assignments to the `*_tangent` angle if `*_mode` is set to [`TANGENT_FREE`](class_curve.md#class_curve_constant_tangent_free).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CameraTexture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CameraTexture.xml。 -->
 
 <div id="_class_cameratexture"></div>
 
@@ -19,10 +19,12 @@ This texture gives access to the camera texture provided by a [`CameraFeed`](cla
 
 ## 属性
 
-| [`int`](class_int.md)                     | [`camera_feed_id`](#class_cameratexture_property_camera_feed_id)     | ``0``                                                                                |
-| [`bool`](class_bool.md)                   | [`camera_is_active`](#class_cameratexture_property_camera_is_active) | ``false``                                                                            |
-| [`bool`](class_bool.md)                   | resource_local_to_scene                                              | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [FeedImage](#enum_cameraserver_feedimage) | [`which_feed`](#class_cameratexture_property_which_feed)             | ``0``                                                                                |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                     | [`camera_feed_id`](class_cameratexture.md#class_cameratexture_property_camera_feed_id)     | ``0``                                                                                                 |
+| [`bool`](class_bool.md)                   | [`camera_is_active`](class_cameratexture.md#class_cameratexture_property_camera_is_active) | ``false``                                                                                             |
+| [`bool`](class_bool.md)                   | resource_local_to_scene                                                                    | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [FeedImage](#enum_cameraserver_feedimage) | [`which_feed`](class_cameratexture.md#class_cameratexture_property_which_feed)             | ``0``                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

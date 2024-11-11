@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamPlaybackResampled.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamPlaybackResampled.xml。 -->
 
 <div id="_class_audiostreamplaybackresampled"></div>
 
@@ -15,9 +15,11 @@
 
 ## 方法
 
-| [`float`](class_float.md) | [`_get_stream_sampling_rate`](#class_audiostreamplaybackresampled_private_method__get_stream_sampling_rate) ( ) virtual[^virtual] const[^const]                           |
-| [`int`](class_int.md)     | [`_mix_resampled`](#class_audiostreamplaybackresampled_private_method__mix_resampled) ( dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
-| `void`                    | [`begin_resample`](#class_audiostreamplaybackresampled_method_begin_resample) ( )                                                                                         |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`_get_stream_sampling_rate`](class_audiostreamplaybackresampled.md#class_audiostreamplaybackresampled_private_method__get_stream_sampling_rate) ( ) virtual[^virtual] const[^const]                           |
+| [`int`](class_int.md)     | [`_mix_resampled`](class_audiostreamplaybackresampled.md#class_audiostreamplaybackresampled_private_method__mix_resampled) ( dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
+| `void`                    | [`begin_resample`](class_audiostreamplaybackresampled.md#class_audiostreamplaybackresampled_method_begin_resample) ( )                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

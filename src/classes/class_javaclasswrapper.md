@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/JavaClassWrapper.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/JavaClassWrapper.xml。 -->
 
 <div id="_class_javaclasswrapper"></div>
 
@@ -17,9 +17,24 @@ The JavaClassWrapper singleton provides a way for the Godot application to send 
 
  **Note:** This singleton is only available in Android builds.
 
+```
+
+    var LocalDateTime = JavaClassWrapper.wrap("java.time.LocalDateTime")
+    var DateTimeFormatter = JavaClassWrapper.wrap("java.time.format.DateTimeFormatter")
+    
+    var datetime = LocalDateTime.now()
+    var formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")
+    
+    print(datetime.format(formatter))
+```
+
+
+
 ## 方法
 
-| [`JavaClass`](class_javaclass.md) | [`wrap`](#class_javaclasswrapper_method_wrap) ( name: [`String`](class_string.md) ) |
+|||
+|:-:|:--|
+| [`JavaClass`](class_javaclass.md) | [`wrap`](class_javaclasswrapper.md#class_javaclasswrapper_method_wrap) ( name: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

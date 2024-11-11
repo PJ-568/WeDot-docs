@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/zip/doc_classes/ZIPReader.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/zip/doc_classes/ZIPReader.xml。 -->
 
 <div id="_class_zipreader"></div>
 
@@ -31,11 +31,13 @@ This class implements a reader that can extract the content of individual files 
 
 ## 方法
 
-| [Error](#enum_@globalscope_error)                 | [`close`](#class_zipreader_method_close) ( )                                                                                               |
-| [`bool`](class_bool.md)                           | [`file_exists`](#class_zipreader_method_file_exists) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true ) |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](#class_zipreader_method_get_files) ( )                                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`open`](#class_zipreader_method_open) ( path: [`String`](class_string.md) )                                                               |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`read_file`](#class_zipreader_method_read_file) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true )     |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error)                 | [`close`](class_zipreader.md#class_zipreader_method_close) ( )                                                                                               |
+| [`bool`](class_bool.md)                           | [`file_exists`](class_zipreader.md#class_zipreader_method_file_exists) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true ) |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](class_zipreader.md#class_zipreader_method_get_files) ( )                                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`open`](class_zipreader.md#class_zipreader_method_open) ( path: [`String`](class_string.md) )                                                               |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`read_file`](class_zipreader.md#class_zipreader_method_read_file) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true )     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,7 +61,7 @@ Closes the underlying resources used by this instance.
 
 Returns `true` if the file exists in the loaded zip archive.
 
-Must be called after [`open`](#class_zipreader_method_open).
+Must be called after [`open`](class_zipreader.md#class_zipreader_method_open).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -71,7 +73,7 @@ Must be called after [`open`](#class_zipreader_method_open).
 
 Returns the list of names of all files in the loaded archive.
 
-Must be called after [`open`](#class_zipreader_method_open).
+Must be called after [`open`](class_zipreader.md#class_zipreader_method_open).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -93,7 +95,7 @@ Opens the zip archive at the given `path` and reads its file index.
 
 Loads the whole content of a file in the loaded zip archive into memory and returns it.
 
-Must be called after [`open`](#class_zipreader_method_open).
+Must be called after [`open`](class_zipreader.md#class_zipreader_method_open).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

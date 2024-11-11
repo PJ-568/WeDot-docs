@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TCPServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TCPServer.xml。 -->
 
 <div id="_class_tcpserver"></div>
 
@@ -19,12 +19,14 @@ A TCP server. Listens to connections on a port and returns a [`StreamPeerTCP`](c
 
 ## 方法
 
-| [`int`](class_int.md)                     | [`get_local_port`](#class_tcpserver_method_get_local_port) ( ) const[^const]                                                |
-| [`bool`](class_bool.md)                   | [`is_connection_available`](#class_tcpserver_method_is_connection_available) ( ) const[^const]                              |
-| [`bool`](class_bool.md)                   | [`is_listening`](#class_tcpserver_method_is_listening) ( ) const[^const]                                                    |
-| [Error](#enum_@globalscope_error)         | [`listen`](#class_tcpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
-| `void`                                    | [`stop`](#class_tcpserver_method_stop) ( )                                                                                  |
-| [`StreamPeerTCP`](class_streampeertcp.md) | [`take_connection`](#class_tcpserver_method_take_connection) ( )                                                            |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                     | [`get_local_port`](class_tcpserver.md#class_tcpserver_method_get_local_port) ( ) const[^const]                                                |
+| [`bool`](class_bool.md)                   | [`is_connection_available`](class_tcpserver.md#class_tcpserver_method_is_connection_available) ( ) const[^const]                              |
+| [`bool`](class_bool.md)                   | [`is_listening`](class_tcpserver.md#class_tcpserver_method_is_listening) ( ) const[^const]                                                    |
+| [Error](#enum_@globalscope_error)         | [`listen`](class_tcpserver.md#class_tcpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
+| `void`                                    | [`stop`](class_tcpserver.md#class_tcpserver_method_stop) ( )                                                                                  |
+| [`StreamPeerTCP`](class_streampeertcp.md) | [`take_connection`](class_tcpserver.md#class_tcpserver_method_take_connection) ( )                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 

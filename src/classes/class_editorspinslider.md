@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorSpinSlider.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorSpinSlider.xml。 -->
 
 <div id="_class_editorspinslider"></div>
 
@@ -15,18 +15,27 @@ Godot editor's control for editing numeric values.
 
 This [`Control`](class_control.md) node is used in the editor's Inspector dock to allow editing of numeric values. Can be used with [`EditorInspectorPlugin`](class_editorinspectorplugin.md) to recreate the same behavior.
 
-If the [`Range.step`](#class_range_property_step) value is `1`, the **EditorSpinSlider** will display up/down arrows, similar to [`SpinBox`](class_spinbox.md). If the [`Range.step`](#class_range_property_step) value is not `1`, a slider will be displayed instead.
+If the [`Range.step`](class_range.md#class_range_property_step) value is `1`, the **EditorSpinSlider** will display up/down arrows, similar to [`SpinBox`](class_spinbox.md). If the [`Range.step`](class_range.md#class_range_property_step) value is not `1`, a slider will be displayed instead.
 
 ## 属性
 
-| [`bool`](class_bool.md)              | [`flat`](#class_editorspinslider_property_flat)               | ``false``                                                                  |
-| [FocusMode](#enum_control_focusmode) | focus_mode                                                    | ``2`` (overrides [`Control`](#class_control_property_focus_mode))          |
-| [`bool`](class_bool.md)              | [`hide_slider`](#class_editorspinslider_property_hide_slider) | ``false``                                                                  |
-| [`String`](class_string.md)          | [`label`](#class_editorspinslider_property_label)             | ``""``                                                                     |
-| [`bool`](class_bool.md)              | [`read_only`](#class_editorspinslider_property_read_only)     | ``false``                                                                  |
-| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical                                           | ``1`` (overrides [`Control`](#class_control_property_size_flags_vertical)) |
-| [`float`](class_float.md)            | step                                                          | ``1.0`` (overrides [`Range`](#class_range_property_step))                  |
-| [`String`](class_string.md)          | [`suffix`](#class_editorspinslider_property_suffix)           | ``""``                                                                     |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)              | [`flat`](class_editorspinslider.md#class_editorspinslider_property_flat)               | ``false``                                                                                  |
+| [FocusMode](#enum_control_focusmode) | focus_mode                                                                             | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))          |
+| [`bool`](class_bool.md)              | [`hide_slider`](class_editorspinslider.md#class_editorspinslider_property_hide_slider) | ``false``                                                                                  |
+| [`String`](class_string.md)          | [`label`](class_editorspinslider.md#class_editorspinslider_property_label)             | ``""``                                                                                     |
+| [`bool`](class_bool.md)              | [`read_only`](class_editorspinslider.md#class_editorspinslider_property_read_only)     | ``false``                                                                                  |
+| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical                                                                    | ``1`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical)) |
+| [`float`](class_float.md)            | step                                                                                   | ``1.0`` (overrides [`Range`](class_range.md#class_range_property_step))                    |
+| [`String`](class_string.md)          | [`suffix`](class_editorspinslider.md#class_editorspinslider_property_suffix)           | ``""``                                                                                     |
+
+## 主题属性
+
+|||
+|:-:|:--|
+| [`Texture2D`](class_texture2d.md) | [`updown`](class_editorspinslider.md#class_editorspinslider_theme_icon_updown)                   |
+| [`Texture2D`](class_texture2d.md) | [`updown_disabled`](class_editorspinslider.md#class_editorspinslider_theme_icon_updown_disabled) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -136,6 +145,28 @@ If `true`, the slider can't be interacted with.
 - [`String`](class_string.md) **get_suffix** ( )
 
 The suffix to display after the value (in a faded color). This should generally be a plural word. You may have to use an abbreviation if the suffix is too long to be displayed.
+
+<!-- rst-class:: classref-section-separator -->
+
+---
+
+## 主题属性说明
+
+<div id="_class_editorspinslider_theme_icon_updown"></div>
+
+[`Texture2D`](class_texture2d.md) **updown** <div id="class_editorspinslider_theme_icon_updown"></div>
+
+Single texture representing both the up and down buttons.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorspinslider_theme_icon_updown_disabled"></div>
+
+[`Texture2D`](class_texture2d.md) **updown_disabled** <div id="class_editorspinslider_theme_icon_updown_disabled"></div>
+
+Single texture representing both the up and down buttons, when the control is readonly or disabled.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

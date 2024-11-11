@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeFloatOp.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeFloatOp.xml。 -->
 
 <div id="_class_visualshadernodefloatop"></div>
 
@@ -13,11 +13,13 @@ A floating-point scalar operator to be used within the visual shader graph.
 
 ## 描述
 
-Applies [`operator`](#class_visualshadernodefloatop_property_operator) to two floating-point inputs: `a` and `b`.
+Applies [`operator`](class_visualshadernodefloatop.md#class_visualshadernodefloatop_property_operator) to two floating-point inputs: `a` and `b`.
 
 ## 属性
 
-| [Operator](#enum_visualshadernodefloatop_operator) | [`operator`](#class_visualshadernodefloatop_property_operator) | ``0`` |
+|||
+|:-:|:--|
+| [Operator](#enum_visualshadernodefloatop_operator) | [`operator`](class_visualshadernodefloatop.md#class_visualshadernodefloatop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

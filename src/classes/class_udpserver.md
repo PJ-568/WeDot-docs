@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/UDPServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/UDPServer.xml。 -->
 
 <div id="_class_udpserver"></div>
 
@@ -13,9 +13,9 @@ Helper class to implement a UDP server.
 
 ## 描述
 
-A simple server that opens a UDP socket and returns connected [`PacketPeerUDP`](class_packetpeerudp.md) upon receiving new packets. See also [`PacketPeerUDP.connect_to_host`](#class_packetpeerudp_method_connect_to_host).
+A simple server that opens a UDP socket and returns connected [`PacketPeerUDP`](class_packetpeerudp.md) upon receiving new packets. See also [`PacketPeerUDP.connect_to_host`](class_packetpeerudp.md#class_packetpeerudp_method_connect_to_host).
 
-After starting the server ([`listen`](#class_udpserver_method_listen)), you will need to [`poll`](#class_udpserver_method_poll) it at regular intervals (e.g. inside [`Node._process`](#class_node_private_method__process)) for it to process new packets, delivering them to the appropriate [`PacketPeerUDP`](class_packetpeerudp.md), and taking new connections.
+After starting the server ([`listen`](class_udpserver.md#class_udpserver_method_listen)), you will need to [`poll`](class_udpserver.md#class_udpserver_method_poll) it at regular intervals (e.g. inside [`Node._process`](class_node.md#class_node_private_method__process)) for it to process new packets, delivering them to the appropriate [`PacketPeerUDP`](class_packetpeerudp.md), and taking new connections.
 
 Below a small example of how it can be used:
 
@@ -155,17 +155,21 @@ Below a small example of how it can be used:
 
 ## 属性
 
-| [`int`](class_int.md) | [`max_pending_connections`](#class_udpserver_property_max_pending_connections) | ``16`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`max_pending_connections`](class_udpserver.md#class_udpserver_property_max_pending_connections) | ``16`` |
 
 ## 方法
 
-| [`int`](class_int.md)                     | [`get_local_port`](#class_udpserver_method_get_local_port) ( ) const[^const]                                                |
-| [`bool`](class_bool.md)                   | [`is_connection_available`](#class_udpserver_method_is_connection_available) ( ) const[^const]                              |
-| [`bool`](class_bool.md)                   | [`is_listening`](#class_udpserver_method_is_listening) ( ) const[^const]                                                    |
-| [Error](#enum_@globalscope_error)         | [`listen`](#class_udpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
-| [Error](#enum_@globalscope_error)         | [`poll`](#class_udpserver_method_poll) ( )                                                                                  |
-| `void`                                    | [`stop`](#class_udpserver_method_stop) ( )                                                                                  |
-| [`PacketPeerUDP`](class_packetpeerudp.md) | [`take_connection`](#class_udpserver_method_take_connection) ( )                                                            |
+|||
+|:-:|:--|
+| [`int`](class_int.md)                     | [`get_local_port`](class_udpserver.md#class_udpserver_method_get_local_port) ( ) const[^const]                                                |
+| [`bool`](class_bool.md)                   | [`is_connection_available`](class_udpserver.md#class_udpserver_method_is_connection_available) ( ) const[^const]                              |
+| [`bool`](class_bool.md)                   | [`is_listening`](class_udpserver.md#class_udpserver_method_is_listening) ( ) const[^const]                                                    |
+| [Error](#enum_@globalscope_error)         | [`listen`](class_udpserver.md#class_udpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
+| [Error](#enum_@globalscope_error)         | [`poll`](class_udpserver.md#class_udpserver_method_poll) ( )                                                                                  |
+| `void`                                    | [`stop`](class_udpserver.md#class_udpserver_method_stop) ( )                                                                                  |
+| [`PacketPeerUDP`](class_packetpeerudp.md) | [`take_connection`](class_udpserver.md#class_udpserver_method_take_connection) ( )                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -180,7 +184,7 @@ Below a small example of how it can be used:
 - `void` **set_max_pending_connections** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_max_pending_connections** ( )
 
-Define the maximum number of pending connections, during [`poll`](#class_udpserver_method_poll), any new pending connection exceeding that value will be automatically dropped. Setting this value to `0` effectively prevents any new pending connection to be accepted (e.g. when all your players have connected).
+Define the maximum number of pending connections, during [`poll`](class_udpserver.md#class_udpserver_method_poll), any new pending connection exceeding that value will be automatically dropped. Setting this value to `0` effectively prevents any new pending connection to be accepted (e.g. when all your players have connected).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -222,7 +226,7 @@ Returns `true` if the socket is open and listening on a port.
 
 [Error](#enum_@globalscope_error) **listen** ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" )<div id="class_udpserver_method_listen"></div>
 
-Starts the server by opening a UDP socket listening on the given `port`. You can optionally specify a `bind_address` to only listen for packets sent to that address. See also [`PacketPeerUDP.bind`](#class_packetpeerudp_method_bind).
+Starts the server by opening a UDP socket listening on the given `port`. You can optionally specify a `bind_address` to only listen for packets sent to that address. See also [`PacketPeerUDP.bind`](class_packetpeerudp.md#class_packetpeerudp_method_bind).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,7 +236,7 @@ Starts the server by opening a UDP socket listening on the given `port`. You can
 
 [Error](#enum_@globalscope_error) **poll** ( )<div id="class_udpserver_method_poll"></div>
 
-Call this method at regular intervals (e.g. inside [`Node._process`](#class_node_private_method__process)) to process new packets. And packet from known address/port pair will be delivered to the appropriate [`PacketPeerUDP`](class_packetpeerudp.md), any packet received from an unknown address/port pair will be added as a pending connection (see [`is_connection_available`](#class_udpserver_method_is_connection_available), [`take_connection`](#class_udpserver_method_take_connection)). The maximum number of pending connection is defined via [`max_pending_connections`](#class_udpserver_property_max_pending_connections).
+Call this method at regular intervals (e.g. inside [`Node._process`](class_node.md#class_node_private_method__process)) to process new packets. And packet from known address/port pair will be delivered to the appropriate [`PacketPeerUDP`](class_packetpeerudp.md), any packet received from an unknown address/port pair will be added as a pending connection (see [`is_connection_available`](class_udpserver.md#class_udpserver_method_is_connection_available), [`take_connection`](class_udpserver.md#class_udpserver_method_take_connection)). The maximum number of pending connection is defined via [`max_pending_connections`](class_udpserver.md#class_udpserver_property_max_pending_connections).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -242,7 +246,7 @@ Call this method at regular intervals (e.g. inside [`Node._process`](#class_node
 
 `void` **stop** ( )<div id="class_udpserver_method_stop"></div>
 
-Stops the server, closing the UDP socket if open. Will close all connected [`PacketPeerUDP`](class_packetpeerudp.md) accepted via [`take_connection`](#class_udpserver_method_take_connection) (remote peers will not be notified).
+Stops the server, closing the UDP socket if open. Will close all connected [`PacketPeerUDP`](class_packetpeerudp.md) accepted via [`take_connection`](class_udpserver.md#class_udpserver_method_take_connection) (remote peers will not be notified).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -252,7 +256,7 @@ Stops the server, closing the UDP socket if open. Will close all connected [`Pac
 
 [`PacketPeerUDP`](class_packetpeerudp.md) **take_connection** ( )<div id="class_udpserver_method_take_connection"></div>
 
-Returns the first pending connection (connected to the appropriate address/port). Will return `null` if no new connection is available. See also [`is_connection_available`](#class_udpserver_method_is_connection_available), [`PacketPeerUDP.connect_to_host`](#class_packetpeerudp_method_connect_to_host).
+Returns the first pending connection (connected to the appropriate address/port). Will return `null` if no new connection is available. See also [`is_connection_available`](class_udpserver.md#class_udpserver_method_is_connection_available), [`PacketPeerUDP.connect_to_host`](class_packetpeerudp.md#class_packetpeerudp_method_connect_to_host).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

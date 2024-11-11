@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationNodeBlendSpace1D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationNodeBlendSpace1D.xml。 -->
 
 <div id="_class_animationnodeblendspace1d"></div>
 
@@ -15,28 +15,32 @@ A set of [`AnimationRootNode`](class_animationrootnode.md) s placed on a virtual
 
 A resource used by [`AnimationNodeBlendTree`](class_animationnodeblendtree.md).
 
- **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of [`AnimationRootNode`](class_animationrootnode.md) s can be added using [`add_blend_point`](#class_animationnodeblendspace1d_method_add_blend_point). Outputs the linear blend of the two [`AnimationRootNode`](class_animationrootnode.md) s adjacent to the current value.
+ **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of [`AnimationRootNode`](class_animationrootnode.md) s can be added using [`add_blend_point`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_add_blend_point). Outputs the linear blend of the two [`AnimationRootNode`](class_animationrootnode.md) s adjacent to the current value.
 
-You can set the extents of the axis with [`min_space`](#class_animationnodeblendspace1d_property_min_space) and [`max_space`](#class_animationnodeblendspace1d_property_max_space).
+You can set the extents of the axis with [`min_space`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_min_space) and [`max_space`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_max_space).
 
 ## 属性
 
-| [BlendMode](#enum_animationnodeblendspace1d_blendmode) | [`blend_mode`](#class_animationnodeblendspace1d_property_blend_mode)   | ``0``       |
-| [`float`](class_float.md)                              | [`max_space`](#class_animationnodeblendspace1d_property_max_space)     | ``1.0``     |
-| [`float`](class_float.md)                              | [`min_space`](#class_animationnodeblendspace1d_property_min_space)     | ``-1.0``    |
-| [`float`](class_float.md)                              | [`snap`](#class_animationnodeblendspace1d_property_snap)               | ``0.1``     |
-| [`bool`](class_bool.md)                                | [`sync`](#class_animationnodeblendspace1d_property_sync)               | ``false``   |
-| [`String`](class_string.md)                            | [`value_label`](#class_animationnodeblendspace1d_property_value_label) | ``"value"`` |
+|||
+|:-:|:--|
+| [BlendMode](#enum_animationnodeblendspace1d_blendmode) | [`blend_mode`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_blend_mode)   | ``0``       |
+| [`float`](class_float.md)                              | [`max_space`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_max_space)     | ``1.0``     |
+| [`float`](class_float.md)                              | [`min_space`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_min_space)     | ``-1.0``    |
+| [`float`](class_float.md)                              | [`snap`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_snap)               | ``0.1``     |
+| [`bool`](class_bool.md)                                | [`sync`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_sync)               | ``false``   |
+| [`String`](class_string.md)                            | [`value_label`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_property_value_label) | ``"value"`` |
 
 ## 方法
 
-| `void`                                            | [`add_blend_point`](#class_animationnodeblendspace1d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`float`](class_float.md), at_index: [`int`](class_int.md) = -1 ) |
-| [`int`](class_int.md)                             | [`get_blend_point_count`](#class_animationnodeblendspace1d_method_get_blend_point_count) ( ) const[^const]                                                                                                     |
-| [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](#class_animationnodeblendspace1d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                          |
-| [`float`](class_float.md)                         | [`get_blend_point_position`](#class_animationnodeblendspace1d_method_get_blend_point_position) ( point: [`int`](class_int.md) ) const[^const]                                                                  |
-| `void`                                            | [`remove_blend_point`](#class_animationnodeblendspace1d_method_remove_blend_point) ( point: [`int`](class_int.md) )                                                                                            |
-| `void`                                            | [`set_blend_point_node`](#class_animationnodeblendspace1d_method_set_blend_point_node) ( point: [`int`](class_int.md), node: [`AnimationRootNode`](class_animationrootnode.md) )                               |
-| `void`                                            | [`set_blend_point_position`](#class_animationnodeblendspace1d_method_set_blend_point_position) ( point: [`int`](class_int.md), pos: [`float`](class_float.md) )                                                |
+|||
+|:-:|:--|
+| `void`                                            | [`add_blend_point`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`float`](class_float.md), at_index: [`int`](class_int.md) = -1 ) |
+| [`int`](class_int.md)                             | [`get_blend_point_count`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_get_blend_point_count) ( ) const[^const]                                                                                                     |
+| [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                          |
+| [`float`](class_float.md)                         | [`get_blend_point_position`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_get_blend_point_position) ( point: [`int`](class_int.md) ) const[^const]                                                                  |
+| `void`                                            | [`remove_blend_point`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_remove_blend_point) ( point: [`int`](class_int.md) )                                                                                            |
+| `void`                                            | [`set_blend_point_node`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_set_blend_point_node) ( point: [`int`](class_int.md), node: [`AnimationRootNode`](class_animationrootnode.md) )                               |
+| `void`                                            | [`set_blend_point_position`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_set_blend_point_position) ( point: [`int`](class_int.md), pos: [`float`](class_float.md) )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -64,7 +68,7 @@ The blend space plays the animation of the animation node which blending positio
 
 [BlendMode](#enum_animationnodeblendspace1d_blendmode) **BLEND_MODE_DISCRETE_CARRY** = ``2``
 
-Similar to [`BLEND_MODE_DISCRETE`](#class_animationnodeblendspace1d_constant_blend_mode_discrete), but starts the new animation at the last animation's playback position.
+Similar to [`BLEND_MODE_DISCRETE`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_constant_blend_mode_discrete), but starts the new animation at the last animation's playback position.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -92,7 +96,7 @@ Controls the interpolation between animations. See [BlendMode](#enum_animationno
 - `void` **set_max_space** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_max_space** ( )
 
-The blend space's axis's upper limit for the points' position. See [`add_blend_point`](#class_animationnodeblendspace1d_method_add_blend_point).
+The blend space's axis's upper limit for the points' position. See [`add_blend_point`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_add_blend_point).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -105,7 +109,7 @@ The blend space's axis's upper limit for the points' position. See [`add_blend_p
 - `void` **set_min_space** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_min_space** ( )
 
-The blend space's axis's lower limit for the points' position. See [`add_blend_point`](#class_animationnodeblendspace1d_method_add_blend_point).
+The blend space's axis's lower limit for the points' position. See [`add_blend_point`](class_animationnodeblendspace1d.md#class_animationnodeblendspace1d_method_add_blend_point).
 
 <!-- rst-class:: classref-item-separator -->
 

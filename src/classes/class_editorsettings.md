@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorSettings.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorSettings.xml。 -->
 
 <div id="_class_editorsettings"></div>
 
@@ -43,7 +43,7 @@ Accessing the settings can be done using the following methods, such as:
 
 
 
- **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_editor_settings`](#class_editorinterface_method_get_editor_settings).
+ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_editor_settings`](class_editorinterface.md#class_editorinterface_method_get_editor_settings).
 
 
 
@@ -51,349 +51,419 @@ Accessing the settings can be done using the following methods, such as:
 
 ## 属性
 
-| [`bool`](class_bool.md)                           | [`debugger/auto_switch_to_remote_scene_tree`](#class_editorsettings_property_debugger/auto_switch_to_remote_scene_tree)                                                                                         |
-| [`bool`](class_bool.md)                           | [`debugger/profile_native_calls`](#class_editorsettings_property_debugger/profile_native_calls)                                                                                                                 |
-| [`int`](class_int.md)                             | [`debugger/profiler_frame_history_size`](#class_editorsettings_property_debugger/profiler_frame_history_size)                                                                                                   |
-| [`int`](class_int.md)                             | [`debugger/profiler_frame_max_functions`](#class_editorsettings_property_debugger/profiler_frame_max_functions)                                                                                                 |
-| [`float`](class_float.md)                         | [`debugger/remote_inspect_refresh_interval`](#class_editorsettings_property_debugger/remote_inspect_refresh_interval)                                                                                           |
-| [`float`](class_float.md)                         | [`debugger/remote_scene_tree_refresh_interval`](#class_editorsettings_property_debugger/remote_scene_tree_refresh_interval)                                                                                     |
-| [`bool`](class_bool.md)                           | [`docks/filesystem/always_show_folders`](#class_editorsettings_property_docks/filesystem/always_show_folders)                                                                                                   |
-| [`String`](class_string.md)                       | [`docks/filesystem/textfile_extensions`](#class_editorsettings_property_docks/filesystem/textfile_extensions)                                                                                                   |
-| [`int`](class_int.md)                             | [`docks/filesystem/thumbnail_size`](#class_editorsettings_property_docks/filesystem/thumbnail_size)                                                                                                             |
-| [`float`](class_float.md)                         | [`docks/property_editor/auto_refresh_interval`](#class_editorsettings_property_docks/property_editor/auto_refresh_interval)                                                                                     |
-| [`float`](class_float.md)                         | [`docks/property_editor/subresource_hue_tint`](#class_editorsettings_property_docks/property_editor/subresource_hue_tint)                                                                                       |
-| [`bool`](class_bool.md)                           | [`docks/scene_tree/auto_expand_to_selected`](#class_editorsettings_property_docks/scene_tree/auto_expand_to_selected)                                                                                           |
-| [`bool`](class_bool.md)                           | [`docks/scene_tree/center_node_on_reparent`](#class_editorsettings_property_docks/scene_tree/center_node_on_reparent)                                                                                           |
-| [`bool`](class_bool.md)                           | [`docks/scene_tree/start_create_dialog_fully_expanded`](#class_editorsettings_property_docks/scene_tree/start_create_dialog_fully_expanded)                                                                     |
-| [`Color`](class_color.md)                         | [`editors/2d/bone_color1`](#class_editorsettings_property_editors/2d/bone_color1)                                                                                                                               |
-| [`Color`](class_color.md)                         | [`editors/2d/bone_color2`](#class_editorsettings_property_editors/2d/bone_color2)                                                                                                                               |
-| [`Color`](class_color.md)                         | [`editors/2d/bone_ik_color`](#class_editorsettings_property_editors/2d/bone_ik_color)                                                                                                                           |
-| [`Color`](class_color.md)                         | [`editors/2d/bone_outline_color`](#class_editorsettings_property_editors/2d/bone_outline_color)                                                                                                                 |
-| [`float`](class_float.md)                         | [`editors/2d/bone_outline_size`](#class_editorsettings_property_editors/2d/bone_outline_size)                                                                                                                   |
-| [`Color`](class_color.md)                         | [`editors/2d/bone_selected_color`](#class_editorsettings_property_editors/2d/bone_selected_color)                                                                                                               |
-| [`float`](class_float.md)                         | [`editors/2d/bone_width`](#class_editorsettings_property_editors/2d/bone_width)                                                                                                                                 |
-| [`Color`](class_color.md)                         | [`editors/2d/grid_color`](#class_editorsettings_property_editors/2d/grid_color)                                                                                                                                 |
-| [`Color`](class_color.md)                         | [`editors/2d/guides_color`](#class_editorsettings_property_editors/2d/guides_color)                                                                                                                             |
-| [`Color`](class_color.md)                         | [`editors/2d/smart_snapping_line_color`](#class_editorsettings_property_editors/2d/smart_snapping_line_color)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`editors/2d/use_integer_zoom_by_default`](#class_editorsettings_property_editors/2d/use_integer_zoom_by_default)                                                                                               |
-| [`Color`](class_color.md)                         | [`editors/2d/viewport_border_color`](#class_editorsettings_property_editors/2d/viewport_border_color)                                                                                                           |
-| [`float`](class_float.md)                         | [`editors/3d/default_fov`](#class_editorsettings_property_editors/3d/default_fov)                                                                                                                               |
-| [`float`](class_float.md)                         | [`editors/3d/default_z_far`](#class_editorsettings_property_editors/3d/default_z_far)                                                                                                                           |
-| [`float`](class_float.md)                         | [`editors/3d/default_z_near`](#class_editorsettings_property_editors/3d/default_z_near)                                                                                                                         |
-| [`int`](class_int.md)                             | [`editors/3d/freelook/freelook_activation_modifier`](#class_editorsettings_property_editors/3d/freelook/freelook_activation_modifier)                                                                           |
-| [`float`](class_float.md)                         | [`editors/3d/freelook/freelook_base_speed`](#class_editorsettings_property_editors/3d/freelook/freelook_base_speed)                                                                                             |
-| [`float`](class_float.md)                         | [`editors/3d/freelook/freelook_inertia`](#class_editorsettings_property_editors/3d/freelook/freelook_inertia)                                                                                                   |
-| [`int`](class_int.md)                             | [`editors/3d/freelook/freelook_navigation_scheme`](#class_editorsettings_property_editors/3d/freelook/freelook_navigation_scheme)                                                                               |
-| [`float`](class_float.md)                         | [`editors/3d/freelook/freelook_sensitivity`](#class_editorsettings_property_editors/3d/freelook/freelook_sensitivity)                                                                                           |
-| [`bool`](class_bool.md)                           | [`editors/3d/freelook/freelook_speed_zoom_link`](#class_editorsettings_property_editors/3d/freelook/freelook_speed_zoom_link)                                                                                   |
-| [`float`](class_float.md)                         | [`editors/3d/grid_division_level_bias`](#class_editorsettings_property_editors/3d/grid_division_level_bias)                                                                                                     |
-| [`int`](class_int.md)                             | [`editors/3d/grid_division_level_max`](#class_editorsettings_property_editors/3d/grid_division_level_max)                                                                                                       |
-| [`int`](class_int.md)                             | [`editors/3d/grid_division_level_min`](#class_editorsettings_property_editors/3d/grid_division_level_min)                                                                                                       |
-| [`int`](class_int.md)                             | [`editors/3d/grid_size`](#class_editorsettings_property_editors/3d/grid_size)                                                                                                                                   |
-| [`bool`](class_bool.md)                           | [`editors/3d/grid_xy_plane`](#class_editorsettings_property_editors/3d/grid_xy_plane)                                                                                                                           |
-| [`bool`](class_bool.md)                           | [`editors/3d/grid_xz_plane`](#class_editorsettings_property_editors/3d/grid_xz_plane)                                                                                                                           |
-| [`bool`](class_bool.md)                           | [`editors/3d/grid_yz_plane`](#class_editorsettings_property_editors/3d/grid_yz_plane)                                                                                                                           |
-| [`bool`](class_bool.md)                           | [`editors/3d/navigation/emulate_3_button_mouse`](#class_editorsettings_property_editors/3d/navigation/emulate_3_button_mouse)                                                                                   |
-| [`bool`](class_bool.md)                           | [`editors/3d/navigation/emulate_numpad`](#class_editorsettings_property_editors/3d/navigation/emulate_numpad)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`editors/3d/navigation/invert_x_axis`](#class_editorsettings_property_editors/3d/navigation/invert_x_axis)                                                                                                     |
-| [`bool`](class_bool.md)                           | [`editors/3d/navigation/invert_y_axis`](#class_editorsettings_property_editors/3d/navigation/invert_y_axis)                                                                                                     |
-| [`int`](class_int.md)                             | [`editors/3d/navigation/navigation_scheme`](#class_editorsettings_property_editors/3d/navigation/navigation_scheme)                                                                                             |
-| [`int`](class_int.md)                             | [`editors/3d/navigation/orbit_modifier`](#class_editorsettings_property_editors/3d/navigation/orbit_modifier)                                                                                                   |
-| [`int`](class_int.md)                             | [`editors/3d/navigation/pan_modifier`](#class_editorsettings_property_editors/3d/navigation/pan_modifier)                                                                                                       |
-| [`bool`](class_bool.md)                           | [`editors/3d/navigation/warped_mouse_panning`](#class_editorsettings_property_editors/3d/navigation/warped_mouse_panning)                                                                                       |
-| [`int`](class_int.md)                             | [`editors/3d/navigation/zoom_modifier`](#class_editorsettings_property_editors/3d/navigation/zoom_modifier)                                                                                                     |
-| [`int`](class_int.md)                             | [`editors/3d/navigation/zoom_style`](#class_editorsettings_property_editors/3d/navigation/zoom_style)                                                                                                           |
-| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/orbit_inertia`](#class_editorsettings_property_editors/3d/navigation_feel/orbit_inertia)                                                                                           |
-| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/orbit_sensitivity`](#class_editorsettings_property_editors/3d/navigation_feel/orbit_sensitivity)                                                                                   |
-| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/translation_inertia`](#class_editorsettings_property_editors/3d/navigation_feel/translation_inertia)                                                                               |
-| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/zoom_inertia`](#class_editorsettings_property_editors/3d/navigation_feel/zoom_inertia)                                                                                             |
-| [`Color`](class_color.md)                         | [`editors/3d/primary_grid_color`](#class_editorsettings_property_editors/3d/primary_grid_color)                                                                                                                 |
-| [`int`](class_int.md)                             | [`editors/3d/primary_grid_steps`](#class_editorsettings_property_editors/3d/primary_grid_steps)                                                                                                                 |
-| [`Color`](class_color.md)                         | [`editors/3d/secondary_grid_color`](#class_editorsettings_property_editors/3d/secondary_grid_color)                                                                                                             |
-| [`Color`](class_color.md)                         | [`editors/3d/selection_box_color`](#class_editorsettings_property_editors/3d/selection_box_color)                                                                                                               |
-| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/aabb`](#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/aabb)                                                                                                     |
-| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/instantiated`](#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/instantiated)                                                                                     |
-| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/joint`](#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`editors/animation/autorename_animation_tracks`](#class_editorsettings_property_editors/animation/autorename_animation_tracks)                                                                                 |
-| [`bool`](class_bool.md)                           | [`editors/animation/confirm_insert_track`](#class_editorsettings_property_editors/animation/confirm_insert_track)                                                                                               |
-| [`bool`](class_bool.md)                           | [`editors/animation/default_create_bezier_tracks`](#class_editorsettings_property_editors/animation/default_create_bezier_tracks)                                                                               |
-| [`bool`](class_bool.md)                           | [`editors/animation/default_create_reset_tracks`](#class_editorsettings_property_editors/animation/default_create_reset_tracks)                                                                                 |
-| [`Color`](class_color.md)                         | [`editors/animation/onion_layers_future_color`](#class_editorsettings_property_editors/animation/onion_layers_future_color)                                                                                     |
-| [`Color`](class_color.md)                         | [`editors/animation/onion_layers_past_color`](#class_editorsettings_property_editors/animation/onion_layers_past_color)                                                                                         |
-| [`float`](class_float.md)                         | [`editors/grid_map/pick_distance`](#class_editorsettings_property_editors/grid_map/pick_distance)                                                                                                               |
-| [`int`](class_int.md)                             | [`editors/panning/2d_editor_pan_speed`](#class_editorsettings_property_editors/panning/2d_editor_pan_speed)                                                                                                     |
-| [`int`](class_int.md)                             | [`editors/panning/2d_editor_panning_scheme`](#class_editorsettings_property_editors/panning/2d_editor_panning_scheme)                                                                                           |
-| [`int`](class_int.md)                             | [`editors/panning/animation_editors_panning_scheme`](#class_editorsettings_property_editors/panning/animation_editors_panning_scheme)                                                                           |
-| [`bool`](class_bool.md)                           | [`editors/panning/simple_panning`](#class_editorsettings_property_editors/panning/simple_panning)                                                                                                               |
-| [`int`](class_int.md)                             | [`editors/panning/sub_editors_panning_scheme`](#class_editorsettings_property_editors/panning/sub_editors_panning_scheme)                                                                                       |
-| [`bool`](class_bool.md)                           | [`editors/panning/warped_mouse_panning`](#class_editorsettings_property_editors/panning/warped_mouse_panning)                                                                                                   |
-| [`float`](class_float.md)                         | [`editors/polygon_editor/auto_bake_delay`](#class_editorsettings_property_editors/polygon_editor/auto_bake_delay)                                                                                               |
-| [`int`](class_int.md)                             | [`editors/polygon_editor/point_grab_radius`](#class_editorsettings_property_editors/polygon_editor/point_grab_radius)                                                                                           |
-| [`bool`](class_bool.md)                           | [`editors/polygon_editor/show_previous_outline`](#class_editorsettings_property_editors/polygon_editor/show_previous_outline)                                                                                   |
-| [`bool`](class_bool.md)                           | [`editors/shader_editor/behavior/files/restore_shaders_on_load`](#class_editorsettings_property_editors/shader_editor/behavior/files/restore_shaders_on_load)                                                   |
-| [`bool`](class_bool.md)                           | [`editors/tiles_editor/display_grid`](#class_editorsettings_property_editors/tiles_editor/display_grid)                                                                                                         |
-| [`Color`](class_color.md)                         | [`editors/tiles_editor/grid_color`](#class_editorsettings_property_editors/tiles_editor/grid_color)                                                                                                             |
-| [`bool`](class_bool.md)                           | [`editors/tiles_editor/highlight_selected_layer`](#class_editorsettings_property_editors/tiles_editor/highlight_selected_layer)                                                                                 |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/color_color`](#class_editorsettings_property_editors/visual_editors/category_colors/color_color)                                                                       |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/conditional_color`](#class_editorsettings_property_editors/visual_editors/category_colors/conditional_color)                                                           |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/input_color`](#class_editorsettings_property_editors/visual_editors/category_colors/input_color)                                                                       |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/output_color`](#class_editorsettings_property_editors/visual_editors/category_colors/output_color)                                                                     |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/particle_color`](#class_editorsettings_property_editors/visual_editors/category_colors/particle_color)                                                                 |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/scalar_color`](#class_editorsettings_property_editors/visual_editors/category_colors/scalar_color)                                                                     |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/special_color`](#class_editorsettings_property_editors/visual_editors/category_colors/special_color)                                                                   |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/textures_color`](#class_editorsettings_property_editors/visual_editors/category_colors/textures_color)                                                                 |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/transform_color`](#class_editorsettings_property_editors/visual_editors/category_colors/transform_color)                                                               |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/utility_color`](#class_editorsettings_property_editors/visual_editors/category_colors/utility_color)                                                                   |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/vector_color`](#class_editorsettings_property_editors/visual_editors/category_colors/vector_color)                                                                     |
-| [`String`](class_string.md)                       | [`editors/visual_editors/color_theme`](#class_editorsettings_property_editors/visual_editors/color_theme)                                                                                                       |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/boolean_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/boolean_color)                                                               |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/sampler_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/sampler_color)                                                               |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/scalar_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/scalar_color)                                                                 |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/transform_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/transform_color)                                                           |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/vector2_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/vector2_color)                                                               |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/vector3_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/vector3_color)                                                               |
-| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/vector4_color`](#class_editorsettings_property_editors/visual_editors/connection_colors/vector4_color)                                                               |
-| [`int`](class_int.md)                             | [`editors/visual_editors/grid_pattern`](#class_editorsettings_property_editors/visual_editors/grid_pattern)                                                                                                     |
-| [`float`](class_float.md)                         | [`editors/visual_editors/lines_curvature`](#class_editorsettings_property_editors/visual_editors/lines_curvature)                                                                                               |
-| [`float`](class_float.md)                         | [`editors/visual_editors/minimap_opacity`](#class_editorsettings_property_editors/visual_editors/minimap_opacity)                                                                                               |
-| [`int`](class_int.md)                             | [`editors/visual_editors/visual_shader/port_preview_size`](#class_editorsettings_property_editors/visual_editors/visual_shader/port_preview_size)                                                               |
-| [`String`](class_string.md)                       | [`filesystem/directories/autoscan_project_path`](#class_editorsettings_property_filesystem/directories/autoscan_project_path)                                                                                   |
-| [`String`](class_string.md)                       | [`filesystem/directories/default_project_path`](#class_editorsettings_property_filesystem/directories/default_project_path)                                                                                     |
-| [`String`](class_string.md)                       | [`filesystem/external_programs/3d_model_editor`](#class_editorsettings_property_filesystem/external_programs/3d_model_editor)                                                                                   |
-| [`String`](class_string.md)                       | [`filesystem/external_programs/audio_editor`](#class_editorsettings_property_filesystem/external_programs/audio_editor)                                                                                         |
-| [`String`](class_string.md)                       | [`filesystem/external_programs/raster_image_editor`](#class_editorsettings_property_filesystem/external_programs/raster_image_editor)                                                                           |
-| [`String`](class_string.md)                       | [`filesystem/external_programs/terminal_emulator`](#class_editorsettings_property_filesystem/external_programs/terminal_emulator)                                                                               |
-| [`String`](class_string.md)                       | [`filesystem/external_programs/terminal_emulator_flags`](#class_editorsettings_property_filesystem/external_programs/terminal_emulator_flags)                                                                   |
-| [`String`](class_string.md)                       | [`filesystem/external_programs/vector_image_editor`](#class_editorsettings_property_filesystem/external_programs/vector_image_editor)                                                                           |
-| [`int`](class_int.md)                             | [`filesystem/file_dialog/display_mode`](#class_editorsettings_property_filesystem/file_dialog/display_mode)                                                                                                     |
-| [`bool`](class_bool.md)                           | [`filesystem/file_dialog/show_hidden_files`](#class_editorsettings_property_filesystem/file_dialog/show_hidden_files)                                                                                           |
-| [`int`](class_int.md)                             | [`filesystem/file_dialog/thumbnail_size`](#class_editorsettings_property_filesystem/file_dialog/thumbnail_size)                                                                                                 |
-| [`String`](class_string.md)                       | [`filesystem/import/blender/blender_path`](#class_editorsettings_property_filesystem/import/blender/blender_path)                                                                                               |
-| [`int`](class_int.md)                             | [`filesystem/import/blender/rpc_port`](#class_editorsettings_property_filesystem/import/blender/rpc_port)                                                                                                       |
-| [`float`](class_float.md)                         | [`filesystem/import/blender/rpc_server_uptime`](#class_editorsettings_property_filesystem/import/blender/rpc_server_uptime)                                                                                     |
-| [`String`](class_string.md)                       | [`filesystem/import/fbx/fbx2gltf_path`](#class_editorsettings_property_filesystem/import/fbx/fbx2gltf_path)                                                                                                     |
-| [`bool`](class_bool.md)                           | [`filesystem/on_save/compress_binary_resources`](#class_editorsettings_property_filesystem/on_save/compress_binary_resources)                                                                                   |
-| [`bool`](class_bool.md)                           | [`filesystem/on_save/safe_save_on_backup_then_rename`](#class_editorsettings_property_filesystem/on_save/safe_save_on_backup_then_rename)                                                                       |
-| [`String`](class_string.md)                       | [`filesystem/tools/oidn/oidn_denoise_path`](#class_editorsettings_property_filesystem/tools/oidn/oidn_denoise_path)                                                                                             |
-| [`bool`](class_bool.md)                           | [`input/buffering/agile_event_flushing`](#class_editorsettings_property_input/buffering/agile_event_flushing)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`input/buffering/use_accumulated_input`](#class_editorsettings_property_input/buffering/use_accumulated_input)                                                                                                 |
-| [`int`](class_int.md)                             | [`interface/editor/accept_dialog_cancel_ok_buttons`](#class_editorsettings_property_interface/editor/accept_dialog_cancel_ok_buttons)                                                                           |
-| [`bool`](class_bool.md)                           | [`interface/editor/automatically_open_screenshots`](#class_editorsettings_property_interface/editor/automatically_open_screenshots)                                                                             |
-| [`String`](class_string.md)                       | [`interface/editor/code_font`](#class_editorsettings_property_interface/editor/code_font)                                                                                                                       |
-| [`int`](class_int.md)                             | [`interface/editor/code_font_contextual_ligatures`](#class_editorsettings_property_interface/editor/code_font_contextual_ligatures)                                                                             |
-| [`String`](class_string.md)                       | [`interface/editor/code_font_custom_opentype_features`](#class_editorsettings_property_interface/editor/code_font_custom_opentype_features)                                                                     |
-| [`String`](class_string.md)                       | [`interface/editor/code_font_custom_variations`](#class_editorsettings_property_interface/editor/code_font_custom_variations)                                                                                   |
-| [`int`](class_int.md)                             | [`interface/editor/code_font_size`](#class_editorsettings_property_interface/editor/code_font_size)                                                                                                             |
-| [`float`](class_float.md)                         | [`interface/editor/custom_display_scale`](#class_editorsettings_property_interface/editor/custom_display_scale)                                                                                                 |
-| [`int`](class_int.md)                             | [`interface/editor/display_scale`](#class_editorsettings_property_interface/editor/display_scale)                                                                                                               |
-| [`int`](class_int.md)                             | [`interface/editor/dock_tab_style`](#class_editorsettings_property_interface/editor/dock_tab_style)                                                                                                             |
-| [`String`](class_string.md)                       | [`interface/editor/editor_language`](#class_editorsettings_property_interface/editor/editor_language)                                                                                                           |
-| [`int`](class_int.md)                             | [`interface/editor/editor_screen`](#class_editorsettings_property_interface/editor/editor_screen)                                                                                                               |
-| [`bool`](class_bool.md)                           | [`interface/editor/expand_to_title`](#class_editorsettings_property_interface/editor/expand_to_title)                                                                                                           |
-| [`int`](class_int.md)                             | [`interface/editor/font_antialiasing`](#class_editorsettings_property_interface/editor/font_antialiasing)                                                                                                       |
-| [`bool`](class_bool.md)                           | [`interface/editor/font_disable_embedded_bitmaps`](#class_editorsettings_property_interface/editor/font_disable_embedded_bitmaps)                                                                               |
-| [`int`](class_int.md)                             | [`interface/editor/font_hinting`](#class_editorsettings_property_interface/editor/font_hinting)                                                                                                                 |
-| [`int`](class_int.md)                             | [`interface/editor/font_subpixel_positioning`](#class_editorsettings_property_interface/editor/font_subpixel_positioning)                                                                                       |
-| [`bool`](class_bool.md)                           | [`interface/editor/import_resources_when_unfocused`](#class_editorsettings_property_interface/editor/import_resources_when_unfocused)                                                                           |
-| [`bool`](class_bool.md)                           | [`interface/editor/localize_settings`](#class_editorsettings_property_interface/editor/localize_settings)                                                                                                       |
-| [`int`](class_int.md)                             | [`interface/editor/low_processor_mode_sleep_usec`](#class_editorsettings_property_interface/editor/low_processor_mode_sleep_usec)                                                                               |
-| [`String`](class_string.md)                       | [`interface/editor/main_font`](#class_editorsettings_property_interface/editor/main_font)                                                                                                                       |
-| [`String`](class_string.md)                       | [`interface/editor/main_font_bold`](#class_editorsettings_property_interface/editor/main_font_bold)                                                                                                             |
-| [`int`](class_int.md)                             | [`interface/editor/main_font_size`](#class_editorsettings_property_interface/editor/main_font_size)                                                                                                             |
-| [`bool`](class_bool.md)                           | [`interface/editor/mouse_extra_buttons_navigate_history`](#class_editorsettings_property_interface/editor/mouse_extra_buttons_navigate_history)                                                                 |
-| [`int`](class_int.md)                             | [`interface/editor/project_manager_screen`](#class_editorsettings_property_interface/editor/project_manager_screen)                                                                                             |
-| [`bool`](class_bool.md)                           | [`interface/editor/save_each_scene_on_quit`](#class_editorsettings_property_interface/editor/save_each_scene_on_quit)                                                                                           |
-| [`bool`](class_bool.md)                           | [`interface/editor/save_on_focus_loss`](#class_editorsettings_property_interface/editor/save_on_focus_loss)                                                                                                     |
-| [`bool`](class_bool.md)                           | [`interface/editor/separate_distraction_mode`](#class_editorsettings_property_interface/editor/separate_distraction_mode)                                                                                       |
-| [`int`](class_int.md)                             | [`interface/editor/show_internal_errors_in_toast_notifications`](#class_editorsettings_property_interface/editor/show_internal_errors_in_toast_notifications)                                                   |
-| [`int`](class_int.md)                             | [`interface/editor/show_update_spinner`](#class_editorsettings_property_interface/editor/show_update_spinner)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`interface/editor/single_window_mode`](#class_editorsettings_property_interface/editor/single_window_mode)                                                                                                     |
-| [`int`](class_int.md)                             | [`interface/editor/ui_layout_direction`](#class_editorsettings_property_interface/editor/ui_layout_direction)                                                                                                   |
-| [`int`](class_int.md)                             | [`interface/editor/unfocused_low_processor_mode_sleep_usec`](#class_editorsettings_property_interface/editor/unfocused_low_processor_mode_sleep_usec)                                                           |
-| [`bool`](class_bool.md)                           | [`interface/editor/update_continuously`](#class_editorsettings_property_interface/editor/update_continuously)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`interface/editor/use_embedded_menu`](#class_editorsettings_property_interface/editor/use_embedded_menu)                                                                                                       |
-| [`bool`](class_bool.md)                           | [`interface/editor/use_native_file_dialogs`](#class_editorsettings_property_interface/editor/use_native_file_dialogs)                                                                                           |
-| [`int`](class_int.md)                             | [`interface/editor/vsync_mode`](#class_editorsettings_property_interface/editor/vsync_mode)                                                                                                                     |
-| [`bool`](class_bool.md)                           | [`interface/inspector/auto_unfold_foreign_scenes`](#class_editorsettings_property_interface/inspector/auto_unfold_foreign_scenes)                                                                               |
-| [`int`](class_int.md)                             | [`interface/inspector/default_color_picker_mode`](#class_editorsettings_property_interface/inspector/default_color_picker_mode)                                                                                 |
-| [`int`](class_int.md)                             | [`interface/inspector/default_color_picker_shape`](#class_editorsettings_property_interface/inspector/default_color_picker_shape)                                                                               |
-| [`float`](class_float.md)                         | [`interface/inspector/default_float_step`](#class_editorsettings_property_interface/inspector/default_float_step)                                                                                               |
-| [`int`](class_int.md)                             | [`interface/inspector/default_property_name_style`](#class_editorsettings_property_interface/inspector/default_property_name_style)                                                                             |
-| [`bool`](class_bool.md)                           | [`interface/inspector/delimitate_all_container_and_resources`](#class_editorsettings_property_interface/inspector/delimitate_all_container_and_resources)                                                       |
-| [`bool`](class_bool.md)                           | [`interface/inspector/disable_folding`](#class_editorsettings_property_interface/inspector/disable_folding)                                                                                                     |
-| [`float`](class_float.md)                         | [`interface/inspector/float_drag_speed`](#class_editorsettings_property_interface/inspector/float_drag_speed)                                                                                                   |
-| [`bool`](class_bool.md)                           | [`interface/inspector/horizontal_vector2_editing`](#class_editorsettings_property_interface/inspector/horizontal_vector2_editing)                                                                               |
-| [`bool`](class_bool.md)                           | [`interface/inspector/horizontal_vector_types_editing`](#class_editorsettings_property_interface/inspector/horizontal_vector_types_editing)                                                                     |
-| [`int`](class_int.md)                             | [`interface/inspector/max_array_dictionary_items_per_page`](#class_editorsettings_property_interface/inspector/max_array_dictionary_items_per_page)                                                             |
-| [`int`](class_int.md)                             | [`interface/inspector/nested_color_mode`](#class_editorsettings_property_interface/inspector/nested_color_mode)                                                                                                 |
-| [`bool`](class_bool.md)                           | [`interface/inspector/open_resources_in_current_inspector`](#class_editorsettings_property_interface/inspector/open_resources_in_current_inspector)                                                             |
-| [`PackedStringArray`](class_packedstringarray.md) | [`interface/inspector/resources_to_open_in_new_inspector`](#class_editorsettings_property_interface/inspector/resources_to_open_in_new_inspector)                                                               |
-| [`bool`](class_bool.md)                           | [`interface/inspector/show_low_level_opentype_features`](#class_editorsettings_property_interface/inspector/show_low_level_opentype_features)                                                                   |
-| [`bool`](class_bool.md)                           | [`interface/multi_window/enable`](#class_editorsettings_property_interface/multi_window/enable)                                                                                                                 |
-| [`bool`](class_bool.md)                           | [`interface/multi_window/maximize_window`](#class_editorsettings_property_interface/multi_window/maximize_window)                                                                                               |
-| [`bool`](class_bool.md)                           | [`interface/multi_window/restore_windows_on_load`](#class_editorsettings_property_interface/multi_window/restore_windows_on_load)                                                                               |
-| [`int`](class_int.md)                             | [`interface/scene_tabs/display_close_button`](#class_editorsettings_property_interface/scene_tabs/display_close_button)                                                                                         |
-| [`int`](class_int.md)                             | [`interface/scene_tabs/maximum_width`](#class_editorsettings_property_interface/scene_tabs/maximum_width)                                                                                                       |
-| [`bool`](class_bool.md)                           | [`interface/scene_tabs/restore_scenes_on_load`](#class_editorsettings_property_interface/scene_tabs/restore_scenes_on_load)                                                                                     |
-| [`bool`](class_bool.md)                           | [`interface/scene_tabs/show_script_button`](#class_editorsettings_property_interface/scene_tabs/show_script_button)                                                                                             |
-| [`bool`](class_bool.md)                           | [`interface/scene_tabs/show_thumbnail_on_hover`](#class_editorsettings_property_interface/scene_tabs/show_thumbnail_on_hover)                                                                                   |
-| [`Color`](class_color.md)                         | [`interface/theme/accent_color`](#class_editorsettings_property_interface/theme/accent_color)                                                                                                                   |
-| [`int`](class_int.md)                             | [`interface/theme/additional_spacing`](#class_editorsettings_property_interface/theme/additional_spacing)                                                                                                       |
-| [`Color`](class_color.md)                         | [`interface/theme/base_color`](#class_editorsettings_property_interface/theme/base_color)                                                                                                                       |
-| [`int`](class_int.md)                             | [`interface/theme/base_spacing`](#class_editorsettings_property_interface/theme/base_spacing)                                                                                                                   |
-| [`int`](class_int.md)                             | [`interface/theme/border_size`](#class_editorsettings_property_interface/theme/border_size)                                                                                                                     |
-| [`float`](class_float.md)                         | [`interface/theme/contrast`](#class_editorsettings_property_interface/theme/contrast)                                                                                                                           |
-| [`int`](class_int.md)                             | [`interface/theme/corner_radius`](#class_editorsettings_property_interface/theme/corner_radius)                                                                                                                 |
-| [`String`](class_string.md)                       | [`interface/theme/custom_theme`](#class_editorsettings_property_interface/theme/custom_theme)                                                                                                                   |
-| [`bool`](class_bool.md)                           | [`interface/theme/draw_extra_borders`](#class_editorsettings_property_interface/theme/draw_extra_borders)                                                                                                       |
-| [`bool`](class_bool.md)                           | [`interface/theme/follow_system_theme`](#class_editorsettings_property_interface/theme/follow_system_theme)                                                                                                     |
-| [`int`](class_int.md)                             | [`interface/theme/icon_and_font_color`](#class_editorsettings_property_interface/theme/icon_and_font_color)                                                                                                     |
-| [`float`](class_float.md)                         | [`interface/theme/icon_saturation`](#class_editorsettings_property_interface/theme/icon_saturation)                                                                                                             |
-| [`String`](class_string.md)                       | [`interface/theme/preset`](#class_editorsettings_property_interface/theme/preset)                                                                                                                               |
-| [`float`](class_float.md)                         | [`interface/theme/relationship_line_opacity`](#class_editorsettings_property_interface/theme/relationship_line_opacity)                                                                                         |
-| [`String`](class_string.md)                       | [`interface/theme/spacing_preset`](#class_editorsettings_property_interface/theme/spacing_preset)                                                                                                               |
-| [`bool`](class_bool.md)                           | [`interface/theme/use_system_accent_color`](#class_editorsettings_property_interface/theme/use_system_accent_color)                                                                                             |
-| [`bool`](class_bool.md)                           | [`interface/touchscreen/enable_long_press_as_right_click`](#class_editorsettings_property_interface/touchscreen/enable_long_press_as_right_click)                                                               |
-| [`bool`](class_bool.md)                           | [`interface/touchscreen/enable_pan_and_scale_gestures`](#class_editorsettings_property_interface/touchscreen/enable_pan_and_scale_gestures)                                                                     |
-| [`bool`](class_bool.md)                           | [`interface/touchscreen/increase_scrollbar_touch_area`](#class_editorsettings_property_interface/touchscreen/increase_scrollbar_touch_area)                                                                     |
-| [`float`](class_float.md)                         | [`interface/touchscreen/scale_gizmo_handles`](#class_editorsettings_property_interface/touchscreen/scale_gizmo_handles)                                                                                         |
-| [`int`](class_int.md)                             | [`network/connection/engine_version_update_mode`](#class_editorsettings_property_network/connection/engine_version_update_mode)                                                                                 |
-| [`int`](class_int.md)                             | [`network/connection/network_mode`](#class_editorsettings_property_network/connection/network_mode)                                                                                                             |
-| [`String`](class_string.md)                       | [`network/debug/remote_host`](#class_editorsettings_property_network/debug/remote_host)                                                                                                                         |
-| [`int`](class_int.md)                             | [`network/debug/remote_port`](#class_editorsettings_property_network/debug/remote_port)                                                                                                                         |
-| [`String`](class_string.md)                       | [`network/http_proxy/host`](#class_editorsettings_property_network/http_proxy/host)                                                                                                                             |
-| [`int`](class_int.md)                             | [`network/http_proxy/port`](#class_editorsettings_property_network/http_proxy/port)                                                                                                                             |
-| [`String`](class_string.md)                       | [`network/tls/editor_tls_certificates`](#class_editorsettings_property_network/tls/editor_tls_certificates)                                                                                                     |
-| [`String`](class_string.md)                       | [`project_manager/default_renderer`](#class_editorsettings_property_project_manager/default_renderer)                                                                                                           |
-| [`int`](class_int.md)                             | [`project_manager/directory_naming_convention`](#class_editorsettings_property_project_manager/directory_naming_convention)                                                                                     |
-| [`int`](class_int.md)                             | [`project_manager/sorting_order`](#class_editorsettings_property_project_manager/sorting_order)                                                                                                                 |
-| [`bool`](class_bool.md)                           | [`run/auto_save/save_before_running`](#class_editorsettings_property_run/auto_save/save_before_running)                                                                                                         |
-| [`int`](class_int.md)                             | [`run/bottom_panel/action_on_play`](#class_editorsettings_property_run/bottom_panel/action_on_play)                                                                                                             |
-| [`int`](class_int.md)                             | [`run/bottom_panel/action_on_stop`](#class_editorsettings_property_run/bottom_panel/action_on_stop)                                                                                                             |
-| [`bool`](class_bool.md)                           | [`run/output/always_clear_output_on_play`](#class_editorsettings_property_run/output/always_clear_output_on_play)                                                                                               |
-| [`int`](class_int.md)                             | [`run/output/font_size`](#class_editorsettings_property_run/output/font_size)                                                                                                                                   |
-| [`int`](class_int.md)                             | [`run/output/max_lines`](#class_editorsettings_property_run/output/max_lines)                                                                                                                                   |
-| [`bool`](class_bool.md)                           | [`run/platforms/linuxbsd/prefer_wayland`](#class_editorsettings_property_run/platforms/linuxbsd/prefer_wayland)                                                                                                 |
-| [`int`](class_int.md)                             | [`run/window_placement/android_window`](#class_editorsettings_property_run/window_placement/android_window)                                                                                                     |
-| [`int`](class_int.md)                             | [`run/window_placement/rect`](#class_editorsettings_property_run/window_placement/rect)                                                                                                                         |
-| [`Vector2`](class_vector2.md)                     | [`run/window_placement/rect_custom_position`](#class_editorsettings_property_run/window_placement/rect_custom_position)                                                                                         |
-| [`int`](class_int.md)                             | [`run/window_placement/screen`](#class_editorsettings_property_run/window_placement/screen)                                                                                                                     |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/caret/caret_blink`](#class_editorsettings_property_text_editor/appearance/caret/caret_blink)                                                                                           |
-| [`float`](class_float.md)                         | [`text_editor/appearance/caret/caret_blink_interval`](#class_editorsettings_property_text_editor/appearance/caret/caret_blink_interval)                                                                         |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/caret/highlight_all_occurrences`](#class_editorsettings_property_text_editor/appearance/caret/highlight_all_occurrences)                                                               |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/caret/highlight_current_line`](#class_editorsettings_property_text_editor/appearance/caret/highlight_current_line)                                                                     |
-| [`int`](class_int.md)                             | [`text_editor/appearance/caret/type`](#class_editorsettings_property_text_editor/appearance/caret/type)                                                                                                         |
-| [`int`](class_int.md)                             | [`text_editor/appearance/guidelines/line_length_guideline_hard_column`](#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column)                                     |
-| [`int`](class_int.md)                             | [`text_editor/appearance/guidelines/line_length_guideline_soft_column`](#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column)                                     |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/guidelines/show_line_length_guidelines`](#class_editorsettings_property_text_editor/appearance/guidelines/show_line_length_guidelines)                                                 |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/highlight_type_safe_lines`](#class_editorsettings_property_text_editor/appearance/gutters/highlight_type_safe_lines)                                                           |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/line_numbers_zero_padded`](#class_editorsettings_property_text_editor/appearance/gutters/line_numbers_zero_padded)                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/show_info_gutter`](#class_editorsettings_property_text_editor/appearance/gutters/show_info_gutter)                                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/show_line_numbers`](#class_editorsettings_property_text_editor/appearance/gutters/show_line_numbers)                                                                           |
-| [`int`](class_int.md)                             | [`text_editor/appearance/lines/autowrap_mode`](#class_editorsettings_property_text_editor/appearance/lines/autowrap_mode)                                                                                       |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/lines/code_folding`](#class_editorsettings_property_text_editor/appearance/lines/code_folding)                                                                                         |
-| [`int`](class_int.md)                             | [`text_editor/appearance/lines/word_wrap`](#class_editorsettings_property_text_editor/appearance/lines/word_wrap)                                                                                               |
-| [`int`](class_int.md)                             | [`text_editor/appearance/minimap/minimap_width`](#class_editorsettings_property_text_editor/appearance/minimap/minimap_width)                                                                                   |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/minimap/show_minimap`](#class_editorsettings_property_text_editor/appearance/minimap/show_minimap)                                                                                     |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/whitespace/draw_spaces`](#class_editorsettings_property_text_editor/appearance/whitespace/draw_spaces)                                                                                 |
-| [`bool`](class_bool.md)                           | [`text_editor/appearance/whitespace/draw_tabs`](#class_editorsettings_property_text_editor/appearance/whitespace/draw_tabs)                                                                                     |
-| [`int`](class_int.md)                             | [`text_editor/appearance/whitespace/line_spacing`](#class_editorsettings_property_text_editor/appearance/whitespace/line_spacing)                                                                               |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/auto_reload_scripts_on_external_change`](#class_editorsettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change)                                         |
-| [`int`](class_int.md)                             | [`text_editor/behavior/files/autosave_interval_secs`](#class_editorsettings_property_text_editor/behavior/files/autosave_interval_secs)                                                                         |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/convert_indent_on_save`](#class_editorsettings_property_text_editor/behavior/files/convert_indent_on_save)                                                                         |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/restore_scripts_on_load`](#class_editorsettings_property_text_editor/behavior/files/restore_scripts_on_load)                                                                       |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/trim_final_newlines_on_save`](#class_editorsettings_property_text_editor/behavior/files/trim_final_newlines_on_save)                                                               |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/trim_trailing_whitespace_on_save`](#class_editorsettings_property_text_editor/behavior/files/trim_trailing_whitespace_on_save)                                                     |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/indent/auto_indent`](#class_editorsettings_property_text_editor/behavior/indent/auto_indent)                                                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/indent/indent_wrapped_lines`](#class_editorsettings_property_text_editor/behavior/indent/indent_wrapped_lines)                                                                           |
-| [`int`](class_int.md)                             | [`text_editor/behavior/indent/size`](#class_editorsettings_property_text_editor/behavior/indent/size)                                                                                                           |
-| [`int`](class_int.md)                             | [`text_editor/behavior/indent/type`](#class_editorsettings_property_text_editor/behavior/indent/type)                                                                                                           |
-| [`String`](class_string.md)                       | [`text_editor/behavior/navigation/custom_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/custom_word_separators)                                                               |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/drag_and_drop_selection`](#class_editorsettings_property_text_editor/behavior/navigation/drag_and_drop_selection)                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/move_caret_on_right_click`](#class_editorsettings_property_text_editor/behavior/navigation/move_caret_on_right_click)                                                         |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method`](#class_editorsettings_property_text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method) |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/scroll_past_end_of_file`](#class_editorsettings_property_text_editor/behavior/navigation/scroll_past_end_of_file)                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/smooth_scrolling`](#class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling)                                                                           |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/stay_in_script_editor_on_node_selected`](#class_editorsettings_property_text_editor/behavior/navigation/stay_in_script_editor_on_node_selected)                               |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/use_custom_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators)                                                       |
-| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/use_default_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators)                                                     |
-| [`int`](class_int.md)                             | [`text_editor/behavior/navigation/v_scroll_speed`](#class_editorsettings_property_text_editor/behavior/navigation/v_scroll_speed)                                                                               |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/add_node_path_literals`](#class_editorsettings_property_text_editor/completion/add_node_path_literals)                                                                                 |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/add_string_name_literals`](#class_editorsettings_property_text_editor/completion/add_string_name_literals)                                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/add_type_hints`](#class_editorsettings_property_text_editor/completion/add_type_hints)                                                                                                 |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/auto_brace_complete`](#class_editorsettings_property_text_editor/completion/auto_brace_complete)                                                                                       |
-| [`float`](class_float.md)                         | [`text_editor/completion/code_complete_delay`](#class_editorsettings_property_text_editor/completion/code_complete_delay)                                                                                       |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/code_complete_enabled`](#class_editorsettings_property_text_editor/completion/code_complete_enabled)                                                                                   |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/colorize_suggestions`](#class_editorsettings_property_text_editor/completion/colorize_suggestions)                                                                                     |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/complete_file_paths`](#class_editorsettings_property_text_editor/completion/complete_file_paths)                                                                                       |
-| [`float`](class_float.md)                         | [`text_editor/completion/idle_parse_delay`](#class_editorsettings_property_text_editor/completion/idle_parse_delay)                                                                                             |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/put_callhint_tooltip_below_current_line`](#class_editorsettings_property_text_editor/completion/put_callhint_tooltip_below_current_line)                                               |
-| [`bool`](class_bool.md)                           | [`text_editor/completion/use_single_quotes`](#class_editorsettings_property_text_editor/completion/use_single_quotes)                                                                                           |
-| [`int`](class_int.md)                             | [`text_editor/help/class_reference_examples`](#class_editorsettings_property_text_editor/help/class_reference_examples)                                                                                         |
-| [`int`](class_int.md)                             | [`text_editor/help/help_font_size`](#class_editorsettings_property_text_editor/help/help_font_size)                                                                                                             |
-| [`int`](class_int.md)                             | [`text_editor/help/help_source_font_size`](#class_editorsettings_property_text_editor/help/help_source_font_size)                                                                                               |
-| [`int`](class_int.md)                             | [`text_editor/help/help_title_font_size`](#class_editorsettings_property_text_editor/help/help_title_font_size)                                                                                                 |
-| [`bool`](class_bool.md)                           | [`text_editor/help/show_help_index`](#class_editorsettings_property_text_editor/help/show_help_index)                                                                                                           |
-| [`bool`](class_bool.md)                           | [`text_editor/script_list/show_members_overview`](#class_editorsettings_property_text_editor/script_list/show_members_overview)                                                                                 |
-| [`bool`](class_bool.md)                           | [`text_editor/script_list/sort_members_outline_alphabetically`](#class_editorsettings_property_text_editor/script_list/sort_members_outline_alphabetically)                                                     |
-| [`String`](class_string.md)                       | [`text_editor/theme/color_theme`](#class_editorsettings_property_text_editor/theme/color_theme)                                                                                                                 |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/background_color`](#class_editorsettings_property_text_editor/theme/highlighting/background_color)                                                                             |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/base_type_color`](#class_editorsettings_property_text_editor/theme/highlighting/base_type_color)                                                                               |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/bookmark_color`](#class_editorsettings_property_text_editor/theme/highlighting/bookmark_color)                                                                                 |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/brace_mismatch_color`](#class_editorsettings_property_text_editor/theme/highlighting/brace_mismatch_color)                                                                     |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/breakpoint_color`](#class_editorsettings_property_text_editor/theme/highlighting/breakpoint_color)                                                                             |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/caret_background_color`](#class_editorsettings_property_text_editor/theme/highlighting/caret_background_color)                                                                 |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/caret_color`](#class_editorsettings_property_text_editor/theme/highlighting/caret_color)                                                                                       |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/code_folding_color`](#class_editorsettings_property_text_editor/theme/highlighting/code_folding_color)                                                                         |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/comment_color`](#class_editorsettings_property_text_editor/theme/highlighting/comment_color)                                                                                   |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_background_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_background_color)                                                       |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_existing_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_existing_color)                                                           |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_font_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_font_color)                                                                   |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_scroll_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_scroll_color)                                                               |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_scroll_hovered_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_scroll_hovered_color)                                               |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_selected_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_selected_color)                                                           |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/control_flow_keyword_color`](#class_editorsettings_property_text_editor/theme/highlighting/control_flow_keyword_color)                                                         |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/current_line_color`](#class_editorsettings_property_text_editor/theme/highlighting/current_line_color)                                                                         |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/doc_comment_color`](#class_editorsettings_property_text_editor/theme/highlighting/doc_comment_color)                                                                           |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/engine_type_color`](#class_editorsettings_property_text_editor/theme/highlighting/engine_type_color)                                                                           |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/executing_line_color`](#class_editorsettings_property_text_editor/theme/highlighting/executing_line_color)                                                                     |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/folded_code_region_color`](#class_editorsettings_property_text_editor/theme/highlighting/folded_code_region_color)                                                             |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/function_color`](#class_editorsettings_property_text_editor/theme/highlighting/function_color)                                                                                 |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/keyword_color`](#class_editorsettings_property_text_editor/theme/highlighting/keyword_color)                                                                                   |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/line_length_guideline_color`](#class_editorsettings_property_text_editor/theme/highlighting/line_length_guideline_color)                                                       |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/line_number_color`](#class_editorsettings_property_text_editor/theme/highlighting/line_number_color)                                                                           |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/mark_color`](#class_editorsettings_property_text_editor/theme/highlighting/mark_color)                                                                                         |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/member_variable_color`](#class_editorsettings_property_text_editor/theme/highlighting/member_variable_color)                                                                   |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/number_color`](#class_editorsettings_property_text_editor/theme/highlighting/number_color)                                                                                     |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/safe_line_number_color`](#class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color)                                                                 |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/search_result_border_color`](#class_editorsettings_property_text_editor/theme/highlighting/search_result_border_color)                                                         |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/search_result_color`](#class_editorsettings_property_text_editor/theme/highlighting/search_result_color)                                                                       |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/selection_color`](#class_editorsettings_property_text_editor/theme/highlighting/selection_color)                                                                               |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/string_color`](#class_editorsettings_property_text_editor/theme/highlighting/string_color)                                                                                     |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/symbol_color`](#class_editorsettings_property_text_editor/theme/highlighting/symbol_color)                                                                                     |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/text_color`](#class_editorsettings_property_text_editor/theme/highlighting/text_color)                                                                                         |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/text_selected_color`](#class_editorsettings_property_text_editor/theme/highlighting/text_selected_color)                                                                       |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/user_type_color`](#class_editorsettings_property_text_editor/theme/highlighting/user_type_color)                                                                               |
-| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/word_highlighted_color`](#class_editorsettings_property_text_editor/theme/highlighting/word_highlighted_color)                                                                 |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)                           | [`asset_library/use_threads`](class_editorsettings.md#class_editorsettings_property_asset_library/use_threads)                                                                                                                         |
+| [`bool`](class_bool.md)                           | [`debugger/auto_switch_to_remote_scene_tree`](class_editorsettings.md#class_editorsettings_property_debugger/auto_switch_to_remote_scene_tree)                                                                                         |
+| [`bool`](class_bool.md)                           | [`debugger/profile_native_calls`](class_editorsettings.md#class_editorsettings_property_debugger/profile_native_calls)                                                                                                                 |
+| [`int`](class_int.md)                             | [`debugger/profiler_frame_history_size`](class_editorsettings.md#class_editorsettings_property_debugger/profiler_frame_history_size)                                                                                                   |
+| [`int`](class_int.md)                             | [`debugger/profiler_frame_max_functions`](class_editorsettings.md#class_editorsettings_property_debugger/profiler_frame_max_functions)                                                                                                 |
+| [`int`](class_int.md)                             | [`debugger/profiler_target_fps`](class_editorsettings.md#class_editorsettings_property_debugger/profiler_target_fps)                                                                                                                   |
+| [`float`](class_float.md)                         | [`debugger/remote_inspect_refresh_interval`](class_editorsettings.md#class_editorsettings_property_debugger/remote_inspect_refresh_interval)                                                                                           |
+| [`float`](class_float.md)                         | [`debugger/remote_scene_tree_refresh_interval`](class_editorsettings.md#class_editorsettings_property_debugger/remote_scene_tree_refresh_interval)                                                                                     |
+| [`bool`](class_bool.md)                           | [`docks/filesystem/always_show_folders`](class_editorsettings.md#class_editorsettings_property_docks/filesystem/always_show_folders)                                                                                                   |
+| [`String`](class_string.md)                       | [`docks/filesystem/other_file_extensions`](class_editorsettings.md#class_editorsettings_property_docks/filesystem/other_file_extensions)                                                                                               |
+| [`String`](class_string.md)                       | [`docks/filesystem/textfile_extensions`](class_editorsettings.md#class_editorsettings_property_docks/filesystem/textfile_extensions)                                                                                                   |
+| [`int`](class_int.md)                             | [`docks/filesystem/thumbnail_size`](class_editorsettings.md#class_editorsettings_property_docks/filesystem/thumbnail_size)                                                                                                             |
+| [`float`](class_float.md)                         | [`docks/property_editor/auto_refresh_interval`](class_editorsettings.md#class_editorsettings_property_docks/property_editor/auto_refresh_interval)                                                                                     |
+| [`float`](class_float.md)                         | [`docks/property_editor/subresource_hue_tint`](class_editorsettings.md#class_editorsettings_property_docks/property_editor/subresource_hue_tint)                                                                                       |
+| [`bool`](class_bool.md)                           | [`docks/scene_tree/ask_before_deleting_related_animation_tracks`](class_editorsettings.md#class_editorsettings_property_docks/scene_tree/ask_before_deleting_related_animation_tracks)                                                 |
+| [`bool`](class_bool.md)                           | [`docks/scene_tree/ask_before_revoking_unique_name`](class_editorsettings.md#class_editorsettings_property_docks/scene_tree/ask_before_revoking_unique_name)                                                                           |
+| [`bool`](class_bool.md)                           | [`docks/scene_tree/auto_expand_to_selected`](class_editorsettings.md#class_editorsettings_property_docks/scene_tree/auto_expand_to_selected)                                                                                           |
+| [`bool`](class_bool.md)                           | [`docks/scene_tree/center_node_on_reparent`](class_editorsettings.md#class_editorsettings_property_docks/scene_tree/center_node_on_reparent)                                                                                           |
+| [`bool`](class_bool.md)                           | [`docks/scene_tree/start_create_dialog_fully_expanded`](class_editorsettings.md#class_editorsettings_property_docks/scene_tree/start_create_dialog_fully_expanded)                                                                     |
+| [`Color`](class_color.md)                         | [`editors/2d/bone_color1`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_color1)                                                                                                                               |
+| [`Color`](class_color.md)                         | [`editors/2d/bone_color2`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_color2)                                                                                                                               |
+| [`Color`](class_color.md)                         | [`editors/2d/bone_ik_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_ik_color)                                                                                                                           |
+| [`Color`](class_color.md)                         | [`editors/2d/bone_outline_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_outline_color)                                                                                                                 |
+| [`float`](class_float.md)                         | [`editors/2d/bone_outline_size`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_outline_size)                                                                                                                   |
+| [`Color`](class_color.md)                         | [`editors/2d/bone_selected_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_selected_color)                                                                                                               |
+| [`float`](class_float.md)                         | [`editors/2d/bone_width`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_width)                                                                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/2d/grid_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/grid_color)                                                                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/2d/guides_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/guides_color)                                                                                                                             |
+| [`Color`](class_color.md)                         | [`editors/2d/smart_snapping_line_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/smart_snapping_line_color)                                                                                                   |
+| [`bool`](class_bool.md)                           | [`editors/2d/use_integer_zoom_by_default`](class_editorsettings.md#class_editorsettings_property_editors/2d/use_integer_zoom_by_default)                                                                                               |
+| [`Color`](class_color.md)                         | [`editors/2d/viewport_border_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/viewport_border_color)                                                                                                           |
+| [`float`](class_float.md)                         | [`editors/2d/zoom_speed_factor`](class_editorsettings.md#class_editorsettings_property_editors/2d/zoom_speed_factor)                                                                                                                   |
+| [`float`](class_float.md)                         | [`editors/3d/default_fov`](class_editorsettings.md#class_editorsettings_property_editors/3d/default_fov)                                                                                                                               |
+| [`float`](class_float.md)                         | [`editors/3d/default_z_far`](class_editorsettings.md#class_editorsettings_property_editors/3d/default_z_far)                                                                                                                           |
+| [`float`](class_float.md)                         | [`editors/3d/default_z_near`](class_editorsettings.md#class_editorsettings_property_editors/3d/default_z_near)                                                                                                                         |
+| [`int`](class_int.md)                             | [`editors/3d/freelook/freelook_activation_modifier`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_activation_modifier)                                                                           |
+| [`float`](class_float.md)                         | [`editors/3d/freelook/freelook_base_speed`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_base_speed)                                                                                             |
+| [`float`](class_float.md)                         | [`editors/3d/freelook/freelook_inertia`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_inertia)                                                                                                   |
+| [`int`](class_int.md)                             | [`editors/3d/freelook/freelook_navigation_scheme`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_navigation_scheme)                                                                               |
+| [`float`](class_float.md)                         | [`editors/3d/freelook/freelook_sensitivity`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_sensitivity)                                                                                           |
+| [`bool`](class_bool.md)                           | [`editors/3d/freelook/freelook_speed_zoom_link`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_speed_zoom_link)                                                                                   |
+| [`float`](class_float.md)                         | [`editors/3d/grid_division_level_bias`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_division_level_bias)                                                                                                     |
+| [`int`](class_int.md)                             | [`editors/3d/grid_division_level_max`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_division_level_max)                                                                                                       |
+| [`int`](class_int.md)                             | [`editors/3d/grid_division_level_min`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_division_level_min)                                                                                                       |
+| [`int`](class_int.md)                             | [`editors/3d/grid_size`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_size)                                                                                                                                   |
+| [`bool`](class_bool.md)                           | [`editors/3d/grid_xy_plane`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_xy_plane)                                                                                                                           |
+| [`bool`](class_bool.md)                           | [`editors/3d/grid_xz_plane`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_xz_plane)                                                                                                                           |
+| [`bool`](class_bool.md)                           | [`editors/3d/grid_yz_plane`](class_editorsettings.md#class_editorsettings_property_editors/3d/grid_yz_plane)                                                                                                                           |
+| [`float`](class_float.md)                         | [`editors/3d/manipulator_gizmo_opacity`](class_editorsettings.md#class_editorsettings_property_editors/3d/manipulator_gizmo_opacity)                                                                                                   |
+| [`int`](class_int.md)                             | [`editors/3d/manipulator_gizmo_size`](class_editorsettings.md#class_editorsettings_property_editors/3d/manipulator_gizmo_size)                                                                                                         |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/emulate_3_button_mouse`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/emulate_3_button_mouse)                                                                                   |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/emulate_numpad`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/emulate_numpad)                                                                                                   |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/invert_x_axis`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/invert_x_axis)                                                                                                     |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/invert_y_axis`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/invert_y_axis)                                                                                                     |
+| [`int`](class_int.md)                             | [`editors/3d/navigation/navigation_scheme`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/navigation_scheme)                                                                                             |
+| [`int`](class_int.md)                             | [`editors/3d/navigation/orbit_mouse_button`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/orbit_mouse_button)                                                                                           |
+| [`int`](class_int.md)                             | [`editors/3d/navigation/pan_mouse_button`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/pan_mouse_button)                                                                                               |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/show_viewport_navigation_gizmo`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/show_viewport_navigation_gizmo)                                                                   |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/show_viewport_rotation_gizmo`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/show_viewport_rotation_gizmo)                                                                       |
+| [`bool`](class_bool.md)                           | [`editors/3d/navigation/warped_mouse_panning`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/warped_mouse_panning)                                                                                       |
+| [`int`](class_int.md)                             | [`editors/3d/navigation/zoom_mouse_button`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/zoom_mouse_button)                                                                                             |
+| [`int`](class_int.md)                             | [`editors/3d/navigation/zoom_style`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/zoom_style)                                                                                                           |
+| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/orbit_inertia`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation_feel/orbit_inertia)                                                                                           |
+| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/orbit_sensitivity`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation_feel/orbit_sensitivity)                                                                                   |
+| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/translation_inertia`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation_feel/translation_inertia)                                                                               |
+| [`float`](class_float.md)                         | [`editors/3d/navigation_feel/zoom_inertia`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation_feel/zoom_inertia)                                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d/primary_grid_color`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_color)                                                                                                                 |
+| [`int`](class_int.md)                             | [`editors/3d/primary_grid_steps`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_steps)                                                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/3d/secondary_grid_color`](class_editorsettings.md#class_editorsettings_property_editors/3d/secondary_grid_color)                                                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d/selection_box_color`](class_editorsettings.md#class_editorsettings_property_editors/3d/selection_box_color)                                                                                                               |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/aabb`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/aabb)                                                                                                     |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/camera`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/camera)                                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/csg`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/csg)                                                                                                       |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/decal`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/decal)                                                                                                   |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/fog_volume`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/fog_volume)                                                                                         |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/instantiated`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/instantiated)                                                                                     |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/joint`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint)                                                                                                   |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/joint_body_a`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint_body_a)                                                                                     |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/joint_body_b`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint_body_b)                                                                                     |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/lightmap_lines`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/lightmap_lines)                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/lightprobe_lines`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/lightprobe_lines)                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/occluder`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/occluder)                                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/particle_attractor`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particle_attractor)                                                                         |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/particle_collision`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particle_collision)                                                                         |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/particles`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particles)                                                                                           |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/path_tilt`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/path_tilt)                                                                                           |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/reflection_probe`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/reflection_probe)                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/selected_bone`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/selected_bone)                                                                                   |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/skeleton`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/skeleton)                                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/stream_player_3d`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/stream_player_3d)                                                                             |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/visibility_notifier`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/visibility_notifier)                                                                       |
+| [`Color`](class_color.md)                         | [`editors/3d_gizmos/gizmo_colors/voxel_gi`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_colors/voxel_gi)                                                                                             |
+| [`float`](class_float.md)                         | [`editors/3d_gizmos/gizmo_settings/bone_axis_length`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_settings/bone_axis_length)                                                                         |
+| [`int`](class_int.md)                             | [`editors/3d_gizmos/gizmo_settings/bone_shape`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_settings/bone_shape)                                                                                     |
+| [`float`](class_float.md)                         | [`editors/3d_gizmos/gizmo_settings/path3d_tilt_disk_size`](class_editorsettings.md#class_editorsettings_property_editors/3d_gizmos/gizmo_settings/path3d_tilt_disk_size)                                                               |
+| [`bool`](class_bool.md)                           | [`editors/animation/autorename_animation_tracks`](class_editorsettings.md#class_editorsettings_property_editors/animation/autorename_animation_tracks)                                                                                 |
+| [`bool`](class_bool.md)                           | [`editors/animation/confirm_insert_track`](class_editorsettings.md#class_editorsettings_property_editors/animation/confirm_insert_track)                                                                                               |
+| [`bool`](class_bool.md)                           | [`editors/animation/default_create_bezier_tracks`](class_editorsettings.md#class_editorsettings_property_editors/animation/default_create_bezier_tracks)                                                                               |
+| [`bool`](class_bool.md)                           | [`editors/animation/default_create_reset_tracks`](class_editorsettings.md#class_editorsettings_property_editors/animation/default_create_reset_tracks)                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/animation/onion_layers_future_color`](class_editorsettings.md#class_editorsettings_property_editors/animation/onion_layers_future_color)                                                                                     |
+| [`Color`](class_color.md)                         | [`editors/animation/onion_layers_past_color`](class_editorsettings.md#class_editorsettings_property_editors/animation/onion_layers_past_color)                                                                                         |
+| [`Color`](class_color.md)                         | [`editors/bone_mapper/handle_colors/error`](class_editorsettings.md#class_editorsettings_property_editors/bone_mapper/handle_colors/error)                                                                                             |
+| [`Color`](class_color.md)                         | [`editors/bone_mapper/handle_colors/missing`](class_editorsettings.md#class_editorsettings_property_editors/bone_mapper/handle_colors/missing)                                                                                         |
+| [`Color`](class_color.md)                         | [`editors/bone_mapper/handle_colors/set`](class_editorsettings.md#class_editorsettings_property_editors/bone_mapper/handle_colors/set)                                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/bone_mapper/handle_colors/unset`](class_editorsettings.md#class_editorsettings_property_editors/bone_mapper/handle_colors/unset)                                                                                             |
+| [`int`](class_int.md)                             | [`editors/grid_map/editor_side`](class_editorsettings.md#class_editorsettings_property_editors/grid_map/editor_side)                                                                                                                   |
+| [`int`](class_int.md)                             | [`editors/grid_map/palette_min_width`](class_editorsettings.md#class_editorsettings_property_editors/grid_map/palette_min_width)                                                                                                       |
+| [`float`](class_float.md)                         | [`editors/grid_map/pick_distance`](class_editorsettings.md#class_editorsettings_property_editors/grid_map/pick_distance)                                                                                                               |
+| [`int`](class_int.md)                             | [`editors/grid_map/preview_size`](class_editorsettings.md#class_editorsettings_property_editors/grid_map/preview_size)                                                                                                                 |
+| [`int`](class_int.md)                             | [`editors/panning/2d_editor_pan_speed`](class_editorsettings.md#class_editorsettings_property_editors/panning/2d_editor_pan_speed)                                                                                                     |
+| [`int`](class_int.md)                             | [`editors/panning/2d_editor_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/2d_editor_panning_scheme)                                                                                           |
+| [`int`](class_int.md)                             | [`editors/panning/animation_editors_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/animation_editors_panning_scheme)                                                                           |
+| [`bool`](class_bool.md)                           | [`editors/panning/simple_panning`](class_editorsettings.md#class_editorsettings_property_editors/panning/simple_panning)                                                                                                               |
+| [`int`](class_int.md)                             | [`editors/panning/sub_editors_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/sub_editors_panning_scheme)                                                                                       |
+| [`bool`](class_bool.md)                           | [`editors/panning/warped_mouse_panning`](class_editorsettings.md#class_editorsettings_property_editors/panning/warped_mouse_panning)                                                                                                   |
+| [`float`](class_float.md)                         | [`editors/polygon_editor/auto_bake_delay`](class_editorsettings.md#class_editorsettings_property_editors/polygon_editor/auto_bake_delay)                                                                                               |
+| [`int`](class_int.md)                             | [`editors/polygon_editor/point_grab_radius`](class_editorsettings.md#class_editorsettings_property_editors/polygon_editor/point_grab_radius)                                                                                           |
+| [`bool`](class_bool.md)                           | [`editors/polygon_editor/show_previous_outline`](class_editorsettings.md#class_editorsettings_property_editors/polygon_editor/show_previous_outline)                                                                                   |
+| [`bool`](class_bool.md)                           | [`editors/shader_editor/behavior/files/restore_shaders_on_load`](class_editorsettings.md#class_editorsettings_property_editors/shader_editor/behavior/files/restore_shaders_on_load)                                                   |
+| [`bool`](class_bool.md)                           | [`editors/tiles_editor/display_grid`](class_editorsettings.md#class_editorsettings_property_editors/tiles_editor/display_grid)                                                                                                         |
+| [`Color`](class_color.md)                         | [`editors/tiles_editor/grid_color`](class_editorsettings.md#class_editorsettings_property_editors/tiles_editor/grid_color)                                                                                                             |
+| [`bool`](class_bool.md)                           | [`editors/tiles_editor/highlight_selected_layer`](class_editorsettings.md#class_editorsettings_property_editors/tiles_editor/highlight_selected_layer)                                                                                 |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/color_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/color_color)                                                                       |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/conditional_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/conditional_color)                                                           |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/input_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/input_color)                                                                       |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/output_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/output_color)                                                                     |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/particle_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/particle_color)                                                                 |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/scalar_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/scalar_color)                                                                     |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/special_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/special_color)                                                                   |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/textures_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/textures_color)                                                                 |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/transform_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/transform_color)                                                               |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/utility_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/utility_color)                                                                   |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/category_colors/vector_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/category_colors/vector_color)                                                                     |
+| [`String`](class_string.md)                       | [`editors/visual_editors/color_theme`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/color_theme)                                                                                                       |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/boolean_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/boolean_color)                                                               |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/sampler_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/sampler_color)                                                               |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/scalar_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/scalar_color)                                                                 |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/transform_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/transform_color)                                                           |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/vector2_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/vector2_color)                                                               |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/vector3_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/vector3_color)                                                               |
+| [`Color`](class_color.md)                         | [`editors/visual_editors/connection_colors/vector4_color`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/connection_colors/vector4_color)                                                               |
+| [`int`](class_int.md)                             | [`editors/visual_editors/grid_pattern`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/grid_pattern)                                                                                                     |
+| [`float`](class_float.md)                         | [`editors/visual_editors/lines_curvature`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/lines_curvature)                                                                                               |
+| [`float`](class_float.md)                         | [`editors/visual_editors/minimap_opacity`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/minimap_opacity)                                                                                               |
+| [`int`](class_int.md)                             | [`editors/visual_editors/visual_shader/port_preview_size`](class_editorsettings.md#class_editorsettings_property_editors/visual_editors/visual_shader/port_preview_size)                                                               |
+| [`String`](class_string.md)                       | [`export/ssh/scp`](class_editorsettings.md#class_editorsettings_property_export/ssh/scp)                                                                                                                                               |
+| [`String`](class_string.md)                       | [`export/ssh/ssh`](class_editorsettings.md#class_editorsettings_property_export/ssh/ssh)                                                                                                                                               |
+| [`String`](class_string.md)                       | [`filesystem/directories/autoscan_project_path`](class_editorsettings.md#class_editorsettings_property_filesystem/directories/autoscan_project_path)                                                                                   |
+| [`String`](class_string.md)                       | [`filesystem/directories/default_project_path`](class_editorsettings.md#class_editorsettings_property_filesystem/directories/default_project_path)                                                                                     |
+| [`String`](class_string.md)                       | [`filesystem/external_programs/3d_model_editor`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/3d_model_editor)                                                                                   |
+| [`String`](class_string.md)                       | [`filesystem/external_programs/audio_editor`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/audio_editor)                                                                                         |
+| [`String`](class_string.md)                       | [`filesystem/external_programs/raster_image_editor`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/raster_image_editor)                                                                           |
+| [`String`](class_string.md)                       | [`filesystem/external_programs/terminal_emulator`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/terminal_emulator)                                                                               |
+| [`String`](class_string.md)                       | [`filesystem/external_programs/terminal_emulator_flags`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/terminal_emulator_flags)                                                                   |
+| [`String`](class_string.md)                       | [`filesystem/external_programs/vector_image_editor`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/vector_image_editor)                                                                           |
+| [`int`](class_int.md)                             | [`filesystem/file_dialog/display_mode`](class_editorsettings.md#class_editorsettings_property_filesystem/file_dialog/display_mode)                                                                                                     |
+| [`bool`](class_bool.md)                           | [`filesystem/file_dialog/show_hidden_files`](class_editorsettings.md#class_editorsettings_property_filesystem/file_dialog/show_hidden_files)                                                                                           |
+| [`int`](class_int.md)                             | [`filesystem/file_dialog/thumbnail_size`](class_editorsettings.md#class_editorsettings_property_filesystem/file_dialog/thumbnail_size)                                                                                                 |
+| [`String`](class_string.md)                       | [`filesystem/file_server/password`](class_editorsettings.md#class_editorsettings_property_filesystem/file_server/password)                                                                                                             |
+| [`int`](class_int.md)                             | [`filesystem/file_server/port`](class_editorsettings.md#class_editorsettings_property_filesystem/file_server/port)                                                                                                                     |
+| [`String`](class_string.md)                       | [`filesystem/import/blender/blender_path`](class_editorsettings.md#class_editorsettings_property_filesystem/import/blender/blender_path)                                                                                               |
+| [`int`](class_int.md)                             | [`filesystem/import/blender/rpc_port`](class_editorsettings.md#class_editorsettings_property_filesystem/import/blender/rpc_port)                                                                                                       |
+| [`float`](class_float.md)                         | [`filesystem/import/blender/rpc_server_uptime`](class_editorsettings.md#class_editorsettings_property_filesystem/import/blender/rpc_server_uptime)                                                                                     |
+| [`String`](class_string.md)                       | [`filesystem/import/fbx/fbx2gltf_path`](class_editorsettings.md#class_editorsettings_property_filesystem/import/fbx/fbx2gltf_path)                                                                                                     |
+| [`bool`](class_bool.md)                           | [`filesystem/on_save/compress_binary_resources`](class_editorsettings.md#class_editorsettings_property_filesystem/on_save/compress_binary_resources)                                                                                   |
+| [`bool`](class_bool.md)                           | [`filesystem/on_save/safe_save_on_backup_then_rename`](class_editorsettings.md#class_editorsettings_property_filesystem/on_save/safe_save_on_backup_then_rename)                                                                       |
+| [`int`](class_int.md)                             | [`filesystem/quick_open_dialog/default_display_mode`](class_editorsettings.md#class_editorsettings_property_filesystem/quick_open_dialog/default_display_mode)                                                                         |
+| [`bool`](class_bool.md)                           | [`filesystem/quick_open_dialog/include_addons`](class_editorsettings.md#class_editorsettings_property_filesystem/quick_open_dialog/include_addons)                                                                                     |
+| [`String`](class_string.md)                       | [`filesystem/tools/oidn/oidn_denoise_path`](class_editorsettings.md#class_editorsettings_property_filesystem/tools/oidn/oidn_denoise_path)                                                                                             |
+| [`bool`](class_bool.md)                           | [`input/buffering/agile_event_flushing`](class_editorsettings.md#class_editorsettings_property_input/buffering/agile_event_flushing)                                                                                                   |
+| [`bool`](class_bool.md)                           | [`input/buffering/use_accumulated_input`](class_editorsettings.md#class_editorsettings_property_input/buffering/use_accumulated_input)                                                                                                 |
+| [`int`](class_int.md)                             | [`interface/editor/accept_dialog_cancel_ok_buttons`](class_editorsettings.md#class_editorsettings_property_interface/editor/accept_dialog_cancel_ok_buttons)                                                                           |
+| [`bool`](class_bool.md)                           | [`interface/editor/automatically_open_screenshots`](class_editorsettings.md#class_editorsettings_property_interface/editor/automatically_open_screenshots)                                                                             |
+| [`String`](class_string.md)                       | [`interface/editor/code_font`](class_editorsettings.md#class_editorsettings_property_interface/editor/code_font)                                                                                                                       |
+| [`int`](class_int.md)                             | [`interface/editor/code_font_contextual_ligatures`](class_editorsettings.md#class_editorsettings_property_interface/editor/code_font_contextual_ligatures)                                                                             |
+| [`String`](class_string.md)                       | [`interface/editor/code_font_custom_opentype_features`](class_editorsettings.md#class_editorsettings_property_interface/editor/code_font_custom_opentype_features)                                                                     |
+| [`String`](class_string.md)                       | [`interface/editor/code_font_custom_variations`](class_editorsettings.md#class_editorsettings_property_interface/editor/code_font_custom_variations)                                                                                   |
+| [`int`](class_int.md)                             | [`interface/editor/code_font_size`](class_editorsettings.md#class_editorsettings_property_interface/editor/code_font_size)                                                                                                             |
+| [`float`](class_float.md)                         | [`interface/editor/custom_display_scale`](class_editorsettings.md#class_editorsettings_property_interface/editor/custom_display_scale)                                                                                                 |
+| [`int`](class_int.md)                             | [`interface/editor/display_scale`](class_editorsettings.md#class_editorsettings_property_interface/editor/display_scale)                                                                                                               |
+| [`int`](class_int.md)                             | [`interface/editor/dock_tab_style`](class_editorsettings.md#class_editorsettings_property_interface/editor/dock_tab_style)                                                                                                             |
+| [`String`](class_string.md)                       | [`interface/editor/editor_language`](class_editorsettings.md#class_editorsettings_property_interface/editor/editor_language)                                                                                                           |
+| [`int`](class_int.md)                             | [`interface/editor/editor_screen`](class_editorsettings.md#class_editorsettings_property_interface/editor/editor_screen)                                                                                                               |
+| [`bool`](class_bool.md)                           | [`interface/editor/expand_to_title`](class_editorsettings.md#class_editorsettings_property_interface/editor/expand_to_title)                                                                                                           |
+| [`bool`](class_bool.md)                           | [`interface/editor/font_allow_msdf`](class_editorsettings.md#class_editorsettings_property_interface/editor/font_allow_msdf)                                                                                                           |
+| [`int`](class_int.md)                             | [`interface/editor/font_antialiasing`](class_editorsettings.md#class_editorsettings_property_interface/editor/font_antialiasing)                                                                                                       |
+| [`bool`](class_bool.md)                           | [`interface/editor/font_disable_embedded_bitmaps`](class_editorsettings.md#class_editorsettings_property_interface/editor/font_disable_embedded_bitmaps)                                                                               |
+| [`int`](class_int.md)                             | [`interface/editor/font_hinting`](class_editorsettings.md#class_editorsettings_property_interface/editor/font_hinting)                                                                                                                 |
+| [`int`](class_int.md)                             | [`interface/editor/font_subpixel_positioning`](class_editorsettings.md#class_editorsettings_property_interface/editor/font_subpixel_positioning)                                                                                       |
+| [`bool`](class_bool.md)                           | [`interface/editor/import_resources_when_unfocused`](class_editorsettings.md#class_editorsettings_property_interface/editor/import_resources_when_unfocused)                                                                           |
+| [`bool`](class_bool.md)                           | [`interface/editor/keep_screen_on`](class_editorsettings.md#class_editorsettings_property_interface/editor/keep_screen_on)                                                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/editor/localize_settings`](class_editorsettings.md#class_editorsettings_property_interface/editor/localize_settings)                                                                                                       |
+| [`int`](class_int.md)                             | [`interface/editor/low_processor_mode_sleep_usec`](class_editorsettings.md#class_editorsettings_property_interface/editor/low_processor_mode_sleep_usec)                                                                               |
+| [`String`](class_string.md)                       | [`interface/editor/main_font`](class_editorsettings.md#class_editorsettings_property_interface/editor/main_font)                                                                                                                       |
+| [`String`](class_string.md)                       | [`interface/editor/main_font_bold`](class_editorsettings.md#class_editorsettings_property_interface/editor/main_font_bold)                                                                                                             |
+| [`int`](class_int.md)                             | [`interface/editor/main_font_size`](class_editorsettings.md#class_editorsettings_property_interface/editor/main_font_size)                                                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/editor/mouse_extra_buttons_navigate_history`](class_editorsettings.md#class_editorsettings_property_interface/editor/mouse_extra_buttons_navigate_history)                                                                 |
+| [`int`](class_int.md)                             | [`interface/editor/project_manager_screen`](class_editorsettings.md#class_editorsettings_property_interface/editor/project_manager_screen)                                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/editor/save_each_scene_on_quit`](class_editorsettings.md#class_editorsettings_property_interface/editor/save_each_scene_on_quit)                                                                                           |
+| [`bool`](class_bool.md)                           | [`interface/editor/save_on_focus_loss`](class_editorsettings.md#class_editorsettings_property_interface/editor/save_on_focus_loss)                                                                                                     |
+| [`bool`](class_bool.md)                           | [`interface/editor/separate_distraction_mode`](class_editorsettings.md#class_editorsettings_property_interface/editor/separate_distraction_mode)                                                                                       |
+| [`int`](class_int.md)                             | [`interface/editor/show_internal_errors_in_toast_notifications`](class_editorsettings.md#class_editorsettings_property_interface/editor/show_internal_errors_in_toast_notifications)                                                   |
+| [`int`](class_int.md)                             | [`interface/editor/show_update_spinner`](class_editorsettings.md#class_editorsettings_property_interface/editor/show_update_spinner)                                                                                                   |
+| [`bool`](class_bool.md)                           | [`interface/editor/single_window_mode`](class_editorsettings.md#class_editorsettings_property_interface/editor/single_window_mode)                                                                                                     |
+| [`int`](class_int.md)                             | [`interface/editor/ui_layout_direction`](class_editorsettings.md#class_editorsettings_property_interface/editor/ui_layout_direction)                                                                                                   |
+| [`int`](class_int.md)                             | [`interface/editor/unfocused_low_processor_mode_sleep_usec`](class_editorsettings.md#class_editorsettings_property_interface/editor/unfocused_low_processor_mode_sleep_usec)                                                           |
+| [`bool`](class_bool.md)                           | [`interface/editor/update_continuously`](class_editorsettings.md#class_editorsettings_property_interface/editor/update_continuously)                                                                                                   |
+| [`bool`](class_bool.md)                           | [`interface/editor/use_embedded_menu`](class_editorsettings.md#class_editorsettings_property_interface/editor/use_embedded_menu)                                                                                                       |
+| [`bool`](class_bool.md)                           | [`interface/editor/use_native_file_dialogs`](class_editorsettings.md#class_editorsettings_property_interface/editor/use_native_file_dialogs)                                                                                           |
+| [`int`](class_int.md)                             | [`interface/editor/vsync_mode`](class_editorsettings.md#class_editorsettings_property_interface/editor/vsync_mode)                                                                                                                     |
+| [`bool`](class_bool.md)                           | [`interface/editors/derive_script_globals_by_name`](class_editorsettings.md#class_editorsettings_property_interface/editors/derive_script_globals_by_name)                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/editors/show_scene_tree_root_selection`](class_editorsettings.md#class_editorsettings_property_interface/editors/show_scene_tree_root_selection)                                                                           |
+| [`bool`](class_bool.md)                           | [`interface/inspector/auto_unfold_foreign_scenes`](class_editorsettings.md#class_editorsettings_property_interface/inspector/auto_unfold_foreign_scenes)                                                                               |
+| [`int`](class_int.md)                             | [`interface/inspector/default_color_picker_mode`](class_editorsettings.md#class_editorsettings_property_interface/inspector/default_color_picker_mode)                                                                                 |
+| [`int`](class_int.md)                             | [`interface/inspector/default_color_picker_shape`](class_editorsettings.md#class_editorsettings_property_interface/inspector/default_color_picker_shape)                                                                               |
+| [`float`](class_float.md)                         | [`interface/inspector/default_float_step`](class_editorsettings.md#class_editorsettings_property_interface/inspector/default_float_step)                                                                                               |
+| [`int`](class_int.md)                             | [`interface/inspector/default_property_name_style`](class_editorsettings.md#class_editorsettings_property_interface/inspector/default_property_name_style)                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/inspector/delimitate_all_container_and_resources`](class_editorsettings.md#class_editorsettings_property_interface/inspector/delimitate_all_container_and_resources)                                                       |
+| [`bool`](class_bool.md)                           | [`interface/inspector/disable_folding`](class_editorsettings.md#class_editorsettings_property_interface/inspector/disable_folding)                                                                                                     |
+| [`float`](class_float.md)                         | [`interface/inspector/float_drag_speed`](class_editorsettings.md#class_editorsettings_property_interface/inspector/float_drag_speed)                                                                                                   |
+| [`bool`](class_bool.md)                           | [`interface/inspector/horizontal_vector2_editing`](class_editorsettings.md#class_editorsettings_property_interface/inspector/horizontal_vector2_editing)                                                                               |
+| [`bool`](class_bool.md)                           | [`interface/inspector/horizontal_vector_types_editing`](class_editorsettings.md#class_editorsettings_property_interface/inspector/horizontal_vector_types_editing)                                                                     |
+| [`int`](class_int.md)                             | [`interface/inspector/max_array_dictionary_items_per_page`](class_editorsettings.md#class_editorsettings_property_interface/inspector/max_array_dictionary_items_per_page)                                                             |
+| [`int`](class_int.md)                             | [`interface/inspector/nested_color_mode`](class_editorsettings.md#class_editorsettings_property_interface/inspector/nested_color_mode)                                                                                                 |
+| [`bool`](class_bool.md)                           | [`interface/inspector/open_resources_in_current_inspector`](class_editorsettings.md#class_editorsettings_property_interface/inspector/open_resources_in_current_inspector)                                                             |
+| [`PackedStringArray`](class_packedstringarray.md) | [`interface/inspector/resources_to_open_in_new_inspector`](class_editorsettings.md#class_editorsettings_property_interface/inspector/resources_to_open_in_new_inspector)                                                               |
+| [`bool`](class_bool.md)                           | [`interface/inspector/show_low_level_opentype_features`](class_editorsettings.md#class_editorsettings_property_interface/inspector/show_low_level_opentype_features)                                                                   |
+| [`bool`](class_bool.md)                           | [`interface/multi_window/enable`](class_editorsettings.md#class_editorsettings_property_interface/multi_window/enable)                                                                                                                 |
+| [`bool`](class_bool.md)                           | [`interface/multi_window/maximize_window`](class_editorsettings.md#class_editorsettings_property_interface/multi_window/maximize_window)                                                                                               |
+| [`bool`](class_bool.md)                           | [`interface/multi_window/restore_windows_on_load`](class_editorsettings.md#class_editorsettings_property_interface/multi_window/restore_windows_on_load)                                                                               |
+| [`int`](class_int.md)                             | [`interface/scene_tabs/display_close_button`](class_editorsettings.md#class_editorsettings_property_interface/scene_tabs/display_close_button)                                                                                         |
+| [`int`](class_int.md)                             | [`interface/scene_tabs/maximum_width`](class_editorsettings.md#class_editorsettings_property_interface/scene_tabs/maximum_width)                                                                                                       |
+| [`bool`](class_bool.md)                           | [`interface/scene_tabs/restore_scenes_on_load`](class_editorsettings.md#class_editorsettings_property_interface/scene_tabs/restore_scenes_on_load)                                                                                     |
+| [`bool`](class_bool.md)                           | [`interface/scene_tabs/show_script_button`](class_editorsettings.md#class_editorsettings_property_interface/scene_tabs/show_script_button)                                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/scene_tabs/show_thumbnail_on_hover`](class_editorsettings.md#class_editorsettings_property_interface/scene_tabs/show_thumbnail_on_hover)                                                                                   |
+| [`Color`](class_color.md)                         | [`interface/theme/accent_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/accent_color)                                                                                                                   |
+| [`int`](class_int.md)                             | [`interface/theme/additional_spacing`](class_editorsettings.md#class_editorsettings_property_interface/theme/additional_spacing)                                                                                                       |
+| [`Color`](class_color.md)                         | [`interface/theme/base_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/base_color)                                                                                                                       |
+| [`int`](class_int.md)                             | [`interface/theme/base_spacing`](class_editorsettings.md#class_editorsettings_property_interface/theme/base_spacing)                                                                                                                   |
+| [`int`](class_int.md)                             | [`interface/theme/border_size`](class_editorsettings.md#class_editorsettings_property_interface/theme/border_size)                                                                                                                     |
+| [`float`](class_float.md)                         | [`interface/theme/contrast`](class_editorsettings.md#class_editorsettings_property_interface/theme/contrast)                                                                                                                           |
+| [`int`](class_int.md)                             | [`interface/theme/corner_radius`](class_editorsettings.md#class_editorsettings_property_interface/theme/corner_radius)                                                                                                                 |
+| [`String`](class_string.md)                       | [`interface/theme/custom_theme`](class_editorsettings.md#class_editorsettings_property_interface/theme/custom_theme)                                                                                                                   |
+| [`bool`](class_bool.md)                           | [`interface/theme/draw_extra_borders`](class_editorsettings.md#class_editorsettings_property_interface/theme/draw_extra_borders)                                                                                                       |
+| [`bool`](class_bool.md)                           | [`interface/theme/follow_system_theme`](class_editorsettings.md#class_editorsettings_property_interface/theme/follow_system_theme)                                                                                                     |
+| [`int`](class_int.md)                             | [`interface/theme/icon_and_font_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/icon_and_font_color)                                                                                                     |
+| [`float`](class_float.md)                         | [`interface/theme/icon_saturation`](class_editorsettings.md#class_editorsettings_property_interface/theme/icon_saturation)                                                                                                             |
+| [`String`](class_string.md)                       | [`interface/theme/preset`](class_editorsettings.md#class_editorsettings_property_interface/theme/preset)                                                                                                                               |
+| [`float`](class_float.md)                         | [`interface/theme/relationship_line_opacity`](class_editorsettings.md#class_editorsettings_property_interface/theme/relationship_line_opacity)                                                                                         |
+| [`String`](class_string.md)                       | [`interface/theme/spacing_preset`](class_editorsettings.md#class_editorsettings_property_interface/theme/spacing_preset)                                                                                                               |
+| [`bool`](class_bool.md)                           | [`interface/theme/use_system_accent_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/use_system_accent_color)                                                                                             |
+| [`bool`](class_bool.md)                           | [`interface/touchscreen/enable_long_press_as_right_click`](class_editorsettings.md#class_editorsettings_property_interface/touchscreen/enable_long_press_as_right_click)                                                               |
+| [`bool`](class_bool.md)                           | [`interface/touchscreen/enable_pan_and_scale_gestures`](class_editorsettings.md#class_editorsettings_property_interface/touchscreen/enable_pan_and_scale_gestures)                                                                     |
+| [`bool`](class_bool.md)                           | [`interface/touchscreen/increase_scrollbar_touch_area`](class_editorsettings.md#class_editorsettings_property_interface/touchscreen/increase_scrollbar_touch_area)                                                                     |
+| [`float`](class_float.md)                         | [`interface/touchscreen/scale_gizmo_handles`](class_editorsettings.md#class_editorsettings_property_interface/touchscreen/scale_gizmo_handles)                                                                                         |
+| [`int`](class_int.md)                             | [`network/connection/engine_version_update_mode`](class_editorsettings.md#class_editorsettings_property_network/connection/engine_version_update_mode)                                                                                 |
+| [`int`](class_int.md)                             | [`network/connection/network_mode`](class_editorsettings.md#class_editorsettings_property_network/connection/network_mode)                                                                                                             |
+| [`String`](class_string.md)                       | [`network/debug/remote_host`](class_editorsettings.md#class_editorsettings_property_network/debug/remote_host)                                                                                                                         |
+| [`int`](class_int.md)                             | [`network/debug/remote_port`](class_editorsettings.md#class_editorsettings_property_network/debug/remote_port)                                                                                                                         |
+| [`String`](class_string.md)                       | [`network/http_proxy/host`](class_editorsettings.md#class_editorsettings_property_network/http_proxy/host)                                                                                                                             |
+| [`int`](class_int.md)                             | [`network/http_proxy/port`](class_editorsettings.md#class_editorsettings_property_network/http_proxy/port)                                                                                                                             |
+| [`String`](class_string.md)                       | [`network/tls/editor_tls_certificates`](class_editorsettings.md#class_editorsettings_property_network/tls/editor_tls_certificates)                                                                                                     |
+| [`String`](class_string.md)                       | [`project_manager/default_renderer`](class_editorsettings.md#class_editorsettings_property_project_manager/default_renderer)                                                                                                           |
+| [`int`](class_int.md)                             | [`project_manager/directory_naming_convention`](class_editorsettings.md#class_editorsettings_property_project_manager/directory_naming_convention)                                                                                     |
+| [`int`](class_int.md)                             | [`project_manager/sorting_order`](class_editorsettings.md#class_editorsettings_property_project_manager/sorting_order)                                                                                                                 |
+| [`bool`](class_bool.md)                           | [`run/auto_save/save_before_running`](class_editorsettings.md#class_editorsettings_property_run/auto_save/save_before_running)                                                                                                         |
+| [`int`](class_int.md)                             | [`run/bottom_panel/action_on_play`](class_editorsettings.md#class_editorsettings_property_run/bottom_panel/action_on_play)                                                                                                             |
+| [`int`](class_int.md)                             | [`run/bottom_panel/action_on_stop`](class_editorsettings.md#class_editorsettings_property_run/bottom_panel/action_on_stop)                                                                                                             |
+| [`bool`](class_bool.md)                           | [`run/output/always_clear_output_on_play`](class_editorsettings.md#class_editorsettings_property_run/output/always_clear_output_on_play)                                                                                               |
+| [`int`](class_int.md)                             | [`run/output/font_size`](class_editorsettings.md#class_editorsettings_property_run/output/font_size)                                                                                                                                   |
+| [`int`](class_int.md)                             | [`run/output/max_lines`](class_editorsettings.md#class_editorsettings_property_run/output/max_lines)                                                                                                                                   |
+| [`bool`](class_bool.md)                           | [`run/platforms/linuxbsd/prefer_wayland`](class_editorsettings.md#class_editorsettings_property_run/platforms/linuxbsd/prefer_wayland)                                                                                                 |
+| [`int`](class_int.md)                             | [`run/window_placement/android_window`](class_editorsettings.md#class_editorsettings_property_run/window_placement/android_window)                                                                                                     |
+| [`int`](class_int.md)                             | [`run/window_placement/play_window_pip_mode`](class_editorsettings.md#class_editorsettings_property_run/window_placement/play_window_pip_mode)                                                                                         |
+| [`int`](class_int.md)                             | [`run/window_placement/rect`](class_editorsettings.md#class_editorsettings_property_run/window_placement/rect)                                                                                                                         |
+| [`Vector2`](class_vector2.md)                     | [`run/window_placement/rect_custom_position`](class_editorsettings.md#class_editorsettings_property_run/window_placement/rect_custom_position)                                                                                         |
+| [`int`](class_int.md)                             | [`run/window_placement/screen`](class_editorsettings.md#class_editorsettings_property_run/window_placement/screen)                                                                                                                     |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/caret/caret_blink`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/caret_blink)                                                                                           |
+| [`float`](class_float.md)                         | [`text_editor/appearance/caret/caret_blink_interval`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/caret_blink_interval)                                                                         |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/caret/highlight_all_occurrences`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/highlight_all_occurrences)                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/caret/highlight_current_line`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/highlight_current_line)                                                                     |
+| [`int`](class_int.md)                             | [`text_editor/appearance/caret/type`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/type)                                                                                                         |
+| [`int`](class_int.md)                             | [`text_editor/appearance/guidelines/line_length_guideline_hard_column`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column)                                     |
+| [`int`](class_int.md)                             | [`text_editor/appearance/guidelines/line_length_guideline_soft_column`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column)                                     |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/guidelines/show_line_length_guidelines`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/show_line_length_guidelines)                                                 |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/highlight_type_safe_lines`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/gutters/highlight_type_safe_lines)                                                           |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/line_numbers_zero_padded`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/gutters/line_numbers_zero_padded)                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/show_info_gutter`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/gutters/show_info_gutter)                                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/gutters/show_line_numbers`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/gutters/show_line_numbers)                                                                           |
+| [`int`](class_int.md)                             | [`text_editor/appearance/lines/autowrap_mode`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/lines/autowrap_mode)                                                                                       |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/lines/code_folding`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/lines/code_folding)                                                                                         |
+| [`int`](class_int.md)                             | [`text_editor/appearance/lines/word_wrap`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/lines/word_wrap)                                                                                               |
+| [`int`](class_int.md)                             | [`text_editor/appearance/minimap/minimap_width`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/minimap/minimap_width)                                                                                   |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/minimap/show_minimap`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/minimap/show_minimap)                                                                                     |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/whitespace/draw_spaces`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/whitespace/draw_spaces)                                                                                 |
+| [`bool`](class_bool.md)                           | [`text_editor/appearance/whitespace/draw_tabs`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/whitespace/draw_tabs)                                                                                     |
+| [`int`](class_int.md)                             | [`text_editor/appearance/whitespace/line_spacing`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/whitespace/line_spacing)                                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/auto_reload_and_parse_scripts_on_save`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/auto_reload_and_parse_scripts_on_save)                                           |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/auto_reload_scripts_on_external_change`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change)                                         |
+| [`int`](class_int.md)                             | [`text_editor/behavior/files/autosave_interval_secs`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/autosave_interval_secs)                                                                         |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/convert_indent_on_save`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/convert_indent_on_save)                                                                         |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/open_dominant_script_on_scene_change`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/open_dominant_script_on_scene_change)                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/restore_scripts_on_load`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/restore_scripts_on_load)                                                                       |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/trim_final_newlines_on_save`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/trim_final_newlines_on_save)                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/files/trim_trailing_whitespace_on_save`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/trim_trailing_whitespace_on_save)                                                     |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/general/empty_selection_clipboard`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/general/empty_selection_clipboard)                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/indent/auto_indent`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/indent/auto_indent)                                                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/indent/indent_wrapped_lines`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/indent/indent_wrapped_lines)                                                                           |
+| [`int`](class_int.md)                             | [`text_editor/behavior/indent/size`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/indent/size)                                                                                                           |
+| [`int`](class_int.md)                             | [`text_editor/behavior/indent/type`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/indent/type)                                                                                                           |
+| [`String`](class_string.md)                       | [`text_editor/behavior/navigation/custom_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/custom_word_separators)                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/drag_and_drop_selection`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/drag_and_drop_selection)                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/move_caret_on_right_click`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/move_caret_on_right_click)                                                         |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method) |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/scroll_past_end_of_file`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/scroll_past_end_of_file)                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/smooth_scrolling`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling)                                                                           |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/stay_in_script_editor_on_node_selected`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/stay_in_script_editor_on_node_selected)                               |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/use_custom_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators)                                                       |
+| [`bool`](class_bool.md)                           | [`text_editor/behavior/navigation/use_default_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators)                                                     |
+| [`int`](class_int.md)                             | [`text_editor/behavior/navigation/v_scroll_speed`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/v_scroll_speed)                                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/add_node_path_literals`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/add_node_path_literals)                                                                                 |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/add_string_name_literals`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/add_string_name_literals)                                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/add_type_hints`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/add_type_hints)                                                                                                 |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/auto_brace_complete`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/auto_brace_complete)                                                                                       |
+| [`float`](class_float.md)                         | [`text_editor/completion/code_complete_delay`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/code_complete_delay)                                                                                       |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/code_complete_enabled`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/code_complete_enabled)                                                                                   |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/colorize_suggestions`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/colorize_suggestions)                                                                                     |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/complete_file_paths`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/complete_file_paths)                                                                                       |
+| [`float`](class_float.md)                         | [`text_editor/completion/idle_parse_delay`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/idle_parse_delay)                                                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/put_callhint_tooltip_below_current_line`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/put_callhint_tooltip_below_current_line)                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/completion/use_single_quotes`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/use_single_quotes)                                                                                           |
+| [`String`](class_string.md)                       | [`text_editor/external/exec_flags`](class_editorsettings.md#class_editorsettings_property_text_editor/external/exec_flags)                                                                                                             |
+| [`String`](class_string.md)                       | [`text_editor/external/exec_path`](class_editorsettings.md#class_editorsettings_property_text_editor/external/exec_path)                                                                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/external/use_external_editor`](class_editorsettings.md#class_editorsettings_property_text_editor/external/use_external_editor)                                                                                           |
+| [`int`](class_int.md)                             | [`text_editor/help/class_reference_examples`](class_editorsettings.md#class_editorsettings_property_text_editor/help/class_reference_examples)                                                                                         |
+| [`int`](class_int.md)                             | [`text_editor/help/help_font_size`](class_editorsettings.md#class_editorsettings_property_text_editor/help/help_font_size)                                                                                                             |
+| [`int`](class_int.md)                             | [`text_editor/help/help_source_font_size`](class_editorsettings.md#class_editorsettings_property_text_editor/help/help_source_font_size)                                                                                               |
+| [`int`](class_int.md)                             | [`text_editor/help/help_title_font_size`](class_editorsettings.md#class_editorsettings_property_text_editor/help/help_title_font_size)                                                                                                 |
+| [`bool`](class_bool.md)                           | [`text_editor/help/show_help_index`](class_editorsettings.md#class_editorsettings_property_text_editor/help/show_help_index)                                                                                                           |
+| [`bool`](class_bool.md)                           | [`text_editor/help/sort_functions_alphabetically`](class_editorsettings.md#class_editorsettings_property_text_editor/help/sort_functions_alphabetically)                                                                               |
+| [`bool`](class_bool.md)                           | [`text_editor/script_list/group_help_pages`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/group_help_pages)                                                                                           |
+| [`int`](class_int.md)                             | [`text_editor/script_list/list_script_names_as`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/list_script_names_as)                                                                                   |
+| [`bool`](class_bool.md)                           | [`text_editor/script_list/script_temperature_enabled`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/script_temperature_enabled)                                                                       |
+| [`int`](class_int.md)                             | [`text_editor/script_list/script_temperature_history_size`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/script_temperature_history_size)                                                             |
+| [`bool`](class_bool.md)                           | [`text_editor/script_list/show_members_overview`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/show_members_overview)                                                                                 |
+| [`bool`](class_bool.md)                           | [`text_editor/script_list/sort_members_outline_alphabetically`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/sort_members_outline_alphabetically)                                                     |
+| [`int`](class_int.md)                             | [`text_editor/script_list/sort_scripts_by`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/sort_scripts_by)                                                                                             |
+| [`String`](class_string.md)                       | [`text_editor/theme/color_theme`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/color_theme)                                                                                                                 |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/background_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/background_color)                                                                             |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/base_type_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/base_type_color)                                                                               |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/bookmark_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/bookmark_color)                                                                                 |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/brace_mismatch_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/brace_mismatch_color)                                                                     |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/breakpoint_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/breakpoint_color)                                                                             |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/caret_background_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/caret_background_color)                                                                 |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/caret_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/caret_color)                                                                                       |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/code_folding_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/code_folding_color)                                                                         |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/comment_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/comment_color)                                                                                   |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_background_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_background_color)                                                       |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_existing_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_existing_color)                                                           |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_font_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_font_color)                                                                   |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_scroll_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_scroll_color)                                                               |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_scroll_hovered_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_scroll_hovered_color)                                               |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/completion_selected_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_selected_color)                                                           |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/control_flow_keyword_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/control_flow_keyword_color)                                                         |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/current_line_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/current_line_color)                                                                         |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/doc_comment_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/doc_comment_color)                                                                           |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/engine_type_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/engine_type_color)                                                                           |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/executing_line_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/executing_line_color)                                                                     |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/folded_code_region_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/folded_code_region_color)                                                             |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/function_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/function_color)                                                                                 |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/keyword_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/keyword_color)                                                                                   |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/line_length_guideline_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/line_length_guideline_color)                                                       |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/line_number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/line_number_color)                                                                           |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/mark_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/mark_color)                                                                                         |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/member_variable_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/member_variable_color)                                                                   |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/number_color)                                                                                     |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/safe_line_number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color)                                                                 |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/search_result_border_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/search_result_border_color)                                                         |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/search_result_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/search_result_color)                                                                       |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/selection_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/selection_color)                                                                               |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/string_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/string_color)                                                                                     |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/symbol_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/symbol_color)                                                                                     |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/text_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/text_color)                                                                                         |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/text_selected_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/text_selected_color)                                                                       |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/user_type_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/user_type_color)                                                                               |
+| [`Color`](class_color.md)                         | [`text_editor/theme/highlighting/word_highlighted_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/word_highlighted_color)                                                                 |
+| [`int`](class_int.md)                             | [`text_editor/theme/line_spacing`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/line_spacing)                                                                                                               |
+| [`String`](class_string.md)                       | [`version_control/ssh_private_key_path`](class_editorsettings.md#class_editorsettings_property_version_control/ssh_private_key_path)                                                                                                   |
+| [`String`](class_string.md)                       | [`version_control/ssh_public_key_path`](class_editorsettings.md#class_editorsettings_property_version_control/ssh_public_key_path)                                                                                                     |
+| [`String`](class_string.md)                       | [`version_control/username`](class_editorsettings.md#class_editorsettings_property_version_control/username)                                                                                                                           |
 
 ## 方法
 
-| `void`                                            | [`add_property_info`](#class_editorsettings_method_add_property_info) ( info: [`Dictionary`](class_dictionary.md) )                                                                                                 |
-| [`bool`](class_bool.md)                           | [`check_changed_settings_in_group`](#class_editorsettings_method_check_changed_settings_in_group) ( setting_prefix: [`String`](class_string.md) ) const[^const]                                                     |
-| `void`                                            | [`erase`](#class_editorsettings_method_erase) ( property: [`String`](class_string.md) )                                                                                                                             |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_changed_settings`](#class_editorsettings_method_get_changed_settings) ( ) const[^const]                                                                                                                       |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_favorites`](#class_editorsettings_method_get_favorites) ( ) const[^const]                                                                                                                                     |
-| [`Variant`](class_variant.md)                     | [`get_project_metadata`](#class_editorsettings_method_get_project_metadata) ( section: [`String`](class_string.md), key: [`String`](class_string.md), default: [`Variant`](class_variant.md) = null ) const[^const] |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_recent_dirs`](#class_editorsettings_method_get_recent_dirs) ( ) const[^const]                                                                                                                                 |
-| [`Variant`](class_variant.md)                     | [`get_setting`](#class_editorsettings_method_get_setting) ( name: [`String`](class_string.md) ) const[^const]                                                                                                       |
-| [`bool`](class_bool.md)                           | [`has_setting`](#class_editorsettings_method_has_setting) ( name: [`String`](class_string.md) ) const[^const]                                                                                                       |
-| `void`                                            | [`mark_setting_changed`](#class_editorsettings_method_mark_setting_changed) ( setting: [`String`](class_string.md) )                                                                                                |
-| `void`                                            | [`set_builtin_action_override`](#class_editorsettings_method_set_builtin_action_override) ( name: [`String`](class_string.md), actions_list: [Array](class_array.md) [`InputEvent`](class_inputevent.md) )          |
-| `void`                                            | [`set_favorites`](#class_editorsettings_method_set_favorites) ( dirs: [`PackedStringArray`](class_packedstringarray.md) )                                                                                           |
-| `void`                                            | [`set_initial_value`](#class_editorsettings_method_set_initial_value) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md), update_current: [`bool`](class_bool.md) )                  |
-| `void`                                            | [`set_project_metadata`](#class_editorsettings_method_set_project_metadata) ( section: [`String`](class_string.md), key: [`String`](class_string.md), data: [`Variant`](class_variant.md) )                         |
-| `void`                                            | [`set_recent_dirs`](#class_editorsettings_method_set_recent_dirs) ( dirs: [`PackedStringArray`](class_packedstringarray.md) )                                                                                       |
-| `void`                                            | [`set_setting`](#class_editorsettings_method_set_setting) ( name: [`String`](class_string.md), value: [`Variant`](class_variant.md) )                                                                               |
+|||
+|:-:|:--|
+| `void`                                            | [`add_property_info`](class_editorsettings.md#class_editorsettings_method_add_property_info) ( info: [`Dictionary`](class_dictionary.md) )                                                                                                 |
+| [`bool`](class_bool.md)                           | [`check_changed_settings_in_group`](class_editorsettings.md#class_editorsettings_method_check_changed_settings_in_group) ( setting_prefix: [`String`](class_string.md) ) const[^const]                                                     |
+| `void`                                            | [`erase`](class_editorsettings.md#class_editorsettings_method_erase) ( property: [`String`](class_string.md) )                                                                                                                             |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_changed_settings`](class_editorsettings.md#class_editorsettings_method_get_changed_settings) ( ) const[^const]                                                                                                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_favorites`](class_editorsettings.md#class_editorsettings_method_get_favorites) ( ) const[^const]                                                                                                                                     |
+| [`Variant`](class_variant.md)                     | [`get_project_metadata`](class_editorsettings.md#class_editorsettings_method_get_project_metadata) ( section: [`String`](class_string.md), key: [`String`](class_string.md), default: [`Variant`](class_variant.md) = null ) const[^const] |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_recent_dirs`](class_editorsettings.md#class_editorsettings_method_get_recent_dirs) ( ) const[^const]                                                                                                                                 |
+| [`Variant`](class_variant.md)                     | [`get_setting`](class_editorsettings.md#class_editorsettings_method_get_setting) ( name: [`String`](class_string.md) ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)                           | [`has_setting`](class_editorsettings.md#class_editorsettings_method_has_setting) ( name: [`String`](class_string.md) ) const[^const]                                                                                                       |
+| `void`                                            | [`mark_setting_changed`](class_editorsettings.md#class_editorsettings_method_mark_setting_changed) ( setting: [`String`](class_string.md) )                                                                                                |
+| `void`                                            | [`set_builtin_action_override`](class_editorsettings.md#class_editorsettings_method_set_builtin_action_override) ( name: [`String`](class_string.md), actions_list: [Array](class_array.md) [`InputEvent`](class_inputevent.md) )          |
+| `void`                                            | [`set_favorites`](class_editorsettings.md#class_editorsettings_method_set_favorites) ( dirs: [`PackedStringArray`](class_packedstringarray.md) )                                                                                           |
+| `void`                                            | [`set_initial_value`](class_editorsettings.md#class_editorsettings_method_set_initial_value) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md), update_current: [`bool`](class_bool.md) )                  |
+| `void`                                            | [`set_project_metadata`](class_editorsettings.md#class_editorsettings_method_set_project_metadata) ( section: [`String`](class_string.md), key: [`String`](class_string.md), data: [`Variant`](class_variant.md) )                         |
+| `void`                                            | [`set_recent_dirs`](class_editorsettings.md#class_editorsettings_method_set_recent_dirs) ( dirs: [`PackedStringArray`](class_packedstringarray.md) )                                                                                       |
+| `void`                                            | [`set_setting`](class_editorsettings.md#class_editorsettings_method_set_setting) ( name: [`String`](class_string.md), value: [`Variant`](class_variant.md) )                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -425,11 +495,23 @@ Emitted after any editor setting has changed. It's used by various editor plugin
 
 ## 属性说明
 
+<div id="_class_editorsettings_property_asset_library/use_threads"></div>
+
+[`bool`](class_bool.md) **asset_library/use_threads** <div id="class_editorsettings_property_asset_library/use_threads"></div>
+
+If `true`, the Asset Library uses multiple threads for its HTTP requests. This prevents the Asset Library from blocking the main thread for every loaded asset.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_debugger/auto_switch_to_remote_scene_tree"></div>
 
 [`bool`](class_bool.md) **debugger/auto_switch_to_remote_scene_tree** <div id="class_editorsettings_property_debugger/auto_switch_to_remote_scene_tree"></div>
 
 If `true`, automatically switches to the **Remote** scene tree when running the project from the editor. If `false`, stays on the **Local** scene tree when running the project from the editor.
+
+ **Warning:** Enabling this setting can cause stuttering when running a project with a large amount of nodes (typically a few thousands of nodes or more), even if the editor window isn't focused. This is due to the remote scene tree being updated every second regardless of whether the editor is focused.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -467,6 +549,16 @@ The maximum number of script functions that can be displayed per frame in the pr
 
 ---
 
+<div id="_class_editorsettings_property_debugger/profiler_target_fps"></div>
+
+[`int`](class_int.md) **debugger/profiler_target_fps** <div id="class_editorsettings_property_debugger/profiler_target_fps"></div>
+
+The target frame rate shown in the visual profiler graph, in frames per second.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_debugger/remote_inspect_refresh_interval"></div>
 
 [`float`](class_float.md) **debugger/remote_inspect_refresh_interval** <div id="class_editorsettings_property_debugger/remote_inspect_refresh_interval"></div>
@@ -499,11 +591,21 @@ If `true`, displays folders in the FileSystem dock's bottom pane when split mode
 
 ---
 
+<div id="_class_editorsettings_property_docks/filesystem/other_file_extensions"></div>
+
+[`String`](class_string.md) **docks/filesystem/other_file_extensions** <div id="class_editorsettings_property_docks/filesystem/other_file_extensions"></div>
+
+A comma separated list of unsupported file extensions to show in the FileSystem dock, e.g. `"ico,icns"`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_docks/filesystem/textfile_extensions"></div>
 
 [`String`](class_string.md) **docks/filesystem/textfile_extensions** <div id="class_editorsettings_property_docks/filesystem/textfile_extensions"></div>
 
-List of file extensions to consider as editable text files in the FileSystem dock (by double-clicking on the files).
+A comma separated list of file extensions to consider as editable text files in the FileSystem dock (by double-clicking on the files), e.g. `"txt,md,cfg,ini,log,json,yml,yaml,toml,xml"`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -513,7 +615,7 @@ List of file extensions to consider as editable text files in the FileSystem doc
 
 [`int`](class_int.md) **docks/filesystem/thumbnail_size** <div id="class_editorsettings_property_docks/filesystem/thumbnail_size"></div>
 
-The thumbnail size to use in the FileSystem dock (in pixels). See also [`filesystem/file_dialog/thumbnail_size`](#class_editorsettings_property_filesystem/file_dialog/thumbnail_size).
+The thumbnail size to use in the FileSystem dock (in pixels). See also [`filesystem/file_dialog/thumbnail_size`](class_editorsettings.md#class_editorsettings_property_filesystem/file_dialog/thumbnail_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -534,6 +636,26 @@ The refresh interval to use for the Inspector dock's properties. The effect of t
 [`float`](class_float.md) **docks/property_editor/subresource_hue_tint** <div id="class_editorsettings_property_docks/property_editor/subresource_hue_tint"></div>
 
 The tint intensity to use for the subresources background in the Inspector dock. The tint is used to distinguish between different subresources in the inspector. Higher values result in a more noticeable background color difference.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_docks/scene_tree/ask_before_deleting_related_animation_tracks"></div>
+
+[`bool`](class_bool.md) **docks/scene_tree/ask_before_deleting_related_animation_tracks** <div id="class_editorsettings_property_docks/scene_tree/ask_before_deleting_related_animation_tracks"></div>
+
+If `true`, when a node is deleted with animation tracks referencing it, a confirmation dialog appears before the tracks are deleted. The dialog will appear even when using the "Delete (No Confirm)" shortcut.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_docks/scene_tree/ask_before_revoking_unique_name"></div>
+
+[`bool`](class_bool.md) **docks/scene_tree/ask_before_revoking_unique_name** <div id="class_editorsettings_property_docks/scene_tree/ask_before_revoking_unique_name"></div>
+
+If `true`, displays a confirmation dialog before left-clicking the "percent" icon next to a node name in the Scene tree dock. When clicked, this icon revokes the node's scene-unique name, which can impact the behavior of scripts that rely on this scene-unique name due to identifiers not being found anymore.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -603,7 +725,7 @@ The color to use for inverse kinematics-enabled bones in the 2D skeleton editor.
 
 [`Color`](class_color.md) **editors/2d/bone_outline_color** <div id="class_editorsettings_property_editors/2d/bone_outline_color"></div>
 
-The outline color to use for non-selected bones in the 2D skeleton editor. See also [`editors/2d/bone_selected_color`](#class_editorsettings_property_editors/2d/bone_selected_color).
+The outline color to use for non-selected bones in the 2D skeleton editor. See also [`editors/2d/bone_selected_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_selected_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -613,7 +735,7 @@ The outline color to use for non-selected bones in the 2D skeleton editor. See a
 
 [`float`](class_float.md) **editors/2d/bone_outline_size** <div id="class_editorsettings_property_editors/2d/bone_outline_size"></div>
 
-The outline size in the 2D skeleton editor (in pixels). See also [`editors/2d/bone_width`](#class_editorsettings_property_editors/2d/bone_width).
+The outline size in the 2D skeleton editor (in pixels). See also [`editors/2d/bone_width`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_width).
 
  **Note:** Changes to this value only apply after modifying a [`Bone2D`](class_bone2d.md) node in any way, or closing and reopening the scene.
 
@@ -625,7 +747,7 @@ The outline size in the 2D skeleton editor (in pixels). See also [`editors/2d/bo
 
 [`Color`](class_color.md) **editors/2d/bone_selected_color** <div id="class_editorsettings_property_editors/2d/bone_selected_color"></div>
 
-The color to use for selected bones in the 2D skeleton editor. See also [`editors/2d/bone_outline_color`](#class_editorsettings_property_editors/2d/bone_outline_color).
+The color to use for selected bones in the 2D skeleton editor. See also [`editors/2d/bone_outline_color`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_outline_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -635,7 +757,7 @@ The color to use for selected bones in the 2D skeleton editor. See also [`editor
 
 [`float`](class_float.md) **editors/2d/bone_width** <div id="class_editorsettings_property_editors/2d/bone_width"></div>
 
-The bone width in the 2D skeleton editor (in pixels). See also [`editors/2d/bone_outline_size`](#class_editorsettings_property_editors/2d/bone_outline_size).
+The bone width in the 2D skeleton editor (in pixels). See also [`editors/2d/bone_outline_size`](class_editorsettings.md#class_editorsettings_property_editors/2d/bone_outline_size).
 
  **Note:** Changes to this value only apply after modifying a [`Bone2D`](class_bone2d.md) node in any way, or closing and reopening the scene.
 
@@ -677,7 +799,7 @@ The color to use when drawing smart snapping lines in the 2D editor. The smart s
 
 [`bool`](class_bool.md) **editors/2d/use_integer_zoom_by_default** <div id="class_editorsettings_property_editors/2d/use_integer_zoom_by_default"></div>
 
-If `true`, the 2D editor will snap to integer zoom values while not holding the <i class="fa fa-gamepad"></i>`Alt` key and powers of two while holding it. If `false`, this behavior is swapped.
+If `true`, the 2D editor will snap to integer zoom values when not holding the <i class="fa fa-gamepad"></i>`Alt` key. If `false`, this behavior is swapped.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -688,6 +810,16 @@ If `true`, the 2D editor will snap to integer zoom values while not holding the 
 [`Color`](class_color.md) **editors/2d/viewport_border_color** <div id="class_editorsettings_property_editors/2d/viewport_border_color"></div>
 
 The color of the viewport border in the 2D editor. This border represents the viewport's size at the base resolution defined in the Project Settings. Objects placed outside this border will not be visible unless a [`Camera2D`](class_camera2d.md) node is used, or unless the window is resized and the stretch mode is set to `disabled`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/2d/zoom_speed_factor"></div>
+
+[`float`](class_float.md) **editors/2d/zoom_speed_factor** <div id="class_editorsettings_property_editors/2d/zoom_speed_factor"></div>
+
+The factor to use when zooming in or out in the 2D editor. For example, `1.1` will zoom in by 10% with every step. If set to `2.0`, zooming will only cycle through powers of two.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -771,7 +903,7 @@ The navigation scheme to use when freelook is enabled in the 3D editor. Some of 
 
 - **Fully Axis-Locked:** The "Freelook Forward", "Freelook Backward", "Freelook Up" and "Freelook Down" keys will move in an "absolute" manner, *not* taking the camera's pitch angle into account for the movement.
 
-See also [`editors/3d/navigation/navigation_scheme`](#class_editorsettings_property_editors/3d/navigation/navigation_scheme).
+See also [`editors/3d/navigation/navigation_scheme`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/navigation_scheme).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -781,7 +913,7 @@ See also [`editors/3d/navigation/navigation_scheme`](#class_editorsettings_prope
 
 [`float`](class_float.md) **editors/3d/freelook/freelook_sensitivity** <div id="class_editorsettings_property_editors/3d/freelook/freelook_sensitivity"></div>
 
-The mouse sensitivity to use while freelook mode is active in the 3D editor. See also [`editors/3d/navigation_feel/orbit_sensitivity`](#class_editorsettings_property_editors/3d/navigation_feel/orbit_sensitivity).
+The mouse sensitivity to use while freelook mode is active in the 3D editor. See also [`editors/3d/navigation_feel/orbit_sensitivity`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation_feel/orbit_sensitivity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -811,7 +943,7 @@ The grid division bias to use in the 3D editor. Negative values will cause small
 
 [`int`](class_int.md) **editors/3d/grid_division_level_max** <div id="class_editorsettings_property_editors/3d/grid_division_level_max"></div>
 
-The largest grid division to use in the 3D editor. Together with [`editors/3d/primary_grid_steps`](#class_editorsettings_property_editors/3d/primary_grid_steps), this determines how large the grid divisions can be. The grid divisions will not be able to get larger than `primary_grid_steps ^ grid_division_level_max` units. By default, when [`editors/3d/primary_grid_steps`](#class_editorsettings_property_editors/3d/primary_grid_steps) is `8`, this means grid divisions cannot get larger than `64` units each (so primary grid lines are `512` units apart), no matter how far away the camera is from the grid.
+The largest grid division to use in the 3D editor. Together with [`editors/3d/primary_grid_steps`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_steps), this determines how large the grid divisions can be. The grid divisions will not be able to get larger than `primary_grid_steps ^ grid_division_level_max` units. By default, when [`editors/3d/primary_grid_steps`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_steps) is `8`, this means grid divisions cannot get larger than `64` units each (so primary grid lines are `512` units apart), no matter how far away the camera is from the grid.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -821,7 +953,7 @@ The largest grid division to use in the 3D editor. Together with [`editors/3d/pr
 
 [`int`](class_int.md) **editors/3d/grid_division_level_min** <div id="class_editorsettings_property_editors/3d/grid_division_level_min"></div>
 
-The smallest grid division to use in the 3D editor. Together with [`editors/3d/primary_grid_steps`](#class_editorsettings_property_editors/3d/primary_grid_steps), this determines how small the grid divisions can be. The grid divisions will not be able to get smaller than `primary_grid_steps ^ grid_division_level_min` units. By default, this means grid divisions cannot get smaller than 1 unit each, no matter how close the camera is from the grid.
+The smallest grid division to use in the 3D editor. Together with [`editors/3d/primary_grid_steps`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_steps), this determines how small the grid divisions can be. The grid divisions will not be able to get smaller than `primary_grid_steps ^ grid_division_level_min` units. By default, this means grid divisions cannot get smaller than 1 unit each, no matter how close the camera is from the grid.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -841,7 +973,7 @@ The grid size in units. Higher values prevent the grid from appearing "cut off" 
 
 [`bool`](class_bool.md) **editors/3d/grid_xy_plane** <div id="class_editorsettings_property_editors/3d/grid_xy_plane"></div>
 
-If `true`, render the grid on an XY plane. This can be useful for 3D side-scrolling games.
+If `true`, renders the grid on the XY plane in perspective view. This can be useful for 3D side-scrolling games.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -851,7 +983,7 @@ If `true`, render the grid on an XY plane. This can be useful for 3D side-scroll
 
 [`bool`](class_bool.md) **editors/3d/grid_xz_plane** <div id="class_editorsettings_property_editors/3d/grid_xz_plane"></div>
 
-If `true`, render the grid on an XZ plane.
+If `true`, renders the grid on the XZ plane in perspective view.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -861,7 +993,27 @@ If `true`, render the grid on an XZ plane.
 
 [`bool`](class_bool.md) **editors/3d/grid_yz_plane** <div id="class_editorsettings_property_editors/3d/grid_yz_plane"></div>
 
-If `true`, render the grid on a YZ plane. This can be useful for 3D side-scrolling games.
+If `true`, renders the grid on the YZ plane in perspective view. This can be useful for 3D side-scrolling games.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d/manipulator_gizmo_opacity"></div>
+
+[`float`](class_float.md) **editors/3d/manipulator_gizmo_opacity** <div id="class_editorsettings_property_editors/3d/manipulator_gizmo_opacity"></div>
+
+Opacity of the default gizmo for moving, rotating, and scaling 3D nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d/manipulator_gizmo_size"></div>
+
+[`int`](class_int.md) **editors/3d/manipulator_gizmo_size** <div id="class_editorsettings_property_editors/3d/manipulator_gizmo_size"></div>
+
+Size of the default gizmo for moving, rotating, and scaling 3D nodes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -874,8 +1026,6 @@ If `true`, render the grid on a YZ plane. This can be useful for 3D side-scrolli
 If `true`, enables 3-button mouse emulation mode. This is useful on laptops when using a trackpad.
 
 When 3-button mouse emulation mode is enabled, the pan, zoom and orbit modifiers can always be used in the 3D editor viewport, even when not holding down any mouse button.
-
- **Note:** No matter the orbit modifier configured in [`editors/3d/navigation/orbit_modifier`](#class_editorsettings_property_editors/3d/navigation/orbit_modifier), <i class="fa fa-gamepad"></i>`Alt` will always remain usable for orbiting in this mode to improve usability with graphics tablets.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -915,15 +1065,17 @@ If `true`, invert the vertical mouse axis when panning, orbiting, or using freel
 
 [`int`](class_int.md) **editors/3d/navigation/navigation_scheme** <div id="class_editorsettings_property_editors/3d/navigation/navigation_scheme"></div>
 
-The navigation scheme to use in the 3D editor. Changing this setting will affect the mouse buttons that must be held down to perform certain operations in the 3D editor viewport.
+The navigation scheme preset to use in the 3D editor. Changing this setting will affect the mouse button and modifier controls used to navigate the 3D editor viewport.
 
-- **Godot** Middle mouse button to orbit, <i class="fa fa-gamepad"></i>`Shift + Middle mouse button` to pan. <i class="fa fa-gamepad"></i>`Mouse wheel` to zoom.
+All schemes can use <i class="fa fa-gamepad"></i>`Mouse wheel` to zoom.
 
-- **Maya:** <i class="fa fa-gamepad"></i>`Alt + Left mouse button` to orbit. <i class="fa fa-gamepad"></i>`Middle mouse button` to pan, <i class="fa fa-gamepad"></i>`Shift + Middle mouse button` to pan 10 times faster. <i class="fa fa-gamepad"></i>`Mouse wheel` to zoom.
+- **Godot:** <i class="fa fa-gamepad"></i>`Middle mouse button` to orbit. <i class="fa fa-gamepad"></i>`Shift + Middle mouse button` to pan. <i class="fa fa-gamepad"></i>`Ctrl + Shift + Middle mouse button` to zoom.
+
+- **Maya:** <i class="fa fa-gamepad"></i>`Alt + Left mouse button` to orbit. <i class="fa fa-gamepad"></i>`Middle mouse button` to pan, <i class="fa fa-gamepad"></i>`Shift + Middle mouse button` to pan 10 times faster. <i class="fa fa-gamepad"></i>`Alt + Right mouse button` to zoom.
 
 - **Modo:** <i class="fa fa-gamepad"></i>`Alt + Left mouse button` to orbit. <i class="fa fa-gamepad"></i>`Alt + Shift + Left mouse button` to pan. <i class="fa fa-gamepad"></i>`Ctrl + Alt + Left mouse button` to zoom.
 
-See also [`editors/3d/freelook/freelook_navigation_scheme`](#class_editorsettings_property_editors/3d/freelook/freelook_navigation_scheme).
+See also [`editors/3d/navigation/orbit_mouse_button`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/orbit_mouse_button), [`editors/3d/navigation/pan_mouse_button`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/pan_mouse_button), [`editors/3d/navigation/zoom_mouse_button`](class_editorsettings.md#class_editorsettings_property_editors/3d/navigation/zoom_mouse_button), and [`editors/3d/freelook/freelook_navigation_scheme`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_navigation_scheme).
 
  **Note:** On certain window managers on Linux, the <i class="fa fa-gamepad"></i>`Alt` key will be intercepted by the window manager when clicking a mouse button at the same time. This means Godot will not see the modifier key as being pressed.
 
@@ -931,27 +1083,41 @@ See also [`editors/3d/freelook/freelook_navigation_scheme`](#class_editorsetting
 
 ---
 
-<div id="_class_editorsettings_property_editors/3d/navigation/orbit_modifier"></div>
+<div id="_class_editorsettings_property_editors/3d/navigation/orbit_mouse_button"></div>
 
-[`int`](class_int.md) **editors/3d/navigation/orbit_modifier** <div id="class_editorsettings_property_editors/3d/navigation/orbit_modifier"></div>
+[`int`](class_int.md) **editors/3d/navigation/orbit_mouse_button** <div id="class_editorsettings_property_editors/3d/navigation/orbit_mouse_button"></div>
 
-The modifier key that must be held to orbit in the 3D editor.
-
- **Note:** If [`editors/3d/navigation/emulate_3_button_mouse`](#class_editorsettings_property_editors/3d/navigation/emulate_3_button_mouse) is `true`, <i class="fa fa-gamepad"></i>`Alt` will always remain usable for orbiting to improve usability with graphics tablets.
-
- **Note:** On certain window managers on Linux, the <i class="fa fa-gamepad"></i>`Alt` key will be intercepted by the window manager when clicking a mouse button at the same time. This means Godot will not see the modifier key as being pressed.
+The mouse button that needs to be held down to orbit in the 3D editor viewport.
 
 <!-- rst-class:: classref-item-separator -->
 
 ---
 
-<div id="_class_editorsettings_property_editors/3d/navigation/pan_modifier"></div>
+<div id="_class_editorsettings_property_editors/3d/navigation/pan_mouse_button"></div>
 
-[`int`](class_int.md) **editors/3d/navigation/pan_modifier** <div id="class_editorsettings_property_editors/3d/navigation/pan_modifier"></div>
+[`int`](class_int.md) **editors/3d/navigation/pan_mouse_button** <div id="class_editorsettings_property_editors/3d/navigation/pan_mouse_button"></div>
 
-The modifier key that must be held to pan in the 3D editor.
+The mouse button that needs to be held down to pan in the 3D editor viewport.
 
- **Note:** On certain window managers on Linux, the <i class="fa fa-gamepad"></i>`Alt` key will be intercepted by the window manager when clicking a mouse button at the same time. This means Godot will not see the modifier key as being pressed.
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d/navigation/show_viewport_navigation_gizmo"></div>
+
+[`bool`](class_bool.md) **editors/3d/navigation/show_viewport_navigation_gizmo** <div id="class_editorsettings_property_editors/3d/navigation/show_viewport_navigation_gizmo"></div>
+
+If `true`, shows gizmos for moving and rotating the camera in the bottom corners of the 3D editor's viewport. Useful for devices that use touch screen.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d/navigation/show_viewport_rotation_gizmo"></div>
+
+[`bool`](class_bool.md) **editors/3d/navigation/show_viewport_rotation_gizmo** <div id="class_editorsettings_property_editors/3d/navigation/show_viewport_rotation_gizmo"></div>
+
+If `true`, shows a small orientation gizmo in the top-right corner of the 3D editor's viewports.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -967,13 +1133,11 @@ If `true`, warps the mouse around the 3D viewport while panning in the 3D editor
 
 ---
 
-<div id="_class_editorsettings_property_editors/3d/navigation/zoom_modifier"></div>
+<div id="_class_editorsettings_property_editors/3d/navigation/zoom_mouse_button"></div>
 
-[`int`](class_int.md) **editors/3d/navigation/zoom_modifier** <div id="class_editorsettings_property_editors/3d/navigation/zoom_modifier"></div>
+[`int`](class_int.md) **editors/3d/navigation/zoom_mouse_button** <div id="class_editorsettings_property_editors/3d/navigation/zoom_mouse_button"></div>
 
-The modifier key that must be held to zoom in the 3D editor.
-
- **Note:** On certain window managers on Linux, the <i class="fa fa-gamepad"></i>`Alt` key will be intercepted by the window manager when clicking a mouse button at the same time. This means Godot will not see the modifier key as being pressed.
+The mouse button that needs to be held down to zoom in the 3D editor viewport.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1003,7 +1167,7 @@ The inertia to use when orbiting in the 3D editor. Higher values make the camera
 
 [`float`](class_float.md) **editors/3d/navigation_feel/orbit_sensitivity** <div id="class_editorsettings_property_editors/3d/navigation_feel/orbit_sensitivity"></div>
 
-The mouse sensitivity to use when orbiting in the 3D editor. See also [`editors/3d/freelook/freelook_sensitivity`](#class_editorsettings_property_editors/3d/freelook/freelook_sensitivity).
+The mouse sensitivity to use when orbiting in the 3D editor. See also [`editors/3d/freelook/freelook_sensitivity`](class_editorsettings.md#class_editorsettings_property_editors/3d/freelook/freelook_sensitivity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1043,7 +1207,7 @@ The color to use for the primary 3D grid. The color's alpha channel affects the 
 
 [`int`](class_int.md) **editors/3d/primary_grid_steps** <div id="class_editorsettings_property_editors/3d/primary_grid_steps"></div>
 
-If set above 0, where a primary grid line should be drawn. By default, primary lines are configured to be more visible than secondary lines. This helps with measurements in the 3D editor. See also [`editors/3d/primary_grid_color`](#class_editorsettings_property_editors/3d/primary_grid_color) and [`editors/3d/secondary_grid_color`](#class_editorsettings_property_editors/3d/secondary_grid_color).
+If set above 0, where a primary grid line should be drawn. By default, primary lines are configured to be more visible than secondary lines. This helps with measurements in the 3D editor. See also [`editors/3d/primary_grid_color`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_color) and [`editors/3d/secondary_grid_color`](class_editorsettings.md#class_editorsettings_property_editors/3d/secondary_grid_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1053,7 +1217,7 @@ If set above 0, where a primary grid line should be drawn. By default, primary l
 
 [`Color`](class_color.md) **editors/3d/secondary_grid_color** <div id="class_editorsettings_property_editors/3d/secondary_grid_color"></div>
 
-The color to use for the secondary 3D grid. This is generally a less visible color than [`editors/3d/primary_grid_color`](#class_editorsettings_property_editors/3d/primary_grid_color). The color's alpha channel affects the grid's opacity.
+The color to use for the secondary 3D grid. This is generally a less visible color than [`editors/3d/primary_grid_color`](class_editorsettings.md#class_editorsettings_property_editors/3d/primary_grid_color). The color's alpha channel affects the grid's opacity.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1079,6 +1243,46 @@ The color to use for the AABB gizmo that displays the [`GeometryInstance3D`](cla
 
 ---
 
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/camera"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/camera** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/camera"></div>
+
+The 3D editor gizmo color for [`Camera3D`](class_camera3d.md) s.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/csg"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/csg** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/csg"></div>
+
+The 3D editor gizmo color for CSG nodes (such as [`CSGShape3D`](class_csgshape3d.md) or [`CSGBox3D`](class_csgbox3d.md)).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/decal"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/decal** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/decal"></div>
+
+The 3D editor gizmo color for [`Decal`](class_decal.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/fog_volume"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/fog_volume** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/fog_volume"></div>
+
+The 3D editor gizmo color for [`FogVolume`](class_fogvolume.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/instantiated"></div>
 
 [`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/instantiated** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/instantiated"></div>
@@ -1094,6 +1298,186 @@ The color override to use for 3D editor gizmos if the [`Node3D`](class_node3d.md
 [`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/joint** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint"></div>
 
 The 3D editor gizmo color for [`Joint3D`](class_joint3d.md) s and [`PhysicalBone3D`](class_physicalbone3d.md) s.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint_body_a"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/joint_body_a** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint_body_a"></div>
+
+Color for representing [`Joint3D.node_a`](class_joint3d.md#class_joint3d_property_node_a) for some [`Joint3D`](class_joint3d.md) types.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint_body_b"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/joint_body_b** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/joint_body_b"></div>
+
+Color for representing [`Joint3D.node_b`](class_joint3d.md#class_joint3d_property_node_b) for some [`Joint3D`](class_joint3d.md) types.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/lightmap_lines"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/lightmap_lines** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/lightmap_lines"></div>
+
+Color of lines displayed in baked [`LightmapGI`](class_lightmapgi.md) node's grid.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/lightprobe_lines"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/lightprobe_lines** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/lightprobe_lines"></div>
+
+The 3D editor gizmo color used for [`LightmapProbe`](class_lightmapprobe.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/occluder"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/occluder** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/occluder"></div>
+
+The 3D editor gizmo color used for [`OccluderInstance3D`](class_occluderinstance3d.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particle_attractor"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/particle_attractor** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particle_attractor"></div>
+
+The 3D editor gizmo color used for [`GPUParticlesAttractor3D`](class_gpuparticlesattractor3d.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particle_collision"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/particle_collision** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particle_collision"></div>
+
+The 3D editor gizmo color used for [`GPUParticlesCollision3D`](class_gpuparticlescollision3d.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particles"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/particles** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/particles"></div>
+
+The 3D editor gizmo color used for [`CPUParticles3D`](class_cpuparticles3d.md) and [`GPUParticles3D`](class_gpuparticles3d.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/path_tilt"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/path_tilt** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/path_tilt"></div>
+
+The 3D editor gizmo color used for [`Path3D`](class_path3d.md) tilt circles, which indicate the direction the [`Curve3D`](class_curve3d.md) is tilted towards.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/reflection_probe"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/reflection_probe** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/reflection_probe"></div>
+
+The 3D editor gizmo color used for [`ReflectionProbe`](class_reflectionprobe.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/selected_bone"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/selected_bone** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/selected_bone"></div>
+
+The 3D editor gizmo color used for the currently selected [`Skeleton3D`](class_skeleton3d.md) bone.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/skeleton"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/skeleton** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/skeleton"></div>
+
+The 3D editor gizmo color used for [`Skeleton3D`](class_skeleton3d.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/stream_player_3d"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/stream_player_3d** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/stream_player_3d"></div>
+
+The 3D editor gizmo color used for [`AudioStreamPlayer3D`](class_audiostreamplayer3d.md)'s emission angle.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/visibility_notifier"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/visibility_notifier** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/visibility_notifier"></div>
+
+The 3D editor gizmo color used for [`VisibleOnScreenNotifier3D`](class_visibleonscreennotifier3d.md) and [`VisibleOnScreenEnabler3D`](class_visibleonscreenenabler3d.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_colors/voxel_gi"></div>
+
+[`Color`](class_color.md) **editors/3d_gizmos/gizmo_colors/voxel_gi** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_colors/voxel_gi"></div>
+
+The 3D editor gizmo color used for [`VoxelGI`](class_voxelgi.md) nodes.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_settings/bone_axis_length"></div>
+
+[`float`](class_float.md) **editors/3d_gizmos/gizmo_settings/bone_axis_length** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_settings/bone_axis_length"></div>
+
+The length of [`Skeleton3D`](class_skeleton3d.md) bone gizmos in the 3D editor.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_settings/bone_shape"></div>
+
+[`int`](class_int.md) **editors/3d_gizmos/gizmo_settings/bone_shape** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_settings/bone_shape"></div>
+
+The shape of [`Skeleton3D`](class_skeleton3d.md) bone gizmos in the 3D editor. **Wire** is a thin line, while **Octahedron** is a set of lines that represent a thicker hollow line pointing in a specific direction (similar to most 3D animation software).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/3d_gizmos/gizmo_settings/path3d_tilt_disk_size"></div>
+
+[`float`](class_float.md) **editors/3d_gizmos/gizmo_settings/path3d_tilt_disk_size** <div id="class_editorsettings_property_editors/3d_gizmos/gizmo_settings/path3d_tilt_disk_size"></div>
+
+Size of the disk gizmo displayed when editing [`Path3D`](class_path3d.md)'s tilt handles.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1161,11 +1545,81 @@ The modulate color to use for "past" frames displayed in the animation editor's 
 
 ---
 
+<div id="_class_editorsettings_property_editors/bone_mapper/handle_colors/error"></div>
+
+[`Color`](class_color.md) **editors/bone_mapper/handle_colors/error** <div id="class_editorsettings_property_editors/bone_mapper/handle_colors/error"></div>
+
+该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/bone_mapper/handle_colors/missing"></div>
+
+[`Color`](class_color.md) **editors/bone_mapper/handle_colors/missing** <div id="class_editorsettings_property_editors/bone_mapper/handle_colors/missing"></div>
+
+该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/bone_mapper/handle_colors/set"></div>
+
+[`Color`](class_color.md) **editors/bone_mapper/handle_colors/set** <div id="class_editorsettings_property_editors/bone_mapper/handle_colors/set"></div>
+
+该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/bone_mapper/handle_colors/unset"></div>
+
+[`Color`](class_color.md) **editors/bone_mapper/handle_colors/unset** <div id="class_editorsettings_property_editors/bone_mapper/handle_colors/unset"></div>
+
+该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/grid_map/editor_side"></div>
+
+[`int`](class_int.md) **editors/grid_map/editor_side** <div id="class_editorsettings_property_editors/grid_map/editor_side"></div>
+
+Specifies the side of 3D editor's viewport where GridMap's mesh palette will appear.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/grid_map/palette_min_width"></div>
+
+[`int`](class_int.md) **editors/grid_map/palette_min_width** <div id="class_editorsettings_property_editors/grid_map/palette_min_width"></div>
+
+Minimum width of GridMap's mesh palette side panel.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_editors/grid_map/pick_distance"></div>
 
 [`float`](class_float.md) **editors/grid_map/pick_distance** <div id="class_editorsettings_property_editors/grid_map/pick_distance"></div>
 
 The maximum distance at which tiles can be placed on a GridMap, relative to the camera position (in 3D units).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_editors/grid_map/preview_size"></div>
+
+[`int`](class_int.md) **editors/grid_map/preview_size** <div id="class_editorsettings_property_editors/grid_map/preview_size"></div>
+
+Texture size of mesh previews generated for GridMap's MeshLibrary.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1185,7 +1639,7 @@ The panning speed when using the mouse wheel or touchscreen events in the 2D edi
 
 [`int`](class_int.md) **editors/panning/2d_editor_panning_scheme** <div id="class_editorsettings_property_editors/panning/2d_editor_panning_scheme"></div>
 
-Controls whether the mouse wheel scroll zooms or pans in the 2D editor. See also [`editors/panning/sub_editors_panning_scheme`](#class_editorsettings_property_editors/panning/sub_editors_panning_scheme) and [`editors/panning/animation_editors_panning_scheme`](#class_editorsettings_property_editors/panning/animation_editors_panning_scheme).
+Controls whether the mouse wheel scroll zooms or pans in the 2D editor. See also [`editors/panning/sub_editors_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/sub_editors_panning_scheme) and [`editors/panning/animation_editors_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/animation_editors_panning_scheme).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1195,7 +1649,7 @@ Controls whether the mouse wheel scroll zooms or pans in the 2D editor. See also
 
 [`int`](class_int.md) **editors/panning/animation_editors_panning_scheme** <div id="class_editorsettings_property_editors/panning/animation_editors_panning_scheme"></div>
 
-Controls whether the mouse wheel scroll zooms or pans in the animation track and Bezier editors. See also [`editors/panning/2d_editor_panning_scheme`](#class_editorsettings_property_editors/panning/2d_editor_panning_scheme) and [`editors/panning/sub_editors_panning_scheme`](#class_editorsettings_property_editors/panning/sub_editors_panning_scheme) (which controls the animation blend tree editor's pan behavior).
+Controls whether the mouse wheel scroll zooms or pans in the animation track and Bezier editors. See also [`editors/panning/2d_editor_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/2d_editor_panning_scheme) and [`editors/panning/sub_editors_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/sub_editors_panning_scheme) (which controls the animation blend tree editor's pan behavior).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1215,7 +1669,7 @@ If `true`, allows panning by holding down <i class="fa fa-gamepad"></i>`Space` i
 
 [`int`](class_int.md) **editors/panning/sub_editors_panning_scheme** <div id="class_editorsettings_property_editors/panning/sub_editors_panning_scheme"></div>
 
-Controls whether the mouse wheel scroll zooms or pans in subeditors. The list of affected subeditors is: animation blend tree editor, [`Polygon2D`](class_polygon2d.md) editor, tileset editor, texture region editor and visual shader editor. See also [`editors/panning/2d_editor_panning_scheme`](#class_editorsettings_property_editors/panning/2d_editor_panning_scheme) and [`editors/panning/animation_editors_panning_scheme`](#class_editorsettings_property_editors/panning/animation_editors_panning_scheme).
+Controls whether the mouse wheel scroll zooms or pans in subeditors. The list of affected subeditors is: animation blend tree editor, [`Polygon2D`](class_polygon2d.md) editor, tileset editor, texture region editor and visual shader editor. See also [`editors/panning/2d_editor_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/2d_editor_panning_scheme) and [`editors/panning/animation_editors_panning_scheme`](class_editorsettings.md#class_editorsettings_property_editors/panning/animation_editors_panning_scheme).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1275,7 +1729,7 @@ If `true`, reopens shader files that were open in the shader editor when the pro
 
 [`bool`](class_bool.md) **editors/tiles_editor/display_grid** <div id="class_editorsettings_property_editors/tiles_editor/display_grid"></div>
 
-If `true`, displays a grid while the TileMap editor is active. See also [`editors/tiles_editor/grid_color`](#class_editorsettings_property_editors/tiles_editor/grid_color).
+If `true`, displays a grid while the TileMap editor is active. See also [`editors/tiles_editor/grid_color`](class_editorsettings.md#class_editorsettings_property_editors/tiles_editor/grid_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1287,7 +1741,7 @@ If `true`, displays a grid while the TileMap editor is active. See also [`editor
 
 The color to use for the TileMap editor's grid.
 
- **Note:** Only effective if [`editors/tiles_editor/display_grid`](#class_editorsettings_property_editors/tiles_editor/display_grid) is `true`.
+ **Note:** Only effective if [`editors/tiles_editor/display_grid`](class_editorsettings.md#class_editorsettings_property_editors/tiles_editor/display_grid) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1533,11 +1987,33 @@ The size to use for port previews in the visual shader uniforms (toggled by clic
 
 ---
 
+<div id="_class_editorsettings_property_export/ssh/scp"></div>
+
+[`String`](class_string.md) **export/ssh/scp** <div id="class_editorsettings_property_export/ssh/scp"></div>
+
+Path to the SCP (secure copy) executable (used for remote deploy to desktop platforms). If left empty, the editor will attempt to run `scp` from `PATH`.
+
+ **Note:** SCP is not the same as SFTP. Specifying the SFTP executable here will not work.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_export/ssh/ssh"></div>
+
+[`String`](class_string.md) **export/ssh/ssh** <div id="class_editorsettings_property_export/ssh/ssh"></div>
+
+Path to the SSH executable (used for remote deploy to desktop platforms). If left empty, the editor will attempt to run `ssh` from `PATH`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_filesystem/directories/autoscan_project_path"></div>
 
 [`String`](class_string.md) **filesystem/directories/autoscan_project_path** <div id="class_editorsettings_property_filesystem/directories/autoscan_project_path"></div>
 
-The folder where projects should be scanned for (recursively), in a way similar to the project manager's **Scan** button. This can be set to the same value as [`filesystem/directories/default_project_path`](#class_editorsettings_property_filesystem/directories/default_project_path) for convenience.
+The folder where projects should be scanned for (recursively), in a way similar to the project manager's **Scan** button. This can be set to the same value as [`filesystem/directories/default_project_path`](class_editorsettings.md#class_editorsettings_property_filesystem/directories/default_project_path) for convenience.
 
  **Note:** Setting this path to a folder with very large amounts of files/folders can slow down the project manager startup significantly. To keep the project manager quick to start up, it is recommended to set this value to a folder as "specific" as possible.
 
@@ -1549,7 +2025,7 @@ The folder where projects should be scanned for (recursively), in a way similar 
 
 [`String`](class_string.md) **filesystem/directories/default_project_path** <div id="class_editorsettings_property_filesystem/directories/default_project_path"></div>
 
-The folder where new projects should be created by default when clicking the project manager's **New Project** button. This can be set to the same value as [`filesystem/directories/autoscan_project_path`](#class_editorsettings_property_filesystem/directories/autoscan_project_path) for convenience.
+The folder where new projects should be created by default when clicking the project manager's **New Project** button. This can be set to the same value as [`filesystem/directories/autoscan_project_path`](class_editorsettings.md#class_editorsettings_property_filesystem/directories/autoscan_project_path) for convenience.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1603,7 +2079,7 @@ To use Command Prompt (cmd) instead of PowerShell on Windows, enter `cmd` in thi
 
 On macOS, make sure to point to the actual program binary located within the `Programs/MacOS` folder of the .app bundle, rather than the .app bundle directory.
 
-If specifying a custom terminal emulator, you may need to override [`filesystem/external_programs/terminal_emulator_flags`](#class_editorsettings_property_filesystem/external_programs/terminal_emulator_flags) so it opens in the correct folder.
+If specifying a custom terminal emulator, you may need to override [`filesystem/external_programs/terminal_emulator_flags`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/terminal_emulator_flags) so it opens in the correct folder.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1613,7 +2089,7 @@ If specifying a custom terminal emulator, you may need to override [`filesystem/
 
 [`String`](class_string.md) **filesystem/external_programs/terminal_emulator_flags** <div id="class_editorsettings_property_filesystem/external_programs/terminal_emulator_flags"></div>
 
-The command-line arguments to pass to the terminal emulator that is run when using **Open in Terminal** context menu action in the FileSystem dock. See also [`filesystem/external_programs/terminal_emulator`](#class_editorsettings_property_filesystem/external_programs/terminal_emulator).
+The command-line arguments to pass to the terminal emulator that is run when using **Open in Terminal** context menu action in the FileSystem dock. See also [`filesystem/external_programs/terminal_emulator`](class_editorsettings.md#class_editorsettings_property_filesystem/external_programs/terminal_emulator).
 
 If left empty, the default flags are `{directory}`, which is replaced by the absolute path to the directory that is being opened in the terminal.
 
@@ -1661,7 +2137,27 @@ If `true`, display hidden files in the editor's file dialogs. Files that have na
 
 [`int`](class_int.md) **filesystem/file_dialog/thumbnail_size** <div id="class_editorsettings_property_filesystem/file_dialog/thumbnail_size"></div>
 
-The thumbnail size to use in the editor's file dialogs (in pixels). See also [`docks/filesystem/thumbnail_size`](#class_editorsettings_property_docks/filesystem/thumbnail_size).
+The thumbnail size to use in the editor's file dialogs (in pixels). See also [`docks/filesystem/thumbnail_size`](class_editorsettings.md#class_editorsettings_property_docks/filesystem/thumbnail_size).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_filesystem/file_server/password"></div>
+
+[`String`](class_string.md) **filesystem/file_server/password** <div id="class_editorsettings_property_filesystem/file_server/password"></div>
+
+Password used for file server when exporting project with remote file system.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_filesystem/file_server/port"></div>
+
+[`int`](class_int.md) **filesystem/file_server/port** <div id="class_editorsettings_property_filesystem/file_server/port"></div>
+
+Port used for file server when exporting project with remote file system.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1673,7 +2169,7 @@ The thumbnail size to use in the editor's file dialogs (in pixels). See also [`d
 
 The path to the directory containing the Blender executable used for converting the Blender 3D scene files `.blend` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-To enable this feature for your specific project, use [`ProjectSettings.filesystem/import/blender/enabled`](#class_projectsettings_property_filesystem/import/blender/enabled).
+To enable this feature for your specific project, use [`ProjectSettings.filesystem/import/blender/enabled`](class_projectsettings.md#class_projectsettings_property_filesystem/import/blender/enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1709,7 +2205,7 @@ This prevents Godot from having to create a new process for each import within t
 
 The path to the FBX2glTF executable used for converting Autodesk FBX 3D scene files `.fbx` to glTF 2.0 format during import.
 
-To enable this feature for your specific project, use [`ProjectSettings.filesystem/import/fbx2gltf/enabled`](#class_projectsettings_property_filesystem/import/fbx2gltf/enabled).
+To enable this feature for your specific project, use [`ProjectSettings.filesystem/import/fbx2gltf/enabled`](class_projectsettings.md#class_projectsettings_property_filesystem/import/fbx2gltf/enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1737,13 +2233,33 @@ If `true`, when saving a file, the editor will rename the old file to a differen
 
 ---
 
+<div id="_class_editorsettings_property_filesystem/quick_open_dialog/default_display_mode"></div>
+
+[`int`](class_int.md) **filesystem/quick_open_dialog/default_display_mode** <div id="class_editorsettings_property_filesystem/quick_open_dialog/default_display_mode"></div>
+
+If set to `Adaptive`, the dialog opens in list view or grid view depending on the requested type. If set to `Last Used`, the display mode will always open the way you last used it.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_filesystem/quick_open_dialog/include_addons"></div>
+
+[`bool`](class_bool.md) **filesystem/quick_open_dialog/include_addons** <div id="class_editorsettings_property_filesystem/quick_open_dialog/include_addons"></div>
+
+If `true`, results will include files located in the `addons` folder.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_filesystem/tools/oidn/oidn_denoise_path"></div>
 
 [`String`](class_string.md) **filesystem/tools/oidn/oidn_denoise_path** <div id="class_editorsettings_property_filesystem/tools/oidn/oidn_denoise_path"></div>
 
 The path to the directory containing the Open Image Denoise (OIDN) executable, used optionally for denoising lightmaps. It can be downloaded from [*openimagedenoise.org*](https://www.openimagedenoise.org/downloads.html).
 
-To enable this feature for your specific project, use [`ProjectSettings.rendering/lightmapping/denoising/denoiser`](#class_projectsettings_property_rendering/lightmapping/denoising/denoiser).
+To enable this feature for your specific project, use [`ProjectSettings.rendering/lightmapping/denoising/denoiser`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/denoising/denoiser).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1853,7 +2369,7 @@ List of alternative characters to use, if supported by the currently configured 
 
 [`int`](class_int.md) **interface/editor/code_font_size** <div id="class_editorsettings_property_interface/editor/code_font_size"></div>
 
-The size of the font in the script editor. This setting does not impact the font size of the Output panel (see [`run/output/font_size`](#class_editorsettings_property_run/output/font_size)).
+The size of the font in the script editor. This setting does not impact the font size of the Output panel (see [`run/output/font_size`](class_editorsettings.md#class_editorsettings_property_run/output/font_size)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1865,7 +2381,7 @@ The size of the font in the script editor. This setting does not impact the font
 
 The custom editor scale factor to use. This can be used for displays with very high DPI where a scale factor of 200% is not sufficient.
 
- **Note:** Only effective if [`interface/editor/display_scale`](#class_editorsettings_property_interface/editor/display_scale) is set to **Custom**.
+ **Note:** Only effective if [`interface/editor/display_scale`](class_editorsettings.md#class_editorsettings_property_interface/editor/display_scale) is set to **Custom**.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1879,7 +2395,7 @@ The display scale factor to use for the editor interface. Higher values are more
 
 If set to **Auto**, the editor scale is automatically determined based on the screen resolution and reported display DPI. This heuristic is not always ideal, which means you can get better results by setting the editor scale manually.
 
-If set to **Custom**, the scaling value in [`interface/editor/custom_display_scale`](#class_editorsettings_property_interface/editor/custom_display_scale) will be used.
+If set to **Custom**, the scaling value in [`interface/editor/custom_display_scale`](class_editorsettings.md#class_editorsettings_property_interface/editor/custom_display_scale) will be used.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1911,7 +2427,7 @@ Translations are provided by the community. If you spot a mistake, [*contribute 
 
 [`int`](class_int.md) **interface/editor/editor_screen** <div id="class_editorsettings_property_interface/editor/editor_screen"></div>
 
-The preferred monitor to display the editor.
+The preferred monitor to display the editor. If **Auto**, the editor will remember the last screen it was displayed on across restarts.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1921,9 +2437,19 @@ The preferred monitor to display the editor.
 
 [`bool`](class_bool.md) **interface/editor/expand_to_title** <div id="class_editorsettings_property_interface/editor/expand_to_title"></div>
 
-Expanding main editor window content to the title, if supported by [`DisplayServer`](class_displayserver.md). See [`DisplayServer.WINDOW_FLAG_EXTEND_TO_TITLE`](#class_displayserver_constant_window_flag_extend_to_title).
+Expanding main editor window content to the title, if supported by [`DisplayServer`](class_displayserver.md). See [`DisplayServer.WINDOW_FLAG_EXTEND_TO_TITLE`](class_displayserver.md#class_displayserver_constant_window_flag_extend_to_title).
 
 Specific to the macOS platform.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_interface/editor/font_allow_msdf"></div>
+
+[`bool`](class_bool.md) **interface/editor/font_allow_msdf** <div id="class_editorsettings_property_interface/editor/font_allow_msdf"></div>
+
+If set to `true`, MSDF font rendering will be used for the visual shader graph editor. You may need to set this to `false` when using a custom main font, as some fonts will look broken due to the use of self-intersecting outlines in their font data. Downloading the font from the font maker's official website as opposed to a service like Google Fonts can help resolve this issue.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1987,13 +2513,23 @@ If `true`, (re)imports resources even if the editor window is unfocused or minim
 
 ---
 
+<div id="_class_editorsettings_property_interface/editor/keep_screen_on"></div>
+
+[`bool`](class_bool.md) **interface/editor/keep_screen_on** <div id="class_editorsettings_property_interface/editor/keep_screen_on"></div>
+
+If `true`, keeps the screen on (even in case of inactivity), so the screensaver does not take over. Works on desktop and mobile platforms.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_interface/editor/localize_settings"></div>
 
 [`bool`](class_bool.md) **interface/editor/localize_settings** <div id="class_editorsettings_property_interface/editor/localize_settings"></div>
 
 If `true`, setting names in the editor are localized when possible.
 
- **Note:** This setting affects most [`EditorInspector`](class_editorinspector.md) s in the editor UI, primarily Project Settings and Editor Settings. To control names displayed in the Inspector dock, use [`interface/inspector/default_property_name_style`](#class_editorsettings_property_interface/inspector/default_property_name_style) instead.
+ **Note:** This setting affects most [`EditorInspector`](class_editorinspector.md) s in the editor UI, primarily Project Settings and Editor Settings. To control names displayed in the Inspector dock, use [`interface/inspector/default_property_name_style`](class_editorsettings.md#class_editorsettings_property_interface/inspector/default_property_name_style) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2003,9 +2539,9 @@ If `true`, setting names in the editor are localized when possible.
 
 [`int`](class_int.md) **interface/editor/low_processor_mode_sleep_usec** <div id="class_editorsettings_property_interface/editor/low_processor_mode_sleep_usec"></div>
 
-The amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops. However, higher values will result in a less responsive editor. The default value is set to allow for maximum smoothness on monitors up to 144 Hz. See also [`interface/editor/unfocused_low_processor_mode_sleep_usec`](#class_editorsettings_property_interface/editor/unfocused_low_processor_mode_sleep_usec).
+The amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops. However, higher values will result in a less responsive editor. The default value is set to allow for maximum smoothness on monitors up to 144 Hz. See also [`interface/editor/unfocused_low_processor_mode_sleep_usec`](class_editorsettings.md#class_editorsettings_property_interface/editor/unfocused_low_processor_mode_sleep_usec).
 
- **Note:** This setting is ignored if [`interface/editor/update_continuously`](#class_editorsettings_property_interface/editor/update_continuously) is `true`, as enabling that setting disables low-processor mode.
+ **Note:** This setting is ignored if [`interface/editor/update_continuously`](class_editorsettings.md#class_editorsettings_property_interface/editor/update_continuously) is `true`, as enabling that setting disables low-processor mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2075,7 +2611,7 @@ If `false`, the editor will save all scenes when confirming the **Save** action 
 
 [`bool`](class_bool.md) **interface/editor/save_on_focus_loss** <div id="class_editorsettings_property_interface/editor/save_on_focus_loss"></div>
 
-If `true`, scenes and scripts are saved when the editor loses focus. Depending on the work flow, this behavior can be less intrusive than [`text_editor/behavior/files/autosave_interval_secs`](#class_editorsettings_property_text_editor/behavior/files/autosave_interval_secs) or remembering to save manually.
+If `true`, scenes and scripts are saved when the editor loses focus. Depending on the work flow, this behavior can be less intrusive than [`text_editor/behavior/files/autosave_interval_secs`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/files/autosave_interval_secs) or remembering to save manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2113,7 +2649,7 @@ Consider enabling this if you are developing editor plugins to ensure they only 
 
 The default **Auto** value will only enable this if the editor was compiled with the `dev_build=yes` SCons option (the default is `dev_build=no`).
 
- **Note:** If [`interface/editor/update_continuously`](#class_editorsettings_property_interface/editor/update_continuously) is `true`, the spinner icon displays in red.
+ **Note:** If [`interface/editor/update_continuously`](class_editorsettings.md#class_editorsettings_property_interface/editor/update_continuously) is `true`, the spinner icon displays in red.
 
  **Note:** If the editor was started with the `--debug-canvas-item-redraw` [*command line argument*](../tutorials/editor/command_line_tutorial), the update spinner will *never* display regardless of this setting's value. This is to avoid confusion with what would cause redrawing in real world scenarios.
 
@@ -2127,9 +2663,9 @@ The default **Auto** value will only enable this if the editor was compiled with
 
 If `true`, embed modal windows such as docks inside the main editor window. When single-window mode is enabled, tooltips will also be embedded inside the main editor window, which means they can't be displayed outside of the editor window. Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
 
-This is equivalent to [`ProjectSettings.display/window/subwindows/embed_subwindows`](#class_projectsettings_property_display/window/subwindows/embed_subwindows) in the running project, except the setting's value is inverted.
+This is equivalent to [`ProjectSettings.display/window/subwindows/embed_subwindows`](class_projectsettings.md#class_projectsettings_property_display/window/subwindows/embed_subwindows) in the running project, except the setting's value is inverted.
 
- **Note:** To query whether the editor can use multiple windows in an editor plugin, use [`EditorInterface.is_multi_window_enabled`](#class_editorinterface_method_is_multi_window_enabled) instead of querying the value of this editor setting.
+ **Note:** To query whether the editor can use multiple windows in an editor plugin, use [`EditorInterface.is_multi_window_enabled`](class_editorinterface.md#class_editorinterface_method_is_multi_window_enabled) instead of querying the value of this editor setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2149,9 +2685,9 @@ Editor UI default layout direction.
 
 [`int`](class_int.md) **interface/editor/unfocused_low_processor_mode_sleep_usec** <div id="class_editorsettings_property_interface/editor/unfocused_low_processor_mode_sleep_usec"></div>
 
-When the editor window is unfocused, the amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops (in addition to improving the running project's performance if the editor has to redraw continuously). However, higher values will result in a less responsive editor. The default value is set to limit the editor to 20 FPS when the editor window is unfocused. See also [`interface/editor/low_processor_mode_sleep_usec`](#class_editorsettings_property_interface/editor/low_processor_mode_sleep_usec).
+When the editor window is unfocused, the amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops (in addition to improving the running project's performance if the editor has to redraw continuously). However, higher values will result in a less responsive editor. The default value is set to limit the editor to 20 FPS when the editor window is unfocused. See also [`interface/editor/low_processor_mode_sleep_usec`](class_editorsettings.md#class_editorsettings_property_interface/editor/low_processor_mode_sleep_usec).
 
- **Note:** This setting is ignored if [`interface/editor/update_continuously`](#class_editorsettings_property_interface/editor/update_continuously) is `true`, as enabling that setting disables low-processor mode.
+ **Note:** This setting is ignored if [`interface/editor/update_continuously`](class_editorsettings.md#class_editorsettings_property_interface/editor/update_continuously) is `true`, as enabling that setting disables low-processor mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2161,7 +2697,7 @@ When the editor window is unfocused, the amount of sleeping between frames when 
 
 [`bool`](class_bool.md) **interface/editor/update_continuously** <div id="class_editorsettings_property_interface/editor/update_continuously"></div>
 
-If `true`, redraws the editor every frame even if nothing has changed on screen. When this setting is enabled, the update spinner displays in red (see [`interface/editor/show_update_spinner`](#class_editorsettings_property_interface/editor/show_update_spinner)).
+If `true`, redraws the editor every frame even if nothing has changed on screen. When this setting is enabled, the update spinner displays in red (see [`interface/editor/show_update_spinner`](class_editorsettings.md#class_editorsettings_property_interface/editor/show_update_spinner)).
 
  **Warning:** This greatly increases CPU and GPU utilization, leading to increased power usage. This should only be enabled for troubleshooting purposes.
 
@@ -2195,11 +2731,31 @@ If `true`, editor UI uses OS native file/directory selection dialogs.
 
 [`int`](class_int.md) **interface/editor/vsync_mode** <div id="class_editorsettings_property_interface/editor/vsync_mode"></div>
 
-Sets the V-Sync mode for the editor. Does not affect the project when run from the editor (this is controlled by [`ProjectSettings.display/window/vsync/vsync_mode`](#class_projectsettings_property_display/window/vsync/vsync_mode)).
+Sets the V-Sync mode for the editor. Does not affect the project when run from the editor (this is controlled by [`ProjectSettings.display/window/vsync/vsync_mode`](class_projectsettings.md#class_projectsettings_property_display/window/vsync/vsync_mode)).
 
 Depending on the platform and used renderer, the engine will fall back to **Enabled** if the desired mode is not supported.
 
  **Note:** V-Sync modes other than **Enabled** are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_interface/editors/derive_script_globals_by_name"></div>
+
+[`bool`](class_bool.md) **interface/editors/derive_script_globals_by_name** <div id="class_editorsettings_property_interface/editors/derive_script_globals_by_name"></div>
+
+If `true`, when extending a script, the global class name of the script is inserted in the script creation dialog, if it exists. If `false`, the script's file path is always inserted.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_interface/editors/show_scene_tree_root_selection"></div>
+
+[`bool`](class_bool.md) **interface/editors/show_scene_tree_root_selection** <div id="class_editorsettings_property_interface/editors/show_scene_tree_root_selection"></div>
+
+If `true`, the Scene dock will display buttons to quickly add a root node to a newly created scene.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2257,7 +2813,7 @@ The default property name style to display in the Inspector dock. This style can
 
 - **Localized:** Displays the localized string for the current editor language if a translation is available for the given property. If no translation is available, falls back to **Capitalized**.
 
- **Note:** To display translated setting names in Project Settings and Editor Settings, use [`interface/editor/localize_settings`](#class_editorsettings_property_interface/editor/localize_settings) instead.
+ **Note:** To display translated setting names in Project Settings and Editor Settings, use [`interface/editor/localize_settings`](class_editorsettings.md#class_editorsettings_property_interface/editor/localize_settings) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2269,7 +2825,7 @@ The default property name style to display in the Inspector dock. This style can
 
 If `true`, add a margin around Array, Dictionary, and Resource Editors that are not already colored.
 
- **Note:** If [`interface/inspector/nested_color_mode`](#class_editorsettings_property_interface/inspector/nested_color_mode) is set to **Containers & Resources** this parameter will have no effect since those editors will already be colored
+ **Note:** If [`interface/inspector/nested_color_mode`](class_editorsettings.md#class_editorsettings_property_interface/inspector/nested_color_mode) is set to **Containers & Resources** this parameter will have no effect since those editors will already be colored.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2345,7 +2901,7 @@ Control which property editors are colored when they are opened.
 
 [`bool`](class_bool.md) **interface/inspector/open_resources_in_current_inspector** <div id="class_editorsettings_property_interface/inspector/open_resources_in_current_inspector"></div>
 
-If `true`, subresources can be edited in the current inspector view. If the resource type is defined in [`interface/inspector/resources_to_open_in_new_inspector`](#class_editorsettings_property_interface/inspector/resources_to_open_in_new_inspector) or if this setting is `false`, attempting to edit a subresource always opens a new inspector view.
+If `true`, subresources can be edited in the current inspector view. If the resource type is defined in [`interface/inspector/resources_to_open_in_new_inspector`](class_editorsettings.md#class_editorsettings_property_interface/inspector/resources_to_open_in_new_inspector) or if this setting is `false`, attempting to edit a subresource always opens a new inspector view.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2355,7 +2911,7 @@ If `true`, subresources can be edited in the current inspector view. If the reso
 
 [`PackedStringArray`](class_packedstringarray.md) **interface/inspector/resources_to_open_in_new_inspector** <div id="class_editorsettings_property_interface/inspector/resources_to_open_in_new_inspector"></div>
 
-List of resources that should always be opened in a new inspector view, even if [`interface/inspector/open_resources_in_current_inspector`](#class_editorsettings_property_interface/inspector/open_resources_in_current_inspector) is `true`.
+List of resources that should always be opened in a new inspector view, even if [`interface/inspector/open_resources_in_current_inspector`](class_editorsettings.md#class_editorsettings_property_interface/inspector/open_resources_in_current_inspector) is `true`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedStringArray`](class_packedstringarray.md) for more details.
 
@@ -2379,9 +2935,9 @@ If `true`, display OpenType features marked as `hidden` by the font file in the 
 
 If `true`, multiple window support in editor is enabled. The following panels can become dedicated windows (i.e. made floating): Docks, Script editor, and Shader editor.
 
- **Note:** When [`interface/editor/single_window_mode`](#class_editorsettings_property_interface/editor/single_window_mode) is `true`, the multi window support is always disabled.
+ **Note:** When [`interface/editor/single_window_mode`](class_editorsettings.md#class_editorsettings_property_interface/editor/single_window_mode) is `true`, the multi window support is always disabled.
 
- **Note:** To query whether the editor can use multiple windows in an editor plugin, use [`EditorInterface.is_multi_window_enabled`](#class_editorinterface_method_is_multi_window_enabled) instead of querying the value of this editor setting.
+ **Note:** To query whether the editor can use multiple windows in an editor plugin, use [`EditorInterface.is_multi_window_enabled`](class_editorinterface.md#class_editorinterface_method_is_multi_window_enabled) instead of querying the value of this editor setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2477,7 +3033,7 @@ The color to use for "highlighted" user interface elements in the editor (presse
 
 The extra spacing to add to various GUI elements in the editor (in pixels). Increasing this value is useful to improve usability on touch screens, at the cost of reducing the amount of usable screen real estate.
 
-See also [`interface/theme/spacing_preset`](#class_editorsettings_property_interface/theme/spacing_preset).
+See also [`interface/theme/spacing_preset`](class_editorsettings.md#class_editorsettings_property_interface/theme/spacing_preset).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2497,7 +3053,7 @@ The base color to use for user interface elements in the editor. Secondary color
 
 [`int`](class_int.md) **interface/theme/base_spacing** <div id="class_editorsettings_property_interface/theme/base_spacing"></div>
 
-The base spacing used by various GUI elements in the editor (in pixels). See also [`interface/theme/spacing_preset`](#class_editorsettings_property_interface/theme/spacing_preset).
+The base spacing used by various GUI elements in the editor (in pixels). See also [`interface/theme/spacing_preset`](class_editorsettings.md#class_editorsettings_property_interface/theme/spacing_preset).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2517,7 +3073,7 @@ The border size to use for interface elements (in pixels).
 
 [`float`](class_float.md) **interface/theme/contrast** <div id="class_editorsettings_property_interface/theme/contrast"></div>
 
-The contrast factor to use when deriving the editor theme's base color (see [`interface/theme/base_color`](#class_editorsettings_property_interface/theme/base_color)). When using a positive values, the derived colors will be *darker* than the base color. This contrast factor can be set to a negative value, which will make the derived colors *brighter* than the base color. Negative contrast rates often look better for light themes.
+The contrast factor to use when deriving the editor theme's base color (see [`interface/theme/base_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/base_color)). When using a positive values, the derived colors will be *darker* than the base color. This contrast factor can be set to a negative value, which will make the derived colors *brighter* than the base color. Negative contrast rates often look better for light themes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2569,7 +3125,7 @@ If `true`, the editor theme preset will attempt to automatically match the syste
 
 The icon and font color scheme to use in the editor.
 
-- **Auto** determines the color scheme to use automatically based on [`interface/theme/base_color`](#class_editorsettings_property_interface/theme/base_color).
+- **Auto** determines the color scheme to use automatically based on [`interface/theme/base_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/base_color).
 
 - **Dark** makes fonts and icons dark (suitable for light themes). Icon colors are automatically converted by the editor following the set of rules defined in [*this file*](https://github.com/godotengine/godot/blob/master/editor/themes/editor_theme_manager.cpp).
 
@@ -2585,7 +3141,7 @@ The icon and font color scheme to use in the editor.
 
 The saturation to use for editor icons. Higher values result in more vibrant colors.
 
- **Note:** The default editor icon saturation was increased by 30% in Godot 4.0 and later. To get Godot 3.x's icon saturation back, set [`interface/theme/icon_saturation`](#class_editorsettings_property_interface/theme/icon_saturation) to `0.77`.
+ **Note:** The default editor icon saturation was increased by 30% in Godot 4.0 and later. To get Godot 3.x's icon saturation back, set [`interface/theme/icon_saturation`](class_editorsettings.md#class_editorsettings_property_interface/theme/icon_saturation) to `0.77`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2615,7 +3171,7 @@ The opacity to use when drawing relationship lines in the editor's [`Tree`](clas
 
 [`String`](class_string.md) **interface/theme/spacing_preset** <div id="class_editorsettings_property_interface/theme/spacing_preset"></div>
 
-The editor theme spacing preset to use. See also [`interface/theme/base_spacing`](#class_editorsettings_property_interface/theme/base_spacing) and [`interface/theme/additional_spacing`](#class_editorsettings_property_interface/theme/additional_spacing).
+The editor theme spacing preset to use. See also [`interface/theme/base_spacing`](class_editorsettings.md#class_editorsettings_property_interface/theme/base_spacing) and [`interface/theme/additional_spacing`](class_editorsettings.md#class_editorsettings_property_interface/theme/additional_spacing).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2687,7 +3243,7 @@ Specify the multiplier to apply to the scale for the editor gizmo handles to imp
 
 Specifies how the engine should check for updates.
 
-- **Disable Update Checks** will block the engine from checking updates (see also [`network/connection/network_mode`](#class_editorsettings_property_network/connection/network_mode)).
+- **Disable Update Checks** will block the engine from checking updates (see also [`network/connection/network_mode`](class_editorsettings.md#class_editorsettings_property_network/connection/network_mode)).
 
 - **Check Newest Preview** (default for preview versions) will check for the newest available development snapshot.
 
@@ -2735,7 +3291,7 @@ The port to listen to when starting the remote debugger. Godot will try to use p
 
 [`String`](class_string.md) **network/http_proxy/host** <div id="class_editorsettings_property_network/http_proxy/host"></div>
 
-The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset library and export template downloads). See also [`network/http_proxy/port`](#class_editorsettings_property_network/http_proxy/port).
+The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset library and export template downloads). See also [`network/http_proxy/port`](class_editorsettings.md#class_editorsettings_property_network/http_proxy/port).
 
  **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
 
@@ -2747,7 +3303,7 @@ The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset
 
 [`int`](class_int.md) **network/http_proxy/port** <div id="class_editorsettings_property_network/http_proxy/port"></div>
 
-The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset library and export template downloads). See also [`network/http_proxy/host`](#class_editorsettings_property_network/http_proxy/host).
+The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset library and export template downloads). See also [`network/http_proxy/host`](class_editorsettings.md#class_editorsettings_property_network/http_proxy/host).
 
  **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
 
@@ -2839,7 +3395,7 @@ If `true`, the editor will clear the Output panel when running the project.
 
 [`int`](class_int.md) **run/output/font_size** <div id="class_editorsettings_property_run/output/font_size"></div>
 
-The size of the font in the **Output** panel at the bottom of the editor. This setting does not impact the font size of the script editor (see [`interface/editor/code_font_size`](#class_editorsettings_property_interface/editor/code_font_size)).
+The size of the font in the **Output** panel at the bottom of the editor. This setting does not impact the font size of the script editor (see [`interface/editor/code_font_size`](class_editorsettings.md#class_editorsettings_property_interface/editor/code_font_size)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2869,7 +3425,33 @@ If `true`, on Linux/BSD, the editor will check for Wayland first instead of X11 
 
 [`int`](class_int.md) **run/window_placement/android_window** <div id="class_editorsettings_property_run/window_placement/android_window"></div>
 
-The Android window to display the project on when starting the project from the editor.
+Specifies how the Play window is launched relative to the Android editor.
+
+- **Auto (based on screen size)** (default) will automatically choose how to launch the Play window based on the device and screen metrics. Defaults to **Same as Editor** on phones and **Side-by-side with Editor** on tablets.
+
+- **Same as Editor** will launch the Play window in the same window as the Editor.
+
+- **Side-by-side with Editor** will launch the Play window side-by-side with the Editor window.
+
+- **Launch in PiP mode** will launch the Play window directly in picture-in-picture (PiP) mode if PiP mode is supported and enabled. When maximized, the Play window will occupy the same window as the Editor.
+
+ **Note:** Only available in the Android editor.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_run/window_placement/play_window_pip_mode"></div>
+
+[`int`](class_int.md) **run/window_placement/play_window_pip_mode** <div id="class_editorsettings_property_run/window_placement/play_window_pip_mode"></div>
+
+Specifies the picture-in-picture (PiP) mode for the Play window.
+
+- **Disabled:** PiP is disabled for the Play window.
+
+- **Enabled:** If the device supports it, PiP is always enabled for the Play window. The Play window will contain a button to enter PiP mode.
+
+- **Enabled when Play window is same as Editor** (default for Android editor): If the device supports it, PiP is enabled when the Play window is the same as the Editor. The Play window will contain a button to enter PiP mode.
 
  **Note:** Only available in the Android editor.
 
@@ -2891,7 +3473,7 @@ The window mode to use to display the project when starting the project from the
 
 [`Vector2`](class_vector2.md) **run/window_placement/rect_custom_position** <div id="class_editorsettings_property_run/window_placement/rect_custom_position"></div>
 
-The custom position to use when starting the project from the editor (in pixels from the top-left corner). Only effective if [`run/window_placement/rect`](#class_editorsettings_property_run/window_placement/rect) is set to **Custom Position**.
+The custom position to use when starting the project from the editor (in pixels from the top-left corner). Only effective if [`run/window_placement/rect`](class_editorsettings.md#class_editorsettings_property_run/window_placement/rect) is set to **Custom Position**.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2911,7 +3493,7 @@ The monitor to display the project on when starting the project from the editor.
 
 [`bool`](class_bool.md) **text_editor/appearance/caret/caret_blink** <div id="class_editorsettings_property_text_editor/appearance/caret/caret_blink"></div>
 
-If `true`, makes the caret blink according to [`text_editor/appearance/caret/caret_blink_interval`](#class_editorsettings_property_text_editor/appearance/caret/caret_blink_interval). Disabling this setting can improve battery life on laptops if you spend long amounts of time in the script editor, since it will reduce the frequency at which the editor needs to be redrawn.
+If `true`, makes the caret blink according to [`text_editor/appearance/caret/caret_blink_interval`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/caret_blink_interval). Disabling this setting can improve battery life on laptops if you spend long amounts of time in the script editor, since it will reduce the frequency at which the editor needs to be redrawn.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2921,7 +3503,7 @@ If `true`, makes the caret blink according to [`text_editor/appearance/caret/car
 
 [`float`](class_float.md) **text_editor/appearance/caret/caret_blink_interval** <div id="class_editorsettings_property_text_editor/appearance/caret/caret_blink_interval"></div>
 
-The interval at which the caret will blink (in seconds). See also [`text_editor/appearance/caret/caret_blink`](#class_editorsettings_property_text_editor/appearance/caret/caret_blink).
+The interval at which the caret will blink (in seconds). See also [`text_editor/appearance/caret/caret_blink`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/caret_blink).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2931,7 +3513,7 @@ The interval at which the caret will blink (in seconds). See also [`text_editor/
 
 [`bool`](class_bool.md) **text_editor/appearance/caret/highlight_all_occurrences** <div id="class_editorsettings_property_text_editor/appearance/caret/highlight_all_occurrences"></div>
 
-If `true`, highlights all occurrences of the currently selected text in the script editor. See also [`text_editor/theme/highlighting/word_highlighted_color`](#class_editorsettings_property_text_editor/theme/highlighting/word_highlighted_color).
+If `true`, highlights all occurrences of the currently selected text in the script editor. See also [`text_editor/theme/highlighting/word_highlighted_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/word_highlighted_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2941,7 +3523,7 @@ If `true`, highlights all occurrences of the currently selected text in the scri
 
 [`bool`](class_bool.md) **text_editor/appearance/caret/highlight_current_line** <div id="class_editorsettings_property_text_editor/appearance/caret/highlight_current_line"></div>
 
-If `true`, colors the background of the line the caret is currently on with [`text_editor/theme/highlighting/current_line_color`](#class_editorsettings_property_text_editor/theme/highlighting/current_line_color).
+If `true`, colors the background of the line the caret is currently on with [`text_editor/theme/highlighting/current_line_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/current_line_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2961,7 +3543,7 @@ The shape of the caret to use in the script editor. **Line** displays a vertical
 
 [`int`](class_int.md) **text_editor/appearance/guidelines/line_length_guideline_hard_column** <div id="class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column"></div>
 
-The column at which to display a subtle line as a line length guideline for scripts. This should generally be greater than [`text_editor/appearance/guidelines/line_length_guideline_soft_column`](#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column).
+The column at which to display a subtle line as a line length guideline for scripts. This should generally be greater than [`text_editor/appearance/guidelines/line_length_guideline_soft_column`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2971,7 +3553,7 @@ The column at which to display a subtle line as a line length guideline for scri
 
 [`int`](class_int.md) **text_editor/appearance/guidelines/line_length_guideline_soft_column** <div id="class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column"></div>
 
-The column at which to display a *very* subtle line as a line length guideline for scripts. This should generally be lower than [`text_editor/appearance/guidelines/line_length_guideline_hard_column`](#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column).
+The column at which to display a *very* subtle line as a line length guideline for scripts. This should generally be lower than [`text_editor/appearance/guidelines/line_length_guideline_hard_column`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2981,7 +3563,7 @@ The column at which to display a *very* subtle line as a line length guideline f
 
 [`bool`](class_bool.md) **text_editor/appearance/guidelines/show_line_length_guidelines** <div id="class_editorsettings_property_text_editor/appearance/guidelines/show_line_length_guidelines"></div>
 
-If `true`, displays line length guidelines to help you keep line lengths in check. See also [`text_editor/appearance/guidelines/line_length_guideline_soft_column`](#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column) and [`text_editor/appearance/guidelines/line_length_guideline_hard_column`](#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column).
+If `true`, displays line length guidelines to help you keep line lengths in check. See also [`text_editor/appearance/guidelines/line_length_guideline_soft_column`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_soft_column) and [`text_editor/appearance/guidelines/line_length_guideline_hard_column`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/guidelines/line_length_guideline_hard_column).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2991,7 +3573,7 @@ If `true`, displays line length guidelines to help you keep line lengths in chec
 
 [`bool`](class_bool.md) **text_editor/appearance/gutters/highlight_type_safe_lines** <div id="class_editorsettings_property_text_editor/appearance/gutters/highlight_type_safe_lines"></div>
 
-If `true`, highlights type-safe lines by displaying their line number color with [`text_editor/theme/highlighting/safe_line_number_color`](#class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color) instead of [`text_editor/theme/highlighting/line_number_color`](#class_editorsettings_property_text_editor/theme/highlighting/line_number_color). Type-safe lines are lines of code where the type of all variables is known at compile-time. These type-safe lines may run faster thanks to typed instructions.
+If `true`, highlights type-safe lines by displaying their line number color with [`text_editor/theme/highlighting/safe_line_number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color) instead of [`text_editor/theme/highlighting/line_number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/line_number_color). Type-safe lines are lines of code where the type of all variables is known at compile-time. These type-safe lines may run faster thanks to typed instructions.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3031,7 +3613,7 @@ If `true`, displays line numbers in a gutter at the left.
 
 [`int`](class_int.md) **text_editor/appearance/lines/autowrap_mode** <div id="class_editorsettings_property_text_editor/appearance/lines/autowrap_mode"></div>
 
-If [`text_editor/appearance/lines/word_wrap`](#class_editorsettings_property_text_editor/appearance/lines/word_wrap) is set to `1`, sets text wrapping mode. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
+If [`text_editor/appearance/lines/word_wrap`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/lines/word_wrap) is set to `1`, sets text wrapping mode. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3107,6 +3689,16 @@ The space to add between lines (in pixels). Greater line spacing can help improv
 
 ---
 
+<div id="_class_editorsettings_property_text_editor/behavior/files/auto_reload_and_parse_scripts_on_save"></div>
+
+[`bool`](class_bool.md) **text_editor/behavior/files/auto_reload_and_parse_scripts_on_save** <div id="class_editorsettings_property_text_editor/behavior/files/auto_reload_and_parse_scripts_on_save"></div>
+
+If `true`, tool scripts will be automatically soft-reloaded after they are saved.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change"></div>
 
 [`bool`](class_bool.md) **text_editor/behavior/files/auto_reload_scripts_on_external_change** <div id="class_editorsettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change"></div>
@@ -3131,7 +3723,17 @@ If set to a value greater than `0`, automatically saves the current script follo
 
 [`bool`](class_bool.md) **text_editor/behavior/files/convert_indent_on_save** <div id="class_editorsettings_property_text_editor/behavior/files/convert_indent_on_save"></div>
 
-If `true`, converts indentation to match the script editor's indentation settings when saving a script. See also [`text_editor/behavior/indent/type`](#class_editorsettings_property_text_editor/behavior/indent/type).
+If `true`, converts indentation to match the script editor's indentation settings when saving a script. See also [`text_editor/behavior/indent/type`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/indent/type).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/behavior/files/open_dominant_script_on_scene_change"></div>
+
+[`bool`](class_bool.md) **text_editor/behavior/files/open_dominant_script_on_scene_change** <div id="class_editorsettings_property_text_editor/behavior/files/open_dominant_script_on_scene_change"></div>
+
+If `true`, opening a scene automatically opens the script attached to the root node, or the topmost node if the root has no script.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3162,6 +3764,16 @@ If `true`, trims all empty newlines after the final newline when saving a script
 [`bool`](class_bool.md) **text_editor/behavior/files/trim_trailing_whitespace_on_save** <div id="class_editorsettings_property_text_editor/behavior/files/trim_trailing_whitespace_on_save"></div>
 
 If `true`, trims trailing whitespace when saving a script. Trailing whitespace refers to tab and space characters placed at the end of lines. Since these serve no practical purpose, they can and should be removed to make version control diffs less noisy.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/behavior/general/empty_selection_clipboard"></div>
+
+[`bool`](class_bool.md) **text_editor/behavior/general/empty_selection_clipboard** <div id="class_editorsettings_property_text_editor/behavior/general/empty_selection_clipboard"></div>
+
+If `true`, copying or cutting without a selection is performed on all lines with a caret. Otherwise, copy and cut require a selection.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3213,7 +3825,7 @@ The indentation style to use (tabs or spaces).
 
 [`String`](class_string.md) **text_editor/behavior/navigation/custom_word_separators** <div id="class_editorsettings_property_text_editor/behavior/navigation/custom_word_separators"></div>
 
-The characters to consider as word delimiters if [`text_editor/behavior/navigation/use_custom_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators) is `true`. This is in addition to default characters if [`text_editor/behavior/navigation/use_default_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators) is `true`. The characters should be defined without separation, for example `_♥=`.
+The characters to consider as word delimiters if [`text_editor/behavior/navigation/use_custom_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators) is `true`. This is in addition to default characters if [`text_editor/behavior/navigation/use_default_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators) is `true`. The characters should be defined without separation, for example `_♥=`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3263,9 +3875,9 @@ If `true`, allows scrolling past the end of the file.
 
 [`bool`](class_bool.md) **text_editor/behavior/navigation/smooth_scrolling** <div id="class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling"></div>
 
-If `true`, enables a smooth scrolling animation when using the mouse wheel to scroll. See [`text_editor/behavior/navigation/v_scroll_speed`](#class_editorsettings_property_text_editor/behavior/navigation/v_scroll_speed) for the speed of this animation.
+If `true`, enables a smooth scrolling animation when using the mouse wheel to scroll. See [`text_editor/behavior/navigation/v_scroll_speed`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/v_scroll_speed) for the speed of this animation.
 
- **Note:** [`text_editor/behavior/navigation/smooth_scrolling`](#class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling) currently behaves poorly in projects where [`ProjectSettings.physics/common/physics_ticks_per_second`](#class_projectsettings_property_physics/common/physics_ticks_per_second) has been increased significantly from its default value (`60`). In this case, it is recommended to disable this setting.
+ **Note:** [`text_editor/behavior/navigation/smooth_scrolling`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling) currently behaves poorly in projects where [`ProjectSettings.physics/common/physics_ticks_per_second`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_ticks_per_second) has been increased significantly from its default value (`60`). In this case, it is recommended to disable this setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3285,7 +3897,7 @@ If `true`, prevents automatically switching between the Script and 2D/3D screens
 
 [`bool`](class_bool.md) **text_editor/behavior/navigation/use_custom_word_separators** <div id="class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators"></div>
 
-If `true`, uses the characters in [`text_editor/behavior/navigation/custom_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/custom_word_separators) as word separators for word navigation and operations. This is in addition to the default characters if [`text_editor/behavior/navigation/use_default_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators) is also enabled. Word navigation and operations include double-clicking on a word or holding <i class="fa fa-gamepad"></i>`Ctrl` (<i class="fa fa-gamepad"></i>`Cmd` on macOS) while pressing <i class="fa fa-gamepad"></i>`left`, <i class="fa fa-gamepad"></i>`right`, <i class="fa fa-gamepad"></i>`backspace`, or <i class="fa fa-gamepad"></i>`delete`.
+If `true`, uses the characters in [`text_editor/behavior/navigation/custom_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/custom_word_separators) as word separators for word navigation and operations. This is in addition to the default characters if [`text_editor/behavior/navigation/use_default_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators) is also enabled. Word navigation and operations include double-clicking on a word or holding <i class="fa fa-gamepad"></i>`Ctrl` (<i class="fa fa-gamepad"></i>`Cmd` on macOS) while pressing <i class="fa fa-gamepad"></i>`left`, <i class="fa fa-gamepad"></i>`right`, <i class="fa fa-gamepad"></i>`backspace`, or <i class="fa fa-gamepad"></i>`delete`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3295,7 +3907,7 @@ If `true`, uses the characters in [`text_editor/behavior/navigation/custom_word_
 
 [`bool`](class_bool.md) **text_editor/behavior/navigation/use_default_word_separators** <div id="class_editorsettings_property_text_editor/behavior/navigation/use_default_word_separators"></div>
 
-If `true`, uses the characters in ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~`, the Unicode General Punctuation table, and the Unicode CJK Punctuation table as word separators for word navigation and operations. If `false`, a subset of these characters are used and does not include the characters `<>$~^=+|`. This is in addition to custom characters if [`text_editor/behavior/navigation/use_custom_word_separators`](#class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators) is also enabled. These characters are used to determine where a word stops. Word navigation and operations include double-clicking on a word or holding <i class="fa fa-gamepad"></i>`Ctrl` (<i class="fa fa-gamepad"></i>`Cmd` on macOS) while pressing <i class="fa fa-gamepad"></i>`left`, <i class="fa fa-gamepad"></i>`right`, <i class="fa fa-gamepad"></i>`backspace`, or <i class="fa fa-gamepad"></i>`delete`.
+If `true`, uses the characters in ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~`, the Unicode General Punctuation table, and the Unicode CJK Punctuation table as word separators for word navigation and operations. If `false`, a subset of these characters are used and does not include the characters `<>$~^=+|`. This is in addition to custom characters if [`text_editor/behavior/navigation/use_custom_word_separators`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/use_custom_word_separators) is also enabled. These characters are used to determine where a word stops. Word navigation and operations include double-clicking on a word or holding <i class="fa fa-gamepad"></i>`Ctrl` (<i class="fa fa-gamepad"></i>`Cmd` on macOS) while pressing <i class="fa fa-gamepad"></i>`left`, <i class="fa fa-gamepad"></i>`right`, <i class="fa fa-gamepad"></i>`backspace`, or <i class="fa fa-gamepad"></i>`delete`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3305,7 +3917,7 @@ If `true`, uses the characters in ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~`, the Unicod
 
 [`int`](class_int.md) **text_editor/behavior/navigation/v_scroll_speed** <div id="class_editorsettings_property_text_editor/behavior/navigation/v_scroll_speed"></div>
 
-The speed of scrolling in lines per second when [`text_editor/behavior/navigation/smooth_scrolling`](#class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling) is `true`. Higher values make the script scroll by faster when using the mouse wheel.
+The speed of scrolling in lines per second when [`text_editor/behavior/navigation/smooth_scrolling`](class_editorsettings.md#class_editorsettings_property_text_editor/behavior/navigation/smooth_scrolling) is `true`. Higher values make the script scroll by faster when using the mouse wheel.
 
  **Note:** You can hold down <i class="fa fa-gamepad"></i>`Alt` while using the mouse wheel to temporarily scroll 5 times faster.
 
@@ -3367,7 +3979,7 @@ The delay in seconds after which autocompletion suggestions should be displayed 
 
 [`bool`](class_bool.md) **text_editor/completion/code_complete_enabled** <div id="class_editorsettings_property_text_editor/completion/code_complete_enabled"></div>
 
-If `true`, code completion will be triggered automatically after [`text_editor/completion/code_complete_delay`](#class_editorsettings_property_text_editor/completion/code_complete_delay). Even if `false`, code completion can be triggered manually with the `ui_text_completion_query` action (by default <i class="fa fa-gamepad"></i>`Ctrl + Space` or <i class="fa fa-gamepad"></i>`Cmd + Space` on macOS).
+If `true`, code completion will be triggered automatically after [`text_editor/completion/code_complete_delay`](class_editorsettings.md#class_editorsettings_property_text_editor/completion/code_complete_delay). Even if `false`, code completion can be triggered manually with the `ui_text_completion_query` action (by default <i class="fa fa-gamepad"></i>`Ctrl + Space` or <i class="fa fa-gamepad"></i>`Cmd + Space` on macOS).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3423,6 +4035,36 @@ If `true`, performs string autocompletion with single quotes. If `false`, perfor
 
 ---
 
+<div id="_class_editorsettings_property_text_editor/external/exec_flags"></div>
+
+[`String`](class_string.md) **text_editor/external/exec_flags** <div id="class_editorsettings_property_text_editor/external/exec_flags"></div>
+
+The command-line arguments to pass to the external text editor that is run when [`text_editor/external/use_external_editor`](class_editorsettings.md#class_editorsettings_property_text_editor/external/use_external_editor) is `true`. See also [`text_editor/external/exec_path`](class_editorsettings.md#class_editorsettings_property_text_editor/external/exec_path).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/external/exec_path"></div>
+
+[`String`](class_string.md) **text_editor/external/exec_path** <div id="class_editorsettings_property_text_editor/external/exec_path"></div>
+
+The path to the text editor executable used to edit text files if [`text_editor/external/use_external_editor`](class_editorsettings.md#class_editorsettings_property_text_editor/external/use_external_editor) is `true`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/external/use_external_editor"></div>
+
+[`bool`](class_bool.md) **text_editor/external/use_external_editor** <div id="class_editorsettings_property_text_editor/external/use_external_editor"></div>
+
+If `true`, uses an external editor instead of the built-in Script Editor. See also [`text_editor/external/exec_path`](class_editorsettings.md#class_editorsettings_property_text_editor/external/exec_path) and [`text_editor/external/exec_flags`](class_editorsettings.md#class_editorsettings_property_text_editor/external/exec_flags).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_text_editor/help/class_reference_examples"></div>
 
 [`int`](class_int.md) **text_editor/help/class_reference_examples** <div id="class_editorsettings_property_text_editor/help/class_reference_examples"></div>
@@ -3473,11 +4115,61 @@ If `true`, displays a table of contents at the left of the editor help (at the l
 
 ---
 
+<div id="_class_editorsettings_property_text_editor/help/sort_functions_alphabetically"></div>
+
+[`bool`](class_bool.md) **text_editor/help/sort_functions_alphabetically** <div id="class_editorsettings_property_text_editor/help/sort_functions_alphabetically"></div>
+
+If `true`, the script's method list in the Script Editor is sorted alphabetically.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/script_list/group_help_pages"></div>
+
+[`bool`](class_bool.md) **text_editor/script_list/group_help_pages** <div id="class_editorsettings_property_text_editor/script_list/group_help_pages"></div>
+
+If `true`, class reference pages are grouped together at the bottom of the Script Editor's script list.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/script_list/list_script_names_as"></div>
+
+[`int`](class_int.md) **text_editor/script_list/list_script_names_as** <div id="class_editorsettings_property_text_editor/script_list/list_script_names_as"></div>
+
+Specifies how script paths should be displayed in Script Editor's script list. If using the "Name" option and some scripts share the same file name, more parts of their paths are revealed to avoid conflicts.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/script_list/script_temperature_enabled"></div>
+
+[`bool`](class_bool.md) **text_editor/script_list/script_temperature_enabled** <div id="class_editorsettings_property_text_editor/script_list/script_temperature_enabled"></div>
+
+If `true`, the names of recently opened scripts in the Script Editor are highlighted with the accent color, with its intensity based on how recently they were opened.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/script_list/script_temperature_history_size"></div>
+
+[`int`](class_int.md) **text_editor/script_list/script_temperature_history_size** <div id="class_editorsettings_property_text_editor/script_list/script_temperature_history_size"></div>
+
+How many script names can be highlighted at most, if [`text_editor/script_list/script_temperature_enabled`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/script_temperature_enabled) is `true`. Scripts older than this value use the default font color.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorsettings_property_text_editor/script_list/show_members_overview"></div>
 
 [`bool`](class_bool.md) **text_editor/script_list/show_members_overview** <div id="class_editorsettings_property_text_editor/script_list/show_members_overview"></div>
 
-If `true`, displays an overview of the current script's member variables and functions at the left of the script editor. See also [`text_editor/script_list/sort_members_outline_alphabetically`](#class_editorsettings_property_text_editor/script_list/sort_members_outline_alphabetically).
+If `true`, displays an overview of the current script's member variables and functions at the left of the script editor. See also [`text_editor/script_list/sort_members_outline_alphabetically`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/sort_members_outline_alphabetically).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3489,7 +4181,17 @@ If `true`, displays an overview of the current script's member variables and fun
 
 If `true`, sorts the members outline (located at the left of the script editor) using alphabetical order. If `false`, sorts the members outline depending on the order in which members are found in the script.
 
- **Note:** Only effective if [`text_editor/script_list/show_members_overview`](#class_editorsettings_property_text_editor/script_list/show_members_overview) is `true`.
+ **Note:** Only effective if [`text_editor/script_list/show_members_overview`](class_editorsettings.md#class_editorsettings_property_text_editor/script_list/show_members_overview) is `true`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/script_list/sort_scripts_by"></div>
+
+[`int`](class_int.md) **text_editor/script_list/sort_scripts_by** <div id="class_editorsettings_property_text_editor/script_list/sort_scripts_by"></div>
+
+Specifies sorting used for Script Editor's open script list.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3617,7 +4319,7 @@ The script editor's autocompletion box background color.
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/completion_existing_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/completion_existing_color"></div>
 
-The script editor's autocompletion box background color to highlight existing characters in the completion results. This should be a translucent color so that [`text_editor/theme/highlighting/completion_selected_color`](#class_editorsettings_property_text_editor/theme/highlighting/completion_selected_color) can be seen behind.
+The script editor's autocompletion box background color to highlight existing characters in the completion results. This should be a translucent color so that [`text_editor/theme/highlighting/completion_selected_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/completion_selected_color) can be seen behind.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3677,7 +4379,7 @@ The script editor's control flow keyword color (used for keywords like `if`, `fo
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/current_line_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/current_line_color"></div>
 
-The script editor's background color for the line the caret is currently on. This should be set to a translucent color so that it can display on top of other line color modifiers such as [`text_editor/theme/highlighting/mark_color`](#class_editorsettings_property_text_editor/theme/highlighting/mark_color).
+The script editor's background color for the line the caret is currently on. This should be set to a translucent color so that it can display on top of other line color modifiers such as [`text_editor/theme/highlighting/mark_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/mark_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3759,7 +4461,7 @@ The script editor's color for the line length guideline. The "hard" line length 
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/line_number_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/line_number_color"></div>
 
-The script editor's color for line numbers. See also [`text_editor/theme/highlighting/safe_line_number_color`](#class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color).
+The script editor's color for line numbers. See also [`text_editor/theme/highlighting/safe_line_number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3769,7 +4471,7 @@ The script editor's color for line numbers. See also [`text_editor/theme/highlig
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/mark_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/mark_color"></div>
 
-The script editor's background color for lines with errors. This should be set to a translucent color so that it can display on top of other line color modifiers such as [`text_editor/theme/highlighting/current_line_color`](#class_editorsettings_property_text_editor/theme/highlighting/current_line_color).
+The script editor's background color for lines with errors. This should be set to a translucent color so that it can display on top of other line color modifiers such as [`text_editor/theme/highlighting/current_line_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/current_line_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3801,9 +4503,9 @@ The script editor's color for numbers (integer and floating-point).
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/safe_line_number_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/safe_line_number_color"></div>
 
-The script editor's color for type-safe line numbers. See also [`text_editor/theme/highlighting/line_number_color`](#class_editorsettings_property_text_editor/theme/highlighting/line_number_color).
+The script editor's color for type-safe line numbers. See also [`text_editor/theme/highlighting/line_number_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/line_number_color).
 
- **Note:** Only displayed if [`text_editor/appearance/gutters/highlight_type_safe_lines`](#class_editorsettings_property_text_editor/appearance/gutters/highlight_type_safe_lines) is `true`.
+ **Note:** Only displayed if [`text_editor/appearance/gutters/highlight_type_safe_lines`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/gutters/highlight_type_safe_lines) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3873,7 +4575,7 @@ The script editor's color for text not highlighted by any syntax highlighting ru
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/text_selected_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/text_selected_color"></div>
 
-The script editor's background color for text. This should be set to a translucent color so that it can display on top of other line color modifiers such as [`text_editor/theme/highlighting/current_line_color`](#class_editorsettings_property_text_editor/theme/highlighting/current_line_color).
+The script editor's background color for text. This should be set to a translucent color so that it can display on top of other line color modifiers such as [`text_editor/theme/highlighting/current_line_color`](class_editorsettings.md#class_editorsettings_property_text_editor/theme/highlighting/current_line_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3893,7 +4595,47 @@ The script editor's color for user-defined types (using `class_name`).
 
 [`Color`](class_color.md) **text_editor/theme/highlighting/word_highlighted_color** <div id="class_editorsettings_property_text_editor/theme/highlighting/word_highlighted_color"></div>
 
-The script editor's color for words highlighted by selecting them. Only visible if [`text_editor/appearance/caret/highlight_all_occurrences`](#class_editorsettings_property_text_editor/appearance/caret/highlight_all_occurrences) is `true`.
+The script editor's color for words highlighted by selecting them. Only visible if [`text_editor/appearance/caret/highlight_all_occurrences`](class_editorsettings.md#class_editorsettings_property_text_editor/appearance/caret/highlight_all_occurrences) is `true`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_text_editor/theme/line_spacing"></div>
+
+[`int`](class_int.md) **text_editor/theme/line_spacing** <div id="class_editorsettings_property_text_editor/theme/line_spacing"></div>
+
+The vertical line separation used in text editors, in pixels.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_version_control/ssh_private_key_path"></div>
+
+[`String`](class_string.md) **version_control/ssh_private_key_path** <div id="class_editorsettings_property_version_control/ssh_private_key_path"></div>
+
+Path to private SSH key file for the editor's Version Control integration credentials.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_version_control/ssh_public_key_path"></div>
+
+[`String`](class_string.md) **version_control/ssh_public_key_path** <div id="class_editorsettings_property_version_control/ssh_public_key_path"></div>
+
+Path to public SSH key file for the editor's Version Control integration credentials.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorsettings_property_version_control/username"></div>
+
+[`String`](class_string.md) **version_control/username** <div id="class_editorsettings_property_version_control/username"></div>
+
+Default username for editor's Version Control integration.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -3912,8 +4654,6 @@ Adds a custom property info to a property. The dictionary must contain:
 - `type`: [`int`](class_int.md) (see [Variant.Type](#enum_@globalscope_variant.type))
 
 - optionally `hint`: [`int`](class_int.md) (see [PropertyHint](#enum_@globalscope_propertyhint)) and `hint_string`: [`String`](class_string.md) 
-
- **Example:** 
 
 
 
@@ -3962,7 +4702,7 @@ Adds a custom property info to a property. The dictionary must contain:
 
 [`bool`](class_bool.md) **check_changed_settings_in_group** ( setting_prefix: [`String`](class_string.md) ) const[^const]<div id="class_editorsettings_method_check_changed_settings_in_group"></div>
 
-Checks if any settings with the prefix `setting_prefix` exist in the set of changed settings. See also [`get_changed_settings`](#class_editorsettings_method_get_changed_settings).
+Checks if any settings with the prefix `setting_prefix` exist in the set of changed settings. See also [`get_changed_settings`](class_editorsettings.md#class_editorsettings_method_get_changed_settings).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3982,7 +4722,7 @@ Erases the setting whose name is specified by `property`.
 
 [`PackedStringArray`](class_packedstringarray.md) **get_changed_settings** ( ) const[^const]<div id="class_editorsettings_method_get_changed_settings"></div>
 
-Gets an array of the settings which have been changed since the last save. Note that internally `changed_settings` is cleared after a successful save, so generally the most appropriate place to use this method is when processing [`NOTIFICATION_EDITOR_SETTINGS_CHANGED`](#class_editorsettings_constant_notification_editor_settings_changed).
+Gets an array of the settings which have been changed since the last save. Note that internally `changed_settings` is cleared after a successful save, so generally the most appropriate place to use this method is when processing [`NOTIFICATION_EDITOR_SETTINGS_CHANGED`](class_editorsettings.md#class_editorsettings_constant_notification_editor_settings_changed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4002,7 +4742,7 @@ Returns the list of favorite files and directories for this project.
 
 [`Variant`](class_variant.md) **get_project_metadata** ( section: [`String`](class_string.md), key: [`String`](class_string.md), default: [`Variant`](class_variant.md) = null ) const[^const]<div id="class_editorsettings_method_get_project_metadata"></div>
 
-Returns project-specific metadata for the `section` and `key` specified. If the metadata doesn't exist, `default` will be returned instead. See also [`set_project_metadata`](#class_editorsettings_method_set_project_metadata).
+Returns project-specific metadata for the `section` and `key` specified. If the metadata doesn't exist, `default` will be returned instead. See also [`set_project_metadata`](class_editorsettings.md#class_editorsettings_method_set_project_metadata).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4022,7 +4762,7 @@ Returns the list of recently visited folders in the file dialog for this project
 
 [`Variant`](class_variant.md) **get_setting** ( name: [`String`](class_string.md) ) const[^const]<div id="class_editorsettings_method_get_setting"></div>
 
-Returns the value of the setting specified by `name`. This is equivalent to using [`Object.get`](#class_object_method_get) on the EditorSettings instance.
+Returns the value of the setting specified by `name`. This is equivalent to using [`Object.get`](class_object.md#class_object_method_get) on the EditorSettings instance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4042,7 +4782,7 @@ Returns `true` if the setting specified by `name` exists, `false` otherwise.
 
 `void` **mark_setting_changed** ( setting: [`String`](class_string.md) )<div id="class_editorsettings_method_mark_setting_changed"></div>
 
-Marks the passed editor setting as being changed, see [`get_changed_settings`](#class_editorsettings_method_get_changed_settings). Only settings which exist (see [`has_setting`](#class_editorsettings_method_has_setting)) will be accepted.
+Marks the passed editor setting as being changed, see [`get_changed_settings`](class_editorsettings.md#class_editorsettings_method_get_changed_settings). Only settings which exist (see [`has_setting`](class_editorsettings.md#class_editorsettings_method_has_setting)) will be accepted.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4082,7 +4822,7 @@ Sets the initial value of the setting specified by `name` to `value`. This is us
 
 `void` **set_project_metadata** ( section: [`String`](class_string.md), key: [`String`](class_string.md), data: [`Variant`](class_variant.md) )<div id="class_editorsettings_method_set_project_metadata"></div>
 
-Sets project-specific metadata with the `section`, `key` and `data` specified. This metadata is stored outside the project folder and therefore won't be checked into version control. See also [`get_project_metadata`](#class_editorsettings_method_get_project_metadata).
+Sets project-specific metadata with the `section`, `key` and `data` specified. This metadata is stored outside the project folder and therefore won't be checked into version control. See also [`get_project_metadata`](class_editorsettings.md#class_editorsettings_method_get_project_metadata).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4102,7 +4842,7 @@ Sets the list of recently visited folders in the file dialog for this project.
 
 `void` **set_setting** ( name: [`String`](class_string.md), value: [`Variant`](class_variant.md) )<div id="class_editorsettings_method_set_setting"></div>
 
-Sets the `value` of the setting specified by `name`. This is equivalent to using [`Object.set`](#class_object_method_set) on the EditorSettings instance.
+Sets the `value` of the setting specified by `name`. This is equivalent to using [`Object.set`](class_object.md#class_object_method_set) on the EditorSettings instance.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

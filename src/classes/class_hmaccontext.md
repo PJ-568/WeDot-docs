@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/HMACContext.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/HMACContext.xml。 -->
 
 <div id="_class_hmaccontext"></div>
 
@@ -71,9 +71,11 @@ The HMACContext class is useful for advanced HMAC use cases, such as streaming t
 
 ## 方法
 
-| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](#class_hmaccontext_method_finish) ( )                                                                                                        |
-| [Error](#enum_@globalscope_error)             | [`start`](#class_hmaccontext_method_start) ( hash_type: [HashType](#enum_hashingcontext_hashtype), key: [`PackedByteArray`](class_packedbytearray.md) ) |
-| [Error](#enum_@globalscope_error)             | [`update`](#class_hmaccontext_method_update) ( data: [`PackedByteArray`](class_packedbytearray.md) )                                                    |
+|||
+|:-:|:--|
+| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](class_hmaccontext.md#class_hmaccontext_method_finish) ( )                                                                                                        |
+| [Error](#enum_@globalscope_error)             | [`start`](class_hmaccontext.md#class_hmaccontext_method_start) ( hash_type: [HashType](#enum_hashingcontext_hashtype), key: [`PackedByteArray`](class_packedbytearray.md) ) |
+| [Error](#enum_@globalscope_error)             | [`update`](class_hmaccontext.md#class_hmaccontext_method_update) ( data: [`PackedByteArray`](class_packedbytearray.md) )                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -95,7 +97,7 @@ Returns the resulting HMAC. If the HMAC failed, an empty [`PackedByteArray`](cla
 
 [Error](#enum_@globalscope_error) **start** ( hash_type: [HashType](#enum_hashingcontext_hashtype), key: [`PackedByteArray`](class_packedbytearray.md) )<div id="class_hmaccontext_method_start"></div>
 
-Initializes the HMACContext. This method cannot be called again on the same HMACContext until [`finish`](#class_hmaccontext_method_finish) has been called.
+Initializes the HMACContext. This method cannot be called again on the same HMACContext until [`finish`](class_hmaccontext.md#class_hmaccontext_method_finish) has been called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -105,7 +107,7 @@ Initializes the HMACContext. This method cannot be called again on the same HMAC
 
 [Error](#enum_@globalscope_error) **update** ( data: [`PackedByteArray`](class_packedbytearray.md) )<div id="class_hmaccontext_method_update"></div>
 
-Updates the message to be HMACed. This can be called multiple times before [`finish`](#class_hmaccontext_method_finish) is called to append `data` to the message, but cannot be called until [`start`](#class_hmaccontext_method_start) has been called.
+Updates the message to be HMACed. This can be called multiple times before [`finish`](class_hmaccontext.md#class_hmaccontext_method_finish) is called to append `data` to the message, but cannot be called until [`start`](class_hmaccontext.md#class_hmaccontext_method_start) has been called.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

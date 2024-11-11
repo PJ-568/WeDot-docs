@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectRecord.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectRecord.xml。 -->
 
 <div id="_class_audioeffectrecord"></div>
 
@@ -19,17 +19,21 @@ Unlike [`AudioEffectCapture`](class_audioeffectcapture.md), this effect encodes 
 
 Can be used (with an [`AudioStreamMicrophone`](class_audiostreammicrophone.md)) to record from a microphone.
 
- **Note:** [`ProjectSettings.audio/driver/enable_input`](#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+ **Note:** [`ProjectSettings.audio/driver/enable_input`](class_projectsettings.md#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 ## 属性
 
-| [Format](#enum_audiostreamwav_format) | [`format`](#class_audioeffectrecord_property_format) | ``1`` |
+|||
+|:-:|:--|
+| [Format](#enum_audiostreamwav_format) | [`format`](class_audioeffectrecord.md#class_audioeffectrecord_property_format) | ``1`` |
 
 ## 方法
 
-| [`AudioStreamWAV`](class_audiostreamwav.md) | [`get_recording`](#class_audioeffectrecord_method_get_recording) ( ) const[^const]                                 |
-| [`bool`](class_bool.md)                     | [`is_recording_active`](#class_audioeffectrecord_method_is_recording_active) ( ) const[^const]                     |
-| `void`                                      | [`set_recording_active`](#class_audioeffectrecord_method_set_recording_active) ( record: [`bool`](class_bool.md) ) |
+|||
+|:-:|:--|
+| [`AudioStreamWAV`](class_audiostreamwav.md) | [`get_recording`](class_audioeffectrecord.md#class_audioeffectrecord_method_get_recording) ( ) const[^const]                                 |
+| [`bool`](class_bool.md)                     | [`is_recording_active`](class_audioeffectrecord.md#class_audioeffectrecord_method_is_recording_active) ( ) const[^const]                     |
+| `void`                                      | [`set_recording_active`](class_audioeffectrecord.md#class_audioeffectrecord_method_set_recording_active) ( record: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/XRAnchor3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/XRAnchor3D.xml。 -->
 
 <div id="_class_xranchor3d"></div>
 
@@ -21,8 +21,10 @@ Keep in mind that, as long as plane detection is enabled, the size, placing and 
 
 ## 方法
 
-| [`Plane`](class_plane.md)     | [`get_plane`](#class_xranchor3d_method_get_plane) ( ) const[^const] |
-| [`Vector3`](class_vector3.md) | [`get_size`](#class_xranchor3d_method_get_size) ( ) const[^const]   |
+|||
+|:-:|:--|
+| [`Plane`](class_plane.md)     | [`get_plane`](class_xranchor3d.md#class_xranchor3d_method_get_plane) ( ) const[^const] |
+| [`Vector3`](class_vector3.md) | [`get_size`](class_xranchor3d.md#class_xranchor3d_method_get_size) ( ) const[^const]   |
 
 <!-- rst-class:: classref-section-separator -->
 

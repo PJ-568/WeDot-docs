@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MissingNode.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MissingNode.xml。 -->
 
 <div id="_class_missingnode"></div>
 
@@ -19,9 +19,11 @@ This is an internal editor class intended for keeping data of nodes of unknown t
 
 ## 属性
 
-| [`String`](class_string.md) | [`original_class`](#class_missingnode_property_original_class)             |
-| [`String`](class_string.md) | [`original_scene`](#class_missingnode_property_original_scene)             |
-| [`bool`](class_bool.md)     | [`recording_properties`](#class_missingnode_property_recording_properties) |
+|||
+|:-:|:--|
+| [`String`](class_string.md) | [`original_class`](class_missingnode.md#class_missingnode_property_original_class)             |
+| [`String`](class_string.md) | [`original_scene`](class_missingnode.md#class_missingnode_property_original_scene)             |
+| [`bool`](class_bool.md)     | [`recording_properties`](class_missingnode.md#class_missingnode_property_recording_properties) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -36,7 +38,7 @@ This is an internal editor class intended for keeping data of nodes of unknown t
 - `void` **set_original_class** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_original_class** ( )
 
-The name of the class this node was supposed to be (see [`Object.get_class`](#class_object_method_get_class)).
+The name of the class this node was supposed to be (see [`Object.get_class`](class_object.md#class_object_method_get_class)).
 
 <!-- rst-class:: classref-item-separator -->
 

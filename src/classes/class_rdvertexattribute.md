@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RDVertexAttribute.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RDVertexAttribute.xml。 -->
 
 <div id="_class_rdvertexattribute"></div>
 
@@ -17,11 +17,13 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
-| [DataFormat](#enum_renderingdevice_dataformat)           | [`format`](#class_rdvertexattribute_property_format)       | ``218`` |
-| [VertexFrequency](#enum_renderingdevice_vertexfrequency) | [`frequency`](#class_rdvertexattribute_property_frequency) | ``0``   |
-| [`int`](class_int.md)                                    | [`location`](#class_rdvertexattribute_property_location)   | ``0``   |
-| [`int`](class_int.md)                                    | [`offset`](#class_rdvertexattribute_property_offset)       | ``0``   |
-| [`int`](class_int.md)                                    | [`stride`](#class_rdvertexattribute_property_stride)       | ``0``   |
+|||
+|:-:|:--|
+| [DataFormat](#enum_renderingdevice_dataformat)           | [`format`](class_rdvertexattribute.md#class_rdvertexattribute_property_format)       | ``218`` |
+| [VertexFrequency](#enum_renderingdevice_vertexfrequency) | [`frequency`](class_rdvertexattribute.md#class_rdvertexattribute_property_frequency) | ``0``   |
+| [`int`](class_int.md)                                    | [`location`](class_rdvertexattribute.md#class_rdvertexattribute_property_location)   | ``0``   |
+| [`int`](class_int.md)                                    | [`offset`](class_rdvertexattribute.md#class_rdvertexattribute_property_offset)       | ``0``   |
+| [`int`](class_int.md)                                    | [`stride`](class_rdvertexattribute.md#class_rdvertexattribute_property_stride)       | ``0``   |
 
 <!-- rst-class:: classref-section-separator -->
 

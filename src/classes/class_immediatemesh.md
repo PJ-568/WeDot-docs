@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ImmediateMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ImmediateMesh.xml。 -->
 
 <div id="_class_immediatemesh"></div>
 
@@ -49,16 +49,18 @@ Here's a sample on how to generate a triangular face:
 
 ## 方法
 
-| `void` | [`clear_surfaces`](#class_immediatemesh_method_clear_surfaces) ( )                                                                                                      |
-| `void` | [`surface_add_vertex`](#class_immediatemesh_method_surface_add_vertex) ( vertex: [`Vector3`](class_vector3.md) )                                                        |
-| `void` | [`surface_add_vertex_2d`](#class_immediatemesh_method_surface_add_vertex_2d) ( vertex: [`Vector2`](class_vector2.md) )                                                  |
-| `void` | [`surface_begin`](#class_immediatemesh_method_surface_begin) ( primitive: [PrimitiveType](#enum_mesh_primitivetype), material: [`Material`](class_material.md) = null ) |
-| `void` | [`surface_end`](#class_immediatemesh_method_surface_end) ( )                                                                                                            |
-| `void` | [`surface_set_color`](#class_immediatemesh_method_surface_set_color) ( color: [`Color`](class_color.md) )                                                               |
-| `void` | [`surface_set_normal`](#class_immediatemesh_method_surface_set_normal) ( normal: [`Vector3`](class_vector3.md) )                                                        |
-| `void` | [`surface_set_tangent`](#class_immediatemesh_method_surface_set_tangent) ( tangent: [`Plane`](class_plane.md) )                                                         |
-| `void` | [`surface_set_uv`](#class_immediatemesh_method_surface_set_uv) ( uv: [`Vector2`](class_vector2.md) )                                                                    |
-| `void` | [`surface_set_uv2`](#class_immediatemesh_method_surface_set_uv2) ( uv2: [`Vector2`](class_vector2.md) )                                                                 |
+|||
+|:-:|:--|
+| `void` | [`clear_surfaces`](class_immediatemesh.md#class_immediatemesh_method_clear_surfaces) ( )                                                                                                      |
+| `void` | [`surface_add_vertex`](class_immediatemesh.md#class_immediatemesh_method_surface_add_vertex) ( vertex: [`Vector3`](class_vector3.md) )                                                        |
+| `void` | [`surface_add_vertex_2d`](class_immediatemesh.md#class_immediatemesh_method_surface_add_vertex_2d) ( vertex: [`Vector2`](class_vector2.md) )                                                  |
+| `void` | [`surface_begin`](class_immediatemesh.md#class_immediatemesh_method_surface_begin) ( primitive: [PrimitiveType](#enum_mesh_primitivetype), material: [`Material`](class_material.md) = null ) |
+| `void` | [`surface_end`](class_immediatemesh.md#class_immediatemesh_method_surface_end) ( )                                                                                                            |
+| `void` | [`surface_set_color`](class_immediatemesh.md#class_immediatemesh_method_surface_set_color) ( color: [`Color`](class_color.md) )                                                               |
+| `void` | [`surface_set_normal`](class_immediatemesh.md#class_immediatemesh_method_surface_set_normal) ( normal: [`Vector3`](class_vector3.md) )                                                        |
+| `void` | [`surface_set_tangent`](class_immediatemesh.md#class_immediatemesh_method_surface_set_tangent) ( tangent: [`Plane`](class_plane.md) )                                                         |
+| `void` | [`surface_set_uv`](class_immediatemesh.md#class_immediatemesh_method_surface_set_uv) ( uv: [`Vector2`](class_vector2.md) )                                                                    |
+| `void` | [`surface_set_uv2`](class_immediatemesh.md#class_immediatemesh_method_surface_set_uv2) ( uv2: [`Vector2`](class_vector2.md) )                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SkeletonModification2DCCDIK.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SkeletonModification2DCCDIK.xml。 -->
 
 <div id="_class_skeletonmodification2dccdik"></div>
 
@@ -25,26 +25,30 @@ CCDIK also fully supports angle constraints, allowing for more control over how 
 
 ## 属性
 
-| [`int`](class_int.md)           | [`ccdik_data_chain_length`](#class_skeletonmodification2dccdik_property_ccdik_data_chain_length) | ``0``            |
-| [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2dccdik_property_target_nodepath)                 | ``NodePath("")`` |
-| [`NodePath`](class_nodepath.md) | [`tip_nodepath`](#class_skeletonmodification2dccdik_property_tip_nodepath)                       | ``NodePath("")`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md)           | [`ccdik_data_chain_length`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_property_ccdik_data_chain_length) | ``0``            |
+| [`NodePath`](class_nodepath.md) | [`target_nodepath`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_property_target_nodepath)                 | ``NodePath("")`` |
+| [`NodePath`](class_nodepath.md) | [`tip_nodepath`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_property_tip_nodepath)                       | ``NodePath("")`` |
 
 ## 方法
 
-| [`NodePath`](class_nodepath.md) | [`get_ccdik_joint_bone2d_node`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                            |
-| [`int`](class_int.md)           | [`get_ccdik_joint_bone_index`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                              |
-| [`bool`](class_bool.md)         | [`get_ccdik_joint_constraint_angle_invert`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_invert) ( joint_idx: [`int`](class_int.md) ) const[^const]                    |
-| [`float`](class_float.md)       | [`get_ccdik_joint_constraint_angle_max`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_max) ( joint_idx: [`int`](class_int.md) ) const[^const]                          |
-| [`float`](class_float.md)       | [`get_ccdik_joint_constraint_angle_min`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_min) ( joint_idx: [`int`](class_int.md) ) const[^const]                          |
-| [`bool`](class_bool.md)         | [`get_ccdik_joint_enable_constraint`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_enable_constraint) ( joint_idx: [`int`](class_int.md) ) const[^const]                                |
-| [`bool`](class_bool.md)         | [`get_ccdik_joint_rotate_from_joint`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_rotate_from_joint) ( joint_idx: [`int`](class_int.md) ) const[^const]                                |
-| `void`                          | [`set_ccdik_joint_bone2d_node`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md), bone2d_nodepath: [`NodePath`](class_nodepath.md) )        |
-| `void`                          | [`set_ccdik_joint_bone_index`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_bone_index) ( joint_idx: [`int`](class_int.md), bone_idx: [`int`](class_int.md) )                           |
-| `void`                          | [`set_ccdik_joint_constraint_angle_invert`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_invert) ( joint_idx: [`int`](class_int.md), invert: [`bool`](class_bool.md) ) |
-| `void`                          | [`set_ccdik_joint_constraint_angle_max`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_max) ( joint_idx: [`int`](class_int.md), angle_max: [`float`](class_float.md) )  |
-| `void`                          | [`set_ccdik_joint_constraint_angle_min`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_min) ( joint_idx: [`int`](class_int.md), angle_min: [`float`](class_float.md) )  |
-| `void`                          | [`set_ccdik_joint_enable_constraint`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_enable_constraint) ( joint_idx: [`int`](class_int.md), enable_constraint: [`bool`](class_bool.md) )  |
-| `void`                          | [`set_ccdik_joint_rotate_from_joint`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_rotate_from_joint) ( joint_idx: [`int`](class_int.md), rotate_from_joint: [`bool`](class_bool.md) )  |
+|||
+|:-:|:--|
+| [`NodePath`](class_nodepath.md) | [`get_ccdik_joint_bone2d_node`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                            |
+| [`int`](class_int.md)           | [`get_ccdik_joint_bone_index`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                              |
+| [`bool`](class_bool.md)         | [`get_ccdik_joint_constraint_angle_invert`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_invert) ( joint_idx: [`int`](class_int.md) ) const[^const]                    |
+| [`float`](class_float.md)       | [`get_ccdik_joint_constraint_angle_max`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_max) ( joint_idx: [`int`](class_int.md) ) const[^const]                          |
+| [`float`](class_float.md)       | [`get_ccdik_joint_constraint_angle_min`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_min) ( joint_idx: [`int`](class_int.md) ) const[^const]                          |
+| [`bool`](class_bool.md)         | [`get_ccdik_joint_enable_constraint`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_enable_constraint) ( joint_idx: [`int`](class_int.md) ) const[^const]                                |
+| [`bool`](class_bool.md)         | [`get_ccdik_joint_rotate_from_joint`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_get_ccdik_joint_rotate_from_joint) ( joint_idx: [`int`](class_int.md) ) const[^const]                                |
+| `void`                          | [`set_ccdik_joint_bone2d_node`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md), bone2d_nodepath: [`NodePath`](class_nodepath.md) )        |
+| `void`                          | [`set_ccdik_joint_bone_index`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_bone_index) ( joint_idx: [`int`](class_int.md), bone_idx: [`int`](class_int.md) )                           |
+| `void`                          | [`set_ccdik_joint_constraint_angle_invert`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_invert) ( joint_idx: [`int`](class_int.md), invert: [`bool`](class_bool.md) ) |
+| `void`                          | [`set_ccdik_joint_constraint_angle_max`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_max) ( joint_idx: [`int`](class_int.md), angle_max: [`float`](class_float.md) )  |
+| `void`                          | [`set_ccdik_joint_constraint_angle_min`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_min) ( joint_idx: [`int`](class_int.md), angle_min: [`float`](class_float.md) )  |
+| `void`                          | [`set_ccdik_joint_enable_constraint`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_enable_constraint) ( joint_idx: [`int`](class_int.md), enable_constraint: [`bool`](class_bool.md) )  |
+| `void`                          | [`set_ccdik_joint_rotate_from_joint`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_rotate_from_joint) ( joint_idx: [`int`](class_int.md), rotate_from_joint: [`bool`](class_bool.md) )  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -117,7 +121,7 @@ Returns the index of the [`Bone2D`](class_bone2d.md) node assigned to the CCDIK 
 
 [`bool`](class_bool.md) **get_ccdik_joint_constraint_angle_invert** ( joint_idx: [`int`](class_int.md) ) const[^const]<div id="class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_invert"></div>
 
-Returns whether the CCDIK joint at `joint_idx` uses an inverted joint constraint. See [`set_ccdik_joint_constraint_angle_invert`](#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_invert) for details.
+Returns whether the CCDIK joint at `joint_idx` uses an inverted joint constraint. See [`set_ccdik_joint_constraint_angle_invert`](class_skeletonmodification2dccdik.md#class_skeletonmodification2dccdik_method_set_ccdik_joint_constraint_angle_invert) for details.
 
 <!-- rst-class:: classref-item-separator -->
 

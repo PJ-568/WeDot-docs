@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PanelContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PanelContainer.xml。 -->
 
 <div id="_class_panelcontainer"></div>
 
@@ -19,11 +19,15 @@ A container that keeps its child controls within the area of a [`StyleBox`](clas
 
 ## 属性
 
-| [MouseFilter](#enum_control_mousefilter) | mouse_filter | ``0`` (overrides [`Control`](#class_control_property_mouse_filter)) |
+|||
+|:-:|:--|
+| [MouseFilter](#enum_control_mousefilter) | mouse_filter | ``0`` (overrides [`Control`](class_control.md#class_control_property_mouse_filter)) |
 
 ## 主题属性
 
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_panelcontainer_theme_style_panel) |
+|||
+|:-:|:--|
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_panelcontainer.md#class_panelcontainer_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->
 

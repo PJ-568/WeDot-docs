@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/HTTPClient.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/HTTPClient.xml。 -->
 
 <div id="_class_httpclient"></div>
 
@@ -17,7 +17,7 @@ Hyper-text transfer protocol client (sometimes called "User Agent"). Used to mak
 
 See the [`HTTPRequest`](class_httprequest.md) node for a higher-level alternative.
 
- **Note:** This client only needs to connect to a host once (see [`connect_to_host`](#class_httpclient_method_connect_to_host)) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See [`request`](#class_httpclient_method_request) for a full example and to get started.
+ **Note:** This client only needs to connect to a host once (see [`connect_to_host`](class_httpclient.md#class_httpclient_method_connect_to_host)) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See [`request`](class_httpclient.md#class_httpclient_method_request) for a full example and to get started.
 
 A **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
 
@@ -29,34 +29,38 @@ For more information on HTTP, see [*MDN's documentation on HTTP*](https://develo
 
  **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to [*CORS*](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the `Access-Control-Allow-Origin: *` HTTP header.
 
- **Note:** TLS support is currently limited to TLS 1.0, TLS 1.1, and TLS 1.2. Attempting to connect to a TLS 1.3-only server will return an error.
+ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
 
  **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 ## 属性
 
-| [`bool`](class_bool.md)             | [`blocking_mode_enabled`](#class_httpclient_property_blocking_mode_enabled) | ``false`` |
-| [`StreamPeer`](class_streampeer.md) | [`connection`](#class_httpclient_property_connection)                       |           |
-| [`int`](class_int.md)               | [`read_chunk_size`](#class_httpclient_property_read_chunk_size)             | ``65536`` |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)             | [`blocking_mode_enabled`](class_httpclient.md#class_httpclient_property_blocking_mode_enabled) | ``false`` |
+| [`StreamPeer`](class_streampeer.md) | [`connection`](class_httpclient.md#class_httpclient_property_connection)                       |           |
+| [`int`](class_int.md)               | [`read_chunk_size`](class_httpclient.md#class_httpclient_property_read_chunk_size)             | ``65536`` |
 
 ## 方法
 
-| `void`                                            | [`close`](#class_httpclient_method_close) ( )                                                                                                                                                                                                          |
-| [Error](#enum_@globalscope_error)                 | [`connect_to_host`](#class_httpclient_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) = -1, tls_options: [`TLSOptions`](class_tlsoptions.md) = null )                                                         |
-| [`int`](class_int.md)                             | [`get_response_body_length`](#class_httpclient_method_get_response_body_length) ( ) const[^const]                                                                                                                                                      |
-| [`int`](class_int.md)                             | [`get_response_code`](#class_httpclient_method_get_response_code) ( ) const[^const]                                                                                                                                                                    |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_response_headers`](#class_httpclient_method_get_response_headers) ( )                                                                                                                                                                            |
-| [`Dictionary`](class_dictionary.md)               | [`get_response_headers_as_dictionary`](#class_httpclient_method_get_response_headers_as_dictionary) ( )                                                                                                                                                |
-| [Status](#enum_httpclient_status)                 | [`get_status`](#class_httpclient_method_get_status) ( ) const[^const]                                                                                                                                                                                  |
-| [`bool`](class_bool.md)                           | [`has_response`](#class_httpclient_method_has_response) ( ) const[^const]                                                                                                                                                                              |
-| [`bool`](class_bool.md)                           | [`is_response_chunked`](#class_httpclient_method_is_response_chunked) ( ) const[^const]                                                                                                                                                                |
-| [Error](#enum_@globalscope_error)                 | [`poll`](#class_httpclient_method_poll) ( )                                                                                                                                                                                                            |
-| [`String`](class_string.md)                       | [`query_string_from_dict`](#class_httpclient_method_query_string_from_dict) ( fields: [`Dictionary`](class_dictionary.md) )                                                                                                                            |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`read_response_body_chunk`](#class_httpclient_method_read_response_body_chunk) ( )                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                 | [`request`](#class_httpclient_method_request) ( method: [Method](#enum_httpclient_method), url: [`String`](class_string.md), headers: [`PackedStringArray`](class_packedstringarray.md), body: [`String`](class_string.md) = "" )                      |
-| [Error](#enum_@globalscope_error)                 | [`request_raw`](#class_httpclient_method_request_raw) ( method: [Method](#enum_httpclient_method), url: [`String`](class_string.md), headers: [`PackedStringArray`](class_packedstringarray.md), body: [`PackedByteArray`](class_packedbytearray.md) ) |
-| `void`                                            | [`set_http_proxy`](#class_httpclient_method_set_http_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                         |
-| `void`                                            | [`set_https_proxy`](#class_httpclient_method_set_https_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                       |
+|||
+|:-:|:--|
+| `void`                                            | [`close`](class_httpclient.md#class_httpclient_method_close) ( )                                                                                                                                                                                                          |
+| [Error](#enum_@globalscope_error)                 | [`connect_to_host`](class_httpclient.md#class_httpclient_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) = -1, tls_options: [`TLSOptions`](class_tlsoptions.md) = null )                                                         |
+| [`int`](class_int.md)                             | [`get_response_body_length`](class_httpclient.md#class_httpclient_method_get_response_body_length) ( ) const[^const]                                                                                                                                                      |
+| [`int`](class_int.md)                             | [`get_response_code`](class_httpclient.md#class_httpclient_method_get_response_code) ( ) const[^const]                                                                                                                                                                    |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_response_headers`](class_httpclient.md#class_httpclient_method_get_response_headers) ( )                                                                                                                                                                            |
+| [`Dictionary`](class_dictionary.md)               | [`get_response_headers_as_dictionary`](class_httpclient.md#class_httpclient_method_get_response_headers_as_dictionary) ( )                                                                                                                                                |
+| [Status](#enum_httpclient_status)                 | [`get_status`](class_httpclient.md#class_httpclient_method_get_status) ( ) const[^const]                                                                                                                                                                                  |
+| [`bool`](class_bool.md)                           | [`has_response`](class_httpclient.md#class_httpclient_method_has_response) ( ) const[^const]                                                                                                                                                                              |
+| [`bool`](class_bool.md)                           | [`is_response_chunked`](class_httpclient.md#class_httpclient_method_is_response_chunked) ( ) const[^const]                                                                                                                                                                |
+| [Error](#enum_@globalscope_error)                 | [`poll`](class_httpclient.md#class_httpclient_method_poll) ( )                                                                                                                                                                                                            |
+| [`String`](class_string.md)                       | [`query_string_from_dict`](class_httpclient.md#class_httpclient_method_query_string_from_dict) ( fields: [`Dictionary`](class_dictionary.md) )                                                                                                                            |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`read_response_body_chunk`](class_httpclient.md#class_httpclient_method_read_response_body_chunk) ( )                                                                                                                                                                    |
+| [Error](#enum_@globalscope_error)                 | [`request`](class_httpclient.md#class_httpclient_method_request) ( method: [Method](#enum_httpclient_method), url: [`String`](class_string.md), headers: [`PackedStringArray`](class_packedstringarray.md), body: [`String`](class_string.md) = "" )                      |
+| [Error](#enum_@globalscope_error)                 | [`request_raw`](class_httpclient.md#class_httpclient_method_request_raw) ( method: [Method](#enum_httpclient_method), url: [`String`](class_string.md), headers: [`PackedStringArray`](class_packedstringarray.md), body: [`PackedByteArray`](class_packedbytearray.md) ) |
+| `void`                                            | [`set_http_proxy`](class_httpclient.md#class_httpclient_method_set_http_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                         |
+| `void`                                            | [`set_https_proxy`](class_httpclient.md#class_httpclient_method_set_https_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -613,7 +617,7 @@ The connection to use for this client.
 - `void` **set_read_chunk_size** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_read_chunk_size** ( )
 
-The size of the buffer used and maximum bytes to read per iteration. See [`read_response_body_chunk`](#class_httpclient_method_read_response_body_chunk).
+The size of the buffer used and maximum bytes to read per iteration. See [`read_response_body_chunk`](class_httpclient.md#class_httpclient_method_read_response_body_chunk).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -637,7 +641,7 @@ Closes the current connection, allowing reuse of this **HTTPClient**.
 
 Connects to a host. This needs to be done before any requests are sent.
 
-If no `port` is specified (or `-1` is used), it is automatically set to 80 for HTTP and 443 for HTTPS. You can pass the optional `tls_options` parameter to customize the trusted certification authorities, or the common name verification when using HTTPS. See [`TLSOptions.client`](#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](#class_tlsoptions_method_client_unsafe).
+If no `port` is specified (or `-1` is used), it is automatically set to 80 for HTTP and 443 for HTTPS. You can pass the optional `tls_options` parameter to customize the trusted certification authorities, or the common name verification when using HTTPS. See [`TLSOptions.client`](class_tlsoptions.md#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -681,9 +685,7 @@ Returns the response headers.
 
 [`Dictionary`](class_dictionary.md) **get_response_headers_as_dictionary** ( )<div id="class_httpclient_method_get_response_headers_as_dictionary"></div>
 
-Returns all response headers as a Dictionary of structure `{ "key": "value1; value2" }` where the case-sensitivity of the keys and values is kept like the server delivers it. A value is a simple String, this string can have more than one value where "; " is used as separator.
-
- **Example:** 
+Returns all response headers as a [`Dictionary`](class_dictionary.md). Each entry is composed by the header name, and a [`String`](class_string.md) containing the values separated by `"; "`. The casing is kept the same as the headers were received.
 
 ```
 
@@ -703,7 +705,7 @@ Returns all response headers as a Dictionary of structure `{ "key": "value1; val
 
 [Status](#enum_httpclient_status) **get_status** ( ) const[^const]<div id="class_httpclient_method_get_status"></div>
 
-Returns a [Status](#enum_httpclient_status) constant. Need to call [`poll`](#class_httpclient_method_poll) in order to get status updates.
+Returns a [Status](#enum_httpclient_status) constant. Need to call [`poll`](class_httpclient.md#class_httpclient_method_poll) in order to get status updates.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -733,7 +735,7 @@ If `true`, this **HTTPClient** has a response that is chunked.
 
 [Error](#enum_@globalscope_error) **poll** ( )<div id="class_httpclient_method_poll"></div>
 
-This needs to be called in order to have any request processed. Check results with [`get_status`](#class_httpclient_method_get_status).
+This needs to be called in order to have any request processed. Check results with [`get_status`](class_httpclient.md#class_httpclient_method_get_status).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -816,7 +818,7 @@ Reads one chunk from the response.
 
 Sends a request to the connected host.
 
-The URL parameter is usually just the part after the host, so for `https://somehost.com/index.php`, it is `/index.php`. When sending requests to an HTTP proxy server, it should be an absolute URL. For [`METHOD_OPTIONS`](#class_httpclient_constant_method_options) requests, `*` is also allowed. For [`METHOD_CONNECT`](#class_httpclient_constant_method_connect) requests, it should be the authority component (`host:port`).
+The URL parameter is usually just the part after the host, so for `https://somehost.com/index.php`, it is `/index.php`. When sending requests to an HTTP proxy server, it should be an absolute URL. For [`METHOD_OPTIONS`](class_httpclient.md#class_httpclient_constant_method_options) requests, `*` is also allowed. For [`METHOD_CONNECT`](class_httpclient.md#class_httpclient_constant_method_connect) requests, it should be the authority component (`host:port`).
 
 Headers are HTTP request headers. For available HTTP methods, see [Method](#enum_httpclient_method).
 
@@ -842,7 +844,7 @@ To create a POST request with query strings to push to the server, do:
 
 
 
- **Note:** The `body` parameter is ignored if `method` is [`METHOD_GET`](#class_httpclient_constant_method_get). This is because GET methods can't contain request data. As a workaround, you can pass request data as a query string in the URL. See [`String.uri_encode`](#class_string_method_uri_encode) for an example.
+ **Note:** The `body` parameter is ignored if `method` is [`METHOD_GET`](class_httpclient.md#class_httpclient_constant_method_get). This is because GET methods can't contain request data. As a workaround, you can pass request data as a query string in the URL. See [`String.uri_encode`](class_string.md#class_string_method_uri_encode) for an example.
 
 
 
@@ -858,7 +860,7 @@ To create a POST request with query strings to push to the server, do:
 
 Sends a raw request to the connected host.
 
-The URL parameter is usually just the part after the host, so for `https://somehost.com/index.php`, it is `/index.php`. When sending requests to an HTTP proxy server, it should be an absolute URL. For [`METHOD_OPTIONS`](#class_httpclient_constant_method_options) requests, `*` is also allowed. For [`METHOD_CONNECT`](#class_httpclient_constant_method_connect) requests, it should be the authority component (`host:port`).
+The URL parameter is usually just the part after the host, so for `https://somehost.com/index.php`, it is `/index.php`. When sending requests to an HTTP proxy server, it should be an absolute URL. For [`METHOD_OPTIONS`](class_httpclient.md#class_httpclient_constant_method_options) requests, `*` is also allowed. For [`METHOD_CONNECT`](class_httpclient.md#class_httpclient_constant_method_connect) requests, it should be the authority component (`host:port`).
 
 Headers are HTTP request headers. For available HTTP methods, see [Method](#enum_httpclient_method).
 

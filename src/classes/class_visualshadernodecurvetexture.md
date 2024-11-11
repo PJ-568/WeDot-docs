@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeCurveTexture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeCurveTexture.xml。 -->
 
 <div id="_class_visualshadernodecurvetexture"></div>
 
@@ -17,7 +17,9 @@ Comes with a built-in editor for texture's curves.
 
 ## 属性
 
-| [`CurveTexture`](class_curvetexture.md) | [`texture`](#class_visualshadernodecurvetexture_property_texture) |
+|||
+|:-:|:--|
+| [`CurveTexture`](class_curvetexture.md) | [`texture`](class_visualshadernodecurvetexture.md#class_visualshadernodecurvetexture_property_texture) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RandomNumberGenerator.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RandomNumberGenerator.xml。 -->
 
 <div id="_class_randomnumbergenerator"></div>
 
@@ -30,18 +30,22 @@ To generate a random float number (within a given range) based on a time-depende
 
 ## 属性
 
-| [`int`](class_int.md) | [`seed`](#class_randomnumbergenerator_property_seed)   | ``0`` |
-| [`int`](class_int.md) | [`state`](#class_randomnumbergenerator_property_state) | ``0`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`seed`](class_randomnumbergenerator.md#class_randomnumbergenerator_property_seed)   | ``0`` |
+| [`int`](class_int.md) | [`state`](class_randomnumbergenerator.md#class_randomnumbergenerator_property_state) | ``0`` |
 
 ## 方法
 
-| [`int`](class_int.md)     | [`rand_weighted`](#class_randomnumbergenerator_method_rand_weighted) ( weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
-| [`float`](class_float.md) | [`randf`](#class_randomnumbergenerator_method_randf) ( )                                                                                     |
-| [`float`](class_float.md) | [`randf_range`](#class_randomnumbergenerator_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )          |
-| [`float`](class_float.md) | [`randfn`](#class_randomnumbergenerator_method_randfn) ( mean: [`float`](class_float.md) = 0.0, deviation: [`float`](class_float.md) = 1.0 ) |
-| [`int`](class_int.md)     | [`randi`](#class_randomnumbergenerator_method_randi) ( )                                                                                     |
-| [`int`](class_int.md)     | [`randi_range`](#class_randomnumbergenerator_method_randi_range) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                  |
-| `void`                    | [`randomize`](#class_randomnumbergenerator_method_randomize) ( )                                                                             |
+|||
+|:-:|:--|
+| [`int`](class_int.md)     | [`rand_weighted`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_rand_weighted) ( weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
+| [`float`](class_float.md) | [`randf`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randf) ( )                                                                                     |
+| [`float`](class_float.md) | [`randf_range`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )          |
+| [`float`](class_float.md) | [`randfn`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randfn) ( mean: [`float`](class_float.md) = 0.0, deviation: [`float`](class_float.md) = 1.0 ) |
+| [`int`](class_int.md)     | [`randi`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randi) ( )                                                                                     |
+| [`int`](class_int.md)     | [`randi_range`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randi_range) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                  |
+| `void`                    | [`randomize`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randomize) ( )                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -60,9 +64,9 @@ Initializes the random number generator state based on the given seed value. A g
 
  **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
 
- **Note:** Setting this property produces a side effect of changing the internal [`state`](#class_randomnumbergenerator_property_state), so make sure to initialize the seed *before* modifying the [`state`](#class_randomnumbergenerator_property_state):
+ **Note:** Setting this property produces a side effect of changing the internal [`state`](class_randomnumbergenerator.md#class_randomnumbergenerator_property_state), so make sure to initialize the seed *before* modifying the [`state`](class_randomnumbergenerator.md#class_randomnumbergenerator_property_state):
 
- **Note:** The default value of this property is pseudo-random, and changes when calling [`randomize`](#class_randomnumbergenerator_method_randomize). The `0` value documented here is a placeholder, and not the actual default seed.
+ **Note:** The default value of this property is pseudo-random, and changes when calling [`randomize`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randomize). The `0` value documented here is a placeholder, and not the actual default seed.
 
 ```
 
@@ -96,9 +100,9 @@ The current state of the random number generator. Save and restore this property
     print(rng.randf()) # Prints the same value as in previous.
 ```
 
- **Note:** Do not set state to arbitrary values, since the random number generator requires the state to have certain qualities to behave properly. It should only be set to values that came from the state property itself. To initialize the random number generator with arbitrary input, use [`seed`](#class_randomnumbergenerator_property_seed) instead.
+ **Note:** Do not set state to arbitrary values, since the random number generator requires the state to have certain qualities to behave properly. It should only be set to values that came from the state property itself. To initialize the random number generator with arbitrary input, use [`seed`](class_randomnumbergenerator.md#class_randomnumbergenerator_property_seed) instead.
 
- **Note:** The default value of this property is pseudo-random, and changes when calling [`randomize`](#class_randomnumbergenerator_method_randomize). The `0` value documented here is a placeholder, and not the actual default seed.
+ **Note:** The default value of this property is pseudo-random, and changes when calling [`randomize`](class_randomnumbergenerator.md#class_randomnumbergenerator_method_randomize). The `0` value documented here is a placeholder, and not the actual default seed.
 
 
 

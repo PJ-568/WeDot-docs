@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorScript.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorScript.xml。 -->
 
 <div id="_class_editorscript"></div>
 
@@ -13,7 +13,7 @@ Base script that can be used to add extension functions to the editor.
 
 ## 描述
 
-Scripts extending this class and implementing its [`_run`](#class_editorscript_private_method__run) method can be executed from the Script Editor's **File > Run** menu option (or by pressing <i class="fa fa-gamepad"></i>`Ctrl + Shift + X`) while the editor is running. This is useful for adding custom in-editor functionality to Godot. For more complex additions, consider using [`EditorPlugin`](class_editorplugin.md) s instead.
+Scripts extending this class and implementing its [`_run`](class_editorscript.md#class_editorscript_private_method__run) method can be executed from the Script Editor's **File > Run** menu option (or by pressing <i class="fa fa-gamepad"></i>`Ctrl + Shift + X`) while the editor is running. This is useful for adding custom in-editor functionality to Godot. For more complex additions, consider using [`EditorPlugin`](class_editorplugin.md) s instead.
 
  **Note:** Extending scripts need to have `tool` mode enabled.
 
@@ -56,10 +56,12 @@ Scripts extending this class and implementing its [`_run`](#class_editorscript_p
 
 ## 方法
 
-| `void`                                        | [`_run`](#class_editorscript_private_method__run) ( ) virtual[^virtual]                       |
-| `void`                                        | [`add_root_node`](#class_editorscript_method_add_root_node) ( node: [`Node`](class_node.md) ) |
-| [`EditorInterface`](class_editorinterface.md) | [`get_editor_interface`](#class_editorscript_method_get_editor_interface) ( ) const[^const]   |
-| [`Node`](class_node.md)                       | [`get_scene`](#class_editorscript_method_get_scene) ( ) const[^const]                         |
+|||
+|:-:|:--|
+| `void`                                        | [`_run`](class_editorscript.md#class_editorscript_private_method__run) ( ) virtual[^virtual]                       |
+| `void`                                        | [`add_root_node`](class_editorscript.md#class_editorscript_method_add_root_node) ( node: [`Node`](class_node.md) ) |
+| [`EditorInterface`](class_editorinterface.md) | [`get_editor_interface`](class_editorscript.md#class_editorscript_method_get_editor_interface) ( ) const[^const]   |
+| [`Node`](class_node.md)                       | [`get_scene`](class_editorscript.md#class_editorscript_method_get_scene) ( ) const[^const]                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -103,7 +105,7 @@ Returns the [`EditorInterface`](class_editorinterface.md) singleton instance.
 
 [`Node`](class_node.md) **get_scene** ( ) const[^const]<div id="class_editorscript_method_get_scene"></div>
 
-Returns the edited (current) scene's root [`Node`](class_node.md). Equivalent of [`EditorInterface.get_edited_scene_root`](#class_editorinterface_method_get_edited_scene_root).
+Returns the edited (current) scene's root [`Node`](class_node.md). Equivalent of [`EditorInterface.get_edited_scene_root`](class_editorinterface.md#class_editorinterface_method_get_edited_scene_root).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/platform/ios/doc_classes/EditorExportPlatformIOS.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/platform/ios/doc_classes/EditorExportPlatformIOS.xml。 -->
 
 <div id="_class_editorexportplatformios"></div>
 
@@ -13,203 +13,244 @@ Exporter for iOS.
 
 ## 属性
 
-| [`String`](class_string.md)                       | [`application/additional_plist_content`](#class_editorexportplatformios_property_application/additional_plist_content)                                                             |
-| [`String`](class_string.md)                       | [`application/app_store_team_id`](#class_editorexportplatformios_property_application/app_store_team_id)                                                                           |
-| [`String`](class_string.md)                       | [`application/bundle_identifier`](#class_editorexportplatformios_property_application/bundle_identifier)                                                                           |
-| [`String`](class_string.md)                       | [`application/code_sign_identity_debug`](#class_editorexportplatformios_property_application/code_sign_identity_debug)                                                             |
-| [`String`](class_string.md)                       | [`application/code_sign_identity_release`](#class_editorexportplatformios_property_application/code_sign_identity_release)                                                         |
-| [`bool`](class_bool.md)                           | [`application/delete_old_export_files_unconditionally`](#class_editorexportplatformios_property_application/delete_old_export_files_unconditionally)                               |
-| [`int`](class_int.md)                             | [`application/export_method_debug`](#class_editorexportplatformios_property_application/export_method_debug)                                                                       |
-| [`int`](class_int.md)                             | [`application/export_method_release`](#class_editorexportplatformios_property_application/export_method_release)                                                                   |
-| [`bool`](class_bool.md)                           | [`application/export_project_only`](#class_editorexportplatformios_property_application/export_project_only)                                                                       |
-| [`bool`](class_bool.md)                           | [`application/generate_simulator_library_if_missing`](#class_editorexportplatformios_property_application/generate_simulator_library_if_missing)                                   |
-| [`int`](class_int.md)                             | [`application/icon_interpolation`](#class_editorexportplatformios_property_application/icon_interpolation)                                                                         |
-| [`String`](class_string.md)                       | [`application/min_ios_version`](#class_editorexportplatformios_property_application/min_ios_version)                                                                               |
-| [`String`](class_string.md)                       | [`application/provisioning_profile_uuid_debug`](#class_editorexportplatformios_property_application/provisioning_profile_uuid_debug)                                               |
-| [`String`](class_string.md)                       | [`application/provisioning_profile_uuid_release`](#class_editorexportplatformios_property_application/provisioning_profile_uuid_release)                                           |
-| [`String`](class_string.md)                       | [`application/short_version`](#class_editorexportplatformios_property_application/short_version)                                                                                   |
-| [`String`](class_string.md)                       | [`application/signature`](#class_editorexportplatformios_property_application/signature)                                                                                           |
-| [`int`](class_int.md)                             | [`application/targeted_device_family`](#class_editorexportplatformios_property_application/targeted_device_family)                                                                 |
-| [`String`](class_string.md)                       | [`application/version`](#class_editorexportplatformios_property_application/version)                                                                                               |
-| [`bool`](class_bool.md)                           | [`architectures/arm64`](#class_editorexportplatformios_property_architectures/arm64)                                                                                               |
-| [`bool`](class_bool.md)                           | [`capabilities/access_wifi`](#class_editorexportplatformios_property_capabilities/access_wifi)                                                                                     |
-| [`bool`](class_bool.md)                           | [`capabilities/performance_a12`](#class_editorexportplatformios_property_capabilities/performance_a12)                                                                             |
-| [`bool`](class_bool.md)                           | [`capabilities/performance_gaming_tier`](#class_editorexportplatformios_property_capabilities/performance_gaming_tier)                                                             |
-| [`bool`](class_bool.md)                           | [`capabilities/push_notifications`](#class_editorexportplatformios_property_capabilities/push_notifications)                                                                       |
-| [`String`](class_string.md)                       | [`custom_template/debug`](#class_editorexportplatformios_property_custom_template/debug)                                                                                           |
-| [`String`](class_string.md)                       | [`custom_template/release`](#class_editorexportplatformios_property_custom_template/release)                                                                                       |
-| [`String`](class_string.md)                       | [`icons/app_store_1024x1024`](#class_editorexportplatformios_property_icons/app_store_1024x1024)                                                                                   |
-| [`String`](class_string.md)                       | [`icons/ipad_76x76`](#class_editorexportplatformios_property_icons/ipad_76x76)                                                                                                     |
-| [`String`](class_string.md)                       | [`icons/ipad_152x152`](#class_editorexportplatformios_property_icons/ipad_152x152)                                                                                                 |
-| [`String`](class_string.md)                       | [`icons/ipad_167x167`](#class_editorexportplatformios_property_icons/ipad_167x167)                                                                                                 |
-| [`String`](class_string.md)                       | [`icons/iphone_120x120`](#class_editorexportplatformios_property_icons/iphone_120x120)                                                                                             |
-| [`String`](class_string.md)                       | [`icons/iphone_180x180`](#class_editorexportplatformios_property_icons/iphone_180x180)                                                                                             |
-| [`String`](class_string.md)                       | [`icons/notification_40x40`](#class_editorexportplatformios_property_icons/notification_40x40)                                                                                     |
-| [`String`](class_string.md)                       | [`icons/notification_60x60`](#class_editorexportplatformios_property_icons/notification_60x60)                                                                                     |
-| [`String`](class_string.md)                       | [`icons/settings_58x58`](#class_editorexportplatformios_property_icons/settings_58x58)                                                                                             |
-| [`String`](class_string.md)                       | [`icons/settings_87x87`](#class_editorexportplatformios_property_icons/settings_87x87)                                                                                             |
-| [`String`](class_string.md)                       | [`icons/spotlight_40x40`](#class_editorexportplatformios_property_icons/spotlight_40x40)                                                                                           |
-| [`String`](class_string.md)                       | [`icons/spotlight_80x80`](#class_editorexportplatformios_property_icons/spotlight_80x80)                                                                                           |
-| [`int`](class_int.md)                             | [`privacy/active_keyboard_access_reasons`](#class_editorexportplatformios_property_privacy/active_keyboard_access_reasons)                                                         |
-| [`String`](class_string.md)                       | [`privacy/camera_usage_description`](#class_editorexportplatformios_property_privacy/camera_usage_description)                                                                     |
-| [`Dictionary`](class_dictionary.md)               | [`privacy/camera_usage_description_localized`](#class_editorexportplatformios_property_privacy/camera_usage_description_localized)                                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/advertising_data/collected`](#class_editorexportplatformios_property_privacy/collected_data/advertising_data/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/advertising_data/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/advertising_data/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/advertising_data/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/advertising_data/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/advertising_data/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/advertising_data/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/audio_data/collected`](#class_editorexportplatformios_property_privacy/collected_data/audio_data/collected)                                               |
-| [`int`](class_int.md)                             | [`privacy/collected_data/audio_data/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/audio_data/collection_purposes)                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/audio_data/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/audio_data/linked_to_user)                                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/audio_data/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/audio_data/used_for_tracking)                               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/browsing_history/collected`](#class_editorexportplatformios_property_privacy/collected_data/browsing_history/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/browsing_history/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/browsing_history/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/browsing_history/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/browsing_history/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/browsing_history/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/browsing_history/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/coarse_location/collected`](#class_editorexportplatformios_property_privacy/collected_data/coarse_location/collected)                                     |
-| [`int`](class_int.md)                             | [`privacy/collected_data/coarse_location/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/coarse_location/collection_purposes)                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/coarse_location/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/coarse_location/linked_to_user)                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/coarse_location/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/coarse_location/used_for_tracking)                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/contacts/collected`](#class_editorexportplatformios_property_privacy/collected_data/contacts/collected)                                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/contacts/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/contacts/collection_purposes)                               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/contacts/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/contacts/linked_to_user)                                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/contacts/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/contacts/used_for_tracking)                                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/crash_data/collected`](#class_editorexportplatformios_property_privacy/collected_data/crash_data/collected)                                               |
-| [`int`](class_int.md)                             | [`privacy/collected_data/crash_data/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/crash_data/collection_purposes)                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/crash_data/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/crash_data/linked_to_user)                                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/crash_data/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/crash_data/used_for_tracking)                               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/credit_info/collected`](#class_editorexportplatformios_property_privacy/collected_data/credit_info/collected)                                             |
-| [`int`](class_int.md)                             | [`privacy/collected_data/credit_info/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/credit_info/collection_purposes)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/credit_info/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/credit_info/linked_to_user)                                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/credit_info/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/credit_info/used_for_tracking)                             |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/customer_support/collected`](#class_editorexportplatformios_property_privacy/collected_data/customer_support/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/customer_support/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/customer_support/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/customer_support/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/customer_support/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/customer_support/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/customer_support/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/device_id/collected`](#class_editorexportplatformios_property_privacy/collected_data/device_id/collected)                                                 |
-| [`int`](class_int.md)                             | [`privacy/collected_data/device_id/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/device_id/collection_purposes)                             |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/device_id/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/device_id/linked_to_user)                                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/device_id/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/device_id/used_for_tracking)                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/email_address/collected`](#class_editorexportplatformios_property_privacy/collected_data/email_address/collected)                                         |
-| [`int`](class_int.md)                             | [`privacy/collected_data/email_address/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/email_address/collection_purposes)                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/email_address/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/email_address/linked_to_user)                               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/email_address/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/email_address/used_for_tracking)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/emails_or_text_messages/collected`](#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/collected)                     |
-| [`int`](class_int.md)                             | [`privacy/collected_data/emails_or_text_messages/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/collection_purposes) |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/emails_or_text_messages/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/linked_to_user)           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/emails_or_text_messages/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/used_for_tracking)     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/environment_scanning/collected`](#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/collected)                           |
-| [`int`](class_int.md)                             | [`privacy/collected_data/environment_scanning/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/collection_purposes)       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/environment_scanning/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/linked_to_user)                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/environment_scanning/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/used_for_tracking)           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/fitness/collected`](#class_editorexportplatformios_property_privacy/collected_data/fitness/collected)                                                     |
-| [`int`](class_int.md)                             | [`privacy/collected_data/fitness/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/fitness/collection_purposes)                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/fitness/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/fitness/linked_to_user)                                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/fitness/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/fitness/used_for_tracking)                                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/gameplay_content/collected`](#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/gameplay_content/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/gameplay_content/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/gameplay_content/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/hands/collected`](#class_editorexportplatformios_property_privacy/collected_data/hands/collected)                                                         |
-| [`int`](class_int.md)                             | [`privacy/collected_data/hands/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/hands/collection_purposes)                                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/hands/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/hands/linked_to_user)                                               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/hands/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/hands/used_for_tracking)                                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/head/collected`](#class_editorexportplatformios_property_privacy/collected_data/head/collected)                                                           |
-| [`int`](class_int.md)                             | [`privacy/collected_data/head/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/head/collection_purposes)                                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/head/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/head/linked_to_user)                                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/head/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/head/used_for_tracking)                                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/health/collected`](#class_editorexportplatformios_property_privacy/collected_data/health/collected)                                                       |
-| [`int`](class_int.md)                             | [`privacy/collected_data/health/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/health/collection_purposes)                                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/health/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/health/linked_to_user)                                             |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/health/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/health/used_for_tracking)                                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/name/collected`](#class_editorexportplatformios_property_privacy/collected_data/name/collected)                                                           |
-| [`int`](class_int.md)                             | [`privacy/collected_data/name/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/name/collection_purposes)                                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/name/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/name/linked_to_user)                                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/name/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/name/used_for_tracking)                                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_contact_info/collected`](#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/collected)                               |
-| [`int`](class_int.md)                             | [`privacy/collected_data/other_contact_info/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/collection_purposes)           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_contact_info/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/linked_to_user)                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_contact_info/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/used_for_tracking)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_data_types/collected`](#class_editorexportplatformios_property_privacy/collected_data/other_data_types/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/other_data_types/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/other_data_types/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_data_types/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/other_data_types/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_data_types/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/other_data_types/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_diagnostic_data/collected`](#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/collected)                         |
-| [`int`](class_int.md)                             | [`privacy/collected_data/other_diagnostic_data/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/collection_purposes)     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_diagnostic_data/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/linked_to_user)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_diagnostic_data/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/used_for_tracking)         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_financial_info/collected`](#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/collected)                           |
-| [`int`](class_int.md)                             | [`privacy/collected_data/other_financial_info/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/collection_purposes)       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_financial_info/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/linked_to_user)                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_financial_info/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/used_for_tracking)           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_usage_data/collected`](#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/other_usage_data/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_usage_data/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_usage_data/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_user_content/collected`](#class_editorexportplatformios_property_privacy/collected_data/other_user_content/collected)                               |
-| [`int`](class_int.md)                             | [`privacy/collected_data/other_user_content/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/other_user_content/collection_purposes)           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_user_content/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/other_user_content/linked_to_user)                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_user_content/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/other_user_content/used_for_tracking)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/payment_info/collected`](#class_editorexportplatformios_property_privacy/collected_data/payment_info/collected)                                           |
-| [`int`](class_int.md)                             | [`privacy/collected_data/payment_info/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/payment_info/collection_purposes)                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/payment_info/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/payment_info/linked_to_user)                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/payment_info/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/payment_info/used_for_tracking)                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/performance_data/collected`](#class_editorexportplatformios_property_privacy/collected_data/performance_data/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/performance_data/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/performance_data/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/performance_data/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/performance_data/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/performance_data/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/performance_data/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/phone_number/collected`](#class_editorexportplatformios_property_privacy/collected_data/phone_number/collected)                                           |
-| [`int`](class_int.md)                             | [`privacy/collected_data/phone_number/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/phone_number/collection_purposes)                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/phone_number/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/phone_number/linked_to_user)                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/phone_number/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/phone_number/used_for_tracking)                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/photos_or_videos/collected`](#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/photos_or_videos/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/photos_or_videos/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/photos_or_videos/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/physical_address/collected`](#class_editorexportplatformios_property_privacy/collected_data/physical_address/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/physical_address/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/physical_address/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/physical_address/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/physical_address/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/physical_address/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/physical_address/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/precise_location/collected`](#class_editorexportplatformios_property_privacy/collected_data/precise_location/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/precise_location/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/precise_location/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/precise_location/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/precise_location/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/precise_location/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/precise_location/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/product_interaction/collected`](#class_editorexportplatformios_property_privacy/collected_data/product_interaction/collected)                             |
-| [`int`](class_int.md)                             | [`privacy/collected_data/product_interaction/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/product_interaction/collection_purposes)         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/product_interaction/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/product_interaction/linked_to_user)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/product_interaction/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/product_interaction/used_for_tracking)             |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/purchase_history/collected`](#class_editorexportplatformios_property_privacy/collected_data/purchase_history/collected)                                   |
-| [`int`](class_int.md)                             | [`privacy/collected_data/purchase_history/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/purchase_history/collection_purposes)               |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/purchase_history/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/purchase_history/linked_to_user)                         |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/purchase_history/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/purchase_history/used_for_tracking)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/search_hhistory/collected`](#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/collected)                                     |
-| [`int`](class_int.md)                             | [`privacy/collected_data/search_hhistory/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/collection_purposes)                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/search_hhistory/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/linked_to_user)                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/search_hhistory/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/used_for_tracking)                     |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/sensitive_info/collected`](#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/collected)                                       |
-| [`int`](class_int.md)                             | [`privacy/collected_data/sensitive_info/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/collection_purposes)                   |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/sensitive_info/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/linked_to_user)                             |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/sensitive_info/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/used_for_tracking)                       |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/user_id/collected`](#class_editorexportplatformios_property_privacy/collected_data/user_id/collected)                                                     |
-| [`int`](class_int.md)                             | [`privacy/collected_data/user_id/collection_purposes`](#class_editorexportplatformios_property_privacy/collected_data/user_id/collection_purposes)                                 |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/user_id/linked_to_user`](#class_editorexportplatformios_property_privacy/collected_data/user_id/linked_to_user)                                           |
-| [`bool`](class_bool.md)                           | [`privacy/collected_data/user_id/used_for_tracking`](#class_editorexportplatformios_property_privacy/collected_data/user_id/used_for_tracking)                                     |
-| [`int`](class_int.md)                             | [`privacy/disk_space_access_reasons`](#class_editorexportplatformios_property_privacy/disk_space_access_reasons)                                                                   |
-| [`int`](class_int.md)                             | [`privacy/file_timestamp_access_reasons`](#class_editorexportplatformios_property_privacy/file_timestamp_access_reasons)                                                           |
-| [`String`](class_string.md)                       | [`privacy/microphone_usage_description`](#class_editorexportplatformios_property_privacy/microphone_usage_description)                                                             |
-| [`Dictionary`](class_dictionary.md)               | [`privacy/microphone_usage_description_localized`](#class_editorexportplatformios_property_privacy/microphone_usage_description_localized)                                         |
-| [`String`](class_string.md)                       | [`privacy/photolibrary_usage_description`](#class_editorexportplatformios_property_privacy/photolibrary_usage_description)                                                         |
-| [`Dictionary`](class_dictionary.md)               | [`privacy/photolibrary_usage_description_localized`](#class_editorexportplatformios_property_privacy/photolibrary_usage_description_localized)                                     |
-| [`int`](class_int.md)                             | [`privacy/system_boot_time_access_reasons`](#class_editorexportplatformios_property_privacy/system_boot_time_access_reasons)                                                       |
-| [`PackedStringArray`](class_packedstringarray.md) | [`privacy/tracking_domains`](#class_editorexportplatformios_property_privacy/tracking_domains)                                                                                     |
-| [`bool`](class_bool.md)                           | [`privacy/tracking_enabled`](#class_editorexportplatformios_property_privacy/tracking_enabled)                                                                                     |
-| [`int`](class_int.md)                             | [`privacy/user_defaults_access_reasons`](#class_editorexportplatformios_property_privacy/user_defaults_access_reasons)                                                             |
-| [`Color`](class_color.md)                         | [`storyboard/custom_bg_color`](#class_editorexportplatformios_property_storyboard/custom_bg_color)                                                                                 |
-| [`String`](class_string.md)                       | [`storyboard/custom_image@2x`](#class_editorexportplatformios_property_storyboard/custom_image@2x)                                                                                 |
-| [`String`](class_string.md)                       | [`storyboard/custom_image@3x`](#class_editorexportplatformios_property_storyboard/custom_image@3x)                                                                                 |
-| [`int`](class_int.md)                             | [`storyboard/image_scale_mode`](#class_editorexportplatformios_property_storyboard/image_scale_mode)                                                                               |
-| [`bool`](class_bool.md)                           | [`storyboard/use_custom_bg_color`](#class_editorexportplatformios_property_storyboard/use_custom_bg_color)                                                                         |
-| [`bool`](class_bool.md)                           | [`user_data/accessible_from_files_app`](#class_editorexportplatformios_property_user_data/accessible_from_files_app)                                                               |
-| [`bool`](class_bool.md)                           | [`user_data/accessible_from_itunes_sharing`](#class_editorexportplatformios_property_user_data/accessible_from_itunes_sharing)                                                     |
+|||
+|:-:|:--|
+| [`String`](class_string.md)                       | [`application/additional_plist_content`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/additional_plist_content)                                                             |
+| [`String`](class_string.md)                       | [`application/app_store_team_id`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/app_store_team_id)                                                                           |
+| [`String`](class_string.md)                       | [`application/bundle_identifier`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/bundle_identifier)                                                                           |
+| [`String`](class_string.md)                       | [`application/code_sign_identity_debug`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/code_sign_identity_debug)                                                             |
+| [`String`](class_string.md)                       | [`application/code_sign_identity_release`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/code_sign_identity_release)                                                         |
+| [`bool`](class_bool.md)                           | [`application/delete_old_export_files_unconditionally`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/delete_old_export_files_unconditionally)                               |
+| [`int`](class_int.md)                             | [`application/export_method_debug`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/export_method_debug)                                                                       |
+| [`int`](class_int.md)                             | [`application/export_method_release`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/export_method_release)                                                                   |
+| [`bool`](class_bool.md)                           | [`application/export_project_only`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/export_project_only)                                                                       |
+| [`bool`](class_bool.md)                           | [`application/generate_simulator_library_if_missing`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/generate_simulator_library_if_missing)                                   |
+| [`int`](class_int.md)                             | [`application/icon_interpolation`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/icon_interpolation)                                                                         |
+| [`String`](class_string.md)                       | [`application/min_ios_version`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/min_ios_version)                                                                               |
+| [`String`](class_string.md)                       | [`application/provisioning_profile_uuid_debug`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/provisioning_profile_uuid_debug)                                               |
+| [`String`](class_string.md)                       | [`application/provisioning_profile_uuid_release`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/provisioning_profile_uuid_release)                                           |
+| [`String`](class_string.md)                       | [`application/short_version`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/short_version)                                                                                   |
+| [`String`](class_string.md)                       | [`application/signature`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/signature)                                                                                           |
+| [`int`](class_int.md)                             | [`application/targeted_device_family`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/targeted_device_family)                                                                 |
+| [`String`](class_string.md)                       | [`application/version`](class_editorexportplatformios.md#class_editorexportplatformios_property_application/version)                                                                                               |
+| [`bool`](class_bool.md)                           | [`architectures/arm64`](class_editorexportplatformios.md#class_editorexportplatformios_property_architectures/arm64)                                                                                               |
+| [`bool`](class_bool.md)                           | [`capabilities/access_wifi`](class_editorexportplatformios.md#class_editorexportplatformios_property_capabilities/access_wifi)                                                                                     |
+| [`bool`](class_bool.md)                           | [`capabilities/performance_a12`](class_editorexportplatformios.md#class_editorexportplatformios_property_capabilities/performance_a12)                                                                             |
+| [`bool`](class_bool.md)                           | [`capabilities/performance_gaming_tier`](class_editorexportplatformios.md#class_editorexportplatformios_property_capabilities/performance_gaming_tier)                                                             |
+| [`bool`](class_bool.md)                           | [`capabilities/push_notifications`](class_editorexportplatformios.md#class_editorexportplatformios_property_capabilities/push_notifications)                                                                       |
+| [`String`](class_string.md)                       | [`custom_template/debug`](class_editorexportplatformios.md#class_editorexportplatformios_property_custom_template/debug)                                                                                           |
+| [`String`](class_string.md)                       | [`custom_template/release`](class_editorexportplatformios.md#class_editorexportplatformios_property_custom_template/release)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/app_store_1024x1024`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/app_store_1024x1024)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/app_store_1024x1024_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/app_store_1024x1024_dark)                                                                         |
+| [`String`](class_string.md)                       | [`icons/app_store_1024x1024_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/app_store_1024x1024_tinted)                                                                     |
+| [`String`](class_string.md)                       | [`icons/icon_1024x1024`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/icon_1024x1024)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/icon_1024x1024_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/icon_1024x1024_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/icon_1024x1024_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/icon_1024x1024_tinted)                                                                               |
+| [`String`](class_string.md)                       | [`icons/ios_128x128`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_128x128)                                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ios_128x128_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_128x128_dark)                                                                                         |
+| [`String`](class_string.md)                       | [`icons/ios_128x128_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_128x128_tinted)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/ios_136x136`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_136x136)                                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ios_136x136_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_136x136_dark)                                                                                         |
+| [`String`](class_string.md)                       | [`icons/ios_136x136_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_136x136_tinted)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/ios_192x192`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_192x192)                                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ios_192x192_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_192x192_dark)                                                                                         |
+| [`String`](class_string.md)                       | [`icons/ios_192x192_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_192x192_tinted)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/ipad_152x152`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_152x152)                                                                                                 |
+| [`String`](class_string.md)                       | [`icons/ipad_152x152_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_152x152_dark)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/ipad_152x152_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_152x152_tinted)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ipad_167x167`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_167x167)                                                                                                 |
+| [`String`](class_string.md)                       | [`icons/ipad_167x167_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_167x167_dark)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/ipad_167x167_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_167x167_tinted)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/iphone_120x120`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_120x120)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/iphone_120x120_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_120x120_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/iphone_120x120_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_120x120_tinted)                                                                               |
+| [`String`](class_string.md)                       | [`icons/iphone_180x180`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_180x180)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/iphone_180x180_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_180x180_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/iphone_180x180_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_180x180_tinted)                                                                               |
+| [`String`](class_string.md)                       | [`icons/notification_40x40`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_40x40)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/notification_40x40_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_40x40_dark)                                                                           |
+| [`String`](class_string.md)                       | [`icons/notification_40x40_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_40x40_tinted)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_60x60`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_60x60)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/notification_60x60_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_60x60_dark)                                                                           |
+| [`String`](class_string.md)                       | [`icons/notification_60x60_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_60x60_tinted)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_76x76`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_76x76)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/notification_76x76_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_76x76_dark)                                                                           |
+| [`String`](class_string.md)                       | [`icons/notification_76x76_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_76x76_tinted)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_114x114`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_114x114)                                                                                 |
+| [`String`](class_string.md)                       | [`icons/notification_114x114_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_114x114_dark)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_114x114_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_114x114_tinted)                                                                   |
+| [`String`](class_string.md)                       | [`icons/settings_58x58`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_58x58)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/settings_58x58_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_58x58_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/settings_58x58_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_58x58_tinted)                                                                               |
+| [`String`](class_string.md)                       | [`icons/settings_87x87`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_87x87)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/settings_87x87_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_87x87_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/settings_87x87_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_87x87_tinted)                                                                               |
+| [`String`](class_string.md)                       | [`icons/spotlight_80x80`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_80x80)                                                                                           |
+| [`String`](class_string.md)                       | [`icons/spotlight_80x80_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_80x80_dark)                                                                                 |
+| [`String`](class_string.md)                       | [`icons/spotlight_80x80_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_80x80_tinted)                                                                             |
+| [`String`](class_string.md)                       | [`icons/spotlight_120x120`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_120x120)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/spotlight_120x120_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_120x120_dark)                                                                             |
+| [`String`](class_string.md)                       | [`icons/spotlight_120x120_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_120x120_tinted)                                                                         |
+| [`int`](class_int.md)                             | [`privacy/active_keyboard_access_reasons`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/active_keyboard_access_reasons)                                                         |
+| [`String`](class_string.md)                       | [`privacy/camera_usage_description`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/camera_usage_description)                                                                     |
+| [`Dictionary`](class_dictionary.md)               | [`privacy/camera_usage_description_localized`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/camera_usage_description_localized)                                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/advertising_data/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/advertising_data/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/advertising_data/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/advertising_data/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/advertising_data/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/advertising_data/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/advertising_data/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/advertising_data/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/audio_data/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/audio_data/collected)                                               |
+| [`int`](class_int.md)                             | [`privacy/collected_data/audio_data/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/audio_data/collection_purposes)                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/audio_data/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/audio_data/linked_to_user)                                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/audio_data/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/audio_data/used_for_tracking)                               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/browsing_history/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/browsing_history/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/browsing_history/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/browsing_history/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/browsing_history/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/browsing_history/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/browsing_history/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/browsing_history/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/coarse_location/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/coarse_location/collected)                                     |
+| [`int`](class_int.md)                             | [`privacy/collected_data/coarse_location/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/coarse_location/collection_purposes)                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/coarse_location/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/coarse_location/linked_to_user)                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/coarse_location/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/coarse_location/used_for_tracking)                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/contacts/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/contacts/collected)                                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/contacts/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/contacts/collection_purposes)                               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/contacts/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/contacts/linked_to_user)                                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/contacts/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/contacts/used_for_tracking)                                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/crash_data/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/crash_data/collected)                                               |
+| [`int`](class_int.md)                             | [`privacy/collected_data/crash_data/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/crash_data/collection_purposes)                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/crash_data/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/crash_data/linked_to_user)                                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/crash_data/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/crash_data/used_for_tracking)                               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/credit_info/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/credit_info/collected)                                             |
+| [`int`](class_int.md)                             | [`privacy/collected_data/credit_info/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/credit_info/collection_purposes)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/credit_info/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/credit_info/linked_to_user)                                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/credit_info/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/credit_info/used_for_tracking)                             |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/customer_support/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/customer_support/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/customer_support/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/customer_support/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/customer_support/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/customer_support/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/customer_support/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/customer_support/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/device_id/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/device_id/collected)                                                 |
+| [`int`](class_int.md)                             | [`privacy/collected_data/device_id/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/device_id/collection_purposes)                             |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/device_id/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/device_id/linked_to_user)                                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/device_id/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/device_id/used_for_tracking)                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/email_address/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/email_address/collected)                                         |
+| [`int`](class_int.md)                             | [`privacy/collected_data/email_address/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/email_address/collection_purposes)                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/email_address/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/email_address/linked_to_user)                               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/email_address/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/email_address/used_for_tracking)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/emails_or_text_messages/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/collected)                     |
+| [`int`](class_int.md)                             | [`privacy/collected_data/emails_or_text_messages/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/collection_purposes) |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/emails_or_text_messages/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/linked_to_user)           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/emails_or_text_messages/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/emails_or_text_messages/used_for_tracking)     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/environment_scanning/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/collected)                           |
+| [`int`](class_int.md)                             | [`privacy/collected_data/environment_scanning/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/collection_purposes)       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/environment_scanning/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/linked_to_user)                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/environment_scanning/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/environment_scanning/used_for_tracking)           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/fitness/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/fitness/collected)                                                     |
+| [`int`](class_int.md)                             | [`privacy/collected_data/fitness/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/fitness/collection_purposes)                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/fitness/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/fitness/linked_to_user)                                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/fitness/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/fitness/used_for_tracking)                                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/gameplay_content/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/gameplay_content/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/gameplay_content/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/gameplay_content/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/gameplay_content/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/hands/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/hands/collected)                                                         |
+| [`int`](class_int.md)                             | [`privacy/collected_data/hands/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/hands/collection_purposes)                                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/hands/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/hands/linked_to_user)                                               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/hands/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/hands/used_for_tracking)                                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/head/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/head/collected)                                                           |
+| [`int`](class_int.md)                             | [`privacy/collected_data/head/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/head/collection_purposes)                                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/head/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/head/linked_to_user)                                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/head/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/head/used_for_tracking)                                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/health/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/health/collected)                                                       |
+| [`int`](class_int.md)                             | [`privacy/collected_data/health/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/health/collection_purposes)                                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/health/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/health/linked_to_user)                                             |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/health/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/health/used_for_tracking)                                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/name/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/name/collected)                                                           |
+| [`int`](class_int.md)                             | [`privacy/collected_data/name/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/name/collection_purposes)                                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/name/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/name/linked_to_user)                                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/name/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/name/used_for_tracking)                                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_contact_info/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/collected)                               |
+| [`int`](class_int.md)                             | [`privacy/collected_data/other_contact_info/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/collection_purposes)           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_contact_info/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/linked_to_user)                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_contact_info/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_contact_info/used_for_tracking)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_data_types/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_data_types/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/other_data_types/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_data_types/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_data_types/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_data_types/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_data_types/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_data_types/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_diagnostic_data/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/collected)                         |
+| [`int`](class_int.md)                             | [`privacy/collected_data/other_diagnostic_data/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/collection_purposes)     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_diagnostic_data/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/linked_to_user)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_diagnostic_data/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_diagnostic_data/used_for_tracking)         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_financial_info/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/collected)                           |
+| [`int`](class_int.md)                             | [`privacy/collected_data/other_financial_info/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/collection_purposes)       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_financial_info/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/linked_to_user)                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_financial_info/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_financial_info/used_for_tracking)           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_usage_data/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/other_usage_data/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_usage_data/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_usage_data/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_usage_data/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_user_content/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_user_content/collected)                               |
+| [`int`](class_int.md)                             | [`privacy/collected_data/other_user_content/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_user_content/collection_purposes)           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_user_content/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_user_content/linked_to_user)                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/other_user_content/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/other_user_content/used_for_tracking)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/payment_info/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/payment_info/collected)                                           |
+| [`int`](class_int.md)                             | [`privacy/collected_data/payment_info/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/payment_info/collection_purposes)                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/payment_info/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/payment_info/linked_to_user)                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/payment_info/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/payment_info/used_for_tracking)                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/performance_data/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/performance_data/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/performance_data/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/performance_data/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/performance_data/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/performance_data/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/performance_data/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/performance_data/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/phone_number/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/phone_number/collected)                                           |
+| [`int`](class_int.md)                             | [`privacy/collected_data/phone_number/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/phone_number/collection_purposes)                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/phone_number/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/phone_number/linked_to_user)                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/phone_number/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/phone_number/used_for_tracking)                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/photos_or_videos/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/photos_or_videos/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/photos_or_videos/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/photos_or_videos/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/photos_or_videos/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/physical_address/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/physical_address/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/physical_address/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/physical_address/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/physical_address/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/physical_address/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/physical_address/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/physical_address/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/precise_location/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/precise_location/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/precise_location/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/precise_location/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/precise_location/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/precise_location/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/precise_location/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/precise_location/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/product_interaction/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/product_interaction/collected)                             |
+| [`int`](class_int.md)                             | [`privacy/collected_data/product_interaction/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/product_interaction/collection_purposes)         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/product_interaction/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/product_interaction/linked_to_user)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/product_interaction/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/product_interaction/used_for_tracking)             |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/purchase_history/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/purchase_history/collected)                                   |
+| [`int`](class_int.md)                             | [`privacy/collected_data/purchase_history/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/purchase_history/collection_purposes)               |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/purchase_history/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/purchase_history/linked_to_user)                         |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/purchase_history/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/purchase_history/used_for_tracking)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/search_hhistory/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/collected)                                     |
+| [`int`](class_int.md)                             | [`privacy/collected_data/search_hhistory/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/collection_purposes)                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/search_hhistory/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/linked_to_user)                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/search_hhistory/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/search_hhistory/used_for_tracking)                     |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/sensitive_info/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/collected)                                       |
+| [`int`](class_int.md)                             | [`privacy/collected_data/sensitive_info/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/collection_purposes)                   |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/sensitive_info/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/linked_to_user)                             |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/sensitive_info/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/sensitive_info/used_for_tracking)                       |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/user_id/collected`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/user_id/collected)                                                     |
+| [`int`](class_int.md)                             | [`privacy/collected_data/user_id/collection_purposes`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/user_id/collection_purposes)                                 |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/user_id/linked_to_user`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/user_id/linked_to_user)                                           |
+| [`bool`](class_bool.md)                           | [`privacy/collected_data/user_id/used_for_tracking`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/collected_data/user_id/used_for_tracking)                                     |
+| [`int`](class_int.md)                             | [`privacy/disk_space_access_reasons`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/disk_space_access_reasons)                                                                   |
+| [`int`](class_int.md)                             | [`privacy/file_timestamp_access_reasons`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/file_timestamp_access_reasons)                                                           |
+| [`String`](class_string.md)                       | [`privacy/microphone_usage_description`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/microphone_usage_description)                                                             |
+| [`Dictionary`](class_dictionary.md)               | [`privacy/microphone_usage_description_localized`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/microphone_usage_description_localized)                                         |
+| [`String`](class_string.md)                       | [`privacy/photolibrary_usage_description`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/photolibrary_usage_description)                                                         |
+| [`Dictionary`](class_dictionary.md)               | [`privacy/photolibrary_usage_description_localized`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/photolibrary_usage_description_localized)                                     |
+| [`int`](class_int.md)                             | [`privacy/system_boot_time_access_reasons`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/system_boot_time_access_reasons)                                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`privacy/tracking_domains`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/tracking_domains)                                                                                     |
+| [`bool`](class_bool.md)                           | [`privacy/tracking_enabled`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/tracking_enabled)                                                                                     |
+| [`int`](class_int.md)                             | [`privacy/user_defaults_access_reasons`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/user_defaults_access_reasons)                                                             |
+| [`Color`](class_color.md)                         | [`storyboard/custom_bg_color`](class_editorexportplatformios.md#class_editorexportplatformios_property_storyboard/custom_bg_color)                                                                                 |
+| [`String`](class_string.md)                       | [`storyboard/custom_image@2x`](class_editorexportplatformios.md#class_editorexportplatformios_property_storyboard/custom_image@2x)                                                                                 |
+| [`String`](class_string.md)                       | [`storyboard/custom_image@3x`](class_editorexportplatformios.md#class_editorexportplatformios_property_storyboard/custom_image@3x)                                                                                 |
+| [`int`](class_int.md)                             | [`storyboard/image_scale_mode`](class_editorexportplatformios.md#class_editorexportplatformios_property_storyboard/image_scale_mode)                                                                               |
+| [`bool`](class_bool.md)                           | [`storyboard/use_custom_bg_color`](class_editorexportplatformios.md#class_editorexportplatformios_property_storyboard/use_custom_bg_color)                                                                         |
+| [`bool`](class_bool.md)                           | [`user_data/accessible_from_files_app`](class_editorexportplatformios.md#class_editorexportplatformios_property_user_data/accessible_from_files_app)                                                               |
+| [`bool`](class_bool.md)                           | [`user_data/accessible_from_itunes_sharing`](class_editorexportplatformios.md#class_editorexportplatformios_property_user_data/accessible_from_itunes_sharing)                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -373,7 +414,7 @@ Can be overridden with the environment variable `GODOT_IOS_PROVISIONING_PROFILE_
 
 [`String`](class_string.md) **application/short_version** <div id="class_editorexportplatformios_property_application/short_version"></div>
 
-Application version visible to the user, can only contain numeric characters (`0-9`) and periods (`.`). Falls back to [`ProjectSettings.application/config/version`](#class_projectsettings_property_application/config/version) if left empty.
+Application version visible to the user, can only contain numeric characters (`0-9`) and periods (`.`). Falls back to [`ProjectSettings.application/config/version`](class_projectsettings.md#class_projectsettings_property_application/config/version) if left empty.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -487,17 +528,147 @@ Path to the custom export template. If left empty, default template is used.
 
 [`String`](class_string.md) **icons/app_store_1024x1024** <div id="class_editorexportplatformios_property_icons/app_store_1024x1024"></div>
 
-App Store application icon file. If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+App Store application icon file. If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
 ---
 
-<div id="_class_editorexportplatformios_property_icons/ipad_76x76"></div>
+<div id="_class_editorexportplatformios_property_icons/app_store_1024x1024_dark"></div>
 
-[`String`](class_string.md) **icons/ipad_76x76** <div id="class_editorexportplatformios_property_icons/ipad_76x76"></div>
+[`String`](class_string.md) **icons/app_store_1024x1024_dark** <div id="class_editorexportplatformios_property_icons/app_store_1024x1024_dark"></div>
 
-Home screen application icon file on iPad (1x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+App Store application icon file, dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/app_store_1024x1024_tinted"></div>
+
+[`String`](class_string.md) **icons/app_store_1024x1024_tinted** <div id="class_editorexportplatformios_property_icons/app_store_1024x1024_tinted"></div>
+
+App Store application icon file, tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/icon_1024x1024"></div>
+
+[`String`](class_string.md) **icons/icon_1024x1024** <div id="class_editorexportplatformios_property_icons/icon_1024x1024"></div>
+
+Base application icon used to generate other icons. If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/icon_1024x1024_dark"></div>
+
+[`String`](class_string.md) **icons/icon_1024x1024_dark** <div id="class_editorexportplatformios_property_icons/icon_1024x1024_dark"></div>
+
+Base application icon used to generate other icons, dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/icon_1024x1024_tinted"></div>
+
+[`String`](class_string.md) **icons/icon_1024x1024_tinted** <div id="class_editorexportplatformios_property_icons/icon_1024x1024_tinted"></div>
+
+Base application icon used to generate other icons, tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_128x128"></div>
+
+[`String`](class_string.md) **icons/ios_128x128** <div id="class_editorexportplatformios_property_icons/ios_128x128"></div>
+
+iOS application 64x64 icon file (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_128x128_dark"></div>
+
+[`String`](class_string.md) **icons/ios_128x128_dark** <div id="class_editorexportplatformios_property_icons/ios_128x128_dark"></div>
+
+iOS application 64x64 icon file (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_128x128_tinted"></div>
+
+[`String`](class_string.md) **icons/ios_128x128_tinted** <div id="class_editorexportplatformios_property_icons/ios_128x128_tinted"></div>
+
+iOS application 64x64 icon file (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_136x136"></div>
+
+[`String`](class_string.md) **icons/ios_136x136** <div id="class_editorexportplatformios_property_icons/ios_136x136"></div>
+
+iOS application 68x68 icon file (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_136x136_dark"></div>
+
+[`String`](class_string.md) **icons/ios_136x136_dark** <div id="class_editorexportplatformios_property_icons/ios_136x136_dark"></div>
+
+iOS application 68x68 icon file (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_136x136_tinted"></div>
+
+[`String`](class_string.md) **icons/ios_136x136_tinted** <div id="class_editorexportplatformios_property_icons/ios_136x136_tinted"></div>
+
+iOS application 68x68 icon file (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_192x192"></div>
+
+[`String`](class_string.md) **icons/ios_192x192** <div id="class_editorexportplatformios_property_icons/ios_192x192"></div>
+
+iOS application 64x64 icon file (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_192x192_dark"></div>
+
+[`String`](class_string.md) **icons/ios_192x192_dark** <div id="class_editorexportplatformios_property_icons/ios_192x192_dark"></div>
+
+iOS application 64x64 icon file (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_192x192_tinted"></div>
+
+[`String`](class_string.md) **icons/ios_192x192_tinted** <div id="class_editorexportplatformios_property_icons/ios_192x192_tinted"></div>
+
+iOS application 64x64 icon file (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -507,7 +678,27 @@ Home screen application icon file on iPad (1x DPI). If left empty, it will fallb
 
 [`String`](class_string.md) **icons/ipad_152x152** <div id="class_editorexportplatformios_property_icons/ipad_152x152"></div>
 
-Home screen application icon file on iPad (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Home screen application icon file on iPad (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_152x152_dark"></div>
+
+[`String`](class_string.md) **icons/ipad_152x152_dark** <div id="class_editorexportplatformios_property_icons/ipad_152x152_dark"></div>
+
+Home screen application icon file on iPad (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_152x152_tinted"></div>
+
+[`String`](class_string.md) **icons/ipad_152x152_tinted** <div id="class_editorexportplatformios_property_icons/ipad_152x152_tinted"></div>
+
+Home screen application icon file on iPad (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -517,7 +708,27 @@ Home screen application icon file on iPad (2x DPI). If left empty, it will fallb
 
 [`String`](class_string.md) **icons/ipad_167x167** <div id="class_editorexportplatformios_property_icons/ipad_167x167"></div>
 
-Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_167x167_dark"></div>
+
+[`String`](class_string.md) **icons/ipad_167x167_dark** <div id="class_editorexportplatformios_property_icons/ipad_167x167_dark"></div>
+
+Home screen application icon file on iPad (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_167x167_tinted"></div>
+
+[`String`](class_string.md) **icons/ipad_167x167_tinted** <div id="class_editorexportplatformios_property_icons/ipad_167x167_tinted"></div>
+
+Home screen application icon file on iPad (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -527,7 +738,27 @@ Home screen application icon file on iPad (3x DPI). If left empty, it will fallb
 
 [`String`](class_string.md) **icons/iphone_120x120** <div id="class_editorexportplatformios_property_icons/iphone_120x120"></div>
 
-Home screen application icon file on iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Home screen application icon file on iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_120x120_dark"></div>
+
+[`String`](class_string.md) **icons/iphone_120x120_dark** <div id="class_editorexportplatformios_property_icons/iphone_120x120_dark"></div>
+
+Home screen application icon file on iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_120x120_tinted"></div>
+
+[`String`](class_string.md) **icons/iphone_120x120_tinted** <div id="class_editorexportplatformios_property_icons/iphone_120x120_tinted"></div>
+
+Home screen application icon file on iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -537,7 +768,27 @@ Home screen application icon file on iPhone (2x DPI). If left empty, it will fal
 
 [`String`](class_string.md) **icons/iphone_180x180** <div id="class_editorexportplatformios_property_icons/iphone_180x180"></div>
 
-Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_180x180_dark"></div>
+
+[`String`](class_string.md) **icons/iphone_180x180_dark** <div id="class_editorexportplatformios_property_icons/iphone_180x180_dark"></div>
+
+Home screen application icon file on iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_180x180_tinted"></div>
+
+[`String`](class_string.md) **icons/iphone_180x180_tinted** <div id="class_editorexportplatformios_property_icons/iphone_180x180_tinted"></div>
+
+Home screen application icon file on iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -547,7 +798,27 @@ Home screen application icon file on iPhone (3x DPI). If left empty, it will fal
 
 [`String`](class_string.md) **icons/notification_40x40** <div id="class_editorexportplatformios_property_icons/notification_40x40"></div>
 
-Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_40x40_dark"></div>
+
+[`String`](class_string.md) **icons/notification_40x40_dark** <div id="class_editorexportplatformios_property_icons/notification_40x40_dark"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_40x40_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_40x40_tinted** <div id="class_editorexportplatformios_property_icons/notification_40x40_tinted"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -557,7 +828,87 @@ Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallb
 
 [`String`](class_string.md) **icons/notification_60x60** <div id="class_editorexportplatformios_property_icons/notification_60x60"></div>
 
-Notification icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Notification icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_60x60_dark"></div>
+
+[`String`](class_string.md) **icons/notification_60x60_dark** <div id="class_editorexportplatformios_property_icons/notification_60x60_dark"></div>
+
+Notification icon file on iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_60x60_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_60x60_tinted** <div id="class_editorexportplatformios_property_icons/notification_60x60_tinted"></div>
+
+Notification icon file on iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_76x76"></div>
+
+[`String`](class_string.md) **icons/notification_76x76** <div id="class_editorexportplatformios_property_icons/notification_76x76"></div>
+
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_76x76_dark"></div>
+
+[`String`](class_string.md) **icons/notification_76x76_dark** <div id="class_editorexportplatformios_property_icons/notification_76x76_dark"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_76x76_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_76x76_tinted** <div id="class_editorexportplatformios_property_icons/notification_76x76_tinted"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_114x114"></div>
+
+[`String`](class_string.md) **icons/notification_114x114** <div id="class_editorexportplatformios_property_icons/notification_114x114"></div>
+
+Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_114x114_dark"></div>
+
+[`String`](class_string.md) **icons/notification_114x114_dark** <div id="class_editorexportplatformios_property_icons/notification_114x114_dark"></div>
+
+Notification icon file on iPad and iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_114x114_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_114x114_tinted** <div id="class_editorexportplatformios_property_icons/notification_114x114_tinted"></div>
+
+Notification icon file on iPad and iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -567,7 +918,27 @@ Notification icon file on iPhone (3x DPI). If left empty, it will fallback to [`
 
 [`String`](class_string.md) **icons/settings_58x58** <div id="class_editorexportplatformios_property_icons/settings_58x58"></div>
 
-Application settings icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Application settings icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/settings_58x58_dark"></div>
+
+[`String`](class_string.md) **icons/settings_58x58_dark** <div id="class_editorexportplatformios_property_icons/settings_58x58_dark"></div>
+
+Application settings icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/settings_58x58_tinted"></div>
+
+[`String`](class_string.md) **icons/settings_58x58_tinted** <div id="class_editorexportplatformios_property_icons/settings_58x58_tinted"></div>
+
+Application settings icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -577,17 +948,27 @@ Application settings icon file on iPad and iPhone (2x DPI). If left empty, it wi
 
 [`String`](class_string.md) **icons/settings_87x87** <div id="class_editorexportplatformios_property_icons/settings_87x87"></div>
 
-Application settings icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Application settings icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
 ---
 
-<div id="_class_editorexportplatformios_property_icons/spotlight_40x40"></div>
+<div id="_class_editorexportplatformios_property_icons/settings_87x87_dark"></div>
 
-[`String`](class_string.md) **icons/spotlight_40x40** <div id="class_editorexportplatformios_property_icons/spotlight_40x40"></div>
+[`String`](class_string.md) **icons/settings_87x87_dark** <div id="class_editorexportplatformios_property_icons/settings_87x87_dark"></div>
 
-Spotlight icon file on iPad (1x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Application settings icon file on iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/settings_87x87_tinted"></div>
+
+[`String`](class_string.md) **icons/settings_87x87_tinted** <div id="class_editorexportplatformios_property_icons/settings_87x87_tinted"></div>
+
+Application settings icon file on iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -597,7 +978,57 @@ Spotlight icon file on iPad (1x DPI). If left empty, it will fallback to [`Proje
 
 [`String`](class_string.md) **icons/spotlight_80x80** <div id="class_editorexportplatformios_property_icons/spotlight_80x80"></div>
 
-Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_80x80_dark"></div>
+
+[`String`](class_string.md) **icons/spotlight_80x80_dark** <div id="class_editorexportplatformios_property_icons/spotlight_80x80_dark"></div>
+
+Spotlight icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_80x80_tinted"></div>
+
+[`String`](class_string.md) **icons/spotlight_80x80_tinted** <div id="class_editorexportplatformios_property_icons/spotlight_80x80_tinted"></div>
+
+Spotlight icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_120x120"></div>
+
+[`String`](class_string.md) **icons/spotlight_120x120** <div id="class_editorexportplatformios_property_icons/spotlight_120x120"></div>
+
+Spotlight icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_120x120_dark"></div>
+
+[`String`](class_string.md) **icons/spotlight_120x120_dark** <div id="class_editorexportplatformios_property_icons/spotlight_120x120_dark"></div>
+
+Spotlight icon file on iPad and iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_120x120_tinted"></div>
+
+[`String`](class_string.md) **icons/spotlight_120x120_tinted** <div id="class_editorexportplatformios_property_icons/spotlight_120x120_tinted"></div>
+
+Spotlight icon file on iPad and iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2149,7 +2580,7 @@ A custom background color of the storyboard launch screen.
 
 [`String`](class_string.md) **storyboard/custom_image@2x** <div id="class_editorexportplatformios_property_storyboard/custom_image@2x"></div>
 
-Application launch screen image file (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/boot_splash/image`](#class_projectsettings_property_application/boot_splash/image).
+Application launch screen image file (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/boot_splash/image`](class_projectsettings.md#class_projectsettings_property_application/boot_splash/image).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2159,7 +2590,7 @@ Application launch screen image file (2x DPI). If left empty, it will fallback t
 
 [`String`](class_string.md) **storyboard/custom_image@3x** <div id="class_editorexportplatformios_property_storyboard/custom_image@3x"></div>
 
-Application launch screen image file (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/boot_splash/image`](#class_projectsettings_property_application/boot_splash/image).
+Application launch screen image file (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/boot_splash/image`](class_projectsettings.md#class_projectsettings_property_application/boot_splash/image).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2179,7 +2610,7 @@ Launch screen image scaling mode.
 
 [`bool`](class_bool.md) **storyboard/use_custom_bg_color** <div id="class_editorexportplatformios_property_storyboard/use_custom_bg_color"></div>
 
-If `true`, [`storyboard/custom_bg_color`](#class_editorexportplatformios_property_storyboard/custom_bg_color) is used as a launch screen background color, otherwise `application/boot_splash/bg_color` project setting is used.
+If `true`, [`storyboard/custom_bg_color`](class_editorexportplatformios.md#class_editorexportplatformios_property_storyboard/custom_bg_color) is used as a launch screen background color, otherwise `application/boot_splash/bg_color` project setting is used.
 
 <!-- rst-class:: classref-item-separator -->
 

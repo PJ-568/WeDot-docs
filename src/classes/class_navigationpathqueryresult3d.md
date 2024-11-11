@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationPathQueryResult3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationPathQueryResult3D.xml。 -->
 
 <div id="_class_navigationpathqueryresult3d"></div>
 
@@ -19,14 +19,18 @@ This class stores the result of a 3D navigation path query from the [`Navigation
 
 ## 属性
 
-| [`PackedVector3Array`](class_packedvector3array.md) | [`path`](#class_navigationpathqueryresult3d_property_path)                     | ``PackedVector3Array()`` |
-| [`PackedInt64Array`](class_packedint64array.md)     | [`path_owner_ids`](#class_navigationpathqueryresult3d_property_path_owner_ids) | ``PackedInt64Array()``   |
-| [Array](class_array.md) [`RID`](class_rid.md)       | [`path_rids`](#class_navigationpathqueryresult3d_property_path_rids)           | ``[]``                   |
-| [`PackedInt32Array`](class_packedint32array.md)     | [`path_types`](#class_navigationpathqueryresult3d_property_path_types)         | ``PackedInt32Array()``   |
+|||
+|:-:|:--|
+| [`PackedVector3Array`](class_packedvector3array.md) | [`path`](class_navigationpathqueryresult3d.md#class_navigationpathqueryresult3d_property_path)                     | ``PackedVector3Array()`` |
+| [`PackedInt64Array`](class_packedint64array.md)     | [`path_owner_ids`](class_navigationpathqueryresult3d.md#class_navigationpathqueryresult3d_property_path_owner_ids) | ``PackedInt64Array()``   |
+| [Array](class_array.md) [`RID`](class_rid.md)       | [`path_rids`](class_navigationpathqueryresult3d.md#class_navigationpathqueryresult3d_property_path_rids)           | ``[]``                   |
+| [`PackedInt32Array`](class_packedint32array.md)     | [`path_types`](class_navigationpathqueryresult3d.md#class_navigationpathqueryresult3d_property_path_types)         | ``PackedInt32Array()``   |
 
 ## 方法
 
-| `void` | [`reset`](#class_navigationpathqueryresult3d_method_reset) ( ) |
+|||
+|:-:|:--|
+| `void` | [`reset`](class_navigationpathqueryresult3d.md#class_navigationpathqueryresult3d_method_reset) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -63,7 +67,7 @@ This segment of the path goes through a link.
 - `void` **set_path** ( value: [`PackedVector3Array`](class_packedvector3array.md) )
 - [`PackedVector3Array`](class_packedvector3array.md) **get_path** ( )
 
-The resulting path array from the navigation query. All path array positions are in global coordinates. Without customized query parameters this is the same path as returned by [`NavigationServer3D.map_get_path`](#class_navigationserver3d_method_map_get_path).
+The resulting path array from the navigation query. All path array positions are in global coordinates. Without customized query parameters this is the same path as returned by [`NavigationServer3D.map_get_path`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_path).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector3Array`](class_packedvector3array.md) for more details.
 

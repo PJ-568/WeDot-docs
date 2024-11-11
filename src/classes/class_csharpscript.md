@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/mono/doc_classes/CSharpScript.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/mono/doc_classes/CSharpScript.xml。 -->
 
 <div id="_class_csharpscript"></div>
 
@@ -17,7 +17,9 @@ This class represents a C# script. It is the C# equivalent of the [`GDScript`](c
 
 ## 方法
 
-| [`Variant`](class_variant.md) | [`new`](#class_csharpscript_method_new) ( ... ) vararg[^vararg] |
+|||
+|:-:|:--|
+| [`Variant`](class_variant.md) | [`new`](class_csharpscript.md#class_csharpscript_method_new) ( ... ) vararg[^vararg] |
 
 <!-- rst-class:: classref-section-separator -->
 

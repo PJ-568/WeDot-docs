@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamPolyphonic.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamPolyphonic.xml。 -->
 
 <div id="_class_audiostreampolyphonic"></div>
 
@@ -15,11 +15,13 @@ AudioStream that lets the user play custom streams at any time from code, simult
 
 AudioStream that lets the user play custom streams at any time from code, simultaneously using a single player.
 
-Playback control is done via the [`AudioStreamPlaybackPolyphonic`](class_audiostreamplaybackpolyphonic.md) instance set inside the player, which can be obtained via [`AudioStreamPlayer.get_stream_playback`](#class_audiostreamplayer_method_get_stream_playback), [`AudioStreamPlayer2D.get_stream_playback`](#class_audiostreamplayer2d_method_get_stream_playback) or [`AudioStreamPlayer3D.get_stream_playback`](#class_audiostreamplayer3d_method_get_stream_playback) methods. Obtaining the playback instance is only valid after the `stream` property is set as an **AudioStreamPolyphonic** in those players.
+Playback control is done via the [`AudioStreamPlaybackPolyphonic`](class_audiostreamplaybackpolyphonic.md) instance set inside the player, which can be obtained via [`AudioStreamPlayer.get_stream_playback`](class_audiostreamplayer.md#class_audiostreamplayer_method_get_stream_playback), [`AudioStreamPlayer2D.get_stream_playback`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_get_stream_playback) or [`AudioStreamPlayer3D.get_stream_playback`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_get_stream_playback) methods. Obtaining the playback instance is only valid after the `stream` property is set as an **AudioStreamPolyphonic** in those players.
 
 ## 属性
 
-| [`int`](class_int.md) | [`polyphony`](#class_audiostreampolyphonic_property_polyphony) | ``32`` |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`polyphony`](class_audiostreampolyphonic.md#class_audiostreampolyphonic_property_polyphony) | ``32`` |
 
 <!-- rst-class:: classref-section-separator -->
 

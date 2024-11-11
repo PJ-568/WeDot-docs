@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/BoxOccluder3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/BoxOccluder3D.xml。 -->
 
 <div id="_class_boxoccluder3d"></div>
 
@@ -19,7 +19,9 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
-| [`Vector3`](class_vector3.md) | [`size`](#class_boxoccluder3d_property_size) | ``Vector3(1, 1, 1)`` |
+|||
+|:-:|:--|
+| [`Vector3`](class_vector3.md) | [`size`](class_boxoccluder3d.md#class_boxoccluder3d_property_size) | ``Vector3(1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

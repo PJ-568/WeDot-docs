@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CircleShape2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CircleShape2D.xml。 -->
 
 <div id="_class_circleshape2d"></div>
 
@@ -19,7 +19,9 @@ A 2D circle shape, intended for use in physics. Usually used to provide a shape 
 
 ## 属性
 
-| [`float`](class_float.md) | [`radius`](#class_circleshape2d_property_radius) | ``10.0`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`radius`](class_circleshape2d.md#class_circleshape2d_property_radius) | ``10.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/XRFaceTracker.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/XRFaceTracker.xml。 -->
 
 <div id="_class_xrfacetracker"></div>
 
@@ -21,13 +21,17 @@ As face trackers are turned on they are registered with the [`XRServer`](class_x
 
 ## 属性
 
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`blend_shapes`](#class_xrfacetracker_property_blend_shapes) | ``PackedFloat32Array()``                                         |
-| [TrackerType](#enum_xrserver_trackertype)           | type                                                         | ``64`` (overrides [`XRTracker`](#class_xrtracker_property_type)) |
+|||
+|:-:|:--|
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`blend_shapes`](class_xrfacetracker.md#class_xrfacetracker_property_blend_shapes) | ``PackedFloat32Array()``                                                           |
+| [TrackerType](#enum_xrserver_trackertype)           | type                                                                               | ``64`` (overrides [`XRTracker`](class_xrtracker.md#class_xrtracker_property_type)) |
 
 ## 方法
 
-| [`float`](class_float.md) | [`get_blend_shape`](#class_xrfacetracker_method_get_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry) ) const[^const]                      |
-| `void`                    | [`set_blend_shape`](#class_xrfacetracker_method_set_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry), weight: [`float`](class_float.md) ) |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`get_blend_shape`](class_xrfacetracker.md#class_xrfacetracker_method_get_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry) ) const[^const]                      |
+| `void`                    | [`set_blend_shape`](class_xrfacetracker.md#class_xrfacetracker_method_set_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry), weight: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

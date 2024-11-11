@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/XRController3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/XRController3D.xml。 -->
 
 <div id="_class_xrcontroller3d"></div>
 
@@ -23,11 +23,13 @@ As many XR runtimes now use a configurable action map all inputs are named.
 
 ## 方法
 
-| [`float`](class_float.md)                            | [`get_float`](#class_xrcontroller3d_method_get_float) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
-| [`Variant`](class_variant.md)                        | [`get_input`](#class_xrcontroller3d_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
-| [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`get_tracker_hand`](#class_xrcontroller3d_method_get_tracker_hand) ( ) const[^const]                                             |
-| [`Vector2`](class_vector2.md)                        | [`get_vector2`](#class_xrcontroller3d_method_get_vector2) ( name: [`StringName`](class_stringname.md) ) const[^const]             |
-| [`bool`](class_bool.md)                              | [`is_button_pressed`](#class_xrcontroller3d_method_is_button_pressed) ( name: [`StringName`](class_stringname.md) ) const[^const] |
+|||
+|:-:|:--|
+| [`float`](class_float.md)                            | [`get_float`](class_xrcontroller3d.md#class_xrcontroller3d_method_get_float) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
+| [`Variant`](class_variant.md)                        | [`get_input`](class_xrcontroller3d.md#class_xrcontroller3d_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
+| [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`get_tracker_hand`](class_xrcontroller3d.md#class_xrcontroller3d_method_get_tracker_hand) ( ) const[^const]                                             |
+| [`Vector2`](class_vector2.md)                        | [`get_vector2`](class_xrcontroller3d.md#class_xrcontroller3d_method_get_vector2) ( name: [`StringName`](class_stringname.md) ) const[^const]             |
+| [`bool`](class_bool.md)                              | [`is_button_pressed`](class_xrcontroller3d.md#class_xrcontroller3d_method_is_button_pressed) ( name: [`StringName`](class_stringname.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

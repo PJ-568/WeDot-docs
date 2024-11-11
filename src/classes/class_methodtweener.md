@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MethodTweener.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MethodTweener.xml。 -->
 
 <div id="_class_methodtweener"></div>
 
@@ -13,17 +13,19 @@ Interpolates an abstract value and supplies it to a method called over time.
 
 ## 描述
 
-**MethodTweener** is similar to a combination of [`CallbackTweener`](class_callbacktweener.md) and [`PropertyTweener`](class_propertytweener.md). It calls a method providing an interpolated value as a parameter. See [`Tween.tween_method`](#class_tween_method_tween_method) for more usage information.
+**MethodTweener** is similar to a combination of [`CallbackTweener`](class_callbacktweener.md) and [`PropertyTweener`](class_propertytweener.md). It calls a method providing an interpolated value as a parameter. See [`Tween.tween_method`](class_tween.md#class_tween_method_tween_method) for more usage information.
 
 The tweener will finish automatically if the callback's target object is freed.
 
- **Note:** [`Tween.tween_method`](#class_tween_method_tween_method) is the only correct way to create **MethodTweener**. Any **MethodTweener** created manually will not function correctly.
+ **Note:** [`Tween.tween_method`](class_tween.md#class_tween_method_tween_method) is the only correct way to create **MethodTweener**. Any **MethodTweener** created manually will not function correctly.
 
 ## 方法
 
-| [`MethodTweener`](class_methodtweener.md) | [`set_delay`](#class_methodtweener_method_set_delay) ( delay: [`float`](class_float.md) )                    |
-| [`MethodTweener`](class_methodtweener.md) | [`set_ease`](#class_methodtweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                |
-| [`MethodTweener`](class_methodtweener.md) | [`set_trans`](#class_methodtweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) ) |
+|||
+|:-:|:--|
+| [`MethodTweener`](class_methodtweener.md) | [`set_delay`](class_methodtweener.md#class_methodtweener_method_set_delay) ( delay: [`float`](class_float.md) )                    |
+| [`MethodTweener`](class_methodtweener.md) | [`set_ease`](class_methodtweener.md#class_methodtweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                |
+| [`MethodTweener`](class_methodtweener.md) | [`set_trans`](class_methodtweener.md#class_methodtweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CurveTexture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CurveTexture.xml。 -->
 
 <div id="_class_curvetexture"></div>
 
@@ -19,10 +19,12 @@ If you need to store up to 3 curves within a single texture, use [`CurveXYZTextu
 
 ## 属性
 
-| [`Curve`](class_curve.md)                     | [`curve`](#class_curvetexture_property_curve)               |                                                                                      |
-| [`bool`](class_bool.md)                       | resource_local_to_scene                                     | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [TextureMode](#enum_curvetexture_texturemode) | [`texture_mode`](#class_curvetexture_property_texture_mode) | ``0``                                                                                |
-| [`int`](class_int.md)                         | [`width`](#class_curvetexture_property_width)               | ``256``                                                                              |
+|||
+|:-:|:--|
+| [`Curve`](class_curve.md)                     | [`curve`](class_curvetexture.md#class_curvetexture_property_curve)               |                                                                                                       |
+| [`bool`](class_bool.md)                       | resource_local_to_scene                                                          | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [TextureMode](#enum_curvetexture_texturemode) | [`texture_mode`](class_curvetexture.md#class_curvetexture_property_texture_mode) | ``0``                                                                                                 |
+| [`int`](class_int.md)                         | [`width`](class_curvetexture.md#class_curvetexture_property_width)               | ``256``                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

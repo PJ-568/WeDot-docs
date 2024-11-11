@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectReverb.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectReverb.xml。 -->
 
 <div id="_class_audioeffectreverb"></div>
 
@@ -17,14 +17,16 @@ Simulates the sound of acoustic environments such as rooms, concert halls, caver
 
 ## 属性
 
-| [`float`](class_float.md) | [`damping`](#class_audioeffectreverb_property_damping)                     | ``0.5``   |
-| [`float`](class_float.md) | [`dry`](#class_audioeffectreverb_property_dry)                             | ``1.0``   |
-| [`float`](class_float.md) | [`hipass`](#class_audioeffectreverb_property_hipass)                       | ``0.0``   |
-| [`float`](class_float.md) | [`predelay_feedback`](#class_audioeffectreverb_property_predelay_feedback) | ``0.4``   |
-| [`float`](class_float.md) | [`predelay_msec`](#class_audioeffectreverb_property_predelay_msec)         | ``150.0`` |
-| [`float`](class_float.md) | [`room_size`](#class_audioeffectreverb_property_room_size)                 | ``0.8``   |
-| [`float`](class_float.md) | [`spread`](#class_audioeffectreverb_property_spread)                       | ``1.0``   |
-| [`float`](class_float.md) | [`wet`](#class_audioeffectreverb_property_wet)                             | ``0.5``   |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`damping`](class_audioeffectreverb.md#class_audioeffectreverb_property_damping)                     | ``0.5``   |
+| [`float`](class_float.md) | [`dry`](class_audioeffectreverb.md#class_audioeffectreverb_property_dry)                             | ``1.0``   |
+| [`float`](class_float.md) | [`hipass`](class_audioeffectreverb.md#class_audioeffectreverb_property_hipass)                       | ``0.0``   |
+| [`float`](class_float.md) | [`predelay_feedback`](class_audioeffectreverb.md#class_audioeffectreverb_property_predelay_feedback) | ``0.4``   |
+| [`float`](class_float.md) | [`predelay_msec`](class_audioeffectreverb.md#class_audioeffectreverb_property_predelay_msec)         | ``150.0`` |
+| [`float`](class_float.md) | [`room_size`](class_audioeffectreverb.md#class_audioeffectreverb_property_room_size)                 | ``0.8``   |
+| [`float`](class_float.md) | [`spread`](class_audioeffectreverb.md#class_audioeffectreverb_property_spread)                       | ``1.0``   |
+| [`float`](class_float.md) | [`wet`](class_audioeffectreverb.md#class_audioeffectreverb_property_wet)                             | ``0.5``   |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/csg/doc_classes/CSGSphere3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/csg/doc_classes/CSGSphere3D.xml。 -->
 
 <div id="_class_csgsphere3d"></div>
 
@@ -19,11 +19,13 @@ This node allows you to create a sphere for use with the CSG system.
 
 ## 属性
 
-| [`Material`](class_material.md) | [`material`](#class_csgsphere3d_property_material)               |          |
-| [`int`](class_int.md)           | [`radial_segments`](#class_csgsphere3d_property_radial_segments) | ``12``   |
-| [`float`](class_float.md)       | [`radius`](#class_csgsphere3d_property_radius)                   | ``0.5``  |
-| [`int`](class_int.md)           | [`rings`](#class_csgsphere3d_property_rings)                     | ``6``    |
-| [`bool`](class_bool.md)         | [`smooth_faces`](#class_csgsphere3d_property_smooth_faces)       | ``true`` |
+|||
+|:-:|:--|
+| [`Material`](class_material.md) | [`material`](class_csgsphere3d.md#class_csgsphere3d_property_material)               |          |
+| [`int`](class_int.md)           | [`radial_segments`](class_csgsphere3d.md#class_csgsphere3d_property_radial_segments) | ``12``   |
+| [`float`](class_float.md)       | [`radius`](class_csgsphere3d.md#class_csgsphere3d_property_radius)                   | ``0.5``  |
+| [`int`](class_int.md)           | [`rings`](class_csgsphere3d.md#class_csgsphere3d_property_rings)                     | ``6``    |
+| [`bool`](class_bool.md)         | [`smooth_faces`](class_csgsphere3d.md#class_csgsphere3d_property_smooth_faces)       | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 

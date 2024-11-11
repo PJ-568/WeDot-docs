@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Occluder3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Occluder3D.xml。 -->
 
 <div id="_class_occluder3d"></div>
 
@@ -21,8 +21,10 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 方法
 
-| [`PackedInt32Array`](class_packedint32array.md)     | [`get_indices`](#class_occluder3d_method_get_indices) ( ) const[^const]   |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](#class_occluder3d_method_get_vertices) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`PackedInt32Array`](class_packedint32array.md)     | [`get_indices`](class_occluder3d.md#class_occluder3d_method_get_indices) ( ) const[^const]   |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](class_occluder3d.md#class_occluder3d_method_get_vertices) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

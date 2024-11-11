@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeFloatFunc.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeFloatFunc.xml。 -->
 
 <div id="_class_visualshadernodefloatfunc"></div>
 
@@ -13,11 +13,13 @@ A scalar floating-point function to be used within the visual shader graph.
 
 ## 描述
 
-Accept a floating-point scalar (`x`) to the input port and transform it according to [`function`](#class_visualshadernodefloatfunc_property_function).
+Accept a floating-point scalar (`x`) to the input port and transform it according to [`function`](class_visualshadernodefloatfunc.md#class_visualshadernodefloatfunc_property_function).
 
 ## 属性
 
-| [Function](#enum_visualshadernodefloatfunc_function) | [`function`](#class_visualshadernodefloatfunc_property_function) | ``13`` |
+|||
+|:-:|:--|
+| [Function](#enum_visualshadernodefloatfunc_function) | [`function`](class_visualshadernodefloatfunc.md#class_visualshadernodefloatfunc_property_function) | ``13`` |
 
 <!-- rst-class:: classref-section-separator -->
 

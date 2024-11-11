@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VSlider.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VSlider.xml。 -->
 
 <div id="_class_vslider"></div>
 
@@ -17,8 +17,10 @@ A vertical slider, used to adjust a value by moving a grabber along a vertical a
 
 ## 属性
 
-| [SizeFlags](#enum_control_sizeflags) | size_flags_horizontal | ``0`` (overrides [`Control`](#class_control_property_size_flags_horizontal)) |
-| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical   | ``1`` (overrides [`Control`](#class_control_property_size_flags_vertical))   |
+|||
+|:-:|:--|
+| [SizeFlags](#enum_control_sizeflags) | size_flags_horizontal | ``0`` (overrides [`Control`](class_control.md#class_control_property_size_flags_horizontal)) |
+| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical   | ``1`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical))   |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

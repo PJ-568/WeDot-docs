@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorResourceConversionPlugin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorResourceConversionPlugin.xml。 -->
 
 <div id="_class_editorresourceconversionplugin"></div>
 
@@ -37,15 +37,17 @@ Below shows an example of a basic plugin that will convert an [`ImageTexture`](c
 
 
 
-To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlugin.add_resource_conversion_plugin`](#class_editorplugin_method_add_resource_conversion_plugin) method first.
+To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlugin.add_resource_conversion_plugin`](class_editorplugin.md#class_editorplugin_method_add_resource_conversion_plugin) method first.
 
 
 
 ## 方法
 
-| [`Resource`](class_resource.md) | [`_convert`](#class_editorresourceconversionplugin_private_method__convert) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
-| [`String`](class_string.md)     | [`_converts_to`](#class_editorresourceconversionplugin_private_method__converts_to) ( ) virtual[^virtual] const[^const]                                   |
-| [`bool`](class_bool.md)         | [`_handles`](#class_editorresourceconversionplugin_private_method__handles) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
+|||
+|:-:|:--|
+| [`Resource`](class_resource.md) | [`_convert`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__convert) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
+| [`String`](class_string.md)     | [`_converts_to`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__converts_to) ( ) virtual[^virtual] const[^const]                                   |
+| [`bool`](class_bool.md)         | [`_handles`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__handles) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +59,7 @@ To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlug
 
 [`Resource`](class_resource.md) **_convert** ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]<div id="class_editorresourceconversionplugin_private_method__convert"></div>
 
-Takes an input [`Resource`](class_resource.md) and converts it to the type given in [`_converts_to`](#class_editorresourceconversionplugin_private_method__converts_to). The returned [`Resource`](class_resource.md) is the result of the conversion, and the input [`Resource`](class_resource.md) remains unchanged.
+Takes an input [`Resource`](class_resource.md) and converts it to the type given in [`_converts_to`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__converts_to). The returned [`Resource`](class_resource.md) is the result of the conversion, and the input [`Resource`](class_resource.md) remains unchanged.
 
 <!-- rst-class:: classref-item-separator -->
 

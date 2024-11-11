@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectAmplify.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectAmplify.xml。 -->
 
 <div id="_class_audioeffectamplify"></div>
 
@@ -17,7 +17,9 @@ Increases or decreases the volume being routed through the audio bus.
 
 ## 属性
 
-| [`float`](class_float.md) | [`volume_db`](#class_audioeffectamplify_property_volume_db) | ``0.0`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`volume_db`](class_audioeffectamplify.md#class_audioeffectamplify_property_volume_db) | ``0.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

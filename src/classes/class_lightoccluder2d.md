@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/LightOccluder2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/LightOccluder2D.xml。 -->
 
 <div id="_class_lightoccluder2d"></div>
 
@@ -17,9 +17,11 @@ Occludes light cast by a Light2D, casting shadows. The LightOccluder2D must be p
 
 ## 属性
 
-| [`OccluderPolygon2D`](class_occluderpolygon2d.md) | [`occluder`](#class_lightoccluder2d_property_occluder)                       |          |
-| [`int`](class_int.md)                             | [`occluder_light_mask`](#class_lightoccluder2d_property_occluder_light_mask) | ``1``    |
-| [`bool`](class_bool.md)                           | [`sdf_collision`](#class_lightoccluder2d_property_sdf_collision)             | ``true`` |
+|||
+|:-:|:--|
+| [`OccluderPolygon2D`](class_occluderpolygon2d.md) | [`occluder`](class_lightoccluder2d.md#class_lightoccluder2d_property_occluder)                       |          |
+| [`int`](class_int.md)                             | [`occluder_light_mask`](class_lightoccluder2d.md#class_lightoccluder2d_property_occluder_light_mask) | ``1``    |
+| [`bool`](class_bool.md)                           | [`sdf_collision`](class_lightoccluder2d.md#class_lightoccluder2d_property_sdf_collision)             | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 

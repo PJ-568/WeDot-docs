@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectHardLimiter.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectHardLimiter.xml。 -->
 
 <div id="_class_audioeffecthardlimiter"></div>
 
@@ -17,9 +17,11 @@ A limiter is an effect designed to disallow sound from going over a given dB thr
 
 ## 属性
 
-| [`float`](class_float.md) | [`ceiling_db`](#class_audioeffecthardlimiter_property_ceiling_db)   | ``-0.3`` |
-| [`float`](class_float.md) | [`pre_gain_db`](#class_audioeffecthardlimiter_property_pre_gain_db) | ``0.0``  |
-| [`float`](class_float.md) | [`release`](#class_audioeffecthardlimiter_property_release)         | ``0.1``  |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`ceiling_db`](class_audioeffecthardlimiter.md#class_audioeffecthardlimiter_property_ceiling_db)   | ``-0.3`` |
+| [`float`](class_float.md) | [`pre_gain_db`](class_audioeffecthardlimiter.md#class_audioeffecthardlimiter_property_pre_gain_db) | ``0.0``  |
+| [`float`](class_float.md) | [`release`](class_audioeffecthardlimiter.md#class_audioeffecthardlimiter_property_release)         | ``0.1``  |
 
 <!-- rst-class:: classref-section-separator -->
 

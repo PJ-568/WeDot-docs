@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PhysicsMaterial.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PhysicsMaterial.xml。 -->
 
 <div id="_class_physicsmaterial"></div>
 
@@ -17,10 +17,12 @@ Holds physics-related properties of a surface, namely its roughness and bouncine
 
 ## 属性
 
-| [`bool`](class_bool.md)   | [`absorbent`](#class_physicsmaterial_property_absorbent) | ``false`` |
-| [`float`](class_float.md) | [`bounce`](#class_physicsmaterial_property_bounce)       | ``0.0``   |
-| [`float`](class_float.md) | [`friction`](#class_physicsmaterial_property_friction)   | ``1.0``   |
-| [`bool`](class_bool.md)   | [`rough`](#class_physicsmaterial_property_rough)         | ``false`` |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)   | [`absorbent`](class_physicsmaterial.md#class_physicsmaterial_property_absorbent) | ``false`` |
+| [`float`](class_float.md) | [`bounce`](class_physicsmaterial.md#class_physicsmaterial_property_bounce)       | ``0.0``   |
+| [`float`](class_float.md) | [`friction`](class_physicsmaterial.md#class_physicsmaterial_property_friction)   | ``1.0``   |
+| [`bool`](class_bool.md)   | [`rough`](class_physicsmaterial.md#class_physicsmaterial_property_rough)         | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -50,7 +52,7 @@ If `true`, subtracts the bounciness from the colliding object's bounciness inste
 
 The body's bounciness. Values range from `0` (no bounce) to `1` (full bounciness).
 
- **Note:** Even with [`bounce`](#class_physicsmaterial_property_bounce) set to `1.0`, some energy will be lost over time due to linear and angular damping. To have a physics body that preserves all its energy over time, set [`bounce`](#class_physicsmaterial_property_bounce) to `1.0`, the body's linear damp mode to **Replace** (if applicable), its linear damp to `0.0`, its angular damp mode to **Replace** (if applicable), and its angular damp to `0.0`.
+ **Note:** Even with [`bounce`](class_physicsmaterial.md#class_physicsmaterial_property_bounce) set to `1.0`, some energy will be lost over time due to linear and angular damping. To have a physics body that preserves all its energy over time, set [`bounce`](class_physicsmaterial.md#class_physicsmaterial_property_bounce) to `1.0`, the body's linear damp mode to **Replace** (if applicable), its linear damp to `0.0`, its angular damp mode to **Replace** (if applicable), and its angular damp to `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 

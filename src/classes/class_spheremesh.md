@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SphereMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SphereMesh.xml。 -->
 
 <div id="_class_spheremesh"></div>
 
@@ -17,11 +17,13 @@ Class representing a spherical [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 属性
 
-| [`float`](class_float.md) | [`height`](#class_spheremesh_property_height)                   | ``1.0``   |
-| [`bool`](class_bool.md)   | [`is_hemisphere`](#class_spheremesh_property_is_hemisphere)     | ``false`` |
-| [`int`](class_int.md)     | [`radial_segments`](#class_spheremesh_property_radial_segments) | ``64``    |
-| [`float`](class_float.md) | [`radius`](#class_spheremesh_property_radius)                   | ``0.5``   |
-| [`int`](class_int.md)     | [`rings`](#class_spheremesh_property_rings)                     | ``32``    |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`height`](class_spheremesh.md#class_spheremesh_property_height)                   | ``1.0``   |
+| [`bool`](class_bool.md)   | [`is_hemisphere`](class_spheremesh.md#class_spheremesh_property_is_hemisphere)     | ``false`` |
+| [`int`](class_int.md)     | [`radial_segments`](class_spheremesh.md#class_spheremesh_property_radial_segments) | ``64``    |
+| [`float`](class_float.md) | [`radius`](class_spheremesh.md#class_spheremesh_property_radius)                   | ``0.5``   |
+| [`int`](class_int.md)     | [`rings`](class_spheremesh.md#class_spheremesh_property_rings)                     | ``32``    |
 
 <!-- rst-class:: classref-section-separator -->
 

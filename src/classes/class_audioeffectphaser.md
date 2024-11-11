@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectPhaser.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectPhaser.xml。 -->
 
 <div id="_class_audioeffectphaser"></div>
 
@@ -19,11 +19,13 @@ Combines phase-shifted signals with the original signal. The movement of the pha
 
 ## 属性
 
-| [`float`](class_float.md) | [`depth`](#class_audioeffectphaser_property_depth)               | ``1.0``    |
-| [`float`](class_float.md) | [`feedback`](#class_audioeffectphaser_property_feedback)         | ``0.7``    |
-| [`float`](class_float.md) | [`range_max_hz`](#class_audioeffectphaser_property_range_max_hz) | ``1600.0`` |
-| [`float`](class_float.md) | [`range_min_hz`](#class_audioeffectphaser_property_range_min_hz) | ``440.0``  |
-| [`float`](class_float.md) | [`rate_hz`](#class_audioeffectphaser_property_rate_hz)           | ``0.5``    |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`depth`](class_audioeffectphaser.md#class_audioeffectphaser_property_depth)               | ``1.0``    |
+| [`float`](class_float.md) | [`feedback`](class_audioeffectphaser.md#class_audioeffectphaser_property_feedback)         | ``0.7``    |
+| [`float`](class_float.md) | [`range_max_hz`](class_audioeffectphaser.md#class_audioeffectphaser_property_range_max_hz) | ``1600.0`` |
+| [`float`](class_float.md) | [`range_min_hz`](class_audioeffectphaser.md#class_audioeffectphaser_property_range_min_hz) | ``440.0``  |
+| [`float`](class_float.md) | [`rate_hz`](class_audioeffectphaser.md#class_audioeffectphaser_property_rate_hz)           | ``0.5``    |
 
 <!-- rst-class:: classref-section-separator -->
 

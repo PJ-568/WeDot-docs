@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/BoneMap.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/BoneMap.xml。 -->
 
 <div id="_class_bonemap"></div>
 
@@ -19,13 +19,17 @@ By assigning the actual [`Skeleton3D`](class_skeleton3d.md) bone name as the key
 
 ## 属性
 
-| [`SkeletonProfile`](class_skeletonprofile.md) | [`profile`](#class_bonemap_property_profile) |
+|||
+|:-:|:--|
+| [`SkeletonProfile`](class_skeletonprofile.md) | [`profile`](class_bonemap.md#class_bonemap_property_profile) |
 
 ## 方法
 
-| [`StringName`](class_stringname.md) | [`find_profile_bone_name`](#class_bonemap_method_find_profile_bone_name) ( skeleton_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                           |
-| [`StringName`](class_stringname.md) | [`get_skeleton_bone_name`](#class_bonemap_method_get_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                            |
-| `void`                              | [`set_skeleton_bone_name`](#class_bonemap_method_set_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md), skeleton_bone_name: [`StringName`](class_stringname.md) ) |
+|||
+|:-:|:--|
+| [`StringName`](class_stringname.md) | [`find_profile_bone_name`](class_bonemap.md#class_bonemap_method_find_profile_bone_name) ( skeleton_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                           |
+| [`StringName`](class_stringname.md) | [`get_skeleton_bone_name`](class_bonemap.md#class_bonemap_method_get_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                            |
+| `void`                              | [`set_skeleton_bone_name`](class_bonemap.md#class_bonemap_method_set_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md), skeleton_bone_name: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

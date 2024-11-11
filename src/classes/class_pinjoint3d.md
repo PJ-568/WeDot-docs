@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PinJoint3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PinJoint3D.xml。 -->
 
 <div id="_class_pinjoint3d"></div>
 
@@ -17,14 +17,18 @@ A physics joint that attaches two 3D physics bodies at a single point, allowing 
 
 ## 属性
 
-| [`float`](class_float.md) | [`params/bias`](#class_pinjoint3d_property_params/bias)                   | ``0.3`` |
-| [`float`](class_float.md) | [`params/damping`](#class_pinjoint3d_property_params/damping)             | ``1.0`` |
-| [`float`](class_float.md) | [`params/impulse_clamp`](#class_pinjoint3d_property_params/impulse_clamp) | ``0.0`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`params/bias`](class_pinjoint3d.md#class_pinjoint3d_property_params/bias)                   | ``0.3`` |
+| [`float`](class_float.md) | [`params/damping`](class_pinjoint3d.md#class_pinjoint3d_property_params/damping)             | ``1.0`` |
+| [`float`](class_float.md) | [`params/impulse_clamp`](class_pinjoint3d.md#class_pinjoint3d_property_params/impulse_clamp) | ``0.0`` |
 
 ## 方法
 
-| [`float`](class_float.md) | [`get_param`](#class_pinjoint3d_method_get_param) ( param: [Param](#enum_pinjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_param`](#class_pinjoint3d_method_set_param) ( param: [Param](#enum_pinjoint3d_param), value: [`float`](class_float.md) ) |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`get_param`](class_pinjoint3d.md#class_pinjoint3d_method_get_param) ( param: [Param](#enum_pinjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_param`](class_pinjoint3d.md#class_pinjoint3d_method_set_param) ( param: [Param](#enum_pinjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

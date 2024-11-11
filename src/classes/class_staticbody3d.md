@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StaticBody3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StaticBody3D.xml。 -->
 
 <div id="_class_staticbody3d"></div>
 
@@ -15,17 +15,19 @@ A 3D physics body that can't be moved by external forces. When moved manually, i
 
 ## 描述
 
-A static 3D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, [`AnimationMixer`](class_animationmixer.md) s (with [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) set to [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](#class_animationmixer_constant_animation_callback_mode_process_physics)), and [`RemoteTransform3D`](class_remotetransform3d.md).
+A static 3D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, [`AnimationMixer`](class_animationmixer.md) s (with [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) set to [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_physics)), and [`RemoteTransform3D`](class_remotetransform3d.md).
 
 When **StaticBody3D** is moved, it is teleported to its new position without affecting other physics bodies in its path. If this is not desired, use [`AnimatableBody3D`](class_animatablebody3d.md) instead.
 
- **StaticBody3D** is useful for completely static objects like floors and walls, as well as moving surfaces like conveyor belts and circular revolving platforms (by using [`constant_linear_velocity`](#class_staticbody3d_property_constant_linear_velocity) and [`constant_angular_velocity`](#class_staticbody3d_property_constant_angular_velocity)).
+ **StaticBody3D** is useful for completely static objects like floors and walls, as well as moving surfaces like conveyor belts and circular revolving platforms (by using [`constant_linear_velocity`](class_staticbody3d.md#class_staticbody3d_property_constant_linear_velocity) and [`constant_angular_velocity`](class_staticbody3d.md#class_staticbody3d_property_constant_angular_velocity)).
 
 ## 属性
 
-| [`Vector3`](class_vector3.md)                 | [`constant_angular_velocity`](#class_staticbody3d_property_constant_angular_velocity) | ``Vector3(0, 0, 0)`` |
-| [`Vector3`](class_vector3.md)                 | [`constant_linear_velocity`](#class_staticbody3d_property_constant_linear_velocity)   | ``Vector3(0, 0, 0)`` |
-| [`PhysicsMaterial`](class_physicsmaterial.md) | [`physics_material_override`](#class_staticbody3d_property_physics_material_override) |                      |
+|||
+|:-:|:--|
+| [`Vector3`](class_vector3.md)                 | [`constant_angular_velocity`](class_staticbody3d.md#class_staticbody3d_property_constant_angular_velocity) | ``Vector3(0, 0, 0)`` |
+| [`Vector3`](class_vector3.md)                 | [`constant_linear_velocity`](class_staticbody3d.md#class_staticbody3d_property_constant_linear_velocity)   | ``Vector3(0, 0, 0)`` |
+| [`PhysicsMaterial`](class_physicsmaterial.md) | [`physics_material_override`](class_staticbody3d.md#class_staticbody3d_property_physics_material_override) |                      |
 
 <!-- rst-class:: classref-section-separator -->
 

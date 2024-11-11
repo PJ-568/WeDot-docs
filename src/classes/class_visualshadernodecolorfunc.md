@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeColorFunc.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeColorFunc.xml。 -->
 
 <div id="_class_visualshadernodecolorfunc"></div>
 
@@ -13,11 +13,13 @@ A [`Color`](class_color.md) function to be used within the visual shader graph.
 
 ## 描述
 
-Accept a [`Color`](class_color.md) to the input port and transform it according to [`function`](#class_visualshadernodecolorfunc_property_function).
+Accept a [`Color`](class_color.md) to the input port and transform it according to [`function`](class_visualshadernodecolorfunc.md#class_visualshadernodecolorfunc_property_function).
 
 ## 属性
 
-| [Function](#enum_visualshadernodecolorfunc_function) | [`function`](#class_visualshadernodecolorfunc_property_function) | ``0`` |
+|||
+|:-:|:--|
+| [Function](#enum_visualshadernodecolorfunc_function) | [`function`](class_visualshadernodecolorfunc.md#class_visualshadernodecolorfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

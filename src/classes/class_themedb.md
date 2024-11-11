@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ThemeDB.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ThemeDB.xml。 -->
 
 <div id="_class_themedb"></div>
 
@@ -19,16 +19,20 @@ This singleton provides access to static information about [`Theme`](class_theme
 
 ## 属性
 
-| [`float`](class_float.md)         | [`fallback_base_scale`](#class_themedb_property_fallback_base_scale) | ``1.0`` |
-| [`Font`](class_font.md)           | [`fallback_font`](#class_themedb_property_fallback_font)             |         |
-| [`int`](class_int.md)             | [`fallback_font_size`](#class_themedb_property_fallback_font_size)   | ``16``  |
-| [`Texture2D`](class_texture2d.md) | [`fallback_icon`](#class_themedb_property_fallback_icon)             |         |
-| [`StyleBox`](class_stylebox.md)   | [`fallback_stylebox`](#class_themedb_property_fallback_stylebox)     |         |
+|||
+|:-:|:--|
+| [`float`](class_float.md)         | [`fallback_base_scale`](class_themedb.md#class_themedb_property_fallback_base_scale) | ``1.0`` |
+| [`Font`](class_font.md)           | [`fallback_font`](class_themedb.md#class_themedb_property_fallback_font)             |         |
+| [`int`](class_int.md)             | [`fallback_font_size`](class_themedb.md#class_themedb_property_fallback_font_size)   | ``16``  |
+| [`Texture2D`](class_texture2d.md) | [`fallback_icon`](class_themedb.md#class_themedb_property_fallback_icon)             |         |
+| [`StyleBox`](class_stylebox.md)   | [`fallback_stylebox`](class_themedb.md#class_themedb_property_fallback_stylebox)     |         |
 
 ## 方法
 
-| [`Theme`](class_theme.md) | [`get_default_theme`](#class_themedb_method_get_default_theme) ( ) |
-| [`Theme`](class_theme.md) | [`get_project_theme`](#class_themedb_method_get_project_theme) ( ) |
+|||
+|:-:|:--|
+| [`Theme`](class_theme.md) | [`get_default_theme`](class_themedb.md#class_themedb_method_get_default_theme) ( ) |
+| [`Theme`](class_theme.md) | [`get_project_theme`](class_themedb.md#class_themedb_method_get_project_theme) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +61,7 @@ Emitted when one of the fallback values had been changed. Use it to refresh the 
 
 The fallback base scale factor of every [`Control`](class_control.md) node and [`Theme`](class_theme.md) resource. Used when no other value is available to the control.
 
-See also [`Theme.default_base_scale`](#class_theme_property_default_base_scale).
+See also [`Theme.default_base_scale`](class_theme.md#class_theme_property_default_base_scale).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -72,7 +76,7 @@ See also [`Theme.default_base_scale`](#class_theme_property_default_base_scale).
 
 The fallback font of every [`Control`](class_control.md) node and [`Theme`](class_theme.md) resource. Used when no other value is available to the control.
 
-See also [`Theme.default_font`](#class_theme_property_default_font).
+See also [`Theme.default_font`](class_theme.md#class_theme_property_default_font).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -87,7 +91,7 @@ See also [`Theme.default_font`](#class_theme_property_default_font).
 
 The fallback font size of every [`Control`](class_control.md) node and [`Theme`](class_theme.md) resource. Used when no other value is available to the control.
 
-See also [`Theme.default_font_size`](#class_theme_property_default_font_size).
+See also [`Theme.default_font_size`](class_theme.md#class_theme_property_default_font_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -137,7 +141,7 @@ Returns a reference to the default engine [`Theme`](class_theme.md). This theme 
 
 Returns a reference to the custom project [`Theme`](class_theme.md). This theme resources allows to override the default engine theme for every control node in the project.
 
-To set the project theme, see [`ProjectSettings.gui/theme/custom`](#class_projectsettings_property_gui/theme/custom).
+To set the project theme, see [`ProjectSettings.gui/theme/custom`](class_projectsettings.md#class_projectsettings_property_gui/theme/custom).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

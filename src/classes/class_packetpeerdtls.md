@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PacketPeerDTLS.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PacketPeerDTLS.xml。 -->
 
 <div id="_class_packetpeerdtls"></div>
 
@@ -13,7 +13,7 @@ DTLS packet peer.
 
 ## 描述
 
-This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by [`DTLSServer.take_connection`](#class_dtlsserver_method_take_connection).
+This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by [`DTLSServer.take_connection`](class_dtlsserver.md#class_dtlsserver_method_take_connection).
 
  **Note:** When exporting to Android, make sure to enable the `INTERNET` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
@@ -21,10 +21,12 @@ This class represents a DTLS peer connection. It can be used to connect to a DTL
 
 ## 方法
 
-| [Error](#enum_@globalscope_error)     | [`connect_to_peer`](#class_packetpeerdtls_method_connect_to_peer) ( packet_peer: [`PacketPeerUDP`](class_packetpeerudp.md), hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| `void`                                | [`disconnect_from_peer`](#class_packetpeerdtls_method_disconnect_from_peer) ( )                                                                                                                                                 |
-| [Status](#enum_packetpeerdtls_status) | [`get_status`](#class_packetpeerdtls_method_get_status) ( ) const[^const]                                                                                                                                                       |
-| `void`                                | [`poll`](#class_packetpeerdtls_method_poll) ( )                                                                                                                                                                                 |
+|||
+|:-:|:--|
+| [Error](#enum_@globalscope_error)     | [`connect_to_peer`](class_packetpeerdtls.md#class_packetpeerdtls_method_connect_to_peer) ( packet_peer: [`PacketPeerUDP`](class_packetpeerudp.md), hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| `void`                                | [`disconnect_from_peer`](class_packetpeerdtls.md#class_packetpeerdtls_method_disconnect_from_peer) ( )                                                                                                                                                 |
+| [Status](#enum_packetpeerdtls_status) | [`get_status`](class_packetpeerdtls.md#class_packetpeerdtls_method_get_status) ( ) const[^const]                                                                                                                                                       |
+| `void`                                | [`poll`](class_packetpeerdtls.md#class_packetpeerdtls_method_poll) ( )                                                                                                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -76,7 +78,7 @@ An error status that shows a mismatch in the DTLS certificate domain presented b
 
 [Error](#enum_@globalscope_error) **connect_to_peer** ( packet_peer: [`PacketPeerUDP`](class_packetpeerudp.md), hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null )<div id="class_packetpeerdtls_method_connect_to_peer"></div>
 
-Connects a `packet_peer` beginning the DTLS handshake using the underlying [`PacketPeerUDP`](class_packetpeerudp.md) which must be connected (see [`PacketPeerUDP.connect_to_host`](#class_packetpeerudp_method_connect_to_host)). You can optionally specify the `client_options` to be used while verifying the TLS connections. See [`TLSOptions.client`](#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](#class_tlsoptions_method_client_unsafe).
+Connects a `packet_peer` beginning the DTLS handshake using the underlying [`PacketPeerUDP`](class_packetpeerudp.md) which must be connected (see [`PacketPeerUDP.connect_to_host`](class_packetpeerudp.md#class_packetpeerudp_method_connect_to_host)). You can optionally specify the `client_options` to be used while verifying the TLS connections. See [`TLSOptions.client`](class_tlsoptions.md#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe).
 
 <!-- rst-class:: classref-item-separator -->
 

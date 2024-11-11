@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gdscript/doc_classes/GDScript.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gdscript/doc_classes/GDScript.xml。 -->
 
 <div id="_class_gdscript"></div>
 
@@ -15,13 +15,15 @@ A script implemented in the GDScript programming language.
 
 A script implemented in the GDScript programming language, saved with the `.gd` extension. The script extends the functionality of all objects that instantiate it.
 
-Calling [`new`](#class_gdscript_method_new) creates a new instance of the script. [`Object.set_script`](#class_object_method_set_script) extends an existing object, if that object's class matches one of the script's base classes.
+Calling [`new`](class_gdscript.md#class_gdscript_method_new) creates a new instance of the script. [`Object.set_script`](class_object.md#class_object_method_set_script) extends an existing object, if that object's class matches one of the script's base classes.
 
 If you are looking for GDScript's built-in functions, see [`@GDScript`](class_@gdscript.md) instead.
 
 ## 方法
 
-| [`Variant`](class_variant.md) | [`new`](#class_gdscript_method_new) ( ... ) vararg[^vararg] |
+|||
+|:-:|:--|
+| [`Variant`](class_variant.md) | [`new`](class_gdscript.md#class_gdscript_method_new) ( ... ) vararg[^vararg] |
 
 <!-- rst-class:: classref-section-separator -->
 

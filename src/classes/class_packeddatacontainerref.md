@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedDataContainerRef.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedDataContainerRef.xml。 -->
 
 <div id="_class_packeddatacontainerref"></div>
 
@@ -42,7 +42,9 @@ When packing nested containers using [`PackedDataContainer`](class_packeddatacon
 
 ## 方法
 
-| [`int`](class_int.md) | [`size`](#class_packeddatacontainerref_method_size) ( ) const[^const] |
+|||
+|:-:|:--|
+| [`int`](class_int.md) | [`size`](class_packeddatacontainerref.md#class_packeddatacontainerref_method_size) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -54,7 +56,7 @@ When packing nested containers using [`PackedDataContainer`](class_packeddatacon
 
 [`int`](class_int.md) **size** ( ) const[^const]<div id="class_packeddatacontainerref_method_size"></div>
 
-Returns the size of the packed container (see [`Array.size`](#class_array_method_size) and [`Dictionary.size`](#class_dictionary_method_size)).
+Returns the size of the packed container (see [`Array.size`](class_array.md#class_array_method_size) and [`Dictionary.size`](class_dictionary.md#class_dictionary_method_size)).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

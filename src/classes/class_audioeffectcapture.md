@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectCapture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectCapture.xml。 -->
 
 <div id="_class_audioeffectcapture"></div>
 
@@ -15,23 +15,27 @@ Captures audio from an audio bus in real-time.
 
 AudioEffectCapture is an AudioEffect which copies all audio frames from the attached audio effect bus into its internal ring buffer.
 
-Application code should consume these audio frames from this ring buffer using [`get_buffer`](#class_audioeffectcapture_method_get_buffer) and process it as needed, for example to capture data from an [`AudioStreamMicrophone`](class_audiostreammicrophone.md), implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
+Application code should consume these audio frames from this ring buffer using [`get_buffer`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_buffer) and process it as needed, for example to capture data from an [`AudioStreamMicrophone`](class_audiostreammicrophone.md), implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
 
 Unlike [`AudioEffectRecord`](class_audioeffectrecord.md), this effect only returns the raw audio samples instead of encoding them into an [`AudioStream`](class_audiostream.md).
 
 ## 属性
 
-| [`float`](class_float.md) | [`buffer_length`](#class_audioeffectcapture_property_buffer_length) | ``0.1`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md) | [`buffer_length`](class_audioeffectcapture.md#class_audioeffectcapture_property_buffer_length) | ``0.1`` |
 
 ## 方法
 
-| [`bool`](class_bool.md)                             | [`can_get_buffer`](#class_audioeffectcapture_method_can_get_buffer) ( frames: [`int`](class_int.md) ) const[^const] |
-| `void`                                              | [`clear_buffer`](#class_audioeffectcapture_method_clear_buffer) ( )                                                 |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_buffer`](#class_audioeffectcapture_method_get_buffer) ( frames: [`int`](class_int.md) )                       |
-| [`int`](class_int.md)                               | [`get_buffer_length_frames`](#class_audioeffectcapture_method_get_buffer_length_frames) ( ) const[^const]           |
-| [`int`](class_int.md)                               | [`get_discarded_frames`](#class_audioeffectcapture_method_get_discarded_frames) ( ) const[^const]                   |
-| [`int`](class_int.md)                               | [`get_frames_available`](#class_audioeffectcapture_method_get_frames_available) ( ) const[^const]                   |
-| [`int`](class_int.md)                               | [`get_pushed_frames`](#class_audioeffectcapture_method_get_pushed_frames) ( ) const[^const]                         |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)                             | [`can_get_buffer`](class_audioeffectcapture.md#class_audioeffectcapture_method_can_get_buffer) ( frames: [`int`](class_int.md) ) const[^const] |
+| `void`                                              | [`clear_buffer`](class_audioeffectcapture.md#class_audioeffectcapture_method_clear_buffer) ( )                                                 |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_buffer`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_buffer) ( frames: [`int`](class_int.md) )                       |
+| [`int`](class_int.md)                               | [`get_buffer_length_frames`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_buffer_length_frames) ( ) const[^const]           |
+| [`int`](class_int.md)                               | [`get_discarded_frames`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_discarded_frames) ( ) const[^const]                   |
+| [`int`](class_int.md)                               | [`get_frames_available`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_frames_available) ( ) const[^const]                   |
+| [`int`](class_int.md)                               | [`get_pushed_frames`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_pushed_frames) ( ) const[^const]                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -114,7 +118,7 @@ Returns the number of audio frames discarded from the audio bus due to full buff
 
 [`int`](class_int.md) **get_frames_available** ( ) const[^const]<div id="class_audioeffectcapture_method_get_frames_available"></div>
 
-Returns the number of frames available to read using [`get_buffer`](#class_audioeffectcapture_method_get_buffer).
+Returns the number of frames available to read using [`get_buffer`](class_audioeffectcapture.md#class_audioeffectcapture_method_get_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 

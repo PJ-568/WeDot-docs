@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectSpectrumAnalyzer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectSpectrumAnalyzer.xml。 -->
 
 <div id="_class_audioeffectspectrumanalyzer"></div>
 
@@ -15,15 +15,17 @@ Audio effect that can be used for real-time audio visualizations.
 
 This audio effect does not affect sound output, but can be used for real-time audio visualizations.
 
-This resource configures an [`AudioEffectSpectrumAnalyzerInstance`](class_audioeffectspectrumanalyzerinstance.md), which performs the actual analysis at runtime. An instance can be acquired with [`AudioServer.get_bus_effect_instance`](#class_audioserver_method_get_bus_effect_instance).
+This resource configures an [`AudioEffectSpectrumAnalyzerInstance`](class_audioeffectspectrumanalyzerinstance.md), which performs the actual analysis at runtime. An instance can be acquired with [`AudioServer.get_bus_effect_instance`](class_audioserver.md#class_audioserver_method_get_bus_effect_instance).
 
 See also [`AudioStreamGenerator`](class_audiostreamgenerator.md) for procedurally generating sounds.
 
 ## 属性
 
-| [`float`](class_float.md)                            | [`buffer_length`](#class_audioeffectspectrumanalyzer_property_buffer_length) | ``2.0``  |
-| [FFTSize](#enum_audioeffectspectrumanalyzer_fftsize) | [`fft_size`](#class_audioeffectspectrumanalyzer_property_fft_size)           | ``2``    |
-| [`float`](class_float.md)                            | [`tap_back_pos`](#class_audioeffectspectrumanalyzer_property_tap_back_pos)   | ``0.01`` |
+|||
+|:-:|:--|
+| [`float`](class_float.md)                            | [`buffer_length`](class_audioeffectspectrumanalyzer.md#class_audioeffectspectrumanalyzer_property_buffer_length) | ``2.0``  |
+| [FFTSize](#enum_audioeffectspectrumanalyzer_fftsize) | [`fft_size`](class_audioeffectspectrumanalyzer.md#class_audioeffectspectrumanalyzer_property_fft_size)           | ``2``    |
+| [`float`](class_float.md)                            | [`tap_back_pos`](class_audioeffectspectrumanalyzer.md#class_audioeffectspectrumanalyzer_property_tap_back_pos)   | ``0.01`` |
 
 <!-- rst-class:: classref-section-separator -->
 

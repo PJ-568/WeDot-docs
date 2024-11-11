@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/csg/doc_classes/CSGCylinder3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/csg/doc_classes/CSGCylinder3D.xml。 -->
 
 <div id="_class_csgcylinder3d"></div>
 
@@ -19,12 +19,14 @@ This node allows you to create a cylinder (or cone) for use with the CSG system.
 
 ## 属性
 
-| [`bool`](class_bool.md)         | [`cone`](#class_csgcylinder3d_property_cone)                 | ``false`` |
-| [`float`](class_float.md)       | [`height`](#class_csgcylinder3d_property_height)             | ``2.0``   |
-| [`Material`](class_material.md) | [`material`](#class_csgcylinder3d_property_material)         |           |
-| [`float`](class_float.md)       | [`radius`](#class_csgcylinder3d_property_radius)             | ``0.5``   |
-| [`int`](class_int.md)           | [`sides`](#class_csgcylinder3d_property_sides)               | ``8``     |
-| [`bool`](class_bool.md)         | [`smooth_faces`](#class_csgcylinder3d_property_smooth_faces) | ``true``  |
+|||
+|:-:|:--|
+| [`bool`](class_bool.md)         | [`cone`](class_csgcylinder3d.md#class_csgcylinder3d_property_cone)                 | ``false`` |
+| [`float`](class_float.md)       | [`height`](class_csgcylinder3d.md#class_csgcylinder3d_property_height)             | ``2.0``   |
+| [`Material`](class_material.md) | [`material`](class_csgcylinder3d.md#class_csgcylinder3d_property_material)         |           |
+| [`float`](class_float.md)       | [`radius`](class_csgcylinder3d.md#class_csgcylinder3d_property_radius)             | ``0.5``   |
+| [`int`](class_int.md)           | [`sides`](class_csgcylinder3d.md#class_csgcylinder3d_property_sides)               | ``8``     |
+| [`bool`](class_bool.md)         | [`smooth_faces`](class_csgcylinder3d.md#class_csgcylinder3d_property_smooth_faces) | ``true``  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -39,7 +41,7 @@ This node allows you to create a cylinder (or cone) for use with the CSG system.
 - `void` **set_cone** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_cone** ( )
 
-If `true` a cone is created, the [`radius`](#class_csgcylinder3d_property_radius) will only apply to one side.
+If `true` a cone is created, the [`radius`](class_csgcylinder3d.md#class_csgcylinder3d_property_radius) will only apply to one side.
 
 <!-- rst-class:: classref-item-separator -->
 

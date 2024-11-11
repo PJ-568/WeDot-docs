@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioListener3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioListener3D.xml。 -->
 
 <div id="_class_audiolistener3d"></div>
 
@@ -13,14 +13,16 @@ Overrides the location sounds are heard from.
 
 ## 描述
 
-Once added to the scene tree and enabled using [`make_current`](#class_audiolistener3d_method_make_current), this node will override the location sounds are heard from. This can be used to listen from a location different from the [`Camera3D`](class_camera3d.md).
+Once added to the scene tree and enabled using [`make_current`](class_audiolistener3d.md#class_audiolistener3d_method_make_current), this node will override the location sounds are heard from. This can be used to listen from a location different from the [`Camera3D`](class_camera3d.md).
 
 ## 方法
 
-| `void`                                | [`clear_current`](#class_audiolistener3d_method_clear_current) ( )                                 |
-| [`Transform3D`](class_transform3d.md) | [`get_listener_transform`](#class_audiolistener3d_method_get_listener_transform) ( ) const[^const] |
-| [`bool`](class_bool.md)               | [`is_current`](#class_audiolistener3d_method_is_current) ( ) const[^const]                         |
-| `void`                                | [`make_current`](#class_audiolistener3d_method_make_current) ( )                                   |
+|||
+|:-:|:--|
+| `void`                                | [`clear_current`](class_audiolistener3d.md#class_audiolistener3d_method_clear_current) ( )                                 |
+| [`Transform3D`](class_transform3d.md) | [`get_listener_transform`](class_audiolistener3d.md#class_audiolistener3d_method_get_listener_transform) ( ) const[^const] |
+| [`bool`](class_bool.md)               | [`is_current`](class_audiolistener3d.md#class_audiolistener3d_method_is_current) ( ) const[^const]                         |
+| `void`                                | [`make_current`](class_audiolistener3d.md#class_audiolistener3d_method_make_current) ( )                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,7 +54,7 @@ Returns the listener's global orthonormalized [`Transform3D`](class_transform3d.
 
 [`bool`](class_bool.md) **is_current** ( ) const[^const]<div id="class_audiolistener3d_method_is_current"></div>
 
-Returns `true` if the listener was made current using [`make_current`](#class_audiolistener3d_method_make_current), `false` otherwise.
+Returns `true` if the listener was made current using [`make_current`](class_audiolistener3d.md#class_audiolistener3d_method_make_current), `false` otherwise.
 
  **Note:** There may be more than one AudioListener3D marked as "current" in the scene tree, but only the one that was made current last will be used.
 
